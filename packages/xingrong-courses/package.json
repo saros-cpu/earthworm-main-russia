@@ -1,0 +1,26 @@
+{
+  "name": "@earthworm/xingrong-courses",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "upload": "tsx src/seed.ts",
+    "course:add": "tsx src/addCourse.ts",
+    "course:reset": "tsx src/resetCourseStatements.ts",
+    "pdf:parse": "tsx src/parsePDF/index.ts",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@earthworm/db": "workspace:^",
+    "@earthworm/schema": "workspace:^",
+    "drizzle-kit": "^0.23.0",
+    "drizzle-orm": "^0.32.0",
+    "inquirer": "^9.2.13",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/pdf-parse": "^1.1.4",
+    "vitest": "^2.0.3"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1714307150990,
+      "tag": "0000_glorious_master_chief",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1714468289372,
+      "tag": "0001_silly_silk_fever",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1716295800305,
+      "tag": "0002_lonely_morg",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1716469182757,
+      "tag": "0003_moaning_hammerhead",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1719584283844,
+      "tag": "0004_tough_scarlet_witch",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1719888036643,
+      "tag": "0005_powerful_spacker_dave",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1720328764232,
+      "tag": "0006_stale_jetstream",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1721896618637,
+      "tag": "0007_many_puff_adder",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1722050811548,
+      "tag": "0008_famous_red_shift",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1722416147800,
+      "tag": "0009_typical_xorn",
+      "breakpoints": true
+    }
+  ]
+}

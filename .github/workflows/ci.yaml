@@ -1,0 +1,101 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+    # types: [review_requested, ready_for_review]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: postgres://test:password@localhost:5480/earthworm_test
+      SECRET: sjldk92#sd903mnc./xklsjdf9sdfj
+      REDIS_URL: redis://127.0.0.1:6379
+      LOGTO_ENDPOINT: https://g7aj5i.logto.app/
+      LOGTO_CLIENT_ID: uwl60tk769wtbs19i5zkx
+      LOGTO_CLIENT_SECRET: AIC9U5TYba73JxMETuj9JeFaLyXFVdWa
+      LOGTO_M2M_API: https://g7aj5i.logto.app/api
+
+    services:
+      pg:
+        image: postgres:14-alpine
+        volumes:
+          - data:/var/lib/postgres/test-data
+        env:
+          POSTGRES_USER: test
+          POSTGRES_PASSWORD: password
+          POSTGRES_DB: earthworm_test
+        ports:
+          - 5480:5432
+      redis:
+        image: redis:6.2.5
+        ports:
+          - 6379:6379
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "20.11.0"
+
+      - name: Setup pnpm
+        run: corepack enable
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run database initialization command
+        run: pnpm db:init:test:ci
+
+      - name: Run build schema
+        run: pnpm schema:build
+
+      - name: Run tests
+        run: pnpm test:ci
+
+  # lint:
+
+  #   runs-on: ubuntu-latest
+
+  #   steps:
+  #     - uses: actions/checkout@v3
+
+  #     - name: Use Node.js 16.14.2
+  #       uses: actions/setup-node@v3
+  #       with:
+  #         node-version: 16.14.2
+
+  #     - name: Setup
+  #       run: npm i -g @antfu/ni
+
+  #     - name: Install
+  #       run: nci
+
+  #     - name: Lint
+  #       run: nr lint
+
+  # build:
+
+  #   runs-on: ubuntu-latest
+
+  #   steps:
+  #     - uses: actions/checkout@v3
+
+  #     - name: Use Node.js 16.14.2
+  #       uses: actions/setup-node@v3
+  #       with:
+  #         node-version: 16.14.2
+
+  #     - name: Setup
+  #       run: npm i -g @antfu/ni
+
+  #     - name: Install
+  #       run: nci
+
+  #     - name: Build
+  #       run: nr build
