@@ -14,6 +14,12 @@
           <span class="ml-1 text-slate-500 dark:text-slate-400">条待复习</span>
         </div>
       </div>
+      <div class="mt-4 flex gap-4">
+        <div v-for="s in reviewStats" :key="s.label" class="flex-1 rounded-md bg-slate-50 p-3 text-center dark:bg-slate-800">
+          <div class="text-lg font-black text-slate-950 dark:text-white">{{ s.value }}</div>
+          <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wide">{{ s.label }}</div>
+        </div>
+      </div>
     </section>
 
     <section v-if="currentReview" class="mb-5">
@@ -62,9 +68,9 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { computed, onMounted, ref } from "vue";
 
-import { fetchDueReviews, fetchRecordReview, fetchScheduleReview } from "~/api/learning";
+import { fetchDueReviews, fetchRecordReview, fetchScheduleReview, fetchTotalStats } from "~/api/learning";
 import { fetchCourse } from "~/api/course";
 import type { CourseApiResponse, StatementApiResponse } from "~/api/course";
 
@@ -90,6 +96,14 @@ const dueCount = ref(0);
 const currentStatement = ref<StatementApiResponse | null>(null);
 
 const currentReview = ref<ReviewItem | null>(null);
+const currentStreak = ref(0);
+const totalReviewed = ref(0);
+
+const reviewStats = computed(() => [
+  { label: "今日待复习", value: dueCount.value },
+  { label: "当前连续", value: currentStreak.value + "天" },
+  { label: "累计复习", value: totalReviewed.value },
+]);
 
 const qualityOptions = [
   { value: 1, label: "完全不记得", class: "bg-red-100 text-red-700 hover:bg-red-200 dark:bg-red-900 dark:text-red-200", activeClass: "bg-red-200 text-red-800 ring-2 ring-red-400" },
@@ -146,9 +160,15 @@ async function loadCurrentReview() {
 
 onMounted(async () => {
   try {
-    dueItems.value = await fetchDueReviews();
-    dueCount.value = dueItems.value.length;
-    if (dueItems.value.length > 0) {
+    const [due, stats] = await Promise.all([
+      fetchDueReviews(),
+      fetchTotalStats().catch(() => ({})),
+    ]);
+    dueItems.value = due;
+    dueCount.value = due.length;
+    currentStreak.value = (stats as any).currentStreak || 0;
+    totalReviewed.value = (stats as any).totalExercises || 0;
+    if (due.length > 0) {
       loadCurrentReview();
     }
   } catch (e) {

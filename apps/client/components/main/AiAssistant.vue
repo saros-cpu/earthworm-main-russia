@@ -35,6 +35,13 @@
         </div>
 
         <div class="border-t border-slate-200 p-3 dark:border-slate-700">
+          <div v-if="messages.length <= 1 && !loading" class="mb-2 flex flex-wrap gap-1">
+            <button v-for="s in suggestions" :key="s.label"
+              class="rounded-full bg-slate-100 px-2 py-1 text-[10px] text-slate-600 transition hover:bg-emerald-100 hover:text-emerald-700 dark:bg-slate-800 dark:text-slate-300"
+              @click="addSuggestion(s.query)">
+              {{ s.label }}
+            </button>
+          </div>
           <div class="flex gap-2">
             <input v-model="question" type="text" placeholder="输入俄语语法问题..."
               class="h-9 flex-1 rounded-md border border-slate-200 bg-white px-3 text-sm outline-none transition focus:border-emerald-400 dark:border-slate-700 dark:bg-slate-800"
@@ -44,8 +51,9 @@
               <UIcon name="i-ph-paper-plane-right" class="h-4 w-4" />
             </button>
           </div>
-          <div v-if="questionCount > 0" class="mt-1 text-right text-[10px] text-slate-400">
-            今日已用 {{ questionCount }} 次
+          <div class="mt-1 flex justify-between text-[10px] text-slate-400">
+            <span>限额 {{ questionCount }}/{{ dailyLimit }}</span>
+            <span v-if="courseStore.currentStatement?.english" class="truncate max-w-[200px]">当前句子语境已自动带入</span>
           </div>
         </div>
       </div>
@@ -62,17 +70,34 @@
 <script setup lang="ts">
 import { nextTick, onMounted, ref } from "vue";
 import { getHttp } from "~/api/http";
+import { useCourseStore } from "~/store/course";
 
+const courseStore = useCourseStore();
 const open = ref(false);
 const question = ref("");
 const loading = ref(false);
 const questionCount = ref(0);
+const dailyLimit = ref(10);
 const chatBox = ref<HTMLDivElement>();
 const messages = ref<{ role: string; content: string }[]>([]);
+const suggestions = ref([
+  { label: "这个动词是什么变位？", query: "Explain the conjugation of this verb" },
+  { label: "这里为什么用这个格？", query: "Why is this case used here?" },
+  { label: "帮我解释语法", query: "Explain the grammar of this sentence" },
+]);
+
+function addSuggestion(query: string) {
+  question.value = query;
+  send();
+}
 
 async function send() {
   const q = question.value.trim();
   if (!q || loading.value) return;
+  if (questionCount.value >= dailyLimit.value) {
+    messages.value.push({ role: "assistant", content: "今日提问次数已达上限（" + dailyLimit.value + "次），明天再来吧！" });
+    return;
+  }
   question.value = "";
   messages.value.push({ role: "user", content: q });
   loading.value = true;
@@ -80,14 +105,18 @@ async function send() {
 
   try {
     const http = getHttp();
+    const stmtId = courseStore.currentStatement?.id || null;
     const res = await http<{ answer: string }>("/ai/ask", {
       method: "post",
-      body: { question: q, statementId: null },
+      body: { question: q, statementId: stmtId },
     });
     messages.value.push({ role: "assistant", content: res.answer });
     questionCount.value++;
+    // Update daily count in localStorage
+    const today = new Date().toISOString().split("T")[0];
+    localStorage.setItem("ai_questions_" + today, String(questionCount.value));
   } catch (e: any) {
-    messages.value.push({ role: "assistant", content: "AI 服务暂时不可用，请稍后重试。" });
+    messages.value.push({ role: "assistant", content: "AI服务暂时不可用，请稍后重试。" });
   }
   loading.value = false;
   scrollToBottom();
@@ -100,7 +129,10 @@ function scrollToBottom() {
 }
 
 onMounted(() => {
-  messages.value.push({ role: "assistant", content: "Привет! 👋 我是俄语语法助手，有什么问题尽管问我！" });
+  const today = new Date().toISOString().split("T")[0];
+  const saved = localStorage.getItem("ai_questions_" + today);
+  if (saved) questionCount.value = parseInt(saved);
+  messages.value.push({ role: "assistant", content: "Привет! Я твой помощник по русской грамматике. Спрашивай о спряжениях, падежах, значениях слов и любых других вопросах по русскому языку!" });
 });
 </script>
 

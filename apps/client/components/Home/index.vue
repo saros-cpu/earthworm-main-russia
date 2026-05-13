@@ -145,6 +145,7 @@ const SIDE_NAV = [
   { label: "我的课程包", href: "/course-pack", icon: "i-ph-folder-open" },
   { label: "学习统计", href: "/stats", icon: "i-ph-chart-bar" },
   { label: "复习", href: "/review", icon: "i-ph-arrows-clockwise" },
+  { label: "错题本", href: "/wrong-answers", icon: "i-ph-x-circle" },
   { label: "生词本", href: "/vocabulary", icon: "i-ph-bookmark-simple" },
   { label: "学习小组", href: "/groups", icon: "i-ph-users-three" },
   { label: "掌握列表", href: "/mastered-elements", icon: "i-ph-check-circle" },

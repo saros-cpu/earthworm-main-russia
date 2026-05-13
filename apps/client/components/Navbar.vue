@@ -59,6 +59,10 @@
             <span v-if="dueReviewCount > 0"
               class="ml-1 rounded-full bg-red-500 px-1.5 py-0.5 text-[10px] font-bold text-white">{{ dueReviewCount }}</span>
           </NuxtLink>
+          <NuxtLink v-if="isAuthenticated()" to="/wrong-answers"
+            class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-red-600 dark:text-slate-400 dark:hover:text-red-300 md:inline-block">
+            错题本
+          </NuxtLink>
           <NuxtLink v-if="isAuthenticated()" to="/vocabulary"
             class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-300 md:inline-block">
             生词本
