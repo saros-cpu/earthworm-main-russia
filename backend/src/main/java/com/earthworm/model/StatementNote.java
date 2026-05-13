@@ -17,4 +17,6 @@ public class StatementNote {
     public String getUserId() { return userId; } public void setUserId(String v) { this.userId = v; }
     public String getStatementId() { return statementId; } public void setStatementId(String v) { this.statementId = v; }
     public String getContent() { return content; } public void setContent(String v) { this.content = v; }
+    public LocalDateTime getCreatedAt() { return createdAt; }
+    public LocalDateTime getUpdatedAt() { return updatedAt; }
 }

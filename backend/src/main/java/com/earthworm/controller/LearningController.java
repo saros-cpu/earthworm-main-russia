@@ -15,19 +15,22 @@ public class LearningController {
     private final VocabularyService vocabularyService;
     private final DailyTaskService taskService;
     private final AiAssistantService aiService;
+    private final NoteService noteService;
 
     public LearningController(
             LearningStatsService statsService,
             ReviewService reviewService,
             VocabularyService vocabularyService,
             DailyTaskService taskService,
-            AiAssistantService aiService
+            AiAssistantService aiService,
+            NoteService noteService
     ) {
         this.statsService = statsService;
         this.reviewService = reviewService;
         this.vocabularyService = vocabularyService;
         this.taskService = taskService;
         this.aiService = aiService;
+        this.noteService = noteService;
     }
 
     // --- Exercise Records ---
@@ -148,6 +151,20 @@ public class LearningController {
         return aiService.ask(
                 (String) body.get("question"),
                 (String) body.get("statementId")
+        );
+    }
+
+    // --- Notes ---
+    @GetMapping("/notes")
+    public List<Map<String, Object>> getNotes(@RequestParam(name = "statementId") String statementId) {
+        return noteService.getNotes(statementId);
+    }
+
+    @PostMapping("/notes")
+    public Map<String, Object> upsertNote(@RequestBody Map<String, Object> body) {
+        return noteService.upsertNote(
+                (String) body.get("statementId"),
+                (String) body.get("content")
         );
     }
 }

@@ -99,7 +99,9 @@
           </div>
         </article>
       </div>
-    </div>
+      </div>
+
+      <MainStatementNotes :statement-id="courseStore.currentStatement?.id" />
 
       <div class="space-y-3">
         <div class="flex flex-wrap items-center justify-center gap-2">

@@ -71,6 +71,10 @@
             class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-300 md:inline-block">
             复习本
           </NuxtLink>
+          <NuxtLink v-if="isAuthenticated()" to="/battle"
+            class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-orange-600 dark:text-slate-400 dark:hover:text-orange-300 md:inline-block">
+            PK
+          </NuxtLink>
           <NuxtLink v-if="isAuthenticated()" to="/groups"
             class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-300 md:inline-block">
             小组

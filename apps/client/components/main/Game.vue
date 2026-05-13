@@ -15,6 +15,12 @@
   <template v-else-if="isWordAssemblyMode()">
     <ModeWordAssemblyMode />
   </template>
+  <template v-else-if="isSpeechAssessmentMode()">
+    <ModeSpeechAssessmentMode />
+  </template>
+  <template v-else-if="isAudioCourseMode()">
+    <ModeAudioCourseMode />
+  </template>
 
   <MainLearningTimer v-if="isAuthenticated()"></MainLearningTimer>
   <MainTips />
