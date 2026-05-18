@@ -1,11 +1,19 @@
+import { useRuntimeConfig } from "nuxt/app";
+
 const TOKEN_KEY = "ew_token";
 const USER_KEY = "ew_user";
+
+function backendUrl(path: string): string {
+  const base = useRuntimeConfig().public.apiBase as string;
+  return `${base}${path}`;
+}
 
 export interface AuthUser {
   userId: string;
   username: string;
   nickname: string;
   avatar?: string;
+  role?: string;
 }
 
 export function getToken(): string | null {
@@ -29,7 +37,9 @@ export function getStoredUser(): AuthUser | null {
   try {
     const raw = localStorage.getItem(USER_KEY);
     return raw ? JSON.parse(raw) : null;
-  } catch { return null; }
+  } catch {
+    return null;
+  }
 }
 
 function storeUser(user: AuthUser) {
@@ -37,7 +47,7 @@ function storeUser(user: AuthUser) {
 }
 
 export async function login(username: string, password: string): Promise<AuthUser> {
-  const res = await fetch("http://localhost:8080/auth/login", {
+  const res = await fetch(backendUrl("/auth/login"), {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ username, password }),
@@ -45,21 +55,35 @@ export async function login(username: string, password: string): Promise<AuthUse
   const data = await res.json();
   if (data.error) throw new Error(data.error);
   setToken(data.token);
-  const user: AuthUser = { userId: data.userId, username: data.username, nickname: data.nickname };
+  const user: AuthUser = {
+    userId: data.userId,
+    username: data.username,
+    nickname: data.nickname,
+    role: data.role || "USER",
+  };
   storeUser(user);
   return user;
 }
 
-export async function register(username: string, password: string): Promise<AuthUser> {
-  const res = await fetch("http://localhost:8080/auth/register", {
+export async function register(
+  username: string,
+  password: string,
+  nickname: string,
+): Promise<AuthUser> {
+  const res = await fetch(backendUrl("/auth/register"), {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ username, password }),
+    body: JSON.stringify({ username, password, nickname }),
   });
   const data = await res.json();
   if (data.error) throw new Error(data.error);
   setToken(data.token);
-  const user: AuthUser = { userId: data.userId, username: data.username, nickname: data.nickname };
+  const user: AuthUser = {
+    userId: data.userId,
+    username: data.username,
+    nickname: data.nickname,
+    role: data.role || "USER",
+  };
   storeUser(user);
   return user;
 }

@@ -1,0 +1,339 @@
+{
+  "id": "ru-idioms",
+  "title": "俄语成语与固定搭配",
+  "description": "俄语常用成语动词固定搭配和习惯用语。",
+  "cover": "https://images.unsplash.com/photo-1504904126296-3a0e56c1ddd9?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ruid-01",
+      "order": 1,
+      "title": "身体部位成语",
+      "description": "与身体部位相关的俄语成语。",
+      "statements": [
+        {
+          "english": "сломя́ го́лову",
+          "chinese": "拼命地飞快地",
+          "soundmark": "sla-MYA GO-la-voo"
+        },
+        {
+          "english": "наступи́ть на у́хо",
+          "chinese": "五音不全",
+          "soundmark": "na-stoo-PEET na OO-kha"
+        },
+        {
+          "english": "води́ть за нос",
+          "chinese": "愚弄欺骗",
+          "soundmark": "va-DEET za nos"
+        },
+        {
+          "english": "заруби́ть на носу́",
+          "chinese": "牢记在心",
+          "soundmark": "za-roo-BEET na na-SOO"
+        },
+        {
+          "english": "мозо́лить глаза́",
+          "chinese": "惹人厌烦",
+          "soundmark": "ma-ZO-leet gla-ZA"
+        }
+      ]
+    },
+    {
+      "id": "ruid-02",
+      "order": 2,
+      "title": "动物成语",
+      "description": "与动物相关的俄语成语。",
+      "statements": [
+        {
+          "english": "ку́рица ла́пой",
+          "chinese": "写得像鸡爪爬的",
+          "soundmark": "KOO-ree-tsa LA-poy"
+        },
+        {
+          "english": "медве́жья услу́га",
+          "chinese": "帮倒忙",
+          "soundmark": "med-VYEZH-ya oo-SLOO-ga"
+        },
+        {
+          "english": "как с гу́ся вода́",
+          "chinese": "若无其事满不在乎",
+          "soundmark": "kak s GOO-sya va-DA"
+        },
+        {
+          "english": "де́лать из му́хи слона́",
+          "chinese": "小题大做",
+          "soundmark": "DYE-lat eez MOO-hee sla-NA"
+        },
+        {
+          "english": "бе́лая воро́на",
+          "chinese": "与众不同的人",
+          "soundmark": "BYE-la-ya va-RO-na"
+        }
+      ]
+    },
+    {
+      "id": "ruid-03",
+      "order": 3,
+      "title": "食物成语",
+      "description": "与食物相关的俄语成语。",
+      "statements": [
+        {
+          "english": "как сыр в ма́сле",
+          "chinese": "生活富裕",
+          "soundmark": "kak syr v MAS-le"
+        },
+        {
+          "english": "хле́б насу́щный",
+          "chinese": "日常生计",
+          "soundmark": "hleb na-SOOSH-ny"
+        },
+        {
+          "english": "ка́ша во рту́",
+          "chinese": "口齿不清",
+          "soundmark": "KA-sha va RTOO"
+        },
+        {
+          "english": "са́хар медо́вич",
+          "chinese": "甜言蜜语的人",
+          "soundmark": "SA-khar me-DO-veech"
+        },
+        {
+          "english": "компо́т",
+          "chinese": "混乱一团",
+          "soundmark": "kom-POT"
+        }
+      ]
+    },
+    {
+      "id": "ruid-04",
+      "order": 4,
+      "title": "颜色成语",
+      "description": "与颜色相关的俄语成语。",
+      "statements": [
+        {
+          "english": "си́ний чуло́к",
+          "chinese": "书呆子女学者",
+          "soundmark": "SEE-nee choo-LOK"
+        },
+        {
+          "english": "зелёная тоска́",
+          "chinese": "非常无聊",
+          "soundmark": "ze-LYO-na-ya tas-KA"
+        },
+        {
+          "english": "чёрный день",
+          "chinese": "困难的日子",
+          "soundmark": "CHYOR-ny den"
+        },
+        {
+          "english": "ро́зовые очки́",
+          "chinese": "玫瑰色眼镜",
+          "soundmark": "RO-za-vy-e ach-KEE"
+        },
+        {
+          "english": "бе́лое пятно́",
+          "chinese": "空白点",
+          "soundmark": "BYE-la-ye pyat-NO"
+        }
+      ]
+    },
+    {
+      "id": "ruid-05",
+      "order": 5,
+      "title": "数字成语",
+      "description": "与数字相关的俄语成语。",
+      "statements": [
+        {
+          "english": "о́дин в по́ле не во́ин",
+          "chinese": "孤掌难鸣",
+          "soundmark": "O-deen v PO-le ne VO-een"
+        },
+        {
+          "english": "в два счёта",
+          "chinese": "很快立刻",
+          "soundmark": "f dva SHCHO-ta"
+        },
+        {
+          "english": "за́ семью́ печа́тями",
+          "chinese": "不可思议的秘密",
+          "soundmark": "za sem-YOO pe-CHA-tya-mee"
+        },
+        {
+          "english": "как свои́ пять па́льцев",
+          "chinese": "了如指掌",
+          "soundmark": "kak sva-EE pyat PAL-tsev"
+        },
+        {
+          "english": "сто раз",
+          "chinese": "无数次",
+          "soundmark": "sto ras"
+        }
+      ]
+    },
+    {
+      "id": "ruid-06",
+      "order": 6,
+      "title": "自然成语",
+      "description": "与自然现象相关的俄语成语。",
+      "statements": [
+        {
+          "english": "втира́ть очки́",
+          "chinese": "欺骗蒙骗",
+          "soundmark": "vtee-RAT ach-KEE"
+        },
+        {
+          "english": "после до́ждичка в четве́рг",
+          "chinese": "遥遥无期",
+          "soundmark": "POS-le DOZH-deech-ka f chet-VYERK"
+        },
+        {
+          "english": "бо́льшому кораблю́ — большо́е пла́вание",
+          "chinese": "大船行远路",
+          "soundmark": "BAL-sho-mu ka-rab-LYU bal-SHO-ye PLA-va-nee-ye"
+        },
+        {
+          "english": "бу́ря в стака́не воды́",
+          "chinese": "杯水风波",
+          "soundmark": "BOO-rya f sta-KA-ne va-DY"
+        },
+        {
+          "english": "как снег на́ голову",
+          "chinese": "突如其来",
+          "soundmark": "kak snek NA go-la-vu"
+        }
+      ]
+    },
+    {
+      "id": "ruid-07",
+      "order": 7,
+      "title": "时间成语",
+      "description": "与时间相关的俄语成语。",
+      "statements": [
+        {
+          "english": "мину́та в мину́ту",
+          "chinese": "准时",
+          "soundmark": "mee-NOO-ta v mee-NOO-too"
+        },
+        {
+          "english": "со дня на́ день",
+          "chinese": "日内很快",
+          "soundmark": "sa dnya NA den"
+        },
+        {
+          "english": "вре́мя от вре́мени",
+          "chinese": "有时偶尔",
+          "soundmark": "VRE-mya at VRE-me-nee"
+        },
+        {
+          "english": "ко́нченный час",
+          "chinese": "很晚的时候",
+          "soundmark": "KON-chen-ny chas"
+        },
+        {
+          "english": "ра́но и́ли по́здно",
+          "chinese": "迟早",
+          "soundmark": "RA-na EE-lee POZ-na"
+        }
+      ]
+    },
+    {
+      "id": "ruid-08",
+      "order": 8,
+      "title": "动作成语",
+      "description": "与行为动作相关的俄语成语。",
+      "statements": [
+        {
+          "english": "бить баклу́ши",
+          "chinese": "无所事事",
+          "soundmark": "BEET bak-LOO-shee"
+        },
+        {
+          "english": "сесть в лу́жу",
+          "chinese": "出丑",
+          "soundmark": "sest v LOO-zhoo"
+        },
+        {
+          "english": "тяну́ть кота́ за хвост",
+          "chinese": "拖延磨蹭",
+          "soundmark": "tya-NOOT ka-TA za khvast"
+        },
+        {
+          "english": "пу́таться под нога́ми",
+          "chinese": "碍手碍脚",
+          "soundmark": "POO-ta-tsa pad na-GA-mee"
+        },
+        {
+          "english": "смотре́ть сквозь па́льцы",
+          "chinese": "睁一只眼闭一只眼",
+          "soundmark": "sma-TRET skvoz PAL-tsy"
+        }
+      ]
+    },
+    {
+      "id": "ruid-09",
+      "order": 9,
+      "title": "情感成语",
+      "description": "表达情感的俄语成语。",
+      "statements": [
+        {
+          "english": "душа́ в ду́шу",
+          "chinese": "和睦相处",
+          "soundmark": "doo-SHA v DOO-shoo"
+        },
+        {
+          "english": "ко́шки на душе́ скребу́т",
+          "chinese": "心里难受",
+          "soundmark": "KOSH-kee na doo-SHE skre-BOOT"
+        },
+        {
+          "english": "сердце кро́вью облива́ется",
+          "chinese": "心如刀割",
+          "soundmark": "SER-tse KROV-yo ob-lee-VA-ye-tsa"
+        },
+        {
+          "english": "влюби́ться по́ уши",
+          "chinese": "深深爱上",
+          "soundmark": "vlyu-BEET-sya PO oo-shee"
+        },
+        {
+          "english": "сгоре́ть со стыда́",
+          "chinese": "羞愧万分",
+          "soundmark": "sga-RET sa sty-DA"
+        }
+      ]
+    },
+    {
+      "id": "ruid-10",
+      "order": 10,
+      "title": "日常用语",
+      "description": "日常交际常用俄语习惯用语。",
+      "statements": [
+        {
+          "english": "как бы́ть?",
+          "chinese": "怎么办？",
+          "soundmark": "kak BYT"
+        },
+        {
+          "english": "в чём де́ло?",
+          "chinese": "怎么回事？",
+          "soundmark": "f chom DE-la"
+        },
+        {
+          "english": "ни пу́ха ни пера́!",
+          "chinese": "祝你顺利！",
+          "soundmark": "nee POO-kha nee pe-RA"
+        },
+        {
+          "english": "с лёгким па́ром!",
+          "chinese": "洗个好澡！",
+          "soundmark": "s LYOKH-keem PA-ram"
+        },
+        {
+          "english": "руко́й пода́ть",
+          "chinese": "近在咫尺",
+          "soundmark": "roo-KOY pa-DAT"
+        }
+      ]
+    }
+  ]
+}

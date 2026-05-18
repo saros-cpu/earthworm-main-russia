@@ -4,9 +4,7 @@
     v-if="showNotice"
   >
     <div class="flex items-center justify-between">
-      <div class="font-bold">
-        鹅语菌正在完善课程内容与练习体验
-      </div>
+      <div class="font-bold">中大俄语正在完善课程内容与练习体验</div>
       <div class="hidden sm:flex sm:space-x-4">
         <button
           class="text-black"

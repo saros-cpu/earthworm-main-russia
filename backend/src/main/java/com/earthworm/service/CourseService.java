@@ -40,7 +40,7 @@ public class CourseService {
 
     private String userId() {
         String uid = currentUser.getUserId();
-        return uid != null ? uid : userId();
+        return uid != null ? uid : DEV_USER_ID;
     }
 
     public List<Map<String, Object>> findCoursePacks() {
@@ -202,6 +202,8 @@ public class CourseService {
         item.put("statementIndex", 0);
         item.put("statementCount", statementRepository.countByCourseId(course.getId()));
         item.put("video", course.getVideo());
+        String lyrics = CustomCoursePackService.LYRICS_CACHE.get(course.getId());
+        if (lyrics != null) item.put("lyrics", lyrics);
         return item;
     }
 

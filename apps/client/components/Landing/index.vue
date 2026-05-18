@@ -1,10 +1,7 @@
 <template>
   <div class="font-customFont">
-    <LandingBanner @start-earthworm="startEarthworm" />
+    <LandingBanner @start-lesson="startLesson" />
     <LandingFeatures />
-    <LandingComments />
-    <LandingQuestions />
-    <LandingContact />
     <CommonBackTop class="sticky bottom-28 ml-auto flex justify-end sm:block" />
   </div>
 </template>
@@ -16,27 +13,27 @@ import { useRouter } from "vue-router";
 import { isAuthenticated } from "~/services/auth";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
-const { startEarthworm } = useShortcutToGame();
+const { startLesson } = useShortcutToGame();
 
 function useShortcutToGame() {
   const router = useRouter();
 
-  async function startEarthworm() {
+  async function startLesson() {
     if (!isAuthenticated()) {
       router.push(`/course-pack`);
     }
   }
 
   onMounted(() => {
-    registerShortcut("enter", startEarthworm);
+    registerShortcut("enter", startLesson);
   });
 
   onUnmounted(() => {
-    cancelShortcut("enter", startEarthworm);
+    cancelShortcut("enter", startLesson);
   });
 
   return {
-    startEarthworm,
+    startLesson,
   };
 }
 </script>

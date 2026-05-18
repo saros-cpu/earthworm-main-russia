@@ -57,7 +57,7 @@ $pnpm = (Get-Command pnpm.cmd -ErrorAction Stop).Source
 Write-Host "Starting Nuxt frontend on http://localhost:3000 ..."
 Start-Process `
     -FilePath $pnpm `
-    -ArgumentList "dev --port 3000" `
+    -ArgumentList "dev --port 3000 --host 0.0.0.0" `
     -WorkingDirectory "$root\apps\client" `
     -RedirectStandardOutput "$root\frontend-nuxt.log" `
     -RedirectStandardError "$root\frontend-nuxt.err.log" `

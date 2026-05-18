@@ -1,6 +1,5 @@
 package com.earthworm.service;
 
-import com.earthworm.config.UserContext;
 import com.earthworm.model.Course;
 import com.earthworm.model.CoursePack;
 import com.earthworm.model.Statement;
@@ -28,6 +27,97 @@ public class AdminCourseService {
         return coursePackRepository.findAll().stream().map(this::toPackItem).toList();
     }
 
+    /**
+     * Aggregated statistics for the admin dashboard + landing page.
+     * Returns:
+     *   { totals: { packs, courses, statements },
+     *     packs: [ { id, title, courses, statements } sorted by statements desc ],
+     *     series: [ { key, label, packs, courses, statements } ] }
+     */
+    public Map<String, Object> stats() {
+        List<CoursePack> packs = coursePackRepository.findAll();
+        long totalCourses = 0;
+        long totalStatements = 0;
+        List<Map<String, Object>> packStats = new ArrayList<>();
+        Map<String, long[]> seriesAgg = new LinkedHashMap<>(); // key → [packs, courses, stmts]
+        for (CoursePack p : packs) {
+            List<Course> courses = courseRepository.findByCoursePackIdOrderByOrderAsc(p.getId());
+            long stmts = 0;
+            for (Course c : courses) {
+                stmts += statementRepository.findByCourseIdOrderByOrderAsc(c.getId()).size();
+            }
+            totalCourses += courses.size();
+            totalStatements += stmts;
+            Map<String, Object> row = new LinkedHashMap<>();
+            row.put("id", p.getId());
+            row.put("title", p.getTitle());
+            row.put("courses", courses.size());
+            row.put("statements", stmts);
+            packStats.add(row);
+
+            String seriesKey = classifyPackSeries(p.getId(), p.getTitle());
+            seriesAgg.computeIfAbsent(seriesKey, k -> new long[3]);
+            long[] agg = seriesAgg.get(seriesKey);
+            agg[0] += 1;
+            agg[1] += courses.size();
+            agg[2] += stmts;
+        }
+        packStats.sort((a, b) -> Long.compare((long) b.get("statements"), (long) a.get("statements")));
+
+        List<Map<String, Object>> seriesRows = new ArrayList<>();
+        for (Map.Entry<String, long[]> e : seriesAgg.entrySet()) {
+            Map<String, Object> row = new LinkedHashMap<>();
+            row.put("key", e.getKey());
+            row.put("label", seriesLabel(e.getKey()));
+            row.put("packs", e.getValue()[0]);
+            row.put("courses", e.getValue()[1]);
+            row.put("statements", e.getValue()[2]);
+            seriesRows.add(row);
+        }
+        seriesRows.sort((a, b) -> Long.compare((long) b.get("statements"), (long) a.get("statements")));
+
+        Map<String, Object> totals = new LinkedHashMap<>();
+        totals.put("packs", packs.size());
+        totals.put("courses", totalCourses);
+        totals.put("statements", totalStatements);
+
+        Map<String, Object> result = new LinkedHashMap<>();
+        result.put("totals", totals);
+        result.put("packs", packStats);
+        result.put("series", seriesRows);
+        return result;
+    }
+
+    private String classifyPackSeries(String id, String title) {
+        if (id == null) id = "";
+        if (title == null) title = "";
+        // 考试备考：TORFL + CATTI
+        if (id.startsWith("torfl-") || id.startsWith("catti-") || id.startsWith("exam-")) return "exam";
+        if (id.equals("ru-baby-care") || id.equals("ru-oil-station") ||
+            id.equals("ru-construction") || id.equals("ru-logistics") ||
+            id.equals("ru-it-tech") || id.equals("ru-legal") ||
+            id.equals("ru-medical") || id.equals("ru-trade") ||
+            id.equals("ru-tourism") || id.equals("ru-education")) return "fluent";
+        if (id.startsWith("ru-basic-") || title.contains("入门")) return "basic";
+        if (id.startsWith("vocab-pack-") || id.startsWith("ru-grammar-") || title.contains("单词") || title.contains("词汇") || title.contains("语法")) return "grammar";
+        if (id.startsWith("east-uni-") || title.contains("大学俄语")) return "textbook";
+        if (title.contains("走遍") || title.contains("自学辅导")) return "textbook";
+        if (id.startsWith("ru-spoken-") || title.contains("口语")) return "speaking";
+        return "other";
+    }
+
+    private String seriesLabel(String key) {
+        return switch (key) {
+            case "basic" -> "零基础 · 入门";
+            case "speaking" -> "口语会话 · 情景实战";
+            case "grammar" -> "词汇语法 · 基础强化";
+            case "textbook" -> "教材同步 · 课本精讲";
+            case "exam" -> "俄语考级 · TORFL 与 CATTI";
+            case "fluent" -> "行业俄语 · 专业应用";
+            default -> "其他";
+        };
+    }
+
     public Map<String, Object> coursePack(String id) {
         CoursePack pack = coursePackRepository.findById(id).orElseThrow();
         Map<String, Object> result = toPackItem(pack);
@@ -47,6 +137,9 @@ public class AdminCourseService {
         CoursePack pack = coursePackRepository.findById(id).orElseThrow();
         if (body.containsKey("title")) pack.setTitle((String) body.get("title"));
         if (body.containsKey("description")) pack.setDescription((String) body.get("description"));
+        if (body.containsKey("cover")) pack.setCover((String) body.get("cover"));
+        if (body.containsKey("shareLevel")) pack.setShareLevel((String) body.get("shareLevel"));
+        if (body.containsKey("isFree")) pack.setIsFree((Boolean) body.get("isFree"));
         coursePackRepository.save(pack);
         return toPackItem(pack);
     }
@@ -87,6 +180,7 @@ public class AdminCourseService {
         m.put("id", pack.getId()); m.put("title", pack.getTitle());
         m.put("description", pack.getDescription()); m.put("order", pack.getOrder());
         m.put("shareLevel", pack.getShareLevel()); m.put("isFree", pack.getIsFree());
+        m.put("cover", pack.getCover());
         return m;
     }
 
@@ -95,6 +189,7 @@ public class AdminCourseService {
         m.put("id", c.getId()); m.put("title", c.getTitle());
         m.put("description", c.getDescription()); m.put("order", c.getOrder());
         m.put("coursePackId", c.getCoursePackId());
+        m.put("video", c.getVideo());
         return m;
     }
 
@@ -102,8 +197,15 @@ public class AdminCourseService {
         Course course = courseRepository.findById(id).orElseThrow();
         if (body.containsKey("title")) course.setTitle((String) body.get("title"));
         if (body.containsKey("description")) course.setDescription((String) body.get("description"));
+        if (body.containsKey("video")) course.setVideo((String) body.get("video"));
         courseRepository.save(course);
         return toCourseItem(course);
+    }
+
+    @Transactional
+    public Boolean deleteCoursePack(String id) {
+        coursePackRepository.deleteById(id);
+        return true;
     }
 
     public Boolean deleteCourse(String id) {
@@ -127,6 +229,16 @@ public class AdminCourseService {
 
     public Map<String, Object> refineStatement(String id) {
         return toStatementItem(statementRepository.findById(id).orElseThrow());
+    }
+
+    public int refineCourseStatements(String courseId) {
+        var statements = statementRepository.findByCourseIdOrderByOrderAsc(courseId);
+        int count = 0;
+        for (var stmt : statements) {
+            refineStatement(stmt.getId());
+            count++;
+        }
+        return count;
     }
 
     private Map<String, Object> toStatementItem(Statement s) {

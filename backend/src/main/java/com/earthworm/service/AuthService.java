@@ -19,7 +19,7 @@ public class AuthService {
         this.jwtUtil = jwtUtil;
     }
 
-    public Map<String, Object> register(String username, String password) {
+    public Map<String, Object> register(String username, String password, String nickname) {
         if (username == null || username.length() < 2) {
             return Map.of("error", "Username must be at least 2 characters");
         }
@@ -34,11 +34,11 @@ public class AuthService {
         user.setId(UUID.randomUUID().toString());
         user.setUsername(username);
         user.setPasswordHash(hashPassword(password));
-        user.setNickname(username);
+        user.setNickname(nickname != null && !nickname.isBlank() ? nickname : username);
         userRepository.save(user);
 
-        String token = jwtUtil.generateToken(user.getId(), user.getUsername());
-        return Map.of("token", token, "userId", user.getId(), "username", user.getUsername(), "nickname", user.getNickname());
+        String token = jwtUtil.generateToken(user.getId(), user.getUsername(), user.getRole());
+        return Map.of("token", token, "userId", user.getId(), "username", user.getUsername(), "nickname", user.getNickname(), "role", user.getRole());
     }
 
     public Map<String, Object> login(String username, String password) {
@@ -50,8 +50,8 @@ public class AuthService {
             return Map.of("error", "Incorrect password");
         }
 
-        String token = jwtUtil.generateToken(user.getId(), user.getUsername());
-        return Map.of("token", token, "userId", user.getId(), "username", user.getUsername(), "nickname", user.getNickname());
+        String token = jwtUtil.generateToken(user.getId(), user.getUsername(), user.getRole());
+        return Map.of("token", token, "userId", user.getId(), "username", user.getUsername(), "nickname", user.getNickname(), "role", user.getRole());
     }
 
     public Map<String, Object> getCurrentUser(String userId) {
@@ -62,6 +62,7 @@ public class AuthService {
                     m.put("username", u.getUsername());
                     m.put("nickname", u.getNickname() != null ? u.getNickname() : u.getUsername());
                     m.put("avatar", u.getAvatar() != null ? u.getAvatar() : "");
+                    m.put("role", u.getRole());
                     return m;
                 })
                 .orElse(Map.of("error", "not found"));

@@ -16,7 +16,7 @@ public class AuthController {
 
     @PostMapping("/auth/register")
     public Map<String, Object> register(@RequestBody Map<String, String> body) {
-        return authService.register(body.get("username"), body.get("password"));
+        return authService.register(body.get("username"), body.get("password"), body.get("nickname"));
     }
 
     @PostMapping("/auth/login")

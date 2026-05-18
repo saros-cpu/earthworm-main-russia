@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.*;
 import java.net.HttpURLConnection;
+import java.net.URI;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
@@ -48,7 +49,7 @@ public class AiAssistantService {
             String escaped = jsonEscape(prompt);
             String body = "{\"model\":\"" + jsonEscape(model) + "\",\"messages\":[{\"role\":\"user\",\"content\":\"" + escaped + "\"}]}";
 
-            URL url = new URL(baseUrl + "/chat/completions");
+            URL url = URI.create(baseUrl + "/chat/completions").toURL();
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("POST");
             conn.setRequestProperty("Content-Type", "application/json");

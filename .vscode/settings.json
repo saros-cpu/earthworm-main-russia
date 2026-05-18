@@ -7,5 +7,6 @@
   "scss.lint.unknownAtRules": "ignore",
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
-  }
+  },
+  "java.compile.nullAnalysis.mode": "automatic"
 }

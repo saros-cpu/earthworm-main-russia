@@ -1,0 +1,339 @@
+{
+  "id": "ru-geography",
+  "title": "俄罗斯地理",
+  "description": "俄罗斯地理名称自然景观和城市相关俄语词汇。",
+  "cover": "https://images.unsplash.com/photo-1540648639573-8c848de23f0a?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ruge-01",
+      "order": 1,
+      "title": "首都莫斯科",
+      "description": "俄罗斯首都莫斯科相关词汇。",
+      "statements": [
+        {
+          "english": "Москва́",
+          "chinese": "莫斯科",
+          "soundmark": "mas-KVA"
+        },
+        {
+          "english": "Красная площадь",
+          "chinese": "红场",
+          "soundmark": "KRAS-na-ya PLO-shchad"
+        },
+        {
+          "english": "Моско́вский Кремль",
+          "chinese": "莫斯科克里姆林宫",
+          "soundmark": "mas-KOV-skee kreml"
+        },
+        {
+          "english": "Метро́",
+          "chinese": "地铁",
+          "soundmark": "me-TRO"
+        },
+        {
+          "english": "Третьяко́вская галере́я",
+          "chinese": "特列季亚科夫画廊",
+          "soundmark": "tre-tya-KOV-ska-ya ga-le-RE-ya"
+        }
+      ]
+    },
+    {
+      "id": "ruge-02",
+      "order": 2,
+      "title": "圣彼得堡",
+      "description": "圣彼得堡相关词汇。",
+      "statements": [
+        {
+          "english": "Санкт-Петербу́рг",
+          "chinese": "圣彼得堡",
+          "soundmark": "sankt-pe-ter-BOORK"
+        },
+        {
+          "english": "Нева́",
+          "chinese": "涅瓦河",
+          "soundmark": "ne-VA"
+        },
+        {
+          "english": "Эрмита́ж",
+          "chinese": "冬宫博物馆",
+          "soundmark": "er-mee-TASH"
+        },
+        {
+          "english": "Дворцо́вая площадь",
+          "chinese": "冬宫广场",
+          "soundmark": "dvar-TSO-va-ya PLO-shchad"
+        },
+        {
+          "english": "разводны́е мосты́",
+          "chinese": "开合桥",
+          "soundmark": "raz-vad-NY-e mos-TY"
+        }
+      ]
+    },
+    {
+      "id": "ruge-03",
+      "order": 3,
+      "title": "贝加尔湖",
+      "description": "贝加尔湖自然地理词汇。",
+      "statements": [
+        {
+          "english": "озеро",
+          "chinese": "湖",
+          "soundmark": "O-ze-ra"
+        },
+        {
+          "english": "Байка́л",
+          "chinese": "贝加尔湖",
+          "soundmark": "bay-KAL"
+        },
+        {
+          "english": "пресная вода",
+          "chinese": "淡水",
+          "soundmark": "PRES-na-ya va-DA"
+        },
+        {
+          "english": "глубокий",
+          "chinese": "深的",
+          "soundmark": "gloo-BO-kee"
+        },
+        {
+          "english": "эндемик",
+          "chinese": "特有物种",
+          "soundmark": "en-DE-meek"
+        }
+      ]
+    },
+    {
+      "id": "ruge-04",
+      "order": 4,
+      "title": "乌拉尔山脉",
+      "description": "乌拉尔山脉地理词汇。",
+      "statements": [
+        {
+          "english": "Ура́льские го́ры",
+          "chinese": "乌拉尔山脉",
+          "soundmark": "oo-RAL-ske-ye GO-ry"
+        },
+        {
+          "english": "грани́ца",
+          "chinese": "边界",
+          "soundmark": "gra-NEE-tsa"
+        },
+        {
+          "english": "поле́зные ископа́емые",
+          "chinese": "矿产",
+          "soundmark": "pa-LEZ-ny-e ees-ka-PA-ye-my-e"
+        },
+        {
+          "english": "верши́на",
+          "chinese": "山顶",
+          "soundmark": "ver-SHEE-na"
+        },
+        {
+          "english": "лес",
+          "chinese": "森林",
+          "soundmark": "lyes"
+        }
+      ]
+    },
+    {
+      "id": "ruge-05",
+      "order": 5,
+      "title": "伏尔加河",
+      "description": "伏尔加河相关地理词汇。",
+      "statements": [
+        {
+          "english": "река́",
+          "chinese": "河流",
+          "soundmark": "re-KA"
+        },
+        {
+          "english": "Во́лга",
+          "chinese": "伏尔加河",
+          "soundmark": "VOL-ga"
+        },
+        {
+          "english": "прито́к",
+          "chinese": "支流",
+          "soundmark": "pree-TOK"
+        },
+        {
+          "english": "судохо́дство",
+          "chinese": "航运",
+          "soundmark": "soo-da-KHOD-stva"
+        },
+        {
+          "english": "де́льта",
+          "chinese": "三角洲",
+          "soundmark": "DEL-ta"
+        }
+      ]
+    },
+    {
+      "id": "ruge-06",
+      "order": 6,
+      "title": "西伯利亚",
+      "description": "西伯利亚地区地理词汇。",
+      "statements": [
+        {
+          "english": "Сиби́рь",
+          "chinese": "西伯利亚",
+          "soundmark": "see-BEER"
+        },
+        {
+          "english": "тайга́",
+          "chinese": "泰加林",
+          "soundmark": "tay-GA"
+        },
+        {
+          "english": "тундра",
+          "chinese": "冻原",
+          "soundmark": "TOOND-ra"
+        },
+        {
+          "english": "ве́чная мерзлота́",
+          "chinese": "永久冻土",
+          "soundmark": "VECH-na-ya mer-zla-TA"
+        },
+        {
+          "english": "река́ Обь",
+          "chinese": "鄂毕河",
+          "soundmark": "re-KA op"
+        }
+      ]
+    },
+    {
+      "id": "ruge-07",
+      "order": 7,
+      "title": "俄罗斯远东",
+      "description": "俄罗斯远东地区地理词汇。",
+      "statements": [
+        {
+          "english": "Дальний Восток",
+          "chinese": "远东",
+          "soundmark": "DAL-nee vas-TOK"
+        },
+        {
+          "english": "Владивосто́к",
+          "chinese": "符拉迪沃斯托克",
+          "soundmark": "vla-dee-vas-TOK"
+        },
+        {
+          "english": "Ти́хий океа́н",
+          "chinese": "太平洋",
+          "soundmark": "TEE-khee o-ke-AN"
+        },
+        {
+          "english": "тигр",
+          "chinese": "老虎",
+          "soundmark": "teegr"
+        },
+        {
+          "english": "полуо́стров Камча́тка",
+          "chinese": "堪察加半岛",
+          "soundmark": "pa-loo-OST-raf kam-CHAT-ka"
+        }
+      ]
+    },
+    {
+      "id": "ruge-08",
+      "order": 8,
+      "title": "高加索山脉",
+      "description": "高加索地区地理词汇。",
+      "statements": [
+        {
+          "english": "Кавка́з",
+          "chinese": "高加索",
+          "soundmark": "kav-KAZ"
+        },
+        {
+          "english": "Кавка́зские го́ры",
+          "chinese": "高加索山脉",
+          "soundmark": "kav-KAZ-ske-ye GO-ry"
+        },
+        {
+          "english": "Эльбру́с",
+          "chinese": "厄尔布鲁士山",
+          "soundmark": "el-BROOS"
+        },
+        {
+          "english": "курорт",
+          "chinese": "疗养地",
+          "soundmark": "koo-ROrt"
+        },
+        {
+          "english": "предго́рье",
+          "chinese": "山麓",
+          "soundmark": "pred-GO-re"
+        }
+      ]
+    },
+    {
+      "id": "ruge-09",
+      "order": 9,
+      "title": "北极地区",
+      "description": "俄罗斯北极地区相关词汇。",
+      "statements": [
+        {
+          "english": "А́рктика",
+          "chinese": "北极",
+          "soundmark": "ARK-tee-ka"
+        },
+        {
+          "english": "Се́верный ледови́тый океа́н",
+          "chinese": "北冰洋",
+          "soundmark": "SYE-ver-ny le-da-VEE-ty o-ke-AN"
+        },
+        {
+          "english": "айсберг",
+          "chinese": "冰山",
+          "soundmark": "AIS-berg"
+        },
+        {
+          "english": "по́люс",
+          "chinese": "极点",
+          "soundmark": "PO-lyus"
+        },
+        {
+          "english": "се́верное сия́ние",
+          "chinese": "北极光",
+          "soundmark": "SYE-ver-na-ye see-YA-nee-ye"
+        }
+      ]
+    },
+    {
+      "id": "ruge-10",
+      "order": 10,
+      "title": "地理常识",
+      "description": "地理基础知识相关词汇。",
+      "statements": [
+        {
+          "english": "материк",
+          "chinese": "大陆",
+          "soundmark": "ma-te-REEK"
+        },
+        {
+          "english": "государственная граница",
+          "chinese": "国界",
+          "soundmark": "ga-soo-DAR-stven-na-ya gra-NEE-tsa"
+        },
+        {
+          "english": "часово́й по́яс",
+          "chinese": "时区",
+          "soundmark": "cha-sa-VOY PO-yas"
+        },
+        {
+          "english": "столи́ца",
+          "chinese": "首都",
+          "soundmark": "sta-LEE-tsa"
+        },
+        {
+          "english": "населе́ние",
+          "chinese": "人口",
+          "soundmark": "na-se-LE-nee-ye"
+        }
+      ]
+    }
+  ]
+}

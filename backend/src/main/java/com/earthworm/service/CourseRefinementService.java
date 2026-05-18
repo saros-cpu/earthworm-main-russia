@@ -16,12 +16,10 @@ public class CourseRefinementService {
 
     private final JdbcTemplate jdbcTemplate;
     private final ObjectMapper objectMapper;
-    private final OpenAiRefinementClient openAiRefinementClient;
 
-    public CourseRefinementService(JdbcTemplate jdbcTemplate, ObjectMapper objectMapper, OpenAiRefinementClient openAiRefinementClient) {
+    public CourseRefinementService(JdbcTemplate jdbcTemplate, ObjectMapper objectMapper) {
         this.jdbcTemplate = jdbcTemplate;
         this.objectMapper = objectMapper;
-        this.openAiRefinementClient = openAiRefinementClient;
     }
 
     public Map<String, Map<String, Object>> findRefinements(List<String> statementIds) {
@@ -31,7 +29,7 @@ public class CourseRefinementService {
         String placeholders = String.join(",", statementIds.stream().map(id -> "?").toList());
         String sql = "SELECT statement_id, source_text, target_text, translation, vocabulary_json, grammar_note, difficulty, refinement_mode FROM statement_refinements WHERE statement_id IN (" + placeholders + ")";
 
-        jdbcTemplate.query(sql, statementIds.toArray(), rs -> {
+        jdbcTemplate.query(sql, (java.sql.ResultSet rs) -> {
             String stmtId = rs.getString("statement_id");
             Map<String, Object> refinement = new LinkedHashMap<>();
             refinement.put("refinementMode", rs.getString("refinement_mode"));
@@ -46,7 +44,7 @@ public class CourseRefinementService {
                 } catch (Exception ignored) {}
             }
             result.put(stmtId, refinement);
-        });
+        }, statementIds.toArray());
         return result;
     }
 

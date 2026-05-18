@@ -1,0 +1,329 @@
+{
+  "id": "ru-spoken-transport",
+  "title": "交通出行俄语",
+  "description": "乘坐公交地铁出租车以及在路上的交际用语。",
+  "cover": "https://images.unsplash.com/photo-1569254715326-9d5c1a9d53a6?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rutr-01",
+      "order": 1,
+      "title": "购买车票",
+      "description": "买票时的常用表达。",
+      "statements": [
+        {
+          "english": "Ско́лько сто́ит биле́т до Москвы́?",
+          "chinese": "到莫斯科的车票多少钱？",
+          "soundmark": "SKOL-ka STO-eet bee-LYET da mas-KVY"
+        },
+        {
+          "english": "Мне оди́н биле́т, пожа́луйста.",
+          "chinese": "请给我一张票。",
+          "soundmark": "mne a-DEEN bee-LYET pa-ZHAL-sta"
+        },
+        {
+          "english": "Есть ли ски́дка для студе́нтов?",
+          "chinese": "学生有优惠吗？",
+          "soundmark": "yest lee SKEE-dka dlya stoo-DEN-tav"
+        },
+        {
+          "english": "Мо́жно купи́ть биле́т туда́ и обра́тно?",
+          "chinese": "可以买往返票吗？",
+          "soundmark": "MOZH-na koo-PEET bee-LYET too-DA i ab-RAT-na"
+        },
+        {
+          "english": "В како́м окне́ продаю́т биле́ты?",
+          "chinese": "哪个窗口卖票？",
+          "soundmark": "v ka-KOM ak-NE pra-da-YOOT bee-LYE-ty"
+        }
+      ]
+    },
+    {
+      "id": "rutr-02",
+      "order": 2,
+      "title": "问路指路",
+      "description": "询问路线和方向的常用表达。",
+      "statements": [
+        {
+          "english": "Как пройти́ до вокза́ла?",
+          "chinese": "去火车站怎么走？",
+          "soundmark": "kak proy-TEE da vak-ZA-la"
+        },
+        {
+          "english": "Иди́те пря́мо, потом нале́во.",
+          "chinese": "直走然后左转。",
+          "soundmark": "ee-DEE-tye PRYA-ma pa-TOM na-LE-va"
+        },
+        {
+          "english": "Э́то далеко́ отсю́да?",
+          "chinese": "离这里远吗？",
+          "soundmark": "E-ta da-le-KO at-SYU-da"
+        },
+        {
+          "english": "Поверни́те на пе́рвом перекрёстке.",
+          "chinese": "在第一个十字路口转弯。",
+          "soundmark": "pa-ver-NEE-tye na PYR-vom pe-re-KRYOS-kye"
+        },
+        {
+          "english": "Мо́жно дойти́ пешко́м?",
+          "chinese": "可以步行去吗？",
+          "soundmark": "MOZH-na doy-TEE pesh-KOM"
+        }
+      ]
+    },
+    {
+      "id": "rutr-03",
+      "order": 3,
+      "title": "乘公交车",
+      "description": "乘坐公交车时的对话。",
+      "statements": [
+        {
+          "english": "Где остано́вка авто́буса?",
+          "chinese": "公交车站在哪？",
+          "soundmark": "gde as-ta-NOV-ka af-TO-boo-sa"
+        },
+        {
+          "english": "Э́тот авто́бус идёт до це́нтра?",
+          "chinese": "这路车到市中心吗？",
+          "soundmark": "E-tat af-TO-boos ee-DYOT da TSEN-tra"
+        },
+        {
+          "english": "Вы выхо́дите на сле́дующей?",
+          "chinese": "您下一站下车吗？",
+          "soundmark": "vy vy-KHO-dee-tye na SLYE-doo-yoo-shchey"
+        },
+        {
+          "english": "Останови́те здесь, пожа́луйста.",
+          "chinese": "请在这里停。",
+          "soundmark": "a-sta-na-VEE-tye ZDES pa-ZHAL-sta"
+        },
+        {
+          "english": "Ско́лько остано́вок до це́нтра?",
+          "chinese": "到市中心还有几站？",
+          "soundmark": "SKOL-ka as-ta-NO-vak da TSEN-tra"
+        }
+      ]
+    },
+    {
+      "id": "rutr-04",
+      "order": 4,
+      "title": "乘地铁",
+      "description": "乘坐地铁时的常用表达。",
+      "statements": [
+        {
+          "english": "Где станция метро́?",
+          "chinese": "地铁站在哪？",
+          "soundmark": "gde STAN-tsee-ya met-RO"
+        },
+        {
+          "english": "Кака́я ве́тка мне ну́жна?",
+          "chinese": "我该坐哪条线？",
+          "soundmark": "ka-KA-ya VYET-ka mne NOOZH-na"
+        },
+        {
+          "english": "Сде́лайте пе́ресадку на кольцево́й.",
+          "chinese": "在环线换乘。",
+          "soundmark": "ZDY-lay-tye pe-re-SAD-koo na kal-tse-VOY"
+        },
+        {
+          "english": "Сле́дующая станция — Пло́щадь Рево́люции.",
+          "chinese": "下一站是革命广场。",
+          "soundmark": "SLYE-doo-yoo-shcha-ya STAN-tsee-ya PLO-shchad re-VO-lyoo-tsee-ee"
+        },
+        {
+          "english": "Как до́лго е́хать до коне́чной?",
+          "chinese": "到终点站要多久？",
+          "soundmark": "kak DOL-ga YE-khat da ka-NYECH-noy"
+        }
+      ]
+    },
+    {
+      "id": "rutr-05",
+      "order": 5,
+      "title": "乘出租车",
+      "description": "打车时的对话。",
+      "statements": [
+        {
+          "english": "Вызови́те такси́, пожа́луйста.",
+          "chinese": "请叫辆出租车。",
+          "soundmark": "vy-za-VEE-tye tak-SEE pa-ZHAL-sta"
+        },
+        {
+          "english": "Ско́лько до аэропо́рта?",
+          "chinese": "到机场多少钱？",
+          "soundmark": "SKOL-ka da a-e-RO-por-ta"
+        },
+        {
+          "english": "Останови́те здесь, пожа́луйста.",
+          "chinese": "请在这里停。",
+          "soundmark": "a-sta-na-VEE-tye ZDES pa-ZHAL-sta"
+        },
+        {
+          "english": "Поверни́те напра́во на све́те.",
+          "chinese": "在红绿灯右转。",
+          "soundmark": "pa-ver-NEE-tye na-PRA-va na SVE-te"
+        }
+      ]
+    },
+    {
+      "id": "rutr-06",
+      "order": 6,
+      "title": "火车站",
+      "description": "在火车站的常用表达。",
+      "statements": [
+        {
+          "english": "С како́го вокза́ла отправля́ется по́езд?",
+          "chinese": "火车从哪个站出发？",
+          "soundmark": "s ka-KO-va vak-ZA-la at-prav-LYA-ye-tsa PO-yest"
+        },
+        {
+          "english": "Где зал ожида́ния?",
+          "chinese": "候车室在哪？",
+          "soundmark": "gde zal a-zhee-DA-nee-ya"
+        },
+        {
+          "english": "Когда́ отправле́ние по́езда?",
+          "chinese": "火车几点发车？",
+          "soundmark": "kag-DA at-prav-LE-nee-ye PO-yez-da"
+        },
+        {
+          "english": "Э́тот по́езд прибыва́ет по расписа́нию?",
+          "chinese": "这趟车准时吗？",
+          "soundmark": "E-tat PO-yest pree-by-VA-yet pa ras-pee-SA-nee-yoo"
+        },
+        {
+          "english": "Где платфо́рма № 5?",
+          "chinese": "5号站台在哪？",
+          "soundmark": "gde plat-FOR-ma no-mer pyat"
+        }
+      ]
+    },
+    {
+      "id": "rutr-07",
+      "order": 7,
+      "title": "机场值机",
+      "description": "在机场办理登机手续。",
+      "statements": [
+        {
+          "english": "Где регистра́ция на рейс SU 200?",
+          "chinese": "SU200航班在哪值机？",
+          "soundmark": "gde re-gee-STRA-tsee-ya na reys es-oo dvesti"
+        },
+        {
+          "english": "Мо́жно ме́сто у окна́?",
+          "chinese": "可以要靠窗的座位吗？",
+          "soundmark": "MOZH-na MES-ta oo ak-NA"
+        },
+        {
+          "english": "Ско́лько килогра́мм багажа́ мо́жно?",
+          "chinese": "可以托运多少公斤行李？",
+          "soundmark": "SKOL-ka kee-la-GRAM ba-ga-ZHA MOZH-na"
+        },
+        {
+          "english": "Выхо́д на поса́дку но́мер 12.",
+          "chinese": "登机口在12号。",
+          "soundmark": "VY-khad na pa-SAD-koo NO-mer dve-nad-tsat"
+        },
+        {
+          "english": "Рейс заде́рживается на час.",
+          "chinese": "航班晚点一小时。",
+          "soundmark": "reys za-DER-zhee-va-ye-tsa na chas"
+        }
+      ]
+    },
+    {
+      "id": "rutr-08",
+      "order": 8,
+      "title": "租车出行",
+      "description": "租车时的常用表达。",
+      "statements": [
+        {
+          "english": "Я хочу́ взять маши́ну напрока́т.",
+          "chinese": "我想租车。",
+          "soundmark": "ya kha-CHOO vzyat ma-SHY-noo na-pra-KAT"
+        },
+        {
+          "english": "Ско́лько сто́ит аре́нда на день?",
+          "chinese": "一天租金多少？",
+          "soundmark": "SKOL-ka STO-eet a-REN-da na den"
+        },
+        {
+          "english": "Мне ну́жен страхово́й по́люс.",
+          "chinese": "我需要保险。",
+          "soundmark": "mne NOO-zhen stra-kha-VOY PO-lis"
+        },
+        {
+          "english": "Где мо́жно сдать маши́ну?",
+          "chinese": "在哪里还车？",
+          "soundmark": "gde MOZH-na zdat ma-SHY-noo"
+        },
+        {
+          "english": "Како́й ти́п маши́ны у вас есть?",
+          "chinese": "你们有什么车型？",
+          "soundmark": "ka-KOY teep ma-SHY-ny oo vas YEST"
+        }
+      ]
+    },
+    {
+      "id": "rutr-09",
+      "order": 9,
+      "title": "交通问题",
+      "description": "遇到交通问题时的表达。",
+      "statements": [
+        {
+          "english": "Пробка на тра́ссе!",
+          "chinese": "路上堵车了！",
+          "soundmark": "PROB-ka na TRA-se"
+        },
+        {
+          "english": "Опа́здываю на по́езд.",
+          "chinese": "我要赶不上火车了。",
+          "soundmark": "a-PAZ-dy-va-yoo na PO-yest"
+        },
+        {
+          "english": "Где здесь парко́вка?",
+          "chinese": "这附近哪有停车场？",
+          "soundmark": "gde ZDES par-KOV-ka"
+        },
+        {
+          "english": "Меня́ оштрафова́ли за превыше́ние ско́рости.",
+          "chinese": "我超速被罚款了。",
+          "soundmark": "me-NYA ash-tra-fa-VA-lee za pre-vy-SHE-ne-ye SKO-ra-stee"
+        },
+        {
+          "english": "Мне ну́жен букси́р.",
+          "chinese": "我需要拖车。",
+          "soundmark": "mne NOO-zhen book-SEER"
+        }
+      ]
+    },
+    {
+      "id": "rutr-10",
+      "order": 10,
+      "title": "规划路线",
+      "description": "查询和规划出行路线的表达。",
+      "statements": [
+        {
+          "english": "Как лу́чше дое́хать до музе́я?",
+          "chinese": "去博物馆怎么走最好？",
+          "soundmark": "kak LOOCH-she da-YE-khat doo mu-ZEY-ya"
+        },
+        {
+          "english": "Ско́лько вре́мени заня́ть доро́га?",
+          "chinese": "路程要花多少时间？",
+          "soundmark": "SKOL-ka VRE-me-ne za-NYOT da-RO-ga"
+        },
+        {
+          "english": "На како́м тра́нспорте лу́чше е́хать?",
+          "chinese": "坐什么交通最好？",
+          "soundmark": "na ka-KOM TRAN-spor-tye LOOCH-she YE-khat"
+        },
+        {
+          "english": "Подскажи́те, как попа́сть на Кра́сную пло́щадь.",
+          "chinese": "请问怎么去红场？",
+          "soundmark": "pat-ska-ZHEE-tye kak pa-PAST na KRAS-noo-yo PLO-shchad"
+        }
+      ]
+    }
+  ]
+}

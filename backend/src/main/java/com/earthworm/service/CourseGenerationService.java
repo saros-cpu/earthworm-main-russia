@@ -16,7 +16,6 @@ public class CourseGenerationService {
     private final CoursePackRepository coursePackRepository;
     private final CourseRepository courseRepository;
     private final StatementRepository statementRepository;
-    private final CourseRefinementService refinementService;
     private final OpenAiRefinementClient openAiRefinementClient;
     private final AdminCourseService adminCourseService;
 
@@ -24,14 +23,12 @@ public class CourseGenerationService {
             CoursePackRepository coursePackRepository,
             CourseRepository courseRepository,
             StatementRepository statementRepository,
-            CourseRefinementService refinementService,
             OpenAiRefinementClient openAiRefinementClient,
             AdminCourseService adminCourseService
     ) {
         this.coursePackRepository = coursePackRepository;
         this.courseRepository = courseRepository;
         this.statementRepository = statementRepository;
-        this.refinementService = refinementService;
         this.openAiRefinementClient = openAiRefinementClient;
         this.adminCourseService = adminCourseService;
     }

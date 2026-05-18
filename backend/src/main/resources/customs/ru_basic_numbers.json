@@ -1,0 +1,554 @@
+{
+  "id": "ru-basic-numbers",
+  "title": "俄语数字与计量",
+  "description": "系统学习俄语基数词、序数词、钟点日期等数字表达。",
+  "cover": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "runu-01",
+      "order": 1,
+      "title": "基数词1–100",
+      "description": "学习俄语基数词1-100。",
+      "statements": [
+        {
+          "english": "оди́н",
+          "chinese": "一",
+          "soundmark": "a-DEEN"
+        },
+        {
+          "english": "два",
+          "chinese": "二",
+          "soundmark": "dva"
+        },
+        {
+          "english": "три",
+          "chinese": "三",
+          "soundmark": "tree"
+        },
+        {
+          "english": "четы́ре",
+          "chinese": "四",
+          "soundmark": "che-TY-re"
+        },
+        {
+          "english": "пять",
+          "chinese": "五",
+          "soundmark": "pyat"
+        },
+        {
+          "english": "де́сять",
+          "chinese": "十",
+          "soundmark": "DYE-syat"
+        },
+        {
+          "english": "два́дцать",
+          "chinese": "二十",
+          "soundmark": "DVAD-tsat"
+        },
+        {
+          "english": "три́дцать",
+          "chinese": "三十",
+          "soundmark": "TREED-tsat"
+        },
+        {
+          "english": "со́рок",
+          "chinese": "四十",
+          "soundmark": "SO-rak"
+        },
+        {
+          "english": "пятьдеся́т",
+          "chinese": "五十",
+          "soundmark": "pyat-de-SYAT"
+        },
+        {
+          "english": "сто",
+          "chinese": "一百",
+          "soundmark": "sto"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/13-Урок 1-1.avi"
+    },
+    {
+      "id": "runu-02",
+      "order": 2,
+      "title": "序数词",
+      "description": "俄语序数词构成和用法。",
+      "statements": [
+        {
+          "english": "пе́рвый",
+          "chinese": "第一",
+          "soundmark": "PYER-vy"
+        },
+        {
+          "english": "второ́й",
+          "chinese": "第二",
+          "soundmark": "vta-ROY"
+        },
+        {
+          "english": "тре́тий",
+          "chinese": "第三",
+          "soundmark": "TRE-tee"
+        },
+        {
+          "english": "четвёртый",
+          "chinese": "第四",
+          "soundmark": "chet-VYOR-ty"
+        },
+        {
+          "english": "пя́тый",
+          "chinese": "第五",
+          "soundmark": "PYA-ty"
+        },
+        {
+          "english": "деся́тый",
+          "chinese": "第十",
+          "soundmark": "de-SYA-ty"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/14-Урок 1-2.avi"
+    },
+    {
+      "id": "runu-03",
+      "order": 3,
+      "title": "百位与千位",
+      "description": "学习百位和千位数字的表达。",
+      "statements": [
+        {
+          "english": "две́сти",
+          "chinese": "二百",
+          "soundmark": "DVYES-tee"
+        },
+        {
+          "english": "три́ста",
+          "chinese": "三百",
+          "soundmark": "TREES-ta"
+        },
+        {
+          "english": "четы́реста",
+          "chinese": "四百",
+          "soundmark": "che-TY-rys-ta"
+        },
+        {
+          "english": "пятьсо́т",
+          "chinese": "五百",
+          "soundmark": "pyat-SOT"
+        },
+        {
+          "english": "ты́сяча",
+          "chinese": "一千",
+          "soundmark": "TY-sya-cha"
+        },
+        {
+          "english": "две ты́сячи",
+          "chinese": "两千",
+          "soundmark": "dve TY-sya-chee"
+        },
+        {
+          "english": "де́сять ты́сяч",
+          "chinese": "一万",
+          "soundmark": "DYE-syat TY-syach"
+        },
+        {
+          "english": "сто ты́сяч",
+          "chinese": "十万",
+          "soundmark": "sto TY-syach"
+        },
+        {
+          "english": "миллио́н",
+          "chinese": "一百万",
+          "soundmark": "mee-lee-ON"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/16-Урок 2-1.avi"
+    },
+    {
+      "id": "runu-04",
+      "order": 4,
+      "title": "价格与金钱",
+      "description": "俄语中询问和表达价格。",
+      "statements": [
+        {
+          "english": "Ско́лько э́то сто́ит?",
+          "chinese": "这个多少钱？",
+          "soundmark": "SKOL-ka E-ta STO-eet"
+        },
+        {
+          "english": "рубль",
+          "chinese": "卢布",
+          "soundmark": "roobl"
+        },
+        {
+          "english": "ко́пейка",
+          "chinese": "戈比",
+          "soundmark": "KO-pey-ka"
+        },
+        {
+          "english": "деся́ть рубле́й",
+          "chinese": "十卢布",
+          "soundmark": "DYE-syat roob-LEY"
+        },
+        {
+          "english": "до́рого",
+          "chinese": "贵",
+          "soundmark": "DO-ra-ga"
+        },
+        {
+          "english": "дёшево",
+          "chinese": "便宜",
+          "soundmark": "DYO-she-va"
+        },
+        {
+          "english": "счёт",
+          "chinese": "账单",
+          "soundmark": "shchyot"
+        },
+        {
+          "english": "сда́ча",
+          "chinese": "找零",
+          "soundmark": "ZDA-cha"
+        },
+        {
+          "english": "креди́тная ка́рта",
+          "chinese": "信用卡",
+          "soundmark": "kre-DEET-na-ya KAR-ta"
+        },
+        {
+          "english": "на́личные",
+          "chinese": "现金",
+          "soundmark": "na-LEECH-ny-ye"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/17-Урок 2-2.avi"
+    },
+    {
+      "id": "runu-05",
+      "order": 5,
+      "title": "计量单位",
+      "description": "常用的计量单位词汇。",
+      "statements": [
+        {
+          "english": "метр",
+          "chinese": "米",
+          "soundmark": "myetr"
+        },
+        {
+          "english": "сантиме́тр",
+          "chinese": "厘米",
+          "soundmark": "san-tee-MYETR"
+        },
+        {
+          "english": "киломе́тр",
+          "chinese": "公里",
+          "soundmark": "kee-la-MYETR"
+        },
+        {
+          "english": "литр",
+          "chinese": "升",
+          "soundmark": "leetr"
+        },
+        {
+          "english": "килогра́мм",
+          "chinese": "公斤",
+          "soundmark": "kee-la-GRAM"
+        },
+        {
+          "english": "грамм",
+          "chinese": "克",
+          "soundmark": "gram"
+        },
+        {
+          "english": "ме́ра",
+          "chinese": "度量单位",
+          "soundmark": "MYE-ra"
+        },
+        {
+          "english": "разме́р",
+          "chinese": "尺寸/大小",
+          "soundmark": "raz-MYER"
+        },
+        {
+          "english": "ско́лько?",
+          "chinese": "多少？",
+          "soundmark": "SKOL-ka"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/18-Урок 3-1.avi"
+    },
+    {
+      "id": "runu-06",
+      "order": 6,
+      "title": "重量",
+      "description": "表达重量和秤重的俄语。",
+      "statements": [
+        {
+          "english": "вес",
+          "chinese": "重量",
+          "soundmark": "vyes"
+        },
+        {
+          "english": "взве́сить",
+          "chinese": "称重",
+          "soundmark": "VZVE-sit"
+        },
+        {
+          "english": "весы́",
+          "chinese": "秤/天平",
+          "soundmark": "ve-SY"
+        },
+        {
+          "english": "тяжёлый",
+          "chinese": "重的",
+          "soundmark": "tya-ZHYO-ly"
+        },
+        {
+          "english": "лёгкий",
+          "chinese": "轻的",
+          "soundmark": "LYOHK-kiy"
+        },
+        {
+          "english": "сколько весить?",
+          "chinese": "多重？",
+          "soundmark": "SKOL-ka VYE-sit"
+        },
+        {
+          "english": "полкило́",
+          "chinese": "半公斤",
+          "soundmark": "pol-kee-LO"
+        },
+        {
+          "english": "полтора́ кило́",
+          "chinese": "一公斤半",
+          "soundmark": "pol-ta-RA kee-LO"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/19-Урок 3-2.avi"
+    },
+    {
+      "id": "runu-07",
+      "order": 7,
+      "title": "距离",
+      "description": "长度和距离的表达。",
+      "statements": [
+        {
+          "english": "расстоя́ние",
+          "chinese": "距离",
+          "soundmark": "ra-sta-YA-nee-ye"
+        },
+        {
+          "english": "далеко́",
+          "chinese": "远",
+          "soundmark": "da-le-KO"
+        },
+        {
+          "english": "бли́зко",
+          "chinese": "近",
+          "soundmark": "BLEES-ka"
+        },
+        {
+          "english": "Далеко́ ли э́то?",
+          "chinese": "这远吗？",
+          "soundmark": "da-le-KO lee E-ta"
+        },
+        {
+          "english": "Здесь бли́зко.",
+          "chinese": "这里很近。",
+          "soundmark": "zdyes BLEES-ka"
+        },
+        {
+          "english": "киломе́тр",
+          "chinese": "公里",
+          "soundmark": "kee-la-MYETR"
+        },
+        {
+          "english": "метр",
+          "chinese": "米",
+          "soundmark": "myetr"
+        },
+        {
+          "english": "дли́нный",
+          "chinese": "长的",
+          "soundmark": "DLEEN-ny"
+        },
+        {
+          "english": "коро́ткий",
+          "chinese": "短的",
+          "soundmark": "ka-ROT-kiy"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/22-Урок 4-1.avi"
+    },
+    {
+      "id": "runu-08",
+      "order": 8,
+      "title": "时间表达",
+      "description": "俄语中时间的表达方式。",
+      "statements": [
+        {
+          "english": "Кото́рый час?",
+          "chinese": "几点了？",
+          "soundmark": "ka-TO-ry chas"
+        },
+        {
+          "english": "час",
+          "chinese": "小时/一点",
+          "soundmark": "chas"
+        },
+        {
+          "english": "два часа́",
+          "chinese": "两点",
+          "soundmark": "dva cha-SA"
+        },
+        {
+          "english": "три часа́",
+          "chinese": "三点",
+          "soundmark": "tree cha-SA"
+        },
+        {
+          "english": "мину́та",
+          "chinese": "分钟",
+          "soundmark": "mee-NOO-ta"
+        },
+        {
+          "english": "секу́нда",
+          "chinese": "秒",
+          "soundmark": "se-KOON-da"
+        },
+        {
+          "english": "полови́на",
+          "chinese": "半",
+          "soundmark": "pa-la-VEE-na"
+        },
+        {
+          "english": "че́тверть",
+          "chinese": "一刻钟",
+          "soundmark": "CHET-vert"
+        },
+        {
+          "english": "по́лдень",
+          "chinese": "中午",
+          "soundmark": "POL-den"
+        },
+        {
+          "english": "по́лночь",
+          "chinese": "午夜",
+          "soundmark": "POL-nach"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/23-Урок 4-2.avi"
+    },
+    {
+      "id": "runu-09",
+      "order": 9,
+      "title": "数物品",
+      "description": "俄语中数数时数字与名词的搭配。",
+      "statements": [
+        {
+          "english": "оди́н стул",
+          "chinese": "一把椅子",
+          "soundmark": "a-DEEN stool"
+        },
+        {
+          "english": "два сту́ла",
+          "chinese": "两把椅子",
+          "soundmark": "dva STOO-la"
+        },
+        {
+          "english": "пять сту́льев",
+          "chinese": "五把椅子",
+          "soundmark": "pyat STOOL-yev"
+        },
+        {
+          "english": "одна́ кни́га",
+          "chinese": "一本书",
+          "soundmark": "ad-NA KNEE-ga"
+        },
+        {
+          "english": "две кни́ги",
+          "chinese": "两本书",
+          "soundmark": "dve KNEE-gee"
+        },
+        {
+          "english": "пять книг",
+          "chinese": "五本书",
+          "soundmark": "pyat kneek"
+        },
+        {
+          "english": "одно́ я́блоко",
+          "chinese": "一个苹果",
+          "soundmark": "ad-NO YAB-la-ka"
+        },
+        {
+          "english": "два я́блока",
+          "chinese": "两个苹果",
+          "soundmark": "dva YAB-la-ka"
+        },
+        {
+          "english": "пять я́блок",
+          "chinese": "五个苹果",
+          "soundmark": "pyat YAB-lak"
+        },
+        {
+          "english": "мно́го люде́й",
+          "chinese": "很多人",
+          "soundmark": "MNO-ga lyu-DEY"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/27-Урок 5-1.avi"
+    },
+    {
+      "id": "runu-10",
+      "order": 10,
+      "title": "数字综合运用",
+      "description": "数字在日常生活中的综合练习。",
+      "statements": [
+        {
+          "english": "Мне нужны́ три биле́та.",
+          "chinese": "我需要三张票。",
+          "soundmark": "mnye noozh-NY tree bee-LYE-ta"
+        },
+        {
+          "english": "Э́та кни́га сто́ит пятьдеся́т рубле́й.",
+          "chinese": "这本书值五十卢布。",
+          "soundmark": "E-ta KNEE-ga STO-eet pyat-de-SYAT roob-LEY"
+        },
+        {
+          "english": "Я живу́ на второ́м этаже́.",
+          "chinese": "我住在二楼。",
+          "soundmark": "ya zhee-VOO na fta-ROM e-ta-ZHE"
+        },
+        {
+          "english": "Нам ну́жен но́мер на двои́х.",
+          "chinese": "我们需要一个双人间。",
+          "soundmark": "nam NOO-zhen NO-mer na dva-EEKH"
+        },
+        {
+          "english": "Он прие́дет че́рез два дня.",
+          "chinese": "他两天后到。",
+          "soundmark": "on pree-YE-det CHE-rez dva dnya"
+        },
+        {
+          "english": "У меня́ есть ты́сяча рубле́й.",
+          "chinese": "我有一千卢布。",
+          "soundmark": "oo me-NYA yest TY-sya-cha roob-LEY"
+        },
+        {
+          "english": "Мне ну́жен разме́р со́рок два.",
+          "chinese": "我需要四十二码的。",
+          "soundmark": "mnye NOO-zhen raz-MYER SO-rak dva"
+        },
+        {
+          "english": "Авто́бус но́мер пять.",
+          "chinese": "五路公交车。",
+          "soundmark": "af-TO-boos NO-mer pyat"
+        },
+        {
+          "english": "В трёх киломе́трах от го́рода.",
+          "chinese": "距离城市三公里处。",
+          "soundmark": "f tryokh kee-la-MYET-rakh ot GO-ra-da"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/28-Урок 5-2.avi"
+    }
+  ]
+}

@@ -6,7 +6,7 @@
     <div class="flex items-center">
       <NuxtLink
         class="clickable-item flex h-9 w-9 items-center justify-center rounded-md border border-slate-200 bg-slate-50 dark:border-slate-700 dark:bg-slate-800"
-        :href="`/course-pack/${courseStore.currentCourse?.coursePackId}`"
+        :to="`/course-pack/${courseStore.currentCourse?.coursePackId}`"
       >
         <UTooltip text="课程列表">
           <UIcon
@@ -109,9 +109,17 @@ import { isAuthenticated } from "~/services/auth";
 import { useCourseStore } from "~/store/course";
 
 const { shortcutKeys } = useShortcutKeyMode();
-const { isDictationMode, isChineseToEnglishMode, currentGamePlayMode, toggleGamePlayMode, getGamePlayModeOptions } = useGamePlayMode();
+const {
+  isDictationMode,
+  isChineseToEnglishMode,
+  currentGamePlayMode,
+  toggleGamePlayMode,
+  getGamePlayModeOptions,
+} = useGamePlayMode();
 const currentMode = ref(currentGamePlayMode.value);
-const modeOptions = computed(() => getGamePlayModeOptions().map(o => ({ label: o.label, value: o.value })));
+const modeOptions = computed(() =>
+  getGamePlayModeOptions().map((o) => ({ label: o.label, value: o.value })),
+);
 function switchMode(option: any) {
   if (option?.value) toggleGamePlayMode(option.value);
 }

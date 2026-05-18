@@ -23,11 +23,11 @@
       </p>
     </div>
 
-    <div class="flex items-center justify-around space-x-20">
+    <div class="flex flex-col items-center justify-center gap-6 md:flex-row md:space-x-20">
       <div
         v-for="(feature, index) in features"
         :key="index"
-        class="card relative w-96 max-w-sm border-transparent p-8 shadow-xl"
+        class="card relative w-full max-w-sm border-transparent p-8 shadow-xl md:w-96"
         :class="{ 'lifetime-animation': feature.type === '终身付费' }"
       >
         <button
@@ -46,8 +46,8 @@
           <p class="program-description">
             {{
               feature.type === "免费"
-                ? "我们的基本服务涵盖了很多内容，您也可以在上面进行 Earthworm 之旅！"
-                : "终身多种定制服务，体验我们所有的功能， Earthworm 将全方位支持您的英语课程！"
+                ? "基础服务已经能覆盖大部分日常练习，足够开启你的中大俄语之旅。"
+                : "终身解锁所有定制功能，中大俄语全方位陪你打磨俄语课程。"
             }}
           </p>
         </div>
@@ -67,7 +67,7 @@
             "
             class="w-full transform rounded-lg px-8 py-3 font-bold text-white transition duration-300 ease-in-out hover:scale-105"
           >
-            {{ feature.type === "免费" ? "Get Started" : "Upgrade now" }}
+            {{ feature.type === "免费" ? "开始练习" : "立即升级" }}
           </button>
           <ul class="mt-4">
             <li
@@ -95,7 +95,7 @@
         >7 天内获得 100% 退款</span
       >
       在购买之日起<br />
-      购买Earthworm许可证后，
+      购买中大俄语许可证后，
       <span
         class="bg-gradient-to-r from-purple-400 via-purple-400 to-gray-400 bg-clip-text text-transparent dark:from-purple-600 dark:via-purple-600 dark:to-gray-500"
         >登录</span

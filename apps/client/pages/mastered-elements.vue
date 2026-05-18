@@ -1,9 +1,11 @@
 <template>
   <div class="w-full py-6">
-    <section class="mb-5 rounded-md border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+    <section
+      class="mb-5 rounded-md border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900"
+    >
       <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div>
-          <p class="text-sm font-bold text-emerald-600 dark:text-emerald-300">Review Book</p>
+          <p class="text-sm font-bold text-emerald-600 dark:text-emerald-300">Освоено</p>
           <h1 class="mt-1 text-3xl font-black text-slate-950 dark:text-white">复习本</h1>
           <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
             这里收纳你已经掌握的俄语句子，适合回看、朗读和二次复习。

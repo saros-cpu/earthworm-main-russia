@@ -49,7 +49,7 @@
                     name="i-ph-heart-straight-fill"
                     class="mr-2 h-5 w-5 fill-current text-pink-300 dark:text-blue-300"
                   ></UIcon>
-                  <span class="text-gray-500 dark:text-gray-400">{{ item.likeCount }} likes</span>
+                  <span class="text-gray-500 dark:text-gray-400">{{ item.likeCount }} 条点赞</span>
                 </div>
                 <a
                   :href="item.link"
@@ -57,7 +57,7 @@
                   tabindex="-1"
                   aria-disabled="true"
                   style="pointer-events: none"
-                  >See {{ item.account }}'s</a
+                  >查看 {{ item.account }} 的动态</a
                 >
               </div>
             </div>

@@ -9,10 +9,11 @@
         constrained: 'max-w-[780px]',
       }"
     >
-      <div class="flex justify-between items-center mb-4">
+      <div class="mb-4 flex items-center justify-between">
         <div class="flex items-center gap-3">
-          <h3 class="font-bold text-lg">🎉 恭喜!</h3>
-          <span v-if="gameStore.totalQuestions > 0"
+          <h3 class="text-lg font-bold">🎉 恭喜!</h3>
+          <span
+            v-if="gameStore.totalQuestions > 0"
             class="rounded-full px-4 py-1 text-sm font-black tracking-wider"
             :class="ratingBadgeClass"
           >
@@ -65,13 +66,22 @@
           <span v-if="totalMinutes >= 30">太强了，给自己来点掌声 😄</span>
         </p>
       </div>
-      <div class="mt-4 grid grid-cols-2 gap-2 rounded-md bg-slate-50 p-3 text-center text-sm dark:bg-slate-800 sm:grid-cols-4">
+      <div
+        class="mt-4 grid grid-cols-2 gap-2 rounded-md bg-slate-50 p-3 text-center text-sm dark:bg-slate-800 sm:grid-cols-4"
+      >
         <div>
-          <div class="text-lg font-black" :class="ratingTextColor">{{ gameStore.getRating() }}</div>
+          <div
+            class="text-lg font-black"
+            :class="ratingTextColor"
+          >
+            {{ gameStore.getRating() }}
+          </div>
           <div class="text-xs text-slate-400">评级</div>
         </div>
         <div>
-          <div class="text-lg font-black text-emerald-600 dark:text-emerald-400">{{ maxComboText }}</div>
+          <div class="text-lg font-black text-emerald-600 dark:text-emerald-400">
+            {{ maxComboText }}
+          </div>
           <div class="text-xs text-slate-400">最大连击</div>
         </div>
         <div>
@@ -79,7 +89,9 @@
           <div class="text-xs text-slate-400">正确率</div>
         </div>
         <div>
-          <div class="text-lg font-black text-amber-600 dark:text-amber-400">{{ gameStore.totalScore }}</div>
+          <div class="text-lg font-black text-amber-600 dark:text-amber-400">
+            {{ gameStore.totalScore }}
+          </div>
           <div class="text-xs text-slate-400">总得分</div>
         </div>
       </div>
@@ -125,7 +137,6 @@ import { computed, ref, watch } from "vue";
 import { toast } from "vue-sonner";
 
 import Dialog from "~/components/common/Dialog.vue";
-import { computed } from "vue";
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useConfetti } from "~/composables/main/confetti/useConfetti";
@@ -167,12 +178,26 @@ const accuracyText = computed(() => {
 });
 const ratingText = computed(() => {
   const r = gameStore.getRating();
-  const labels: Record<string, string> = { C: "C · 继续加油", B: "B · 不错", A: "A · 良好", S: "S · 优秀", SS: "SS · 卓越", SSS: "SSS · 完美" };
+  const labels: Record<string, string> = {
+    C: "C · 继续加油",
+    B: "B · 不错",
+    A: "A · 良好",
+    S: "S · 优秀",
+    SS: "SS · 卓越",
+    SSS: "SSS · 完美",
+  };
   return labels[r] || r;
 });
 const ratingTextColor = computed(() => {
   const r = gameStore.getRating();
-  const colors: Record<string, string> = { C: "text-slate-500", B: "text-violet-500", A: "text-blue-500", S: "text-emerald-500", SS: "text-orange-500", SSS: "text-yellow-500" };
+  const colors: Record<string, string> = {
+    C: "text-slate-500",
+    B: "text-violet-500",
+    A: "text-blue-500",
+    S: "text-emerald-500",
+    SS: "text-orange-500",
+    SSS: "text-yellow-500",
+  };
   return colors[r] || "text-slate-500";
 });
 const ratingBadgeClass = computed(() => {

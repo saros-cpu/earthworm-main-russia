@@ -88,17 +88,17 @@ export const tpl_1 = ({
         {
           type: "img",
           props: {
-            src: "/logo.png",
+            src: "/logo-circle.png",
             width: "48",
             height: "48",
-            alt: "Earthworm logo",
+            alt: "中大俄语 logo",
           },
         },
         {
           type: "p",
           props: {
             tw: "text-lg mb-2",
-            children: "© earthworm.cuixueshe.com",
+            children: "© 中大俄语",
           },
         },
       ],

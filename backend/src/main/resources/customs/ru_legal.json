@@ -1,0 +1,384 @@
+{
+  "id": "ru-legal",
+  "title": "法律俄语",
+  "description": "法律文书合同术语和法庭用语等法律行业俄语词汇。",
+  "cover": "https://images.unsplash.com/photo-1589578532925-fd0c6f0e1f5a?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rule-01",
+      "order": 1,
+      "title": "法律术语",
+      "description": "法律领域基础专业词汇。",
+      "statements": [
+        {
+          "english": "зако́н",
+          "chinese": "法律",
+          "soundmark": "za-KON"
+        },
+        {
+          "english": "догово́р",
+          "chinese": "合同",
+          "soundmark": "da-ga-VOR"
+        },
+        {
+          "english": "пра́во",
+          "chinese": "权利法律",
+          "soundmark": "PRA-va"
+        },
+        {
+          "english": "обяза́нность",
+          "chinese": "义务",
+          "soundmark": "a-bya-ZAN-nost"
+        },
+        {
+          "english": "су́д",
+          "chinese": "法院",
+          "soundmark": "sood"
+        },
+        {
+          "english": "юри́ст",
+          "chinese": "律师",
+          "soundmark": "yoo-REEST"
+        }
+      ]
+    },
+    {
+      "id": "rule-02",
+      "order": 2,
+      "title": "合同与诉讼",
+      "description": "合同签订和诉讼相关词汇。",
+      "statements": [
+        {
+          "english": "и́ск",
+          "chinese": "诉讼",
+          "soundmark": "eesk"
+        },
+        {
+          "english": "исте́ц",
+          "chinese": "原告",
+          "soundmark": "ees-TETS"
+        },
+        {
+          "english": "отве́тчик",
+          "chinese": "被告",
+          "soundmark": "at-VYET-cheek"
+        },
+        {
+          "english": "сторо́ны",
+          "chinese": "双方",
+          "soundmark": "sta-RO-ny"
+        },
+        {
+          "english": "подписа́ть догово́р",
+          "chinese": "签署合同",
+          "soundmark": "pad-pee-SAT da-ga-VOR"
+        }
+      ]
+    },
+    {
+      "id": "rule-03",
+      "order": 3,
+      "title": "法庭词汇",
+      "description": "法庭结构和审判相关词汇。",
+      "statements": [
+        {
+          "english": "судья́",
+          "chinese": "法官",
+          "soundmark": "sood-YA"
+        },
+        {
+          "english": "заседа́ние",
+          "chinese": "开庭",
+          "soundmark": "za-se-DA-nee-ye"
+        },
+        {
+          "english": "прися́жные",
+          "chinese": "陪审团",
+          "soundmark": "pree-SYAZH-nye"
+        },
+        {
+          "english": "верди́кт",
+          "chinese": "裁决",
+          "soundmark": "ver-DEKT"
+        },
+        {
+          "english": "пригово́р",
+          "chinese": "判决",
+          "soundmark": "pree-ga-VOR"
+        },
+        {
+          "english": "апелля́ция",
+          "chinese": "上诉",
+          "soundmark": "a-pe-LYA-tsee-ya"
+        }
+      ]
+    },
+    {
+      "id": "rule-04",
+      "order": 4,
+      "title": "刑法术语",
+      "description": "刑事法律相关词汇。",
+      "statements": [
+        {
+          "english": "преступле́ние",
+          "chinese": "犯罪",
+          "soundmark": "pre-stoop-LE-nee-ye"
+        },
+        {
+          "english": "наказа́ние",
+          "chinese": "刑罚",
+          "soundmark": "na-ka-ZA-nee-ye"
+        },
+        {
+          "english": "обвине́ние",
+          "chinese": "指控",
+          "soundmark": "ab-vee-NE-nee-ye"
+        },
+        {
+          "english": "адвока́т",
+          "chinese": "辩护律师",
+          "soundmark": "ad-va-KAT"
+        },
+        {
+          "english": "тюрьма́",
+          "chinese": "监狱",
+          "soundmark": "tyur-MA"
+        },
+        {
+          "english": "штраф",
+          "chinese": "罚款",
+          "soundmark": "shtraf"
+        }
+      ]
+    },
+    {
+      "id": "rule-05",
+      "order": 5,
+      "title": "民法术语",
+      "description": "民事法律相关词汇。",
+      "statements": [
+        {
+          "english": "гражда́нское пра́во",
+          "chinese": "民法",
+          "soundmark": "grazh-DAN-ska-ye PRA-va"
+        },
+        {
+          "english": "сде́лка",
+          "chinese": "交易",
+          "soundmark": "ZDYEL-ka"
+        },
+        {
+          "english": "со́бственность",
+          "chinese": "财产",
+          "soundmark": "SOB-stven-nast"
+        },
+        {
+          "english": "насле́дство",
+          "chinese": "遗产",
+          "soundmark": "nas-LYED-stva"
+        },
+        {
+          "english": "возмеще́ние уще́рба",
+          "chinese": "损害赔偿",
+          "soundmark": "vaz-me-SHCHEN-ye u-SHCHER-ba"
+        },
+        {
+          "english": "ипоте́ка",
+          "chinese": "抵押",
+          "soundmark": "ee-pa-TYE-ka"
+        }
+      ]
+    },
+    {
+      "id": "rule-06",
+      "order": 6,
+      "title": "法律职业",
+      "description": "法律行业各类职业名称。",
+      "statements": [
+        {
+          "english": "прокуро́р",
+          "chinese": "检察官",
+          "soundmark": "pra-koo-ROR"
+        },
+        {
+          "english": "нота́риус",
+          "chinese": "公证员",
+          "soundmark": "na-TA-ree-us"
+        },
+        {
+          "english": "сле́дователь",
+          "chinese": "调查员",
+          "soundmark": "SLYE-da-va-tel"
+        },
+        {
+          "english": "юриско́нсульт",
+          "chinese": "法律顾问",
+          "soundmark": "yoo-ree-SKON-sult"
+        },
+        {
+          "english": "адвока́т",
+          "chinese": "律师",
+          "soundmark": "ad-va-KAT"
+        },
+        {
+          "english": "секрета́рь суда́",
+          "chinese": "书记员",
+          "soundmark": "sek-re-TAR soo-DA"
+        }
+      ]
+    },
+    {
+      "id": "rule-07",
+      "order": 7,
+      "title": "权利与义务",
+      "description": "法律权利和义务相关词汇。",
+      "statements": [
+        {
+          "english": "права́ челове́ка",
+          "chinese": "人权",
+          "soundmark": "pra-VA che-la-VYE-ka"
+        },
+        {
+          "english": "конститу́ция",
+          "chinese": "宪法",
+          "soundmark": "kon-stee-TOO-tsee-ya"
+        },
+        {
+          "english": "свобо́да",
+          "chinese": "自由",
+          "soundmark": "sva-BO-da"
+        },
+        {
+          "english": "ра́венство",
+          "chinese": "平等",
+          "soundmark": "RA-ven-stva"
+        },
+        {
+          "english": "ответстве́нность",
+          "chinese": "责任",
+          "soundmark": "a-vet-STVEN-nast"
+        },
+        {
+          "english": "защи́та",
+          "chinese": "辩护保护",
+          "soundmark": "za-SHEE-ta"
+        }
+      ]
+    },
+    {
+      "id": "rule-08",
+      "order": 8,
+      "title": "诉讼程序",
+      "description": "诉讼流程和程序相关词汇。",
+      "statements": [
+        {
+          "english": "досуде́бное разбира́тельство",
+          "chinese": "审前程序",
+          "soundmark": "da-so-DEB-na-ye raz-bee-RA-tel-stva"
+        },
+        {
+          "english": "доказа́тельство",
+          "chinese": "证据",
+          "soundmark": "da-ka-ZA-tel-stva"
+        },
+        {
+          "english": "свиде́тель",
+          "chinese": "证人",
+          "soundmark": "svee-DE-tel"
+        },
+        {
+          "english": "хода́тайство",
+          "chinese": "请求动议",
+          "soundmark": "kha-DA-tay-stva"
+        },
+        {
+          "english": "реше́ние суда́",
+          "chinese": "法院判决",
+          "soundmark": "re-SHE-nee-ye soo-DA"
+        },
+        {
+          "english": "исполне́ние",
+          "chinese": "执行",
+          "soundmark": "ees-pal-NYE-nee-ye"
+        }
+      ]
+    },
+    {
+      "id": "rule-09",
+      "order": 9,
+      "title": "法律纠纷",
+      "description": "法律争议和纠纷相关词汇。",
+      "statements": [
+        {
+          "english": "спор",
+          "chinese": "争议",
+          "soundmark": "spor"
+        },
+        {
+          "english": "конфли́кт",
+          "chinese": "冲突",
+          "soundmark": "kan-FLEEKT"
+        },
+        {
+          "english": "урегули́рование",
+          "chinese": "调解",
+          "soundmark": "u-re-goo-LEE-ro-va-nee-ye"
+        },
+        {
+          "english": "арбитра́ж",
+          "chinese": "仲裁",
+          "soundmark": "ar-bee-TRAZH"
+        },
+        {
+          "english": "посре́дник",
+          "chinese": "调解人",
+          "soundmark": "pas-RYED-neek"
+        },
+        {
+          "english": "мирово́е соглаше́ние",
+          "chinese": "和解协议",
+          "soundmark": "mee-ra-VO-ye sa-gla-SHE-nee-ye"
+        }
+      ]
+    },
+    {
+      "id": "rule-10",
+      "order": 10,
+      "title": "国际法",
+      "description": "国际法和国际条约相关词汇。",
+      "statements": [
+        {
+          "english": "междунаро́дное пра́во",
+          "chinese": "国际法",
+          "soundmark": "mezh-doo-na-ROD-na-ye PRA-va"
+        },
+        {
+          "english": "догово́р",
+          "chinese": "条约",
+          "soundmark": "da-ga-VOR"
+        },
+        {
+          "english": "конве́нция",
+          "chinese": "公约",
+          "soundmark": "kan-VEN-tsee-ya"
+        },
+        {
+          "english": "суверените́т",
+          "chinese": "主权",
+          "soundmark": "su-ve-re-nee-TET"
+        },
+        {
+          "english": "диплома́тия",
+          "chinese": "外交",
+          "soundmark": "deep-la-MA-tee-ya"
+        },
+        {
+          "english": "санкция",
+          "chinese": "制裁",
+          "soundmark": "SANK-tsee-ya"
+        }
+      ]
+    }
+  ]
+}

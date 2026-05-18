@@ -9,4 +9,5 @@ export type User = UserInfoResponse &
   UserApiResponse & {
     avatar: string;
     id: string;
+    nickname: string;
   };

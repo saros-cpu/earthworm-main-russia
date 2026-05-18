@@ -27,22 +27,37 @@ export async function fetchSetupNewUser(data: { username: string; avatar: string
 
 export async function fetchCurrentUser() {
   const http = getHttp();
-  // 测试模式：直接从后端获取用户信息，无需 Logto
-  const extraInfo = await http<UserApiResponse>("/user", { method: "get" }).catch(() => ({
-    membership: { isMember: false, details: null },
-  }));
+  const userInfo = await http<UserApiResponse>("/user", { method: "get" }).catch(() => null);
+  const stored = getStoredUser();
 
   return {
     iss: "local-dev",
-    sub: "dev-user-001",
+    sub: stored?.userId || "dev-user-001",
     aud: "local-dev",
     exp: Math.floor(Date.now() / 1000) + 86400,
     iat: Math.floor(Date.now() / 1000),
-    id: "dev-user-001",
-    username: "dev-user",
-    primaryEmail: "dev@example.com",
-    avatar: "",
+    id: stored?.userId || "dev-user-001",
+    username: stored?.username || "dev-user",
+    nickname: stored?.nickname || stored?.username || "dev-user",
+    name: stored?.nickname || stored?.username || "dev-user",
+    primaryEmail: "",
+    avatar: stored?.avatar || "",
     picture: "",
-    ...extraInfo,
+    ...(userInfo || { membership: { isMember: false, details: null } }),
   } as User;
+}
+
+function getStoredUser(): {
+  userId?: string;
+  username?: string;
+  nickname?: string;
+  avatar?: string;
+  role?: string;
+} | null {
+  try {
+    const raw = localStorage.getItem("ew_user");
+    return raw ? JSON.parse(raw) : null;
+  } catch {
+    return null;
+  }
 }

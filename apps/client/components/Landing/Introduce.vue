@@ -4,15 +4,17 @@
     id="what"
   >
     <CommonTitle
-      title="鹅语菌是什么？"
+      title="中大俄语是什么？"
       :description="['面向中文学习者的俄语输入、听写和课程练习工具。']"
     />
-    <section class="flex w-full justify-around py-8">
+    <section
+      class="flex w-full flex-col items-center justify-around gap-6 px-4 py-8 md:flex-row md:items-stretch md:px-0"
+    >
       <div
-        class="flex h-[360px] w-[45%] flex-shrink-0 items-center justify-center rounded-2xl border border-gray-700 bg-[#111128]"
+        class="flex h-auto min-h-[360px] w-full flex-shrink-0 items-center justify-center rounded-2xl border border-gray-700 bg-[#111128] md:w-[45%]"
       >
         <div
-          class="hide-scrollbar h-[96%] w-[97%] overflow-y-auto overflow-x-hidden rounded-xl border border-gray-700 bg-[#17172e] px-5 py-4"
+          class="hide-scrollbar m-2 h-[96%] w-[97%] overflow-y-auto overflow-x-hidden rounded-xl border border-gray-700 bg-[#17172e] px-5 py-4"
         >
           <h2 class="mb-3 rounded-lg bg-[#232339] py-4 text-center text-xl font-bold">快速上手</h2>
           <h3 class="pb-2 text-base font-semibold">当前页面</h3>
@@ -20,7 +22,7 @@
             点击按钮
             <span
               class="mx-1 inline-block rounded-lg border border-solid border-fuchsia-300 px-1 text-fuchsia-300"
-              >Get Started</span
+              >先玩一课</span
             >
             <span class="text-gray-500">（或快捷键 Enter ⏎）</span>
             开启你的第一节课！
@@ -73,12 +75,12 @@
           <h3 class="py-2 text-base font-semibold">答案页面</h3>
           <p class="py-1 leading-7">答案下方的按钮</p>
           <p class="py-1">
-            <button class="instruction-btn">again</button>
+            <button class="instruction-btn">重做</button>
             <span class="text-gray-500">（或快捷键 Ctrl+;）</span>
             再来亿次，怎能不会！
           </p>
           <p class="py-1">
-            <button class="instruction-btn">next</button>
+            <button class="instruction-btn">下一题</button>
             <span class="text-gray-500">（或快捷键 Enter）</span>
             下一题，冲冲冲霸占榜首！🏄‍♂️
           </p>
@@ -92,7 +94,7 @@
           </p>
           <h3 class="py-2 text-base font-semibold">用户设置页面</h3>
           <p class="py-1 leading-7">
-            右上角图标进入 User Info
+            右上角头像进入「用户信息」，
             切换到设置页面，自定义你喜欢的快捷键，也可以控制语音是否自动播放、单词下划线固定长度、使用空格提交等等……更多个人设置会持续更新
             😊
             <i
@@ -102,10 +104,10 @@
         </div>
       </div>
       <div
-        class="flex h-[360px] w-[45%] flex-shrink-0 items-center justify-center rounded-2xl border border-gray-700 bg-[#111128]"
+        class="flex h-auto min-h-[360px] w-full flex-shrink-0 items-center justify-center rounded-2xl border border-gray-700 bg-[#111128] md:w-[45%]"
       >
         <div
-          class="hide-scrollbar h-[96%] w-[97%] overflow-y-auto overflow-x-hidden rounded-xl border border-gray-700 bg-[#17172e] px-5 py-4"
+          class="hide-scrollbar m-2 h-[96%] w-[97%] overflow-y-auto overflow-x-hidden rounded-xl border border-gray-700 bg-[#17172e] px-5 py-4"
         >
           <h2 class="mb-3 rounded-lg bg-[#232339] py-4 text-center text-xl font-bold">
             学习原理：通过字母、单词和句子逐步练习俄语
@@ -120,7 +122,7 @@
           <p class="py-1 leading-7">循序渐进的增加难度，先从最简单的句型开始，再到更加丰富的概念</p>
           <h3 class="pb-2 text-base font-semibold">正向反馈来的快</h3>
           <p class="py-1 leading-7">
-            当自己可以独立拼出俄语单词和句子时，会非常有成就感，所以也会越学越想学。鹅语菌会先降低入门门槛，再逐步增加真实句子的难度。
+            当自己可以独立拼出俄语单词和句子时，会非常有成就感，所以也会越学越想学。中大俄语会先降低入门门槛，再逐步增加真实句子的难度。
           </p>
         </div>
       </div>

@@ -4,6 +4,29 @@
       <Loading />
     </template>
 
+    <template v-else-if="errorMessage">
+      <div
+        class="rounded-md border border-rose-300 bg-rose-50 p-6 text-rose-700 dark:border-rose-900 dark:bg-rose-950/40 dark:text-rose-200"
+      >
+        <div class="font-bold">课程包详情加载失败</div>
+        <div class="mt-2 text-sm">{{ errorMessage }}</div>
+        <button
+          class="btn btn-sm mt-3"
+          @click="setup"
+        >
+          重试
+        </button>
+      </div>
+    </template>
+
+    <template v-else-if="!coursePackStore.currentCoursePack">
+      <div
+        class="rounded-md border border-dashed border-slate-300 p-10 text-center text-sm text-slate-500 dark:border-slate-700"
+      >
+        没有找到这个课程包（id: {{ coursePackId }}）。
+      </div>
+    </template>
+
     <template v-else>
       <div class="mb-6 border-b border-slate-200 pb-5 dark:border-slate-800">
         <NuxtLink
@@ -23,7 +46,10 @@
               {{ coursePackStore.currentCoursePack?.title }}
             </h2>
             <p class="mt-2 max-w-3xl text-sm leading-6 text-slate-500 dark:text-slate-400">
-              {{ coursePackStore.currentCoursePack?.description || "按顺序完成课程，逐步建立俄语输入和表达能力。" }}
+              {{
+                coursePackStore.currentCoursePack?.description ||
+                "按顺序完成课程，逐步建立俄语输入和表达能力。"
+              }}
             </p>
           </div>
 
@@ -51,14 +77,18 @@
             ]"
             @click="toggleCategory(item.key)"
           >
-            <div class="mb-2 flex items-center gap-2 text-xs font-bold text-slate-500 dark:text-slate-400">
+            <div
+              class="mb-2 flex items-center gap-2 text-xs font-bold text-slate-500 dark:text-slate-400"
+            >
               <UIcon
                 :name="item.icon"
                 class="h-4 w-4"
               />
               {{ item.label }}
             </div>
-            <div class="text-2xl font-black text-slate-950 dark:text-white">{{ item.wordCount }}</div>
+            <div class="text-2xl font-black text-slate-950 dark:text-white">
+              {{ item.wordCount }}
+            </div>
             <div class="mt-1 text-xs text-slate-500">{{ item.courseCount }} 课</div>
           </button>
         </div>
@@ -87,7 +117,9 @@
         >
           <div class="text-sm text-slate-600 dark:text-slate-300">
             建议学习路径：先从
-            <span class="font-bold text-slate-950 dark:text-white">{{ recommendedCourse.title }}</span>
+            <span class="font-bold text-slate-950 dark:text-white">{{
+              recommendedCourse.title
+            }}</span>
             开始，熟悉主语和称呼后再进入名词、动词。
           </div>
           <button
@@ -133,9 +165,9 @@ import { navigateTo } from "#app";
 import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
 
+import type { Course } from "~/types";
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
 import { useCoursePackStore } from "~/store/coursePack";
-import type { Course } from "~/types";
 
 type VocabularyCategory = {
   key: string;
@@ -154,6 +186,7 @@ const categories: VocabularyCategory[] = [
 ];
 
 const isLoading = ref(false);
+const errorMessage = ref("");
 const selectedCategory = ref("");
 const route = useRoute();
 const coursePackStore = useCoursePackStore();
@@ -165,7 +198,9 @@ const courses = computed(() => coursePackStore.currentCoursePack?.courses || [])
 const isVocabularyPack = computed(() => {
   const pack = coursePackStore.currentCoursePack;
   if (!pack) return false;
-  return pack.id.startsWith("vocab-pack-") || pack.title.includes("单词") || pack.title.includes("词汇");
+  return (
+    pack.id.startsWith("vocab-pack-") || pack.title.includes("单词") || pack.title.includes("词汇")
+  );
 });
 
 const vocabularyOverview = computed(() =>
@@ -193,7 +228,9 @@ const filteredCourses = computed(() => {
 });
 
 const selectedCategoryMeta = computed(() =>
-  selectedCategory.value ? categories.find((item) => item.key === selectedCategory.value) : undefined,
+  selectedCategory.value
+    ? categories.find((item) => item.key === selectedCategory.value)
+    : undefined,
 );
 
 const selectedCategoryWordCount = computed(() =>
@@ -210,9 +247,16 @@ const recommendedCourse = computed(() => {
 setup();
 
 async function setup() {
+  errorMessage.value = "";
   isLoading.value = true;
-  await coursePackStore.setupCoursePack(coursePackId);
-  isLoading.value = false;
+  try {
+    await coursePackStore.setupCoursePack(coursePackId);
+  } catch (err: any) {
+    console.error("[course-pack/id] fetch failed", err);
+    errorMessage.value = err?.message || String(err) || "未知错误";
+  } finally {
+    isLoading.value = false;
+  }
 }
 
 function categoryMatches(course: Course, category: VocabularyCategory) {

@@ -2,7 +2,7 @@
   <article
     :ref="isActiveCourse ? 'activeCourseRef' : undefined"
     :class="[
-      'group relative flex min-h-[184px] w-full cursor-pointer flex-col rounded-md border bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:bg-slate-900',
+      'group relative flex min-h-[260px] w-full cursor-pointer flex-col rounded-md border bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:bg-slate-900',
       hasFinished
         ? 'border-emerald-300 dark:border-emerald-700'
         : isActiveCourse
@@ -68,8 +68,12 @@
       {{ description }}
     </p>
 
-    <div class="mt-4 flex items-center justify-between border-t border-slate-100 pt-3 text-sm dark:border-slate-800">
-      <span class="font-bold text-slate-700 group-hover:text-emerald-700 dark:text-slate-200 dark:group-hover:text-emerald-300">
+    <div
+      class="mt-4 flex items-center justify-between border-t border-slate-100 pt-3 text-sm dark:border-slate-800"
+    >
+      <span
+        class="font-bold text-slate-700 group-hover:text-emerald-700 dark:text-slate-200 dark:group-hover:text-emerald-300"
+      >
         进入练习
       </span>
       <UIcon

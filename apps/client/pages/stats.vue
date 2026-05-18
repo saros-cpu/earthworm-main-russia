@@ -1,31 +1,53 @@
 <template>
   <div class="w-full py-6">
-    <section class="mb-5 rounded-md border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900">
-      <p class="text-sm font-bold text-emerald-600 dark:text-emerald-300">Statistics</p>
+    <section
+      class="mb-5 rounded-md border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900"
+    >
+      <p class="text-sm font-bold text-emerald-600 dark:text-emerald-300">Статистика</p>
       <h1 class="mt-1 text-3xl font-black text-slate-950 dark:text-white">学习统计</h1>
-      <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">查看你的学习数据、成长轨迹和每日打卡情况。</p>
+      <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
+        查看你的学习数据、成长轨迹和每日打卡情况。
+      </p>
     </section>
 
     <section class="mb-5 grid gap-4 md:grid-cols-4">
-      <div class="rounded-md border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+      <div
+        class="rounded-md border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900"
+      >
         <div class="text-xs font-semibold text-slate-400">总练习</div>
-        <div class="mt-1 text-2xl font-black text-slate-950 dark:text-white">{{ totalStats.totalExercises || 0 }}</div>
+        <div class="mt-1 text-2xl font-black text-slate-950 dark:text-white">
+          {{ totalStats.totalExercises || 0 }}
+        </div>
       </div>
-      <div class="rounded-md border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+      <div
+        class="rounded-md border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900"
+      >
         <div class="text-xs font-semibold text-slate-400">正确率</div>
-        <div class="mt-1 text-2xl font-black text-emerald-600 dark:text-emerald-400">{{ accuracy }}%</div>
+        <div class="mt-1 text-2xl font-black text-emerald-600 dark:text-emerald-400">
+          {{ accuracy }}%
+        </div>
       </div>
-      <div class="rounded-md border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+      <div
+        class="rounded-md border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900"
+      >
         <div class="text-xs font-semibold text-slate-400">当前连续学习</div>
-        <div class="mt-1 text-2xl font-black text-amber-600 dark:text-amber-400">{{ totalStats.currentStreak || 0 }} 天</div>
+        <div class="mt-1 text-2xl font-black text-amber-600 dark:text-amber-400">
+          {{ totalStats.currentStreak || 0 }} 天
+        </div>
       </div>
-      <div class="rounded-md border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+      <div
+        class="rounded-md border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900"
+      >
         <div class="text-xs font-semibold text-slate-400">总得分</div>
-        <div class="mt-1 text-2xl font-black text-purple-600 dark:text-purple-400">{{ totalStats.totalScore || 0 }}</div>
+        <div class="mt-1 text-2xl font-black text-purple-600 dark:text-purple-400">
+          {{ totalStats.totalScore || 0 }}
+        </div>
       </div>
     </section>
 
-    <section class="mb-5 rounded-md border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+    <section
+      class="mb-5 rounded-md border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900"
+    >
       <h2 class="mb-4 text-lg font-bold text-slate-950 dark:text-white">学习热力图</h2>
       <div class="flex flex-wrap gap-1">
         <div
@@ -34,8 +56,7 @@
           class="heatmap-cell"
           :class="getHeatmapColor(day.count)"
           :title="`${day.date}: ${day.count} 题`"
-        >
-        </div>
+        ></div>
       </div>
       <div class="mt-3 flex items-center gap-2 text-xs text-slate-400">
         <span>少</span>
@@ -48,23 +69,36 @@
       </div>
     </section>
 
-    <section class="rounded-md border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+    <section
+      class="rounded-md border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900"
+    >
       <h2 class="mb-4 text-lg font-bold text-slate-950 dark:text-white">每日详情</h2>
-      <div v-if="dailyStats.length === 0" class="py-8 text-center text-sm text-slate-400">
+      <div
+        v-if="dailyStats.length === 0"
+        class="py-8 text-center text-sm text-slate-400"
+      >
         暂无学习数据，开始练习吧！
       </div>
-      <div v-else class="space-y-3">
-        <div v-for="stat in dailyStats" :key="stat.date"
+      <div
+        v-else
+        class="space-y-3"
+      >
+        <div
+          v-for="stat in dailyStats"
+          :key="stat.date"
           class="flex items-center justify-between rounded-md border border-slate-100 p-3 dark:border-slate-800"
         >
           <div>
             <div class="text-sm font-bold text-slate-950 dark:text-white">{{ stat.date }}</div>
             <div class="text-xs text-slate-400">
-              {{ stat.totalExercises }} 题 · {{ stat.correctExercises }} 正确 · {{ formatTime(stat.totalTimeSeconds) }}
+              {{ stat.totalExercises }} 题 · {{ stat.correctExercises }} 正确 ·
+              {{ formatTime(stat.totalTimeSeconds) }}
             </div>
           </div>
           <div class="text-right">
-            <div class="text-sm font-bold text-emerald-600 dark:text-emerald-400">{{ stat.totalScore }} 分</div>
+            <div class="text-sm font-bold text-emerald-600 dark:text-emerald-400">
+              {{ stat.totalScore }} 分
+            </div>
             <div class="text-xs text-slate-400">最高连击 {{ stat.maxCombo }}x</div>
           </div>
         </div>
@@ -75,7 +109,9 @@
 
 <script setup lang="ts">
 import { computed, onMounted, ref } from "vue";
-import { fetchDailyStats, fetchTotalStats, type DailyStat, type UserTotalStats } from "~/api/learning";
+
+import type { DailyStat, UserTotalStats } from "~/api/learning";
+import { fetchDailyStats, fetchTotalStats } from "~/api/learning";
 
 const dailyStats = ref<DailyStat[]>([]);
 const totalStats = ref<UserTotalStats>({} as UserTotalStats);

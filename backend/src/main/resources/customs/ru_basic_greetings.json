@@ -1,0 +1,484 @@
+{
+  "id": "ru-basic-greetings",
+  "title": "俄语问候与日常交际",
+  "description": "掌握俄语正式与非正式场合的问候、告别、致谢等日常交际用语。",
+  "cover": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rugr-01",
+      "order": 1,
+      "title": "正式问候",
+      "description": "正式场合问候用语。",
+      "statements": [
+        {
+          "english": "Здра́вствуйте!",
+          "chinese": "您好！",
+          "soundmark": "ZDRA-stvooy-tye"
+        },
+        {
+          "english": "До́брое у́тро!",
+          "chinese": "早上好！",
+          "soundmark": "DOB-ra-ye OOT-ra"
+        },
+        {
+          "english": "До́брый день!",
+          "chinese": "下午好！",
+          "soundmark": "DOB-ry den"
+        },
+        {
+          "english": "До́брый ве́чер!",
+          "chinese": "晚上好！",
+          "soundmark": "DOB-ry VYE-cher"
+        },
+        {
+          "english": "Как ва́ши дела́?",
+          "chinese": "您最近怎么样？",
+          "soundmark": "kak VA-shee de-LA"
+        },
+        {
+          "english": "О́чень прия́тно.",
+          "chinese": "非常高兴见到您。",
+          "soundmark": "O-chen pree-YAT-na"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/13-Урок 1-1.avi"
+    },
+    {
+      "id": "rugr-02",
+      "order": 2,
+      "title": "非正式问候与告别",
+      "description": "与朋友熟人的日常问候和告别。",
+      "statements": [
+        {
+          "english": "Приве́т!",
+          "chinese": "嗨！你好！",
+          "soundmark": "pree-VYET"
+        },
+        {
+          "english": "Здоро́во!",
+          "chinese": "嘿！（非常随意）",
+          "soundmark": "zda-RO-va"
+        },
+        {
+          "english": "Как дела́?",
+          "chinese": "最近咋样？",
+          "soundmark": "kak de-LA"
+        },
+        {
+          "english": "Норма́льно.",
+          "chinese": "还行。",
+          "soundmark": "nar-MAL-na"
+        },
+        {
+          "english": "Отли́чно!",
+          "chinese": "棒极了！",
+          "soundmark": "at-LEECH-na"
+        },
+        {
+          "english": "Пока́!",
+          "chinese": "拜拜！",
+          "soundmark": "pa-KA"
+        },
+        {
+          "english": "До за́втра!",
+          "chinese": "明天见！",
+          "soundmark": "da ZAV-tra"
+        },
+        {
+          "english": "До встре́чи!",
+          "chinese": "回头见！",
+          "soundmark": "da VSTRYE-chee"
+        },
+        {
+          "english": "Споко́йной но́чи!",
+          "chinese": "晚安！",
+          "soundmark": "spa-KOY-noy NO-chee"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/14-Урок 1-2.avi"
+    },
+    {
+      "id": "rugr-03",
+      "order": 3,
+      "title": "介绍",
+      "description": "自我介绍和介绍他人的表达。",
+      "statements": [
+        {
+          "english": "Меня́ зову́т Анна.",
+          "chinese": "我叫安娜。",
+          "soundmark": "me-NYA za-VOOT AN-na"
+        },
+        {
+          "english": "Как вас зову́т?",
+          "chinese": "您叫什么名字？",
+          "soundmark": "kak vas za-VOOT"
+        },
+        {
+          "english": "Очень прия́тно познако́миться.",
+          "chinese": "很高兴认识您。",
+          "soundmark": "O-chen pree-YAT-na paz-na-KO-meet-sya"
+        },
+        {
+          "english": "Познако́мьтесь, э́то мой друг.",
+          "chinese": "认识一下，这是我的朋友。",
+          "soundmark": "paz-na-KOM-tye, E-ta moy droog"
+        },
+        {
+          "english": "Он из Росси́и.",
+          "chinese": "他来自俄罗斯。",
+          "soundmark": "on eez ras-SEE-ee"
+        },
+        {
+          "english": "Я из Кита́я.",
+          "chinese": "我来自中国。",
+          "soundmark": "ya eez kee-TA-ya"
+        },
+        {
+          "english": "Отку́да вы?",
+          "chinese": "您从哪里来？",
+          "soundmark": "at-KOO-da vy"
+        },
+        {
+          "english": "Рад познако́миться!",
+          "chinese": "很高兴认识你！（男性说）",
+          "soundmark": "rad paz-na-KO-meet-sya"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/16-Урок 2-1.avi"
+    },
+    {
+      "id": "rugr-04",
+      "order": 4,
+      "title": "告别",
+      "description": "不同场合的告别用语。",
+      "statements": [
+        {
+          "english": "До свида́ния!",
+          "chinese": "再见！（正式）",
+          "soundmark": "da svee-DA-nee-ya"
+        },
+        {
+          "english": "Всего́ хоро́шего!",
+          "chinese": "祝一切顺利！",
+          "soundmark": "vse-VO kha-RO-she-va"
+        },
+        {
+          "english": "Уда́чного дня!",
+          "chinese": "祝你一天愉快！",
+          "soundmark": "oo-DACH-na-va dnya"
+        },
+        {
+          "english": "До ве́чера!",
+          "chinese": "晚上见！",
+          "soundmark": "da VYE-che-ra"
+        },
+        {
+          "english": "Ско́ро уви́димся!",
+          "chinese": "很快见！",
+          "soundmark": "SKO-ra oo-VEE-deem-sya"
+        },
+        {
+          "english": "Счастли́во!",
+          "chinese": "祝好运！",
+          "soundmark": "shas-LEE-va"
+        },
+        {
+          "english": "Быва́й!",
+          "chinese": "再见！（随意）",
+          "soundmark": "by-VAY"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/17-Урок 2-2.avi"
+    },
+    {
+      "id": "rugr-05",
+      "order": 5,
+      "title": "感谢",
+      "description": "表达感谢及回应的俄语表达。",
+      "statements": [
+        {
+          "english": "Спаси́бо!",
+          "chinese": "谢谢！",
+          "soundmark": "spa-SEE-ba"
+        },
+        {
+          "english": "Большо́е спаси́бо!",
+          "chinese": "非常感谢！",
+          "soundmark": "bal-SHO-ye spa-SEE-ba"
+        },
+        {
+          "english": "Спаси́бо огро́мное!",
+          "chinese": "太感谢了！",
+          "soundmark": "spa-SEE-ba ag-ROM-na-ye"
+        },
+        {
+          "english": "Пожа́луйста.",
+          "chinese": "不客气。",
+          "soundmark": "pa-ZHA-loo-sta"
+        },
+        {
+          "english": "Не за что.",
+          "chinese": "不用谢。",
+          "soundmark": "ne za shta"
+        },
+        {
+          "english": "Благодарю́ вас!",
+          "chinese": "我感谢您！（正式）",
+          "soundmark": "bla-ga-da-RYOO vas"
+        },
+        {
+          "english": "Спаси́бо за по́мощь.",
+          "chinese": "谢谢你的帮助。",
+          "soundmark": "spa-SEE-ba za PO-mash"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/18-Урок 3-1.avi"
+    },
+    {
+      "id": "rugr-06",
+      "order": 6,
+      "title": "道歉",
+      "description": "道歉和回应道歉的表达。",
+      "statements": [
+        {
+          "english": "Извини́те!",
+          "chinese": "对不起！（正式）",
+          "soundmark": "eez-vee-NEE-tye"
+        },
+        {
+          "english": "Прости́те!",
+          "chinese": "请原谅！（正式）",
+          "soundmark": "pras-TEE-tye"
+        },
+        {
+          "english": "Извини́!",
+          "chinese": "对不起！（非正式）",
+          "soundmark": "eez-vee-NEE"
+        },
+        {
+          "english": "Ничего́ стра́шного.",
+          "chinese": "没关系。",
+          "soundmark": "nee-che-VO STRASH-na-va"
+        },
+        {
+          "english": "Я винова́т/винова́та.",
+          "chinese": "是我错了。（男/女）",
+          "soundmark": "ya vee-na-VAT / vee-na-VA-ta"
+        },
+        {
+          "english": "Прости́те за опозда́ние.",
+          "chinese": "对不起，我迟到了。",
+          "soundmark": "pras-TEE-tye za a-paz-DA-nee-ye"
+        },
+        {
+          "english": "Всё в поря́дке.",
+          "chinese": "没关系/一切都好。",
+          "soundmark": "vsyo v pa-RYAT-ke"
+        },
+        {
+          "english": "Я не хоте́л/хоте́ла.",
+          "chinese": "我不是故意的。（男/女）",
+          "soundmark": "ya ne kha-TYEL / kha-TYE-la"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/19-Урок 3-2.avi"
+    },
+    {
+      "id": "rugr-07",
+      "order": 7,
+      "title": "祝贺",
+      "description": "祝贺和祝福的俄语表达。",
+      "statements": [
+        {
+          "english": "Поздравля́ю!",
+          "chinese": "祝贺你！",
+          "soundmark": "paz-drav-LYA-yoo"
+        },
+        {
+          "english": "С днём рожде́ния!",
+          "chinese": "生日快乐！",
+          "soundmark": "s dnyom razh-DE-nee-ya"
+        },
+        {
+          "english": "С Но́вым го́дом!",
+          "chinese": "新年快乐！",
+          "soundmark": "s NO-vym GO-dam"
+        },
+        {
+          "english": "С Рождество́м!",
+          "chinese": "圣诞快乐！",
+          "soundmark": "s razh-des-TVOM"
+        },
+        {
+          "english": "С 8 Ма́рта!",
+          "chinese": "三八妇女节快乐！",
+          "soundmark": "s VOS-mi MAR-ta"
+        },
+        {
+          "english": "С Днём Побе́ды!",
+          "chinese": "胜利日快乐！",
+          "soundmark": "s dnyom pa-BYE-dy"
+        },
+        {
+          "english": "Жела́ю сча́стья и здоро́вья!",
+          "chinese": "祝你幸福和健康！",
+          "soundmark": "zhe-LA-yoo SHCHAS-tya ee zda-RO-vya"
+        },
+        {
+          "english": "С юбиле́ем!",
+          "chinese": "周年快乐！",
+          "soundmark": "s yoo-bee-LE-yem"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/22-Урок 4-1.avi"
+    },
+    {
+      "id": "rugr-08",
+      "order": 8,
+      "title": "邀请",
+      "description": "发出和回应邀请的表达。",
+      "statements": [
+        {
+          "english": "Приглаша́ю вас в го́сти.",
+          "chinese": "邀请您来做客。",
+          "soundmark": "pree-gla-SHA-yoo vas v GOS-tee"
+        },
+        {
+          "english": "Хо́чешь пойти́ в кино́?",
+          "chinese": "想去看电影吗？",
+          "soundmark": "KHO-cheesh pay-TEE v kee-NO"
+        },
+        {
+          "english": "Дава́й встре́тимся в кафе́.",
+          "chinese": "我们在咖啡馆见面吧。",
+          "soundmark": "da-VAY VSTRYE-teem-sya v ka-FE"
+        },
+        {
+          "english": "С удово́льствием!",
+          "chinese": "很乐意！",
+          "soundmark": "s oo-da-VOL-stvee-yem"
+        },
+        {
+          "english": "К сожале́нию, не могу́.",
+          "chinese": "很遗憾，我去不了。",
+          "soundmark": "k sa-zha-LE-nee-yoo, ne ma-GOO"
+        },
+        {
+          "english": "В како́е вре́мя?",
+          "chinese": "什么时间？",
+          "soundmark": "v ka-KO-ye VRE-mya"
+        },
+        {
+          "english": "Я приду́.",
+          "chinese": "我会来的。",
+          "soundmark": "ya pree-DOO"
+        },
+        {
+          "english": "Дава́йте встре́тимся за́втра.",
+          "chinese": "我们明天见面吧。",
+          "soundmark": "da-VAY-te VSTRYE-teem-sya ZAV-tra"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/23-Урок 4-2.avi"
+    },
+    {
+      "id": "rugr-09",
+      "order": 9,
+      "title": "闲聊",
+      "description": "简单日常闲聊的话题和表达。",
+      "statements": [
+        {
+          "english": "Что но́вого?",
+          "chinese": "有什么新鲜事吗？",
+          "soundmark": "shto NO-va-va"
+        },
+        {
+          "english": "Как настрое́ние?",
+          "chinese": "心情怎么样？",
+          "soundmark": "kak nast-ra-YE-nee-ye"
+        },
+        {
+          "english": "Отку́да ты зна́ешь?",
+          "chinese": "你怎么知道的？",
+          "soundmark": "at-KOO-da ty ZNA-yesh"
+        },
+        {
+          "english": "Да́вно не ви́делись!",
+          "chinese": "好久不见！",
+          "soundmark": "dav-NO ne VEE-de-lees"
+        },
+        {
+          "english": "Каки́е пла́ны на выходны́е?",
+          "chinese": "周末有什么计划？",
+          "soundmark": "ka-KEE-ye PLA-ny na vy-khad-NY-ye"
+        },
+        {
+          "english": "Как пожива́ешь?",
+          "chinese": "你过得怎么样？",
+          "soundmark": "kak pa-zhy-VA-yesh"
+        },
+        {
+          "english": "Всё по-ста́рому.",
+          "chinese": "老样子。",
+          "soundmark": "vsyo pa-STAR-moo"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/27-Урок 5-1.avi"
+    },
+    {
+      "id": "rugr-10",
+      "order": 10,
+      "title": "礼貌用语",
+      "description": "日常交际中常用的礼貌用语。",
+      "statements": [
+        {
+          "english": "Бу́дьте добры́.",
+          "chinese": "劳驾/请您……",
+          "soundmark": "BOOT-tye dob-RY"
+        },
+        {
+          "english": "Мо́жно?",
+          "chinese": "可以吗？",
+          "soundmark": "MOZH-na"
+        },
+        {
+          "english": "Разреши́те?",
+          "chinese": "允许吗？（正式）",
+          "soundmark": "raz-re-SHEE-tye"
+        },
+        {
+          "english": "Не могли́ бы вы...",
+          "chinese": "您能不能……（非常礼貌）",
+          "soundmark": "ne mag-LEE by vy"
+        },
+        {
+          "english": "Прошу́ вас.",
+          "chinese": "请您……",
+          "soundmark": "pra-SHOO vas"
+        },
+        {
+          "english": "Спаси́бо за гостеприи́мство.",
+          "chinese": "谢谢您的热情招待。",
+          "soundmark": "spa-SEE-ba za gas-te-pree-EEMST-va"
+        },
+        {
+          "english": "Извини́те за беспоко́йство.",
+          "chinese": "抱歉打扰了。",
+          "soundmark": "eez-vee-NEE-tye za bes-pa-KOYST-va"
+        },
+        {
+          "english": "Прия́тного аппети́та!",
+          "chinese": "祝您用餐愉快！",
+          "soundmark": "pree-YAT-na-va a-pee-TEE-ta"
+        },
+        {
+          "english": "Будьте здоро́вы!",
+          "chinese": "祝您健康！（对打喷嚏的人说）",
+          "soundmark": "BOOT-tye zda-RO-vy"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/28-Урок 5-2.avi"
+    }
+  ]
+}

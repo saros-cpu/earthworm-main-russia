@@ -1,0 +1,319 @@
+{
+  "id": "ru-spoken-hotel",
+  "title": "酒店住宿俄语",
+  "description": "预订酒店办理入住和退房的全过程俄语对话。",
+  "cover": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ruho-01",
+      "order": 1,
+      "title": "办理入住",
+      "description": "到达酒店办理入住手续。",
+      "statements": [
+        {
+          "english": "Здра́вствуйте, у меня́ заброни́рован но́мер.",
+          "chinese": "您好，我预订了房间。",
+          "soundmark": "ZDRA-stvooy-tye oo me-NYA za-bra-NEE-ro-van NO-mer"
+        },
+        {
+          "english": "Запо́лните, пожа́луйста, анке́ту.",
+          "chinese": "请填写登记表。",
+          "soundmark": "za-POL-nee-tye pa-ZHAL-sta an-KYE-too"
+        },
+        {
+          "english": "Ва́ш па́спорт, пожа́луйста.",
+          "chinese": "请出示护照。",
+          "soundmark": "vash PAS-port pa-ZHAL-sta"
+        },
+        {
+          "english": "Мне ну́жен одноме́стный но́мер.",
+          "chinese": "我需要一个单人间。",
+          "soundmark": "mne NOO-zhen a-dan-MEST-ny NO-mer"
+        },
+        {
+          "english": "На ско́лько ноче́й вы останови́тесь?",
+          "chinese": "您住几个晚上？",
+          "soundmark": "na SKOL-ka na-CHEY vy a-sta-na-VEE-tyes"
+        }
+      ]
+    },
+    {
+      "id": "ruho-02",
+      "order": 2,
+      "title": "房间要求",
+      "description": "对房间提出要求的用语。",
+      "statements": [
+        {
+          "english": "Мо́жно но́мер с ви́дом на мо́ре?",
+          "chinese": "可以要海景房吗？",
+          "soundmark": "MOZH-na NO-mer s VEE-dam na MO-re"
+        },
+        {
+          "english": "Мне ну́жен ти́хий но́мер.",
+          "chinese": "我需要安静的房间。",
+          "soundmark": "mne NOO-zhen TEE-khee NO-mer"
+        },
+        {
+          "english": "В но́мере есть ва́йфай?",
+          "chinese": "房间有WiFi吗？",
+          "soundmark": "v NO-me-re yest WAI-fai"
+        },
+        {
+          "english": "Нет горя́чей воды́ в кра́не.",
+          "chinese": "水龙头没热水。",
+          "soundmark": "nyet ga-RYA-chey va-DY v KRA-ne"
+        },
+        {
+          "english": "Мо́жно мне друго́й но́мер?",
+          "chinese": "可以换房间吗？",
+          "soundmark": "MOZH-na mne droo-GOY NO-mer"
+        }
+      ]
+    },
+    {
+      "id": "ruho-03",
+      "order": 3,
+      "title": "酒店设施",
+      "description": "询问酒店设施的常用表达。",
+      "statements": [
+        {
+          "english": "Где нахо́дится бассе́йн?",
+          "chinese": "游泳池在哪？",
+          "soundmark": "gde na-KHO-deet-sa bas-SEYN"
+        },
+        {
+          "english": "В како́е вре́мя откры́т спортза́л?",
+          "chinese": "健身房几点开门？",
+          "soundmark": "v ka-KO-ye VRE-mya at-KRYT sport-ZAL"
+        },
+        {
+          "english": "У вас есть парко́вка?",
+          "chinese": "有停车场吗？",
+          "soundmark": "oo vas YEST par-KOV-ka"
+        },
+        {
+          "english": "Где рестора́н в оте́ле?",
+          "chinese": "酒店餐厅在哪？",
+          "soundmark": "gde re-sta-RAN v a-TE-le"
+        },
+        {
+          "english": "До како́го часа́ рабо́тает ба́р?",
+          "chinese": "酒吧营业到几点？",
+          "soundmark": "da ka-KO-va cha-SA ra-BO-ta-yet bar"
+        }
+      ]
+    },
+    {
+      "id": "ruho-04",
+      "order": 4,
+      "title": "客房服务",
+      "description": "呼叫客房服务的表达。",
+      "statements": [
+        {
+          "english": "Э́то обслу́живание в номера́х?",
+          "chinese": "是客房服务吗？",
+          "soundmark": "E-ta ab-SLOO-zhee-va-nee-ye v na-me-RAKH"
+        },
+        {
+          "english": "Принеси́те за́втрак в но́мер.",
+          "chinese": "请把早餐送到房间。",
+          "soundmark": "pri-ne-SEE-tye ZAV-trak v NO-mer"
+        },
+        {
+          "english": "Мне ну́жно ещё одно́ полоте́нце.",
+          "chinese": "还需要一条毛巾。",
+          "soundmark": "mne NOOZH-na ye-SHCHYO ad-NO pa-la-TEN-tse"
+        },
+        {
+          "english": "В но́мере нет туале́тной бума́ги.",
+          "chinese": "房间里没有厕纸。",
+          "soundmark": "v NO-me-re nyet too-a-LYET-noy boo-MA-gee"
+        },
+        {
+          "english": "Забери́те посу́ду, пожа́луйста.",
+          "chinese": "请把餐具收走。",
+          "soundmark": "za-be-REE-tye pa-SOO-doo pa-ZHAL-sta"
+        }
+      ]
+    },
+    {
+      "id": "ruho-05",
+      "order": 5,
+      "title": "投诉处理",
+      "description": "向酒店投诉问题的表达。",
+      "statements": [
+        {
+          "english": "У меня́ пробле́ма с но́мером.",
+          "chinese": "我的房间有问题。",
+          "soundmark": "oo me-NYA prob-LE-ma s NO-me-ram"
+        },
+        {
+          "english": "Кондиционе́р не рабо́тает.",
+          "chinese": "空调坏了。",
+          "soundmark": "kon-dee-tsee-o-NER ne ra-BO-ta-yet"
+        },
+        {
+          "english": "О́чень шу́мно от у́лицы.",
+          "chinese": "街上很吵。",
+          "soundmark": "O-chen SHUM-na at OO-lee-tsy"
+        },
+        {
+          "english": "В кра́не течёт вода́.",
+          "chinese": "水龙头漏水。",
+          "soundmark": "v KRA-ne te-CHYOT va-DA"
+        }
+      ]
+    },
+    {
+      "id": "ruho-06",
+      "order": 6,
+      "title": "办理退房",
+      "description": "退房时的常用对话。",
+      "statements": [
+        {
+          "english": "Я хочу́ вы́селиться сего́дня.",
+          "chinese": "我今天退房。",
+          "soundmark": "ya kha-CHOO VY-se-leet-sya se-VOD-nya"
+        },
+        {
+          "english": "Во ско́лько ну́жно сдать но́мер?",
+          "chinese": "几点前必须退房？",
+          "soundmark": "va SKOL-ka NOOZH-na zdat NO-mer"
+        },
+        {
+          "english": "Мо́жно оста́вить ве́щи в ка́мере хране́ния?",
+          "chinese": "可以寄存行李吗？",
+          "soundmark": "MOZH-na as-TA-veet VYE-shchee v KA-me-re khra-NE-nee-ya"
+        },
+        {
+          "english": "Пригото́вьте счёт, пожа́луйста.",
+          "chinese": "请准备好账单。",
+          "soundmark": "pri-ga-TOV-tye shyot pa-ZHAL-sta"
+        },
+        {
+          "english": "Всё бы́ло заме́чательно, спаси́бо.",
+          "chinese": "一切都很好，谢谢。",
+          "soundmark": "vsyo BY-la za-me-CHA-tel-na spa-SEE-ba"
+        }
+      ]
+    },
+    {
+      "id": "ruho-07",
+      "order": 7,
+      "title": "询问路线",
+      "description": "在酒店询问周边路线。",
+      "statements": [
+        {
+          "english": "Как пройти́ до це́нтра го́рода?",
+          "chinese": "怎么去市中心？",
+          "soundmark": "kak proy-TEE da TSEN-tra GO-ro-da"
+        },
+        {
+          "english": "Где ближа́йшая ста́нция метро́?",
+          "chinese": "最近的地铁站在哪？",
+          "soundmark": "gde blee-ZHAY-sha-ya STAN-tsee-ya met-RO"
+        },
+        {
+          "english": "Вы́зовите мне такси́, пожа́луйста.",
+          "chinese": "请帮我叫辆出租车。",
+          "soundmark": "VY-za-vee-tye mne tak-SEE pa-ZHAL-sta"
+        },
+        {
+          "english": "Э́то далеко́ от оте́ля?",
+          "chinese": "离酒店远吗？",
+          "soundmark": "E-ta da-le-KO at a-TE-lya"
+        }
+      ]
+    },
+    {
+      "id": "ruho-08",
+      "order": 8,
+      "title": "酒店早餐",
+      "description": "在酒店吃早餐的对话。",
+      "statements": [
+        {
+          "english": "Во ско́лько за́втрак?",
+          "chinese": "早餐几点开始？",
+          "soundmark": "va SKOL-ka ZAV-trak"
+        },
+        {
+          "english": "За́втрак шве́дский стол?",
+          "chinese": "早餐是自助餐吗？",
+          "soundmark": "ZAV-trak SHVED-skee stol"
+        },
+        {
+          "english": "Где рестора́н для за́втрака?",
+          "chinese": "早餐餐厅在哪？",
+          "soundmark": "gde re-sta-RAN dlya ZAV-tra-ka"
+        },
+        {
+          "english": "Мо́жно взять за́втрак с собо́й?",
+          "chinese": "可以把早餐带走吗？",
+          "soundmark": "MOZH-na vzyat ZAV-trak sa-BOY"
+        }
+      ]
+    },
+    {
+      "id": "ruho-09",
+      "order": 9,
+      "title": "延长住宿",
+      "description": "延长住宿时间的表达。",
+      "statements": [
+        {
+          "english": "Я хочу́ продли́ть прожива́ние.",
+          "chinese": "我想延长住宿。",
+          "soundmark": "ya kha-CHOO prad-LEET pra-zhe-VA-nee-ye"
+        },
+        {
+          "english": "Мо́жно оста́ться ещё на два дня?",
+          "chinese": "可以再多住两天吗？",
+          "soundmark": "MOZH-na as-TA-tsa ye-SHYO na dva dnya"
+        },
+        {
+          "english": "Ско́лько сто́ит дополни́тельная ночь?",
+          "chinese": "加一晚多少钱？",
+          "soundmark": "SKOL-ka STO-eet da-pol-NEE-tel-na-ya noch"
+        },
+        {
+          "english": "Есть ли ски́дка при продле́нии?",
+          "chinese": "延长住宿有折扣吗？",
+          "soundmark": "yest lee SKEEd-ka pri prad-LE-nee-ee"
+        }
+      ]
+    },
+    {
+      "id": "ruho-10",
+      "order": 10,
+      "title": "礼宾服务",
+      "description": "向礼宾部寻求帮助。",
+      "statements": [
+        {
+          "english": "Где мо́жно купи́ть экску́рсию?",
+          "chinese": "在哪里可以报团旅游？",
+          "soundmark": "gde MOZH-na koo-PEET ek-SKUR-see-yoo"
+        },
+        {
+          "english": "Порекоменду́йте хоро́ший рестора́н.",
+          "chinese": "推荐一个好餐厅。",
+          "soundmark": "pa-re-ka-men-DOO-tye kha-RO-shee re-sta-RAN"
+        },
+        {
+          "english": "Мне ну́жен биле́т в теа́тр.",
+          "chinese": "我需要一张剧院票。",
+          "soundmark": "mne NOO-zhen bee-LYET v te-ATR"
+        },
+        {
+          "english": "Закажи́те сто́лик в рестора́не.",
+          "chinese": "请帮我订餐桌。",
+          "soundmark": "za-ka-ZHEE-tye STO-leek v re-sta-RA-ne"
+        },
+        {
+          "english": "Когда́ ближа́йший сеа́нс в кино́?",
+          "chinese": "最近一场电影什么时候？",
+          "soundmark": "kag-DA blee-ZHAY-shee se-ANS v kee-NO"
+        }
+      ]
+    }
+  ]
+}

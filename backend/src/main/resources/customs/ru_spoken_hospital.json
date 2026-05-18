@@ -1,0 +1,319 @@
+{
+  "id": "ru-spoken-hospital",
+  "title": "看病就医俄语",
+  "description": "在医院看病时描述症状取药的俄语表达。",
+  "cover": "https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ruhosp-01",
+      "order": 1,
+      "title": "预约挂号",
+      "description": "预约看医生的常用表达。",
+      "statements": [
+        {
+          "english": "Мо́жно записа́ться к врачу́?",
+          "chinese": "可以预约看医生吗？",
+          "soundmark": "MOZH-na za-pee-SAT-sya k vra-CHOO"
+        },
+        {
+          "english": "Како́й врач принима́ет сего́дня?",
+          "chinese": "今天哪个医生坐诊？",
+          "soundmark": "ka-KOY vrach pree-nee-MA-yet se-VOD-nya"
+        },
+        {
+          "english": "Мне ну́жен терапе́вт.",
+          "chinese": "我需要看内科医生。",
+          "soundmark": "mnye NOO-zhen te-ra-PEFT"
+        },
+        {
+          "english": "Когда́ свобо́дное вре́мя?",
+          "chinese": "什么时候有空？",
+          "soundmark": "kag-DA sva-BOD-na-ye VRE-mya"
+        },
+        {
+          "english": "Я хочу́ записа́ться на понеде́льник.",
+          "chinese": "我想约周一。",
+          "soundmark": "ya kha-CHOO za-pee-SAT-sya na pa-ne-DEL-neek"
+        }
+      ]
+    },
+    {
+      "id": "ruhosp-02",
+      "order": 2,
+      "title": "描述症状",
+      "description": "向医生描述身体不适。",
+      "statements": [
+        {
+          "english": "У меня́ боли́т голова́.",
+          "chinese": "我头疼。",
+          "soundmark": "oo me-NYA ba-LEET ga-la-VA"
+        },
+        {
+          "english": "У меня́ боли́т живо́т.",
+          "chinese": "肚子疼。",
+          "soundmark": "oo me-NYA ba-LEET zhee-VOT"
+        },
+        {
+          "english": "У меня́ температу́ра.",
+          "chinese": "发烧了。",
+          "soundmark": "oo me-NYA tem-pe-ra-TOO-ra"
+        },
+        {
+          "english": "У меня́ ка́шель.",
+          "chinese": "咳嗽。",
+          "soundmark": "oo me-NYA KA-shel"
+        },
+        {
+          "english": "Меня́ тошни́т.",
+          "chinese": "我觉得恶心。",
+          "soundmark": "me-NYA tash-NEET"
+        }
+      ]
+    },
+    {
+      "id": "ruhosp-03",
+      "order": 3,
+      "title": "在药房",
+      "description": "在药房买药时的常用表达。",
+      "statements": [
+        {
+          "english": "Где ближа́йшая апте́ка?",
+          "chinese": "最近药房在哪？",
+          "soundmark": "gde blee-ZHAY-sha-ya ap-TYE-ka"
+        },
+        {
+          "english": "Да́йте что́нибудь от головно́й бо́ли.",
+          "chinese": "请给治头疼的药。",
+          "soundmark": "DAY-tye SHTA-nee-boot ad ga-lav-NOY BO-lee"
+        },
+        {
+          "english": "Э́то лека́рство ну́жно глота́ть?",
+          "chinese": "这个药是吞服的吗？",
+          "soundmark": "E-ta le-KAR-stva NOOZH-na gla-TAT"
+        },
+        {
+          "english": "Ско́лько раз в день принима́ть?",
+          "chinese": "一天吃几次？",
+          "soundmark": "SKOL-ka raz v den pree-nee-MAT"
+        },
+        {
+          "english": "Ну́жен реце́пт для э́того лека́рства?",
+          "chinese": "这个药需要处方吗？",
+          "soundmark": "NOO-zhen re-TSEPT dlya E-ta-va le-KAR-stva"
+        }
+      ]
+    },
+    {
+      "id": "ruhosp-04",
+      "order": 4,
+      "title": "在诊室",
+      "description": "在医生诊室里的对话。",
+      "statements": [
+        {
+          "english": "На что жа́луетесь?",
+          "chinese": "您哪里不舒服？",
+          "soundmark": "na shto ZHA-loo-ye-tyes"
+        },
+        {
+          "english": "Да́йте, я вас осмо́трю.",
+          "chinese": "我来检查一下。",
+          "soundmark": "DAY-tye ya vas as-MOT-ryu"
+        },
+        {
+          "english": "Открóйте рот и скажи́те «А-а-а».",
+          "chinese": "张开嘴说啊——",
+          "soundmark": "at-KROY-tye rot i ska-ZHEE-te a-a-a"
+        },
+        {
+          "english": "Ско́лько дней у вас температу́ра?",
+          "chinese": "发烧几天了？",
+          "soundmark": "SKOL-ka dney oo vas tem-pe-ra-TOO-ra"
+        },
+        {
+          "english": "Бо́лите ещё где́нибудь?",
+          "chinese": "还有其他地方疼吗？",
+          "soundmark": "BA-lee-te ye-SHYO GDE-nee-boot"
+        }
+      ]
+    },
+    {
+      "id": "ruhosp-05",
+      "order": 5,
+      "title": "描述疼痛",
+      "description": "具体描述疼痛的位置和程度。",
+      "statements": [
+        {
+          "english": "О́чень си́льно бо́лит.",
+          "chinese": "疼得厉害。",
+          "soundmark": "O-chen SEEL-na ba-LEET"
+        },
+        {
+          "english": "Боль о́страя, как но́жом.",
+          "chinese": "像刀割一样疼。",
+          "soundmark": "bol OS-tra-ya kak no-ZHOM"
+        },
+        {
+          "english": "Уже неде́лю боли́т.",
+          "chinese": "已经疼了一周了。",
+          "soundmark": "oo-ZHE ne-DE-lyu ba-LEET"
+        },
+        {
+          "english": "Когда́ я ка́шляю, боль уси́ливается.",
+          "chinese": "咳嗽的时候更疼。",
+          "soundmark": "kag-DA ya KASH-lya-yoo bol oo-SEE-lee-va-ye-tsa"
+        }
+      ]
+    },
+    {
+      "id": "ruhosp-06",
+      "order": 6,
+      "title": "诊断结果",
+      "description": "听取医生诊断时的表达。",
+      "statements": [
+        {
+          "english": "Вам ну́жно сдать анализы.",
+          "chinese": "您需要做化验。",
+          "soundmark": "vam NOOZH-na zdat a-NA-lee-zy"
+        },
+        {
+          "english": "У вас просту́да.",
+          "chinese": "您感冒了。",
+          "soundmark": "oo vas pra-STOO-da"
+        },
+        {
+          "english": "Э́то не серьёзно.",
+          "chinese": "这不严重。",
+          "soundmark": "E-ta ne ser-YOZ-na"
+        },
+        {
+          "english": "Вам ну́жно лечь в больни́цу.",
+          "chinese": "您需要住院。",
+          "soundmark": "vam NOOZH-na lech v bal-NEE-tsoo"
+        }
+      ]
+    },
+    {
+      "id": "ruhosp-07",
+      "order": 7,
+      "title": "住院检查",
+      "description": "办理住院和做检查时的对话。",
+      "statements": [
+        {
+          "english": "Где регистрату́ра?",
+          "chinese": "挂号处在哪？",
+          "soundmark": "gde re-gee-stra-TOO-ra"
+        },
+        {
+          "english": "Мне ну́жно сде́лать рентге́н.",
+          "chinese": "我需要拍X光。",
+          "soundmark": "mne NOOZH-na ZDY-lat rent-GEN"
+        },
+        {
+          "english": "Когда́ бу́дут гото́вы результа́ты?",
+          "chinese": "什么时候出结果？",
+          "soundmark": "kag-DA BOO-doot ga-TO-vy re-zool-TA-ty"
+        },
+        {
+          "english": "Мо́жно ана́лиз кро́ви?",
+          "chinese": "可以抽血化验吗？",
+          "soundmark": "MOZH-na a-NA-liz KRO-vee"
+        },
+        {
+          "english": "В како́й пала́те я бу́ду?",
+          "chinese": "我住哪个病房？",
+          "soundmark": "v ka-KOY pa-LA-tye ya BOO-doo"
+        }
+      ]
+    },
+    {
+      "id": "ruhosp-08",
+      "order": 8,
+      "title": "看牙科",
+      "description": "看牙医时的常用表达。",
+      "statements": [
+        {
+          "english": "У меня́ боли́т зуб.",
+          "chinese": "我牙疼。",
+          "soundmark": "oo me-NYA ba-LEET zoop"
+        },
+        {
+          "english": "Мне ну́жно удали́ть зуб?",
+          "chinese": "需要拔牙吗？",
+          "soundmark": "mne NOOZH-na oo-da-LEET zoop"
+        },
+        {
+          "english": "Сде́лайте обезбо́ливающее.",
+          "chinese": "请打麻药。",
+          "soundmark": "ZDY-lay-tye a-bez-BO-lee-va-yoo-shche-ye"
+        },
+        {
+          "english": "Я бою́сь боли́.",
+          "chinese": "我怕疼。",
+          "soundmark": "ya ba-YUS ba-LEE"
+        },
+        {
+          "english": "Ско́лько бу́дет сто́ить лече́ние?",
+          "chinese": "治疗费用多少？",
+          "soundmark": "SKOL-ka BOO-det STO-eet le-CHE-nee-ye"
+        }
+      ]
+    },
+    {
+      "id": "ruhosp-09",
+      "order": 9,
+      "title": "复查复诊",
+      "description": "复查时的对话。",
+      "statements": [
+        {
+          "english": "Мне ну́жно прийти́ на повторный приём.",
+          "chinese": "我需要来复诊。",
+          "soundmark": "mne NOOZH-na pree-EE-tee na pa-VTOR-ny pree-YOM"
+        },
+        {
+          "english": "Я чу́вствую себя́ лу́чше.",
+          "chinese": "我感觉好多了。",
+          "soundmark": "ya CHOOF-stvo-yoo se-BYA LOOCH-she"
+        },
+        {
+          "english": "Каки́е процеду́ры ещё ну́жны?",
+          "chinese": "还需要做什么检查？",
+          "soundmark": "ka-KEE-ye pra-tse-DOO-ry ye-SHYO NOOZH-ny"
+        },
+        {
+          "english": "Мо́жно продолжа́ть рабо́ту?",
+          "chinese": "可以继续上班吗？",
+          "soundmark": "MOZH-na pra-dol-ZHAT ra-BO-too"
+        }
+      ]
+    },
+    {
+      "id": "ruhosp-10",
+      "order": 10,
+      "title": "医保报销",
+      "description": "办理医保和费用结算的用语。",
+      "statements": [
+        {
+          "english": "У вас есть медици́нский по́люс?",
+          "chinese": "您有医保吗？",
+          "soundmark": "oo vas YEST me-dee-TSEEN-skee PO-lis"
+        },
+        {
+          "english": "Хочу́ оплати́ть по страхо́вке.",
+          "chinese": "我想用保险支付。",
+          "soundmark": "kha-CHOO a-pla-TEET pa stra-KHOV-kye"
+        },
+        {
+          "english": "Где ка́сса для опла́ты?",
+          "chinese": "收费处在哪？",
+          "soundmark": "gde KAS-sa dlya a-PLA-ty"
+        },
+        {
+          "english": "Мо́жно получи́ть че́к?",
+          "chinese": "可以给收据吗？",
+          "soundmark": "MOZH-na pa-loo-CHEET chek"
+        }
+      ]
+    }
+  ]
+}

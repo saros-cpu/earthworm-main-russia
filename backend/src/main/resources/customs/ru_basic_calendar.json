@@ -1,0 +1,544 @@
+{
+  "id": "ru-basic-calendar",
+  "title": "日期与天气表达",
+  "description": "学习星期、月份、日期的表达以及描述天气的常用俄语。",
+  "cover": "https://images.unsplash.com/photo-1506784365847-bbad939a9335?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ruca-01",
+      "order": 1,
+      "title": "星期与月份",
+      "description": "俄语星期和月份名称。",
+      "statements": [
+        {
+          "english": "понеде́льник",
+          "chinese": "星期一",
+          "soundmark": "pa-nee-DYEL-neek"
+        },
+        {
+          "english": "вто́рник",
+          "chinese": "星期二",
+          "soundmark": "FTOR-neek"
+        },
+        {
+          "english": "среда́",
+          "chinese": "星期三",
+          "soundmark": "sre-DA"
+        },
+        {
+          "english": "четве́рг",
+          "chinese": "星期四",
+          "soundmark": "chet-VYERK"
+        },
+        {
+          "english": "пя́тница",
+          "chinese": "星期五",
+          "soundmark": "PYAT-nee-tsa"
+        },
+        {
+          "english": "суббо́та",
+          "chinese": "星期六",
+          "soundmark": "soo-BO-ta"
+        },
+        {
+          "english": "воскресе́нье",
+          "chinese": "星期日",
+          "soundmark": "va-skree-SYE-nye"
+        },
+        {
+          "english": "янва́рь",
+          "chinese": "一月",
+          "soundmark": "yan-VAR"
+        },
+        {
+          "english": "февра́ль",
+          "chinese": "二月",
+          "soundmark": "fev-RAL"
+        },
+        {
+          "english": "март",
+          "chinese": "三月",
+          "soundmark": "mart"
+        },
+        {
+          "english": "апре́ль",
+          "chinese": "四月",
+          "soundmark": "ap-REL"
+        },
+        {
+          "english": "май",
+          "chinese": "五月",
+          "soundmark": "may"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/13-Урок 1-1.avi"
+    },
+    {
+      "id": "ruca-02",
+      "order": 2,
+      "title": "天气表达",
+      "description": "描述天气的常用词汇句型。",
+      "statements": [
+        {
+          "english": "Сего́дня хо́лодно.",
+          "chinese": "今天冷。",
+          "soundmark": "se-VOD-nya KHO-lad-na"
+        },
+        {
+          "english": "Сего́дня те́пло.",
+          "chinese": "今天暖和。",
+          "soundmark": "se-VOD-nya TYEP-la"
+        },
+        {
+          "english": "Идёт дождь.",
+          "chinese": "下雨了。",
+          "soundmark": "ee-DYOT dozhd"
+        },
+        {
+          "english": "Идёт снег.",
+          "chinese": "下雪了。",
+          "soundmark": "ee-DYOT snyek"
+        },
+        {
+          "english": "Со́лнечно.",
+          "chinese": "晴天。",
+          "soundmark": "SOL-nech-na"
+        },
+        {
+          "english": "О́блачно.",
+          "chinese": "多云。",
+          "soundmark": "OB-lach-na"
+        },
+        {
+          "english": "Ве́тер.",
+          "chinese": "刮风。",
+          "soundmark": "VYE-tyer"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/14-Урок 1-2.avi"
+    },
+    {
+      "id": "ruca-03",
+      "order": 3,
+      "title": "月份续篇",
+      "description": "六月至十二月的俄语名称。",
+      "statements": [
+        {
+          "english": "ию́нь",
+          "chinese": "六月",
+          "soundmark": "ee-YOON"
+        },
+        {
+          "english": "ию́ль",
+          "chinese": "七月",
+          "soundmark": "ee-YOOL"
+        },
+        {
+          "english": "а́вгуст",
+          "chinese": "八月",
+          "soundmark": "AV-goost"
+        },
+        {
+          "english": "сентя́брь",
+          "chinese": "九月",
+          "soundmark": "sen-TYABR"
+        },
+        {
+          "english": "октя́брь",
+          "chinese": "十月",
+          "soundmark": "ak-TYABR"
+        },
+        {
+          "english": "ноя́брь",
+          "chinese": "十一月",
+          "soundmark": "na-YABR"
+        },
+        {
+          "english": "дека́брь",
+          "chinese": "十二月",
+          "soundmark": "de-KABR"
+        },
+        {
+          "english": "ме́сяц",
+          "chinese": "月份",
+          "soundmark": "MYE-syats"
+        },
+        {
+          "english": "год",
+          "chinese": "年",
+          "soundmark": "god"
+        },
+        {
+          "english": "календа́рь",
+          "chinese": "日历",
+          "soundmark": "ka-len-DAR"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/16-Урок 2-1.avi"
+    },
+    {
+      "id": "ruca-04",
+      "order": 4,
+      "title": "季节名称",
+      "description": "四季的俄语表达及相关词汇。",
+      "statements": [
+        {
+          "english": "весна́",
+          "chinese": "春天",
+          "soundmark": "ves-NA"
+        },
+        {
+          "english": "ле́то",
+          "chinese": "夏天",
+          "soundmark": "LYE-ta"
+        },
+        {
+          "english": "о́сень",
+          "chinese": "秋天",
+          "soundmark": "O-sen"
+        },
+        {
+          "english": "зима́",
+          "chinese": "冬天",
+          "soundmark": "zee-MA"
+        },
+        {
+          "english": "весно́й",
+          "chinese": "在春天",
+          "soundmark": "ves-NOY"
+        },
+        {
+          "english": "ле́том",
+          "chinese": "在夏天",
+          "soundmark": "LYE-tam"
+        },
+        {
+          "english": "о́сенью",
+          "chinese": "在秋天",
+          "soundmark": "O-sen-yu"
+        },
+        {
+          "english": "зимо́й",
+          "chinese": "在冬天",
+          "soundmark": "zee-MOY"
+        },
+        {
+          "english": "вре́мя го́да",
+          "chinese": "季节",
+          "soundmark": "VRE-mya GO-da"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/17-Урок 2-2.avi"
+    },
+    {
+      "id": "ruca-05",
+      "order": 5,
+      "title": "天气形容词",
+      "description": "描述天气状况的常用形容词。",
+      "statements": [
+        {
+          "english": "хоро́шая пого́да",
+          "chinese": "好天气",
+          "soundmark": "kha-RO-sha-ya pa-GO-da"
+        },
+        {
+          "english": "плоха́я пого́да",
+          "chinese": "坏天气",
+          "soundmark": "pla-KHA-ya pa-GO-da"
+        },
+        {
+          "english": "дождли́вый",
+          "chinese": "多雨的",
+          "soundmark": "dazh-DLEE-vy"
+        },
+        {
+          "english": "сне́жный",
+          "chinese": "多雪的",
+          "soundmark": "SNYEZH-ny"
+        },
+        {
+          "english": "ве́трено",
+          "chinese": "有风",
+          "soundmark": "VYE-tre-na"
+        },
+        {
+          "english": "тума́н",
+          "chinese": "雾",
+          "soundmark": "too-MAN"
+        },
+        {
+          "english": "гроза́",
+          "chinese": "雷雨",
+          "soundmark": "gra-ZA"
+        },
+        {
+          "english": "ра́дуга",
+          "chinese": "彩虹",
+          "soundmark": "RA-doo-ga"
+        },
+        {
+          "english": "сы́ро",
+          "chinese": "潮湿",
+          "soundmark": "SY-ra"
+        },
+        {
+          "english": "жа́рко",
+          "chinese": "炎热",
+          "soundmark": "ZHAR-ka"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/18-Урок 3-1.avi"
+    },
+    {
+      "id": "ruca-06",
+      "order": 6,
+      "title": "天气预报",
+      "description": "描述天气预报的常用表达。",
+      "statements": [
+        {
+          "english": "прогно́з пого́ды",
+          "chinese": "天气预报",
+          "soundmark": "prag-NOZ pa-GO-dy"
+        },
+        {
+          "english": "За́втра бу́дет те́пло.",
+          "chinese": "明天会暖和。",
+          "soundmark": "ZAV-tra BU-det TYEP-la"
+        },
+        {
+          "english": "За́втра бу́дет до́ждь.",
+          "chinese": "明天有雨。",
+          "soundmark": "ZAV-tra BU-det dozhd"
+        },
+        {
+          "english": "За́втра бу́дет снег.",
+          "chinese": "明天有雪。",
+          "soundmark": "ZAV-tra BU-det snyek"
+        },
+        {
+          "english": "За́втра бу́дет ве́трено.",
+          "chinese": "明天有风。",
+          "soundmark": "ZAV-tra BU-det VYE-tre-na"
+        },
+        {
+          "english": "За́втра бу́дет со́лнечно.",
+          "chinese": "明天晴天。",
+          "soundmark": "ZAV-tra BU-det SOL-nech-na"
+        },
+        {
+          "english": "За́втра бу́дет о́блачно.",
+          "chinese": "明天多云。",
+          "soundmark": "ZAV-tra BU-det OB-lach-na"
+        },
+        {
+          "english": "кака́я пого́да бу́дет за́втра?",
+          "chinese": "明天天气怎么样？",
+          "soundmark": "ka-KA-ya pa-GO-da BU-det ZAV-tra"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/19-Урок 3-2.avi"
+    },
+    {
+      "id": "ruca-07",
+      "order": 7,
+      "title": "温度表达",
+      "description": "询问和描述温度的俄语表达。",
+      "statements": [
+        {
+          "english": "температу́ра",
+          "chinese": "温度",
+          "soundmark": "tem-pe-ra-TOO-ra"
+        },
+        {
+          "english": "гра́дус",
+          "chinese": "度",
+          "soundmark": "GRA-doos"
+        },
+        {
+          "english": "Ско́лько гра́дусов?",
+          "chinese": "多少度？",
+          "soundmark": "SKOL-ka GRA-doo-sav"
+        },
+        {
+          "english": "Де́сять гра́дусов тепла́.",
+          "chinese": "零上十度。",
+          "soundmark": "DYE-syat GRA-doo-sav te-PLA"
+        },
+        {
+          "english": "Де́сять гра́дусов моро́за.",
+          "chinese": "零下十度。",
+          "soundmark": "DYE-syat GRA-doo-sav ma-RO-za"
+        },
+        {
+          "english": "ноль гра́дусов",
+          "chinese": "零度",
+          "soundmark": "nol GRA-doo-sav"
+        },
+        {
+          "english": "морóз",
+          "chinese": "严寒",
+          "soundmark": "ma-ROS"
+        },
+        {
+          "english": "жара́",
+          "chinese": "酷热",
+          "soundmark": "zha-RA"
+        },
+        {
+          "english": "прохла́дно",
+          "chinese": "凉爽",
+          "soundmark": "pra-KHLAD-na"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/22-Урок 4-1.avi"
+    },
+    {
+      "id": "ruca-08",
+      "order": 8,
+      "title": "询问天气",
+      "description": "询问天气情况的常用问句。",
+      "statements": [
+        {
+          "english": "Кака́я сего́дня пого́да?",
+          "chinese": "今天天气怎么样？",
+          "soundmark": "ka-KA-ya se-VOD-nya pa-GO-da"
+        },
+        {
+          "english": "Кака́я пого́да бу́дет за́втра?",
+          "chinese": "明天天气怎么样？",
+          "soundmark": "ka-KA-ya pa-GO-da BU-det ZAV-tra"
+        },
+        {
+          "english": "Кака́я пого́да ле́том?",
+          "chinese": "夏天天气怎么样？",
+          "soundmark": "ka-KA-ya pa-GO-da LYE-tam"
+        },
+        {
+          "english": "Вам нра́вится э́та пого́да?",
+          "chinese": "您喜欢这个天气吗？",
+          "soundmark": "vam NRA-vee-tsa E-ta pa-GO-da"
+        },
+        {
+          "english": "Сего́дня бу́дет дождь?",
+          "chinese": "今天会下雨吗？",
+          "soundmark": "se-VOD-nya BU-det dozhd"
+        },
+        {
+          "english": "Когда́ придёт зима́?",
+          "chinese": "冬天什么时候来？",
+          "soundmark": "kag-DA pree-DYOT zee-MA"
+        },
+        {
+          "english": "Здесь ча́сто идёт дождь?",
+          "chinese": "这里经常下雨吗？",
+          "soundmark": "zdyes CHAS-ta ee-DYOT dozhd"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/23-Урок 4-2.avi"
+    },
+    {
+      "id": "ruca-09",
+      "order": 9,
+      "title": "日历表达",
+      "description": "日期询问和表达的常用句型。",
+      "statements": [
+        {
+          "english": "Како́е сего́дня число́?",
+          "chinese": "今天几号？",
+          "soundmark": "ka-KO-ye se-VOD-nya chee-SLO"
+        },
+        {
+          "english": "Сего́дня пе́рвое мая.",
+          "chinese": "今天是五月一号。",
+          "soundmark": "se-VOD-nya PYER-va-ye MA-ya"
+        },
+        {
+          "english": "Како́й сего́дня день?",
+          "chinese": "今天星期几？",
+          "soundmark": "ka-KOY se-VOD-nya den"
+        },
+        {
+          "english": "Сего́дня среда́.",
+          "chinese": "今天是星期三。",
+          "soundmark": "se-VOD-nya sre-DA"
+        },
+        {
+          "english": "когда́?",
+          "chinese": "什么时候？",
+          "soundmark": "kag-DA"
+        },
+        {
+          "english": "в э́том году́",
+          "chinese": "在今年",
+          "soundmark": "v E-tam ga-DOO"
+        },
+        {
+          "english": "в сле́дующем году́",
+          "chinese": "在明年",
+          "soundmark": "v SLE-du-yu-shchem ga-DOO"
+        },
+        {
+          "english": "в про́шлом году́",
+          "chinese": "在去年",
+          "soundmark": "v PROSH-lam ga-DOO"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/27-Урок 5-1.avi"
+    },
+    {
+      "id": "ruca-10",
+      "order": 10,
+      "title": "季节与活动",
+      "description": "不同季节的典型活动和表达。",
+      "statements": [
+        {
+          "english": "Зимо́й идёт снег.",
+          "chinese": "冬天会下雪。",
+          "soundmark": "zee-MOY ee-DYOT snyek"
+        },
+        {
+          "english": "Ле́том я купа́юсь.",
+          "chinese": "夏天我游泳。",
+          "soundmark": "LYE-tam ya koo-PA-yoos"
+        },
+        {
+          "english": "Весно́й цветы́ цвету́т.",
+          "chinese": "春天花儿开了。",
+          "soundmark": "ves-NOY tsve-TY tsve-TOOT"
+        },
+        {
+          "english": "О́сенью ли́стья па́дают.",
+          "chinese": "秋天叶子落了。",
+          "soundmark": "O-sen-yu LEES-tya PA-da-yut"
+        },
+        {
+          "english": "Зимо́й хо́лодно.",
+          "chinese": "冬天很冷。",
+          "soundmark": "zee-MOY KHO-lad-na"
+        },
+        {
+          "english": "Ле́том жа́рко.",
+          "chinese": "夏天很热。",
+          "soundmark": "LYE-tam ZHAR-ka"
+        },
+        {
+          "english": "Мы лю́бим ле́то.",
+          "chinese": "我们喜欢夏天。",
+          "soundmark": "my LYU-beem LYE-ta"
+        },
+        {
+          "english": "Како́е вре́мя го́да тебе́ нра́вится?",
+          "chinese": "你喜欢哪个季节？",
+          "soundmark": "ka-KO-ye VRE-mya GO-da te-BE NRA-vee-tsa"
+        },
+        {
+          "english": "Мне нра́вится весна́.",
+          "chinese": "我喜欢春天。",
+          "soundmark": "mnye NRA-vee-tsa ves-NA"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/28-Урок 5-2.avi"
+    }
+  ]
+}

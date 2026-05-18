@@ -18,10 +18,12 @@
           </div>
           <div>
             <div class="flex gap-2">
-              <div class="text-xl font-bold">{{ userStore.user?.username }}</div>
+              <div class="text-xl font-bold">
+                {{ userStore.user?.nickname || userStore.user?.username }}
+              </div>
               <MembershipBadge></MembershipBadge>
             </div>
-            <div class="text-sm opacity-75">{{ userStore.user?.name }}</div>
+            <div class="text-sm opacity-75">@{{ userStore.user?.username }}</div>
           </div>
         </div>
 
@@ -66,7 +68,7 @@ import { computed } from "vue";
 import Dialog from "~/components/common/Dialog.vue";
 import { Theme, useDarkMode } from "~/composables/darkMode";
 import { useUserMenu } from "~/composables/user/useUserMenu";
-import { signOut } from "~/services/auth";
+import { getStoredUser, signOut } from "~/services/auth";
 import { useUserStore } from "~/store/user";
 
 const { isUserMenuOpen, closeUserMenu } = useUserMenu();
@@ -82,7 +84,8 @@ const isDarkMode = computed(() => darkMode.value === Theme.DARK);
 const modal = useModal();
 
 const showMenuOptions = computed(() => {
-  return [
+  const isAdmin = getStoredUser()?.role === "ADMIN";
+  const options = [
     {
       title: "设置",
       name: "setting",
@@ -90,23 +93,21 @@ const showMenuOptions = computed(() => {
       icon: "i-ph-gear",
     },
     {
-      title: "掌握列表",
-      name: "setting",
-      eventName: handleMasteredElements,
-      icon: "i-ph-book",
-    },
-    {
-      title: "编辑器",
-      name: "setting",
-      eventName: handleGoToEditor,
-      icon: "i-ph-planet-duotone",
-    },
-    {
       title: "帮助文档",
       name: "helpDocs",
       eventName: handleHelpDocs,
       icon: "i-ph-book-open-text-duotone",
     },
+    ...(isAdmin
+      ? [
+          {
+            title: "课程编辑器",
+            name: "editor",
+            eventName: handleGoToEditor,
+            icon: "i-ph-planet-duotone",
+          },
+        ]
+      : []),
     {
       title: "建议反馈",
       name: "feedback",
@@ -126,21 +127,17 @@ const showMenuOptions = computed(() => {
       icon: "i-ph-sign-out",
     },
   ];
+  return options;
 });
 
 function handleHelpDocs() {
   closeUserMenu();
-  window.open(runtimeConfig.public.helpDocsURL, "_blank");
+  navigateTo("/help");
 }
 
 function handleFeedback() {
   closeUserMenu();
-  window.open("https://txc.qq.com/products/652508", "_blank");
-}
-
-function handleMasteredElements() {
-  closeUserMenu();
-  navigateTo("/mastered-elements");
+  navigateTo("/feedback");
 }
 
 function handleSetting() {
@@ -164,7 +161,7 @@ function handleLogout() {
 
 function handleGoToEditor() {
   closeUserMenu();
-  window.open("https://earthworm-editor.cuixueshe.com", "_blank");
+  navigateTo("/admin");
 }
 </script>
 

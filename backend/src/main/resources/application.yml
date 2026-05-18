@@ -9,9 +9,9 @@ spring:
       max-file-size: 120MB
       max-request-size: 120MB
   datasource:
-    url: jdbc:mysql://localhost:3306/earthworm?useSSL=false&serverTimezone=UTC
-    username: root
-    password: ***REDACTED***
+    url: jdbc:mysql://localhost:3306/earthworm?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&useUnicode=true   
+    username: reader
+    password: 1EF390975CDCA838
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
@@ -25,11 +25,11 @@ spring:
     baseline-on-migrate: true
 
 jwt:
-  secret: "CHANGE_ME_TO_RANDOM_256_BIT_STRING"
+  secret: "ThisIsALonger256BitKeyThatMeetsTheJwtRequirement!!"
   expirationMs: 604800000
 
 cors:
-  allowedOrigins: "http://localhost:3000,http://localhost:3001"
+  allowedOrigins: "http://localhost:3000,http://localhost:3001,http://109.71.228.50:3000"
 
 openai:
   provider: ${AI_PROVIDER:openrouter}
@@ -37,5 +37,9 @@ openai:
   apiKey: ${OPENROUTER_API_KEY:${OPENAI_API_KEY:}}
   baseUrl: ${OPENROUTER_BASE_URL:https://openrouter.ai/api/v1}
   model: ${OPENROUTER_MODEL:openai/gpt-4o-mini}
-  siteUrl: ${OPENROUTER_SITE_URL:http://localhost:3000}
+  siteUrl: ${OPENROUTER_SITE_URL:http://109.71.228.50:3000}
   appName: ${OPENROUTER_APP_NAME:Russian Learning}
+
+media:
+  root-path: "D:/BaiduNetdiskDownload/俄语教程"
+  ffmpeg-path: "C:/Users/User/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg.Essentials_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1.1-essentials_build/bin/ffmpeg.exe"

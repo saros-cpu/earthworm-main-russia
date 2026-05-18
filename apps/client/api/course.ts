@@ -36,6 +36,7 @@ export interface CourseApiResponse {
   statementCount?: number;
   statementIndex: number;
   video: string;
+  lyrics?: string;
 }
 
 export async function fetchCourse(coursePackId: string, courseId: string) {

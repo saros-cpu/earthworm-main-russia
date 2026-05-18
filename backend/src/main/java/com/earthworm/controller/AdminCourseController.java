@@ -3,6 +3,8 @@ package com.earthworm.controller;
 import com.earthworm.service.AdminCourseService;
 import com.earthworm.service.CourseGenerationService;
 import com.earthworm.service.CourseTopicSearchService;
+import com.earthworm.service.CustomCoursePackService;
+import com.earthworm.service.TorflPackService;
 import com.earthworm.service.VocabularyCoursePackService;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,17 +18,43 @@ public class AdminCourseController {
     private final CourseGenerationService courseGenerationService;
     private final CourseTopicSearchService courseTopicSearchService;
     private final VocabularyCoursePackService vocabularyCoursePackService;
+    private final TorflPackService torflPackService;
+    private final CustomCoursePackService customCoursePackService;
 
     public AdminCourseController(
             AdminCourseService adminCourseService,
             CourseGenerationService courseGenerationService,
             CourseTopicSearchService courseTopicSearchService,
-            VocabularyCoursePackService vocabularyCoursePackService
+            VocabularyCoursePackService vocabularyCoursePackService,
+            TorflPackService torflPackService,
+            CustomCoursePackService customCoursePackService
     ) {
         this.adminCourseService = adminCourseService;
         this.courseGenerationService = courseGenerationService;
         this.courseTopicSearchService = courseTopicSearchService;
         this.vocabularyCoursePackService = vocabularyCoursePackService;
+        this.torflPackService = torflPackService;
+        this.customCoursePackService = customCoursePackService;
+    }
+
+    @PostMapping("/torfl-pack/generate")
+    public Map<String, Object> generateTorflPack(@RequestBody Map<String, Object> body) {
+        return torflPackService.generate(body);
+    }
+
+    @PostMapping("/torfl-pack/reseed")
+    public Map<String, Object> reseedTorflPacks() {
+        return torflPackService.reseed();
+    }
+
+    @PostMapping("/custom-pack/reseed")
+    public Map<String, Object> reseedCustomPacks() {
+        return customCoursePackService.reseed();
+    }
+
+    @GetMapping("/stats")
+    public Map<String, Object> stats() {
+        return adminCourseService.stats();
     }
 
     @GetMapping("/course-packs")
@@ -45,6 +73,11 @@ public class AdminCourseController {
             @RequestBody Map<String, Object> body
     ) {
         return adminCourseService.updateCoursePack(id, body);
+    }
+
+    @DeleteMapping("/course-packs/{id}")
+    public Boolean deleteCoursePack(@PathVariable("id") String id) {
+        return adminCourseService.deleteCoursePack(id);
     }
 
     @PostMapping("/course-packs/{id}/courses")
@@ -139,5 +172,11 @@ public class AdminCourseController {
     @PostMapping("/statements/{id}/refine")
     public Map<String, Object> refineStatement(@PathVariable("id") String id) {
         return adminCourseService.refineStatement(id);
+    }
+
+    @PostMapping("/courses/{id}/refine-all")
+    public Map<String, Object> refineAllStatements(@PathVariable("id") String id) {
+        int count = adminCourseService.refineCourseStatements(id);
+        return Map.of("courseId", id, "refinedCount", count);
     }
 }

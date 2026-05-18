@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>用户条款</h1>
+  <div class="mx-auto max-w-3xl px-4 py-8">
+    <h1 class="mb-6 text-3xl font-bold">用户条款</h1>
     <section>
       <h2>1. 接受条款</h2>
       <p>

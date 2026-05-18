@@ -1,0 +1,299 @@
+{
+  "id": "ru-grammar-verbs",
+  "title": "动词变位",
+  "description": "俄语动词第一变位法、第二变位法及特殊变位。",
+  "cover": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ruve-01",
+      "order": 1,
+      "title": "第一变位法（е结尾）",
+      "description": "第一变位法动词变化规律。",
+      "statements": [
+        {
+          "english": "Я чита́ю кни́гу.",
+          "chinese": "我读书。",
+          "soundmark": "ya chee-TA-yoo KNEE-goo"
+        },
+        {
+          "english": "Ты чита́ешь письмо́.",
+          "chinese": "你读信。",
+          "soundmark": "ty chee-TA-yesh' pees-MO"
+        },
+        {
+          "english": "Он чита́ет газе́ту.",
+          "chinese": "他读报纸。",
+          "soundmark": "on chee-TA-yet ga-ZYE-too"
+        },
+        {
+          "english": "Мы чита́ем текст.",
+          "chinese": "我们读课文。",
+          "soundmark": "my chee-TA-yem tekst"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/33-Урок 6-2.avi"
+    },
+    {
+      "id": "ruve-02",
+      "order": 2,
+      "title": "第二变位法（и结尾）",
+      "description": "第二变位法动词变化规律。",
+      "statements": [
+        {
+          "english": "Я говорю́ по-ру́сски.",
+          "chinese": "我说俄语。",
+          "soundmark": "ya ga-va-RYOO pa-ROOS-kee"
+        },
+        {
+          "english": "Ты говори́шь пра́вильно.",
+          "chinese": "你说得对。",
+          "soundmark": "ty ga-va-REESH' PRA-veel'-na"
+        },
+        {
+          "english": "Она́ говори́т бы́стро.",
+          "chinese": "她说得快。",
+          "soundmark": "a-NA ga-va-REET BY-stra"
+        },
+        {
+          "english": "Мы говори́м об уро́ке.",
+          "chinese": "我们谈论课程。",
+          "soundmark": "my ga-va-REEM ob oo-RO-ke"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/34-Урок 6-3.avi"
+    },
+    {
+      "id": "ruve-03",
+      "order": 3,
+      "title": "以-овать结尾的动词",
+      "description": "-овать类动词变位规律。",
+      "statements": [
+        {
+          "english": "Я рису́ю карти́ну.",
+          "chinese": "我画画。",
+          "soundmark": "ya ree-SOO-yoo kar-TEE-noo"
+        },
+        {
+          "english": "Танцева́ть — я танцу́ю.",
+          "chinese": "跳舞——我跳舞。",
+          "soundmark": "tan-tse-VAT' — ya tan-TSOO-yoo"
+        },
+        {
+          "english": "Он интересу́ется му́зыкой.",
+          "chinese": "他对音乐感兴趣。",
+          "soundmark": "on in-te-re-SOO-ye-tsa MOO-zy-kay"
+        },
+        {
+          "english": "Мы путеше́ствуем ле́том.",
+          "chinese": "我们夏天旅行。",
+          "soundmark": "my poo-te-SHEST-voo-yem LYE-tom"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/35-Урок 6-4.avi"
+    },
+    {
+      "id": "ruve-04",
+      "order": 4,
+      "title": "带-ся动词",
+      "description": "反身动词的变位与用法。",
+      "statements": [
+        {
+          "english": "Я учу́сь в университе́те.",
+          "chinese": "我在大学学习。",
+          "soundmark": "ya oo-CHOOS' v oo-nee-ver-see-TYE-te"
+        },
+        {
+          "english": "Он одева́ется тепло́.",
+          "chinese": "他穿得暖和。",
+          "soundmark": "on a-de-VA-ye-tsa te-PLO"
+        },
+        {
+          "english": "Мы встре́тились в парке.",
+          "chinese": "我们在公园见了面。",
+          "soundmark": "my VSTRE-tee-lees' v PAR-ke"
+        },
+        {
+          "english": "Где нахо́дится библиоте́ка?",
+          "chinese": "图书馆在哪里？",
+          "soundmark": "gde na-KHO-deet-sa bib-lee-a-TYE-ka"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/36-Урок 6-5.avi"
+    },
+    {
+      "id": "ruve-05",
+      "order": 5,
+      "title": "运动动词（定向）",
+      "description": "定向运动动词идти, ехать等。",
+      "statements": [
+        {
+          "english": "Я иду́ в шко́лу.",
+          "chinese": "我正走去学校。",
+          "soundmark": "ya ee-DOO v SHKO-loo"
+        },
+        {
+          "english": "Он едет в Москву́.",
+          "chinese": "他正乘车去莫斯科。",
+          "soundmark": "on YE-dyet v mask-VOO"
+        },
+        {
+          "english": "Мы бежи́м в парк.",
+          "chinese": "我们跑向公园。",
+          "soundmark": "my be-ZHEEM v park"
+        },
+        {
+          "english": "Пти́ца лети́т на юг.",
+          "chinese": "鸟飞向南方。",
+          "soundmark": "PTEE-tsa le-TEET na yook"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/37-Урок 7-1.avi"
+    },
+    {
+      "id": "ruve-06",
+      "order": 6,
+      "title": "运动动词（不定向）",
+      "description": "不定向运动动词ходи́ть, е́здить等。",
+      "statements": [
+        {
+          "english": "Я хожу́ в шко́лу ка́ждый день.",
+          "chinese": "我每天去学校。",
+          "soundmark": "ya kha-ZHOO v SHKO-loo KAZH-dyj dyen'"
+        },
+        {
+          "english": "Он е́здит в о́фис на маши́не.",
+          "chinese": "他开车去办公室。",
+          "soundmark": "on YEZ-deet v O-fees na ma-SHY-ne"
+        },
+        {
+          "english": "Мы хо́дим в музе́й.",
+          "chinese": "我们去博物馆。",
+          "soundmark": "my KHO-deem v moo-ZYEY"
+        },
+        {
+          "english": "Де́ти бе́гают во дворе́.",
+          "chinese": "孩子们在院子里跑来跑去。",
+          "soundmark": "DYE-tee BE-ga-yoot va dva-RE"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/38-Урок 7-2.avi"
+    },
+    {
+      "id": "ruve-07",
+      "order": 7,
+      "title": "完成体与未完成体",
+      "description": "动词体——完成体与未完成体的区别。",
+      "statements": [
+        {
+          "english": "Я чита́л э́ту кни́гу.",
+          "chinese": "我读过这本书。",
+          "soundmark": "ya chee-TAL EH-too KNEE-goo"
+        },
+        {
+          "english": "Я прочита́л кни́гу.",
+          "chinese": "我读完了这本书。",
+          "soundmark": "ya pra-chee-TAL KNEE-goo"
+        },
+        {
+          "english": "Он де́лал дома́шнее зада́ние.",
+          "chinese": "他做了家庭作业。",
+          "soundmark": "on DYE-lal da-MASH-ne-ye za-DA-ne-ye"
+        },
+        {
+          "english": "Он сде́лал зада́ние.",
+          "chinese": "他做完了作业。",
+          "soundmark": "on ZDYE-lal za-DA-ne-ye"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/39-Урок 7-3.avi"
+    },
+    {
+      "id": "ruve-08",
+      "order": 8,
+      "title": "быть的用法",
+      "description": "动词быть的现在、过去、将来时。",
+      "statements": [
+        {
+          "english": "Я есть студе́нт.",
+          "chinese": "我是大学生。",
+          "soundmark": "ya yest' stoo-DYENT"
+        },
+        {
+          "english": "Он был до́ма.",
+          "chinese": "他当时在家。",
+          "soundmark": "on byl DO-ma"
+        },
+        {
+          "english": "Мы бу́дем в музе́е.",
+          "chinese": "我们将在博物馆。",
+          "soundmark": "my BOO-dem v moo-ZYE-ye"
+        },
+        {
+          "english": "За́втра бу́дет хо́лодно.",
+          "chinese": "明天会冷。",
+          "soundmark": "ZAV-tra BOO-det KHO-lad-na"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/40-Урок 7-4.avi"
+    },
+    {
+      "id": "ruve-09",
+      "order": 9,
+      "title": "情态动词",
+      "description": "мочь, хотеть, должен等情态动词用法。",
+      "statements": [
+        {
+          "english": "Я могу́ тебе́ помо́чь.",
+          "chinese": "我能帮你。",
+          "soundmark": "ya ma-GOO te-BYE pa-MOCH'"
+        },
+        {
+          "english": "Он хо́чет пить.",
+          "chinese": "他想喝水。",
+          "soundmark": "on KHO-chet peet'"
+        },
+        {
+          "english": "Ты до́лжен учи́ться.",
+          "chinese": "你应该学习。",
+          "soundmark": "ty DOL-zhen oo-CHEET-sya"
+        },
+        {
+          "english": "Мы хоти́м есть.",
+          "chinese": "我们想吃东西。",
+          "soundmark": "my kha-TEEM yest'"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/41-Урок 7-5.avi"
+    },
+    {
+      "id": "ruve-10",
+      "order": 10,
+      "title": "综合练习",
+      "description": "动词变位综合运用。",
+      "statements": [
+        {
+          "english": "Я люблю́ чита́ть кни́ги.",
+          "chinese": "我喜欢读书。",
+          "soundmark": "ya lyub-LYOO chee-TAT' KNEE-gee"
+        },
+        {
+          "english": "Она́ у́чится говори́ть по-ру́сски.",
+          "chinese": "她在学俄语。",
+          "soundmark": "a-NA OO-cheet-sya ga-va-REET' pa-ROOS-kee"
+        },
+        {
+          "english": "Мы хо́дим в бассе́йн по суббо́там.",
+          "chinese": "我们每周六去游泳。",
+          "soundmark": "my KHO-deem v bas-SEYN pa soo-BO-tam"
+        },
+        {
+          "english": "За́втра я бу́ду гото́вить у́жин.",
+          "chinese": "明天我将做晚饭。",
+          "soundmark": "ZAV-tra ya BOO-do ga-TO-veet' OO-zhen"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/42-Урок 8-1.avi"
+    }
+  ]
+}

@@ -5,15 +5,17 @@
   >
     <div class="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
       <div>
-        <p class="text-sm font-bold uppercase tracking-normal text-emerald-600 dark:text-emerald-300">
-          Learning Flow
+        <p
+          class="text-sm font-bold uppercase tracking-normal text-emerald-600 dark:text-emerald-300"
+        >
+          Учебный путь
         </p>
         <h2 class="mt-2 text-3xl font-black text-slate-950 dark:text-white md:text-4xl">
           把俄语教材变成可练习的关卡
         </h2>
       </div>
       <p class="max-w-xl text-base leading-7 text-slate-500 dark:text-slate-400">
-        参考句乐部的游戏化体验，鹅语菌更偏俄语零基础路径：先建立字母和词形记忆，再用教材句子训练真实表达。
+        此版本更偏俄语零基础路径：先建立字母和词形记忆，再用教材训练真实表达。
       </p>
     </div>
 
@@ -23,7 +25,9 @@
         :key="feature.title"
         class="rounded-md border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:border-emerald-300 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900"
       >
-        <div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-md bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-white">
+        <div
+          class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-md bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-white"
+        >
           <UIcon
             :name="feature.icon"
             class="h-5 w-5"

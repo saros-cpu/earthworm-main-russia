@@ -46,8 +46,9 @@
       </div>
       <template v-else>
         <div class="flex h-full w-full flex-1 items-center justify-center text-slate-500">
-          暂无记录，<NuxtLink
-            href="/course-pack"
+          暂无记录，
+          <NuxtLink
+            to="/course-pack"
             class="link text-blue-500 no-underline hover:opacity-75"
             >先学习一课， </NuxtLink
           >再来看看吧~

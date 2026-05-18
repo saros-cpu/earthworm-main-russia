@@ -1,0 +1,339 @@
+{
+  "id": "ru-literature",
+  "title": "俄语文学名句",
+  "description": "俄罗斯经典文学作品中的著名语句。",
+  "cover": "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ruli-01",
+      "order": 1,
+      "title": "普希金名句",
+      "description": "普希金作品中的经典语句。",
+      "statements": [
+        {
+          "english": "Я вас люби́л: любовь ещё, быть мо́жет...",
+          "chinese": "我曾经爱过您：爱情也许还没有完全熄灭。",
+          "soundmark": "ya vas lyu-BEEL lyu-BOV ye-SHO BYT MO-zhet"
+        },
+        {
+          "english": "Уныла́я пора́! Оче́й очарова́нье!",
+          "chinese": "忧郁的季节！眼睛的迷人魅力！",
+          "soundmark": "oo-NY-la-ya pa-RA a-CHEY a-cha-ra-VAN-ye"
+        },
+        {
+          "english": "Моро́з и со́лнце; день чуде́сный!",
+          "chinese": "寒冷和太阳；美好的一天！",
+          "soundmark": "ma-ROS i SON-tse den choo-DES-ny"
+        },
+        {
+          "english": "Привы́чка свы́ше нам дана́: замена́ сча́стию она́.",
+          "chinese": "习惯是天赐的：它是幸福的替代品。",
+          "soundmark": "pree-VYCH-ka SVY-she nam da-NA za-me-NA SCHA-stee-yu a-NA"
+        },
+        {
+          "english": "Что в и́мени тебе́ мое́м?",
+          "chinese": "我的名字对你有什么意义？",
+          "soundmark": "shto v EE-me-ne te-BE ma-YOM"
+        }
+      ]
+    },
+    {
+      "id": "ruli-02",
+      "order": 2,
+      "title": "托尔斯泰名句",
+      "description": "列夫·托尔斯泰作品中的经典语句。",
+      "statements": [
+        {
+          "english": "Все счастли́вые се́мьи похо́жи друг на дру́га.",
+          "chinese": "所有幸福的家庭都彼此相似。",
+          "soundmark": "vse schast-LEE-vy-ye SE-mee pa-KHO-zhi droog na DROO-ga"
+        },
+        {
+          "english": "Вы́ше всего́ пра́вда.",
+          "chinese": "真理高于一切。",
+          "soundmark": "VY-she vse-VO PRAV-da"
+        },
+        {
+          "english": "Всё прихо́дит к тому́, кто уме́ет ждать.",
+          "chinese": "一切都会降临到会等待的人身上。",
+          "soundmark": "vsyo pree-KHO-deet ka ta-MOO kto oo-ME-yet zhdat"
+        },
+        {
+          "english": "Челове́к немы́слим вне о́бщества.",
+          "chinese": "人不能脱离社会而存在。",
+          "soundmark": "che-la-VYEK ne-MY-slim vne OB-shche-stva"
+        },
+        {
+          "english": "Си́ла пра́вды в её простоте́.",
+          "chinese": "真理的力量在于它的朴素。",
+          "soundmark": "SEE-la PRAV-dy v ye-YO pra-sta-TE"
+        }
+      ]
+    },
+    {
+      "id": "ruli-03",
+      "order": 3,
+      "title": "陀思妥耶夫斯基名句",
+      "description": "陀思妥耶夫斯基作品中的经典语句。",
+      "statements": [
+        {
+          "english": "Красота́ спасёт мир.",
+          "chinese": "美将拯救世界。",
+          "soundmark": "kra-sa-TA spa-SYOT meer"
+        },
+        {
+          "english": "Челове́к есть та́йна.",
+          "chinese": "人是一个谜。",
+          "soundmark": "che-la-VYEK yest TAY-na"
+        },
+        {
+          "english": "Сча́стье не в сча́стье, а в его́ достиже́нии.",
+          "chinese": "幸福不在于幸福本身而在于追求的过程。",
+          "soundmark": "SCHAST-ye ne f SCHAST-ye a v ye-VO da-stee-ZHE-nee-ee"
+        },
+        {
+          "english": "У́мом Росси́ю не поня́ть.",
+          "chinese": "用理智无法理解俄罗斯。",
+          "soundmark": "OO-mom ras-SEE-yoo ne pa-NYAT"
+        },
+        {
+          "english": "Быть си́льным — быть лу́чше всех.",
+          "chinese": "成为强者就是超越所有人。",
+          "soundmark": "byt SIL-nym byt LOOTCH-she vsekh"
+        }
+      ]
+    },
+    {
+      "id": "ruli-04",
+      "order": 4,
+      "title": "契诃夫名句",
+      "description": "安东·契诃夫作品中的经典语句。",
+      "statements": [
+        {
+          "english": "Кра́ткость — сестра́ тала́нта.",
+          "chinese": "简洁是天才的姐妹。",
+          "soundmark": "KRAT-kast se-STRA ta-LAN-ta"
+        },
+        {
+          "english": "В человеке должно́ быть всё прекра́сно.",
+          "chinese": "人身上一切都应该美丽。",
+          "soundmark": "v che-la-VYE-ke dal-ZHNO byt vsyo pre-KRAS-na"
+        },
+        {
+          "english": "Е́сли бо́ишься одино́чества, не жени́сь.",
+          "chinese": "如果你害怕孤独就不要结婚。",
+          "soundmark": "YES-lee BO-eesh-sya a-dee-NO-che-stva ne zhe-NEES"
+        },
+        {
+          "english": "На́до не понима́ть свой долг.",
+          "chinese": "必须履行自己的义务。",
+          "soundmark": "NA-da ne pa-nee-MAT sVOY dolg"
+        },
+        {
+          "english": "Иску́сство — э́то уме́ние ви́деть чужо́е.",
+          "chinese": "艺术是看到他人之美的能力。",
+          "soundmark": "ee-SKOOST-va E-ta oo-ME-nee-ye VEE-det choo-ZHO-ye"
+        }
+      ]
+    },
+    {
+      "id": "ruli-05",
+      "order": 5,
+      "title": "屠格涅夫名句",
+      "description": "伊万·屠格涅夫作品中的经典语句。",
+      "statements": [
+        {
+          "english": "Любо́вь сильне́е сме́рти и стра́ха сме́рти.",
+          "chinese": "爱比死亡和对死亡的恐惧更强大。",
+          "soundmark": "lyu-BOV seel-NYE-ye SMER-tee ee STRA-kha SMER-tee"
+        },
+        {
+          "english": "Приро́да не хра́м, а мастерска́я.",
+          "chinese": "大自然不是寺庙而是工作室。",
+          "soundmark": "pree-RO-da ne khram a ma-ster-SKA-ya"
+        },
+        {
+          "english": "Тоска́ без языка́.",
+          "chinese": "无法言说的忧愁。",
+          "soundmark": "tas-KA bez ya-zy-KA"
+        },
+        {
+          "english": "В спо́ре ро́ждается и́стина.",
+          "chinese": "争辩出真理。",
+          "soundmark": "f SPO-re razh-DA-ye-tsa EE-stee-na"
+        },
+        {
+          "english": "День промедле́ния ча́сто равня́ется безвозвра́тной поте́ре.",
+          "chinese": "一天的拖延往往等于不可挽回的损失。",
+          "soundmark": "den pra-med-LE-nee-ya CHA-sta rav-NYA-ye-tsa bez-vaz-VRAT-noy pa-TE-re"
+        }
+      ]
+    },
+    {
+      "id": "ruli-06",
+      "order": 6,
+      "title": "果戈里名句",
+      "description": "尼古拉·果戈里作品中的经典语句。",
+      "statements": [
+        {
+          "english": "Смех — вели́кое де́ло!",
+          "chinese": "笑是伟大的事业！",
+          "soundmark": "smekh ve-LEE-ka-ye DE-la"
+        },
+        {
+          "english": "Какой́ ру́сский не лю́бит бы́строй езды́!",
+          "chinese": "哪个俄罗斯人不喜欢快车！",
+          "soundmark": "ka-KOY ROOS-skee ne LYU-beet BY-stray yez-DY"
+        },
+        {
+          "english": "Че́рез на́шу Росси́ю с удо́бством везде́ дое́хать мо́жно.",
+          "chinese": "在我们俄罗斯到处都能方便地到达。",
+          "soundmark": "CHE-rez NA-shoo ras-SEE-yu soo-DOB-stvom vez-DE da-YE-khat MOZH-na"
+        },
+        {
+          "english": "И дураку́ за́перто и у́мному о́тперто.",
+          "chinese": "对愚者关闭对智者敞开。",
+          "soundmark": "ee doo-ra-KOO ZA-per-ta ee OOM-na-mu OT-per-ta"
+        },
+        {
+          "english": "На что́ по́хо́ж, коли́ честно́й челове́к не поря́дочный?",
+          "chinese": "如果一个诚实的人不正派那像什么？",
+          "soundmark": "na SHTO PO-khazh ka-LEE ches-NOY che-la-VYEK ne pa-RYAD-och-ny"
+        }
+      ]
+    },
+    {
+      "id": "ruli-07",
+      "order": 7,
+      "title": "莱蒙托夫名句",
+      "description": "米哈伊尔·莱蒙托夫作品中的经典语句。",
+      "statements": [
+        {
+          "english": "Беле́ет па́рус одино́кий.",
+          "chinese": "孤独的白帆闪耀。",
+          "soundmark": "be-LE-yet PA-roos a-dee-NO-kee"
+        },
+        {
+          "english": "И ску́чно, и гру́стно, и не́кому ру́ку пода́ть.",
+          "chinese": "既无聊又悲伤也没有人可以握手。",
+          "soundmark": "ee SKOOSH-na ee GROOS-na ee NE-ka-moo ROO-koo pa-DAT"
+        },
+        {
+          "english": "Люблю́ Отчи́зну я, но стра́нною любо́вью!",
+          "chinese": "我爱祖国但用一种奇异的爱！",
+          "soundmark": "lyu-BLYU at-CHEEZ-noo ya no STRAN-na-yoo lyu-BOV-yoo"
+        },
+        {
+          "english": "Что́ же мне так бо́льно и так тру́дно?",
+          "chinese": "为什么我如此痛苦和艰难？",
+          "soundmark": "SHTO-zhe mne tak BOL-na ee tak TROOD-na"
+        },
+        {
+          "english": "Одино́чество — э́то когда́ всё равно́ кому́.",
+          "chinese": "孤独是当一切对谁都无所谓的时候。",
+          "soundmark": "a-dee-NO-che-stva E-ta kag-DA vsyo rav-NO ka-MOO"
+        }
+      ]
+    },
+    {
+      "id": "ruli-08",
+      "order": 8,
+      "title": "马雅可夫斯基诗句",
+      "description": "马雅可夫斯基诗歌中的经典词句。",
+      "statements": [
+        {
+          "english": "Послу́шайте! Ведь, е́сли звёзды зажига́ют — зна́чит — э́то кому́-нибудь ну́жно?",
+          "chinese": "听吧！如果星星被点亮那意味着有人需要它？",
+          "soundmark": "pas-LOO-shay-te ved YES-lee ZVYOZ-dy za-zhee-GA-yut ZNA-cheet E-ta ka-MOO-nee-boot NOOZH-na"
+        },
+        {
+          "english": "Све́т всегда́ побежда́ет тьму.",
+          "chinese": "光明永远战胜黑暗。",
+          "soundmark": "svyet vseg-DA pa-bezh-DA-yet TMOO"
+        },
+        {
+          "english": "Я поэ́т. Э́тым и интере́сен.",
+          "chinese": "我是诗人。这就是我的意义所在。",
+          "soundmark": "ya pa-ET E-tym ee een-te-RE-sen"
+        },
+        {
+          "english": "Война́ — э́то уби́йство, и э́то неприя́тно.",
+          "chinese": "战争是谋杀这是令人不快的。",
+          "soundmark": "voy-NA E-ta oo-BEEST-va ee E-ta ne-pree-YAT-na"
+        },
+        {
+          "english": "Любо́вь — э́то жизнь. Всё, всё понима́ю.",
+          "chinese": "爱就是生命。一切我都理解。",
+          "soundmark": "lyu-BOV E-ta zhizn vsyo vsyo pa-nee-MA-yoo"
+        }
+      ]
+    },
+    {
+      "id": "ruli-09",
+      "order": 9,
+      "title": "阿赫玛托娃诗句",
+      "description": "安娜·阿赫玛托娃诗歌中的经典词句。",
+      "statements": [
+        {
+          "english": "Му́жество нас не поки́нет.",
+          "chinese": "勇气不会离开我们。",
+          "soundmark": "MOO-zhest-va nas ne pa-KEE-net"
+        },
+        {
+          "english": "Пе́ред э́той бедо́ю ничто́ не беда́.",
+          "chinese": "面对这种不幸其他都不算什么。",
+          "soundmark": "PE-red E-tay be-DO-yu nee-SHTO ne be-DA"
+        },
+        {
+          "english": "Я научи́лась жить в э́поху бе́дствий.",
+          "chinese": "我学会了在灾难时代生活。",
+          "soundmark": "ya na-oo-CHEE-las zhit v E-pa-khoo BED-stveey"
+        },
+        {
+          "english": "Рожда́ется стра́шная му́зыка.",
+          "chinese": "可怕的音乐诞生了。",
+          "soundmark": "razh-DA-ye-tsa STRASH-na-ya MOO-zy-ka"
+        },
+        {
+          "english": "Тако́й я тебя́ никогда́ не ви́дела.",
+          "chinese": "我从未见过这样的你。",
+          "soundmark": "ta-KOY ya te-BYA nee-kag-DA ne VEE-de-la"
+        }
+      ]
+    },
+    {
+      "id": "ruli-10",
+      "order": 10,
+      "title": "布罗茨基名句",
+      "description": "约瑟夫·布罗茨基作品中的经典语句。",
+      "statements": [
+        {
+          "english": "Вре́мя — э́то бо́льше нас.",
+          "chinese": "时间比我们更强大。",
+          "soundmark": "VRE-mya E-ta BOL-she nas"
+        },
+        {
+          "english": "Не выходи́ из ко́мнаты, не соверша́й ошибку.",
+          "chinese": "不要走出房间不要犯错误。",
+          "soundmark": "ne vy-kha-DEE eez KOM-na-ty ne sa-ver-SHAY a-SHEEP-koo"
+        },
+        {
+          "english": "Поэ́зия — э́то перепи́ска с бесконе́чностью.",
+          "chinese": "诗歌是与无限的通信。",
+          "soundmark": "pa-E-zee-ya E-ta pe-re-PEES-ka s bes-ka-NE-cha-nast-yu"
+        },
+        {
+          "english": "Ре́чь — э́то второ́й заты́лок.",
+          "chinese": "语言是第二个后脑勺。",
+          "soundmark": "rech E-ta fta-ROY za-TY-lak"
+        },
+        {
+          "english": "Челове́к начина́ется с язы́ка.",
+          "chinese": "人始于语言。",
+          "soundmark": "che-la-VYEK na-chee-NA-ye-tsa s ya-zy-KA"
+        }
+      ]
+    }
+  ]
+}

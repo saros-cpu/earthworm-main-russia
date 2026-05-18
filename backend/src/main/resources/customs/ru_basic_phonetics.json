@@ -1,0 +1,444 @@
+{
+  "id": "ru-basic-phonetics",
+  "title": "俄语发音与语音规则",
+  "description": "系统学习俄语元音、辅音的发音方法以及重音、语调等语音规则。",
+  "cover": "https://images.unsplash.com/photo-1536064479547-7ee40b74b0f4?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ruph-01",
+      "order": 1,
+      "title": "俄语元音发音",
+      "description": "学习6个俄语基本元音的正确发音。",
+      "statements": [
+        {
+          "english": "А а — [а]",
+          "chinese": "字母Аа读作[a]，口张大",
+          "soundmark": "a"
+        },
+        {
+          "english": "О о — [о]",
+          "chinese": "字母Оо读作[o]，双唇收圆",
+          "soundmark": "o"
+        },
+        {
+          "english": "У у — [у]",
+          "chinese": "字母Уу读作[u]，双唇前伸",
+          "soundmark": "oo"
+        },
+        {
+          "english": "Э э — [э]",
+          "chinese": "字母Ээ读作[e]，舌尖抵下齿",
+          "soundmark": "eh"
+        },
+        {
+          "english": "Ы ы — [ы]",
+          "chinese": "字母Ыы读作[ɨ]，舌尖后缩",
+          "soundmark": "y"
+        },
+        {
+          "english": "И и — [и]",
+          "chinese": "字母Ии读作[i]，类似汉语'一'",
+          "soundmark": "ee"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/13-Урок 1-1.avi"
+    },
+    {
+      "id": "ruph-02",
+      "order": 2,
+      "title": "俄语辅音发音（清浊对应）",
+      "description": "学习成对清浊辅音的发音区别。",
+      "statements": [
+        {
+          "english": "Б — б [b]",
+          "chinese": "浊辅音б，声带振动",
+          "soundmark": "b"
+        },
+        {
+          "english": "П — п [p]",
+          "chinese": "清辅音п，声带不振动",
+          "soundmark": "p"
+        },
+        {
+          "english": "В — в [v]",
+          "chinese": "浊辅音в，上齿咬下唇",
+          "soundmark": "v"
+        },
+        {
+          "english": "Ф — ф [f]",
+          "chinese": "清辅音ф，上齿咬下唇",
+          "soundmark": "f"
+        },
+        {
+          "english": "Г — г [ɡ]",
+          "chinese": "浊辅音г，舌根抵软腭",
+          "soundmark": "g"
+        },
+        {
+          "english": "К — к [k]",
+          "chinese": "清辅音к，舌根抵软腭",
+          "soundmark": "k"
+        },
+        {
+          "english": "Д — д [d]",
+          "chinese": "浊辅音д，舌尖抵上齿",
+          "soundmark": "d"
+        },
+        {
+          "english": "Т — т [t]",
+          "chinese": "清辅音т，舌尖抵上齿",
+          "soundmark": "t"
+        },
+        {
+          "english": "З — з [z]",
+          "chinese": "浊辅音з，舌尖抵下齿",
+          "soundmark": "z"
+        },
+        {
+          "english": "С — с [s]",
+          "chinese": "清辅音с，舌尖抵下齿",
+          "soundmark": "s"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/14-Урок 1-2.avi"
+    },
+    {
+      "id": "ruph-03",
+      "order": 3,
+      "title": "重音与语调",
+      "description": "学习俄语词重音和基本语调类型。",
+      "statements": [
+        {
+          "english": "молоко́",
+          "chinese": "牛奶（重音在最后音节）",
+          "soundmark": "ma-la-KO"
+        },
+        {
+          "english": "хо́рошо",
+          "chinese": "好（重音在第一音节）",
+          "soundmark": "KHO-ra-sha"
+        },
+        {
+          "english": "говори́ть",
+          "chinese": "说（重音在最后音节）",
+          "soundmark": "ga-va-REET"
+        },
+        {
+          "english": "у́ченик",
+          "chinese": "学生（重音在第一音节）",
+          "soundmark": "OO-che-nik"
+        },
+        {
+          "english": "Она́ до́ма?",
+          "chinese": "她在家里吗？（疑问语调）",
+          "soundmark": "a-NA DO-ma"
+        },
+        {
+          "english": "Он говори́т.",
+          "chinese": "他说。（陈述语调）",
+          "soundmark": "on ga-va-REET"
+        },
+        {
+          "english": "Како́й кра́сный!",
+          "chinese": "多红啊！（感叹语调）",
+          "soundmark": "ka-KOY KRAS-ny"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/16-Урок 2-1.avi"
+    },
+    {
+      "id": "ruph-04",
+      "order": 4,
+      "title": "软音符号Ь的用法",
+      "description": "学习软音符号的发音规则与作用。",
+      "statements": [
+        {
+          "english": "мать [matʲ]",
+          "chinese": "母亲（软音符号使т软化）",
+          "soundmark": "mat"
+        },
+        {
+          "english": "день [dʲenʲ]",
+          "chinese": "白天（软音符号使д和н软化）",
+          "soundmark": "dyen"
+        },
+        {
+          "english": "письмо́ [pʲisʲˈmo]",
+          "chinese": "信（软音符号使с软化）",
+          "soundmark": "pees-MO"
+        },
+        {
+          "english": "конь [konʲ]",
+          "chinese": "马（软音符号使н软化）",
+          "soundmark": "kon"
+        },
+        {
+          "english": "ме́бель [ˈmʲebʲɪlʲ]",
+          "chinese": "家具（两个软音符号）",
+          "soundmark": "MYE-bel"
+        },
+        {
+          "english": "те́традь [ˈtʲetrətʲ]",
+          "chinese": "练习本（末尾软音符号）",
+          "soundmark": "TYE-trat"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/17-Урок 2-2.avi"
+    },
+    {
+      "id": "ruph-05",
+      "order": 5,
+      "title": "硬音符号Ъ的作用",
+      "description": "学习硬音符号的分隔作用与发音规则。",
+      "statements": [
+        {
+          "english": "подъе́зд",
+          "chinese": "入口（硬音符号分隔前缀与词根）",
+          "soundmark": "pad-YEZD"
+        },
+        {
+          "english": "объе́кт",
+          "chinese": "物体对象（硬音符号）",
+          "soundmark": "ab-YEKT"
+        },
+        {
+          "english": "съесть",
+          "chinese": "吃掉（硬音符号后发йэ音）",
+          "soundmark": "syest"
+        },
+        {
+          "english": "разъясни́ть",
+          "chinese": "解释（硬音符号后发йа音）",
+          "soundmark": "raz-yas-NEET"
+        },
+        {
+          "english": "съёмка",
+          "chinese": "拍摄（硬音符号后发йо音）",
+          "soundmark": "SYOM-ka"
+        },
+        {
+          "english": "объём",
+          "chinese": "容量体积（硬音符号后发йо音）",
+          "soundmark": "ab-YOM"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/18-Урок 3-1.avi"
+    },
+    {
+      "id": "ruph-06",
+      "order": 6,
+      "title": "清浊辅音同化",
+      "description": "学习清浊辅音在语流中的同化规则。",
+      "statements": [
+        {
+          "english": "дуб [dup]",
+          "chinese": "橡树（浊辅音б在词尾清化为п）",
+          "soundmark": "doop"
+        },
+        {
+          "english": "про́сьба [ˈprozʲbə]",
+          "chinese": "请求（清辅音с在浊辅音б前浊化）",
+          "soundmark": "PROZ-ba"
+        },
+        {
+          "english": "вокза́л [vagˈzal]",
+          "chinese": "火车站（к在浊辅音з前浊化）",
+          "soundmark": "vag-ZAL"
+        },
+        {
+          "english": "за́втра [ˈzaftrə]",
+          "chinese": "明天（в在清辅音т前清化）",
+          "soundmark": "ZAF-tra"
+        },
+        {
+          "english": "ска́зка [ˈskaskə]",
+          "chinese": "童话（з在清辅音к前清化为с）",
+          "soundmark": "SKAS-ka"
+        },
+        {
+          "english": "сделать [ˈzʲdʲelətʲ]",
+          "chinese": "做（с在浊辅音д前浊化为з）",
+          "soundmark": "ZDYE-lat"
+        },
+        {
+          "english": "ложка [ˈloʂkə]",
+          "chinese": "勺子（ж在清辅音к前清化为ш）",
+          "soundmark": "LO-shka"
+        },
+        {
+          "english": "отдых [ˈodːɨx]",
+          "chinese": "休息（т在浊辅音д前浊化）",
+          "soundmark": "OD-dykh"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/19-Урок 3-2.avi"
+    },
+    {
+      "id": "ruph-07",
+      "order": 7,
+      "title": "元音弱化规律",
+      "description": "学习非重读音节中元音的弱化规则。",
+      "statements": [
+        {
+          "english": "молоко́ [məlɐˈko]",
+          "chinese": "牛奶（о在非重读音节弱化为а/ъ）",
+          "soundmark": "ma-la-KO"
+        },
+        {
+          "english": "хорошо́ [xərɐˈʂo]",
+          "chinese": "好（о弱化规律示例）",
+          "soundmark": "kha-ra-SHO"
+        },
+        {
+          "english": "говори́ть [ɡəvɐˈrʲitʲ]",
+          "chinese": "说话（非重读о弱化）",
+          "soundmark": "ga-va-REET"
+        },
+        {
+          "english": "перево́д [pʲɪrʲɪˈvot]",
+          "chinese": "翻译（非重读е弱化为и）",
+          "soundmark": "pee-re-VOT"
+        },
+        {
+          "english": "язы́к [jɪˈzɨk]",
+          "chinese": "语言（я非重读时弱化）",
+          "soundmark": "yee-ZYK"
+        },
+        {
+          "english": "пята́к [pʲɪˈtak]",
+          "chinese": "五戈比（я在非重读弱化）",
+          "soundmark": "pee-TAK"
+        },
+        {
+          "english": "эта́ж [ɪˈtaʂ]",
+          "chinese": "楼层（э在非重读弱化）",
+          "soundmark": "ee-TASH"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/22-Урок 4-1.avi"
+    },
+    {
+      "id": "ruph-08",
+      "order": 8,
+      "title": "语调类型",
+      "description": "学习俄语基本语调类型ИК-1至ИК-7。",
+      "statements": [
+        {
+          "english": "Это кни́га. (ИК-1)",
+          "chinese": "这是一本书。（陈述语调-句尾下降）",
+          "soundmark": "E-ta KNEE-ga"
+        },
+        {
+          "english": "Э́то кни́га? (ИК-2)",
+          "chinese": "这是一本书吗？（疑问词重音）",
+          "soundmark": "E-ta KNEE-ga"
+        },
+        {
+          "english": "Э́то кни́га? (ИК-3)",
+          "chinese": "这是书吗？（一般疑问-句尾上升）",
+          "soundmark": "e-TA kni-GA"
+        },
+        {
+          "english": "Э́то кни́га, а э́то тетра́дь. (ИК-4)",
+          "chinese": "这是书，而那是本子。（对比语调）",
+          "soundmark": "E-ta KNEE-ga a E-ta tet-RAT"
+        },
+        {
+          "english": "Кака́я интере́сная кни́га! (ИК-5)",
+          "chinese": "多么有趣的书啊！（感叹语调）",
+          "soundmark": "ka-KA-ya een-te-RES-na-ya KNEE-ga"
+        },
+        {
+          "english": "Что за кни́га! (ИК-6)",
+          "chinese": "多好的书啊！（高度评价）",
+          "soundmark": "shto za KNEE-ga"
+        },
+        {
+          "english": "Кни́га? (ИК-7)",
+          "chinese": "书吗？（加强疑问）",
+          "soundmark": "kni-GA"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/23-Урок 4-2.avi"
+    },
+    {
+      "id": "ruph-09",
+      "order": 9,
+      "title": "连读与语流",
+      "description": "学习俄语语流中的连读和音变现象。",
+      "statements": [
+        {
+          "english": "в а́рмию [ˈva‿rmʲɪjʊ]",
+          "chinese": "去参军（前置词与名词连读）",
+          "soundmark": "VAR-mee-yoo"
+        },
+        {
+          "english": "на уро́ке [nə‿ʊˈrokʲe]",
+          "chinese": "在课上（на和уроке连读）",
+          "soundmark": "na-oo-RO-ke"
+        },
+        {
+          "english": "у отца́ [ʊ‿ɐˈt͡sa]",
+          "chinese": "在父亲那里（元音之间连读）",
+          "soundmark": "oo-at-SA"
+        },
+        {
+          "english": "наш у́читель [naˈʂu t͡ɕitʲɪlʲ]",
+          "chinese": "我们的老师（ш和у连读）",
+          "soundmark": "na-SHOO-chee-tel"
+        },
+        {
+          "english": "он ушёл [ɐnuˈʂoɫ]",
+          "chinese": "他走了（和辅音连读）",
+          "soundmark": "a-noo-SHOL"
+        },
+        {
+          "english": "не́ было [ˈnʲebɨɫə]",
+          "chinese": "没有（否定的语流音变）",
+          "soundmark": "NYE-by-la"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/27-Урок 5-1.avi"
+    },
+    {
+      "id": "ruph-10",
+      "order": 10,
+      "title": "综合发音练习",
+      "description": "综合运用所学语音规则的发音练习。",
+      "statements": [
+        {
+          "english": "Здра́вствуйте, меня́ зову́т А́нна.",
+          "chinese": "您好，我叫安娜。（综合语调与连读）",
+          "soundmark": "ZDRAV-stvooy-tye me-NYA za-VOOT AN-na"
+        },
+        {
+          "english": "Я уч́у́сь в университе́те.",
+          "chinese": "我在大学学习。（元音弱化+语调）",
+          "soundmark": "ya oo-CHOOS v oo-nee-ver-see-TYE-tye"
+        },
+        {
+          "english": "Сего́дня хо́ро́шая пого́да.",
+          "chinese": "今天天气好。（重音+弱化+语调）",
+          "soundmark": "se-VOD-nya KHO-ro-sha-ya pa-GO-da"
+        },
+        {
+          "english": "Ско́лько э́то сто́ит?",
+          "chinese": "这个多少钱？（疑问语调ИК-3）",
+          "soundmark": "SKOL-ka E-ta STO-eet"
+        },
+        {
+          "english": "Я люю́ чита́ть ру́сские кни́ги.",
+          "chinese": "我喜欢读俄语书。（软辅音+弱化）",
+          "soundmark": "ya lyub-LYU chee-TAT ROO-skee-ye KNEE-gee"
+        },
+        {
+          "english": "До́брое у́тро! Как вы пожива́ете?",
+          "chinese": "早上好！您过得怎么样？（综合练习）",
+          "soundmark": "DOB-ra-ye UT-ra kak vy pa-zhy-VA-ye-tye"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/28-Урок 5-2.avi"
+    }
+  ]
+}

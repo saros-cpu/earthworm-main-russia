@@ -10,13 +10,15 @@ export interface Shortcut {
 
 const shortcuts: Shortcut[] = [];
 
-window.addEventListener("keydown", (e: KeyboardEvent) => {
-  const matchingShortcuts = findMatchingShortcut(e);
+if (typeof window !== "undefined") {
+  window.addEventListener("keydown", (e: KeyboardEvent) => {
+    const matchingShortcuts = findMatchingShortcut(e);
 
-  matchingShortcuts.forEach((shortcut) => {
-    shortcut.command(e);
+    matchingShortcuts.forEach((shortcut) => {
+      shortcut.command(e);
+    });
   });
-});
+}
 
 function parseKey(keyString: string) {
   const keys = keyString.toLowerCase().split("+");

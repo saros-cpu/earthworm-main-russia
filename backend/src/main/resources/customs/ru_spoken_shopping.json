@@ -1,0 +1,339 @@
+{
+  "id": "ru-spoken-shopping",
+  "title": "购物俄语",
+  "description": "在商店超市和市场的购物对话。",
+  "cover": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rush-01",
+      "order": 1,
+      "title": "在超市",
+      "description": "在超市选购商品的常用表达。",
+      "statements": [
+        {
+          "english": "Ско́лько э́то сто́ит?",
+          "chinese": "这个多少钱？",
+          "soundmark": "SKOL-ka E-ta STO-eet"
+        },
+        {
+          "english": "Да́йте, пожа́луйста, килогра́мм я́блок.",
+          "chinese": "请给一公斤苹果。",
+          "soundmark": "DAY-tye pa-ZHAL-sta kee-la-GRAM YAB-lak"
+        },
+        {
+          "english": "Э́то всё?",
+          "chinese": "就这些？",
+          "soundmark": "E-ta vsyo"
+        },
+        {
+          "english": "Где ка́сса?",
+          "chinese": "收银台在哪？",
+          "soundmark": "gde KAS-sa"
+        },
+        {
+          "english": "У вас есть ски́дочная ка́рта?",
+          "chinese": "有打折卡吗？",
+          "soundmark": "oo vas YEST SKEE-da-cha-na-ya KAR-ta"
+        }
+      ]
+    },
+    {
+      "id": "rush-02",
+      "order": 2,
+      "title": "服装店",
+      "description": "买衣服时常用对话。",
+      "statements": [
+        {
+          "english": "Мо́жно поме́рить?",
+          "chinese": "可以试穿吗？",
+          "soundmark": "MOZH-na PO-me-reet"
+        },
+        {
+          "english": "Где примерочная?",
+          "chinese": "试衣间在哪？",
+          "soundmark": "gde pree-ME-rach-na-ya"
+        },
+        {
+          "english": "Мне ну́жен ра́змер бо́льше.",
+          "chinese": "要大一号的。",
+          "soundmark": "mnye NOO-zhen RAZ-mer BOL-she"
+        },
+        {
+          "english": "Э́то сли́шком до́рого.",
+          "chinese": "太贵了。",
+          "soundmark": "E-ta SLEESH-kam DO-ra-ga"
+        },
+        {
+          "english": "Я беру́.",
+          "chinese": "我买了。",
+          "soundmark": "ya be-ROO"
+        }
+      ]
+    },
+    {
+      "id": "rush-03",
+      "order": 3,
+      "title": "询问价格",
+      "description": "问价和比价时的表达。",
+      "statements": [
+        {
+          "english": "Кака́я цена́ на э́то?",
+          "chinese": "这个价格是多少？",
+          "soundmark": "ka-KA-ya tse-NA na E-ta"
+        },
+        {
+          "english": "Э́то сли́шком до́рого для меня́.",
+          "chinese": "这个对我来说太贵了。",
+          "soundmark": "E-ta SLEESH-kam DO-ra-ga dlya me-NYA"
+        },
+        {
+          "english": "Есть ли ски́дка?",
+          "chinese": "有折扣吗？",
+          "soundmark": "yest lee SKEE-kda"
+        },
+        {
+          "english": "Где това́ры со ски́дкой?",
+          "chinese": "打折商品在哪？",
+          "soundmark": "gde ta-VA-ry sa SKEE-kday"
+        },
+        {
+          "english": "Ско́лько я э́коно́млю при поку́пке?",
+          "chinese": "买这个能省多少钱？",
+          "soundmark": "SKOL-ka ya e-ka-NOM-lyu pri pa-KOOP-kye"
+        }
+      ]
+    },
+    {
+      "id": "rush-04",
+      "order": 4,
+      "title": "讨价还价",
+      "description": "在市场或小店砍价。",
+      "statements": [
+        {
+          "english": "Э́то о́чень до́рого!",
+          "chinese": "太贵了！",
+          "soundmark": "E-ta O-chen DO-ra-ga"
+        },
+        {
+          "english": "Мо́жно деше́вле?",
+          "chinese": "能便宜点吗？",
+          "soundmark": "MOZH-na de-SHEV-le"
+        },
+        {
+          "english": "Я возьму́ два, е́сли вы сде́лаете ски́дку.",
+          "chinese": "打折的话我买两个。",
+          "soundmark": "ya vaz-MOO dva YE-sli vy ZDY-la-ye-tye SKEE-dkoo"
+        },
+        {
+          "english": "Да́йте лу́чшую це́ну.",
+          "chinese": "给个更好的价。",
+          "soundmark": "DAY-tye LOOCH-shoo-yu TSE-noo"
+        },
+        {
+          "english": "По рука́м!",
+          "chinese": "成交！",
+          "soundmark": "pa roo-KAM"
+        }
+      ]
+    },
+    {
+      "id": "rush-05",
+      "order": 5,
+      "title": "试衣间",
+      "description": "在试衣间试衣服。",
+      "statements": [
+        {
+          "english": "Ско́лько приме́рок мо́жно?",
+          "chinese": "可以试几件？",
+          "soundmark": "SKOL-ka pree-ME-rak MOZH-na"
+        },
+        {
+          "english": "Мне ну́жен друго́й цвет.",
+          "chinese": "我要别的颜色。",
+          "soundmark": "mne NOO-zhen droo-GOY tsvet"
+        },
+        {
+          "english": "Э́то сли́шком ма́ло.",
+          "chinese": "太小了。",
+          "soundmark": "E-ta SLEESH-kam MA-la"
+        },
+        {
+          "english": "Э́то сиди́т хорошо́!",
+          "chinese": "这件很合身！",
+          "soundmark": "E-ta see-DEET kha-ra-SHO"
+        },
+        {
+          "english": "Где ещё тако́й же фасо́н?",
+          "chinese": "还有同样款式的吗？",
+          "soundmark": "gde ye-SHCHYO ta-KOY zhe fa-SON"
+        }
+      ]
+    },
+    {
+      "id": "rush-06",
+      "order": 6,
+      "title": "付款结账",
+      "description": "付款时的常用对话。",
+      "statements": [
+        {
+          "english": "Мо́жно оплати́ть ка́ртой?",
+          "chinese": "可以用卡吗？",
+          "soundmark": "MOZH-na a-pla-TEET KAR-toy"
+        },
+        {
+          "english": "На́до плати́ть в ка́ссу.",
+          "chinese": "要去收银台付款。",
+          "soundmark": "NA-da pla-TEET v KAS-soo"
+        },
+        {
+          "english": "Вам ну́жен паке́т?",
+          "chinese": "需要袋子吗？",
+          "soundmark": "vam NOO-zhen pa-KYET"
+        },
+        {
+          "english": "Возьми́те сда́чу.",
+          "chinese": "请拿找零。",
+          "soundmark": "vaz-MEE-tye ZDA-choo"
+        },
+        {
+          "english": "Мо́жно получи́ть нали́чными?",
+          "chinese": "可以退现金吗？",
+          "soundmark": "MOZH-na pa-loo-CHEET na-LEECH-ny-mi"
+        }
+      ]
+    },
+    {
+      "id": "rush-07",
+      "order": 7,
+      "title": "退换货物",
+      "description": "退货换货的表达。",
+      "statements": [
+        {
+          "english": "Я хочу́ верну́ть э́тот това́р.",
+          "chinese": "我想退这个商品。",
+          "soundmark": "ya kha-CHOO ver-NOOT E-tat ta-VAR"
+        },
+        {
+          "english": "Нужна́я квита́нция!",
+          "chinese": "需要收据！",
+          "soundmark": "NOOZH-na-ya kvee-TAN-tsee-ya"
+        },
+        {
+          "english": "Мо́жно обменя́ть на друго́й ра́змер?",
+          "chinese": "可以换别的尺码吗？",
+          "soundmark": "MOZH-na ab-me-NYAT na droo-GOY RAZ-mer"
+        },
+        {
+          "english": "Това́р оказа́лся брако́ванным.",
+          "chinese": "商品有瑕疵。",
+          "soundmark": "ta-VAR a-ka-ZAL-sya bra-KO-va-nym"
+        },
+        {
+          "english": "Ско́лько дней на возмо́жность возвра́та?",
+          "chinese": "多少天内可以退换？",
+          "soundmark": "SKOL-ka dney na vaz-MOZH-nast vaz-VRA-ta"
+        }
+      ]
+    },
+    {
+      "id": "rush-08",
+      "order": 8,
+      "title": "逛市场",
+      "description": "在露天市场或集市购物。",
+      "statements": [
+        {
+          "english": "Ско́лько сто́ит килогра́мм мя́са?",
+          "chinese": "一公斤肉多少钱？",
+          "soundmark": "SKOL-ka STO-eet kee-la-GRAM MYA-sa"
+        },
+        {
+          "english": "Э́то све́жее?",
+          "chinese": "这个新鲜吗？",
+          "soundmark": "E-ta SVE-zhe-ye"
+        },
+        {
+          "english": "Да́йте, пожа́луйста, три шту́ки.",
+          "chinese": "请给我三个。",
+          "soundmark": "DAY-tye pa-ZHAL-sta tree SHTU-kee"
+        },
+        {
+          "english": "Взве́сьте, пожа́луйста, э́то.",
+          "chinese": "请称一下这个。",
+          "soundmark": "VZVYES-tye pa-ZHAL-sta E-ta"
+        },
+        {
+          "english": "Мо́жно попро́бовать?",
+          "chinese": "可以尝一下吗？",
+          "soundmark": "MOZH-na pa-PRO-ba-vat"
+        }
+      ]
+    },
+    {
+      "id": "rush-09",
+      "order": 9,
+      "title": "电子产品",
+      "description": "购买电子产品时的表达。",
+      "statements": [
+        {
+          "english": "Мне ну́жен но́вый телефо́н.",
+          "chinese": "我需要一部新手机。",
+          "soundmark": "mne NOO-zhen NO-vee te-le-FON"
+        },
+        {
+          "english": "Кака́я моде́ль са́мая популя́рная?",
+          "chinese": "哪款最受欢迎？",
+          "soundmark": "ka-KA-ya ma-DEL SA-ma-ya pa-poo-LYAR-na-ya"
+        },
+        {
+          "english": "Есть ли гаранти́я?",
+          "chinese": "有保修吗？",
+          "soundmark": "yest lee ga-ran-TEE-ya"
+        },
+        {
+          "english": "Каки́е хара́ктеристики у э́того ноутбу́ка?",
+          "chinese": "这台笔记本有什么配置？",
+          "soundmark": "ka-KEE-ye kha-RAK-te-ree-stee-kee oo E-ta-va na-oot-BOO-ka"
+        },
+        {
+          "english": "Мо́жно верну́ть тече́ние 14 дней?",
+          "chinese": "14天内可以退货吗？",
+          "soundmark": "MOZH-na ver-NOOT te-CHE-nee-ye che-tyr-nad-tsat dney"
+        }
+      ]
+    },
+    {
+      "id": "rush-10",
+      "order": 10,
+      "title": "纪念品",
+      "description": "购买纪念品和礼物的表达。",
+      "statements": [
+        {
+          "english": "Я ищу́ сувени́ры из Росси́и.",
+          "chinese": "我在找俄罗斯纪念品。",
+          "soundmark": "ya ee-SHCHOO soo-ve-NEE-ry iz ras-SEE-ee"
+        },
+        {
+          "english": "Э́то ру́сский самова́р?",
+          "chinese": "这是俄罗斯茶炊吗？",
+          "soundmark": "E-ta ROOS-kee sa-ma-VAR"
+        },
+        {
+          "english": "Ско́лько сто́ит матрёшка?",
+          "chinese": "套娃多少钱？",
+          "soundmark": "SKOL-ka STO-eet mat-RYOSH-ka"
+        },
+        {
+          "english": "Мо́жно купи́ть э́ту карти́ну?",
+          "chinese": "可以买这幅画吗？",
+          "soundmark": "MOZH-na koo-PEET E-too kar-TEE-noo"
+        },
+        {
+          "english": "Заверни́те как пода́рок, пожа́луйста.",
+          "chinese": "请包成礼品。",
+          "soundmark": "za-ver-NEE-tye kak pa-DA-rak pa-ZHAL-sta"
+        }
+      ]
+    }
+  ]
+}

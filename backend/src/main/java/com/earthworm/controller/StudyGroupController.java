@@ -1,7 +1,6 @@
 package com.earthworm.controller;
-import com.earthworm.config.UserContext;
 
-import com.earthworm.service.CourseService;
+import com.earthworm.config.UserContext;
 import com.earthworm.service.StudyGroupService;
 import org.springframework.web.bind.annotation.*;
 

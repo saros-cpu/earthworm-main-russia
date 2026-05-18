@@ -1,7 +1,5 @@
 package com.earthworm.config;
-import com.earthworm.config.UserContext;
 
-import com.earthworm.service.CourseService;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;

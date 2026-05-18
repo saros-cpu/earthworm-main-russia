@@ -4,12 +4,13 @@ import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
 
-@Component
+@Component @Order(1)
 public class JwtAuthFilter extends OncePerRequestFilter {
     private final JwtUtil jwtUtil;
 
@@ -26,7 +27,9 @@ public class JwtAuthFilter extends OncePerRequestFilter {
                 String token = authHeader.substring(7);
                 try {
                     String userId = jwtUtil.getUserId(token);
+                    String role = jwtUtil.getRole(token);
                     UserContext.setUserId(userId);
+                    UserContext.setRole(role);
                 } catch (Exception ignored) {}
             }
             filterChain.doFilter(request, response);

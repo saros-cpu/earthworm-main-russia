@@ -12,6 +12,7 @@ public class User {
     @Column(length = 64) private String nickname;
     @Column(columnDefinition = "TEXT") private String avatar;
     @Column(length = 128) private String email;
+    @Column(length = 32) private String role = "USER";
     @Column(name = "created_at", insertable = false, updatable = false) private LocalDateTime createdAt;
     @Column(name = "updated_at", insertable = false, updatable = false) private LocalDateTime updatedAt;
 
@@ -21,4 +22,6 @@ public class User {
     public String getNickname() { return nickname; } public void setNickname(String v) { this.nickname = v; }
     public String getAvatar() { return avatar; } public void setAvatar(String v) { this.avatar = v; }
     public String getEmail() { return email; } public void setEmail(String v) { this.email = v; }
+    public String getRole() { return role; } public void setRole(String v) { this.role = v; }
+    public LocalDateTime getCreatedAt() { return createdAt; }
 }

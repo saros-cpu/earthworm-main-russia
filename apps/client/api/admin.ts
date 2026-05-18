@@ -1,5 +1,5 @@
-import { getHttp } from "./http";
 import type { PdfImportJobStatus } from "./course-pack";
+import { getHttp } from "./http";
 
 export interface AdminCoursePack {
   id: string;
@@ -91,6 +91,16 @@ export interface VocabularyEnrichResult {
   aiAvailable: boolean;
 }
 
+export interface AdminUser {
+  id: string;
+  username: string;
+  nickname: string;
+  email: string;
+  avatar: string;
+  role: string;
+  createdAt: string;
+}
+
 export interface VocabularyOrganizeResult {
   coursePackId: string;
   courseCount: number;
@@ -113,6 +123,39 @@ export function updateAdminCoursePack(id: string, body: Partial<AdminCoursePack>
   return getHttp()<AdminCoursePack>(`/admin/course-packs/${id}`, {
     method: "put",
     body,
+  });
+}
+
+export function deleteAdminCoursePack(id: string) {
+  return getHttp()<boolean>(`/admin/course-packs/${id}`, {
+    method: "delete",
+  });
+}
+
+export function fetchAdminUsers() {
+  return getHttp()<AdminUser[]>("/admin/users");
+}
+
+export function updateAdminUserRole(id: string, role: string) {
+  return getHttp()<AdminUser>(`/admin/users/${id}/role`, {
+    method: "put",
+    body: { role },
+  });
+}
+
+export function updateAdminUser(
+  id: string,
+  body: { nickname?: string; email?: string; avatar?: string; password?: string },
+) {
+  return getHttp()<AdminUser>(`/admin/users/${id}`, {
+    method: "put",
+    body,
+  });
+}
+
+export function deleteAdminUser(id: string) {
+  return getHttp()<{ deleted: boolean }>(`/admin/users/${id}`, {
+    method: "delete",
   });
 }
 
@@ -216,10 +259,13 @@ export function refreshVocabularyPrompts(coursePackId: string) {
 }
 
 export function enrichVocabulary(coursePackId: string, limit = 40) {
-  return getHttp()<VocabularyEnrichResult>(`/admin/course-packs/${coursePackId}/enrich-vocabulary`, {
-    method: "post",
-    body: { limit },
-  });
+  return getHttp()<VocabularyEnrichResult>(
+    `/admin/course-packs/${coursePackId}/enrich-vocabulary`,
+    {
+      method: "post",
+      body: { limit },
+    },
+  );
 }
 
 export function organizeVocabularyCourses(coursePackId: string) {

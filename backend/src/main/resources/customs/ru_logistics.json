@@ -1,0 +1,389 @@
+{
+  "id": "ru-logistics",
+  "title": "国际物流俄语",
+  "description": "国际物流海关运输仓储等外贸物流领域的俄语专业词汇。",
+  "cover": "https://images.unsplash.com/photo-1579027989536-b7b1f875659b?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rulo-01",
+      "order": 1,
+      "title": "物流运输",
+      "description": "运输方式和物流操作词汇。",
+      "statements": [
+        {
+          "english": "гру́з",
+          "chinese": "货物",
+          "soundmark": "groz"
+        },
+        {
+          "english": "конте́йнер",
+          "chinese": "集装箱",
+          "soundmark": "kan-TEY-ner"
+        },
+        {
+          "english": "морско́й по́рт",
+          "chinese": "海港",
+          "soundmark": "mar-SKOY port"
+        },
+        {
+          "english": "аэропо́рт",
+          "chinese": "机场",
+          "soundmark": "a-e-ro-PORT"
+        },
+        {
+          "english": "авиаперево́зка",
+          "chinese": "空运",
+          "soundmark": "a-vee-a-pe-re-VOZ-ka"
+        },
+        {
+          "english": "морска́я перево́зка",
+          "chinese": "海运",
+          "soundmark": "mar-SKA-ya pe-re-VOZ-ka"
+        }
+      ]
+    },
+    {
+      "id": "rulo-02",
+      "order": 2,
+      "title": "海关与仓储",
+      "description": "清关和仓储相关词汇。",
+      "statements": [
+        {
+          "english": "тамо́жня",
+          "chinese": "海关",
+          "soundmark": "ta-MOZH-nya"
+        },
+        {
+          "english": "тамо́женная деклара́ция",
+          "chinese": "报关单",
+          "soundmark": "ta-MO-zhen-na-ya de-kla-RA-tsee-ya"
+        },
+        {
+          "english": "по́шлина",
+          "chinese": "关税",
+          "soundmark": "POSH-lee-na"
+        },
+        {
+          "english": "склад",
+          "chinese": "仓库",
+          "soundmark": "sklad"
+        },
+        {
+          "english": "отгру́зка",
+          "chinese": "发货",
+          "soundmark": "at-GROOZ-ka"
+        },
+        {
+          "english": "получа́тель",
+          "chinese": "收货人",
+          "soundmark": "pa-loo-CHA-tel"
+        }
+      ]
+    },
+    {
+      "id": "rulo-03",
+      "order": 3,
+      "title": "运输方式",
+      "description": "各种运输方式的俄语术语。",
+      "statements": [
+        {
+          "english": "железнодоро́жная перево́зка",
+          "chinese": "铁路运输",
+          "soundmark": "zhe-lez-na-da-ROZH-na-ya pe-re-VOZ-ka"
+        },
+        {
+          "english": "автоперево́зка",
+          "chinese": "公路运输",
+          "soundmark": "av-ta-pe-re-VOZ-ka"
+        },
+        {
+          "english": "мультимода́льная перево́зка",
+          "chinese": "多式联运",
+          "soundmark": "mool-tee-ma-DAL-na-ya pe-re-VOZ-ka"
+        },
+        {
+          "english": "трубопрово́д",
+          "chinese": "管道运输",
+          "soundmark": "troo-bo-pra-VOD"
+        },
+        {
+          "english": "транзи́т",
+          "chinese": "过境运输",
+          "soundmark": "tran-ZEET"
+        },
+        {
+          "english": "экспеди́рование",
+          "chinese": "货运代理",
+          "soundmark": "eks-pe-DEE-ro-va-nee-ye"
+        }
+      ]
+    },
+    {
+      "id": "rulo-04",
+      "order": 4,
+      "title": "库存管理",
+      "description": "仓储和库存管理相关词汇。",
+      "statements": [
+        {
+          "english": "запа́с",
+          "chinese": "库存",
+          "soundmark": "za-PAS"
+        },
+        {
+          "english": "инвентариза́ция",
+          "chinese": "盘点",
+          "soundmark": "in-ven-ta-ree-ZA-tsee-ya"
+        },
+        {
+          "english": "у́ровень запа́са",
+          "chinese": "库存水平",
+          "soundmark": "OO-ra-ven za-PA-sa"
+        },
+        {
+          "english": "очере́дь",
+          "chinese": "排队顺序",
+          "soundmark": "a-che-RED"
+        },
+        {
+          "english": "отгру́зка",
+          "chinese": "装运出货",
+          "soundmark": "at-GROOZ-ka"
+        },
+        {
+          "english": "приёмка",
+          "chinese": "验收",
+          "soundmark": "pree-YOM-ka"
+        }
+      ]
+    },
+    {
+      "id": "rulo-05",
+      "order": 5,
+      "title": "供应链",
+      "description": "供应链管理相关词汇。",
+      "statements": [
+        {
+          "english": "цепь поста́вок",
+          "chinese": "供应链",
+          "soundmark": "tsep pa-STAV-ok"
+        },
+        {
+          "english": "поста́вщик",
+          "chinese": "供应商",
+          "soundmark": "pas-TAV-shcheek"
+        },
+        {
+          "english": "дистрибью́тор",
+          "chinese": "分销商",
+          "soundmark": "dees-tree-BYOO-tor"
+        },
+        {
+          "english": "логи́стика",
+          "chinese": "物流",
+          "soundmark": "la-GEES-tee-ka"
+        },
+        {
+          "english": "управле́ние запа́сами",
+          "chinese": "库存管理",
+          "soundmark": "up-rav-LE-nee-ye za-PA-sa-mee"
+        },
+        {
+          "english": "заку́пка",
+          "chinese": "采购",
+          "soundmark": "za-KOOP-ka"
+        }
+      ]
+    },
+    {
+      "id": "rulo-06",
+      "order": 6,
+      "title": "交付条款",
+      "description": "国际贸易交付条款词汇。",
+      "statements": [
+        {
+          "english": "Инкоте́рмс",
+          "chinese": "国际贸易术语",
+          "soundmark": "in-ko-TERMS"
+        },
+        {
+          "english": "FOB",
+          "chinese": "船上交货",
+          "soundmark": "ef-o-be"
+        },
+        {
+          "english": "CIF",
+          "chinese": "到岸价格",
+          "soundmark": "tse-ef"
+        },
+        {
+          "english": "срок поста́вки",
+          "chinese": "交货期",
+          "soundmark": "srok pa-STAV-kee"
+        },
+        {
+          "english": "пункт назначе́ния",
+          "chinese": "目的地",
+          "soundmark": "punkt naz-na-CHE-nee-ya"
+        },
+        {
+          "english": "страхова́ние гру́за",
+          "chinese": "货物保险",
+          "soundmark": "stra-kho-VA-nee-ye GROO-za"
+        }
+      ]
+    },
+    {
+      "id": "rulo-07",
+      "order": 7,
+      "title": "包装",
+      "description": "货物包装和标识相关词汇。",
+      "statements": [
+        {
+          "english": "упако́вка",
+          "chinese": "包装",
+          "soundmark": "oo-pa-KOV-ka"
+        },
+        {
+          "english": "палле́т",
+          "chinese": "托盘",
+          "soundmark": "pa-LET"
+        },
+        {
+          "english": "я́щик",
+          "chinese": "箱子",
+          "soundmark": "YA-shcheek"
+        },
+        {
+          "english": "бо́чка",
+          "chinese": "桶",
+          "soundmark": "BOCH-ka"
+        },
+        {
+          "english": "маркиро́вка",
+          "chinese": "唛头标签",
+          "soundmark": "mar-kee-ROV-ka"
+        },
+        {
+          "english": "вес",
+          "chinese": "重量",
+          "soundmark": "vyes"
+        }
+      ]
+    },
+    {
+      "id": "rulo-08",
+      "order": 8,
+      "title": "货运代理",
+      "description": "货代服务和操作相关词汇。",
+      "statements": [
+        {
+          "english": "экспеди́тор",
+          "chinese": "货运代理",
+          "soundmark": "eks-pe-DEE-tor"
+        },
+        {
+          "english": "броке́р",
+          "chinese": "报关行",
+          "soundmark": "bra-KYER"
+        },
+        {
+          "english": "фрахт",
+          "chinese": "运费",
+          "soundmark": "frakht"
+        },
+        {
+          "english": "коносаме́нт",
+          "chinese": "提单",
+          "soundmark": "ka-na-sa-MENT"
+        },
+        {
+          "english": "накладна́я",
+          "chinese": "运单",
+          "soundmark": "nak-lad-NA-ya"
+        },
+        {
+          "english": "деклари́рование",
+          "chinese": "报关",
+          "soundmark": "de-kla-REE-ro-va-nee-ye"
+        }
+      ]
+    },
+    {
+      "id": "rulo-09",
+      "order": 9,
+      "title": "物流文件",
+      "description": "国际物流常用单证词汇。",
+      "statements": [
+        {
+          "english": "счёт-фа́ктура",
+          "chinese": "发票",
+          "soundmark": "shchot-FAK-too-ra"
+        },
+        {
+          "english": "упако́вочный лист",
+          "chinese": "装箱单",
+          "soundmark": "oo-pa-KO-va-chny list"
+        },
+        {
+          "english": "сертифика́т происхожде́ния",
+          "chinese": "原产地证书",
+          "soundmark": "ser-tee-fee-KAT pra-is-khozh-DE-nee-ya"
+        },
+        {
+          "english": "страхово́й по́лис",
+          "chinese": "保险单",
+          "soundmark": "stra-kho-VOY PO-lees"
+        },
+        {
+          "english": "разреше́ние",
+          "chinese": "许可证",
+          "soundmark": "raz-re-SHE-nee-ye"
+        },
+        {
+          "english": "сертифика́т ка́чества",
+          "chinese": "质量证书",
+          "soundmark": "ser-tee-fee-KAT KA-chest-va"
+        }
+      ]
+    },
+    {
+      "id": "rulo-10",
+      "order": 10,
+      "title": "船舶运输",
+      "description": "海运和船舶运输专业词汇。",
+      "statements": [
+        {
+          "english": "су́дно",
+          "chinese": "船舶",
+          "soundmark": "SOOD-na"
+        },
+        {
+          "english": "по́рт погру́зки",
+          "chinese": "装货港",
+          "soundmark": "port pa-GROOZ-kee"
+        },
+        {
+          "english": "по́рт вы́грузки",
+          "chinese": "卸货港",
+          "soundmark": "port VY-grooz-kee"
+        },
+        {
+          "english": "прича́л",
+          "chinese": "码头",
+          "soundmark": "pree-CHAL"
+        },
+        {
+          "english": "то́ннаж",
+          "chinese": "吨位",
+          "soundmark": "ta-NAZH"
+        },
+        {
+          "english": "погру́зка",
+          "chinese": "装载",
+          "soundmark": "poo-GROOZ-ka"
+        }
+      ]
+    }
+  ]
+}

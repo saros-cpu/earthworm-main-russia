@@ -12,12 +12,17 @@ const LIGHT_THEME_CLASS = "light";
 
 const darkMode = ref(Theme.LIGHT);
 export function useDarkMode() {
+  const isClient = typeof window !== "undefined" && typeof document !== "undefined";
+
   const isAppearanceTransition =
-    document.startViewTransition && !window.matchMedia(`(prefers-reduced-motion: reduce)`).matches;
+    isClient &&
+    (document as any).startViewTransition &&
+    !window.matchMedia(`(prefers-reduced-motion: reduce)`).matches;
 
-  const isDarkMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const isDarkMode =
+    isClient && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-  const cacheDarkMode = localStorage.getItem(DARK_MODE) as Theme | null;
+  const cacheDarkMode = isClient ? (localStorage.getItem(DARK_MODE) as Theme | null) : null;
 
   const initDarkMode = () => {
     if (isDarkMode && !cacheDarkMode) {
@@ -70,9 +75,10 @@ export function useDarkMode() {
     const themeClass = state ? DARK_THEME_CLASS : LIGHT_THEME_CLASS;
     const themeValue = state ? Theme.DARK : Theme.LIGHT;
 
+    darkMode.value = themeValue;
+    if (!isClient) return;
     document.documentElement.classList.toggle(DARK_THEME_CLASS, state);
     document.documentElement.setAttribute("data-theme", themeClass);
-    darkMode.value = themeValue;
     localStorage.setItem(DARK_MODE, themeValue);
   };
 

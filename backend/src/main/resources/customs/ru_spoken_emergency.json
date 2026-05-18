@@ -1,0 +1,319 @@
+{
+  "id": "ru-spoken-emergency",
+  "title": "紧急情况俄语",
+  "description": "遇到紧急情况时的求救和报警用语。",
+  "cover": "https://images.unsplash.com/photo-1587745416684-47953f16f82b?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ruem-01",
+      "order": 1,
+      "title": "拨打急救电话",
+      "description": "拨打112或103时的常用表达。",
+      "statements": [
+        {
+          "english": "Звони́те по номе́ру 103!",
+          "chinese": "请拨打103！",
+          "soundmark": "zva-NEE-tye pa no-ME-roo sto-TREE"
+        },
+        {
+          "english": "Ну́жен врач! Ско́ро!",
+          "chinese": "需要医生！快！",
+          "soundmark": "NOO-zhen vrach SKO-ra"
+        },
+        {
+          "english": "Адре́с: у́лица Пушкина, дом 5.",
+          "chinese": "地址是普希金大街5号。",
+          "soundmark": "a-DRES OO-lee-tsa PUSH-kee-na dom pyat"
+        },
+        {
+          "english": "Челове́к без созна́ния.",
+          "chinese": "有人昏迷了。",
+          "soundmark": "che-la-VYEk byez saz-NA-nee-ya"
+        },
+        {
+          "english": "Пришли́те по́мощь, пожа́луйста!",
+          "chinese": "请派人来帮忙！",
+          "soundmark": "pri-SHLEE-tye PO-mashch pa-ZHAL-sta"
+        }
+      ]
+    },
+    {
+      "id": "ruem-02",
+      "order": 2,
+      "title": "报火警",
+      "description": "发现火灾时报警的表达。",
+      "statements": [
+        {
+          "english": "Пожа́р! Звони́те 101!",
+          "chinese": "着火了！打101！",
+          "soundmark": "pa-ZHAR zva-NEE-tye sto-a-DEEN"
+        },
+        {
+          "english": "Гори́т зда́ние!",
+          "chinese": "大楼着火了！",
+          "soundmark": "ga-REET ZDA-nee-ye"
+        },
+        {
+          "english": "Лю́ди внутри́!",
+          "chinese": "里面有人！",
+          "soundmark": "LYOO-dee vnoo-TREE"
+        },
+        {
+          "english": "Ну́жен пожа́рный расчёт.",
+          "chinese": "需要消防队。",
+          "soundmark": "NOO-zhen pa-ZHAR-ny ras-CHYOT"
+        },
+        {
+          "english": "Где ближа́йший огнетуши́тель?",
+          "chinese": "最近的灭火器在哪？",
+          "soundmark": "gde blee-ZHAY-shee ag-ne-too-SHEE-tel"
+        }
+      ]
+    },
+    {
+      "id": "ruem-03",
+      "order": 3,
+      "title": "交通事故",
+      "description": "发生交通事故时的求助用语。",
+      "statements": [
+        {
+          "english": "Произошла́ ава́рия!",
+          "chinese": "出车祸了！",
+          "soundmark": "pro-ee-zash-LA a-VA-ree-ya"
+        },
+        {
+          "english": "Вы́зовите поли́цию!",
+          "chinese": "叫警察来！",
+          "soundmark": "VY-za-vee-tye pa-LEE-tsee-yoo"
+        },
+        {
+          "english": "Есть ра́неные.",
+          "chinese": "有伤者。",
+          "soundmark": "yest RA-ne-ny-ye"
+        },
+        {
+          "english": "Столкну́лись две маши́ны.",
+          "chinese": "两车相撞。",
+          "soundmark": "stolk-NOO-lis dve ma-SHY-ny"
+        },
+        {
+          "english": "Запиши́те но́мера маши́н.",
+          "chinese": "请记下车牌号。",
+          "soundmark": "za-pee-SHEE-tye no-ME-ra ma-SHEEN"
+        }
+      ]
+    },
+    {
+      "id": "ruem-04",
+      "order": 4,
+      "title": "医疗急救",
+      "description": "需要紧急医疗救助时的表达。",
+      "statements": [
+        {
+          "english": "У меня́ серде́чный при́ступ!",
+          "chinese": "我心脏病发作了！",
+          "soundmark": "oo me-NYA ser-DECH-ny PRIS-toop"
+        },
+        {
+          "english": "Мне тру́дно дыша́ть.",
+          "chinese": "我呼吸困难。",
+          "soundmark": "mne TROOD-na dy-SHAT"
+        },
+        {
+          "english": "У меня́ си́льная бо́ль в груди́.",
+          "chinese": "我胸口很痛。",
+          "soundmark": "oo me-NYA SEEL-na-ya bol v groo-DEE"
+        },
+        {
+          "english": "Я потеря́л(а) мно́го кро́ви.",
+          "chinese": "我流了很多血。",
+          "soundmark": "ya pa-te-RYAL(a) MNO-ga KRO-vee"
+        },
+        {
+          "english": "Да́йте воды́, пожа́луйста.",
+          "chinese": "请给我点水。",
+          "soundmark": "DAY-tye va-DY pa-ZHAL-sta"
+        }
+      ]
+    },
+    {
+      "id": "ruem-05",
+      "order": 5,
+      "title": "证件丢失",
+      "description": "护照和证件丢失时的处理用语。",
+      "statements": [
+        {
+          "english": "Я потеря́л(а) па́спорт.",
+          "chinese": "我丢了护照。",
+          "soundmark": "ya pa-te-RYAL(a) PAS-port"
+        },
+        {
+          "english": "Где нахо́дится посо́льство?",
+          "chinese": "大使馆在哪？",
+          "soundmark": "gde na-KHO-deet-sa pa-SOL-stva"
+        },
+        {
+          "english": "Мне ну́жно напиши́ть заявле́ние.",
+          "chinese": "我需要写一份声明。",
+          "soundmark": "mne NOOZH-na na-pee-SAT za-yav-LE-nee-ye"
+        },
+        {
+          "english": "Мой кошелёк укра́ли.",
+          "chinese": "我的钱包被偷了。",
+          "soundmark": "moy ka-shel-YOK oo-KRA-lee"
+        }
+      ]
+    },
+    {
+      "id": "ruem-06",
+      "order": 6,
+      "title": "遭遇盗窃",
+      "description": "被偷或被盗后的报警表达。",
+      "statements": [
+        {
+          "english": "Меня́ огра́били на у́лице.",
+          "chinese": "我在街上被抢了。",
+          "soundmark": "me-NYA a-GRA-bee-lee na OO-lee-tse"
+        },
+        {
+          "english": "Злоумы́шленник убежа́л туда́.",
+          "chinese": "坏人往那边跑了。",
+          "soundmark": "zla-oo-MYSH-le-neek oo-be-ZHAL too-DA"
+        },
+        {
+          "english": "Я вы́звал(a) поли́цию.",
+          "chinese": "我已经报警了。",
+          "soundmark": "ya VY-zval(a) pa-LEE-tsee-yoo"
+        },
+        {
+          "english": "Помоги́те, меня́ обокра́ли!",
+          "chinese": "救命，我被偷了！",
+          "soundmark": "pa-ma-GEE-tye me-NYA a-ba-KRA-lee"
+        }
+      ]
+    },
+    {
+      "id": "ruem-07",
+      "order": 7,
+      "title": "自然灾害",
+      "description": "遇到自然灾害时的求助用语。",
+      "statements": [
+        {
+          "english": "Землетрясе́ние! На́до вы́йти на у́лицу.",
+          "chinese": "地震了！需要到街上去。",
+          "soundmark": "zem-le-trya-SE-nee-ye NA-da VY-ee-tee na OO-lee-tsoo"
+        },
+        {
+          "english": "Объяви́ли штормово́е предупрежде́ние.",
+          "chinese": "发布了风暴预警。",
+          "soundmark": "ab-yav-EE-lee shtar-ma-VO-ye pre-doo-pre-ZHDE-nee-ye"
+        },
+        {
+          "english": "Укрой́тесь в безопа́сном ме́сте!",
+          "chinese": "去安全的地方躲避！",
+          "soundmark": "oo-KROY-tyes v be-za-PAS-nom MES-tye"
+        },
+        {
+          "english": "Наводне́ние! Подними́тесь наве́рх!",
+          "chinese": "发洪水了！到上面去！",
+          "soundmark": "na-vad-NE-nee-ye pad-nee-MEET-tyes na-VERH"
+        }
+      ]
+    },
+    {
+      "id": "ruem-08",
+      "order": 8,
+      "title": "孩子走失",
+      "description": "寻找走失孩子的求助表达。",
+      "statements": [
+        {
+          "english": "Мой ребёнок потеря́лся!",
+          "chinese": "我的孩子走丢了！",
+          "soundmark": "moy re-BYO-nak pa-te-RYAL-sya"
+        },
+        {
+          "english": "Его́ зову́т Саша, ему́ 5 лет.",
+          "chinese": "他叫萨沙，5岁。",
+          "soundmark": "ye-VO za-VOOT SA-sha ye-MOO pyat lyet"
+        },
+        {
+          "english": "Он бы́л о́дет в си́нюю ку́ртку.",
+          "chinese": "他穿着一件蓝色外套。",
+          "soundmark": "on byl O-det v SEE-nyu-yu KOORT-koo"
+        },
+        {
+          "english": "Мы потеря́лись в торго́вом це́нтре.",
+          "chinese": "我们在商场里走散了。",
+          "soundmark": "my pa-te-RYA-lees v tar-GO-vom TSEN-tre"
+        }
+      ]
+    },
+    {
+      "id": "ruem-09",
+      "order": 9,
+      "title": "呼叫救护车",
+      "description": "打电话叫救护车时的对话。",
+      "statements": [
+        {
+          "english": "Ну́жна ско́рая по́мощь!",
+          "chinese": "需要救护车！",
+          "soundmark": "NOOZH-na SKO-ra-ya PO-mashch"
+        },
+        {
+          "english": "Больно́му о́чень пло́хо.",
+          "chinese": "病人情况很糟。",
+          "soundmark": "bal-NO-mu O-chen PLO-ha"
+        },
+        {
+          "english": "Куса́ет, не мо́жет говори́ть.",
+          "chinese": "咳嗽得说不出话。",
+          "soundmark": "KASH-lya-yet ne MO-zhet ga-va-REET"
+        },
+        {
+          "english": "Ско́рая уже́ в пути́!",
+          "chinese": "救护车已经在路上了！",
+          "soundmark": "SKO-ra-ya oo-ZHE v poo-TEE"
+        },
+        {
+          "english": "Встре́тьте их на у́лице.",
+          "chinese": "到街上去接他们。",
+          "soundmark": "VSTRET-tyte eekh na OO-lee-tse"
+        }
+      ]
+    },
+    {
+      "id": "ruem-10",
+      "order": 10,
+      "title": "报警处理",
+      "description": "在警察局做笔录时的表达。",
+      "statements": [
+        {
+          "english": "Я хочу́ заяви́ть о кра́же.",
+          "chinese": "我要报案失窃。",
+          "soundmark": "ya kha-CHOO za-ya-VEET o KRA-zhe"
+        },
+        {
+          "english": "Э́то произошло́ сего́дня у́тром.",
+          "chinese": "这是今天早上发生的。",
+          "soundmark": "E-ta pro-ee-zash-LO se-VOD-nya OOT-ram"
+        },
+        {
+          "english": "Я помню лицо́ престу́пника.",
+          "chinese": "我记得罪犯的脸。",
+          "soundmark": "ya POM-nyu lee-TSO pres-TOOP-nee-ka"
+        },
+        {
+          "english": "Где мо́жно получи́ть спра́вку?",
+          "chinese": "在哪里可以拿到证明？",
+          "soundmark": "gde MOZH-na pa-loo-CHEET SPRAV-koo"
+        },
+        {
+          "english": "Спаси́бо за по́мощь.",
+          "chinese": "谢谢您的帮助。",
+          "soundmark": "spa-SEE-ba za PO-mashch"
+        }
+      ]
+    }
+  ]
+}

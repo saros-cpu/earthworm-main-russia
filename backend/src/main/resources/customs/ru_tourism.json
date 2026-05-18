@@ -1,0 +1,384 @@
+{
+  "id": "ru-tourism",
+  "title": "旅游行业俄语",
+  "description": "导游服务景点介绍酒店预订等旅游行业俄语专业词汇。",
+  "cover": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ruto-01",
+      "order": 1,
+      "title": "导游服务",
+      "description": "导游工作常用表达。",
+      "statements": [
+        {
+          "english": "экскурсово́д",
+          "chinese": "导游",
+          "soundmark": "ek-skoor-sa-VOD"
+        },
+        {
+          "english": "достопримеча́тельность",
+          "chinese": "名胜古迹",
+          "soundmark": "da-sta-pree-me-CHA-tel-nost"
+        },
+        {
+          "english": "экскурсия",
+          "chinese": "游览",
+          "soundmark": "ek-SKOOR-see-ya"
+        },
+        {
+          "english": "биле́т",
+          "chinese": "门票",
+          "soundmark": "bee-LYET"
+        },
+        {
+          "english": "расписа́ние",
+          "chinese": "时刻表",
+          "soundmark": "ra-pee-SA-nee-ye"
+        }
+      ]
+    },
+    {
+      "id": "ruto-02",
+      "order": 2,
+      "title": "景点与饮食",
+      "description": "旅游景点和特色饮食表达。",
+      "statements": [
+        {
+          "english": "Кра́сная пло́щадь",
+          "chinese": "红场",
+          "soundmark": "KRAS-na-ya PLO-shchad"
+        },
+        {
+          "english": "Кремль",
+          "chinese": "克里姆林宫",
+          "soundmark": "kreml"
+        },
+        {
+          "english": "Эрмита́ж",
+          "chinese": "冬宫博物馆",
+          "soundmark": "er-mee-TAZH"
+        },
+        {
+          "english": "блины́",
+          "chinese": "薄饼",
+          "soundmark": "blee-NY"
+        },
+        {
+          "english": "борщ",
+          "chinese": "红菜汤",
+          "soundmark": "borshch"
+        },
+        {
+          "english": "и́кра",
+          "chinese": "鱼子酱",
+          "soundmark": "E-kra"
+        }
+      ]
+    },
+    {
+      "id": "ruto-03",
+      "order": 3,
+      "title": "订票出行",
+      "description": "预订机票和出行计划相关词汇。",
+      "statements": [
+        {
+          "english": "брони́ровать",
+          "chinese": "预订",
+          "soundmark": "bra-NEE-ro-vat"
+        },
+        {
+          "english": "авиабиле́т",
+          "chinese": "机票",
+          "soundmark": "a-vee-a-bee-LET"
+        },
+        {
+          "english": "ре́йс",
+          "chinese": "航班",
+          "soundmark": "reys"
+        },
+        {
+          "english": "вы́лет",
+          "chinese": "起飞",
+          "soundmark": "VY-let"
+        },
+        {
+          "english": "прилёт",
+          "chinese": "到达",
+          "soundmark": "pree-LYOT"
+        },
+        {
+          "english": "отмена ре́йса",
+          "chinese": "航班取消",
+          "soundmark": "ot-ME-na REY-sa"
+        }
+      ]
+    },
+    {
+      "id": "ruto-04",
+      "order": 4,
+      "title": "机场用语",
+      "description": "机场出行常用表达。",
+      "statements": [
+        {
+          "english": "регистра́ция",
+          "chinese": "值机",
+          "soundmark": "re-gees-TRA-tsee-ya"
+        },
+        {
+          "english": "поса́дочный тало́н",
+          "chinese": "登机牌",
+          "soundmark": "pa-SA-da-chny ta-LON"
+        },
+        {
+          "english": "бага́ж",
+          "chinese": "行李",
+          "soundmark": "ba-GAZH"
+        },
+        {
+          "english": "ручно́й кладь",
+          "chinese": "手提行李",
+          "soundmark": "rooch-NOY klat"
+        },
+        {
+          "english": "тамо́женный контро́ль",
+          "chinese": "海关检查",
+          "soundmark": "ta-MO-zhen-ny kan-TROL"
+        },
+        {
+          "english": "вы́ход на поса́дку",
+          "chinese": "登机口",
+          "soundmark": "VY-khod na pa-SAD-koo"
+        }
+      ]
+    },
+    {
+      "id": "ruto-05",
+      "order": 5,
+      "title": "酒店入住",
+      "description": "酒店入住和住宿相关词汇。",
+      "statements": [
+        {
+          "english": "гости́ница",
+          "chinese": "酒店",
+          "soundmark": "gas-TEE-nee-tsa"
+        },
+        {
+          "english": "заезд",
+          "chinese": "入住",
+          "soundmark": "za-YEZD"
+        },
+        {
+          "english": "выезд",
+          "chinese": "退房",
+          "soundmark": "VY-yezd"
+        },
+        {
+          "english": "но́мер",
+          "chinese": "房间",
+          "soundmark": "NO-mer"
+        },
+        {
+          "english": "администра́тор",
+          "chinese": "前台",
+          "soundmark": "ad-mee-nees-TRA-tor"
+        },
+        {
+          "english": "ключа́",
+          "chinese": "钥匙",
+          "soundmark": "klyu-CHA"
+        }
+      ]
+    },
+    {
+      "id": "ruto-06",
+      "order": 6,
+      "title": "餐厅用语",
+      "description": "餐厅用餐和点餐相关词汇。",
+      "statements": [
+        {
+          "english": "рестора́н",
+          "chinese": "餐厅",
+          "soundmark": "res-ta-RAN"
+        },
+        {
+          "english": "меню́",
+          "chinese": "菜单",
+          "soundmark": "me-NYU"
+        },
+        {
+          "english": "официа́нт",
+          "chinese": "服务员",
+          "soundmark": "a-fee-tsee-ANT"
+        },
+        {
+          "english": "заказа́ть",
+          "chinese": "点餐",
+          "soundmark": "za-ka-ZAT"
+        },
+        {
+          "english": "счёт",
+          "chinese": "账单",
+          "soundmark": "shchot"
+        },
+        {
+          "english": "чаевы́е",
+          "chinese": "小费",
+          "soundmark": "cha-e-VY-ye"
+        }
+      ]
+    },
+    {
+      "id": "ruto-07",
+      "order": 7,
+      "title": "观光旅行",
+      "description": "参观景点和观光活动相关词汇。",
+      "statements": [
+        {
+          "english": "экску́рсия по го́роду",
+          "chinese": "城市观光",
+          "soundmark": "ek-SKOOR-see-ya pa GO-ro-doo"
+        },
+        {
+          "english": "фотографи́ровать",
+          "chinese": "拍照",
+          "soundmark": "fa-ta-gra-FEE-ro-vat"
+        },
+        {
+          "english": "музе́й",
+          "chinese": "博物馆",
+          "soundmark": "moo-ZEY"
+        },
+        {
+          "english": "па́рк",
+          "chinese": "公园",
+          "soundmark": "park"
+        },
+        {
+          "english": "па́мятник",
+          "chinese": "纪念碑",
+          "soundmark": "PA-myat-neek"
+        },
+        {
+          "english": "галере́я",
+          "chinese": "画廊",
+          "soundmark": "ga-le-RE-ya"
+        }
+      ]
+    },
+    {
+      "id": "ruto-08",
+      "order": 8,
+      "title": "旅游应急",
+      "description": "旅行中紧急情况常用表达。",
+      "statements": [
+        {
+          "english": "помоги́те",
+          "chinese": "救命",
+          "soundmark": "pa-ma-GHEE-te"
+        },
+        {
+          "english": "я потеря́лся",
+          "chinese": "我迷路了",
+          "soundmark": "ya pa-te-RYAL-sya"
+        },
+        {
+          "english": "вы́звать по́лицию",
+          "chinese": "报警",
+          "soundmark": "VY-zvat PO-lee-tsee-yu"
+        },
+        {
+          "english": "больни́ца",
+          "chinese": "医院",
+          "soundmark": "bal-NEE-tsa"
+        },
+        {
+          "english": "апте́ка",
+          "chinese": "药店",
+          "soundmark": "ap-TYE-ka"
+        },
+        {
+          "english": "страхово́й по́лис",
+          "chinese": "保险单",
+          "soundmark": "stra-kho-VOY PO-lees"
+        }
+      ]
+    },
+    {
+      "id": "ruto-09",
+      "order": 9,
+      "title": "纪念品购物",
+      "description": "购买纪念品和购物相关词汇。",
+      "statements": [
+        {
+          "english": "сувени́р",
+          "chinese": "纪念品",
+          "soundmark": "su-ve-NEER"
+        },
+        {
+          "english": "магази́н",
+          "chinese": "商店",
+          "soundmark": "ma-ga-ZEEN"
+        },
+        {
+          "english": "ры́нок",
+          "chinese": "市场",
+          "soundmark": "RY-nak"
+        },
+        {
+          "english": "це́нный",
+          "chinese": "价格",
+          "soundmark": "TSE-na"
+        },
+        {
+          "english": "ски́дка",
+          "chinese": "折扣",
+          "soundmark": "SKEED-ka"
+        },
+        {
+          "english": "наря́д",
+          "chinese": "传统服装",
+          "soundmark": "na-RYAD"
+        }
+      ]
+    },
+    {
+      "id": "ruto-10",
+      "order": 10,
+      "title": "交通出行",
+      "description": "旅游交通方式相关词汇。",
+      "statements": [
+        {
+          "english": "метро́",
+          "chinese": "地铁",
+          "soundmark": "met-RO"
+        },
+        {
+          "english": "авто́бус",
+          "chinese": "公交车",
+          "soundmark": "av-TO-boos"
+        },
+        {
+          "english": "такси́",
+          "chinese": "出租车",
+          "soundmark": "tak-SEE"
+        },
+        {
+          "english": "пое́зд",
+          "chinese": "火车",
+          "soundmark": "po-YEZD"
+        },
+        {
+          "english": "велосипе́д",
+          "chinese": "自行车",
+          "soundmark": "ve-la-see-PED"
+        },
+        {
+          "english": "аренда",
+          "chinese": "租赁",
+          "soundmark": "a-REN-da"
+        }
+      ]
+    }
+  ]
+}

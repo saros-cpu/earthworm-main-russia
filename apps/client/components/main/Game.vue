@@ -34,17 +34,23 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref, watch } from "vue";
 
+import { fetchSaveExercise } from "~/api/learning";
+import comboMilestoneSound from "~/assets/sounds/right.mp3";
+import comboMaxSound from "~/assets/sounds/right.mp3";
 import GamePauseModal from "~/components/main/GamePauseModal.vue";
 import { courseTimer } from "~/composables/courses/courseTimer";
 import { useGamePlayMode } from "~/composables/user/gamePlayMode";
 import { isAuthenticated } from "~/services/auth";
 import { useCourseStore } from "~/store/course";
 import { useGameStore } from "~/store/game";
-import { fetchSaveExercise } from "~/api/learning";
-import comboMilestoneSound from "~/assets/sounds/right.mp3";
-import comboMaxSound from "~/assets/sounds/right.mp3";
 
-const { isChineseToEnglishMode, isDictationMode, isWordAssemblyMode } = useGamePlayMode();
+const {
+  isChineseToEnglishMode,
+  isDictationMode,
+  isWordAssemblyMode,
+  isSpeechAssessmentMode,
+  isAudioCourseMode,
+} = useGamePlayMode();
 const gameStore = useGameStore();
 const courseStore = useCourseStore();
 const lastScore = ref(0);
@@ -53,12 +59,27 @@ const showRating = ref(false);
 const comboAudio = new Audio(comboMilestoneSound);
 const maxComboAudio = new Audio(comboMaxSound);
 
-watch(() => gameStore.comboCount, (combo) => {
-  if (combo === 5) { comboAudio.currentTime = 0; comboAudio.play().catch(() => {}); }
-  else if (combo === 10) { comboAudio.currentTime = 0; comboAudio.playbackRate = 1.2; comboAudio.play().catch(() => {}); }
-  else if (combo === 15) { comboAudio.currentTime = 0; comboAudio.playbackRate = 1.5; comboAudio.play().catch(() => {}); }
-  else if (combo === 20) { maxComboAudio.currentTime = 0; maxComboAudio.playbackRate = 2; maxComboAudio.play().catch(() => {}); }
-});
+watch(
+  () => gameStore.comboCount,
+  (combo) => {
+    if (combo === 5) {
+      comboAudio.currentTime = 0;
+      comboAudio.play().catch(() => {});
+    } else if (combo === 10) {
+      comboAudio.currentTime = 0;
+      comboAudio.playbackRate = 1.2;
+      comboAudio.play().catch(() => {});
+    } else if (combo === 15) {
+      comboAudio.currentTime = 0;
+      comboAudio.playbackRate = 1.5;
+      comboAudio.play().catch(() => {});
+    } else if (combo === 20) {
+      maxComboAudio.currentTime = 0;
+      maxComboAudio.playbackRate = 2;
+      maxComboAudio.play().catch(() => {});
+    }
+  },
+);
 
 function handleAnswerResult(correct: boolean, timeSpentMs: number) {
   const { score, combo } = gameStore.recordAnswer(correct);

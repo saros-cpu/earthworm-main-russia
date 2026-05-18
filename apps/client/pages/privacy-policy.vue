@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>隐私政策</h1>
+  <div class="mx-auto max-w-3xl px-4 py-8">
+    <h1 class="mb-6 text-3xl font-bold">隐私政策</h1>
     <section>
       <h2>1. 个人信息的收集</h2>
       <p>用户注册时，我们将收集用户的个人信息，包括但不限于姓名、电子邮件地址、电话号码等。</p>

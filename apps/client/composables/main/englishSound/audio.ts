@@ -88,7 +88,47 @@ function canUseRussianSpeechSynthesis() {
 }
 
 export function speakRussian(text: string | undefined, playOptions?: PlayOptions) {
-  return false;
+  if (!text || typeof window === "undefined" || !("speechSynthesis" in window)) {
+    return false;
+  }
+  // 确保语音列表已加载
+  const voices = window.speechSynthesis.getVoices();
+  if (!voices.length) {
+    window.speechSynthesis.addEventListener("voiceschanged", () => {}, { once: true });
+  }
+  const voice = findRussianVoice();
+  if (!voice) return false;
+
+  const { times, rate, interval } = Object.assign({}, DefaultPlayOptions, playOptions);
+  let index = 0;
+  let stopped = false;
+
+  const speakOnce = () => {
+    if (stopped) return;
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.voice = voice;
+    utterance.lang = "ru-RU";
+    utterance.rate = Number(rate) || 1;
+    utterance.onend = () => {
+      index++;
+      if (!stopped && index < Number(times || 1)) {
+        currentTimeoutId = window.setTimeout(speakOnce, Number(interval || 500));
+      }
+    };
+    utterance.onerror = () => {
+      if (!stopped) stopped = true;
+    };
+    window.speechSynthesis.speak(utterance);
+  };
+
+  speakOnce();
+
+  return () => {
+    stopped = true;
+    window.speechSynthesis.cancel();
+    stopCurrentAudio();
+  };
 }
 
 export function playSource(src: string, playOptions?: PlayOptions) {
@@ -115,7 +155,7 @@ export function playSource(src: string, playOptions?: PlayOptions) {
       console.warn("俄语发音音频加载失败", src);
     };
     player.play().catch((error) => {
-      console.warn("俄语发音播放失败，请检查浏览器播放权限", error);
+      console.warn("俄语发音播放失败", error);
     });
   };
 

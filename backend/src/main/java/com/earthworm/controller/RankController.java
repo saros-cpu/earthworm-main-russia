@@ -45,13 +45,11 @@ public class RankController {
 
         Map<String, Object> self = Map.of("username", "dev-user", "count", 0, "rank", -1);
         if (!list.isEmpty()) {
-            int rank = 1;
             for (Map<String, Object> item : list) {
                 if (userId.equals(item.get("userId"))) {
                     self = item;
                     break;
                 }
-                rank++;
             }
         }
 
