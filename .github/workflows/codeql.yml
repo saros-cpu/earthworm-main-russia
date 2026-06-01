@@ -40,7 +40,7 @@ jobs:
 
       - name: Use Node.js 22
         if: matrix.language == 'javascript-typescript'
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "22"
 
