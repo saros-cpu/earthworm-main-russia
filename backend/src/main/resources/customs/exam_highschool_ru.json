@@ -1,0 +1,374 @@
+{
+  "id": "exam-highschool-ru",
+  "title": "俄语高考 · 词汇与语法",
+  "description": "普通高等学校招生全国统一考试俄语科目备考。",
+  "cover": "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "exhi-01",
+      "order": 1,
+      "title": "高考必背词汇",
+      "description": "高考俄语高频词汇。",
+      "statements": [
+        {
+          "english": "шко́ла",
+          "chinese": "学校",
+          "soundmark": "SHKO-la"
+        },
+        {
+          "english": "учи́тель",
+          "chinese": "教师",
+          "soundmark": "oo-CHEE-tel"
+        },
+        {
+          "english": "экза́мен",
+          "chinese": "考试",
+          "soundmark": "ek-ZA-men"
+        },
+        {
+          "english": "зада́ние",
+          "chinese": "任务题目",
+          "soundmark": "za-DA-nee-ye"
+        },
+        {
+          "english": "оце́нка",
+          "chinese": "分数评价",
+          "soundmark": "a-TSEN-ka"
+        },
+        {
+          "english": "кани́кулы",
+          "chinese": "假期",
+          "soundmark": "ka-NEE-koo-ly"
+        }
+      ]
+    },
+    {
+      "id": "exhi-02",
+      "order": 2,
+      "title": "高频语法考点",
+      "description": "高考俄语语法考查重点。",
+      "statements": [
+        {
+          "english": "Я бу́ду учи́ться в университе́те.",
+          "chinese": "我将在大学学习。",
+          "soundmark": "ya BOO-doo oo-CHEET-sya v oo-nee-ver-see-TYE-tye"
+        },
+        {
+          "english": "Мы до́лжны́ помо́чь друг дру́гу.",
+          "chinese": "应该互相帮助。",
+          "soundmark": "my dalzh-NY pa-MOCH droog DROO-goo"
+        },
+        {
+          "english": "Чем бо́льше, тем лу́чше.",
+          "chinese": "越多越好。",
+          "soundmark": "chem BOL-she tem LOOCH-she"
+        }
+      ]
+    },
+    {
+      "id": "exhi-03",
+      "order": 3,
+      "title": "日常交际用语",
+      "description": "高考常考日常交际用语。",
+      "statements": [
+        {
+          "english": "Здра́вствуйте!",
+          "chinese": "您好！",
+          "soundmark": "ZDRAV-stvooy-tye"
+        },
+        {
+          "english": "До свида́ния!",
+          "chinese": "再见！",
+          "soundmark": "da svee-DA-nee-ya"
+        },
+        {
+          "english": "Спаси́бо!",
+          "chinese": "谢谢！",
+          "soundmark": "spa-SEE-ba"
+        },
+        {
+          "english": "Пожа́луйста!",
+          "chinese": "请不客气！",
+          "soundmark": "pa-ZHA-loy-sta"
+        },
+        {
+          "english": "Извини́те!",
+          "chinese": "对不起！",
+          "soundmark": "ee-zvee-NEE-tye"
+        },
+        {
+          "english": "Как дела́?",
+          "chinese": "你好吗？",
+          "soundmark": "kak de-LA"
+        }
+      ]
+    },
+    {
+      "id": "exhi-04",
+      "order": 4,
+      "title": "阅读理解高频词",
+      "description": "高考阅读理解常考词汇。",
+      "statements": [
+        {
+          "english": "понима́ть",
+          "chinese": "理解",
+          "soundmark": "pa-nee-MAT"
+        },
+        {
+          "english": "объясня́ть",
+          "chinese": "解释",
+          "soundmark": "ab-yas-NYAT"
+        },
+        {
+          "english": "сообща́ть",
+          "chinese": "通知报告",
+          "soundmark": "sa-ap-SHCHAT"
+        },
+        {
+          "english": "упомина́ть",
+          "chinese": "提到",
+          "soundmark": "oo-pa-mee-NAT"
+        },
+        {
+          "english": "сравни́ть",
+          "chinese": "比较",
+          "soundmark": "srav-NEET"
+        },
+        {
+          "english": "замеча́ть",
+          "chinese": "注意到",
+          "soundmark": "za-mee-CHAT"
+        }
+      ]
+    },
+    {
+      "id": "exhi-05",
+      "order": 5,
+      "title": "完形填空考点",
+      "description": "高考完形填空常考语法词汇。",
+      "statements": [
+        {
+          "english": "одна́ко",
+          "chinese": "然而",
+          "soundmark": "ad-NA-ka"
+        },
+        {
+          "english": "по́этому",
+          "chinese": "因此",
+          "soundmark": "PO-e-ta-moo"
+        },
+        {
+          "english": "потому́ что",
+          "chinese": "因为",
+          "soundmark": "pa-ta-MOO shto"
+        },
+        {
+          "english": "е́сли",
+          "chinese": "如果",
+          "soundmark": "YES-lee"
+        },
+        {
+          "english": "хотя́",
+          "chinese": "虽然",
+          "soundmark": "kha-TYA"
+        },
+        {
+          "english": "что́бы",
+          "chinese": "为了",
+          "soundmark": "SHTO-by"
+        }
+      ]
+    },
+    {
+      "id": "exhi-06",
+      "order": 6,
+      "title": "书面表达词汇",
+      "description": "高考俄语写作常用表达。",
+      "statements": [
+        {
+          "english": "писа́ть письмо́",
+          "chinese": "写信",
+          "soundmark": "pee-SAT pees-MO"
+        },
+        {
+          "english": "расска́зывать о",
+          "chinese": "讲述关于",
+          "soundmark": "ras-SKA-zy-vat a"
+        },
+        {
+          "english": "описывать",
+          "chinese": "描写",
+          "soundmark": "a-PEE-sy-vat"
+        },
+        {
+          "english": "поздравля́ть с",
+          "chinese": "祝贺",
+          "soundmark": "pa-zdrav-LYAT s"
+        },
+        {
+          "english": "приглаша́ть",
+          "chinese": "邀请",
+          "soundmark": "pree-gla-SHAT"
+        },
+        {
+          "english": "благодари́ть за",
+          "chinese": "感谢",
+          "soundmark": "bla-ga-da-REET za"
+        }
+      ]
+    },
+    {
+      "id": "exhi-07",
+      "order": 7,
+      "title": "听力理解词汇",
+      "description": "高考听力常考词汇与表达。",
+      "statements": [
+        {
+          "english": "вре́мя",
+          "chinese": "时间",
+          "soundmark": "VRE-mya"
+        },
+        {
+          "english": "ц́ена",
+          "chinese": "价格",
+          "soundmark": "TSE-na"
+        },
+        {
+          "english": "адре́с",
+          "chinese": "地址",
+          "soundmark": "a-DRES"
+        },
+        {
+          "english": "телефо́н",
+          "chinese": "电话",
+          "soundmark": "te-le-FON"
+        },
+        {
+          "english": "биле́т",
+          "chinese": "票",
+          "soundmark": "bee-LET"
+        },
+        {
+          "english": "расписа́ние",
+          "chinese": "时刻表",
+          "soundmark": "ra-spee-SA-nee-ye"
+        }
+      ]
+    },
+    {
+      "id": "exhi-08",
+      "order": 8,
+      "title": "介词与连接词",
+      "description": "高考常考前置词与连接词用法。",
+      "statements": [
+        {
+          "english": "в",
+          "chinese": "在……里（前置词）",
+          "soundmark": "v"
+        },
+        {
+          "english": "на",
+          "chinese": "在……上（前置词）",
+          "soundmark": "na"
+        },
+        {
+          "english": "с",
+          "chinese": "和……一起（前置词）",
+          "soundmark": "s"
+        },
+        {
+          "english": "без",
+          "chinese": "没有（前置词）",
+          "soundmark": "byez"
+        },
+        {
+          "english": "для",
+          "chinese": "为了（前置词）",
+          "soundmark": "dlya"
+        },
+        {
+          "english": "о",
+          "chinese": "关于（前置词）",
+          "soundmark": "a"
+        }
+      ]
+    },
+    {
+      "id": "exhi-09",
+      "order": 9,
+      "title": "动词变位与格",
+      "description": "高考常考动词变位与名词格的变化。",
+      "statements": [
+        {
+          "english": "Я чита́ю кни́гу.",
+          "chinese": "我在读书。（动词变位）",
+          "soundmark": "ya chee-TA-yu KNEE-goo"
+        },
+        {
+          "english": "Он говори́т по-ру́сски.",
+          "chinese": "他讲俄语。（动词变位）",
+          "soundmark": "on ga-va-REET pa-ROO-skee"
+        },
+        {
+          "english": "У меня́ есть кни́га.",
+          "chinese": "我有一本书。（所有格）",
+          "soundmark": "oo me-NYA yest KNEE-ga"
+        },
+        {
+          "english": "Я иду́ в шко́лу.",
+          "chinese": "我去学校。（方向格）",
+          "soundmark": "ya ee-DOO v SHKO-loo"
+        },
+        {
+          "english": "Он интересу́ется му́зыкой.",
+          "chinese": "他对音乐感兴趣。（工具格）",
+          "soundmark": "on een-te-re-SOO-ye-tsa MOO-zy-kay"
+        },
+        {
+          "english": "Мы говори́м об экза́мене.",
+          "chinese": "我们在谈论考试。（前置格）",
+          "soundmark": "my ga-vo-REEM ab ek-ZA-me-ne"
+        }
+      ]
+    },
+    {
+      "id": "exhi-10",
+      "order": 10,
+      "title": "模拟考试词汇",
+      "description": "高考模拟试题常见词汇。",
+      "statements": [
+        {
+          "english": "отве́т",
+          "chinese": "答案",
+          "soundmark": "at-VYET"
+        },
+        {
+          "english": "вопро́с",
+          "chinese": "问题",
+          "soundmark": "va-PROS"
+        },
+        {
+          "english": "текст",
+          "chinese": "课文文本",
+          "soundmark": "tekst"
+        },
+        {
+          "english": "упражне́ние",
+          "chinese": "练习",
+          "soundmark": "oo-prazh-NE-nee-ye"
+        },
+        {
+          "english": "оши́бка",
+          "chinese": "错误",
+          "soundmark": "a-SHEEP-ka"
+        },
+        {
+          "english": "исправля́ть",
+          "chinese": "改正",
+          "soundmark": "ees-prav-LYAT"
+        }
+      ]
+    }
+  ]
+}

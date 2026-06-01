@@ -1,0 +1,389 @@
+{
+  "id": "exam-college-ru",
+  "title": "大学俄语四六级 · 备考",
+  "description": "全国大学俄语四六级考试CRT-4/6备考词汇与语法练习。",
+  "cover": "https://images.unsplash.com/photo-1523050854058-8df90110c7f1?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "exco-01",
+      "order": 1,
+      "title": "四级高频词汇",
+      "description": "俄语四级考试常见词汇。",
+      "statements": [
+        {
+          "english": "сообще́ние",
+          "chinese": "通知消息",
+          "soundmark": "sa-ap-SHCHA-nee-ye"
+        },
+        {
+          "english": "объявле́ние",
+          "chinese": "公告",
+          "soundmark": "ab-yav-LE-nee-ye"
+        },
+        {
+          "english": "предприя́тие",
+          "chinese": "企业",
+          "soundmark": "pred-pree-YA-tee-ye"
+        },
+        {
+          "english": "специали́ст",
+          "chinese": "专家",
+          "soundmark": "spe-tsia-LEEST"
+        },
+        {
+          "english": "должность",
+          "chinese": "职位",
+          "soundmark": "DOLZH-nost"
+        },
+        {
+          "english": "командиро́вка",
+          "chinese": "出差",
+          "soundmark": "ka-man-dee-ROV-ka"
+        }
+      ]
+    },
+    {
+      "id": "exco-02",
+      "order": 2,
+      "title": "六级高频词汇",
+      "description": "俄语六级考试常见词汇。",
+      "statements": [
+        {
+          "english": "законода́тельство",
+          "chinese": "立法",
+          "soundmark": "za-ka-na-DA-tel-stva"
+        },
+        {
+          "english": "междунаро́дный",
+          "chinese": "国际的",
+          "soundmark": "mezh-doo-na-ROD-ny"
+        },
+        {
+          "english": "сотру́дничество",
+          "chinese": "合作",
+          "soundmark": "sa-TROOD-nee-che-stva"
+        },
+        {
+          "english": "конкуренция",
+          "chinese": "竞争",
+          "soundmark": "kan-koo-REN-tsee-ya"
+        },
+        {
+          "english": "инвести́ция",
+          "chinese": "投资",
+          "soundmark": "in-ves-TEE-tsee-ya"
+        },
+        {
+          "english": "технология",
+          "chinese": "技术",
+          "soundmark": "tekh-na-LO-gee-ya"
+        }
+      ]
+    },
+    {
+      "id": "exco-03",
+      "order": 3,
+      "title": "四级语法词汇",
+      "description": "四级考试常见语法术语与虚词。",
+      "statements": [
+        {
+          "english": "существи́тельное",
+          "chinese": "名词",
+          "soundmark": "soo-shest-VEE-tel-na-ye"
+        },
+        {
+          "english": "прилага́тельное",
+          "chinese": "形容词",
+          "soundmark": "pree-la-GA-tel-na-ye"
+        },
+        {
+          "english": "глаго́л",
+          "chinese": "动词",
+          "soundmark": "gla-GOL"
+        },
+        {
+          "english": "наре́чие",
+          "chinese": "副词",
+          "soundmark": "na-RE-chee-ye"
+        },
+        {
+          "english": "предло́г",
+          "chinese": "前置词",
+          "soundmark": "pred-LOG"
+        },
+        {
+          "english": "сою́з",
+          "chinese": "连接词",
+          "soundmark": "sa-YUS"
+        }
+      ]
+    },
+    {
+      "id": "exco-04",
+      "order": 4,
+      "title": "阅读理解高频词",
+      "description": "四级阅读常见学术词汇。",
+      "statements": [
+        {
+          "english": "заключа́ться",
+          "chinese": "在于",
+          "soundmark": "za-klyu-CHA-tsa"
+        },
+        {
+          "english": "содержа́ть",
+          "chinese": "包含",
+          "soundmark": "sa-der-ZHAT"
+        },
+        {
+          "english": "приводи́ть",
+          "chinese": "导致",
+          "soundmark": "pree-va-DEET"
+        },
+        {
+          "english": "подтвержда́ть",
+          "chinese": "证实",
+          "soundmark": "pad-tver-ZHDAT"
+        },
+        {
+          "english": "опроверга́ть",
+          "chinese": "驳斥",
+          "soundmark": "a-pra-ver-GAT"
+        },
+        {
+          "english": "анали́з",
+          "chinese": "分析",
+          "soundmark": "a-na-LEES"
+        }
+      ]
+    },
+    {
+      "id": "exco-05",
+      "order": 5,
+      "title": "翻译常考词汇",
+      "description": "俄汉翻译中常用的对应词汇。",
+      "statements": [
+        {
+          "english": "перево́д",
+          "chinese": "翻译",
+          "soundmark": "pe-re-VOT"
+        },
+        {
+          "english": "значе́ние",
+          "chinese": "意义",
+          "soundmark": "zna-CHE-nee-ye"
+        },
+        {
+          "english": "эквивале́нт",
+          "chinese": "对应词",
+          "soundmark": "e-kvee-va-LENT"
+        },
+        {
+          "english": "выража́ть",
+          "chinese": "表达",
+          "soundmark": "vy-ra-ZHAT"
+        },
+        {
+          "english": "передава́ть",
+          "chinese": "传达",
+          "soundmark": "pe-re-da-VAT"
+        },
+        {
+          "english": "соотве́тствие",
+          "chinese": "对应",
+          "soundmark": "sa-at-VET-stvee-ye"
+        }
+      ]
+    },
+    {
+      "id": "exco-06",
+      "order": 6,
+      "title": "写作常用词汇",
+      "description": "俄语写作中常用的表达词汇。",
+      "statements": [
+        {
+          "english": "сочине́ние",
+          "chinese": "作文",
+          "soundmark": "sa-chee-NE-nee-ye"
+        },
+        {
+          "english": "вы́вод",
+          "chinese": "结论",
+          "soundmark": "VY-vad"
+        },
+        {
+          "english": "аргуме́нт",
+          "chinese": "论据",
+          "soundmark": "ar-goo-MENT"
+        },
+        {
+          "english": "приме́р",
+          "chinese": "例子",
+          "soundmark": "pree-MER"
+        },
+        {
+          "english": "заключе́ние",
+          "chinese": "总结",
+          "soundmark": "za-klyu-CHE-nee-ye"
+        },
+        {
+          "english": "мне́ние",
+          "chinese": "意见",
+          "soundmark": "MNE-nee-ye"
+        }
+      ]
+    },
+    {
+      "id": "exco-07",
+      "order": 7,
+      "title": "听力高频词汇",
+      "description": "四级听力考试常见词汇。",
+      "statements": [
+        {
+          "english": "ауди́рование",
+          "chinese": "听力理解",
+          "soundmark": "a-oo-DEE-ra-va-nee-ye"
+        },
+        {
+          "english": "ди́ктор",
+          "chinese": "播音员",
+          "soundmark": "DEEK-tar"
+        },
+        {
+          "english": "бесе́да",
+          "chinese": "交谈",
+          "soundmark": "be-SYED-a"
+        },
+        {
+          "english": "интервью́",
+          "chinese": "采访",
+          "soundmark": "in-ter-VYU"
+        },
+        {
+          "english": "объявле́ние",
+          "chinese": "通知",
+          "soundmark": "ab-yav-LE-nee-ye"
+        },
+        {
+          "english": "прогно́з",
+          "chinese": "预报",
+          "soundmark": "prag-NOZ"
+        }
+      ]
+    },
+    {
+      "id": "exco-08",
+      "order": 8,
+      "title": "词汇辨析与搭配",
+      "description": "易混词汇辨析与常用搭配。",
+      "statements": [
+        {
+          "english": "сино́ним",
+          "chinese": "同义词",
+          "soundmark": "see-NO-neem"
+        },
+        {
+          "english": "анто́ним",
+          "chinese": "反义词",
+          "soundmark": "an-TO-neem"
+        },
+        {
+          "english": "сочета́ние",
+          "chinese": "搭配",
+          "soundmark": "sa-che-TA-nee-ye"
+        },
+        {
+          "english": "управле́ние",
+          "chinese": "支配关系",
+          "soundmark": "oo-prav-LE-nee-ye"
+        },
+        {
+          "english": "согласова́ние",
+          "chinese": "一致关系",
+          "soundmark": "sa-gla-sa-VA-nee-ye"
+        },
+        {
+          "english": "словообразова́ние",
+          "chinese": "构词",
+          "soundmark": "slo-va-ab-ra-za-VA-nee-ye"
+        }
+      ]
+    },
+    {
+      "id": "exco-09",
+      "order": 9,
+      "title": "模拟真题词汇",
+      "description": "四六级模拟试题常见词汇。",
+      "statements": [
+        {
+          "english": "те́ст",
+          "chinese": "测试",
+          "soundmark": "TEST"
+        },
+        {
+          "english": "зада́ние",
+          "chinese": "题目",
+          "soundmark": "za-DA-nee-ye"
+        },
+        {
+          "english": "вариа́нт",
+          "chinese": "选项",
+          "soundmark": "va-ree-ANT"
+        },
+        {
+          "english": "отве́т",
+          "chinese": "答案",
+          "soundmark": "at-VYET"
+        },
+        {
+          "english": "ре́зультат",
+          "chinese": "结果",
+          "soundmark": "re-zool-TAT"
+        },
+        {
+          "english": "оце́нка",
+          "chinese": "评分",
+          "soundmark": "a-TSEN-ka"
+        }
+      ]
+    },
+    {
+      "id": "exco-10",
+      "order": 10,
+      "title": "应试策略词汇",
+      "description": "备考策略与技巧相关词汇。",
+      "statements": [
+        {
+          "english": "подгото́вка",
+          "chinese": "准备",
+          "soundmark": "pad-ga-TOV-ka"
+        },
+        {
+          "english": "повторе́ние",
+          "chinese": "复习",
+          "soundmark": "paf-ta-RE-nee-ye"
+        },
+        {
+          "english": "плани́рование",
+          "chinese": "计划",
+          "soundmark": "pla-NEE-ra-va-nee-ye"
+        },
+        {
+          "english": "самооце́нка",
+          "chinese": "自我评估",
+          "soundmark": "sa-ma-a-TSEN-ka"
+        },
+        {
+          "english": "концентра́ция",
+          "chinese": "集中",
+          "soundmark": "kan-tsen-TRA-tsee-ya"
+        },
+        {
+          "english": "мотива́ция",
+          "chinese": "动力",
+          "soundmark": "ma-tee-VA-tsee-ya"
+        }
+      ]
+    }
+  ]
+}

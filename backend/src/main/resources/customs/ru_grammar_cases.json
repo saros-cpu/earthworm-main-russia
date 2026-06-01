@@ -1,0 +1,299 @@
+{
+  "id": "ru-grammar-cases",
+  "title": "名词六格入门",
+  "description": "从零掌握俄语名词六个格的核心用法。",
+  "cover": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rugc-01",
+      "order": 1,
+      "title": "第一格：主语",
+      "description": "第一格是名词的词典形式。",
+      "statements": [
+        {
+          "english": "Шко́ла больша́я.",
+          "chinese": "学校很大。",
+          "soundmark": "SHKO-la bal'-SHA-ya"
+        },
+        {
+          "english": "Учи́тель пришёл.",
+          "chinese": "老师来了。",
+          "soundmark": "oo-CHEE-tel' pree-SHYOL"
+        },
+        {
+          "english": "Э́то кни́га.",
+          "chinese": "这是一本书。",
+          "soundmark": "EH-ta KNEE-ga"
+        },
+        {
+          "english": "Здесь музе́й.",
+          "chinese": "这里是博物馆。",
+          "soundmark": "zd'es' moo-ZYEY"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/23-Урок 4-2.avi"
+    },
+    {
+      "id": "rugc-02",
+      "order": 2,
+      "title": "第二格：所属与否定",
+      "description": "第二格表所属、否定、数量。",
+      "statements": [
+        {
+          "english": "Дом бра́та.",
+          "chinese": "哥哥的房子。",
+          "soundmark": "dom BRA-ta"
+        },
+        {
+          "english": "У меня́ нет вре́мени.",
+          "chinese": "我没有时间。",
+          "soundmark": "oo me-NYA nyet VRE-me-nee"
+        },
+        {
+          "english": "Ча́шка ча́я.",
+          "chinese": "一杯茶。",
+          "soundmark": "CHASH-ka CHA-ya"
+        },
+        {
+          "english": "Цена́ биле́та.",
+          "chinese": "票价。",
+          "soundmark": "tse-NA bee-LYE-ta"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/24-Урок 4-3.avi"
+    },
+    {
+      "id": "rugc-03",
+      "order": 3,
+      "title": "第三格：间接宾语",
+      "description": "第三格表动作的接受者。",
+      "statements": [
+        {
+          "english": "Я написа́л письмо́ дру́гу.",
+          "chinese": "我給朋友写了信。",
+          "soundmark": "ya na-pee-SAL pees'-MO DROO-goo"
+        },
+        {
+          "english": "Помоги́ сестре́.",
+          "chinese": "帮帮妹妹。",
+          "soundmark": "pa-ma-GEE ses-TRE"
+        },
+        {
+          "english": "Детям ну́жен сон.",
+          "chinese": "孩子需要睡觉。",
+          "soundmark": "DE-tyam NOO-zhen son"
+        },
+        {
+          "english": "Преподава́телю понра́вился отве́т.",
+          "chinese": "老师喜欢这个回答。",
+          "soundmark": "pre-pa-da-VA-te-lyu pan-RA-veel-sya at-VYET"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/25-Урок 4-4.avi"
+    },
+    {
+      "id": "rugc-04",
+      "order": 4,
+      "title": "第四格：直接宾语",
+      "description": "第四格表动作直接对象。",
+      "statements": [
+        {
+          "english": "Я ви́жу шко́лу.",
+          "chinese": "我看见学校。",
+          "soundmark": "ya VEE-zhoo SHKO-loo"
+        },
+        {
+          "english": "Он лю́бит ма́му.",
+          "chinese": "他爱妈妈。",
+          "soundmark": "on LYOO-beet MA-moo"
+        },
+        {
+          "english": "Мы слу́шаем му́зыку.",
+          "chinese": "我们在听音乐。",
+          "soundmark": "my SLOO-sha-yem MOO-zy-koo"
+        },
+        {
+          "english": "Купи́ хлеб.",
+          "chinese": "买面包。",
+          "soundmark": "koo-PEE khlyep"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/26-Урок 4-5.avi"
+    },
+    {
+      "id": "rugc-05",
+      "order": 5,
+      "title": "第五格：工具与方式",
+      "description": "第五格表使用的工具或方式。",
+      "statements": [
+        {
+          "english": "Я ре́жу но́жом.",
+          "chinese": "我用刀切。",
+          "soundmark": "ya RYE-zhoo NO-zhom"
+        },
+        {
+          "english": "Он е́здит авто́бусом.",
+          "chinese": "他乘公交车。",
+          "soundmark": "on YEZ-deet af-TO-boo-som"
+        },
+        {
+          "english": "Мы говори́м по-ру́сски.",
+          "chinese": "我们说俄语。",
+          "soundmark": "my ga-va-REEM pa-ROOS-kee"
+        },
+        {
+          "english": "Пиши́ карандашо́м.",
+          "chinese": "用铅笔写。",
+          "soundmark": "pee-SHEE ka-ran-da-SHOM"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/27-Урок 5-1.avi"
+    },
+    {
+      "id": "rugc-06",
+      "order": 6,
+      "title": "第六格：地点与思愢",
+      "description": "第六格与前置词连用。",
+      "statements": [
+        {
+          "english": "Мы живём в дере́вне.",
+          "chinese": "我们住在农村。",
+          "soundmark": "my zhee-VYOM v de-REV-ne"
+        },
+        {
+          "english": "Он ду́мает о рабо́те.",
+          "chinese": "他在想工作。",
+          "soundmark": "on DOO-ma-yet o ra-BO-te"
+        },
+        {
+          "english": "Кни́га лежи́т в портфе́ле.",
+          "chinese": "书在包里。",
+          "soundmark": "KNEE-ga le-ZHEET v part-FYE-le"
+        },
+        {
+          "english": "Мы говори́ли об уро́ке.",
+          "chinese": "我们谈论了课。",
+          "soundmark": "my ga-va-REE-lee ob oo-RO-ke"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/28-Урок 5-2.avi"
+    },
+    {
+      "id": "rugc-07",
+      "order": 7,
+      "title": "前置词加第二格",
+      "description": "常见要求第二格的前置词。",
+      "statements": [
+        {
+          "english": "Я из Москвы́.",
+          "chinese": "我来自莫斯科。",
+          "soundmark": "ya iz mask-VY"
+        },
+        {
+          "english": "Он ушёл без книги.",
+          "chinese": "他没带书就走了。",
+          "soundmark": "on oo-SHYOL byez KNEE-gee"
+        },
+        {
+          "english": "Мы ждём до ве́чера.",
+          "chinese": "我们等到晚上。",
+          "soundmark": "my zhdyom do VYE-che-ra"
+        },
+        {
+          "english": "Для тебя́ есть письмо́.",
+          "chinese": "有你的一封信。",
+          "soundmark": "dlya te-BYA yest' pees-MO"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/29-Урок 5-3.avi"
+    },
+    {
+      "id": "rugc-08",
+      "order": 8,
+      "title": "方位表达：в与на",
+      "description": "в和на加第六格表方位。",
+      "statements": [
+        {
+          "english": "Де́ти в кла́ссе.",
+          "chinese": "孩子们在教室里。",
+          "soundmark": "DYE-tee v KLAS-se"
+        },
+        {
+          "english": "Кни́га на столе́.",
+          "chinese": "书在桌子上。",
+          "soundmark": "KNEE-ga na sta-LE"
+        },
+        {
+          "english": "Мы на уро́ке.",
+          "chinese": "我们在上课。",
+          "soundmark": "my na oo-RO-ke"
+        },
+        {
+          "english": "Он в шко́ле.",
+          "chinese": "他在学校。",
+          "soundmark": "on v SHKO-le"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/30-Урок 5-4.avi"
+    },
+    {
+      "id": "rugc-09",
+      "order": 9,
+      "title": "方向与目的地",
+      "description": "第四格表运动方向。",
+      "statements": [
+        {
+          "english": "Я иду́ в шко́лу.",
+          "chinese": "我去学校。",
+          "soundmark": "ya ee-DOO v SHKO-loo"
+        },
+        {
+          "english": "Он едет в Москву́.",
+          "chinese": "他去莫斯科。",
+          "soundmark": "on YE-dyet v mask-VOO"
+        },
+        {
+          "english": "Мы идём на у́лицу.",
+          "chinese": "我们去街上。",
+          "soundmark": "my ee-DYOM na OO-lee-tsoo"
+        },
+        {
+          "english": "Дети бегу́т в парк.",
+          "chinese": "孩子们跑进公园。",
+          "soundmark": "DYE-tee be-GOOT v park"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/31-Урок 5-5.avi"
+    },
+    {
+      "id": "rugc-10",
+      "order": 10,
+      "title": "综合运用",
+      "description": "六格综合实践。",
+      "statements": [
+        {
+          "english": "Студе́нт дал кни́гу дру́гу.",
+          "chinese": "大学生给了朋友一本书。",
+          "soundmark": "stoo-DYENT dal KNEE-goo DROO-goo"
+        },
+        {
+          "english": "Я рассказа́л роди́телям о пое́здке.",
+          "chinese": "我给父母讲了旅行的事。",
+          "soundmark": "ya ras-ska-ZAL ro-DEE-te-lyam o pa-YEZD-ke"
+        },
+        {
+          "english": "Она́ рабо́тает учи́тельницей в шко́ле.",
+          "chinese": "她在学校当老师。",
+          "soundmark": "a-NA ra-BO-ta-yet oo-CHEE-tel-nee-tsey v SHKO-le"
+        },
+        {
+          "english": "Мы пое́дем в Москву́ на по́езде.",
+          "chinese": "我们将乘火车去莫斯科。",
+          "soundmark": "my pa-YE-dem v mask-VOO na PO-yez-de"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/32-Урок 6-1.avi"
+    }
+  ]
+}

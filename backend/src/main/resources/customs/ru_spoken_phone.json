@@ -1,0 +1,329 @@
+{
+  "id": "ru-spoken-phone",
+  "title": "电话俄语",
+  "description": "接打电话预约和留言的俄语实用表达。",
+  "cover": "https://images.unsplash.com/photo-1534536281715-e28d76689b9e?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ruphone-01",
+      "order": 1,
+      "title": "接听电话",
+      "description": "接听电话时的基本用语。",
+      "statements": [
+        {
+          "english": "Алло́!",
+          "chinese": "喂！",
+          "soundmark": "a-LO"
+        },
+        {
+          "english": "Слу́шаю вас.",
+          "chinese": "请讲。",
+          "soundmark": "SLOO-sha-yoo vas"
+        },
+        {
+          "english": "Мину́точку, подожди́те.",
+          "chinese": "请稍等。",
+          "soundmark": "mee-NOO-tach-koo pa-da-ZHDEE-tye"
+        },
+        {
+          "english": "Кто звони́т?",
+          "chinese": "哪位打来的？",
+          "soundmark": "kto zva-NEET"
+        },
+        {
+          "english": "Пожа́луйста, говори́те гро́мче.",
+          "chinese": "请大声一点。",
+          "soundmark": "pa-ZHAL-sta ga-va-REE-tye GROM-che"
+        }
+      ]
+    },
+    {
+      "id": "ruphone-02",
+      "order": 2,
+      "title": "拨打电话",
+      "description": "主动打电话时的表达。",
+      "statements": [
+        {
+          "english": "Мо́жно Анну к телефо́ну?",
+          "chinese": "可以请安娜接电话吗？",
+          "soundmark": "MOZH-na AN-noo k te-le-FO-nu"
+        },
+        {
+          "english": "Э́то говори́т Ива́н.",
+          "chinese": "我是伊万。",
+          "soundmark": "E-ta ga-va-REET ee-VAN"
+        },
+        {
+          "english": "Я по вопро́су о ва́кансии.",
+          "chinese": "我打电话咨询职位。",
+          "soundmark": "ya pa vap-RO-soo a va-KAN-see-ee"
+        },
+        {
+          "english": "Соедини́те меня́ с дире́ктором.",
+          "chinese": "请帮我接通经理。",
+          "soundmark": "sa-ye-dee-NEE-tye me-NYA s dee-REK-ta-ram"
+        }
+      ]
+    },
+    {
+      "id": "ruphone-03",
+      "order": 3,
+      "title": "打错电话",
+      "description": "对方打错电话时的对话。",
+      "statements": [
+        {
+          "english": "Вы оши́блись номе́ром.",
+          "chinese": "您打错了。",
+          "soundmark": "vy a-SHEEB-lees no-ME-ram"
+        },
+        {
+          "english": "Какой́ но́мер вы набира́ете?",
+          "chinese": "您拨的是多少号？",
+          "soundmark": "ka-KOY NO-mer vy na-bee-RA-ye-tye"
+        },
+        {
+          "english": "Здесь таки́х нет.",
+          "chinese": "这里没有这个人。",
+          "soundmark": "ZDES ta-KEKH nyet"
+        },
+        {
+          "english": "Извини́те, беспоко́йство.",
+          "chinese": "抱歉打扰了。",
+          "soundmark": "eez-vee-NEE-tye bes-pa-KOYST-va"
+        },
+        {
+          "english": "Прове́рьте но́мер, пожа́луйста.",
+          "chinese": "请核对一下号码。",
+          "soundmark": "pra-VYER-tye NO-mer pa-ZHAL-sta"
+        }
+      ]
+    },
+    {
+      "id": "ruphone-04",
+      "order": 4,
+      "title": "留言转达",
+      "description": "电话留言和转达信息。",
+      "statements": [
+        {
+          "english": "Переда́йте ему́, что звони́л Ива́н.",
+          "chinese": "请转告他伊万来过电话。",
+          "soundmark": "pe-re-DAY-tye ye-MOO shto zva-NEEL ee-VAN"
+        },
+        {
+          "english": "Мо́жно оста́вить сообще́ние?",
+          "chinese": "可以留言吗？",
+          "soundmark": "MOZH-na as-TA-veet sa-ab-SHCHYE-nee-ye"
+        },
+        {
+          "english": "Попроси́те его́ перезвони́ть.",
+          "chinese": "请他回电话。",
+          "soundmark": "pa-pra-SEE-tye ye-VO pe-re-zva-NEET"
+        },
+        {
+          "english": "Мой но́мер телефо́на — 89123456789.",
+          "chinese": "我的电话是89123456789。",
+          "soundmark": "moy NO-mer te-le-FO-na vo-sem a-DEEN dva tri che-ty-re pyat shest sem vosem de-vyat"
+        },
+        {
+          "english": "Запиши́те, пожа́луйста, мою́ фами́лию.",
+          "chinese": "请记下我的姓。",
+          "soundmark": "za-pee-SHEE-tye pa-ZHAL-sta ma-YOO fa-MEE-lee-yoo"
+        }
+      ]
+    },
+    {
+      "id": "ruphone-05",
+      "order": 5,
+      "title": "商务通话",
+      "description": "工作相关的电话沟通。",
+      "statements": [
+        {
+          "english": "Звони́т компа́ния «ТехноМир».",
+          "chinese": "我是TechnoMir公司打来的。",
+          "soundmark": "zva-NEET kam-PA-nee-ya tekh-no-MEER"
+        },
+        {
+          "english": "Я звоню́ по контра́кту.",
+          "chinese": "我打电话谈合同的事。",
+          "soundmark": "ya zva-NYOO pa kan-TRAK-too"
+        },
+        {
+          "english": "Подгото́вьте докуме́нты к пя́тнице.",
+          "chinese": "请在周五前准备好文件。",
+          "soundmark": "pad-ga-TOV-tye da-koo-MEN-ty k PYAT-nee-tse"
+        },
+        {
+          "english": "Пришли́те счёт на эле́ктронную по́чту.",
+          "chinese": "请把账单发到邮箱。",
+          "soundmark": "pri-SHLEE-tye shyot na e-LEK-tron-noo-yu POCH-too"
+        },
+        {
+          "english": "Обсу́дим де́тали за́втра по телефо́ну.",
+          "chinese": "明天电话讨论细节。",
+          "soundmark": "ab-SOO-deem DE-ta-lee ZAV-tra pa te-le-FO-nu"
+        }
+      ]
+    },
+    {
+      "id": "ruphone-06",
+      "order": 6,
+      "title": "电话预约",
+      "description": "通过电话进行预约。",
+      "statements": [
+        {
+          "english": "Мо́жно записа́ться на приём по телефо́ну?",
+          "chinese": "可以电话预约吗？",
+          "soundmark": "MOZH-na za-pee-SAT-sya na pree-YOM pa te-le-FO-nu"
+        },
+        {
+          "english": "Я хочу́ заброни́ровать столи́к.",
+          "chinese": "我想订桌。",
+          "soundmark": "ya kha-CHOO za-bra-NEE-ra-vat sta-LEEK"
+        },
+        {
+          "english": "На како́е число́ и вре́мя?",
+          "chinese": "什么日期和时间？",
+          "soundmark": "na ka-KO-ye chee-SLO i VRE-mya"
+        },
+        {
+          "english": "Нас бу́дет че́тверо.",
+          "chinese": "我们一共四个人。",
+          "soundmark": "nas BOO-det CHE-tve-ra"
+        },
+        {
+          "english": "Подтверди́те, пожа́луйста, бро́нь.",
+          "chinese": "请确认预约。",
+          "soundmark": "pad-tver-DEE-tye pa-ZHAL-sta bron"
+        }
+      ]
+    },
+    {
+      "id": "ruphone-07",
+      "order": 7,
+      "title": "电话故障",
+      "description": "通话质量不好或电话故障时的表达。",
+      "statements": [
+        {
+          "english": "Пло́хо слы́шно.",
+          "chinese": "听不清楚。",
+          "soundmark": "PLO-ha SLYSH-na"
+        },
+        {
+          "english": "Связь прервала́сь.",
+          "chinese": "断线了。",
+          "soundmark": "svyas pre-rva-LAS"
+        },
+        {
+          "english": "Перезвони́те, пожа́луйста.",
+          "chinese": "请重拨。",
+          "soundmark": "pe-re-zva-NEE-tye pa-ZHAL-sta"
+        },
+        {
+          "english": "Закончились де́ньги на телефо́не.",
+          "chinese": "手机欠费了。",
+          "soundmark": "za-KON-chee-lees DEN-gee na te-le-FO-ne"
+        },
+        {
+          "english": "Я вас не слы́шу.",
+          "chinese": "我听不到您说话。",
+          "soundmark": "ya vas ne SLY-shoo"
+        }
+      ]
+    },
+    {
+      "id": "ruphone-08",
+      "order": 8,
+      "title": "结束通话",
+      "description": "结束电话时的礼貌用语。",
+      "statements": [
+        {
+          "english": "Спаси́бо за звоню́.",
+          "chinese": "感谢来电。",
+          "soundmark": "spa-SEE-ba za zva-NOK"
+        },
+        {
+          "english": "Всего́ до́брого!",
+          "chinese": "祝一切顺利！",
+          "soundmark": "vse-VO DO-bra-va"
+        },
+        {
+          "english": "До свида́ния!",
+          "chinese": "再见！",
+          "soundmark": "da svee-DA-nee-ya"
+        },
+        {
+          "english": "Бу́ду ждать ва́шего звонка́.",
+          "chinese": "我等您的电话。",
+          "soundmark": "BOO-doo zhdat VA-she-va zvan-KA"
+        },
+        {
+          "english": "Свя́жемся по́зже.",
+          "chinese": "晚点联系。",
+          "soundmark": "SVYA-zhem-sya POZ-zhe"
+        }
+      ]
+    },
+    {
+      "id": "ruphone-09",
+      "order": 9,
+      "title": "求助电话",
+      "description": "打电话求助时的常用表达。",
+      "statements": [
+        {
+          "english": "Мне ну́жна по́мощь, сро́чно!",
+          "chinese": "我需要帮助，紧急！",
+          "soundmark": "mne NOOZH-na PO-mashch SROCH-na"
+        },
+        {
+          "english": "Я потеря́лся(ась), не могу́ найти́ доро́гу.",
+          "chinese": "我迷路了，找不到路。",
+          "soundmark": "ya pa-te-RYAL-sya(s) ne ma-GOO nai-TEE da-RO-goo"
+        },
+        {
+          "english": "Приезжа́йте скоре́е, пожа́луйста!",
+          "chinese": "请快点来！",
+          "soundmark": "pree-ez-ZHAY-tye ska-RE-ye pa-ZHAL-sta"
+        },
+        {
+          "english": "Я жду вас на у́лице Ле́нина, дом 10.",
+          "chinese": "我在列宁街10号等您。",
+          "soundmark": "ya zhdoo vas na OO-lee-tse LE-nee-na dom dye-syat"
+        }
+      ]
+    },
+    {
+      "id": "ruphone-10",
+      "order": 10,
+      "title": "短信联系",
+      "description": "关于短信和即时通讯的表达。",
+      "statements": [
+        {
+          "english": "Напиши́те мне смс.",
+          "chinese": "给我发短信。",
+          "soundmark": "na-pee-SHEE-tye mne es-em-es"
+        },
+        {
+          "english": "Я вам написа́л(а) в Ватса́пе.",
+          "chinese": "我在WhatsApp上给您发了消息。",
+          "soundmark": "ya vam na-pee-SAL(a) v vat-SA-pe"
+        },
+        {
+          "english": "Пришли́те мне адре́с по смс.",
+          "chinese": "请把地址短信发给我。",
+          "soundmark": "pri-SHLEE-tye mne a-DRES pa es-em-es"
+        },
+        {
+          "english": "Я не получи́л(а) ва́ше сообще́ние.",
+          "chinese": "我没收到您的消息。",
+          "soundmark": "ya ne pa-loo-CHEEL(a) VA-she sa-ab-SHCHYE-nee-ye"
+        },
+        {
+          "english": "Ски́ньте фотогра́фию в ме́ссенджер.",
+          "chinese": "把照片发到聊天软件上。",
+          "soundmark": "SKEEN-tye fo-ta-GRA-fee-yoo v ME-sen-dzher"
+        }
+      ]
+    }
+  ]
+}

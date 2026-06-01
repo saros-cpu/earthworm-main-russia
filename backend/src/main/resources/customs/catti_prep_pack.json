@@ -1,0 +1,237 @@
+{
+  "id": "catti-prep-pack",
+  "title": "CATTI 俄语翻译资格证 · 备考练习",
+  "description": "全国翻译专业资格水平考试（CATTI）俄语备考练习。涵盖政治外交、经济贸易、科学技术、文化教育、社会热点等高频话题词汇与翻译练习。",
+  "cover": "https://images.unsplash.com/photo-1456324463128-7ff69039886b?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "catti-01",
+      "order": 1,
+      "title": "政治外交高频词（Политика и дипломатия）",
+      "description": "CATTI 考试最常出现的政治外交类词汇练习。",
+      "statements": [
+        { "english": "международные отношения", "chinese": "国际关系", "soundmark": "mezh-doo-na-rod-ny-ye at-no-she-nee-ya" },
+        { "english": "сотрудничество", "chinese": "合作", "soundmark": "sa-trud-nee-chest-va" },
+        { "english": "внешняя политика", "chinese": "对外政策", "soundmark": "vnyesh-nya-ya pa-lee-tee-ka" },
+        { "english": "дипломатические отношения", "chinese": "外交关系", "soundmark": "deep-la-ma-tee-che-skee-ye at-no-she-nee-ya" },
+        { "english": "стратегическое партнёрство", "chinese": "战略协作伙伴关系", "soundmark": "stra-tee-gee-che-ska-ye part-nyor-stva" },
+        { "english": "глобализация", "chinese": "全球化", "soundmark": "gla-ba-lee-za-tsi-ya" },
+        { "english": "международное право", "chinese": "国际法", "soundmark": "mezh-doo-na-rod-na-ye pra-va" },
+        { "english": "посол", "chinese": "大使", "soundmark": "pa-sol" },
+        { "english": "саммит", "chinese": "峰会", "soundmark": "sa-meet" },
+        { "english": "миротворческие силы", "chinese": "维和部队", "soundmark": "mee-ra-tvor-che-skee-ye see-ly" },
+        { "english": "Китай и Россия — стратегические партнёры.", "chinese": "中国和俄罗斯是战略伙伴。", "soundmark": "kee-tay e ras-see-ya stra-tee-gee-che-skee-ye part-nyo-ry" },
+        { "english": "Стороны достигли консенсуса.", "chinese": "双方达成了共识。", "soundmark": "sta-ro-ny das-tee-glee kan-sen-soo-sa" }
+      ]
+    },
+    {
+      "id": "catti-02",
+      "order": 2,
+      "title": "经济贸易高频词（Экономика и торговля）",
+      "description": "经济贸易领域的核心术语。",
+      "statements": [
+        { "english": "экономический рост", "chinese": "经济增长", "soundmark": "e-ka-no-mee-che-skee rost" },
+        { "english": "торговый баланс", "chinese": "贸易平衡", "soundmark": "tar-go-vy ba-lans" },
+        { "english": "инвестиции", "chinese": "投资", "soundmark": "een-ves-tee-tsi-ee" },
+        { "english": "экспорт и импорт", "chinese": "出口与进口", "soundmark": "eks-port e eem-port" },
+        { "english": "валовой внутренний продукт (ВВП)", "chinese": "国内生产总值（GDP）", "soundmark": "va-la-voy vnu-tren-ny pro-doopt" },
+        { "english": "инфляция", "chinese": "通货膨胀", "soundmark": "een-flya-tsi-ya" },
+        { "english": "бюджет", "chinese": "预算", "soundmark": "byu-zhet" },
+        { "english": "налоговая система", "chinese": "税收体系", "soundmark": "na-la-go-va-ya sees-te-ma" },
+        { "english": "рыночная экономика", "chinese": "市场经济", "soundmark": "ry-nach-na-ya e-ka-no-mee-ka" },
+        { "english": "таможенная пошлина", "chinese": "关税", "soundmark": "ta-mo-zhen-na-ya pa-shlee-na" },
+        { "english": "Взаимная торговля растёт с каждым годом.", "chinese": "双边贸易逐年增长。", "soundmark": "vza-eem-na-ya tar-gov-lya ras-tyot s kazh-dym go-dom" },
+        { "english": "Объём инвестиций достиг рекордного уровня.", "chinese": "投资额创历史新高。", "soundmark": "ab-yom een-ves-tee-tsiy das-teeg re-kord-na-va oo-rov-nya" }
+      ]
+    },
+    {
+      "id": "catti-03",
+      "order": 3,
+      "title": "科学技术高频词（Наука и техника）",
+      "description": "科技领域的常用词汇。",
+      "statements": [
+        { "english": "инновация", "chinese": "创新", "soundmark": "een-na-va-tsi-ya" },
+        { "english": "искусственный интеллект", "chinese": "人工智能", "soundmark": "ees-koost-ven-ny een-te-ll-ekt" },
+        { "english": "цифровая экономика", "chinese": "数字经济", "soundmark": "tsif-ra-va-ya e-ka-no-mee-ka" },
+        { "english": "космическая программа", "chinese": "太空计划", "soundmark": "kas-mee-che-ska-ya prag-ra-ma" },
+        { "english": "информационные технологии", "chinese": "信息技术", "soundmark": "een-for-ma-tsi-on-ny-ye tekh-no-lo-gee-ee" },
+        { "english": "научное исследование", "chinese": "科学研究", "soundmark": "na-ooch-no-ye e-sle-do-va-nee-ye" },
+        { "english": "кибербезопасность", "chinese": "网络安全", "soundmark": "kee-ber-be-za-pas-nast" },
+        { "english": "энергосбережение", "chinese": "节能", "soundmark": "e-ner-go-sbe-re-zhe-nee-ye" },
+        { "english": "нанотехнология", "chinese": "纳米技术", "soundmark": "na-no-tekh-no-lo-gee-ya" },
+        { "english": "робототехника", "chinese": "机器人技术", "soundmark": "ra-bo-ta-tekh-nee-ka" },
+        { "english": "Китай активно развивает технологии 5G.", "chinese": "中国积极发展5G技术。", "soundmark": "kee-tay ak-teev-na raz-vee-va-yet tekh-no-lo-gee-5g" },
+        { "english": "Сотрудничество в области науки расширяется.", "chinese": "科学领域的合作不断扩大。", "soundmark": "sa-trud-nee-chest-va v ob-las-tee na-oo-kee ras-shee-rya-yet-sya" }
+      ]
+    },
+    {
+      "id": "catti-04",
+      "order": 4,
+      "title": "文化教育高频词（Культура и образование）",
+      "description": "文化教育类的常用翻译词汇。",
+      "statements": [
+        { "english": "культурный обмен", "chinese": "文化交流", "soundmark": "kool-toor-ny ab-men" },
+        { "english": "высшее образование", "chinese": "高等教育", "soundmark": "vys-she-ye a-bra-zo-va-nee-ye" },
+        { "english": "стипендия", "chinese": "奖学金", "soundmark": "stee-pen-dee-ya" },
+        { "english": "международный студент", "chinese": "留学生", "soundmark": "mezh-doo-na-rod-ny stoo-dyent" },
+        { "english": "гуманитарные науки", "chinese": "人文科学", "soundmark": "goo-ma-nee-tar-ny-ye na-oo-kee" },
+        { "english": "диплом", "chinese": "毕业证书", "soundmark": "deep-lom" },
+        { "english": "преподавание китайского языка", "chinese": "中文教学", "soundmark": "pre-pa-da-va-nee-ye kee-tay-ska-va ya-zy-ka" },
+        { "english": "Институт Конфуция", "chinese": "孔子学院", "soundmark": "in-stee-tut kan-foo-tsi-ya" },
+        { "english": "аспирант", "chinese": "研究生", "soundmark": "as-pee-rant" },
+        { "english": "библиотека", "chinese": "图书馆", "soundmark": "beeb-lee-a-tye-ka" },
+        { "english": "Международные обмены способствуют взаимопониманию.", "chinese": "国际交流促进相互理解。", "soundmark": "mezh-doo-na-rod-ny-ye ab-me-ny spa-sobst-vo-yut vza-eem-a-po-nee-ma-nee-yu" },
+        { "english": "Число китайских студентов растёт.", "chinese": "中国留学生人数在增长。", "soundmark": "chees-la kee-tay-skeekh stoo-dyen-tav ras-tyot" }
+      ]
+    },
+    {
+      "id": "catti-05",
+      "order": 5,
+      "title": "社会热点高频词（Социальные темы）",
+      "description": "社会热点问题的常用词汇。",
+      "statements": [
+        { "english": "устойчивое развитие", "chinese": "可持续发展", "soundmark": "oos-toy-chee-va-ye raz-vee-tee-ye" },
+        { "english": "окружающая среда", "chinese": "环境", "soundmark": "ak-roo-zha-yu-shcha-ye sre-da" },
+        { "english": "здравоохранение", "chinese": "医疗卫生", "soundmark": "zdra-va-okh-ra-ne-nee-ye" },
+        { "english": "урбанизация", "chinese": "城市化", "soundmark": "oor-ba-nee-za-tsi-ya" },
+        { "english": "бедность", "chinese": "贫困", "soundmark": "byed-nast" },
+        { "english": "демографическая политика", "chinese": "人口政策", "soundmark": "dee-ma-gra-fee-che-ska-ya pa-lee-tee-ka" },
+        { "english": "защита прав человека", "chinese": "人权保护", "soundmark": "za-shchee-ta praf che-la-vye-ka" },
+        { "english": "социальное обеспечение", "chinese": "社会保障", "soundmark": "sa-tsi-al-na-ye a-bes-pe-che-nee-ye" },
+        { "english": "занятость населения", "chinese": "就业", "soundmark": "za-nya-tast na-se-le-nee-ya" },
+        { "english": "пенсионная система", "chinese": "养老体系", "soundmark": "pen-si-on-na-ya sees-te-ma" },
+        { "english": "Уровень жизни населения повышается.", "chinese": "人民生活水平不断提高。", "soundmark": "oo-ro-ven zhee-znee na-se-le-nee-ya pa-vy-sha-yet-sya" },
+        { "english": "Необходимо усилить охрану окружающей среды.", "chinese": "必须加强环境保护。", "soundmark": "ne-a-bkho-dee-ma oo-see-leet akh-ra-noo ak-roo-zha-yu-shchey sre-dy" }
+      ]
+    },
+    {
+      "id": "catti-06",
+      "order": 6,
+      "title": "法律与外交文书（Юридические и дипломатические документы）",
+      "description": "法律和外交文书的常用术语。",
+      "statements": [
+        { "english": "договор", "chinese": "条约/合同", "soundmark": "da-go-vor" },
+        { "english": "соглашение", "chinese": "协议", "soundmark": "sag-la-she-nee-ye" },
+        { "english": "меморандум о взаимопонимании", "chinese": "谅解备忘录", "soundmark": "me-mo-ran-doom a vza-eem-a-po-nee-ma-nee-ee" },
+        { "english": "ратификация", "chinese": "批准", "soundmark": "ra-tee-fee-ka-tsi-ya" },
+        { "english": "конвенция", "chinese": "公约", "soundmark": "kan-ven-tsi-ya" },
+        { "english": "юрисдикция", "chinese": "司法管辖权", "soundmark": "yu-rees-deek-tsi-ya" },
+        { "english": "арбитраж", "chinese": "仲裁", "soundmark": "ar-bee-trazh" },
+        { "english": "санкции", "chinese": "制裁", "soundmark": "sank-tsi-ee" },
+        { "english": "декларация", "chinese": "宣言", "soundmark": "dek-la-ra-tsi-ya" },
+        { "english": "протокол", "chinese": "议定书", "soundmark": "pra-ta-kol" },
+        { "english": "Стороны подписали двустороннее соглашение.", "chinese": "双方签署了双边协议。", "soundmark": "sta-ro-ny pad-pee-sa-lee dvoos-ta-ron-ne-ye sag-la-she-nee-ye" },
+        { "english": "Документ вступил в силу.", "chinese": "文件正式生效。", "soundmark": "da-koo-mynt fstoo-peel v see-loo" }
+      ]
+    },
+    {
+      "id": "catti-07",
+      "order": 7,
+      "title": "能源与环保（Энергетика и экология）",
+      "description": "能源和环境领域的CATTI高频词汇。",
+      "statements": [
+        { "english": "возобновляемая энергия", "chinese": "可再生能源", "soundmark": "va-zab-nav-lya-ye-ma-ya e-ner-gee-ya" },
+        { "english": "нефтегазовая отрасль", "chinese": "油气行业", "soundmark": "neft-ga-zo-va-ya ot-rasl" },
+        { "english": "углекислый газ", "chinese": "二氧化碳", "soundmark": "oog-lee-kis-ly gas" },
+        { "english": "парниковый эффект", "chinese": "温室效应", "soundmark": "par-nee-ko-vy e-fekt" },
+        { "english": "энергетическая безопасность", "chinese": "能源安全", "soundmark": "e-ner-gee-tee-che-ska-ya be-za-pas-nast" },
+        { "english": "трубопровод", "chinese": "管道运输", "soundmark": "troo-bo-pra-vot" },
+        { "english": "сжиженный природный газ (СПГ)", "chinese": "液化天然气(LNG)", "soundmark": "szhee-zhen-ny pree-rod-ny gaz" },
+        { "english": "выбросы углерода", "chinese": "碳排放", "soundmark": "vy-bro-sy oo-glye-ro-da" },
+        { "english": "энергоэффективность", "chinese": "能源效率", "soundmark": "e-ner-go-e-fek-teev-nast" },
+        { "english": "климатические изменения", "chinese": "气候变化", "soundmark": "klee-ma-tee-che-skee-ye eez-me-ne-nee-ya" },
+        { "english": "Китай стремится к углеродной нейтральности.", "chinese": "中国致力于碳中和。", "soundmark": "kee-tay stre-meet-sya k oo-glye-rod-nay neyt-ral-nas-tee" },
+        { "english": "Развитие зелёной энергетики — приоритет.", "chinese": "发展绿色能源是优先事项。", "soundmark": "raz-vee-tee-ye zye-lyo-nay e-ner-ge-tee-kee pree-a-ree-tyet" }
+      ]
+    },
+    {
+      "id": "catti-08",
+      "order": 8,
+      "title": "国际组织与会议（Международные организации）",
+      "description": "国际组织和会议相关术语。",
+      "statements": [
+        { "english": "Организация Объединённых Наций (ООН)", "chinese": "联合国", "soundmark": "or-ga-nee-za-tsi-ya a-byed-nyon-nykh na-tsiy" },
+        { "english": "Шанхайская организация сотрудничества (ШОС)", "chinese": "上海合作组织", "soundmark": "shan-khay-ska-ya or-ga-nee-za-tsi-ya sa-trud-nee-chest-va" },
+        { "english": "БРИКС", "chinese": "金砖国家", "soundmark": "briks" },
+        { "english": "Всемирная торговая организация (ВТО)", "chinese": "世界贸易组织", "soundmark": "vse-meer-na-ya tar-go-va-ya or-ga-nee-za-tsi-ya" },
+        { "english": "Международный валютный фонд (МВФ)", "chinese": "国际货币基金组织", "soundmark": "mezh-doo-na-rod-ny va-lyut-ny fond" },
+        { "english": "Евразийский экономический союз (ЕАЭС)", "chinese": "欧亚经济联盟", "soundmark": "yev-ra-zeey-skiy e-ka-no-mee-che-skiy sa-yuz" },
+        { "english": "форум", "chinese": "论坛", "soundmark": "fo-room" },
+        { "english": "делегация", "chinese": "代表团", "soundmark": "de-le-ga-tsi-ya" },
+        { "english": "резолюция", "chinese": "决议", "soundmark": "re-zo-lyu-tsi-ya" },
+        { "english": "пленарное заседание", "chinese": "全体会议", "soundmark": "ple-nar-no-ye za-se-da-nee-ye" },
+        { "english": "Саммит БРИКС прошёл в Казани.", "chinese": "金砖峰会在喀山举行。", "soundmark": "sa-meet briks pra-shyol v ka-za-nee" },
+        { "english": "Китай — активный член ШОС.", "chinese": "中国是上合组织的积极成员。", "soundmark": "kee-tay ak-teev-ny chlen shos" }
+      ]
+    },
+    {
+      "id": "catti-09",
+      "order": 9,
+      "title": "俄译中实战句（Перевод с русского на китайский）",
+      "description": "俄译中典型句子翻译练习。",
+      "statements": [
+        { "english": "Китай и Россия являются всеобъемлющими стратегическими партнёрами.", "chinese": "中俄是全面战略协作伙伴。", "soundmark": "kee-tay e ras-see-ya yav-lya-yut-sya vsyo-ab-yem-lyu-shchee-mee stra-tee-gee-che-skee-mee part-nyo-ra-mee" },
+        { "english": "Сотрудничество между двумя странами имеет огромный потенциал.", "chinese": "两国之间的合作潜力巨大。", "soundmark": "sa-trud-nee-chest-va mezh-doo dvoo-mya stra-na-mee e-myet og-rom-ny pa-ten-tsi-al" },
+        { "english": "Необходимо углублять реформы и расширять открытость.", "chinese": "必须深化改革，扩大开放。", "soundmark": "ne-a-bkho-dee-ma oog-loob-lyat re-for-my e ras-shee-ryat at-kry-tast" },
+        { "english": "Китай придерживается пути мирного развития.", "chinese": "中国坚持和平发展道路。", "soundmark": "kee-tay pree-der-zhee-va-yet-sya poo-tee meer-na-va raz-vee-tee-ya" },
+        { "english": "Стороны обменялись мнениями по вопросам, представляющим взаимный интерес.", "chinese": "双方就共同关心的问题交换了意见。", "soundmark": "sta-ro-ny ab-me-nya-lees mne-nee-ya-mee pa vap-ro-sam pre-stav-lya-yu-shcheem vza-eem-ny een-te-res" },
+        { "english": "Торгово-экономическое сотрудничество между Китаем и РФ динамично развивается.", "chinese": "中俄经贸合作蓬勃发展。", "soundmark": "tar-go-va e-ka-no-mee-che-ska-ye sa-trud-nee-chest-va mezh-doo kee-ta-yem e er-ef dee-na-meech-na raz-vee-va-yet-sya" },
+        { "english": "Важно обеспечить стабильность цепочек поставок.", "chinese": "确保供应链稳定至关重要。", "soundmark": "vazh-na a-bes-pe-cheet sta-beel-nast tse-po-check pas-ta-vak" },
+        { "english": "Китай выступает за формирование сообщества единой судьбы человечества.", "chinese": "中国主张构建人类命运共同体。", "soundmark": "kee-tay vy-stoo-pa-yet za for-mee-ro-va-ne-ye sa-ab-shchest-va ye-dee-nay sood-by che-la-vye-chest-va" }
+      ]
+    },
+    {
+      "id": "catti-10",
+      "order": 10,
+      "title": "中译俄实战句（Перевод с китайского на русский）",
+      "description": "中译俄典型句子翻译练习。",
+      "statements": [
+        { "english": "Мы высоко ценим традиционную дружбу между нашими народами.", "chinese": "我们珍视两国人民之间的传统友谊。", "soundmark": "my vy-so-ka tse-neem tra-dee-tsi-on-noo-yu droozh-boo mezh-doo na-shee-mee na-ro-da-mee" },
+        { "english": "Глава государства подчеркнул важность дальнейшего углубления реформ.", "chinese": "国家元首强调了继续深化改革的重要性。", "soundmark": "gla-va go-soo-dar-stva pad-cherk-nool vazh-nast dal-ney-she-va oo-glub-le-nee-ya re-form" },
+        { "english": "Китай намерен и дальше расширять импорт качественных товаров и услуг.", "chinese": "中国将继续扩大优质商品和服务的进口。", "soundmark": "kee-tay na-me-ren e dal-she ras-shee-ryat eem-port ka-chest-ven-nykh to-va-rov e oo-sloog" },
+        { "english": "Необходимо укрепить международное сотрудничество в борьбе с пандемией.", "chinese": "必须加强抗疫国际合作。", "soundmark": "ne-a-bkho-dee-ma oo-kre-peet mezh-doo-na-rod-na-ye sa-trud-nee-chest-va v bar-bye s pan-de-mee-yey" },
+        { "english": "Цифровая экономика стала новым драйвером роста.", "chinese": "数字经济成为增长的新引擎。", "soundmark": "tsif-ra-va-ya e-ka-no-mee-ka sta-la no-vym drai-ve-rom ros-ta" },
+        { "english": "Зелёное развитие — это ключ к устойчивому будущему.", "chinese": "绿色发展是可持续未来的关键。", "soundmark": "zye-lyo-na-ye raz-vee-tee-ye e-ta klyuch k oos-toy-che-vo-moo boo-doosh-che-moo" },
+        { "english": "Китай поддерживает многостороннюю торговую систему.", "chinese": "中国支持多边贸易体系。", "soundmark": "kee-tay pad-der-zhee-va-yet mna-gas-ta-ron-yuyu tar-go-vuyu sees-te-moo" },
+        { "english": "Инвестиции в инфраструктуру приносят долгосрочные выгоды.", "chinese": "基础设施投资带来长期收益。", "soundmark": "een-ves-tee-tsi-ee v een-fra-strook-too-roo pree-no-syat dal-gas-roch-ny-ye vy-go-dy" }
+      ]
+    },
+    {
+      "id": "catti-11",
+      "order": 11,
+      "title": "CATTI 高频成语与固定搭配（Фразеологизмы）",
+      "description": "CATTI 翻译考试中常见的固定搭配和成语表达。",
+      "statements": [
+        { "english": "играть важную роль", "chinese": "发挥重要作用", "soundmark": "eeg-rat vazh-noo-yu rol" },
+        { "english": "принимать меры", "chinese": "采取措施", "soundmark": "pree-nee-mat mye-ry" },
+        { "english": "уделять внимание", "chinese": "给予关注", "soundmark": "oo-dy-lyat vnee-ma-nee-ye" },
+        { "english": "ставить задачи", "chinese": "提出任务", "soundmark": "sta-veet za-da-chee" },
+        { "english": "достичь прогресса", "chinese": "取得进展", "soundmark": "das-teech prag-res-sa" },
+        { "english": "проводить политику", "chinese": "实行政策", "soundmark": "pra-vo-deet pa-lee-tee-koo" },
+        { "english": "нанести визит", "chinese": "进行访问", "soundmark": "na-nes-tee vee-zeet" },
+        { "english": "вступить в силу", "chinese": "生效", "soundmark": "fstoo-peet v see-loo" },
+        { "english": "подвести итоги", "chinese": "总结", "soundmark": "pad-ves-tee ee-to-gee" },
+        { "english": "исходить из принципа", "chinese": "从原则出发", "soundmark": "ee-skhodeet eez preen-tsee-pa" },
+        { "english": "пользоваться поддержкой", "chinese": "得到支持", "soundmark": "pol-za-vat-sya pad-derzh-koy" },
+        { "english": "вносить вклад", "chinese": "做出贡献", "soundmark": "vna-seet fklat" }
+      ]
+    },
+    {
+      "id": "catti-12",
+      "order": 12,
+      "title": "CATTI 模拟翻译练习（Практика перевода）",
+      "description": "CATTI 综合模拟翻译句子练习。",
+      "statements": [
+        { "english": "В сентябре 2024 года в Пекине прошёл Форум сотрудничества Китая и России.", "chinese": "2024年9月，中俄合作论坛在北京举行。", "soundmark": "v sen-tyab-re dve-tis-chi dva-tsat che-ty-re go-da v pee-kee-ne pro-shol Fo-room sa-trud-nee-chest-va kee-ta-ya e ras-see-ee" },
+        { "english": "Объём двусторонней торговли превысил 200 миллиардов долларов.", "chinese": "双边贸易额超过2000亿美元。", "soundmark": "ab-yom dvoos-ta-ron-ney tar-gov-lee pre-vy-seel dves-te mee-lee-ar-dov do-la-rov" },
+        { "english": "Китайская сторона приветствует участие российских компаний в проектах.", "chinese": "中方欢迎俄罗斯企业参与项目。", "soundmark": "kee-tay-ska-ya sta-ro-na pree-vyetst-vo-yet oo-chas-tee-ye ras-see-skeekh kom-pa-nee v pra-yek-takh" },
+        { "english": "Стороны подтвердили приверженность принципам Устава ООН.", "chinese": "双方确认恪守联合国宪章原则。", "soundmark": "sta-ro-ny pad-tver-dee-lee pree-ver-zhen-nast preen-tsee-pam oos-ta-va o-on" },
+        { "english": "Необходимо наращивать гуманитарные обмены между молодёжью.", "chinese": "必须加强青年之间的人文交流。", "soundmark": "ne-a-bkho-dee-ma na-ra-shchee-vat goo-ma-nee-tar-ny-ye ab-me-ny mezh-doo mo-la-dyo-zhyu" },
+        { "english": "Совместные проекты способствуют региональной стабильности.", "chinese": "共建项目促进地区稳定。", "soundmark": "sav-mes-ny-ye pra-yek-ty spa-sobst-vo-yut re-gee-nal-noy sta-beel-nas-tee" },
+        { "english": "Уровень безработицы снизился благодаря эффективным мерам.", "chinese": "得益于有效措施，失业率下降。", "soundmark": "oo-ro-ven bez-ra-bo-tee-tsy snee-zeel-sya bla-go-da-rya e-fek-teev-nym mye-ram" },
+        { "english": "Китай продолжает углублять реформы в сфере образования.", "chinese": "中国继续深化教育改革。", "soundmark": "kee-tay pra-dol-zha-yet oo-glub-lyat re-for-my v sfe-re a-bra-zo-va-nee-ya" }
+      ]
+    }
+  ]
+}

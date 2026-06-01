@@ -1,0 +1,289 @@
+{
+  "id": "ru-proverbs",
+  "title": "俄语谚语与俗语",
+  "description": "俄罗斯常用谚语俗语和格言，理解俄语语言智慧。",
+  "cover": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rupv-01",
+      "order": 1,
+      "title": "智慧谚语",
+      "description": "关于人生智慧的俄罗斯谚语。",
+      "statements": [
+        {
+          "english": "Семь раз отме́рь, оди́н раз отре́жь.",
+          "chinese": "七次量体一次裁布。",
+          "soundmark": "sem raz at-MER a-DEEN raz at-REZH"
+        },
+        {
+          "english": "Не всё то зо́лото, что блести́т.",
+          "chinese": "闪光的不都是金子。",
+          "soundmark": "ne vsyo ta ZO-la-ta shto bles-TEET"
+        },
+        {
+          "english": "Цыпля́т по о́сени счита́ют.",
+          "chinese": "小鸡在秋天时才算数。",
+          "soundmark": "tsee-PLYAT pa O-se-nee schee-TA-yut"
+        },
+        {
+          "english": "Яблоко от я́блони недалеко́ па́дает.",
+          "chinese": "苹果落离苹果树不远。",
+          "soundmark": "YAB-la-ka at YAB-la-nee ne-da-le-KO PA-da-yet"
+        }
+      ]
+    },
+    {
+      "id": "rupv-02",
+      "order": 2,
+      "title": "劳动谚语",
+      "description": "关于劳动和勤奋的俄罗斯谚语。",
+      "statements": [
+        {
+          "english": "Без труда́ не вы́тащишь и ры́бку из пруда́.",
+          "chinese": "不劳动连鱼也从池塘里捞不出来。",
+          "soundmark": "bes troo-DA ne VY-ta-shchish ee RYEP-koo ees proo-DA"
+        },
+        {
+          "english": "Де́лу — вре́мя, поте́хе — час.",
+          "chinese": "工作有时娱乐有时。",
+          "soundmark": "DYE-loo VRE-mya pa-TYE-khe chas"
+        },
+        {
+          "english": "Кто не рабо́тает, тот не ест.",
+          "chinese": "不劳动者不得食。",
+          "soundmark": "kto ne ra-BO-ta-yet tot ne yest"
+        },
+        {
+          "english": "Терпе́ние и труд всё перетру́т.",
+          "chinese": "忍耐和劳动磨碎一切。",
+          "soundmark": "ter-PE-nee-ye i trood vsyo pe-re-TROOT"
+        }
+      ]
+    },
+    {
+      "id": "rupv-03",
+      "order": 3,
+      "title": "友谊谚语",
+      "description": "关于友谊的俄罗斯谚语。",
+      "statements": [
+        {
+          "english": "Друг познаётся в беде́.",
+          "chinese": "患难见真情。",
+          "soundmark": "droog paz-na-YO-t-sa v be-DE"
+        },
+        {
+          "english": "Ста́рый друг лу́чше но́вых двух.",
+          "chinese": "老友胜于新交。",
+          "soundmark": "STA-ry droog LOOTCH-she NO-vykh dvukh"
+        },
+        {
+          "english": "Не име́й сто рубле́й, а име́й сто друзе́й.",
+          "chinese": "不要一百卢布要一百个朋友。",
+          "soundmark": "ne ee-MEY sto roob-LEY a ee-MEY sto droo-ZEY"
+        },
+        {
+          "english": "Челове́к челове́ку друг.",
+          "chinese": "人人是朋友。",
+          "soundmark": "che-la-VYEK che-la-VE-koo droog"
+        }
+      ]
+    },
+    {
+      "id": "rupv-04",
+      "order": 4,
+      "title": "爱情谚语",
+      "description": "关于爱情和感情的俄罗斯谚语。",
+      "statements": [
+        {
+          "english": "Любви́ все во́зрасты поко́рны.",
+          "chinese": "爱情服从所有年龄。",
+          "soundmark": "lyub-VEE vse VOZ-ras-ty pa-KOR-ny"
+        },
+        {
+          "english": "С милым рай и в шалаше́.",
+          "chinese": "和心爱的人在一起住在草棚里也是天堂。",
+          "soundmark": "s MEE-lym ray i f sha-la-SHE"
+        },
+        {
+          "english": "Наси́льно мил не бу́дешь.",
+          "chinese": "强扭的瓜不甜。",
+          "soundmark": "na-SEEL-na meel ne BOO-desh"
+        },
+        {
+          "english": "Любо́вь зла, полю́бишь и козла́.",
+          "chinese": "爱情是魔鬼你会爱上山羊。",
+          "soundmark": "lyu-BOV zla pa-LYOO-bish i kaz-LA"
+        }
+      ]
+    },
+    {
+      "id": "rupv-05",
+      "order": 5,
+      "title": "忍耐谚语",
+      "description": "关于耐心和坚持的俄罗斯谚语。",
+      "statements": [
+        {
+          "english": "Ти́ше е́дешь — да́льше бу́дешь.",
+          "chinese": "欲速则不达。",
+          "soundmark": "TEE-she YE-desh DAL-she BOO-desh"
+        },
+        {
+          "english": "Вода́ ка́мень то́чит.",
+          "chinese": "水滴石穿。",
+          "soundmark": "va-DA KA-men TO-cheet"
+        },
+        {
+          "english": "Москва́ не сра́зу стро́илась.",
+          "chinese": "莫斯科不是一天建成的。",
+          "soundmark": "mas-KVA ne SRA-zu STRO-ee-las"
+        },
+        {
+          "english": "По ка́пле и мо́ре собира́ется.",
+          "chinese": "积少成多海纳百川。",
+          "soundmark": "pa KAP-le i MO-re sa-bee-RA-ye-tsa"
+        }
+      ]
+    },
+    {
+      "id": "rupv-06",
+      "order": 6,
+      "title": "真理谚语",
+      "description": "关于真理和诚实的俄罗斯谚语。",
+      "statements": [
+        {
+          "english": "Пра́вда глаза́ ко́лет.",
+          "chinese": "真相刺痛眼睛。",
+          "soundmark": "PRAV-da gla-ZA KO-let"
+        },
+        {
+          "english": "Лу́чше го́рькая пра́вда, чем сла́дкая ложь.",
+          "chinese": "苦真理胜于甜谎言。",
+          "soundmark": "LOOTCH-she GOR-ka-ya PRAV-da chem SLAT-ka-ya lozh"
+        },
+        {
+          "english": "Ши́ла в мешке́ не утаи́шь.",
+          "chinese": "纸包不住火。",
+          "soundmark": "SHEE-la v mesh-KE ne oo-ta-EESH"
+        },
+        {
+          "english": "Вся́кая пра́вда чу́дно сме́рдит.",
+          "chinese": "真相总是让人难以接受。",
+          "soundmark": "VSYA-ka-ya PRAV-da CHUD-na SMER-deet"
+        }
+      ]
+    },
+    {
+      "id": "rupv-07",
+      "order": 7,
+      "title": "家庭谚语",
+      "description": "关于家庭和家园的俄罗斯谚语。",
+      "statements": [
+        {
+          "english": "В гостя́х хорошо́, а до́ма лу́чше.",
+          "chinese": "做客虽好不如在家。",
+          "soundmark": "f gas-TYAKH kha-ra-SHO a DO-ma LOOCH-she"
+        },
+        {
+          "english": "Мой дом — моя́ кре́пость.",
+          "chinese": "我的家是我的城堡。",
+          "soundmark": "moy dom ma-YA KRE-past"
+        },
+        {
+          "english": "В семье́ не без уро́да.",
+          "chinese": "家家有本难念的经。",
+          "soundmark": "v se-MYE ne bez oo-RO-da"
+        },
+        {
+          "english": "Семья́ — э́то сча́стье.",
+          "chinese": "家庭就是幸福。",
+          "soundmark": "se-MYA E-ta SCHA-stye"
+        }
+      ]
+    },
+    {
+      "id": "rupv-08",
+      "order": 8,
+      "title": "时间谚语",
+      "description": "关于时间和时机的俄罗斯谚语。",
+      "statements": [
+        {
+          "english": "Вре́мя ле́чит.",
+          "chinese": "时间治愈一切。",
+          "soundmark": "VRE-mya LE-cheet"
+        },
+        {
+          "english": "Ку́й желе́зо, пока́ горячо́.",
+          "chinese": "趁热打铁。",
+          "soundmark": "kooy zhe-LE-za pa-KA ga-rya-CHO"
+        },
+        {
+          "english": "У́тро ве́чера мудрене́е.",
+          "chinese": "早晨比晚上更明智。",
+          "soundmark": "OOT-ra VYE-che-ra mood-re-NE-ye"
+        },
+        {
+          "english": "Не откла́дывай на за́втра то, что мо́жно сде́лать сего́дня.",
+          "chinese": "今天能做的事不要拖到明天。",
+          "soundmark": "ne at-KLA-dy-vay na ZAV-tra ta shto MOZH-na ZDY-lat se-VOD-nya"
+        }
+      ]
+    },
+    {
+      "id": "rupv-09",
+      "order": 9,
+      "title": "求学谚语",
+      "description": "关于学习和知识的俄罗斯谚语。",
+      "statements": [
+        {
+          "english": "Век живи́ — век учи́сь.",
+          "chinese": "活到老学到老。",
+          "soundmark": "vyek zhee-VEE vyek oo-CHEES"
+        },
+        {
+          "english": "Повторе́ние — мать уче́ния.",
+          "chinese": "重复是学习之母。",
+          "soundmark": "pav-ta-RE-nee-ye mat oo-CHE-nee-ya"
+        },
+        {
+          "english": "Уче́нье — свет, а неуче́нье — тьма.",
+          "chinese": "学则明不学则暗。",
+          "soundmark": "oo-CHE-nye svyet a ne-oo-CHE-nye tma"
+        },
+        {
+          "english": "Зна́ние — си́ла.",
+          "chinese": "知识就是力量。",
+          "soundmark": "ZNA-nee-ye SEE-la"
+        }
+      ]
+    },
+    {
+      "id": "rupv-10",
+      "order": 10,
+      "title": "幽默谚语",
+      "description": "幽默诙谐的俄罗斯谚语和俗语。",
+      "statements": [
+        {
+          "english": "Смех без причи́ны — при́знак дурачи́ны.",
+          "chinese": "无缘无故的笑是傻瓜的标志。",
+          "soundmark": "smekh bez pree-CHEE-ny PREE-znak doo-ra-CHEE-ny"
+        },
+        {
+          "english": "Глаза́ боя́тся, а ру́ки де́лают.",
+          "chinese": "眼怕手做。",
+          "soundmark": "gla-ZA bo-YAT-sya a ROO-kee DYE-la-yut"
+        },
+        {
+          "english": "За чужо́й щеко́й зуб не болит.",
+          "chinese": "别人的牙痛自己不知道。",
+          "soundmark": "za choo-ZHOY shche-KOY zoop ne ba-LEET"
+        },
+        {
+          "english": "В огороде́ бузина́, а в Ки́еве дя́дька.",
+          "chinese": "牛头不对马嘴。",
+          "soundmark": "v a-ga-RO-de boo-zee-NA a v KEE-ye-ve DYAD-ka"
+        }
+      ]
+    }
+  ]
+}

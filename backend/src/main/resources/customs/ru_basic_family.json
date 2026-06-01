@@ -1,0 +1,524 @@
+{
+  "id": "ru-basic-family",
+  "title": "家庭与人称",
+  "description": "学习家庭成员称呼、人称代词和物主代词的俄语表达。",
+  "cover": "https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rufa-01",
+      "order": 1,
+      "title": "家庭成员",
+      "description": "俄语中家庭成员的称谓。",
+      "statements": [
+        {
+          "english": "ма́ма",
+          "chinese": "妈妈",
+          "soundmark": "MA-ma"
+        },
+        {
+          "english": "па́па",
+          "chinese": "爸爸",
+          "soundmark": "PA-pa"
+        },
+        {
+          "english": "де́душка",
+          "chinese": "爷爷",
+          "soundmark": "DYE-doosh-ka"
+        },
+        {
+          "english": "ба́бушка",
+          "chinese": "奶奶",
+          "soundmark": "BA-boosh-ka"
+        },
+        {
+          "english": "брат",
+          "chinese": "兄弟",
+          "soundmark": "brat"
+        },
+        {
+          "english": "сестра́",
+          "chinese": "姐妹",
+          "soundmark": "ses-TRA"
+        },
+        {
+          "english": "сын",
+          "chinese": "儿子",
+          "soundmark": "syn"
+        },
+        {
+          "english": "дочь",
+          "chinese": "女儿",
+          "soundmark": "doch"
+        },
+        {
+          "english": "муж",
+          "chinese": "丈夫",
+          "soundmark": "moozh"
+        },
+        {
+          "english": "жена́",
+          "chinese": "妻子",
+          "soundmark": "zhe-NA"
+        },
+        {
+          "english": "тётя",
+          "chinese": "阿姨",
+          "soundmark": "TYO-tya"
+        },
+        {
+          "english": "дя́дя",
+          "chinese": "叔叔",
+          "soundmark": "DYA-dya"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/13-Урок 1-1.avi"
+    },
+    {
+      "id": "rufa-02",
+      "order": 2,
+      "title": "人称代词",
+      "description": "俄语人称代词主格形式。",
+      "statements": [
+        {
+          "english": "я",
+          "chinese": "我",
+          "soundmark": "ya"
+        },
+        {
+          "english": "ты",
+          "chinese": "你",
+          "soundmark": "ty"
+        },
+        {
+          "english": "он",
+          "chinese": "他",
+          "soundmark": "on"
+        },
+        {
+          "english": "она́",
+          "chinese": "她",
+          "soundmark": "a-NA"
+        },
+        {
+          "english": "оно́",
+          "chinese": "它",
+          "soundmark": "a-NO"
+        },
+        {
+          "english": "мы",
+          "chinese": "我们",
+          "soundmark": "my"
+        },
+        {
+          "english": "вы",
+          "chinese": "您/你们",
+          "soundmark": "vy"
+        },
+        {
+          "english": "они́",
+          "chinese": "他们",
+          "soundmark": "a-NEE"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/14-Урок 1-2.avi"
+    },
+    {
+      "id": "rufa-03",
+      "order": 3,
+      "title": "大家庭",
+      "description": "其他亲属关系的俄语称谓。",
+      "statements": [
+        {
+          "english": "двою́родный брат",
+          "chinese": "堂/表兄弟",
+          "soundmark": "dva-YU-rod-ny brat"
+        },
+        {
+          "english": "двою́родная сестра́",
+          "chinese": "堂/表姐妹",
+          "soundmark": "dva-YU-rod-na-ya ses-TRA"
+        },
+        {
+          "english": "племя́нник",
+          "chinese": "侄子",
+          "soundmark": "ple-MYAN-neek"
+        },
+        {
+          "english": "племя́нница",
+          "chinese": "侄女",
+          "soundmark": "ple-MYAN-nee-tsa"
+        },
+        {
+          "english": "внук",
+          "chinese": "孙子",
+          "soundmark": "vnook"
+        },
+        {
+          "english": "вну́чка",
+          "chinese": "孙女",
+          "soundmark": "VNOOCH-ka"
+        },
+        {
+          "english": "свёкор",
+          "chinese": "公公",
+          "soundmark": "SVYO-kar"
+        },
+        {
+          "english": "свекро́вь",
+          "chinese": "婆婆",
+          "soundmark": "sve-KROF"
+        },
+        {
+          "english": "родственник",
+          "chinese": "亲戚",
+          "soundmark": "ROST-ven-neek"
+        },
+        {
+          "english": "родня́",
+          "chinese": "亲属们",
+          "soundmark": "rad-NYA"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/16-Урок 2-1.avi"
+    },
+    {
+      "id": "rufa-04",
+      "order": 4,
+      "title": "家庭描述",
+      "description": "描述家庭情况的常用句子。",
+      "statements": [
+        {
+          "english": "У меня́ больша́я семья́.",
+          "chinese": "我有一个大家庭。",
+          "soundmark": "oo me-NYA bal-SHA-ya sem-YA"
+        },
+        {
+          "english": "У меня́ ма́ленькая семья́.",
+          "chinese": "我有一个小家庭。",
+          "soundmark": "oo me-NYA MA-lyen-ka-ya sem-YA"
+        },
+        {
+          "english": "Я живу́ с роди́телями.",
+          "chinese": "我和父母一起住。",
+          "soundmark": "ya zhee-VOO s ra-DEE-te-lya-mee"
+        },
+        {
+          "english": "У меня́ есть брат.",
+          "chinese": "我有一个兄弟。",
+          "soundmark": "oo me-NYA yest brat"
+        },
+        {
+          "english": "У меня́ нет сестры́.",
+          "chinese": "我没有姐妹。",
+          "soundmark": "oo me-NYA nyet ses-TRY"
+        },
+        {
+          "english": "Мы дру́жная семья́.",
+          "chinese": "我们家很和睦。",
+          "soundmark": "my DROOZH-na-ya sem-YA"
+        },
+        {
+          "english": "Моя́ семья́ живёт в го́роде.",
+          "chinese": "我的家人住在城市里。",
+          "soundmark": "ma-YA sem-YA zhee-VYOT v GO-ra-de"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/17-Урок 2-2.avi"
+    },
+    {
+      "id": "rufa-05",
+      "order": 5,
+      "title": "物主代词与家庭",
+      "description": "物主代词在家庭语境中的使用。",
+      "statements": [
+        {
+          "english": "моя́ ма́ма",
+          "chinese": "我的妈妈",
+          "soundmark": "ma-YA MA-ma"
+        },
+        {
+          "english": "твой па́па",
+          "chinese": "你的爸爸",
+          "soundmark": "tvoy PA-pa"
+        },
+        {
+          "english": "его́ брат",
+          "chinese": "他的兄弟",
+          "soundmark": "ye-VO brat"
+        },
+        {
+          "english": "её сестра́",
+          "chinese": "她的姐妹",
+          "soundmark": "ye-YO ses-TRA"
+        },
+        {
+          "english": "наш дом",
+          "chinese": "我们的房子",
+          "soundmark": "nash dom"
+        },
+        {
+          "english": "ва́ша ба́бушка",
+          "chinese": "您的奶奶",
+          "soundmark": "VA-sha BA-boosh-ka"
+        },
+        {
+          "english": "их де́ти",
+          "chinese": "他们的孩子",
+          "soundmark": "eech DYE-tee"
+        },
+        {
+          "english": "своя́ семья́",
+          "chinese": "自己的家庭",
+          "soundmark": "sva-YA sem-YA"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/18-Урок 3-1.avi"
+    },
+    {
+      "id": "rufa-06",
+      "order": 6,
+      "title": "询问家庭情况",
+      "description": "询问他人家庭状况的常用问句。",
+      "statements": [
+        {
+          "english": "У тебя́ есть брат или сестра́?",
+          "chinese": "你有兄弟或姐妹吗？",
+          "soundmark": "oo te-BYA yest brat EE-lee ses-TRA"
+        },
+        {
+          "english": "Ско́лько челове́к в твое́й семье́?",
+          "chinese": "你家有几口人？",
+          "soundmark": "SKOL-ka che-la-VYEK v tva-YOY sem-YE"
+        },
+        {
+          "english": "Расскажи́ о свое́й семье́.",
+          "chinese": "说说你的家庭。",
+          "soundmark": "ra-ska-ZHEE a sva-YOY sem-YE"
+        },
+        {
+          "english": "Кем рабо́тают твои́ роди́тели?",
+          "chinese": "你父母是做什么工作的？",
+          "soundmark": "kem ra-BO-ta-yut tva-EE ra-DEE-te-lee"
+        },
+        {
+          "english": "Где живёт твоя́ семья́?",
+          "chinese": "你家住在哪里？",
+          "soundmark": "gdye zhee-VYOT tva-YA sem-YA"
+        },
+        {
+          "english": "У вас есть де́ти?",
+          "chinese": "您有孩子吗？",
+          "soundmark": "oo vas yest DYE-tee"
+        },
+        {
+          "english": "Ты живёшь с роди́телями?",
+          "chinese": "你和父母一起住吗？",
+          "soundmark": "ty zhee-VYOSH s ra-DEE-te-lya-mee"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/19-Урок 3-2.avi"
+    },
+    {
+      "id": "rufa-07",
+      "order": 7,
+      "title": "家庭成员的年龄",
+      "description": "询问和表达家庭成员年龄的方式。",
+      "statements": [
+        {
+          "english": "Ско́лько лет твоему́ бра́ту?",
+          "chinese": "你兄弟多大了？",
+          "soundmark": "SKOL-ka let tva-ye-MOO BRA-too"
+        },
+        {
+          "english": "Моему́ бра́ту де́сять лет.",
+          "chinese": "我兄弟十岁。",
+          "soundmark": "ma-ye-MOO BRA-too DYE-syat let"
+        },
+        {
+          "english": "Ско́лько лет твоей ма́ме?",
+          "chinese": "你妈妈多大年纪？",
+          "soundmark": "SKOL-ka let tva-YEY MA-me"
+        },
+        {
+          "english": "Моей ма́ме со́рок лет.",
+          "chinese": "我妈妈四十岁。",
+          "soundmark": "ma-YEY MA-me SO-rak let"
+        },
+        {
+          "english": "Он ста́рше меня́.",
+          "chinese": "他比我大。",
+          "soundmark": "on STAR-she me-NYA"
+        },
+        {
+          "english": "Она́ мла́дше меня́.",
+          "chinese": "她比我小。",
+          "soundmark": "a-NA MLAD-she me-NYA"
+        },
+        {
+          "english": "Мне два́дцать лет.",
+          "chinese": "我二十岁。",
+          "soundmark": "mnye DVAD-tsat let"
+        },
+        {
+          "english": "возраст",
+          "chinese": "年龄",
+          "soundmark": "VOZ-rast"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/22-Урок 4-1.avi"
+    },
+    {
+      "id": "rufa-08",
+      "order": 8,
+      "title": "家庭关系",
+      "description": "描述家庭成员之间关系的词汇。",
+      "statements": [
+        {
+          "english": "роди́тели",
+          "chinese": "父母",
+          "soundmark": "ra-DEE-te-lee"
+        },
+        {
+          "english": "супру́г",
+          "chinese": "配偶（男）",
+          "soundmark": "soo-PROOG"
+        },
+        {
+          "english": "супру́га",
+          "chinese": "配偶（女）",
+          "soundmark": "soo-PROO-ga"
+        },
+        {
+          "english": "бли́зкие",
+          "chinese": "亲近的人",
+          "soundmark": "BLEES-kee-ye"
+        },
+        {
+          "english": "единственный ребёнок",
+          "chinese": "独生子女",
+          "soundmark": "ye-DEEN-stven-ny ree-BYO-nak"
+        },
+        {
+          "english": "двойня́шки",
+          "chinese": "双胞胎",
+          "soundmark": "dvoy-NYASH-kee"
+        },
+        {
+          "english": "многоде́тная семья́",
+          "chinese": "多子女家庭",
+          "soundmark": "mna-ga-DET-na-ya sem-YA"
+        },
+        {
+          "english": "семе́йные отноше́ния",
+          "chinese": "家庭关系",
+          "soundmark": "se-MEY-ny-ye at-na-SHE-nee-ya"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/23-Урок 4-2.avi"
+    },
+    {
+      "id": "rufa-09",
+      "order": 9,
+      "title": "家庭活动",
+      "description": "全家人一起进行的活动表达。",
+      "statements": [
+        {
+          "english": "Мы вме́сте обе́даем.",
+          "chinese": "我们一起吃午饭。",
+          "soundmark": "my VMYES-te a-BYE-da-yem"
+        },
+        {
+          "english": "Мы отме́чаем пра́здники вме́сте.",
+          "chinese": "我们一起庆祝节日。",
+          "soundmark": "my at-ME-cha-yem PRAZ-nee-kee VMYES-te"
+        },
+        {
+          "english": "Мы ходи́м в гости к ба́бушке.",
+          "chinese": "我们去看望奶奶。",
+          "soundmark": "my KHA-deem v GOS-tee k BA-boosh-ke"
+        },
+        {
+          "english": "Семе́йный у́жин",
+          "chinese": "家庭晚餐",
+          "soundmark": "se-MEY-ny OO-zhen"
+        },
+        {
+          "english": "Мы смотре́ли фотогра́фии.",
+          "chinese": "我们看了照片。",
+          "soundmark": "my smat-RE-lee fa-ta-GRA-fee-ee"
+        },
+        {
+          "english": "Мы гуля́ем в па́рке по выходны́м.",
+          "chinese": "我们周末在公园散步。",
+          "soundmark": "my goo-LYA-yem v PAR-ke pa vy-khad-NYM"
+        },
+        {
+          "english": "Мы помога́ем друг дру́гу.",
+          "chinese": "我们互相帮助。",
+          "soundmark": "my pa-ma-GA-yem droog DROO-goo"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/27-Урок 5-1.avi"
+    },
+    {
+      "id": "rufa-10",
+      "order": 10,
+      "title": "家庭树",
+      "description": "用俄语描述家庭成员关系树。",
+      "statements": [
+        {
+          "english": "семе́йное де́рево",
+          "chinese": "家庭树",
+          "soundmark": "se-MEY-na-ye DYE-re-va"
+        },
+        {
+          "english": "мой оте́ц",
+          "chinese": "我的父亲",
+          "soundmark": "moy a-TYETS"
+        },
+        {
+          "english": "моя́ мать",
+          "chinese": "我的母亲",
+          "soundmark": "ma-YA mat"
+        },
+        {
+          "english": "ста́рший брат",
+          "chinese": "哥哥",
+          "soundmark": "STAR-shiy brat"
+        },
+        {
+          "english": "мла́дшая сестра́",
+          "chinese": "妹妹",
+          "soundmark": "MLAD-sha-ya ses-TRA"
+        },
+        {
+          "english": "пра́дедушка",
+          "chinese": "曾祖父",
+          "soundmark": "PRA-de-doosh-ka"
+        },
+        {
+          "english": "пра́бабушка",
+          "chinese": "曾祖母",
+          "soundmark": "PRA-ba-boosh-ka"
+        },
+        {
+          "english": "крёстный оте́ц",
+          "chinese": "教父",
+          "soundmark": "KRYOS-ny a-TYETS"
+        },
+        {
+          "english": "крёстная мать",
+          "chinese": "教母",
+          "soundmark": "KRYOS-na-ya mat"
+        },
+        {
+          "english": "поко́ление",
+          "chinese": "代/辈",
+          "soundmark": "pa-ka-LE-nee-ye"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/28-Урок 5-2.avi"
+    }
+  ]
+}

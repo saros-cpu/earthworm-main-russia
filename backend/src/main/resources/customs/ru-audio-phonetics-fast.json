@@ -1,0 +1,28 @@
+{
+  "id": "ru-audio-phonetics-fast",
+  "title": "俄语语音快速突破（19课）",
+  "description": "俄语语音快速突破音频课程（19课时）。系统讲解俄语字母表、元音、辅音等语音基础知识，适合初学者快速入门。",
+  "cover": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {"id":"rph-01","order":1,"title":"俄语字母表","description":"俄语字母发音速成。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语语音快速突破/01第一章俄语字母表.mp3","statements":[{"english":"алфавит","chinese":"字母表","soundmark":"al-fa-veet"},{"english":"буква","chinese":"字母","soundmark":"book-va"}]},
+    {"id":"rph-02","order":2,"title":"第二章 元音","description":"元音发音学习。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语语音快速突破/02第二章元音.mp3","statements":[{"english":"гласный","chinese":"元音","soundmark":"glas-ny"},{"english":"звук","chinese":"音","soundmark":"zvook"}]},
+    {"id":"rph-03","order":3,"title":"第二章 辅音","description":"辅音发音学习。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语语音快速突破/03第二章辅音.mp3","statements":[{"english":"согласный","chinese":"辅音","soundmark":"sag-las-ny"},{"english":"твёрдый","chinese":"硬的","soundmark":"tvyor-diy"}]},
+    {"id":"rph-04","order":4,"title":"辅音（1）","description":"辅音发音进阶。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语语音快速突破/04第二章（1）辅音.mp3","statements":[{"english":"мягкий","chinese":"软的","soundmark":"myakh-kee"},{"english":"звонкий","chinese":"浊的","soundmark":"zvon-kee"}]},
+    {"id":"rph-05","order":5,"title":"辅音（2）","description":"辅音发音进阶。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语语音快速突破/05第二章（2）辅音.mp3","statements":[{"english":"глухой","chinese":"清的","soundmark":"gloo-khoy"},{"english":"сонорный","chinese":"响亮的","soundmark":"sa-nor-ny"}]},
+    {"id":"rph-06","order":6,"title":"辅音（3）","description":"辅音发音进阶。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语语音快速突破/06第二章（3）辅音.mp3","statements":[{"english":"губной","chinese":"唇音","soundmark":"goob-noy"},{"english":"зубной","chinese":"齿音","soundmark":"zoob-noy"}]},
+    {"id":"rph-07","order":7,"title":"辅音（4）","description":"辅音发音进阶。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语语音快速突破/07第二章（4）辅音.mp3","statements":[{"english":"переднеязычный","chinese":"前舌音","soundmark":"pe-red-ne-ya-zyech-ny"},{"english":"заднеязычный","chinese":"后舌音","soundmark":"zad-ne-ya-zyech-ny"}]},
+    {"id":"rph-08","order":8,"title":"辅音（5）","description":"辅音发音进阶。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语语音快速突破/08第二章（5）辅音.mp3","statements":[{"english":"аффриката","chinese":"塞擦音","soundmark":"a-free-ka-ta"},{"english":"щелевой","chinese":"擦音","soundmark":"shche-le-voy"}]},
+    {"id":"rph-09","order":9,"title":"辅音（6）","description":"辅音发音进阶。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语语音快速突破/09第二章（6）辅音.mp3","statements":[{"english":"смычный","chinese":"闭塞音","soundmark":"smyech-ny"},{"english":"дрожащий","chinese":"颤音","soundmark":"dra-zha-shchee"}]},
+    {"id":"rph-10","order":10,"title":"辅音（7）","description":"辅音发音进阶。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语语音快速突破/10第二章（7）辅音.mp3","statements":[{"english":"носовой","chinese":"鼻音","soundmark":"na-sa-voy"},{"english":"боковой","chinese":"边音","soundmark":"ba-ka-voy"}]},
+    {"id":"rph-11","order":11,"title":"辅音（8）","description":"辅音发音进阶。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语语音快速突破/11第二章（8）辅音.mp3","statements":[{"english":"стечение согласных","chinese":"辅音连缀","soundmark":"ste-che-nee-ye sag-las-nykh"},{"english":"ассимиляция","chinese":"同化","soundmark":"a-see-mee-lya-tsi-ya"}]},
+    {"id":"rph-12","order":12,"title":"辅音（9）","description":"辅音发音进阶。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语语音快速突破/12第二章（9）辅音.mp3","statements":[{"english":"оглушение","chinese":"清化","soundmark":"a-gloo-she-nee-ye"},{"english":"озвончение","chinese":"浊化","soundmark":"a-zvon-che-nee-ye"}]},
+    {"id":"rph-13","order":13,"title":"辅音（10）","description":"辅音发音进阶。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语语音快速突破/13第二章（10）辅音.mp3","statements":[{"english":"редукция","chinese":"弱化","soundmark":"re-doock-tsi-ya"},{"english":"акцент","chinese":"重音","soundmark":"ak-tsent"}]},
+    {"id":"rph-14","order":14,"title":"辅音（11）","description":"辅音发音进阶。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语语音快速突破/14第二章（11）辅音.mp3","statements":[{"english":"интонация","chinese":"语调","soundmark":"een-ta-na-tsi-ya"},{"english":"повышение","chinese":"上升","soundmark":"pa-vy-she-nee-ye"}]},
+    {"id":"rph-15","order":15,"title":"辅音（12）","description":"辅音发音进阶。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语语音快速突破/15第二章（12）辅音.mp3","statements":[{"english":"понижение","chinese":"下降","soundmark":"pa-nee-zhe-nee-ye"},{"english":"пауза","chinese":"停顿","soundmark":"pa-oo-za"}]},
+    {"id":"rph-16","order":16,"title":"辅音（13）","description":"辅音发音进阶。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语语音快速突破/16第二章（13）辅音.mp3","statements":[{"english":"ритмика","chinese":"节奏","soundmark":"reet-mee-ka"},{"english":"мелодика","chinese":"旋律","soundmark":"me-la-dee-ka"}]},
+    {"id":"rph-17","order":17,"title":"第二章（三）","description":"语音综合练习。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语语音快速突破/17第二章（三）.mp3","statements":[{"english":"тренировка","chinese":"训练","soundmark":"tre-nee-rov-ka"},{"english":"упражнение","chinese":"练习","soundmark":"oop-razh-ne-nee-ye"}]},
+    {"id":"rph-18","order":18,"title":"第二章（四）","description":"语音综合练习。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语语音快速突破/18第二章（四）.mp3","statements":[{"english":"повторение","chinese":"复习","soundmark":"pav-ta-re-nee-ye"},{"english":"закрепление","chinese":"巩固","soundmark":"za-krep-le-nee-ye"}]},
+    {"id":"rph-19","order":19,"title":"第三章","description":"语音综合总结。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语语音快速突破/19第三章.mp3","statements":[{"english":"итог","chinese":"总结","soundmark":"ee-tok"},{"english":"контроль","chinese":"检查","soundmark":"kant-rol"}]}
+  ]
+}

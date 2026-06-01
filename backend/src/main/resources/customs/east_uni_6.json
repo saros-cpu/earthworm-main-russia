@@ -1,0 +1,159 @@
+{
+  "id": "east-uni-6",
+  "title": "大学俄语(东方) · 第6册",
+  "description": "大学俄语(东方)第六册。深入学习假定式、命令式、不定代词与不定副词，以及俄语成语性谓语和插入结构。",
+  "cover": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "eu6-01", "order": 1, "title": "第1课 假定式（Сослагательное наклонение）",
+      "statements": [
+        { "english": "Если бы у меня были деньги, я бы купил эту машину.", "chinese": "如果我有钱，我就买这辆车了。", "soundmark": "ye-sle by oo mee-nya by-lee den-gee ya by koo-peel e-too ma-shee-noo" },
+        { "english": "Я бы поехал в Москву, если бы было время.", "chinese": "如果有时间，我就去莫斯科了。", "soundmark": "ya by pa-ye-khal v maz-kvoo ye-sle by by-la vre-mya" },
+        { "english": "Без твоей помощи я бы не справился.", "chinese": "没有你的帮助，我本来是应付不了的。", "soundmark": "byez tva-yey po-mash-chee ya by ne spra-veel-sya" },
+        { "english": "Он мог бы стать великим учёным.", "chinese": "他本来可以成为伟大的科学家。", "soundmark": "on mok by stat ve-lee-keem oo-chyo-nym" },
+        { "english": "Я хотел бы выучить русский язык в совершенстве.", "chinese": "我想把俄语学得很完美。", "soundmark": "ya kha-tel by vy-oo-cheet ross-kiy ya-zyk f sa-ver-shen-stve" },
+        { "english": "Мы бы с удовольствием посетили этот музей.", "chinese": "我们很乐意参观这个博物馆。", "soundmark": "my by s oo-da-vol-stve-yem pa-se-tee-lee e-tat moo-zyey" },
+        { "english": "Ты бы лучше отдохнул.", "chinese": "你最好休息一下。", "soundmark": "ty by looch-she ad-dahn-nool" },
+        { "english": "На вашем месте я бы согласился.", "chinese": "如果我是您，我会同意的。", "soundmark": "na va-shem myes-tye ya by sag-la-seel-sya" },
+        { "english": "Я бы никогда не подумал, что это возможно.", "chinese": "我本来永远不会想到这是可能的。", "soundmark": "ya by nee-kag-da ne poo-do-mal shto e-ta va-mozh-na" },
+        { "english": "Хорошо бы сейчас оказаться на море.", "chinese": "现在要是在海边就好了。", "soundmark": "kha-ra-sho by sey-chas a-ka-zat-sya na mo-re" }
+      ]
+    },
+    {
+      "id": "eu6-02", "order": 2, "title": "第2课 命令式（Повелительное наклонение）",
+      "statements": [
+        { "english": "Скажите, пожалуйста, как пройти к музею?", "chinese": "请问，去博物馆怎么走？", "soundmark": "ska-zhee-tye pa-zhal-sta kak proy-tee k moo-zye-yu" },
+        { "english": "Читайте внимательно!", "chinese": "请仔细阅读！", "soundmark": "chee-tay-tye vnee-ma-tel-na" },
+        { "english": "Не опаздывай на занятия!", "chinese": "上课别迟到！", "soundmark": "ne a-paz-dy-vai na za-nya-tee-ya" },
+        { "english": "Приходите к нам в гости!", "chinese": "来我们家做客吧！", "soundmark": "pree-kha-dee-tye k nam v go-stee" },
+        { "english": "Давайте познакомимся!", "chinese": "让我们认识一下吧！", "soundmark": "da-vay-tye paz-na-ko-meem-sya" },
+        { "english": "Пусть он подождёт.", "chinese": "让他等一会儿吧。", "soundmark": "poost on pa-da-zhdyot" },
+        { "english": "Встаньте, когда входит преподаватель.", "chinese": "当老师进来时请起立。", "soundmark": "fstan-tye kag-da vkho-deet pre-pa-da-va-tyel" },
+        { "english": "Никогда не сдавайся!", "chinese": "永远不要放弃！", "soundmark": "nee-kag-da ne sda-vay-sya" },
+        { "english": "Сделай это прямо сейчас!", "chinese": "现在就做！", "soundmark": "sdye-lay e-ta prya-ma sey-chas" },
+        { "english": "Не курить в помещении!", "chinese": "室内禁止吸烟！", "soundmark": "ne koo-reet v pa-me-shche-nee-ee" }
+      ]
+    },
+    {
+      "id": "eu6-03", "order": 3, "title": "第3课 不定代词与不定副词",
+      "statements": [
+        { "english": "Кто-то постучал в дверь.", "chinese": "有人敲门。", "soundmark": "kto-ta pas-too-chal v dvyer" },
+        { "english": "Что-то лежит на столе.", "chinese": "桌上放着什么东西。", "soundmark": "shto-ta le-zeet na sta-lye" },
+        { "english": "Где-то я уже видел этого человека.", "chinese": "我似乎在哪儿见过这个人。", "soundmark": "gdye-ya ya oo-zhe vee-del e-ta-va che-la-vye-ka" },
+        { "english": "Кое-кто из студентов не сдал экзамен.", "chinese": "有些学生没有通过考试。", "soundmark": "ko-ye-kto eez stoo-dyen-tav ne sdal ek-za-men" },
+        { "english": "Он куда-то ушёл.", "chinese": "他去哪儿了。", "soundmark": "on koo-da-ta oo-shyol" },
+        { "english": "Когда-нибудь я побываю в России.", "chinese": "总有一天我会去俄罗斯。", "soundmark": "kag-da-nee-boot ya pa-by-va-yu v ras-see-ee" },
+        { "english": "Кто бы то ни было, не открывайте дверь.", "chinese": "无论谁敲门，都不要开门。", "soundmark": "kto by to ne by-la ne at-kry-vay-tye dvyer" },
+        { "english": "Расскажи мне что-нибудь интересное.", "chinese": "给我讲点有趣的事情。", "soundmark": "ras-ska-zhee mnye shto-nee-bood een-te-res-na-ye" },
+        { "english": "Некого спросить по этому вопросу.", "chinese": "这个问题没人可问。", "soundmark": "nye-ka-va spra-seet pa e-ta-mu vap-ro-soo" },
+        { "english": "Мне нечем писать.", "chinese": "我没有东西可以写。", "soundmark": "mnye ne-chem pee-sat" }
+      ]
+    },
+    {
+      "id": "eu6-04", "order": 4, "title": "第4课 插入语与插入句",
+      "statements": [
+        { "english": "Во-первых, я хочу вас поблагодарить.", "chinese": "首先，我想感谢您。", "soundmark": "va-pyer-vykh ya kha-choo vas pa-bla-go-da-reet" },
+        { "english": "По-моему, это неправильное решение.", "chinese": "在我看来，这是错误的决定。", "soundmark": "pa-mo-ye-mu e-ta ne-pra-veel-na-ye re-she-nee-ye" },
+        { "english": "К счастью, всё закончилось хорошо.", "chinese": "幸运的是，一切顺利结束了。", "soundmark": "k shchas-tyu vsyo za-kon-chee-los kha-ra-sho" },
+        { "english": "К сожалению, я не могу прийти.", "chinese": "遗憾的是，我不能来。", "soundmark": "k sa-zha-le-nee-yu ya ne ma-goo pree-tee" },
+        { "english": "Наверное, завтра будет дождь.", "chinese": "大概明天会下雨。", "soundmark": "na-ver-na-ye zav-tra bu-det dozhd" },
+        { "english": "Во-вторых, нам нужно обсудить бюджет.", "chinese": "其次，我们需要讨论预算。", "soundmark": "va fto-rykh nam noo-zhna ap-soo-deet byud-zhet" },
+        { "english": "Честно говоря, я устал.", "chinese": "老实说，我累了。", "soundmark": "ches-na ga-vo-rya ya oo-stal" },
+        { "english": "С одной стороны, это выгодно. С другой стороны, рискованно.", "chinese": "一方面这有利，另一方面有风险。", "soundmark": "s ad-noy sta-ro-ny e-ta vy-gad-na s droo-goy sta-ro-ny rees-ko-van-na" },
+        { "english": "Безусловно, он прав.", "chinese": "毫无疑问，他是对的。", "soundmark": "be-zoos-lov-na on praf" },
+        { "english": "Может быть, мы встретимся в субботу.", "chinese": "也许我们周六见。", "soundmark": "mo-zhet byt my fstre-teem-sya f soo-bo-too" }
+      ]
+    },
+    {
+      "id": "eu6-05", "order": 5, "title": "第5课 成语性谓语与固定表达",
+      "statements": [
+        { "english": "Он мастер рассказывать истории.", "chinese": "他讲故事很在行。", "soundmark": "on mas-ter ras-ska-zy-vat ee-sto-ree-ee" },
+        { "english": "Она была душа компании.", "chinese": "她是聚会的灵魂人物。", "soundmark": "a-na by-la doo-sha kam-pa-nee-ee" },
+        { "english": "Это дело чести для меня.", "chinese": "这对我来说是关乎荣誉的事。", "soundmark": "e-ta dye-la ches-tee dlya mee-nya" },
+        { "english": "Он не промах — всё знает.", "chinese": "他可不是省油的灯——什么都知道。", "soundmark": "on ne pro-makh vsyo zna-yet" },
+        { "english": "У него золотые руки.", "chinese": "他有一双巧手。", "soundmark": "oo ne-vo za-lo-ty-ye roo-kee" },
+        { "english": "Она — загадка для всех.", "chinese": "她对所有人来说都是一个谜。", "soundmark": "a-na za-gat-ka dlya vsyekh" },
+        { "english": "Собака — друг человека.", "chinese": "狗是人类的朋友。", "soundmark": "sa-ba-ka drook che-la-vye-ka" },
+        { "english": "Москва — сердце России.", "chinese": "莫斯科是俄罗斯的心脏。", "soundmark": "maz-kva syer-tse ras-see-ee" },
+        { "english": "Он был душой нашего коллектива.", "chinese": "他曾是我们集体的灵魂。", "soundmark": "on byl doo-shoy na-she-va ka-lek-tee-va" },
+        { "english": "Книга — источник знаний.", "chinese": "书是知识的源泉。", "soundmark": "knee-ga ees-toch-neek zna-ny" }
+      ]
+    },
+    {
+      "id": "eu6-06", "order": 6, "title": "第6课 运动动词前缀（Приставочные глаголы движения）",
+      "statements": [
+        { "english": "Я подошёл к остановке.", "chinese": "我走近了车站。", "soundmark": "ya pa-da-shyol k a-sta-nov-kye" },
+        { "english": "Он вышел из дома в 8 утра.", "chinese": "他早上8点从家里出来。", "soundmark": "on vy-shel eez do-ma v vo-sem oot-ra" },
+        { "english": "Мы доехали до центра города.", "chinese": "我们到了市中心。", "soundmark": "my da-ye-kha-lee da tsen-tra go-ro-da" },
+        { "english": "Автобус отъехал от остановки.", "chinese": "公交车驶离了车站。", "soundmark": "af-to-boos a-tye-khal at a-sta-nov-kee" },
+        { "english": "Они перешли дорогу.", "chinese": "他们穿过了马路。", "soundmark": "a-nee pe-re-shlee da-ro-goo" },
+        { "english": "Я приехал в университет на такси.", "chinese": "我打车到了大学。", "soundmark": "ya pree-ye-khal v oo-nee-ver-see-tet na tak-see" },
+        { "english": "Она вошла в аудиторию.", "chinese": "她走进了教室。", "soundmark": "a-na va-shla v a-oo-dee-to-ree-yu" },
+        { "english": "Мы уехали из города в субботу.", "chinese": "我们周六离开了城市。", "soundmark": "my oo-ye-kha-lee eez go-ro-da f soo-bo-too" },
+        { "english": "Он зашёл за мной в 7 часов.", "chinese": "他7点来叫我/找我。", "soundmark": "on za-shyol za mnoy v sem cha-sov" },
+        { "english": "Туристы обошли весь центр пешком.", "chinese": "游客们步行逛遍了整个中心区域。", "soundmark": "too-rees-ty a-bash-lee veys tsen-trom pyesh-kom" }
+      ]
+    },
+    {
+      "id": "eu6-07", "order": 7, "title": "第7课 数词+名词结构的格变化",
+      "statements": [
+        { "english": "Два студента сдали экзамен на пятёрку.", "chinese": "两个学生考了五分。", "soundmark": "dva stoo-dyen-ta sda-lee ek-za-men na pyo-tyor-koo" },
+        { "english": "Три книги лежат на столе.", "chinese": "三本书在桌子上。", "soundmark": "tree knee-gee le-zhat na sta-lye" },
+        { "english": "Пять студентов участвуют в конкурсе.", "chinese": "五个学生参加了比赛。", "soundmark": "pyat stoo-dyen-tav oo-cha-stvu-yut f kon-koor-se" },
+        { "english": "Около десяти человек пришли на встречу.", "chinese": "大约十个人来参加了会议。", "soundmark": "o-ka-la dye-sya-tee che-la-vyek pree-shlee na fstre-choo" },
+        { "english": "Более ста человек посетили выставку.", "chinese": "超过一百人参观了展览。", "soundmark": "bo-lye-ye sta che-la-vyek pa-se-tee-lee vy-staf-koo" },
+        { "english": "С двумя друзьями я пошёл в кино.", "chinese": "我和两个朋友去了电影院。", "soundmark": "s dva-mee droo-zya-mee ya pa-shyol v kee-no" },
+        { "english": "Он занимается с тремя студентами.", "chinese": "他和三个学生在学习。", "soundmark": "on za-nee-ma-yet-sya s tre-mya stoo-dyen-ta-mee" },
+        { "english": "О пяти фильмах мы уже говорили.", "chinese": "关于五部电影我们已经谈过了。", "soundmark": "a pya-tee feel-makh my oo-zhe ga-vo-ree-lee" },
+        { "english": "Тысячи людей вышли на улицы.", "chinese": "成千上万的人走上街头。", "soundmark": "ty-sya-chee lyu-dey vy-shlee na oo-lee-tsy" },
+        { "english": "Он прочитал уже сто страниц.", "chinese": "他已经读了一百页了。", "soundmark": "on pra-chee-tal oo-zhe sto stra-neets" }
+      ]
+    },
+    {
+      "id": "eu6-08", "order": 8, "title": "第8课 直接引语与间接引语",
+      "statements": [
+        { "english": "Она сказала: \"Я приду завтра.\"", "chinese": "她说：\"我明天来。\"", "soundmark": "a-na ska-za-la ya pree-doo zav-tra" },
+        { "english": "Он спросил: \"Ты был в Москве?\"", "chinese": "他问：\"你去过莫斯科吗？\"", "soundmark": "on spra-seel ty byl v maz-kvye" },
+        { "english": "Она сказала, что придёт завтра.", "chinese": "她说她明天来（间接引语）", "soundmark": "a-na ska-za-la shto pree-dyot zav-tra" },
+        { "english": "Он спросил, был ли я в Москве.", "chinese": "他问我去没去过莫斯科（间接疑问）", "soundmark": "on spra-seel byl lee ya v maz-kvye" },
+        { "english": "Учитель сказал: \"Откройте учебники на 10-й странице.\"", "chinese": "老师说：\"请翻到教材第10页。\"", "soundmark": "oo-chee-tel ska-zal at-kroy-tye oo-cheb-nee-kee na dye-sya-tay stra-nee-tse" },
+        { "english": "Учитель велел открыть учебники на 10-й странице.", "chinese": "老师让翻到教材第10页（间接引语）", "soundmark": "oo-chee-tel ve-lyel at-kryt oo-cheb-nee-kee na dye-sya-tay stra-nee-tse" },
+        { "english": "Мама спросила: \"Ты поел?\"", "chinese": "妈妈问：\"你吃过了吗？\"", "soundmark": "ma-ma spra-see-la ty pa-yel" },
+        { "english": "Мама спросила, поел ли я.", "chinese": "妈妈问我吃没吃过（间接引语）", "soundmark": "ma-ma spra-see-la pa-yel lee ya" },
+        { "english": "Он ответил: \"Я не знаю.\"", "chinese": "他回答：\"我不知道。\"", "soundmark": "on at-ve-teel ya ne zna-yu" },
+        { "english": "Он ответил, что не знает.", "chinese": "他回答说不知道（间接引语）", "soundmark": "on at-ve-teel shto ne zna-yet" }
+      ]
+    },
+    {
+      "id": "eu6-09", "order": 9, "title": "第9课 短文分析与讨论（Текст и обсуждение）",
+      "statements": [
+        { "english": "Прочитайте текст и ответьте на вопросы.", "chinese": "请阅读课文并回答问题。", "soundmark": "pra-chee-tay-tye tekst i at-vyet-tye na vap-ro-sy" },
+        { "english": "Какова основная идея этого текста?", "chinese": "这篇文章的主要思想是什么？", "soundmark": "ka-ko-va as-nav-na-ya ee-day-ya e-ta-va tek-sta" },
+        { "english": "Выразите своё мнение по этой проблеме.", "chinese": "请就这个问题表达自己的意见。", "soundmark": "vy-ra-zee-tye sva-yo mne-nee-ye pa e-tay prab-lye-mye" },
+        { "english": "Согласны ли вы с автором?", "chinese": "您是否同意作者的观点？", "soundmark": "sag-las-ny lee vy s af-to-rom" },
+        { "english": "Приведите примеры из текста.", "chinese": "请从文中举例。", "soundmark": "pree-ve-dee-tye pree-mye-ry ees tek-sta" },
+        { "english": "Объясните значение выделенных слов.", "chinese": "请解释标出单词的含义。", "soundmark": "ab-yas-nee-tye zna-che-nee-ye vy-de-lyen-nykh slov" },
+        { "english": "Составьте план текста.", "chinese": "请编写课文提纲。", "soundmark": "sa-staf-tye plan tek-sta" },
+        { "english": "Перескажите текст своими словами.", "chinese": "请用自己的话转述课文。", "soundmark": "pe-ree-ska-zhee-tye tekst sva-ee-mee sla-va-mee" },
+        { "english": "Обсудите этот вопрос в парах.", "chinese": "请两人一组讨论这个问题。", "soundmark": "ab-soo-dee-tye e-tat vap-ros f pa-rakh" },
+        { "english": "Напишите краткое изложение текста.", "chinese": "请写一篇课文摘要。", "soundmark": "na-pee-shee-tye krat-ka-ye eez-la-zhe-nee-ye tek-sta" }
+      ]
+    },
+    {
+      "id": "eu6-10", "order": 10, "title": "第10课 综合复习（Комплексное повторение）",
+      "statements": [
+        { "english": "Шестой курс был очень насыщенным.", "chinese": "第六册的课程非常充实。", "soundmark": "shes-toy kors byl o-chen na-sy-shchen-nym" },
+        { "english": "Я научился использовать сослагательное наклонение.", "chinese": "我学会了使用假定式。", "soundmark": "ya na-oo-cheel-sya ees-pol-zo-vat sa-sla-ga-tel-na-ye na-kla-ne-nee-ye" },
+        { "english": "Повелительное наклонение — важная часть общения.", "chinese": "命令式是交流的重要部分。", "soundmark": "pa-ve-lee-tel-na-ye na-kla-ne-nee-ye vazh-na-ya chast ap-shche-nee-ya" },
+        { "english": "Нужно уметь правильно оформлять прямую и косвенную речь.", "chinese": "需要能正确地表达直接和间接引语。", "soundmark": "noo-zhna oo-met pra-veel-na a-form-lyat prya-moo-yu ee kaz-ven-noo-yu rech" },
+        { "english": "Приставочные глаголы движения требуют запоминания.", "chinese": "带前缀的运动动词需要记忆。", "soundmark": "pree-sta-voch-ny-ye gla-go-ly dvee-zhe-nee-ya tre-bu-yut za-pa-mee-na-nee-ya" },
+        { "english": "В русском языке много нюансов.", "chinese": "俄语中有很多细微之处。", "soundmark": "v ross-kom ya-zy-ke mno-ga nyu-an-saf" },
+        { "english": "Я стал более уверенно говорить по-русски.", "chinese": "我说俄语变得更自信了。", "soundmark": "ya stal bo-lye-ye oo-ve-ren-na ga-vo-reet pa-rooss-kee" },
+        { "english": "Учебник помог систематизировать знания.", "chinese": "教材帮助系统化了知识。", "soundmark": "oocheb-neek pa-mok sees-te-ma-tee-zy-ro-vat zna-nee-ya" },
+        { "english": "Важно много читать и слушать.", "chinese": "重要的是多读多听。", "soundmark": "vazh-na mno-ga chee-tat ee sloo-shat" },
+        { "english": "До встречи на следующем курсе!", "chinese": "下一册再见！", "soundmark": "da fstre-chee na slye-du-yu-shchem koor-se" }
+      ]
+    }
+  ]
+}

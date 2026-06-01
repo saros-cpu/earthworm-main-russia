@@ -1,0 +1,249 @@
+{
+  "id": "ru-zero-basic",
+  "title": "俄语零基础入门 · 字母与日常用语",
+  "description": "从俄语字母表、发音到最基础的日常用词和简短对话，适合绝对零基础的学习者。",
+  "cover": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ruzb-01",
+      "order": 1,
+      "title": "俄语字母表 Аа–Кк",
+      "description": "学习前 12 个俄语字母的书写和发音。",
+      "statements": [
+        { "english": "Аа — а", "chinese": "字母 Аа 读作 /a/，类似汉语「啊」", "soundmark": "a" },
+        { "english": "Бб — бэ", "chinese": "字母 Бб 读作 /b/，类似英语 b", "soundmark": "beh" },
+        { "english": "Вв — вэ", "chinese": "字母 Вв 读作 /v/，类似英语 v", "soundmark": "veh" },
+        { "english": "Гг — гэ", "chinese": "字母 Гг 读作 /ɡ/，类似英语 g", "soundmark": "geh" },
+        { "english": "Дд — дэ", "chinese": "字母 Дд 读作 /d/，类似英语 d", "soundmark": "deh" },
+        { "english": "Ее — е", "chinese": "字母 Ее 读作 /je/，类似 ye", "soundmark": "ye" },
+        { "english": "Ёё — ё", "chinese": "字母 Ёё 读作 /jo/，类似 yo", "soundmark": "yo" },
+        { "english": "Жж — жэ", "chinese": "字母 Жж 读作 /ʐ/，类似汉语「日」", "soundmark": "zheh" },
+        { "english": "Зз — зэ", "chinese": "字母 Зз 读作 /z/，类似英语 z", "soundmark": "zeh" },
+        { "english": "Ии — и", "chinese": "字母 Ии 读作 /i/，类似汉语「一」", "soundmark": "ee" },
+        { "english": "Йй — и краткое", "chinese": "字母 Йй 读作 /j/，类似英语 y", "soundmark": "ee kratkoye" },
+        { "english": "Кк — ка", "chinese": "字母 Кк 读作 /k/，类似英语 k", "soundmark": "kah" }
+      ]
+    },
+    {
+      "id": "ruzb-02",
+      "order": 2,
+      "title": "俄语字母表 Лл–Фф",
+      "description": "学习第 13–22 个俄语字母。",
+      "statements": [
+        { "english": "Лл — эль", "chinese": "字母 Лл 读作 /l/，类似英语 l", "soundmark": "el" },
+        { "english": "Мм — эм", "chinese": "字母 Мм 读作 /m/，类似英语 m", "soundmark": "em" },
+        { "english": "Нн — эн", "chinese": "字母 Нн 读作 /n/，类似英语 n", "soundmark": "en" },
+        { "english": "Оо — о", "chinese": "字母 Оо 读作 /o/，类似汉语「哦」", "soundmark": "o" },
+        { "english": "Пп — пэ", "chinese": "字母 Пп 读作 /p/，类似英语 p", "soundmark": "peh" },
+        { "english": "Рр — эр", "chinese": "字母 Рр 读作 /r/，颤音 r", "soundmark": "er" },
+        { "english": "Сс — эс", "chinese": "字母 Сс 读作 /s/，类似英语 s", "soundmark": "es" },
+        { "english": "Тт — тэ", "chinese": "字母 Тт 读作 /t/，类似英语 t", "soundmark": "teh" },
+        { "english": "Уу — у", "chinese": "字母 Уу 读作 /u/，类似汉语「乌」", "soundmark": "oo" },
+        { "english": "Фф — эф", "chinese": "字母 Фф 读作 /f/，类似英语 f", "soundmark": "ef" }
+      ]
+    },
+    {
+      "id": "ruzb-03",
+      "order": 3,
+      "title": "俄语字母表 Хх–Яя",
+      "description": "学习最后 11 个俄语字母。",
+      "statements": [
+        { "english": "Хх — ха", "chinese": "字母 Хх 读作 /x/，类似汉语「哈」", "soundmark": "khah" },
+        { "english": "Цц — цэ", "chinese": "字母 Цц 读作 /ts/，类似汉语「次」", "soundmark": "tseh" },
+        { "english": "Чч — че", "chinese": "字母 Чч 读作 /tɕ/，类似汉语「七」", "soundmark": "cheh" },
+        { "english": "Шш — ша", "chinese": "字母 Шш 读作 /ʂ/，类似汉语「沙」", "soundmark": "shah" },
+        { "english": "Щщ — ща", "chinese": "字母 Щщ 读作 /ɕː/，类似汉语「夏」", "soundmark": "shchah" },
+        { "english": "Ъъ — твёрдый знак", "chinese": "硬音符号，不发音，起分隔作用", "soundmark": "tvyordiy znak" },
+        { "english": "Ыы — ы", "chinese": "字母 Ыы 读作 /ɨ/，汉语无此音", "soundmark": "y" },
+        { "english": "Ьь — мягкий знак", "chinese": "软音符号，不发音，使前面辅音软化", "soundmark": "myagkiy znak" },
+        { "english": "Ээ — э", "chinese": "字母 Ээ 读作 /ɛ/，类似英语 e", "soundmark": "eh" },
+        { "english": "Юю — ю", "chinese": "字母 Юю 读作 /ju/，类似英语 you", "soundmark": "yoo" },
+        { "english": "Яя — я", "chinese": "字母 Яя 读作 /ja/，类似英语 ya", "soundmark": "yah" }
+      ]
+    },
+    {
+      "id": "ruzb-04",
+      "order": 4,
+      "title": "基本问候语",
+      "description": "学习俄语中最常用的问候和告别用语。",
+      "statements": [
+        { "english": "Здравствуйте!", "chinese": "您好！（正式/多人）", "soundmark": "zdra-stvooy-tyeh" },
+        { "english": "Привет!", "chinese": "你好！（非正式）", "soundmark": "pree-vyet" },
+        { "english": "Доброе утро!", "chinese": "早上好！", "soundmark": "dob-ra-ye oo-tra" },
+        { "english": "Добрый день!", "chinese": "下午好！", "soundmark": "dob-ry den" },
+        { "english": "Добрый вечер!", "chinese": "晚上好！", "soundmark": "dob-ry vye-cher" },
+        { "english": "До свидания!", "chinese": "再见！（正式）", "soundmark": "da svee-da-nee-ya" },
+        { "english": "Пока!", "chinese": "拜拜！（非正式）", "soundmark": "pa-kah" },
+        { "english": "Как дела?", "chinese": "你好吗？", "soundmark": "kak dee-la" },
+        { "english": "Хорошо, спасибо.", "chinese": "很好，谢谢。", "soundmark": "kha-ra-sho, spa-see-ba" },
+        { "english": "Спасибо!", "chinese": "谢谢！", "soundmark": "spa-see-ba" },
+        { "english": "Пожалуйста.", "chinese": "请 / 不客气。", "soundmark": "pa-zhal-sta" }
+      ]
+    },
+    {
+      "id": "ruzb-05",
+      "order": 5,
+      "title": "数字 1–20",
+      "description": "学习俄语数字 1 到 20 的读写。",
+      "statements": [
+        { "english": "один", "chinese": "一", "soundmark": "a-deen" },
+        { "english": "два", "chinese": "二", "soundmark": "dva" },
+        { "english": "три", "chinese": "三", "soundmark": "tree" },
+        { "english": "четыре", "chinese": "四", "soundmark": "chee-ty-reh" },
+        { "english": "пять", "chinese": "五", "soundmark": "pyat" },
+        { "english": "шесть", "chinese": "六", "soundmark": "shest" },
+        { "english": "семь", "chinese": "七", "soundmark": "syem" },
+        { "english": "восемь", "chinese": "八", "soundmark": "vo-syem" },
+        { "english": "девять", "chinese": "九", "soundmark": "dye-vyat" },
+        { "english": "десять", "chinese": "十", "soundmark": "dye-syat" },
+        { "english": "одиннадцать", "chinese": "十一", "soundmark": "a-dee-nat-sat" },
+        { "english": "двенадцать", "chinese": "十二", "soundmark": "dve-nat-sat" },
+        { "english": "тринадцать", "chinese": "十三", "soundmark": "tree-nat-sat" },
+        { "english": "четырнадцать", "chinese": "十四", "soundmark": "chee-tyr-nat-sat" },
+        { "english": "пятнадцать", "chinese": "十五", "soundmark": "pyat-nat-sat" },
+        { "english": "шестнадцать", "chinese": "十六", "soundmark": "shes-nat-sat" },
+        { "english": "семнадцать", "chinese": "十七", "soundmark": "syem-nat-sat" },
+        { "english": "восемнадцать", "chinese": "十八", "soundmark": "va-syem-nat-sat" },
+        { "english": "девятнадцать", "chinese": "十九", "soundmark": "dee-vyat-nat-sat" },
+        { "english": "двадцать", "chinese": "二十", "soundmark": "dva-tsat" }
+      ]
+    },
+    {
+      "id": "ruzb-06",
+      "order": 6,
+      "title": "颜色",
+      "description": "学习俄语中常见颜色的名称。",
+      "statements": [
+        { "english": "красный", "chinese": "红色的", "soundmark": "kras-ny" },
+        { "english": "синий", "chinese": "蓝色的", "soundmark": "see-ny" },
+        { "english": "зелёный", "chinese": "绿色的", "soundmark": "zee-lyo-ny" },
+        { "english": "жёлтый", "chinese": "黄色的", "soundmark": "zyol-ty" },
+        { "english": "белый", "chinese": "白色的", "soundmark": "bye-ly" },
+        { "english": "чёрный", "chinese": "黑色的", "soundmark": "ch-yor-ny" },
+        { "english": "коричневый", "chinese": "棕色的", "soundmark": "ka-reech-ne-vy" },
+        { "english": "серый", "chinese": "灰色的", "soundmark": "sye-ry" },
+        { "english": "фиолетовый", "chinese": "紫色的", "soundmark": "fee-a-lye-ta-vy" },
+        { "english": "розовый", "chinese": "粉色的", "soundmark": "ro-za-vy" },
+        { "english": "оранжевый", "chinese": "橙色的", "soundmark": "a-ran-zhe-vy" },
+        { "english": "голубой", "chinese": "天蓝色的", "soundmark": "ga-loo-boy" }
+      ]
+    },
+    {
+      "id": "ruzb-07",
+      "order": 7,
+      "title": "家庭成员",
+      "description": "学习俄语中家庭成员的称呼。",
+      "statements": [
+        { "english": "мама", "chinese": "妈妈", "soundmark": "ma-ma" },
+        { "english": "папа", "chinese": "爸爸", "soundmark": "pa-pa" },
+        { "english": "брат", "chinese": "兄弟", "soundmark": "brat" },
+        { "english": "сестра", "chinese": "姐妹", "soundmark": "se-stra" },
+        { "english": "дедушка", "chinese": "爷爷 / 外公", "soundmark": "dye-doosh-ka" },
+        { "english": "бабушка", "chinese": "奶奶 / 外婆", "soundmark": "ba-boosh-ka" },
+        { "english": "сын", "chinese": "儿子", "soundmark": "syn" },
+        { "english": "дочь", "chinese": "女儿", "soundmark": "doch" },
+        { "english": "муж", "chinese": "丈夫", "soundmark": "moozh" },
+        { "english": "жена", "chinese": "妻子", "soundmark": "zhe-na" },
+        { "english": "дядя", "chinese": "叔叔 / 舅舅", "soundmark": "dya-dya" },
+        { "english": "тётя", "chinese": "阿姨 / 姑姑", "soundmark": "tyo-tya" }
+      ]
+    },
+    {
+      "id": "ruzb-08",
+      "order": 8,
+      "title": "自我介绍",
+      "description": "学习用俄语做简单的自我介绍。",
+      "statements": [
+        { "english": "Меня зовут Анна.", "chinese": "我叫安娜。", "soundmark": "mee-nya za-voot an-na" },
+        { "english": "Я из Китая.", "chinese": "我来自中国。", "soundmark": "ya eez kee-ta-ya" },
+        { "english": "Я студент.", "chinese": "我是学生。", "soundmark": "ya stoo-dyent" },
+        { "english": "Я учу русский язык.", "chinese": "我学俄语。", "soundmark": "ya oo-choo rooss-kee ya-zyk" },
+        { "english": "Мне 20 лет.", "chinese": "我二十岁。", "soundmark": "mnye dvad-tsat lyet" },
+        { "english": "Я живу в Пекине.", "chinese": "我住在北京。", "soundmark": "ya zhee-voo v pee-kee-nye" },
+        { "english": "Очень приятно познакомиться!", "chinese": "很高兴认识你！", "soundmark": "o-chen pree-yat-na paz-na-kom-eet-sya" },
+        { "english": "Как тебя зовут?", "chinese": "你叫什么名字？", "soundmark": "kak tee-bya za-voot" }
+      ]
+    },
+    {
+      "id": "ruzb-09",
+      "order": 9,
+      "title": "常用动词",
+      "description": "学习俄语中最常用的基础动词。",
+      "statements": [
+        { "english": "быть (есть)", "chinese": "是 / 在", "soundmark": "byt (yest)" },
+        { "english": "делать", "chinese": "做", "soundmark": "dye-lat" },
+        { "english": "говорить", "chinese": "说", "soundmark": "ga-va-reet" },
+        { "english": "читать", "chinese": "读 / 阅读", "soundmark": "chee-tat" },
+        { "english": "писать", "chinese": "写", "soundmark": "pee-sat" },
+        { "english": "слушать", "chinese": "听", "soundmark": "sloo-shat" },
+        { "english": "смотреть", "chinese": "看", "soundmark": "sma-tryet" },
+        { "english": "понимать", "chinese": "理解 / 懂", "soundmark": "pa-nee-mat" },
+        { "english": "знать", "chinese": "知道", "soundmark": "znat" },
+        { "english": "хотеть", "chinese": "想要", "soundmark": "kha-tyet" },
+        { "english": "мочь", "chinese": "能够", "soundmark": "moch" },
+        { "english": "идти", "chinese": "走 / 去", "soundmark": "eet-tee" }
+      ]
+    },
+    {
+      "id": "ruzb-10",
+      "order": 10,
+      "title": "常用形容词",
+      "description": "学习俄语中最常用的基础形容词。",
+      "statements": [
+        { "english": "хороший", "chinese": "好的", "soundmark": "kha-ro-shiy" },
+        { "english": "плохой", "chinese": "坏的", "soundmark": "pla-khoy" },
+        { "english": "большой", "chinese": "大的", "soundmark": "bal-shoy" },
+        { "english": "маленький", "chinese": "小的", "soundmark": "ma-lyen-kiy" },
+        { "english": "новый", "chinese": "新的", "soundmark": "no-vy" },
+        { "english": "старый", "chinese": "旧的 / 老的", "soundmark": "sta-ry" },
+        { "english": "красивый", "chinese": "漂亮的", "soundmark": "kra-see-vy" },
+        { "english": "умный", "chinese": "聪明的", "soundmark": "oom-ny" },
+        { "english": "интересный", "chinese": "有趣的", "soundmark": "in-te-res-ny" },
+        { "english": "трудный", "chinese": "困难的", "soundmark": "trood-ny" },
+        { "english": "лёгкий", "chinese": "容易的 / 轻的", "soundmark": "lyoh-kiy" },
+        { "english": "вкусный", "chinese": "美味的", "soundmark": "vkoos-ny" }
+      ]
+    },
+    {
+      "id": "ruzb-11",
+      "order": 11,
+      "title": "日期与时间",
+      "description": "学习星期的表达和基本时间用语。",
+      "statements": [
+        { "english": "понедельник", "chinese": "星期一", "soundmark": "pa-nee-dyel-neek" },
+        { "english": "вторник", "chinese": "星期二", "soundmark": "ftor-neek" },
+        { "english": "среда", "chinese": "星期三", "soundmark": "sree-da" },
+        { "english": "четверг", "chinese": "星期四", "soundmark": "cheet-vyerk" },
+        { "english": "пятница", "chinese": "星期五", "soundmark": "pyat-nee-tsa" },
+        { "english": "суббота", "chinese": "星期六", "soundmark": "soo-bo-ta" },
+        { "english": "воскресенье", "chinese": "星期日", "soundmark": "va-skree-sye-nye" },
+        { "english": "сегодня", "chinese": "今天", "soundmark": "see-vod-nya" },
+        { "english": "завтра", "chinese": "明天", "soundmark": "zav-tra" },
+        { "english": "вчера", "chinese": "昨天", "soundmark": "vche-ra" },
+        { "english": "сейчас", "chinese": "现在", "soundmark": "see-chas" },
+        { "english": "Который час?", "chinese": "几点了？", "soundmark": "ka-to-ry chas" }
+      ]
+    },
+    {
+      "id": "ruzb-12",
+      "order": 12,
+      "title": "日常物品",
+      "description": "学习日常生活中常见物品的俄语名称。",
+      "statements": [
+        { "english": "книга", "chinese": "书", "soundmark": "knee-ga" },
+        { "english": "стол", "chinese": "桌子", "soundmark": "stol" },
+        { "english": "стул", "chinese": "椅子", "soundmark": "stool" },
+        { "english": "дверь", "chinese": "门", "soundmark": "dvyer" },
+        { "english": "окно", "chinese": "窗户", "soundmark": "ak-no" },
+        { "english": "ручка", "chinese": "笔", "soundmark": "rooch-ka" },
+        { "english": "телефон", "chinese": "电话 / 手机", "soundmark": "tee-lee-fon" },
+        { "english": "компьютер", "chinese": "电脑", "soundmark": "kam-pyu-tyer" },
+        { "english": "вода", "chinese": "水", "soundmark": "va-da" },
+        { "english": "чай", "chinese": "茶", "soundmark": "chay" },
+        { "english": "хлеб", "chinese": "面包", "soundmark": "khlyeb" },
+        { "english": "молоко", "chinese": "牛奶", "soundmark": "ma-la-ko" }
+      ]
+    }
+  ]
+}

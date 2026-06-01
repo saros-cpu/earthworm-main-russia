@@ -1,0 +1,339 @@
+{
+  "id": "ru-education",
+  "title": "教育俄语",
+  "description": "教育体系学校管理教学方法等教育领域俄语词汇。",
+  "cover": "https://images.unsplash.com/photo-1529390079861-591de354faf5?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rued-01",
+      "order": 1,
+      "title": "学校体系",
+      "description": "俄罗斯学校教育体系相关词汇。",
+      "statements": [
+        {
+          "english": "шко́ла",
+          "chinese": "中小学",
+          "soundmark": "SHKO-la"
+        },
+        {
+          "english": "гимна́зия",
+          "chinese": "文科中学",
+          "soundmark": "geem-NA-zee-ya"
+        },
+        {
+          "english": "лице́й",
+          "chinese": "理科中学",
+          "soundmark": "lee-TSEY"
+        },
+        {
+          "english": "начáльная шкóла",
+          "chinese": "小学",
+          "soundmark": "na-CHAL-na-ya SHKO-la"
+        },
+        {
+          "english": "сре́дняя шко́ла",
+          "chinese": "中学",
+          "soundmark": "SRED-nya-ya SHKO-la"
+        }
+      ]
+    },
+    {
+      "id": "rued-02",
+      "order": 2,
+      "title": "大学申请",
+      "description": "大学入学申请相关词汇。",
+      "statements": [
+        {
+          "english": "поступле́ние",
+          "chinese": "入学",
+          "soundmark": "pa-stoo-PLE-nee-ye"
+        },
+        {
+          "english": "абитурие́нт",
+          "chinese": "报考者",
+          "soundmark": "a-bee-too-ree-ENT"
+        },
+        {
+          "english": "заявле́ние",
+          "chinese": "申请表",
+          "soundmark": "za-yav-LE-nee-ye"
+        },
+        {
+          "english": "вступи́тельный экза́мен",
+          "chinese": "入学考试",
+          "soundmark": "fstoo-PEE-tel-ny ek-ZA-men"
+        },
+        {
+          "english": "конку́рс",
+          "chinese": "竞争",
+          "soundmark": "kan-KOORS"
+        }
+      ]
+    },
+    {
+      "id": "rued-03",
+      "order": 3,
+      "title": "课堂讲座",
+      "description": "大学课堂教学相关词汇。",
+      "statements": [
+        {
+          "english": "ле́кция",
+          "chinese": "讲座课",
+          "soundmark": "LEK-tsee-ya"
+        },
+        {
+          "english": "семина́р",
+          "chinese": "研讨课",
+          "soundmark": "se-mee-NAR"
+        },
+        {
+          "english": "конспе́кт",
+          "chinese": "笔记提纲",
+          "soundmark": "kan-SPEKT"
+        },
+        {
+          "english": "преподава́тель",
+          "chinese": "教师",
+          "soundmark": "pre-pa-da-VA-tel"
+        },
+        {
+          "english": "аудито́рия",
+          "chinese": "教室",
+          "soundmark": "a-oo-dee-TO-ree-ya"
+        }
+      ]
+    },
+    {
+      "id": "rued-04",
+      "order": 4,
+      "title": "考试准备",
+      "description": "考试备考相关词汇。",
+      "statements": [
+        {
+          "english": "экза́мен",
+          "chinese": "考试",
+          "soundmark": "ek-ZA-men"
+        },
+        {
+          "english": "зачёт",
+          "chinese": "考查",
+          "soundmark": "za-CHYOT"
+        },
+        {
+          "english": "подгото́вка",
+          "chinese": "准备",
+          "soundmark": "pad-go-TOV-ka"
+        },
+        {
+          "english": "пересда́ча",
+          "chinese": "补考",
+          "soundmark": "pe-rez-DA-cha"
+        },
+        {
+          "english": "оце́нка",
+          "chinese": "评分",
+          "soundmark": "a-TSEN-ka"
+        }
+      ]
+    },
+    {
+      "id": "rued-05",
+      "order": 5,
+      "title": "出国留学",
+      "description": "出国留学相关俄语词汇。",
+      "statements": [
+        {
+          "english": "учеба за грани́цей",
+          "chinese": "出国留学",
+          "soundmark": "oo-CHE-ba za gra-NEE-tsey"
+        },
+        {
+          "english": "стажиро́вка",
+          "chinese": "实习进修",
+          "soundmark": "sta-zhee-ROV-ka"
+        },
+        {
+          "english": "ви́за",
+          "chinese": "签证",
+          "soundmark": "VEE-za"
+        },
+        {
+          "english": "общежи́тие",
+          "chinese": "宿舍",
+          "soundmark": "ab-shche-ZHEE-tee-ye"
+        },
+        {
+          "english": "междунаро́дный",
+          "chinese": "国际的",
+          "soundmark": "mezh-doo-na-ROD-ny"
+        }
+      ]
+    },
+    {
+      "id": "rued-06",
+      "order": 6,
+      "title": "学位文凭",
+      "description": "学位和文凭相关词汇。",
+      "statements": [
+        {
+          "english": "дипло́м",
+          "chinese": "毕业证",
+          "soundmark": "dee-PLOM"
+        },
+        {
+          "english": "бакала́вр",
+          "chinese": "学士",
+          "soundmark": "ba-ka-LAVR"
+        },
+        {
+          "english": "маги́стр",
+          "chinese": "硕士",
+          "soundmark": "ma-GEESTR"
+        },
+        {
+          "english": "аспира́нт",
+          "chinese": "研究生",
+          "soundmark": "as-pee-RANT"
+        },
+        {
+          "english": "до́ктор нау́к",
+          "chinese": "博士",
+          "soundmark": "DOK-tar na-OOK"
+        }
+      ]
+    },
+    {
+      "id": "rued-07",
+      "order": 7,
+      "title": "学生生活",
+      "description": "校园日常生活相关词汇。",
+      "statements": [
+        {
+          "english": "студенческая жизнь",
+          "chinese": "学生生活",
+          "soundmark": "stoo-DEN-che-ska-ya zhizn"
+        },
+        {
+          "english": "кружо́к",
+          "chinese": "社团",
+          "soundmark": "kroo-ZHOK"
+        },
+        {
+          "english": "столóвая",
+          "chinese": "食堂",
+          "soundmark": "sta-LO-va-ya"
+        },
+        {
+          "english": "ка́мпус",
+          "chinese": "校园",
+          "soundmark": "KAM-pus"
+        },
+        {
+          "english": "одногру́ппник",
+          "chinese": "同班同学",
+          "soundmark": "ad-na-GROOP-neek"
+        }
+      ]
+    },
+    {
+      "id": "rued-08",
+      "order": 8,
+      "title": "图书研究",
+      "description": "图书馆和研究相关词汇。",
+      "statements": [
+        {
+          "english": "библиоте́ка",
+          "chinese": "图书馆",
+          "soundmark": "beeb-lee-a-TYE-ka"
+        },
+        {
+          "english": "уче́бник",
+          "chinese": "教科书",
+          "soundmark": "oo-CHEB-neek"
+        },
+        {
+          "english": "ку́рсовая рабо́та",
+          "chinese": "课程论文",
+          "soundmark": "KOOR-sa-va-ya ra-BO-ta"
+        },
+        {
+          "english": "иссле́дование",
+          "chinese": "研究",
+          "soundmark": "ees-SLE-da-va-nee-ye"
+        },
+        {
+          "english": "рефера́т",
+          "chinese": "摘要报告",
+          "soundmark": "re-fe-RAT"
+        }
+      ]
+    },
+    {
+      "id": "rued-09",
+      "order": 9,
+      "title": "奖学金",
+      "description": "奖学金和资助相关词汇。",
+      "statements": [
+        {
+          "english": "стипе́ндия",
+          "chinese": "奖学金",
+          "soundmark": "stee-PEN-dee-ya"
+        },
+        {
+          "english": "повы́шенная стипе́ндия",
+          "chinese": "提高奖学金",
+          "soundmark": "pa-VY-shen-na-ya stee-PEN-dee-ya"
+        },
+        {
+          "english": "грант",
+          "chinese": "助学金",
+          "soundmark": "grant"
+        },
+        {
+          "english": "материáльная по́мощь",
+          "chinese": "物质援助",
+          "soundmark": "ma-te-ree-AL-na-ya PO-mashch"
+        },
+        {
+          "english": "конкурс на стипе́ндию",
+          "chinese": "奖学金竞争",
+          "soundmark": "KON-kurs na stee-PEN-dee-yu"
+        }
+      ]
+    },
+    {
+      "id": "rued-10",
+      "order": 10,
+      "title": "毕业典礼",
+      "description": "毕业及典礼相关词汇。",
+      "statements": [
+        {
+          "english": "выпускно́й",
+          "chinese": "毕业的",
+          "soundmark": "vy-pusk-NOY"
+        },
+        {
+          "english": "выпускни́к",
+          "chinese": "毕业生",
+          "soundmark": "vy-pusk-NEEK"
+        },
+        {
+          "english": "церемо́ния вруче́ния дипло́мов",
+          "chinese": "毕业典礼",
+          "soundmark": "tse-re-MO-nee-ya vroo-CHE-nee-ya dee-PLO-mav"
+        },
+        {
+          "english": "проща́ние со шко́лой",
+          "chinese": "告别母校",
+          "soundmark": "pra-SHCHA-nee-ye sa SHKO-loy"
+        },
+        {
+          "english": "бу́дущее",
+          "chinese": "未来",
+          "soundmark": "BOO-doo-shche-ye"
+        }
+      ]
+    }
+  ]
+}

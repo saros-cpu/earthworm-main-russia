@@ -1,0 +1,339 @@
+{
+  "id": "ru-spoken-work",
+  "title": "职场俄语",
+  "description": "工作场合俄语对话，包括面试开会日常办公等。",
+  "cover": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ruwk-01",
+      "order": 1,
+      "title": "求职面试",
+      "description": "参加面试时的常用表达。",
+      "statements": [
+        {
+          "english": "Здра́вствуйте, я пришёл(ла) на собесе́дование.",
+          "chinese": "您好，我来面试。",
+          "soundmark": "ZDRA-stvooy-tye ya pree-SHYOL(la) na sa-be-SE-da-va-nee-ye"
+        },
+        {
+          "english": "Расскажи́те о себе́.",
+          "chinese": "请介绍一下自己。",
+          "soundmark": "ras-ka-ZHEE-tye a se-BYE"
+        },
+        {
+          "english": "У меня́ есть о́пыт рабо́ты в э́той сфе́ре.",
+          "chinese": "我有相关工作经验。",
+          "soundmark": "oo me-NYA yest O-pyt ra-BO-ty v E-tay SFYE-re"
+        },
+        {
+          "english": "Я зако́нчил(а) Моско́вский университе́т.",
+          "chinese": "我毕业于莫斯科大学。",
+          "soundmark": "ya za-KON-cheel(a) mas-KOV-skee oo-nee-ver-see-TET"
+        },
+        {
+          "english": "Кака́я за́работная пла́та?",
+          "chinese": "工资是多少？",
+          "soundmark": "ka-KA-ya za-ra-BOT-na-ya PLA-ta"
+        }
+      ]
+    },
+    {
+      "id": "ruwk-02",
+      "order": 2,
+      "title": "认识同事",
+      "description": "与新同事初次见面。",
+      "statements": [
+        {
+          "english": "До́брое у́тро, колле́ги!",
+          "chinese": "早上好同事们！",
+          "soundmark": "DOB-ra-ye OOT-ra ka-LE-gee"
+        },
+        {
+          "english": "О́чень рад(а) познако́миться.",
+          "chinese": "很高兴认识您。",
+          "soundmark": "O-chen rad(a) paz-na-KO-meet-sya"
+        },
+        {
+          "english": "Я но́вый сотру́дник.",
+          "chinese": "我是新来的员工。",
+          "soundmark": "ya NO-vee sa-TROOD-neek"
+        },
+        {
+          "english": "Чем вы занима́етесь в компа́нии?",
+          "chinese": "您在公司负责什么？",
+          "soundmark": "chem vy za-nee-MA-ye-tyes v kam-PA-nee-ee"
+        },
+        {
+          "english": "Бу́ду рад(а) рабо́тать с ва́ми.",
+          "chinese": "很高兴和您一起工作。",
+          "soundmark": "BOO-doo rad(a) ra-BO-tat s VA-mee"
+        }
+      ]
+    },
+    {
+      "id": "ruwk-03",
+      "order": 3,
+      "title": "办公事务",
+      "description": "处理日常办公事务的表达。",
+      "statements": [
+        {
+          "english": "Каки́е пла́ны на сего́дня?",
+          "chinese": "今天有什么计划？",
+          "soundmark": "ka-KEE-ye PLA-ny na se-VOD-nya"
+        },
+        {
+          "english": "Мне ну́жно отпра́вить отчёт.",
+          "chinese": "我需要发一份报告。",
+          "soundmark": "mne NOOZH-na at-PRA-veet at-CHYOT"
+        },
+        {
+          "english": "Пришли́те фа́йл мне на по́чту.",
+          "chinese": "请把文件发到我的邮箱。",
+          "soundmark": "pri-SHLEE-tye fayl mne na POCH-too"
+        },
+        {
+          "english": "Я зако́нчил(а) прое́кт.",
+          "chinese": "我完成了项目。",
+          "soundmark": "ya za-KON-cheel(a) pra-YEKT"
+        },
+        {
+          "english": "Где лежи́т па́пка с докуме́нтами?",
+          "chinese": "放文件的文件夹在哪？",
+          "soundmark": "gde le-ZHEET PAP-ka s da-koo-MEN-ta-mi"
+        }
+      ]
+    },
+    {
+      "id": "ruwk-04",
+      "order": 4,
+      "title": "工作电话",
+      "description": "工作中打电话的表达。",
+      "statements": [
+        {
+          "english": "Алло́, э́то Ива́н из бухга́лтерии.",
+          "chinese": "喂，我是财务部的伊万。",
+          "soundmark": "a-LO E-ta ee-VAN eez bookh-GAL-te-ree-ee"
+        },
+        {
+          "english": "Соедини́те с отде́лом ка́дров.",
+          "chinese": "请转人事部。",
+          "soundmark": "sa-ye-dee-NEE-tye s at-DYE-lam KAD-rav"
+        },
+        {
+          "english": "Я звоню́ по поводу контра́кта.",
+          "chinese": "我打电话谈合同的事。",
+          "soundmark": "ya zva-NYOO pa PO-va-doo kan-TRAK-ta"
+        },
+        {
+          "english": "Подтверди́те получе́ние письма́.",
+          "chinese": "请确认收到邮件。",
+          "soundmark": "pad-tver-DEE-tye pa-loo-CHE-ne-ye pees-MA"
+        },
+        {
+          "english": "Когдá бу́дет гото́в отчёт?",
+          "chinese": "报告什么时候能好？",
+          "soundmark": "kag-DA BOO-det ga-TOF at-CHYOT"
+        }
+      ]
+    },
+    {
+      "id": "ruwk-05",
+      "order": 5,
+      "title": "电子邮件",
+      "description": "写工作和回复邮件的用语。",
+      "statements": [
+        {
+          "english": "Отпра́вьте мне, пожа́луйста, специфика́цию.",
+          "chinese": "请把规格书发给我。",
+          "soundmark": "at-PRAV-tye mne pa-ZHAL-sta spe-tsee-fee-KA-tsee-yoo"
+        },
+        {
+          "english": "Я получи́л(а) ва́ше письмо́.",
+          "chinese": "我收到了您的邮件。",
+          "soundmark": "ya pa-loo-CHEEL(a) VA-she pees-MO"
+        },
+        {
+          "english": "Копи́рую своего́ руководи́теля.",
+          "chinese": "我抄送我的领导。",
+          "soundmark": "ko-PEE-roo-yoo sva-vo-yo roo-ka-vo-DEE-te-lya"
+        },
+        {
+          "english": "Про́сим подтверди́ть уча́стие.",
+          "chinese": "请确认参加。",
+          "soundmark": "PRO-seem pad-tver-DEET oo-CHA-sti-ye"
+        },
+        {
+          "english": "Бу́ду ждать ва́шего отве́та.",
+          "chinese": "等您的回复。",
+          "soundmark": "BOO-doo zhdat VA-she-va at-VYE-ta"
+        }
+      ]
+    },
+    {
+      "id": "ruwk-06",
+      "order": 6,
+      "title": "会议安排",
+      "description": "安排和参加工作会议。",
+      "statements": [
+        {
+          "english": "За́втра в 10 утра́ совеща́ние.",
+          "chinese": "明天上午10点开会。",
+          "soundmark": "ZAV-tra v dye-syat oot-RA sa-ve-SHCHA-nee-ye"
+        },
+        {
+          "english": "Есть вопро́сы?",
+          "chinese": "有问题吗？",
+          "soundmark": "yest vap-RO-sy"
+        },
+        {
+          "english": "Дава́йте обсу́дим пла́ны на неде́лю.",
+          "chinese": "我们来讨论这周的计划。",
+          "soundmark": "da-VAY-tye ab-SOO-deem PLA-ny na ne-DE-lyu"
+        },
+        {
+          "english": "Прошу́ всех подготови́ть презента́цию.",
+          "chinese": "请大家准备演示。",
+          "soundmark": "pra-SHOO vsekh pad-ga-to-VEET pre-zen-TA-tsee-yoo"
+        },
+        {
+          "english": "Совеща́ние отменя́ется.",
+          "chinese": "会议取消了。",
+          "soundmark": "sa-ve-SHCHA-nee-ye at-me-NYA-ye-tsa"
+        }
+      ]
+    },
+    {
+      "id": "ruwk-07",
+      "order": 7,
+      "title": "项目讨论",
+      "description": "讨论项目进度的表达。",
+      "statements": [
+        {
+          "english": "На како́й ста́дии прое́кт?",
+          "chinese": "项目到什么阶段了？",
+          "soundmark": "na ka-KOY STA-dee-ee pra-YEKT"
+        },
+        {
+          "english": "Ну́жно уложи́ться в де́длайн.",
+          "chinese": "必须在截止日期前完成。",
+          "soundmark": "NOOZH-na oo-la-ZHEET-sya v DED-layn"
+        },
+        {
+          "english": "У на́с есть бюдже́т на э́то?",
+          "chinese": "这个有预算吗？",
+          "soundmark": "oo nas yest byoo-ZHET na E-ta"
+        },
+        {
+          "english": "Кто отве́тственный за э́тот эта́п?",
+          "chinese": "谁负责这个阶段？",
+          "soundmark": "kto at-VET-stven-ny za E-tat e-TAP"
+        },
+        {
+          "english": "Мы мо́жем обсуди́ть э́то.",
+          "chinese": "可以讨论一下。",
+          "soundmark": "my MO-zhem ab-soo-DEET E-ta"
+        }
+      ]
+    },
+    {
+      "id": "ruwk-08",
+      "order": 8,
+      "title": "茶歇聊天",
+      "description": "工作间隙与同事闲聊。",
+      "statements": [
+        {
+          "english": "Пойдём вы́пьем ко́фе?",
+          "chinese": "去喝杯咖啡？",
+          "soundmark": "poy-DYOM VY-pem KO-fye"
+        },
+        {
+          "english": "Как прохо́дит рабо́чий день?",
+          "chinese": "今天工作怎么样？",
+          "soundmark": "kak pra-KHO-deet ra-BO-chee den"
+        },
+        {
+          "english": "Что де́лаете на вы́ходных?",
+          "chinese": "周末打算做什么？",
+          "soundmark": "shto DY-la-ye-tye na VY-khod-nykh"
+        },
+        {
+          "english": "У нас но́вый сотру́дник в отде́ле.",
+          "chinese": "我们部门来了新同事。",
+          "soundmark": "oo nas NO-vee sa-TROOD-neek v at-DYE-le"
+        },
+        {
+          "english": "Пого́да сего́дня прекра́сная!",
+          "chinese": "今天天气真好！",
+          "soundmark": "pa-GO-da se-VOD-nya pre-KRAS-na-ya"
+        }
+      ]
+    },
+    {
+      "id": "ruwk-09",
+      "order": 9,
+      "title": "绩效评估",
+      "description": "参加绩效评估和反馈。",
+      "statements": [
+        {
+          "english": "Мне ну́жно пройти́ аттеста́цию.",
+          "chinese": "我需要参加绩效考核。",
+          "soundmark": "mne NOOZH-na proy-TEE a-tes-TA-tsee-yoo"
+        },
+        {
+          "english": "Как вы оце́ниваете мой рабо́ту?",
+          "chinese": "您如何评价我的工作？",
+          "soundmark": "kak vy a-TSE-nee-va-ye-tye moy ra-BO-too"
+        },
+        {
+          "english": "У меня́ есть предложе́ния по улучше́нию.",
+          "chinese": "我有改进的建议。",
+          "soundmark": "oo me-NYA yest pred-la-ZHE-nee-ya pa oo-LOOCH-she-nee-yoo"
+        },
+        {
+          "english": "Я хочу́ расти́ по ка́рьерной ле́стнице.",
+          "chinese": "我想在职业上有所发展。",
+          "soundmark": "ya kha-CHOO ras-TEE po KAR-yer-noy LYES-nee-tse"
+        },
+        {
+          "english": "Спаси́бо за обра́тную связь.",
+          "chinese": "感谢您的反馈。",
+          "soundmark": "spa-SEE-ba za ab-RAT-noo-yo svyas"
+        }
+      ]
+    },
+    {
+      "id": "ruwk-10",
+      "order": 10,
+      "title": "下班道别",
+      "description": "下班时与同事道别。",
+      "statements": [
+        {
+          "english": "Рабо́чий день зако́нчен!",
+          "chinese": "下班了！",
+          "soundmark": "ra-BO-chee den za-KON-chen"
+        },
+        {
+          "english": "До за́втра!",
+          "chinese": "明天见！",
+          "soundmark": "da ZAV-tra"
+        },
+        {
+          "english": "Хоро́шего ве́чера!",
+          "chinese": "晚上愉快！",
+          "soundmark": "kha-RO-she-va VE-che-ra"
+        },
+        {
+          "english": "Уви́димся в понеде́льник!",
+          "chinese": "周一见！",
+          "soundmark": "oo-VEE-deem-sya v pa-ne-DEL-neek"
+        },
+        {
+          "english": "Договори́лись!",
+          "chinese": "就这么说定了！",
+          "soundmark": "da-ga-va-REE-lees"
+        }
+      ]
+    }
+  ]
+}

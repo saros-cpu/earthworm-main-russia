@@ -1,0 +1,299 @@
+{
+  "id": "ru-grammar-tenses",
+  "title": "动词时态",
+  "description": "动词现在时、过去时、将来时的用法。",
+  "cover": "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rute-01",
+      "order": 1,
+      "title": "现在时（第一变位法）",
+      "description": "未完成体现在时，第一变位法。",
+      "statements": [
+        {
+          "english": "Я чита́ю.",
+          "chinese": "我在读书。",
+          "soundmark": "ya chee-TA-yoo"
+        },
+        {
+          "english": "Ты чита́ешь.",
+          "chinese": "你在读书。",
+          "soundmark": "ty chee-TA-yesh'"
+        },
+        {
+          "english": "Он чита́ет.",
+          "chinese": "他在读书。",
+          "soundmark": "on chee-TA-yet"
+        },
+        {
+          "english": "Мы чита́ем.",
+          "chinese": "我们在读书。",
+          "soundmark": "my chee-TA-yem"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/83-Урок 5-2.avi"
+    },
+    {
+      "id": "rute-02",
+      "order": 2,
+      "title": "现在时（第二变位法）",
+      "description": "未完成体现在时，第二变位法。",
+      "statements": [
+        {
+          "english": "Я говорю́.",
+          "chinese": "我在说话。",
+          "soundmark": "ya ga-va-RYOO"
+        },
+        {
+          "english": "Ты говори́шь.",
+          "chinese": "你在说话。",
+          "soundmark": "ty ga-va-REESH'"
+        },
+        {
+          "english": "Она́ говори́т.",
+          "chinese": "她在说话。",
+          "soundmark": "a-NA ga-va-REET"
+        },
+        {
+          "english": "Мы говори́м.",
+          "chinese": "我们在说话。",
+          "soundmark": "my ga-va-REEM"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/84-Урок 5-3.avi"
+    },
+    {
+      "id": "rute-03",
+      "order": 3,
+      "title": "过去时（阳/阴/中/复）",
+      "description": "过去时按性数和变化。",
+      "statements": [
+        {
+          "english": "Он чита́л.",
+          "chinese": "他读过（阳）。",
+          "soundmark": "on chee-TAL"
+        },
+        {
+          "english": "Она́ чита́ла.",
+          "chinese": "她读过（阴）。",
+          "soundmark": "a-NA chee-TA-la"
+        },
+        {
+          "english": "Оно́ чита́ло.",
+          "chinese": "它被读过（中）。",
+          "soundmark": "a-NO chee-TA-la"
+        },
+        {
+          "english": "Они́ чита́ли.",
+          "chinese": "他们读过（复）。",
+          "soundmark": "a-NEE chee-TA-lee"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/85-Урок 5-4.avi"
+    },
+    {
+      "id": "rute-04",
+      "order": 4,
+      "title": "将来时（быть+不定式）",
+      "description": "未完成体将来时——быть的变化。",
+      "statements": [
+        {
+          "english": "Я бу́ду чита́ть.",
+          "chinese": "我将读书。",
+          "soundmark": "ya BOO-doo chee-TAT'"
+        },
+        {
+          "english": "Ты бу́дешь чита́ть.",
+          "chinese": "你将读书。",
+          "soundmark": "ty BOo-desh' chee-TAT'"
+        },
+        {
+          "english": "Он бу́дет чита́ть.",
+          "chinese": "他将读书。",
+          "soundmark": "on BOO-det chee-TAT'"
+        },
+        {
+          "english": "Мы бу́дем чита́ть.",
+          "chinese": "我们将读书。",
+          "soundmark": "my BOO-dem chee-TAT'"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/86-Урок 5-5.avi"
+    },
+    {
+      "id": "rute-05",
+      "order": 5,
+      "title": "完成体将来时",
+      "description": "完成体动词变位表将来。",
+      "statements": [
+        {
+          "english": "Я прочита́ю кни́гу.",
+          "chinese": "我将读完这本书。",
+          "soundmark": "ya pra-chee-TA-yoo KNEE-goo"
+        },
+        {
+          "english": "Ты напи́шешь письмо́.",
+          "chinese": "你将写好信。",
+          "soundmark": "ty na-PEE-shesh' pees-MO"
+        },
+        {
+          "english": "Он сде́лает зада́ние.",
+          "chinese": "他将做完作业。",
+          "soundmark": "on ZDYE-la-yet za-DA-ne-ye"
+        },
+        {
+          "english": "Мы расска́жем и́сторию.",
+          "chinese": "我们将讲述故事。",
+          "soundmark": "my ras-SKA-zhem EE-sto-ree-yoo"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/87-Урок 6-1.avi"
+    },
+    {
+      "id": "rute-06",
+      "order": 6,
+      "title": "时态的否定",
+      "description": "各时态的否定形式。",
+      "statements": [
+        {
+          "english": "Я не чита́л э́ту кни́гу.",
+          "chinese": "我没读过这本书。",
+          "soundmark": "ya ne chee-TAL EH-too KNEE-goo"
+        },
+        {
+          "english": "Он не бу́дет есть.",
+          "chinese": "他不会吃东西。",
+          "soundmark": "on ne BOO-det yest'"
+        },
+        {
+          "english": "Мы не говори́м по-англи́йски.",
+          "chinese": "我们不说英语。",
+          "soundmark": "my ne ga-va-REEM pa-an-GLEEYS-kee"
+        },
+        {
+          "english": "Я не написа́л письмо́.",
+          "chinese": "我没写那封信。",
+          "soundmark": "ya ne na-pee-SAL pees-MO"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/88-Урок 6-2.avi"
+    },
+    {
+      "id": "rute-07",
+      "order": 7,
+      "title": "动词体比较",
+      "description": "未完成体与完成体在不同时态的比较。",
+      "statements": [
+        {
+          "english": "Я чита́л э́ту кни́гу.",
+          "chinese": "我以前在读这本书。",
+          "soundmark": "ya chee-TAL EH-too KNEE-goo"
+        },
+        {
+          "english": "Я прочита́л э́ту кни́гу.",
+          "chinese": "我读了这本书（已读完）。",
+          "soundmark": "ya pra-chee-TAL EH-too KNEE-goo"
+        },
+        {
+          "english": "Я чита́ю.",
+          "chinese": "我正在读。",
+          "soundmark": "ya chee-TA-yoo"
+        },
+        {
+          "english": "Я бу́ду чита́ть.",
+          "chinese": "我将要读。",
+          "soundmark": "ya BOO-doo chee-TAT'"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/89-Урок 6-3.avi"
+    },
+    {
+      "id": "rute-08",
+      "order": 8,
+      "title": "过去时的特殊用法",
+      "description": "было + 不定式等结构。",
+      "statements": [
+        {
+          "english": "На́до бы́ло помолча́ть.",
+          "chinese": "本应该沉默。",
+          "soundmark": "NA-da BY-la pa-mal-CHAT'"
+        },
+        {
+          "english": "Он хоте́л бы́ло уйти́.",
+          "chinese": "他本想走了。",
+          "soundmark": "on kha-TYEL BY-la ooy-TEE"
+        },
+        {
+          "english": "Я мог бы́ло отве́тить.",
+          "chinese": "我本可以回答。",
+          "soundmark": "ya mok BY-la at-VYE-teet'"
+        },
+        {
+          "english": "Мы собрали́сь бы́ло пойти́.",
+          "chinese": "我们本打算去。",
+          "soundmark": "my sa-bra-LEES' BY-la pay-TEE"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/90-Урок 6-4.avi"
+    },
+    {
+      "id": "rute-09",
+      "order": 9,
+      "title": "时间状语搭配",
+      "description": "各时态常见时间状语。",
+      "statements": [
+        {
+          "english": "Ка́ждый день я чита́ю.",
+          "chinese": "我每天读书。",
+          "soundmark": "KAZH-dyj dyen' ya chee-TA-yoo"
+        },
+        {
+          "english": "Вчера́ он чита́л.",
+          "chinese": "昨天他读书了。",
+          "soundmark": "vche-RA on chee-TAL"
+        },
+        {
+          "english": "За́втра мы бу́дем чита́ть.",
+          "chinese": "明天我们将读书。",
+          "soundmark": "ZAV-tra my BOO-dem chee-TAT'"
+        },
+        {
+          "english": "Ско́ро я прочита́ю.",
+          "chinese": "我很快会读完。",
+          "soundmark": "SKO-ra ya pra-chee-TA-yoo"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/91-Урок 6-5.avi"
+    },
+    {
+      "id": "rute-10",
+      "order": 10,
+      "title": "综合练习",
+      "description": "时态综合运用。",
+      "statements": [
+        {
+          "english": "Сейча́с я чита́ю, вчера́ я чита́л.",
+          "chinese": "现在我正在读书，昨天我读了书。",
+          "soundmark": "sey-CHAS ya chee-TA-yoo, vche-RA ya chee-TAL"
+        },
+        {
+          "english": "За́втра я бу́ду учи́ть ру́сский язы́к.",
+          "chinese": "明天我将学俄语。",
+          "soundmark": "ZAV-tra ya BOO-doo oo-CHEET' ROOS-kiyj ya-ZYK"
+        },
+        {
+          "english": "Он уже́ сде́лал дома́шнее зада́ние.",
+          "chinese": "他已经做完家庭作业了。",
+          "soundmark": "on oo-ZHE ZDYE-lal da-MASH-ne-ye za-DA-ne-ye"
+        },
+        {
+          "english": "Мы никогда́ не бы́ли в Росси́и.",
+          "chinese": "我们从没去过俄罗斯。",
+          "soundmark": "my nee-kag-DA ne BY-lee v ras-SEE-ee"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/92-Урок 7-1.avi"
+    }
+  ]
+}

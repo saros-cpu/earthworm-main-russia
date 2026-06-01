@@ -1,0 +1,4468 @@
+{
+  "title": "TORFL B1 · 一级（ТРКИ-1）核心词汇与例句",
+  "description": "ТРКИ-B1 一级核心 ~100 词 + 15 个社会与日常话题例句。覆盖工作、教育、媒体、抽象概念、常见动词、连接副词。\n\n词表共 720 词 + 15 例句（103 条手工编辑 + 617 条由 БКРС 词典按 Leeds 频次自动补全）。\n+ 200 例句来自 Tatoeba 俄汉句对（母语人编写，语法保证）。",
+  "words": [
+    {
+      "russian": "общество",
+      "chinese": "社会",
+      "pos": "名词"
+    },
+    {
+      "russian": "культура",
+      "chinese": "文化",
+      "pos": "名词"
+    },
+    {
+      "russian": "история",
+      "chinese": "历史",
+      "pos": "名词"
+    },
+    {
+      "russian": "политика",
+      "chinese": "政治",
+      "pos": "名词"
+    },
+    {
+      "russian": "экономика",
+      "chinese": "经济",
+      "pos": "名词"
+    },
+    {
+      "russian": "образование",
+      "chinese": "教育",
+      "pos": "名词"
+    },
+    {
+      "russian": "профессия",
+      "chinese": "职业",
+      "pos": "名词"
+    },
+    {
+      "russian": "специальность",
+      "chinese": "专业",
+      "pos": "名词"
+    },
+    {
+      "russian": "карьера",
+      "chinese": "事业;职业生涯",
+      "pos": "名词"
+    },
+    {
+      "russian": "должность",
+      "chinese": "职务",
+      "pos": "名词"
+    },
+    {
+      "russian": "зарплата",
+      "chinese": "工资",
+      "pos": "名词"
+    },
+    {
+      "russian": "коллега",
+      "chinese": "同事",
+      "pos": "名词"
+    },
+    {
+      "russian": "начальник",
+      "chinese": "上司",
+      "pos": "名词"
+    },
+    {
+      "russian": "сотрудник",
+      "chinese": "员工",
+      "pos": "名词"
+    },
+    {
+      "russian": "встреча",
+      "chinese": "会面",
+      "pos": "名词"
+    },
+    {
+      "russian": "собрание",
+      "chinese": "会议",
+      "pos": "名词"
+    },
+    {
+      "russian": "проект",
+      "chinese": "项目",
+      "pos": "名词"
+    },
+    {
+      "russian": "разговор",
+      "chinese": "谈话",
+      "pos": "名词"
+    },
+    {
+      "russian": "беседа",
+      "chinese": "交谈",
+      "pos": "名词"
+    },
+    {
+      "russian": "новость",
+      "chinese": "新闻",
+      "pos": "名词"
+    },
+    {
+      "russian": "газета",
+      "chinese": "报纸",
+      "pos": "名词"
+    },
+    {
+      "russian": "журнал",
+      "chinese": "杂志",
+      "pos": "名词"
+    },
+    {
+      "russian": "радио",
+      "chinese": "收音机",
+      "pos": "名词"
+    },
+    {
+      "russian": "телевидение",
+      "chinese": "电视",
+      "pos": "名词"
+    },
+    {
+      "russian": "интернет",
+      "chinese": "互联网",
+      "pos": "名词"
+    },
+    {
+      "russian": "телефон",
+      "chinese": "电话",
+      "pos": "名词"
+    },
+    {
+      "russian": "сообщение",
+      "chinese": "消息",
+      "pos": "名词"
+    },
+    {
+      "russian": "письмо",
+      "chinese": "信",
+      "pos": "名词"
+    },
+    {
+      "russian": "ответ",
+      "chinese": "回答;答复",
+      "pos": "名词"
+    },
+    {
+      "russian": "вопрос",
+      "chinese": "问题（提问）",
+      "pos": "名词"
+    },
+    {
+      "russian": "проблема",
+      "chinese": "问题",
+      "pos": "名词"
+    },
+    {
+      "russian": "причина",
+      "chinese": "原因",
+      "pos": "名词"
+    },
+    {
+      "russian": "следствие",
+      "chinese": "后果",
+      "pos": "名词"
+    },
+    {
+      "russian": "результат",
+      "chinese": "结果",
+      "pos": "名词"
+    },
+    {
+      "russian": "цель",
+      "chinese": "目标",
+      "pos": "名词"
+    },
+    {
+      "russian": "задача",
+      "chinese": "任务",
+      "pos": "名词"
+    },
+    {
+      "russian": "план",
+      "chinese": "计划",
+      "pos": "名词"
+    },
+    {
+      "russian": "мечта",
+      "chinese": "梦想",
+      "pos": "名词"
+    },
+    {
+      "russian": "идея",
+      "chinese": "主意;想法",
+      "pos": "名词"
+    },
+    {
+      "russian": "мысль",
+      "chinese": "想法;念头",
+      "pos": "名词"
+    },
+    {
+      "russian": "мнение",
+      "chinese": "意见",
+      "pos": "名词"
+    },
+    {
+      "russian": "опыт",
+      "chinese": "经验",
+      "pos": "名词"
+    },
+    {
+      "russian": "успех",
+      "chinese": "成功",
+      "pos": "名词"
+    },
+    {
+      "russian": "неудача",
+      "chinese": "失败",
+      "pos": "名词"
+    },
+    {
+      "russian": "страна",
+      "chinese": "国家",
+      "pos": "名词"
+    },
+    {
+      "russian": "мир",
+      "chinese": "世界;和平",
+      "pos": "名词"
+    },
+    {
+      "russian": "природа",
+      "chinese": "大自然",
+      "pos": "名词"
+    },
+    {
+      "russian": "окружающая среда",
+      "chinese": "环境",
+      "pos": "词组"
+    },
+    {
+      "russian": "путешествие",
+      "chinese": "旅行",
+      "pos": "名词"
+    },
+    {
+      "russian": "отпуск",
+      "chinese": "休假",
+      "pos": "名词"
+    },
+    {
+      "russian": "праздник",
+      "chinese": "节日",
+      "pos": "名词"
+    },
+    {
+      "russian": "предлагать",
+      "chinese": "提议;建议",
+      "pos": "动词"
+    },
+    {
+      "russian": "обсуждать",
+      "chinese": "讨论",
+      "pos": "动词"
+    },
+    {
+      "russian": "объяснять",
+      "chinese": "解释",
+      "pos": "动词"
+    },
+    {
+      "russian": "рассказывать",
+      "chinese": "讲述",
+      "pos": "动词"
+    },
+    {
+      "russian": "обещать",
+      "chinese": "承诺",
+      "pos": "动词"
+    },
+    {
+      "russian": "поздравлять",
+      "chinese": "祝贺",
+      "pos": "动词"
+    },
+    {
+      "russian": "приглашать",
+      "chinese": "邀请",
+      "pos": "动词"
+    },
+    {
+      "russian": "забывать",
+      "chinese": "忘记",
+      "pos": "动词"
+    },
+    {
+      "russian": "вспоминать",
+      "chinese": "回忆起",
+      "pos": "动词"
+    },
+    {
+      "russian": "решать",
+      "chinese": "决定",
+      "pos": "动词"
+    },
+    {
+      "russian": "пробовать",
+      "chinese": "尝试",
+      "pos": "动词"
+    },
+    {
+      "russian": "путешествовать",
+      "chinese": "旅行",
+      "pos": "动词"
+    },
+    {
+      "russian": "соглашаться",
+      "chinese": "同意",
+      "pos": "动词"
+    },
+    {
+      "russian": "отказываться",
+      "chinese": "拒绝",
+      "pos": "动词"
+    },
+    {
+      "russian": "договариваться",
+      "chinese": "商定;约定",
+      "pos": "动词"
+    },
+    {
+      "russian": "замечать",
+      "chinese": "注意到",
+      "pos": "动词"
+    },
+    {
+      "russian": "сравнивать",
+      "chinese": "比较",
+      "pos": "动词"
+    },
+    {
+      "russian": "узнавать",
+      "chinese": "得知;认出",
+      "pos": "动词"
+    },
+    {
+      "russian": "беспокоиться",
+      "chinese": "担心",
+      "pos": "动词"
+    },
+    {
+      "russian": "надеяться",
+      "chinese": "希望",
+      "pos": "动词"
+    },
+    {
+      "russian": "выбирать",
+      "chinese": "选择",
+      "pos": "动词"
+    },
+    {
+      "russian": "продолжать",
+      "chinese": "继续",
+      "pos": "动词"
+    },
+    {
+      "russian": "повторять",
+      "chinese": "重复",
+      "pos": "动词"
+    },
+    {
+      "russian": "важный",
+      "chinese": "重要的",
+      "pos": "形容词"
+    },
+    {
+      "russian": "необходимый",
+      "chinese": "必需的",
+      "pos": "形容词"
+    },
+    {
+      "russian": "серьёзный",
+      "chinese": "严肃的",
+      "pos": "形容词"
+    },
+    {
+      "russian": "удобный",
+      "chinese": "方便的",
+      "pos": "形容词"
+    },
+    {
+      "russian": "неудобный",
+      "chinese": "不方便的",
+      "pos": "形容词"
+    },
+    {
+      "russian": "возможный",
+      "chinese": "可能的",
+      "pos": "形容词"
+    },
+    {
+      "russian": "невозможный",
+      "chinese": "不可能的",
+      "pos": "形容词"
+    },
+    {
+      "russian": "приятный",
+      "chinese": "令人愉快的",
+      "pos": "形容词"
+    },
+    {
+      "russian": "странный",
+      "chinese": "奇怪的",
+      "pos": "形容词"
+    },
+    {
+      "russian": "обычный",
+      "chinese": "普通的",
+      "pos": "形容词"
+    },
+    {
+      "russian": "разный",
+      "chinese": "不同的;各种各样的",
+      "pos": "形容词"
+    },
+    {
+      "russian": "похожий",
+      "chinese": "相似的",
+      "pos": "形容词"
+    },
+    {
+      "russian": "знакомый",
+      "chinese": "熟悉的",
+      "pos": "形容词"
+    },
+    {
+      "russian": "известный",
+      "chinese": "有名的",
+      "pos": "形容词"
+    },
+    {
+      "russian": "обычно",
+      "chinese": "通常",
+      "pos": "副词"
+    },
+    {
+      "russian": "например",
+      "chinese": "例如",
+      "pos": "副词"
+    },
+    {
+      "russian": "кажется",
+      "chinese": "似乎",
+      "pos": "副词"
+    },
+    {
+      "russian": "особенно",
+      "chinese": "特别是",
+      "pos": "副词"
+    },
+    {
+      "russian": "конечно",
+      "chinese": "当然",
+      "pos": "副词"
+    },
+    {
+      "russian": "возможно",
+      "chinese": "可能",
+      "pos": "副词"
+    },
+    {
+      "russian": "наверное",
+      "chinese": "大概;也许",
+      "pos": "副词"
+    },
+    {
+      "russian": "поэтому",
+      "chinese": "因此",
+      "pos": "副词"
+    },
+    {
+      "russian": "однако",
+      "chinese": "然而",
+      "pos": "连词"
+    },
+    {
+      "russian": "хотя",
+      "chinese": "虽然",
+      "pos": "连词"
+    },
+    {
+      "russian": "пока",
+      "chinese": "暂且;在…期间",
+      "pos": "副词"
+    },
+    {
+      "russian": "вдруг",
+      "chinese": "突然",
+      "pos": "副词"
+    },
+    {
+      "russian": "наконец",
+      "chinese": "终于;最后",
+      "pos": "副词"
+    },
+    {
+      "russian": "сначала",
+      "chinese": "起初;首先",
+      "pos": "副词"
+    },
+    {
+      "russian": "обязательно",
+      "chinese": "一定",
+      "pos": "副词"
+    },
+    {
+      "russian": "мешать",
+      "chinese": "有碍;拌制",
+      "pos": "动词"
+    },
+    {
+      "russian": "настроение",
+      "chinese": "神情;神情儿",
+      "pos": "形容词"
+    },
+    {
+      "russian": "постепенно",
+      "chinese": "逐渐;逐旋",
+      "pos": "词组"
+    },
+    {
+      "russian": "нечто",
+      "chinese": "某种物品;某种事情",
+      "pos": "副词"
+    },
+    {
+      "russian": "толпа",
+      "chinese": "人丛;一大群",
+      "pos": "名词"
+    },
+    {
+      "russian": "здоровый",
+      "chinese": "健朗;健浪",
+      "pos": "形容词"
+    },
+    {
+      "russian": "планета",
+      "chinese": "纬星;行星",
+      "pos": "名词"
+    },
+    {
+      "russian": "поколение",
+      "chinese": "一代;辈儿",
+      "pos": "形容词"
+    },
+    {
+      "russian": "реакция",
+      "chinese": "回跌;感应",
+      "pos": "名词"
+    },
+    {
+      "russian": "умный",
+      "chinese": "伶俐;聪明",
+      "pos": "词组"
+    },
+    {
+      "russian": "вероятно",
+      "chinese": "大概;敢怕",
+      "pos": "词组"
+    },
+    {
+      "russian": "механизм",
+      "chinese": "机构;机理",
+      "pos": "词组"
+    },
+    {
+      "russian": "жертва",
+      "chinese": "伤者;弃子",
+      "pos": "名词"
+    },
+    {
+      "russian": "открывать",
+      "chinese": "睁;睁开",
+      "pos": "动词"
+    },
+    {
+      "russian": "ученик",
+      "chinese": "学生;学子",
+      "pos": "词组"
+    },
+    {
+      "russian": "организм",
+      "chinese": "机体;有机体",
+      "pos": "名词"
+    },
+    {
+      "russian": "заявление",
+      "chinese": "声明书;声明信",
+      "pos": "形容词"
+    },
+    {
+      "russian": "бутылка",
+      "chinese": "瓶子;揦子",
+      "pos": "词组"
+    },
+    {
+      "russian": "признать",
+      "chinese": "认下;认清",
+      "pos": "动词"
+    },
+    {
+      "russian": "определять",
+      "chinese": "确认;判断",
+      "pos": "词组"
+    },
+    {
+      "russian": "доля",
+      "chinese": "肺叶;乐素",
+      "pos": "名词"
+    },
+    {
+      "russian": "измениться",
+      "chinese": "发变;变味",
+      "pos": "动词"
+    },
+    {
+      "russian": "мозг",
+      "chinese": "脑部;脑髓",
+      "pos": "名词"
+    },
+    {
+      "russian": "музей",
+      "chinese": "博物馆;博物院",
+      "pos": "名词"
+    },
+    {
+      "russian": "зависимость",
+      "chinese": "依赖包;依赖症",
+      "pos": "动词"
+    },
+    {
+      "russian": "дождь",
+      "chinese": "雾水;雨字头儿",
+      "pos": "名词"
+    },
+    {
+      "russian": "улыбка",
+      "chinese": "乐儿;一笑",
+      "pos": "名词"
+    },
+    {
+      "russian": "восток",
+      "chinese": "东方;震方",
+      "pos": "名词"
+    },
+    {
+      "russian": "трудный",
+      "chinese": "艰巨;限险",
+      "pos": "词组"
+    },
+    {
+      "russian": "улыбнуться",
+      "chinese": "笑笑;冁",
+      "pos": "动词"
+    },
+    {
+      "russian": "хлеб",
+      "chinese": "面包;列巴",
+      "pos": "词组"
+    },
+    {
+      "russian": "бабушка",
+      "chinese": "姥姥;奶奶",
+      "pos": "名词"
+    },
+    {
+      "russian": "тень",
+      "chinese": "影子;日晷",
+      "pos": "词组"
+    },
+    {
+      "russian": "испытывать",
+      "chinese": "实验;试炼",
+      "pos": "动词"
+    },
+    {
+      "russian": "стихи",
+      "chinese": "诗;诗歌",
+      "pos": "名词"
+    },
+    {
+      "russian": "полагать",
+      "chinese": "忖摸;打料",
+      "pos": "动词"
+    },
+    {
+      "russian": "снимать",
+      "chinese": "搦下;拍下",
+      "pos": "动词"
+    },
+    {
+      "russian": "активный",
+      "chinese": "有源;积极有为",
+      "pos": "形容词"
+    },
+    {
+      "russian": "опасный",
+      "chinese": "臲臲;害性",
+      "pos": "形容词"
+    },
+    {
+      "russian": "очевидно",
+      "chinese": "见地的;在那儿摆着",
+      "pos": "名词"
+    },
+    {
+      "russian": "кожа",
+      "chinese": "皮革;腠",
+      "pos": "词组"
+    },
+    {
+      "russian": "морской",
+      "chinese": "船用的;莫尔斯科伊",
+      "pos": "形容词"
+    },
+    {
+      "russian": "ужас",
+      "chinese": "相性保护;蠕行煞魔",
+      "pos": "名词"
+    },
+    {
+      "russian": "акт",
+      "chinese": "一折;正式照会",
+      "pos": "名词"
+    },
+    {
+      "russian": "содержать",
+      "chinese": "拴养;容受",
+      "pos": "动词"
+    },
+    {
+      "russian": "учить",
+      "chinese": "教训;讲唱",
+      "pos": "词组"
+    },
+    {
+      "russian": "лидер",
+      "chinese": "领舰;领军者",
+      "pos": "名词"
+    },
+    {
+      "russian": "фигура",
+      "chinese": "身条;身条儿",
+      "pos": "名词"
+    },
+    {
+      "russian": "пост",
+      "chinese": "岗位;位子",
+      "pos": "名词"
+    },
+    {
+      "russian": "лагерь",
+      "chinese": "处舍;野营",
+      "pos": "名词"
+    },
+    {
+      "russian": "след",
+      "chinese": "迹象;踪迹",
+      "pos": "词组"
+    },
+    {
+      "russian": "улыбаться",
+      "chinese": "莞而一笑;莞尔一笑",
+      "pos": "动词"
+    },
+    {
+      "russian": "оставлять",
+      "chinese": "毕罢;存留",
+      "pos": "动词"
+    },
+    {
+      "russian": "раздел",
+      "chinese": "分编;伦琴激光器",
+      "pos": "名词"
+    },
+    {
+      "russian": "зима",
+      "chinese": "玄冬;冬天",
+      "pos": "名词"
+    },
+    {
+      "russian": "экран",
+      "chinese": "屏幕;布幕",
+      "pos": "词组"
+    },
+    {
+      "russian": "милый",
+      "chinese": "可爱;古锥",
+      "pos": "词组"
+    },
+    {
+      "russian": "погибнуть",
+      "chinese": "沦丧;殪没",
+      "pos": "动词"
+    },
+    {
+      "russian": "переход",
+      "chinese": "连廊;异径管",
+      "pos": "名词"
+    },
+    {
+      "russian": "кровать",
+      "chinese": "卧床;睡床",
+      "pos": "动词"
+    },
+    {
+      "russian": "секс",
+      "chinese": "塞克斯;周公之礼",
+      "pos": "名词"
+    },
+    {
+      "russian": "родина",
+      "chinese": "祖国;罗金娜",
+      "pos": "名词"
+    },
+    {
+      "russian": "вино",
+      "chinese": "福水;酉圣",
+      "pos": "副词"
+    },
+    {
+      "russian": "комплекс",
+      "chinese": "复形;杂岩",
+      "pos": "名词"
+    },
+    {
+      "russian": "зона",
+      "chinese": "区带;地幅",
+      "pos": "名词"
+    },
+    {
+      "russian": "колено",
+      "chinese": "膝盖;膝头",
+      "pos": "副词"
+    },
+    {
+      "russian": "звучать",
+      "chinese": "听上去;漂撇",
+      "pos": "动词"
+    },
+    {
+      "russian": "бедный",
+      "chinese": "贫困;别德内",
+      "pos": "形容词"
+    },
+    {
+      "russian": "появление",
+      "chinese": "显化;具体值",
+      "pos": "形容词"
+    },
+    {
+      "russian": "издание",
+      "chinese": "版次;发行物",
+      "pos": "形容词"
+    },
+    {
+      "russian": "резко",
+      "chinese": "唐突地;腾地",
+      "pos": "副词"
+    },
+    {
+      "russian": "поговорить",
+      "chinese": "谈谈;说说话",
+      "pos": "动词"
+    },
+    {
+      "russian": "еврей",
+      "chinese": "犹太;希伯来人",
+      "pos": "名词"
+    },
+    {
+      "russian": "редко",
+      "chinese": "罕少;寥寥",
+      "pos": "副词"
+    },
+    {
+      "russian": "разговаривать",
+      "chinese": "打话;淘客",
+      "pos": "动词"
+    },
+    {
+      "russian": "честь",
+      "chinese": "荣幸;面光",
+      "pos": "词组"
+    },
+    {
+      "russian": "признак",
+      "chinese": "征象;景象",
+      "pos": "名词"
+    },
+    {
+      "russian": "истина",
+      "chinese": "真理;真像",
+      "pos": "名词"
+    },
+    {
+      "russian": "замечательный",
+      "chinese": "瑰奇;瑰琦",
+      "pos": "形容词"
+    },
+    {
+      "russian": "плакать",
+      "chinese": "哭出;悲嗟",
+      "pos": "动词"
+    },
+    {
+      "russian": "потребность",
+      "chinese": "需求;需量",
+      "pos": "词组"
+    },
+    {
+      "russian": "придумать",
+      "chinese": "想出来;想出",
+      "pos": "动词"
+    },
+    {
+      "russian": "храм",
+      "chinese": "庙宇;神社",
+      "pos": "名词"
+    },
+    {
+      "russian": "опасность",
+      "chinese": "危险;正在前来",
+      "pos": "词组"
+    },
+    {
+      "russian": "сохранить",
+      "chinese": "护育;存上",
+      "pos": "动词"
+    },
+    {
+      "russian": "встретиться",
+      "chinese": "碰面;厮见",
+      "pos": "动词"
+    },
+    {
+      "russian": "предполагать",
+      "chinese": "意料;假设",
+      "pos": "词组"
+    },
+    {
+      "russian": "глубина",
+      "chinese": "深浅;宗深",
+      "pos": "名词"
+    },
+    {
+      "russian": "приказ",
+      "chinese": "諚;令状",
+      "pos": "名词"
+    },
+    {
+      "russian": "категория",
+      "chinese": "范畴;棋品",
+      "pos": "名词"
+    },
+    {
+      "russian": "игорь",
+      "chinese": "伊格;伊戈尔",
+      "pos": "名词"
+    },
+    {
+      "russian": "горячий",
+      "chinese": "热的呢;热乎",
+      "pos": "形容词"
+    },
+    {
+      "russian": "устроить",
+      "chinese": "缮备;把…放好",
+      "pos": "动词"
+    },
+    {
+      "russian": "строить",
+      "chinese": "修建;盖起",
+      "pos": "动词"
+    },
+    {
+      "russian": "организовать",
+      "chinese": "组办;筹组",
+      "pos": "动词"
+    },
+    {
+      "russian": "эффект",
+      "chinese": "效益;效力",
+      "pos": "词组"
+    },
+    {
+      "russian": "лететь",
+      "chinese": "乱飞;飞驶",
+      "pos": "动词"
+    },
+    {
+      "russian": "торговый",
+      "chinese": "商业型;商贸",
+      "pos": "形容词"
+    },
+    {
+      "russian": "описание",
+      "chinese": "记叙文;侧写",
+      "pos": "形容词"
+    },
+    {
+      "russian": "риск",
+      "chinese": "风险;惊险性",
+      "pos": "词组"
+    },
+    {
+      "russian": "лошадь",
+      "chinese": "一匹马;马儿",
+      "pos": "名词"
+    },
+    {
+      "russian": "коридор",
+      "chinese": "走廊;楼道",
+      "pos": "词组"
+    },
+    {
+      "russian": "подруга",
+      "chinese": "女伴;闺友",
+      "pos": "名词"
+    },
+    {
+      "russian": "капитал",
+      "chinese": "资本;物本",
+      "pos": "名词"
+    },
+    {
+      "russian": "схема",
+      "chinese": "概形;图型",
+      "pos": "名词"
+    },
+    {
+      "russian": "разница",
+      "chinese": "差别;分别",
+      "pos": "词组"
+    },
+    {
+      "russian": "весна",
+      "chinese": "阳节;淑节",
+      "pos": "名词"
+    },
+    {
+      "russian": "проверить",
+      "chinese": "点检;验明",
+      "pos": "动词"
+    },
+    {
+      "russian": "черта",
+      "chinese": "括线;条痕",
+      "pos": "名词"
+    },
+    {
+      "russian": "красота",
+      "chinese": "美色;粲者",
+      "pos": "名词"
+    },
+    {
+      "russian": "рыба",
+      "chinese": "淮白;鱼货",
+      "pos": "名词"
+    },
+    {
+      "russian": "достать",
+      "chinese": "弄到手;叨蹬",
+      "pos": "动词"
+    },
+    {
+      "russian": "глубоко",
+      "chinese": "殊深;深为",
+      "pos": "词组"
+    },
+    {
+      "russian": "добиться",
+      "chinese": "觅致;追到手",
+      "pos": "动词"
+    },
+    {
+      "russian": "опубликовать",
+      "chinese": "发布;发表出来",
+      "pos": "词组"
+    },
+    {
+      "russian": "точный",
+      "chinese": "确切;精密",
+      "pos": "词组"
+    },
+    {
+      "russian": "трубка",
+      "chinese": "烟斗;烟杆",
+      "pos": "名词"
+    },
+    {
+      "russian": "садиться",
+      "chinese": "就坐;缩水",
+      "pos": "动词"
+    },
+    {
+      "russian": "ключ",
+      "chinese": "钥匙;钥牡",
+      "pos": "名词"
+    },
+    {
+      "russian": "знаменитый",
+      "chinese": "著名;有名望",
+      "pos": "词组"
+    },
+    {
+      "russian": "теплый",
+      "chinese": "温馨;暖呼呼",
+      "pos": "形容词"
+    },
+    {
+      "russian": "фамилия",
+      "chinese": "姓号;姓氏",
+      "pos": "名词"
+    },
+    {
+      "russian": "включать",
+      "chinese": "开机;接入",
+      "pos": "动词"
+    },
+    {
+      "russian": "открытие",
+      "chinese": "见矿;被发现物",
+      "pos": "形容词"
+    },
+    {
+      "russian": "включить",
+      "chinese": "编进;添进",
+      "pos": "动词"
+    },
+    {
+      "russian": "чудо",
+      "chinese": "奇迹;奇事",
+      "pos": "副词"
+    },
+    {
+      "russian": "взглянуть",
+      "chinese": "瞟见;睃",
+      "pos": "动词"
+    },
+    {
+      "russian": "полк",
+      "chinese": "甲喇;波尔克",
+      "pos": "名词"
+    },
+    {
+      "russian": "кресло",
+      "chinese": "圈椅;禅椅",
+      "pos": "副词"
+    },
+    {
+      "russian": "напротив",
+      "chinese": "正对;相比而言",
+      "pos": "名词"
+    },
+    {
+      "russian": "обращение",
+      "chinese": "待遇;呼语",
+      "pos": "词组"
+    },
+    {
+      "russian": "описать",
+      "chinese": "抄籍;言状",
+      "pos": "动词"
+    },
+    {
+      "russian": "тихий",
+      "chinese": "季希;妟",
+      "pos": "形容词"
+    },
+    {
+      "russian": "менять",
+      "chinese": "找换;易换",
+      "pos": "动词"
+    },
+    {
+      "russian": "серый",
+      "chinese": "灰光;谢雷",
+      "pos": "形容词"
+    },
+    {
+      "russian": "присутствовать",
+      "chinese": "列席;在场",
+      "pos": "动词"
+    },
+    {
+      "russian": "научиться",
+      "chinese": "练就;学来",
+      "pos": "动词"
+    },
+    {
+      "russian": "ольга",
+      "chinese": "奥丽佳;奥莉加",
+      "pos": "名词"
+    },
+    {
+      "russian": "неожиданно",
+      "chinese": "哪料;蓦地里",
+      "pos": "名词"
+    },
+    {
+      "russian": "медицинский",
+      "chinese": "医学上;医疗者的",
+      "pos": "形容词"
+    },
+    {
+      "russian": "налог",
+      "chinese": "税项;验契税",
+      "pos": "名词"
+    },
+    {
+      "russian": "штат",
+      "chinese": "土邦;员额配置",
+      "pos": "名词"
+    },
+    {
+      "russian": "железный",
+      "chinese": "热列兹内;钢劲",
+      "pos": "形容词"
+    },
+    {
+      "russian": "культурный",
+      "chinese": "有文化;绅士派头",
+      "pos": "形容词"
+    },
+    {
+      "russian": "предыдущий",
+      "chinese": "承前;上一个",
+      "pos": "形容词"
+    },
+    {
+      "russian": "середина",
+      "chinese": "中央;耳中",
+      "pos": "词组"
+    },
+    {
+      "russian": "мертвый",
+      "chinese": "已死亡;冷背",
+      "pos": "形容词"
+    },
+    {
+      "russian": "подарок",
+      "chinese": "礼物;礼儿",
+      "pos": "名词"
+    },
+    {
+      "russian": "прекрасно",
+      "chinese": "妙哉;无情哈拉少",
+      "pos": "词组"
+    },
+    {
+      "russian": "запах",
+      "chinese": "臭感;香尘",
+      "pos": "名词"
+    },
+    {
+      "russian": "терять",
+      "chinese": "失丢;打丢",
+      "pos": "动词"
+    },
+    {
+      "russian": "пожалуй",
+      "chinese": "应该吧;大估摸",
+      "pos": "名词"
+    },
+    {
+      "russian": "торговля",
+      "chinese": "交投;铺业",
+      "pos": "名词"
+    },
+    {
+      "russian": "камера",
+      "chinese": "室体;峒室",
+      "pos": "名词"
+    },
+    {
+      "russian": "тайна",
+      "chinese": "机事;迷局",
+      "pos": "名词"
+    },
+    {
+      "russian": "преступление",
+      "chinese": "罪祸;刑事犯罪",
+      "pos": "形容词"
+    },
+    {
+      "russian": "столица",
+      "chinese": "首都;都城",
+      "pos": "名词"
+    },
+    {
+      "russian": "эпоха",
+      "chinese": "年代",
+      "pos": "词组"
+    },
+    {
+      "russian": "больница",
+      "chinese": "医院;病院",
+      "pos": "词组"
+    },
+    {
+      "russian": "выставка",
+      "chinese": "博览会;展览会",
+      "pos": "名词"
+    },
+    {
+      "russian": "выпуск",
+      "chinese": "撤放;刊号",
+      "pos": "名词"
+    },
+    {
+      "russian": "виктор",
+      "chinese": "维克特;维克托",
+      "pos": "名词"
+    },
+    {
+      "russian": "ссылка",
+      "chinese": "遣刑;引句",
+      "pos": "名词"
+    },
+    {
+      "russian": "понятно",
+      "chinese": "知道了;分三别两",
+      "pos": "名词"
+    },
+    {
+      "russian": "уважение",
+      "chinese": "老面子;敬意",
+      "pos": "形容词"
+    },
+    {
+      "russian": "буква",
+      "chinese": "字母;字母儿",
+      "pos": "名词"
+    },
+    {
+      "russian": "изображение",
+      "chinese": "图档;影频",
+      "pos": "形容词"
+    },
+    {
+      "russian": "фон",
+      "chinese": "背景;底色",
+      "pos": "名词"
+    },
+    {
+      "russian": "материальный",
+      "chinese": "有体;实物形态",
+      "pos": "词组"
+    },
+    {
+      "russian": "похоже",
+      "chinese": "似曾;听来",
+      "pos": "副词"
+    },
+    {
+      "russian": "заключение",
+      "chinese": "被压缩;要归",
+      "pos": "形容词"
+    },
+    {
+      "russian": "вес",
+      "chinese": "重量;斤两",
+      "pos": "名词"
+    },
+    {
+      "russian": "автобус",
+      "chinese": "公共汽车;巴士",
+      "pos": "名词"
+    },
+    {
+      "russian": "корпус",
+      "chinese": "基体;琴身",
+      "pos": "名词"
+    },
+    {
+      "russian": "вкус",
+      "chinese": "情味;性尚",
+      "pos": "名词"
+    },
+    {
+      "russian": "следить",
+      "chinese": "盯上;窥瞰",
+      "pos": "词组"
+    },
+    {
+      "russian": "недостаток",
+      "chinese": "少处;玷漏",
+      "pos": "名词"
+    },
+    {
+      "russian": "приносить",
+      "chinese": "支来;结出",
+      "pos": "动词"
+    },
+    {
+      "russian": "путин",
+      "chinese": "普丁;普京",
+      "pos": "名词"
+    },
+    {
+      "russian": "заранее",
+      "chinese": "探先;豫行",
+      "pos": "形容词"
+    },
+    {
+      "russian": "держаться",
+      "chinese": "支腾;掺执",
+      "pos": "动词"
+    },
+    {
+      "russian": "отделение",
+      "chinese": "分局;小格",
+      "pos": "形容词"
+    },
+    {
+      "russian": "перспектива",
+      "chinese": "透视;配京",
+      "pos": "名词"
+    },
+    {
+      "russian": "разрешение",
+      "chinese": "准证;解像度",
+      "pos": "形容词"
+    },
+    {
+      "russian": "спасти",
+      "chinese": "救出;医救",
+      "pos": "动词"
+    },
+    {
+      "russian": "мощный",
+      "chinese": "高倍;沌沌",
+      "pos": "形容词"
+    },
+    {
+      "russian": "готовить",
+      "chinese": "培训;烧菜",
+      "pos": "词组"
+    },
+    {
+      "russian": "эффективный",
+      "chinese": "得力;有效果的",
+      "pos": "形容词"
+    },
+    {
+      "russian": "угроза",
+      "chinese": "占位字符;干涉介入",
+      "pos": "名词"
+    },
+    {
+      "russian": "продать",
+      "chinese": "卖去;卖出",
+      "pos": "动词"
+    },
+    {
+      "russian": "производить",
+      "chinese": "派生;打造",
+      "pos": "动词"
+    },
+    {
+      "russian": "обед",
+      "chinese": "午餐;大餐",
+      "pos": "名词"
+    },
+    {
+      "russian": "переходить",
+      "chinese": "径度;径渡",
+      "pos": "动词"
+    },
+    {
+      "russian": "обеспечивать",
+      "chinese": "确保;奉养",
+      "pos": "词组"
+    },
+    {
+      "russian": "заставлять",
+      "chinese": "驱遣;使央",
+      "pos": "动词"
+    },
+    {
+      "russian": "подниматься",
+      "chinese": "上去;升践",
+      "pos": "动词"
+    },
+    {
+      "russian": "вход",
+      "chinese": "进口;进路",
+      "pos": "词组"
+    },
+    {
+      "russian": "сорок",
+      "chinese": "卌;四十",
+      "pos": "名词"
+    },
+    {
+      "russian": "дойти",
+      "chinese": "投至;走到",
+      "pos": "动词"
+    },
+    {
+      "russian": "отряд",
+      "chinese": "簇族;单位牌",
+      "pos": "名词"
+    },
+    {
+      "russian": "поступать",
+      "chinese": "交入;进入到达",
+      "pos": "动词"
+    },
+    {
+      "russian": "газ",
+      "chinese": "卡斯;纱罗",
+      "pos": "名词"
+    },
+    {
+      "russian": "печать",
+      "chinese": "鹊印;章子",
+      "pos": "动词"
+    },
+    {
+      "russian": "водка",
+      "chinese": "气酒;伏特加",
+      "pos": "名词"
+    },
+    {
+      "russian": "дед",
+      "chinese": "外公;祖父",
+      "pos": "名词"
+    },
+    {
+      "russian": "повышение",
+      "chinese": "晋升名称;助推",
+      "pos": "形容词"
+    },
+    {
+      "russian": "крыша",
+      "chinese": "顶子;顶壁",
+      "pos": "名词"
+    },
+    {
+      "russian": "звонок",
+      "chinese": "按铃;传唤铃",
+      "pos": "名词"
+    },
+    {
+      "russian": "продолжаться",
+      "chinese": "延申;继续下去",
+      "pos": "动词"
+    },
+    {
+      "russian": "анна",
+      "chinese": "安那;凹脑",
+      "pos": "名词"
+    },
+    {
+      "russian": "контакт",
+      "chinese": "触点;触体",
+      "pos": "名词"
+    },
+    {
+      "russian": "истинный",
+      "chinese": "拳拳;惓惓",
+      "pos": "词组"
+    },
+    {
+      "russian": "дама",
+      "chinese": "女士;女爵士",
+      "pos": "词组"
+    },
+    {
+      "russian": "мягкий",
+      "chinese": "宽容;活软",
+      "pos": "词组"
+    },
+    {
+      "russian": "сутки",
+      "chinese": "昼夜;十五时",
+      "pos": "名词"
+    },
+    {
+      "russian": "привыкнуть",
+      "chinese": "用惯;吃惯",
+      "pos": "动词"
+    },
+    {
+      "russian": "вечный",
+      "chinese": "咏存;终古",
+      "pos": "形容词"
+    },
+    {
+      "russian": "брак",
+      "chinese": "婚姻;疵纱",
+      "pos": "名词"
+    },
+    {
+      "russian": "стекло",
+      "chinese": "镜片;颇黎",
+      "pos": "副词"
+    },
+    {
+      "russian": "установка",
+      "chinese": "按装;安装中",
+      "pos": "名词"
+    },
+    {
+      "russian": "случайно",
+      "chinese": "不期;或时",
+      "pos": "名词"
+    },
+    {
+      "russian": "подать",
+      "chinese": "端出;端上来",
+      "pos": "动词"
+    },
+    {
+      "russian": "бороться",
+      "chinese": "斗争;争衡",
+      "pos": "动词"
+    },
+    {
+      "russian": "мужской",
+      "chinese": "男的;阳刚",
+      "pos": "形容词"
+    },
+    {
+      "russian": "гореть",
+      "chinese": "煎灼;火爆",
+      "pos": "动词"
+    },
+    {
+      "russian": "связанный",
+      "chinese": "索连;受缚者",
+      "pos": "形容词"
+    },
+    {
+      "russian": "задание",
+      "chinese": "道题;任务书",
+      "pos": "形容词"
+    },
+    {
+      "russian": "встречать",
+      "chinese": "迎延;迎迓",
+      "pos": "动词"
+    },
+    {
+      "russian": "пригласить",
+      "chinese": "礼聘;找来",
+      "pos": "动词"
+    },
+    {
+      "russian": "свежий",
+      "chinese": "新鲜;清鲜",
+      "pos": "词组"
+    },
+    {
+      "russian": "расход",
+      "chinese": "去项;去项儿",
+      "pos": "名词"
+    },
+    {
+      "russian": "ведущий",
+      "chinese": "主播;台主",
+      "pos": "形容词"
+    },
+    {
+      "russian": "владелец",
+      "chinese": "属主;本主",
+      "pos": "名词"
+    },
+    {
+      "russian": "оборудование",
+      "chinese": "设备品;械材",
+      "pos": "形容词"
+    },
+    {
+      "russian": "беда",
+      "chinese": "别达;殃咎",
+      "pos": "名词"
+    },
+    {
+      "russian": "сообщать",
+      "chinese": "传报;通信赋予",
+      "pos": "词组"
+    },
+    {
+      "russian": "впереди",
+      "chinese": "头里;在面前",
+      "pos": "名词"
+    },
+    {
+      "russian": "англия",
+      "chinese": "英吉利;英格兰",
+      "pos": "名词"
+    },
+    {
+      "russian": "немедленно",
+      "chinese": "紧接;即刻地",
+      "pos": "名词"
+    },
+    {
+      "russian": "должно",
+      "chinese": "该然;须当",
+      "pos": "副词"
+    },
+    {
+      "russian": "крик",
+      "chinese": "喊声;科瑞克",
+      "pos": "名词"
+    },
+    {
+      "russian": "семейный",
+      "chinese": "家的;火食道人",
+      "pos": "形容词"
+    },
+    {
+      "russian": "дядя",
+      "chinese": "舅舅;叔叔",
+      "pos": "名词"
+    },
+    {
+      "russian": "указывать",
+      "chinese": "指定;写明",
+      "pos": "词组"
+    },
+    {
+      "russian": "развиваться",
+      "chinese": "衍化;曼衍",
+      "pos": "动词"
+    },
+    {
+      "russian": "сигнал",
+      "chinese": "信号;号记",
+      "pos": "词组"
+    },
+    {
+      "russian": "назначить",
+      "chinese": "选派;补授",
+      "pos": "动词"
+    },
+    {
+      "russian": "китай",
+      "chinese": "中国;基泰",
+      "pos": "名词"
+    },
+    {
+      "russian": "борис",
+      "chinese": "鲍里斯;包里斯",
+      "pos": "名词"
+    },
+    {
+      "russian": "исходить",
+      "chinese": "出自;沿历",
+      "pos": "动词"
+    },
+    {
+      "russian": "трава",
+      "chinese": "青草;禾本",
+      "pos": "名词"
+    },
+    {
+      "russian": "лечение",
+      "chinese": "药疗法;治愈术",
+      "pos": "形容词"
+    },
+    {
+      "russian": "ящик",
+      "chinese": "匚;货箱",
+      "pos": "名词"
+    },
+    {
+      "russian": "учреждение",
+      "chinese": "曹司;官所儿",
+      "pos": "形容词"
+    },
+    {
+      "russian": "замок",
+      "chinese": "锁;城堡",
+      "pos": "名词"
+    },
+    {
+      "russian": "стул",
+      "chinese": "椅子;倚子",
+      "pos": "名词"
+    },
+    {
+      "russian": "слегка",
+      "chinese": "略显;有几分",
+      "pos": "名词"
+    },
+    {
+      "russian": "светлый",
+      "chinese": "洁亮;开亮",
+      "pos": "形容词"
+    },
+    {
+      "russian": "пропасть",
+      "chinese": "虚牝;沦伏",
+      "pos": "动词"
+    },
+    {
+      "russian": "обстановка",
+      "chinese": "动态;形势",
+      "pos": "名词"
+    },
+    {
+      "russian": "соответственно",
+      "chinese": "只此;允合",
+      "pos": "名词"
+    },
+    {
+      "russian": "сказка",
+      "chinese": "童话故事;奇谈",
+      "pos": "名词"
+    },
+    {
+      "russian": "набор",
+      "chinese": "件组;构件组",
+      "pos": "名词"
+    },
+    {
+      "russian": "зло",
+      "chinese": "凶害;病孽",
+      "pos": "副词"
+    },
+    {
+      "russian": "шум",
+      "chinese": "骚音;响动声",
+      "pos": "名词"
+    },
+    {
+      "russian": "спокойный",
+      "chinese": "深沉;坦易",
+      "pos": "词组"
+    },
+    {
+      "russian": "цифра",
+      "chinese": "码字;数目字",
+      "pos": "名词"
+    },
+    {
+      "russian": "познакомиться",
+      "chinese": "拜识;相认",
+      "pos": "动词"
+    },
+    {
+      "russian": "мол",
+      "chinese": "防水堤;防浪堤",
+      "pos": "名词"
+    },
+    {
+      "russian": "диск",
+      "chinese": "圆面;唱盘",
+      "pos": "名词"
+    },
+    {
+      "russian": "меняться",
+      "chinese": "渝变;交变",
+      "pos": "词组"
+    },
+    {
+      "russian": "оценить",
+      "chinese": "估价;估价儿",
+      "pos": "动词"
+    },
+    {
+      "russian": "кофе",
+      "chinese": "咖啡",
+      "pos": "副词"
+    },
+    {
+      "russian": "шея",
+      "chinese": "脖子;颈项",
+      "pos": "名词"
+    },
+    {
+      "russian": "ранее",
+      "chinese": "前一阵;在前面",
+      "pos": "形容词"
+    },
+    {
+      "russian": "американец",
+      "chinese": "老美;美国人",
+      "pos": "名词"
+    },
+    {
+      "russian": "книжка",
+      "chinese": "脾析;重瓣胃",
+      "pos": "名词"
+    },
+    {
+      "russian": "произвести",
+      "chinese": "导出;制造出",
+      "pos": "词组"
+    },
+    {
+      "russian": "игрок",
+      "chinese": "球员;玩者",
+      "pos": "名词"
+    },
+    {
+      "russian": "действительность",
+      "chinese": "实地;实境",
+      "pos": "动词"
+    },
+    {
+      "russian": "чтение",
+      "chinese": "读会;读议案",
+      "pos": "形容词"
+    },
+    {
+      "russian": "лестница",
+      "chinese": "楼梯;步步高",
+      "pos": "名词"
+    },
+    {
+      "russian": "лодка",
+      "chinese": "船舫;特舟",
+      "pos": "名词"
+    },
+    {
+      "russian": "продавать",
+      "chinese": "出卖;出倒",
+      "pos": "词组"
+    },
+    {
+      "russian": "собирать",
+      "chinese": "采集;储收",
+      "pos": "词组"
+    },
+    {
+      "russian": "потребитель",
+      "chinese": "用主;消费者",
+      "pos": "名词"
+    },
+    {
+      "russian": "закончиться",
+      "chinese": "已毕;告竣",
+      "pos": "动词"
+    },
+    {
+      "russian": "кусок",
+      "chinese": "块儿;切丁",
+      "pos": "名词"
+    },
+    {
+      "russian": "стратегия",
+      "chinese": "战略;策略",
+      "pos": "名词"
+    },
+    {
+      "russian": "достоинство",
+      "chinese": "尊严;佳处",
+      "pos": "词组"
+    },
+    {
+      "russian": "постель",
+      "chinese": "枕席;床笫",
+      "pos": "名词"
+    },
+    {
+      "russian": "серия",
+      "chinese": "系列;岩套",
+      "pos": "词组"
+    },
+    {
+      "russian": "основать",
+      "chinese": "开建;立项",
+      "pos": "词组"
+    },
+    {
+      "russian": "процедура",
+      "chinese": "治疗手续;程续",
+      "pos": "名词"
+    },
+    {
+      "russian": "штаб",
+      "chinese": "旅部;队部",
+      "pos": "名词"
+    },
+    {
+      "russian": "вставать",
+      "chinese": "起床;曈曈",
+      "pos": "词组"
+    },
+    {
+      "russian": "внимательно",
+      "chinese": "细心;用心地",
+      "pos": "词组"
+    },
+    {
+      "russian": "юрий",
+      "chinese": "尤里;尤列",
+      "pos": "形容词"
+    },
+    {
+      "russian": "малыш",
+      "chinese": "娃娃;伢仔",
+      "pos": "词组"
+    },
+    {
+      "russian": "вернуть",
+      "chinese": "拨还;起回",
+      "pos": "动词"
+    },
+    {
+      "russian": "еда",
+      "chinese": "餐食;膳食",
+      "pos": "名词"
+    },
+    {
+      "russian": "ожидание",
+      "chinese": "等候;等待中",
+      "pos": "形容词"
+    },
+    {
+      "russian": "изучать",
+      "chinese": "研习;推寅",
+      "pos": "动词"
+    },
+    {
+      "russian": "философия",
+      "chinese": "哲学;哲理",
+      "pos": "名词"
+    },
+    {
+      "russian": "смех",
+      "chinese": "笑儿;笑声",
+      "pos": "名词"
+    },
+    {
+      "russian": "громко",
+      "chinese": "䪦;嗑然",
+      "pos": "副词"
+    },
+    {
+      "russian": "многочисленный",
+      "chinese": "多名;伾伾",
+      "pos": "形容词"
+    },
+    {
+      "russian": "узкий",
+      "chinese": "狭隘;狭窄",
+      "pos": "形容词"
+    },
+    {
+      "russian": "ценный",
+      "chinese": "宝贵;有价",
+      "pos": "词组"
+    },
+    {
+      "russian": "чиновник",
+      "chinese": "官儿;宰官",
+      "pos": "名词"
+    },
+    {
+      "russian": "блок",
+      "chinese": "盘段;区组",
+      "pos": "名词"
+    },
+    {
+      "russian": "прибыть",
+      "chinese": "抵达;戾止",
+      "pos": "词组"
+    },
+    {
+      "russian": "страдать",
+      "chinese": "受活罪;嗟伤",
+      "pos": "动词"
+    },
+    {
+      "russian": "водитель",
+      "chinese": "司机;司机员",
+      "pos": "词组"
+    },
+    {
+      "russian": "острый",
+      "chinese": "辣;尖锐",
+      "pos": "词组"
+    },
+    {
+      "russian": "прислать",
+      "chinese": "掷来;寄来",
+      "pos": "动词"
+    },
+    {
+      "russian": "мост",
+      "chinese": "桥;圯",
+      "pos": "名词"
+    },
+    {
+      "russian": "разум",
+      "chinese": "智意;理性",
+      "pos": "名词"
+    },
+    {
+      "russian": "тишина",
+      "chinese": "季申娜;阒寂",
+      "pos": "名词"
+    },
+    {
+      "russian": "субъект",
+      "chinese": "主体;主项",
+      "pos": "名词"
+    },
+    {
+      "russian": "слух",
+      "chinese": "音准;辨音力",
+      "pos": "名词"
+    },
+    {
+      "russian": "разработать",
+      "chinese": "定出;研究制定",
+      "pos": "动词"
+    },
+    {
+      "russian": "покупатель",
+      "chinese": "置主;买主",
+      "pos": "名词"
+    },
+    {
+      "russian": "осень",
+      "chinese": "金商;金素",
+      "pos": "名词"
+    },
+    {
+      "russian": "увеличение",
+      "chinese": "增加给付;扩大化",
+      "pos": "形容词"
+    },
+    {
+      "russian": "удивительный",
+      "chinese": "令人称奇;令人惊奇",
+      "pos": "形容词"
+    },
+    {
+      "russian": "подготовить",
+      "chinese": "打好;备着",
+      "pos": "动词"
+    },
+    {
+      "russian": "танк",
+      "chinese": "坦克;特车",
+      "pos": "名词"
+    },
+    {
+      "russian": "записать",
+      "chinese": "录下;记录下来",
+      "pos": "动词"
+    },
+    {
+      "russian": "родственник",
+      "chinese": "男亲属;当家儿",
+      "pos": "名词"
+    },
+    {
+      "russian": "привет",
+      "chinese": "哈楼;哈啰",
+      "pos": "名词"
+    },
+    {
+      "russian": "пакет",
+      "chinese": "方便袋;网路封包",
+      "pos": "名词"
+    },
+    {
+      "russian": "зритель",
+      "chinese": "观战者;看官",
+      "pos": "名词"
+    },
+    {
+      "russian": "судья",
+      "chinese": "襄谳;民父母",
+      "pos": "名词"
+    },
+    {
+      "russian": "мечтать",
+      "chinese": "梦想;希觊",
+      "pos": "词组"
+    },
+    {
+      "russian": "ресторан",
+      "chinese": "餐厅;餐馆",
+      "pos": "名词"
+    },
+    {
+      "russian": "плата",
+      "chinese": "盘脚;支付金",
+      "pos": "名词"
+    },
+    {
+      "russian": "раньше",
+      "chinese": "早些;旧前",
+      "pos": "副词"
+    },
+    {
+      "russian": "остановить",
+      "chinese": "圉禁;阻档",
+      "pos": "动词"
+    },
+    {
+      "russian": "внезапно",
+      "chinese": "斗然;猛乍",
+      "pos": "名词"
+    },
+    {
+      "russian": "луна",
+      "chinese": "玉魄;蟾魄",
+      "pos": "名词"
+    },
+    {
+      "russian": "охрана",
+      "chinese": "警卫队;仗卫",
+      "pos": "名词"
+    },
+    {
+      "russian": "логика",
+      "chinese": "逻辑;理则",
+      "pos": "词组"
+    },
+    {
+      "russian": "специально",
+      "chinese": "专程;专意",
+      "pos": "名词"
+    },
+    {
+      "russian": "синий",
+      "chinese": "瓦蓝;仓浪",
+      "pos": "形容词"
+    },
+    {
+      "russian": "сущность",
+      "chinese": "主意;情性",
+      "pos": "动词"
+    },
+    {
+      "russian": "отдавать",
+      "chinese": "让给;后坐",
+      "pos": "词组"
+    },
+    {
+      "russian": "проверка",
+      "chinese": "协查;验算",
+      "pos": "名词"
+    },
+    {
+      "russian": "зеркало",
+      "chinese": "镜子;白镜",
+      "pos": "名词"
+    },
+    {
+      "russian": "вдоль",
+      "chinese": "纵着;顺着",
+      "pos": "名词"
+    },
+    {
+      "russian": "конечный",
+      "chinese": "有尽;终极",
+      "pos": "形容词"
+    },
+    {
+      "russian": "ладонь",
+      "chinese": "手板;掌宽",
+      "pos": "名词"
+    },
+    {
+      "russian": "строка",
+      "chinese": "符串;行款",
+      "pos": "名词"
+    },
+    {
+      "russian": "дальний",
+      "chinese": "达里尼;逴逴",
+      "pos": "形容词"
+    },
+    {
+      "russian": "ворота",
+      "chinese": "随墙门;篱笆门",
+      "pos": "名词"
+    },
+    {
+      "russian": "иванович",
+      "chinese": "伊凡诺维奇;伊万诺维奇",
+      "pos": "名词"
+    },
+    {
+      "russian": "передавать",
+      "chinese": "转告;寄托",
+      "pos": "动词"
+    },
+    {
+      "russian": "продолжить",
+      "chinese": "接绪;继续冒险",
+      "pos": "动词"
+    },
+    {
+      "russian": "дмитрий",
+      "chinese": "底米特;德米特里",
+      "pos": "形容词"
+    },
+    {
+      "russian": "питание",
+      "chinese": "进食中;饮食业",
+      "pos": "形容词"
+    },
+    {
+      "russian": "прибыль",
+      "chinese": "盈利;利润",
+      "pos": "词组"
+    },
+    {
+      "russian": "файл",
+      "chinese": "文档;文件保护袋",
+      "pos": "名词"
+    },
+    {
+      "russian": "религия",
+      "chinese": "宗教;信教",
+      "pos": "词组"
+    },
+    {
+      "russian": "плюс",
+      "chinese": "正号;加符号",
+      "pos": "名词"
+    },
+    {
+      "russian": "кошка",
+      "chinese": "猫儿;乌圆",
+      "pos": "名词"
+    },
+    {
+      "russian": "характерный",
+      "chinese": "有特点;有代表性",
+      "pos": "形容词"
+    },
+    {
+      "russian": "мария",
+      "chinese": "玛莉亚;玛利亚",
+      "pos": "名词"
+    },
+    {
+      "russian": "толстый",
+      "chinese": "蛮工;肥厚",
+      "pos": "形容词"
+    },
+    {
+      "russian": "висеть",
+      "chinese": "悬着;俯临",
+      "pos": "动词"
+    },
+    {
+      "russian": "ужасный",
+      "chinese": "逊毙了;碜磕磕",
+      "pos": "形容词"
+    },
+    {
+      "russian": "заказ",
+      "chinese": "定制货;产品订单",
+      "pos": "名词"
+    },
+    {
+      "russian": "отличный",
+      "chinese": "很赞;极佳",
+      "pos": "形容词"
+    },
+    {
+      "russian": "запас",
+      "chinese": "预备品;储备品",
+      "pos": "名词"
+    },
+    {
+      "russian": "крыло",
+      "chinese": "翅膀;翅翼",
+      "pos": "词组"
+    },
+    {
+      "russian": "редактор",
+      "chinese": "编务;编辑者",
+      "pos": "名词"
+    },
+    {
+      "russian": "тон",
+      "chinese": "语气;话风",
+      "pos": "名词"
+    },
+    {
+      "russian": "оборона",
+      "chinese": "守势;防务",
+      "pos": "名词"
+    },
+    {
+      "russian": "разрешить",
+      "chinese": "拟准;允准",
+      "pos": "动词"
+    },
+    {
+      "russian": "выпустить",
+      "chinese": "开释;签印放行",
+      "pos": "动词"
+    },
+    {
+      "russian": "заместитель",
+      "chinese": "替人;代替人",
+      "pos": "名词"
+    },
+    {
+      "russian": "достойный",
+      "chinese": "善良;遂遂",
+      "pos": "形容词"
+    },
+    {
+      "russian": "кризис",
+      "chinese": "危期;转变期",
+      "pos": "名词"
+    },
+    {
+      "russian": "спешить",
+      "chinese": "彶;仼",
+      "pos": "动词"
+    },
+    {
+      "russian": "спор",
+      "chinese": "争端;纠纷",
+      "pos": "词组"
+    },
+    {
+      "russian": "озеро",
+      "chinese": "湖泊;淖尔",
+      "pos": "副词"
+    },
+    {
+      "russian": "термин",
+      "chinese": "名辞;术语",
+      "pos": "名词"
+    },
+    {
+      "russian": "дикий",
+      "chinese": "季基;关键牌",
+      "pos": "形容词"
+    },
+    {
+      "russian": "круглый",
+      "chinese": "圆溜;团圞",
+      "pos": "形容词"
+    },
+    {
+      "russian": "дно",
+      "chinese": "川底;底床",
+      "pos": "副词"
+    },
+    {
+      "russian": "повернуться",
+      "chinese": "回身;掉过来",
+      "pos": "动词"
+    },
+    {
+      "russian": "младший",
+      "chinese": "低位;屘",
+      "pos": "形容词"
+    },
+    {
+      "russian": "уничтожить",
+      "chinese": "销毁;殚残",
+      "pos": "动词"
+    },
+    {
+      "russian": "попадать",
+      "chinese": "砸中;落到",
+      "pos": "动词"
+    },
+    {
+      "russian": "некоторые",
+      "chinese": "有些;有些儿",
+      "pos": "形容词"
+    },
+    {
+      "russian": "север",
+      "chinese": "北方;北家",
+      "pos": "词组"
+    },
+    {
+      "russian": "темнота",
+      "chinese": "黑儿;昏埋",
+      "pos": "名词"
+    },
+    {
+      "russian": "дыхание",
+      "chinese": "口气;鼻息",
+      "pos": "形容词"
+    },
+    {
+      "russian": "концерт",
+      "chinese": "演奏会;音乐会",
+      "pos": "名词"
+    },
+    {
+      "russian": "павел",
+      "chinese": "帕威尔;帕维尔",
+      "pos": "名词"
+    },
+    {
+      "russian": "предоставить",
+      "chinese": "给以;投来",
+      "pos": "动词"
+    },
+    {
+      "russian": "пища",
+      "chinese": "食物;口食",
+      "pos": "名词"
+    },
+    {
+      "russian": "агентство",
+      "chinese": "代理处;代办处",
+      "pos": "名词"
+    },
+    {
+      "russian": "умирать",
+      "chinese": "殒;怛化",
+      "pos": "动词"
+    },
+    {
+      "russian": "крепкий",
+      "chinese": "扎实;坚强",
+      "pos": "词组"
+    },
+    {
+      "russian": "покупка",
+      "chinese": "氪金;购得",
+      "pos": "词组"
+    },
+    {
+      "russian": "погода",
+      "chinese": "天气;天时",
+      "pos": "名词"
+    },
+    {
+      "russian": "ограничение",
+      "chinese": "有界;受限",
+      "pos": "形容词"
+    },
+    {
+      "russian": "христос",
+      "chinese": "合利斯托斯;赫里斯托斯",
+      "pos": "名词"
+    },
+    {
+      "russian": "сюжет",
+      "chinese": "剧情;剧情性",
+      "pos": "名词"
+    },
+    {
+      "russian": "тенденция",
+      "chinese": "趋势;龛儿",
+      "pos": "词组"
+    },
+    {
+      "russian": "голубой",
+      "chinese": "沧;浅蓝",
+      "pos": "形容词"
+    },
+    {
+      "russian": "грех",
+      "chinese": "罪债;罪辜",
+      "pos": "名词"
+    },
+    {
+      "russian": "производитель",
+      "chinese": "产生者;出品商",
+      "pos": "名词"
+    },
+    {
+      "russian": "шутка",
+      "chinese": "笑话;谑语",
+      "pos": "名词"
+    },
+    {
+      "russian": "атака",
+      "chinese": "来袭;亚机给给",
+      "pos": "名词"
+    },
+    {
+      "russian": "регистрация",
+      "chinese": "列册;行照",
+      "pos": "名词"
+    },
+    {
+      "russian": "доклад",
+      "chinese": "演讲;内谒",
+      "pos": "词组"
+    },
+    {
+      "russian": "клетка",
+      "chinese": "细胞;笼樊",
+      "pos": "词组"
+    },
+    {
+      "russian": "кандидат",
+      "chinese": "备补的;候补人",
+      "pos": "名词"
+    },
+    {
+      "russian": "символ",
+      "chinese": "图符;会徽",
+      "pos": "名词"
+    },
+    {
+      "russian": "везде",
+      "chinese": "各处;各处儿",
+      "pos": "副词"
+    },
+    {
+      "russian": "перевести",
+      "chinese": "译成;重新指派",
+      "pos": "动词"
+    },
+    {
+      "russian": "непосредственно",
+      "chinese": "直接地;直端",
+      "pos": "名词"
+    },
+    {
+      "russian": "сексуальный",
+      "chinese": "性感迷人;丰满肉感",
+      "pos": "形容词"
+    },
+    {
+      "russian": "неизвестный",
+      "chinese": "未明;不知名",
+      "pos": "形容词"
+    },
+    {
+      "russian": "слой",
+      "chinese": "一层;图层",
+      "pos": "形容词"
+    },
+    {
+      "russian": "назначение",
+      "chinese": "用途;用场",
+      "pos": "词组"
+    },
+    {
+      "russian": "смена",
+      "chinese": "换届;作业班",
+      "pos": "名词"
+    },
+    {
+      "russian": "положительный",
+      "chinese": "沉稳;美富",
+      "pos": "形容词"
+    },
+    {
+      "russian": "мясо",
+      "chinese": "肉儿;米罕",
+      "pos": "副词"
+    },
+    {
+      "russian": "выделить",
+      "chinese": "抽拨;提归",
+      "pos": "动词"
+    },
+    {
+      "russian": "парк",
+      "chinese": "园林;苑囿",
+      "pos": "名词"
+    },
+    {
+      "russian": "тюрьма",
+      "chinese": "监狱;狴牢",
+      "pos": "名词"
+    },
+    {
+      "russian": "разобраться",
+      "chinese": "辨清;搞明白",
+      "pos": "动词"
+    },
+    {
+      "russian": "поднимать",
+      "chinese": "搀;抬",
+      "pos": "词组"
+    },
+    {
+      "russian": "покинуть",
+      "chinese": "背离;撇漾",
+      "pos": "动词"
+    },
+    {
+      "russian": "болеть",
+      "chinese": "敊;疧",
+      "pos": "动词"
+    },
+    {
+      "russian": "глупый",
+      "chinese": "糊涂;愚蠢",
+      "pos": "形容词"
+    },
+    {
+      "russian": "соглашение",
+      "chinese": "协议书;合约",
+      "pos": "形容词"
+    },
+    {
+      "russian": "доступный",
+      "chinese": "可供;可利用",
+      "pos": "形容词"
+    },
+    {
+      "russian": "куча",
+      "chinese": "屈支;堆子",
+      "pos": "名词"
+    },
+    {
+      "russian": "устраивать",
+      "chinese": "瓦弄;铺设安排",
+      "pos": "动词"
+    },
+    {
+      "russian": "давай",
+      "chinese": "去做吧;来吧",
+      "pos": "名词"
+    },
+    {
+      "russian": "бок",
+      "chinese": "博克;肋部",
+      "pos": "名词"
+    },
+    {
+      "russian": "независимый",
+      "chinese": "不从属的;倜然",
+      "pos": "形容词"
+    },
+    {
+      "russian": "объяснение",
+      "chinese": "转训;注说",
+      "pos": "形容词"
+    },
+    {
+      "russian": "выразить",
+      "chinese": "表达出来;表现出",
+      "pos": "词组"
+    },
+    {
+      "russian": "дурак",
+      "chinese": "缺西;懝",
+      "pos": "名词"
+    },
+    {
+      "russian": "елена",
+      "chinese": "叶列娜;伊莲娜",
+      "pos": "名词"
+    },
+    {
+      "russian": "площадка",
+      "chinese": "坪坝;场地",
+      "pos": "名词"
+    },
+    {
+      "russian": "устать",
+      "chinese": "疲累;背累",
+      "pos": "动词"
+    },
+    {
+      "russian": "конь",
+      "chinese": "䱻;桂马",
+      "pos": "名词"
+    },
+    {
+      "russian": "единица",
+      "chinese": "单位;剂量单位",
+      "pos": "词组"
+    },
+    {
+      "russian": "честный",
+      "chinese": "廉贞;方毅",
+      "pos": "形容词"
+    },
+    {
+      "russian": "кот",
+      "chinese": "猫;郎猫",
+      "pos": "名词"
+    },
+    {
+      "russian": "взаимодействие",
+      "chinese": "互相作用;使用物品",
+      "pos": "形容词"
+    },
+    {
+      "russian": "империя",
+      "chinese": "因佩里亚;帝国阵营",
+      "pos": "名词"
+    },
+    {
+      "russian": "сомневаться",
+      "chinese": "謟;惑疑",
+      "pos": "动词"
+    },
+    {
+      "russian": "вздохнуть",
+      "chinese": "叹口气;唈僾",
+      "pos": "动词"
+    },
+    {
+      "russian": "температура",
+      "chinese": "温度;热度",
+      "pos": "词组"
+    },
+    {
+      "russian": "бросать",
+      "chinese": "扔;投掷",
+      "pos": "词组"
+    },
+    {
+      "russian": "платье",
+      "chinese": "洋装;裙装",
+      "pos": "名词"
+    },
+    {
+      "russian": "труба",
+      "chinese": "烟筒;特鲁巴",
+      "pos": "名词"
+    },
+    {
+      "russian": "стандарт",
+      "chinese": "模范;元位",
+      "pos": "词组"
+    },
+    {
+      "russian": "отдых",
+      "chinese": "燕休;已休息",
+      "pos": "名词"
+    },
+    {
+      "russian": "отчет",
+      "chinese": "回报;状态回报",
+      "pos": "名词"
+    },
+    {
+      "russian": "злой",
+      "chinese": "恶者;很疾",
+      "pos": "形容词"
+    },
+    {
+      "russian": "часы",
+      "chinese": "时钟;时表",
+      "pos": "名词"
+    },
+    {
+      "russian": "масло",
+      "chinese": "酥油;黄奶油",
+      "pos": "副词"
+    },
+    {
+      "russian": "полиция",
+      "chinese": "警察;警方",
+      "pos": "名词"
+    },
+    {
+      "russian": "юг",
+      "chinese": "南家;朱垠",
+      "pos": "名词"
+    },
+    {
+      "russian": "редкий",
+      "chinese": "稀世;不多见",
+      "pos": "形容词"
+    },
+    {
+      "russian": "ставка",
+      "chinese": "赌注;博彩",
+      "pos": "名词"
+    },
+    {
+      "russian": "соединить",
+      "chinese": "对上;连接好",
+      "pos": "动词"
+    },
+    {
+      "russian": "юридический",
+      "chinese": "法学上的;法律上的",
+      "pos": "形容词"
+    },
+    {
+      "russian": "вина",
+      "chinese": "负罪;罪尤",
+      "pos": "名词"
+    },
+    {
+      "russian": "ирина",
+      "chinese": "伊利娜;伊丽娜",
+      "pos": "名词"
+    },
+    {
+      "russian": "летать",
+      "chinese": "翋;飞航",
+      "pos": "动词"
+    },
+    {
+      "russian": "молоко",
+      "chinese": "牛奶;奶汁",
+      "pos": "副词"
+    },
+    {
+      "russian": "костюм",
+      "chinese": "套服;套裙",
+      "pos": "名词"
+    },
+    {
+      "russian": "лоб",
+      "chinese": "额中;额头",
+      "pos": "名词"
+    },
+    {
+      "russian": "стакан",
+      "chinese": "杯形物;杯身",
+      "pos": "名词"
+    },
+    {
+      "russian": "сухой",
+      "chinese": "干型;嫩咖",
+      "pos": "形容词"
+    },
+    {
+      "russian": "дворец",
+      "chinese": "殿阁;宫廷",
+      "pos": "名词"
+    },
+    {
+      "russian": "кончиться",
+      "chinese": "告罄;才尽",
+      "pos": "动词"
+    },
+    {
+      "russian": "промышленность",
+      "chinese": "工业",
+      "pos": "词组"
+    },
+    {
+      "russian": "спорт",
+      "chinese": "球门;芽变枝",
+      "pos": "名词"
+    },
+    {
+      "russian": "марина",
+      "chinese": "玛丽娜;妈里娜",
+      "pos": "名词"
+    },
+    {
+      "russian": "обмен",
+      "chinese": "互换交易;调期保值",
+      "pos": "名词"
+    },
+    {
+      "russian": "демократия",
+      "chinese": "民主;德谟克拉西",
+      "pos": "名词"
+    },
+    {
+      "russian": "взрыв",
+      "chinese": "爆炸罪;一次爆炸",
+      "pos": "名词"
+    },
+    {
+      "russian": "особо",
+      "chinese": "单另;另行",
+      "pos": "副词"
+    },
+    {
+      "russian": "стрелять",
+      "chinese": "㢩;弹射",
+      "pos": "动词"
+    },
+    {
+      "russian": "молча",
+      "chinese": "无言地;默默无言",
+      "pos": "名词"
+    },
+    {
+      "russian": "убивать",
+      "chinese": "炸死;杀伐",
+      "pos": "动词"
+    },
+    {
+      "russian": "стремление",
+      "chinese": "旨;志向",
+      "pos": "词组"
+    },
+    {
+      "russian": "забота",
+      "chinese": "挂碍;障脑",
+      "pos": "词组"
+    },
+    {
+      "russian": "нож",
+      "chinese": "犵党;釖",
+      "pos": "名词"
+    },
+    {
+      "russian": "вагон",
+      "chinese": "车厢;车卡",
+      "pos": "名词"
+    },
+    {
+      "russian": "безусловно",
+      "chinese": "固然",
+      "pos": "词组"
+    },
+    {
+      "russian": "довольный",
+      "chinese": "邴邴;意惬",
+      "pos": "形容词"
+    },
+    {
+      "russian": "популярный",
+      "chinese": "当红;有人气",
+      "pos": "形容词"
+    },
+    {
+      "russian": "нефть",
+      "chinese": "石油;雄黄油",
+      "pos": "动词"
+    },
+    {
+      "russian": "суббота",
+      "chinese": "周六;土曜日",
+      "pos": "名词"
+    },
+    {
+      "russian": "округ",
+      "chinese": "支厅;民族专区",
+      "pos": "名词"
+    },
+    {
+      "russian": "выступить",
+      "chinese": "开始演奏;出动",
+      "pos": "动词"
+    },
+    {
+      "russian": "рассчитывать",
+      "chinese": "打算;算应",
+      "pos": "动词"
+    },
+    {
+      "russian": "очевидный",
+      "chinese": "昭著;较著",
+      "pos": "形容词"
+    },
+    {
+      "russian": "пятьдесят",
+      "chinese": "大衍;半百",
+      "pos": "名词"
+    },
+    {
+      "russian": "управлять",
+      "chinese": "治理;总裁",
+      "pos": "动词"
+    },
+    {
+      "russian": "академия",
+      "chinese": "书院;阿加的米",
+      "pos": "名词"
+    },
+    {
+      "russian": "продолжение",
+      "chinese": "延拓;续作",
+      "pos": "形容词"
+    },
+    {
+      "russian": "сантиметр",
+      "chinese": "厘米;糎",
+      "pos": "名词"
+    },
+    {
+      "russian": "коллектив",
+      "chinese": "集体",
+      "pos": "词组"
+    },
+    {
+      "russian": "живот",
+      "chinese": "肚儿;肚腩",
+      "pos": "名词"
+    },
+    {
+      "russian": "штука",
+      "chinese": "棵;件儿",
+      "pos": "词组"
+    },
+    {
+      "russian": "корень",
+      "chinese": "根柢;根儿",
+      "pos": "名词"
+    },
+    {
+      "russian": "возвращение",
+      "chinese": "再归;他会回来",
+      "pos": "形容词"
+    },
+    {
+      "russian": "образец",
+      "chinese": "方式;样品",
+      "pos": "词组"
+    },
+    {
+      "russian": "коммерческий",
+      "chinese": "商业级;商用",
+      "pos": "形容词"
+    },
+    {
+      "russian": "половой",
+      "chinese": "有性;小二哥",
+      "pos": "形容词"
+    },
+    {
+      "russian": "гостиница",
+      "chinese": "饭店;酒店",
+      "pos": "名词"
+    },
+    {
+      "russian": "кампания",
+      "chinese": "炉龄期;坎帕尼亚",
+      "pos": "名词"
+    },
+    {
+      "russian": "утверждение",
+      "chinese": "肯定语;断语",
+      "pos": "形容词"
+    },
+    {
+      "russian": "выдержать",
+      "chinese": "䞍;熬出",
+      "pos": "动词"
+    },
+    {
+      "russian": "село",
+      "chinese": "乡镇;行政村",
+      "pos": "词组"
+    },
+    {
+      "russian": "ой",
+      "chinese": "阿侑;呦",
+      "pos": "词组"
+    },
+    {
+      "russian": "слушатель",
+      "chinese": "听者;听课生",
+      "pos": "名词"
+    },
+    {
+      "russian": "пауза",
+      "chinese": "停延;游戏暂停",
+      "pos": "名词"
+    },
+    {
+      "russian": "эффективность",
+      "chinese": "起效;有效性",
+      "pos": "动词"
+    },
+    {
+      "russian": "кредит",
+      "chinese": "信用;拆款",
+      "pos": "名词"
+    },
+    {
+      "russian": "пьяный",
+      "chinese": "醉迷;醉人",
+      "pos": "形容词"
+    },
+    {
+      "russian": "приложение",
+      "chinese": "附册;附刊",
+      "pos": "形容词"
+    },
+    {
+      "russian": "резкий",
+      "chinese": "嗃嗃;狷",
+      "pos": "形容词"
+    },
+    {
+      "russian": "лев",
+      "chinese": "狮子;雄狮",
+      "pos": "名词"
+    },
+    {
+      "russian": "различие",
+      "chinese": "相异;级差",
+      "pos": "形容词"
+    },
+    {
+      "russian": "учение",
+      "chinese": "学说;规教",
+      "pos": "词组"
+    },
+    {
+      "russian": "отмечать",
+      "chinese": "表章;显扬",
+      "pos": "动词"
+    },
+    {
+      "russian": "воскресенье",
+      "chinese": "礼拜天;礼拜",
+      "pos": "名词"
+    },
+    {
+      "russian": "восприятие",
+      "chinese": "传感;採纳",
+      "pos": "形容词"
+    },
+    {
+      "russian": "грязный",
+      "chinese": "脏污;脏脏",
+      "pos": "形容词"
+    },
+    {
+      "russian": "доказательство",
+      "chinese": "左证;信验",
+      "pos": "名词"
+    },
+    {
+      "russian": "пятница",
+      "chinese": "周五;金曜",
+      "pos": "名词"
+    },
+    {
+      "russian": "кольцо",
+      "chinese": "戒指;型圈",
+      "pos": "副词"
+    },
+    {
+      "russian": "продавец",
+      "chinese": "售货员;售主",
+      "pos": "名词"
+    },
+    {
+      "russian": "захватить",
+      "chinese": "撩弄;篡取",
+      "pos": "动词"
+    },
+    {
+      "russian": "персонаж",
+      "chinese": "角色解锁;角色患病",
+      "pos": "名词"
+    },
+    {
+      "russian": "величина",
+      "chinese": "大小;量值",
+      "pos": "名词"
+    },
+    {
+      "russian": "напряжение",
+      "chinese": "胁强;警戒度",
+      "pos": "形容词"
+    },
+    {
+      "russian": "обязательный",
+      "chinese": "必修;约束性",
+      "pos": "形容词"
+    },
+    {
+      "russian": "крестьянин",
+      "chinese": "耘夫;庄稼主",
+      "pos": "名词"
+    },
+    {
+      "russian": "поймать",
+      "chinese": "钓到;夺取中",
+      "pos": "动词"
+    },
+    {
+      "russian": "вершина",
+      "chinese": "大顶;杪",
+      "pos": "名词"
+    },
+    {
+      "russian": "строй",
+      "chinese": "调弦法;音律",
+      "pos": "形容词"
+    },
+    {
+      "russian": "доска",
+      "chinese": "椹板;厚板",
+      "pos": "名词"
+    },
+    {
+      "russian": "секрет",
+      "chinese": "暗哨;潜伏绍",
+      "pos": "名词"
+    },
+    {
+      "russian": "достигать",
+      "chinese": "拉高;占到",
+      "pos": "动词"
+    },
+    {
+      "russian": "защищать",
+      "chinese": "守护;捍卫",
+      "pos": "词组"
+    },
+    {
+      "russian": "предпочитать",
+      "chinese": "比较喜欢;宁可选择",
+      "pos": "动词"
+    },
+    {
+      "russian": "выдать",
+      "chinese": "流露;签发",
+      "pos": "词组"
+    },
+    {
+      "russian": "япония",
+      "chinese": "倭国;日本国",
+      "pos": "名词"
+    },
+    {
+      "russian": "ручка",
+      "chinese": "手扣;提手",
+      "pos": "名词"
+    },
+    {
+      "russian": "одинаковый",
+      "chinese": "一个样;齐等",
+      "pos": "形容词"
+    },
+    {
+      "russian": "ударить",
+      "chinese": "刜;敲下",
+      "pos": "动词"
+    },
+    {
+      "russian": "имущество",
+      "chinese": "持有物;资业",
+      "pos": "名词"
+    },
+    {
+      "russian": "серьезно",
+      "chinese": "我说真的;叫真",
+      "pos": "名词"
+    },
+    {
+      "russian": "курить",
+      "chinese": "抽烟;抽吸",
+      "pos": "词组"
+    },
+    {
+      "russian": "подтвердить",
+      "chinese": "坐实;确认调整",
+      "pos": "动词"
+    },
+    {
+      "russian": "верно",
+      "chinese": "没错;确尔",
+      "pos": "词组"
+    },
+    {
+      "russian": "понедельник",
+      "chinese": "周一;月曜",
+      "pos": "名词"
+    },
+    {
+      "russian": "строгий",
+      "chinese": "严格;严肃",
+      "pos": "词组"
+    },
+    {
+      "russian": "дышать",
+      "chinese": "呼嘘;吐噏",
+      "pos": "动词"
+    },
+    {
+      "russian": "портрет",
+      "chinese": "肖像;画象",
+      "pos": "名词"
+    },
+    {
+      "russian": "противоположный",
+      "chinese": "拮抗;相对立",
+      "pos": "形容词"
+    },
+    {
+      "russian": "схватить",
+      "chinese": "抓;绑架",
+      "pos": "动词"
+    },
+    {
+      "russian": "порог",
+      "chinese": "下坎;阃阈",
+      "pos": "名词"
+    },
+    {
+      "russian": "объединение",
+      "chinese": "军种联合;联合体",
+      "pos": "形容词"
+    },
+    {
+      "russian": "сектор",
+      "chinese": "扇区;弧形钣",
+      "pos": "名词"
+    },
+    {
+      "russian": "гулять",
+      "chinese": "溜打;散荡",
+      "pos": "动词"
+    },
+    {
+      "russian": "подарить",
+      "chinese": "赠与;赠送单位",
+      "pos": "动词"
+    },
+    {
+      "russian": "луч",
+      "chinese": "鳍刺;原线",
+      "pos": "名词"
+    },
+    {
+      "russian": "крутой",
+      "chinese": "嵚;真牛鼻",
+      "pos": "形容词"
+    },
+    {
+      "russian": "привычка",
+      "chinese": "行习;习气",
+      "pos": "名词"
+    },
+    {
+      "russian": "уникальный",
+      "chinese": "独特物品;各具特色",
+      "pos": "形容词"
+    },
+    {
+      "russian": "лейтенант",
+      "chinese": "中尉;陆军中尉",
+      "pos": "名词"
+    },
+    {
+      "russian": "испытание",
+      "chinese": "一次试验;检定法",
+      "pos": "形容词"
+    },
+    {
+      "russian": "применять",
+      "chinese": "运用;应用到",
+      "pos": "词组"
+    },
+    {
+      "russian": "девять",
+      "chinese": "九个;𠃩",
+      "pos": "动词"
+    },
+    {
+      "russian": "транспорт",
+      "chinese": "输船;交通业",
+      "pos": "名词"
+    },
+    {
+      "russian": "хвост",
+      "chinese": "尾巴;尾巴子",
+      "pos": "名词"
+    },
+    {
+      "russian": "василий",
+      "chinese": "巴西勒;瓦西里",
+      "pos": "形容词"
+    },
+    {
+      "russian": "свидетель",
+      "chinese": "证人;证明人",
+      "pos": "名词"
+    },
+    {
+      "russian": "килограмм",
+      "chinese": "公斤;兛",
+      "pos": "名词"
+    },
+    {
+      "russian": "экзамен",
+      "chinese": "场试;大考",
+      "pos": "名词"
+    },
+    {
+      "russian": "вывести",
+      "chinese": "推导出;推演出来",
+      "pos": "动词"
+    },
+    {
+      "russian": "тянуть",
+      "chinese": "牵;搝",
+      "pos": "动词"
+    },
+    {
+      "russian": "менеджер",
+      "chinese": "管事员;管理工具",
+      "pos": "名词"
+    },
+    {
+      "russian": "каменный",
+      "chinese": "石质的;𥐕",
+      "pos": "词组"
+    },
+    {
+      "russian": "разумный",
+      "chinese": "拉祖姆内;嶷",
+      "pos": "形容词"
+    },
+    {
+      "russian": "надпись",
+      "chinese": "铭文;篆额",
+      "pos": "名词"
+    },
+    {
+      "russian": "сумка",
+      "chinese": "提袋;露营袋",
+      "pos": "名词"
+    },
+    {
+      "russian": "евгений",
+      "chinese": "叶夫根尼;叶夫格尼",
+      "pos": "形容词"
+    },
+    {
+      "russian": "золото",
+      "chinese": "黄金;鋆",
+      "pos": "副词"
+    },
+    {
+      "russian": "сигарета",
+      "chinese": "华子;烟草棒",
+      "pos": "名词"
+    },
+    {
+      "russian": "успешный",
+      "chinese": "亨嘉;有功",
+      "pos": "形容词"
+    },
+    {
+      "russian": "забрать",
+      "chinese": "拉上谁;取去",
+      "pos": "动词"
+    },
+    {
+      "russian": "немало",
+      "chinese": "匪浅;不浅",
+      "pos": "副词"
+    },
+    {
+      "russian": "цитата",
+      "chinese": "引录;引用句",
+      "pos": "名词"
+    },
+    {
+      "russian": "полоса",
+      "chinese": "谱带;一溜",
+      "pos": "名词"
+    },
+    {
+      "russian": "рейтинг",
+      "chinese": "排位赛;成就率",
+      "pos": "名词"
+    },
+    {
+      "russian": "указание",
+      "chinese": "悬示;示诲",
+      "pos": "形容词"
+    },
+    {
+      "russian": "владеть",
+      "chinese": "会用;据有",
+      "pos": "动词"
+    },
+    {
+      "russian": "воин",
+      "chinese": "勇士;武士",
+      "pos": "名词"
+    },
+    {
+      "russian": "атмосфера",
+      "chinese": "蒙气;氛围气",
+      "pos": "名词"
+    },
+    {
+      "russian": "том",
+      "chinese": "汤姆;托姆",
+      "pos": "名词"
+    },
+    {
+      "russian": "баба",
+      "chinese": "撞槌;撞锤",
+      "pos": "名词"
+    },
+    {
+      "russian": "спорить",
+      "chinese": "争议;计较",
+      "pos": "词组"
+    }
+  ],
+  "sentences": [
+    {
+      "russian": "Я хочу обсудить с тобой одну проблему.",
+      "chinese": "我想和你讨论一个问题。"
+    },
+    {
+      "russian": "Это была очень интересная книга.",
+      "chinese": "这是一本非常有趣的书。"
+    },
+    {
+      "russian": "Можете объяснить это правило?",
+      "chinese": "能解释一下这个规则吗？"
+    },
+    {
+      "russian": "Мне кажется, ты прав.",
+      "chinese": "我觉得你是对的。"
+    },
+    {
+      "russian": "В будущем я хочу путешествовать по миру.",
+      "chinese": "将来我想环游世界。"
+    },
+    {
+      "russian": "Спасибо за приглашение, я обязательно приду.",
+      "chinese": "谢谢邀请，我一定会来。"
+    },
+    {
+      "russian": "У меня есть хорошие новости!",
+      "chinese": "我有好消息！"
+    },
+    {
+      "russian": "Я уже забыл, как это делать.",
+      "chinese": "我已经忘了怎么做这个。"
+    },
+    {
+      "russian": "Это решение принял начальник.",
+      "chinese": "这个决定是上司做的。"
+    },
+    {
+      "russian": "Особенно мне нравится русская литература.",
+      "chinese": "我特别喜欢俄罗斯文学。"
+    },
+    {
+      "russian": "Какова причина этой проблемы?",
+      "chinese": "这个问题的原因是什么？"
+    },
+    {
+      "russian": "Давайте договоримся встретиться завтра.",
+      "chinese": "我们约定明天见面吧。"
+    },
+    {
+      "russian": "Я не могу согласиться с твоим мнением.",
+      "chinese": "我无法同意你的意见。"
+    },
+    {
+      "russian": "Хотя было трудно, мы достигли цели.",
+      "chinese": "虽然很难，我们达到了目标。"
+    },
+    {
+      "russian": "Поздравляю тебя с праздником!",
+      "chinese": "祝你节日快乐！"
+    },
+    {
+      "russian": "Общество является неоднородным, и его можно понять только с разных углов.",
+      "chinese": "社會包羅萬象，可以從各個角度去認識。"
+    },
+    {
+      "russian": "Интеллигенция - это элита общества.",
+      "chinese": "知识分子是社会的精英。"
+    },
+    {
+      "russian": "Заботиться о памятниках культуры - это ответственность каждого.",
+      "chinese": "爱护文物, 人人有责。"
+    },
+    {
+      "russian": "Почти утеряны основные продукты питания из грубых зерновых культур.",
+      "chinese": "几近失传的粗粮主食。"
+    },
+    {
+      "russian": "Расскажи нам эту историю от начала до конца.",
+      "chinese": "請你把故事從頭到尾給我們說一遍。"
+    },
+    {
+      "russian": "Его история произвела на меня глубокое впечатление.",
+      "chinese": "他的故事給我留下了很深的印象。"
+    },
+    {
+      "russian": "Вам лучше избегать обсуждения религии и политики.",
+      "chinese": "你最好別提到宗教和政治這些話題。"
+    },
+    {
+      "russian": "Каким образом связаны политика и военные действия?",
+      "chinese": "政治和战争之间有什么关系？"
+    },
+    {
+      "russian": "В то время японская экономика была на небывалом подъёме.",
+      "chinese": "此時日本的經濟在前所未有的榮景之中。"
+    },
+    {
+      "russian": "Финансовый сектор - это важная часть национальной экономики.",
+      "chinese": "国民经济中金融经济是一个重要组成部分。"
+    },
+    {
+      "russian": "У тебя хорошее образование - это твоё преимущество.",
+      "chinese": "你受過良好教育，這是你的優勢。"
+    },
+    {
+      "russian": "У него была привилегия получить частное образование.",
+      "chinese": "他享有私人教学的特权。"
+    },
+    {
+      "russian": "Преподавание - это профессия, которую я выбрал сам.",
+      "chinese": "教书是我自己选择的职业。"
+    },
+    {
+      "russian": "Он доктор по профессии.",
+      "chinese": "他的职业是医生。"
+    },
+    {
+      "russian": "Господин, представьтесь, пожалуйста. Какая у вас специальность?",
+      "chinese": "先生，请你自我介绍一下，你有什么专长？"
+    },
+    {
+      "russian": "С тех пор его бейсбольная карьера закончилась.",
+      "chinese": "他的棒球生涯到此结束。"
+    },
+    {
+      "russian": "Она посвятила свою жизнь педагогической карьере.",
+      "chinese": "她把她的一生献给了教育事业。"
+    },
+    {
+      "russian": "Он был избран на должность мэра.",
+      "chinese": "他被选为市长。"
+    },
+    {
+      "russian": "Ему удалось получить должность министра.",
+      "chinese": "他設法當上了部長。"
+    },
+    {
+      "russian": "Его низкая зарплата не позволяет ему купить дом.",
+      "chinese": "因為他的薪水太低，他買不起那棟房子。"
+    },
+    {
+      "russian": "Эта работа очень интересная, и, кроме того, зарплата тоже неплохая.",
+      "chinese": "那份工作挺有趣味，而且薪金也不錯。"
+    },
+    {
+      "russian": "Мой начальник только что уволил меня.",
+      "chinese": "我的老板刚刚解雇了我。"
+    },
+    {
+      "russian": "Я воспринимал его как начальника.",
+      "chinese": "我把他看待为老板。"
+    },
+    {
+      "russian": "Они гарантируют своим сотрудникам высокую занятость.",
+      "chinese": "他們對他們的員工保證就業。"
+    },
+    {
+      "russian": "Сотрудникам Intel повезло с тобой.",
+      "chinese": "Intel的人有你真幸運。"
+    },
+    {
+      "russian": "Очень сожалею, но у меня назначена другая встреча.",
+      "chinese": "很抱歉，我还有另一个约会。"
+    },
+    {
+      "russian": "Все эти встречи проводятся на английском языке.",
+      "chinese": "所有這些會議都是以英語進行的。"
+    },
+    {
+      "russian": "У меня есть полное собрание сочинений Шекспира.",
+      "chinese": "我有莎士比亞的作品全集。"
+    },
+    {
+      "russian": "Сегодня в нашем классе состоялось родительское собрание.",
+      "chinese": "今天我们班开家长会了。"
+    },
+    {
+      "russian": "По большей части я знаком с этим проектом.",
+      "chinese": "这个项目我大致了解。"
+    },
+    {
+      "russian": "Для твоего проекта требуется значительная сумма денег.",
+      "chinese": "你的项目需要一大笔钱。"
+    },
+    {
+      "russian": "Я скучаю по телефонным разговорам с родителями.",
+      "chinese": "我想打电话给父母。"
+    },
+    {
+      "russian": "У меня был интересный разговор с соседкой.",
+      "chinese": "我跟我的邻居进行了个有意思的对话。"
+    },
+    {
+      "russian": "Она была в шоке, когда услышала эту новость.",
+      "chinese": "她听到那个消息后惊呆了。"
+    },
+    {
+      "russian": "В течение нескольких часов новость распространилась по всему миру.",
+      "chinese": "消息在數小時內就傳遍了全世界。"
+    },
+    {
+      "russian": "Я не буду больше выписывать газету со следующего месяца.",
+      "chinese": "下个月开始我不订报纸了。"
+    },
+    {
+      "russian": "Я проработал в этой газете четыре года.",
+      "chinese": "我为这家报社工作四年了。"
+    },
+    {
+      "russian": "Тот магазин продаёт газеты и журналы.",
+      "chinese": "那家店卖报纸和杂志。"
+    },
+    {
+      "russian": "Не хочешь почитать этот журнал?",
+      "chinese": "想不想读这本杂志？"
+    },
+    {
+      "russian": "Вы не могли бы сделать радио потише?",
+      "chinese": "可以把收音機的音量調低一點嗎？"
+    },
+    {
+      "russian": "Вы не могли бы убавить громкость радио?",
+      "chinese": "可以把收音機的音量調低一點嗎？"
+    },
+    {
+      "russian": "На телевидении недопустимо использовать нецензурные выражения.",
+      "chinese": "你不能在電視上罵粗口。"
+    },
+    {
+      "russian": "Возможно, это потому, что интернет слишком медленный.",
+      "chinese": "可能是因为网速太慢。"
+    },
+    {
+      "russian": "Я продавал одежду по интернету.",
+      "chinese": "我是在网上卖的衣服。"
+    },
+    {
+      "russian": "Как только я встал в дверях, телефон зазвонил.",
+      "chinese": "我正要出門的時候，電話就響起了。"
+    },
+    {
+      "russian": "Не позволяй ему играть с твоим мобильным телефоном.",
+      "chinese": "別讓他玩你的手機。"
+    },
+    {
+      "russian": "Пожалуйста, не присылайте мне сообщения.",
+      "chinese": "请你不要发信息给我。"
+    },
+    {
+      "russian": "Я могу оставить сообщение?",
+      "chinese": "我能留个言吗？"
+    },
+    {
+      "russian": "Прости, что я по ошибке вскрыл твоё письмо.",
+      "chinese": "對不起, 我錯開了你的信。"
+    },
+    {
+      "russian": "Мне надо написать письмо. У тебя есть бумага?",
+      "chinese": "我需要写一封信。你有纸吗？"
+    },
+    {
+      "russian": "Никто не мог помочь мне найти правильный ответ.",
+      "chinese": "没人帮我找到正确答案。"
+    },
+    {
+      "russian": "Думаю, у меня есть ответы на все вопросы.",
+      "chinese": "我認為我有所有的答案。"
+    },
+    {
+      "russian": "У меня ещё так много вопросов к тебе.",
+      "chinese": "我還有好多問題要問你呢。"
+    },
+    {
+      "russian": "Тебе надо ответить только на первый вопрос.",
+      "chinese": "你只需要回答頭一個問題。"
+    },
+    {
+      "russian": "Проблема в том, что солнечная энергия слишком дорогая.",
+      "chinese": "問題是, 太陽能太貴了。"
+    },
+    {
+      "russian": "Мы можем рассмотреть эту проблему с нескольких позиций.",
+      "chinese": "我們可以從幾個觀點來考慮這個問題。"
+    },
+    {
+      "russian": "Причина его смерти все еще остается загадкой.",
+      "chinese": "他的死因仍然是一個謎。"
+    },
+    {
+      "russian": "Я даже не хочу думать о причине.",
+      "chinese": "我一點也不想思考原因。"
+    },
+    {
+      "russian": "Что касается результата игры, то заплати, если проиграл.",
+      "chinese": "对于比赛的结果，你要愿赌服输。"
+    },
+    {
+      "russian": "Поэзия - это дар свыше, а не результат обучения.",
+      "chinese": "诗是心灵的一种天赋而不是学习的成果。"
+    },
+    {
+      "russian": "Он никогда не терял надежды достичь этой цели.",
+      "chinese": "他從沒放棄達成那個目標的希望。"
+    },
+    {
+      "russian": "Остановиться на полпути труднее, чем идти к цели.",
+      "chinese": "站在半路，比走到目標更辛苦。"
+    },
+    {
+      "russian": "Мы можем рассмотреть задачу с разных точек зрения.",
+      "chinese": "我們可以從幾個觀點來考慮這個問題。"
+    },
+    {
+      "russian": "Мне трудно решить эту задачу.",
+      "chinese": "我难以解决这问题。"
+    },
+    {
+      "russian": "Он считал, что план очень хороший, но неосуществимый.",
+      "chinese": "她认为计划很好，但不可行。"
+    },
+    {
+      "russian": "Даже самые тщательно разработанные планы часто заканчиваются неудачей.",
+      "chinese": "即使最小心做的计划也经常失败了。"
+    },
+    {
+      "russian": "Избавиться от бедности - это заветная мечта китайского народа.",
+      "chinese": "摆脱贫困，是中国人民孜孜以求的梦想。"
+    },
+    {
+      "russian": "Всем хочется верить, что мечты могут сбыться.",
+      "chinese": "人人都愿意相信美梦可以成真。"
+    },
+    {
+      "russian": "Его идеи не заработали ему ни копейки.",
+      "chinese": "他的看法真是一文不值。"
+    },
+    {
+      "russian": "Я не думаю, что это хорошая идея.",
+      "chinese": "我觉得这主意不行。"
+    },
+    {
+      "russian": "Что привело Вас к мысли работать на нашу компанию?",
+      "chinese": "是什么让您决定为我们公司工作？"
+    },
+    {
+      "russian": "Слова облекают мысли в словесную форму.",
+      "chinese": "語詞表達思想。"
+    },
+    {
+      "russian": "Обе стороны в процессе переговоров дружественно обменялись мнениями.",
+      "chinese": "双方在会谈中友好地交换了看法。"
+    },
+    {
+      "russian": "У каждого из этих студентов есть собственное мнение.",
+      "chinese": "每位學生都各有所見。"
+    },
+    {
+      "russian": "Потому что бизнес вашей компании много приобретёт с моим опытом.",
+      "chinese": "因为你们公司的业务能够发挥我的特长。"
+    },
+    {
+      "russian": "Он написал много книг о своём опыте работы в зарубежных странах.",
+      "chinese": "他寫了很多書講述他在外國的經歷。"
+    },
+    {
+      "russian": "Без твоей помощи наш план бы не увенчался успехом.",
+      "chinese": "沒有你幫忙，計劃就不能成功了。"
+    },
+    {
+      "russian": "Тот, кто ищет отговорки, не имеет шансов на успех.",
+      "chinese": "為自己找藉口的人永遠不會進步。"
+    },
+    {
+      "russian": "Успех - это развитие сильных сторон, неудача - это накопление недостатков.",
+      "chinese": "成功是優點的發揮，失敗是缺點的累積。"
+    },
+    {
+      "russian": "Я возьму на себя ответственность за неудачу.",
+      "chinese": "我来承担失败的责任。"
+    },
+    {
+      "russian": "Многие страны уже отказались от смертной казни.",
+      "chinese": "許多國家已經廢除了死刑。"
+    },
+    {
+      "russian": "Россия является самой большой страной в мире.",
+      "chinese": "俄羅斯是世界上最大的國家。"
+    },
+    {
+      "russian": "Говорят, что он - самый богатый человек в мире.",
+      "chinese": "據說他是世界上最富有的人。"
+    },
+    {
+      "russian": "Война — это мир. Свобода — это рабство. Незнание — сила.",
+      "chinese": "戰爭就是和平，自由—是奴役。無知，則是力量。"
+    },
+    {
+      "russian": "Он от природы добрый.",
+      "chinese": "他天性善良。"
+    },
+    {
+      "russian": "Во время путешествия в Европу меня обокрали в поезде.",
+      "chinese": "我去歐洲旅行的時候，在火車上給人偷了東西。"
+    },
+    {
+      "russian": "Он в одиночку совершил кругосветное путешествие за восемьдесят дней.",
+      "chinese": "他独自环游了世界八十天。"
+    },
+    {
+      "russian": "Он взял двухнедельный отпуск и уехал в Китай.",
+      "chinese": "他請了兩個星期的假，去了中國。"
+    },
+    {
+      "russian": "В прошлом году они ездили в отпуск во Францию.",
+      "chinese": "他们去年到法国度假。"
+    },
+    {
+      "russian": "Надеюсь, что ты сможешь прийти на этот праздник.",
+      "chinese": "希望你可以出席這場宴會。"
+    },
+    {
+      "russian": "Том надеется, что ты сможешь прийти к нему на праздник.",
+      "chinese": "湯姆希望你能參加他的派對。"
+    },
+    {
+      "russian": "Предлагаешь ли ты какие-нибудь туры на целый день?",
+      "chinese": "你提供任何全日遊嗎？"
+    },
+    {
+      "russian": "Предлагаешь ли ты какие-нибудь экскурсии на целый день?",
+      "chinese": "你提供任何全日遊嗎？"
+    },
+    {
+      "russian": "Они обсуждают этот вопрос.",
+      "chinese": "他們正在討論這個問題。"
+    },
+    {
+      "russian": "Она рассказывает о своей несчастной жизни всем, кого встречает.",
+      "chinese": "无论遇到谁，她都会讲述自己悲惨的生活。"
+    },
+    {
+      "russian": "И ты мне еще будешь рассказывать?!",
+      "chinese": "还吹什么法螺呀你！"
+    },
+    {
+      "russian": "Он мне обещал, что никому не скажет.",
+      "chinese": "他答應了我不會對任何人說。"
+    },
+    {
+      "russian": "Я обещаю, что отправлю тебя в тюрьму.",
+      "chinese": "我保證我會把你送進牢裡。"
+    },
+    {
+      "russian": "Поздравляю тебя с праздником фонарей!",
+      "chinese": "祝你元宵节快乐!"
+    },
+    {
+      "russian": "Не забывай про нас.",
+      "chinese": "别忘了我们！"
+    },
+    {
+      "russian": "Пожалуйста, не забывайте практиковаться дома, а то наши занятия не принесут пользы.",
+      "chinese": "請不要忘了在家練習，不然我們上的課就沒有效果了。"
+    },
+    {
+      "russian": "Каждый раз, когда я смотрю на эту фотографию, я вспоминаю счастливые дни деревенской жизни.",
+      "chinese": "每當我看著這張照片, 我就回憶起那些在鄉村幸福的日子。"
+    },
+    {
+      "russian": "Пойдём мы туда или нет - решать тебе.",
+      "chinese": "我们去不去那儿由你来决定。"
+    },
+    {
+      "russian": "Вам решать, покупать его или нет.",
+      "chinese": "买不买由你决定。"
+    },
+    {
+      "russian": "Он пробовал написать один небольшой рассказ.",
+      "chinese": "他试过写一本短篇小说。"
+    },
+    {
+      "russian": "В прошлом путешествовать было намного труднее, чем сегодня.",
+      "chinese": "以往，做一趟旅行比现在难多了。"
+    },
+    {
+      "russian": "Он достаточно взрослый для того, чтобы путешествовать в одиночку.",
+      "chinese": "他够大了，可以独自旅行了。"
+    },
+    {
+      "russian": "Они считают невежливым не соглашаться с кем-нибудь, кого они не знают достаточно хорошо.",
+      "chinese": "他们认为，去反驳一个不认识的人有些不礼貌。"
+    },
+    {
+      "russian": "Это предложение слишком хорошее, чтобы от него отказываться.",
+      "chinese": "此提議好得令人難以拒絕。"
+    },
+    {
+      "russian": "Никто не знает, почему он отказывается от моей помощи.",
+      "chinese": "沒有人知道他為何拒絕我幫忙。"
+    },
+    {
+      "russian": "Марсель и Лион, конечно, нельзя сравнивать.",
+      "chinese": "你绝不可把马赛和里昂相比。"
+    },
+    {
+      "russian": "Многие не узнают свой голос в записи.",
+      "chinese": "很多人認不出錄音中自己的聲音。"
+    },
+    {
+      "russian": "Том уже никого не узнаёт.",
+      "chinese": "汤姆不认识任何人。"
+    },
+    {
+      "russian": "Не беспокойся, я попросил своего бухгалтера уладить это.",
+      "chinese": "妳放心我已经请我的会计在处理了"
+    },
+    {
+      "russian": "Ты, кажется, не беспокоишься об этом мире.",
+      "chinese": "你看似對這世間已了無牽掛。"
+    },
+    {
+      "russian": "Надеюсь, вы не станете снова лгать мне.",
+      "chinese": "希望你不要再继续骗我了。"
+    },
+    {
+      "russian": "Я надеюсь, что смогу пойти с тобой на вечеринку.",
+      "chinese": "我希望我能和你一起参加派对。"
+    },
+    {
+      "russian": "Благоразумная птица выбирает своё дерево. Мудрый служитель выбирает своего мастера.",
+      "chinese": "良禽择木而栖，贤臣择主而事。"
+    },
+    {
+      "russian": "Мы можем продолжать играть пока не мешаем своим шумом другим.",
+      "chinese": "我們可以繼續玩，別吵到別人就行了。"
+    },
+    {
+      "russian": "Она всё продолжала надеяться, что её собака будет найдена живой.",
+      "chinese": "她仍舊希望她的狗被找到時是活著的。"
+    },
+    {
+      "russian": "Необходимо многократно повторять эти общеизвестные истины.",
+      "chinese": "必须反复地讲这些众所周知的真理。"
+    },
+    {
+      "russian": "Я повторять не буду.",
+      "chinese": "我不会再说了。"
+    },
+    {
+      "russian": "Фрукты и овощи важны для сбалансированного питания.",
+      "chinese": "蔬果对平衡饮食必不可少。"
+    },
+    {
+      "russian": "Самая важная черта всех игр - они все имеют правила.",
+      "chinese": "在所有的游戏里有最重要的特点: 它们都拥有法则。"
+    },
+    {
+      "russian": "Для твоего проекта необходима значительная сумма денег.",
+      "chinese": "你的项目需要一大笔钱。"
+    },
+    {
+      "russian": "Чрезвычайные меры необходимы в чрезвычайный период.",
+      "chinese": "非常时期需要非常措施。"
+    },
+    {
+      "russian": "Атомная бомба - это очень серьёзная угроза для человечества.",
+      "chinese": "原子弹对人类来说是一个很严重的威胁。"
+    },
+    {
+      "russian": "Ты должен серьёзнее относиться к учёбе.",
+      "chinese": "你必須認真學習。"
+    },
+    {
+      "russian": "\"Удобный\" - это антоним к \"неудобный\".",
+      "chinese": "「不方便」的相反詞是「方便」。"
+    },
+    {
+      "russian": "Этот стул очень удобный.",
+      "chinese": "这把椅子很舒服。"
+    },
+    {
+      "russian": "Мы должны делать всё возможное, чтобы не загрязнять окружающую среду.",
+      "chinese": "我們應該盡力不要污染環境。"
+    },
+    {
+      "russian": "Ты должна сделать всё возможное.",
+      "chinese": "你必须做到最好。"
+    },
+    {
+      "russian": "На самом деле, мы также требуем от человека невозможного.",
+      "chinese": "事实上，我们也有点强人所难。"
+    },
+    {
+      "russian": "Он мне нравится не потому, что он приятный, а потому, что он честный.",
+      "chinese": "我很喜欢他，不是因为他人很好，而是因为他很正直。"
+    },
+    {
+      "russian": "У него весьма странные взгляды на брак.",
+      "chinese": "他的婚姻觀很畸形。"
+    },
+    {
+      "russian": "Прошлой ночью мне приснился странный сон.",
+      "chinese": "我昨晚做了一個奇怪的夢。"
+    },
+    {
+      "russian": "Он обычный ученик средней школы, не особо умный.",
+      "chinese": "他只不過是個普普通通的中學生，不算特別聰明。"
+    },
+    {
+      "russian": "Я пропустил свой обычный поезд.",
+      "chinese": "我错过了通常乘的那班火车。"
+    },
+    {
+      "russian": "В некоторых отношениях мы с ними разные.",
+      "chinese": "我們有某些地方和他們不同。"
+    },
+    {
+      "russian": "В этом вопросе у нас разные взгляды.",
+      "chinese": "在这个问题上，我们的看法不一样。"
+    },
+    {
+      "russian": "Мать Жунжун совсем не похожа на хорошую мать.",
+      "chinese": "蓉蓉的妈妈一点都不像一个好妈妈。"
+    },
+    {
+      "russian": "Моя младшая сестра очень похожа на маму.",
+      "chinese": "我妹妹很像我妈妈。"
+    },
+    {
+      "russian": "Они не знакомы друг с другом очень хорошо.",
+      "chinese": "他們不太認識對方。"
+    },
+    {
+      "russian": "Так как она новенькая, она ещё ни с кем не знакома.",
+      "chinese": "因为她是新来的，所以她谁都不认识。"
+    },
+    {
+      "russian": "Этот итальянский автор не особо известен в Японии.",
+      "chinese": "那个意大利作家在日本不太出名。"
+    },
+    {
+      "russian": "Из всех известных мне людей он самый ленивый.",
+      "chinese": "他是我認識的人中最懶的。"
+    },
+    {
+      "russian": "Президент обычно выезжает за рубеж в компании своей жены.",
+      "chinese": "總統出國通常有妻子陪伴。"
+    },
+    {
+      "russian": "Обычно я езжу в школу на велосипеде.",
+      "chinese": "我通常騎自行車去上學。"
+    },
+    {
+      "russian": "Например, в Болгарии мотание головой означает согласие, а кивание головой - несогласие.",
+      "chinese": "例如，在保加利亚摇头表示同意而点头表示不同意。"
+    },
+    {
+      "russian": "Самая младшая дочка была особенно красива.",
+      "chinese": "么女長得特別漂亮。"
+    },
+    {
+      "russian": "Я люблю музыку, особенно классическую.",
+      "chinese": "我很喜歡音樂，尤其是古典音樂。"
+    },
+    {
+      "russian": "Конечно. Это рядом с торговым центром.",
+      "chinese": "当然。它就在商场旁边。"
+    },
+    {
+      "russian": "«Ты не умеешь курить?» — «Конечно умею!»",
+      "chinese": "「你不會抽菸？」「怎麼可能不會！」"
+    },
+    {
+      "russian": "Абсолютно не возможно закончить работу в течение месяца.",
+      "chinese": "這份工作絕對沒有可能在一個月之內完成。"
+    },
+    {
+      "russian": "Из-за проблемы загрязнения воздуха, велосипеды, возможно, однажды заменят автомобили.",
+      "chinese": "因為空氣汙染的問題，也許有一天自行車會取代汽車。"
+    },
+    {
+      "russian": "Кейт выглядит как-то не очень, наверное заболела.",
+      "chinese": "凱特的臉色這麼差，一定是生病了。"
+    },
+    {
+      "russian": "Без твоего совета я бы, наверное, проиграл.",
+      "chinese": "如果沒有你的忠告，我大概已經失敗了吧。"
+    },
+    {
+      "russian": "Ты слишком быстро идёшь, поэтому я отстаю.",
+      "chinese": "你走得太快我跟不上。"
+    },
+    {
+      "russian": "Приближается экзамен в конце семестра, поэтому я очень занят.",
+      "chinese": "期末考试临近，所以我很忙。"
+    },
+    {
+      "russian": "Однако он любит длинные каникулы.",
+      "chinese": "但是他喜欢学校放长假。"
+    },
+    {
+      "russian": "Есть пословица \"удалец-молодец умрёт, да не согнётся\". Однако есть и другая: \"удалец-молодец выкрутиться спец\".",
+      "chinese": "俗話說：男子漢大丈夫，寧死不屈；可俗話又說：男子漢大丈夫，能屈能伸!"
+    },
+    {
+      "russian": "Хотя эта книга очень толстая, но она не дорогая.",
+      "chinese": "这本书虽然很厚，但是不贵。"
+    },
+    {
+      "russian": "Хотя он не был женат, у него был ребёнок.",
+      "chinese": "雖然他沒有結婚, 但他有一個孩子。"
+    },
+    {
+      "russian": "Ты присмотришь за моей собакой, пока меня не будет?",
+      "chinese": "我不在的时候，你能照顾我的狗吗？"
+    },
+    {
+      "russian": "Я был спокоен, пока не увидел шприц.",
+      "chinese": "我很平静，直到我看到了注射器。"
+    },
+    {
+      "russian": "Пирог? Мне вдруг снова захотелось есть!",
+      "chinese": "蛋糕？我突然又饿了！"
+    },
+    {
+      "russian": "С чего вдруг злиться?",
+      "chinese": "生什麼氣呀？"
+    },
+    {
+      "russian": "С помощью моих уговоров, она наконец решила остаться.",
+      "chinese": "在我的劝说下，她终于决定留下来了。"
+    },
+    {
+      "russian": "Я наконец почувствовал, что меня ценят.",
+      "chinese": "我終於感到被賞識了。"
+    },
+    {
+      "russian": "Собираясь критиковать других, сначала подумай, безупречен ли сам.",
+      "chinese": "要批評別人時，先想想自己是否完美無缺。"
+    },
+    {
+      "russian": "Перед подписанием контракта вы должны сначала его просмотреть.",
+      "chinese": "签署合同前，您应该先审核一下。"
+    },
+    {
+      "russian": "Не обязательно надевать нижнее белье, когда выходишь на улицу.",
+      "chinese": "出門不一定要穿內衣。"
+    },
+    {
+      "russian": "Великий воин излучает силу. Ему не обязательно воевать до смерти.",
+      "chinese": "一名伟大的战士威力显著，无需抵死奋战。"
+    },
+    {
+      "russian": "Я постараюсь не мешать тебе учиться.",
+      "chinese": "我会尽量不打扰你复习。"
+    },
+    {
+      "russian": "Я заметил, что веселье совсем не мешает тебе учиться. Я так не могу.",
+      "chinese": "我发现你玩绝对不耽误学习。我就不行。"
+    },
+    {
+      "russian": "Плохое настроение приводит к серьёзным заболеваниям, смех увеличивает продолжительность жизни.",
+      "chinese": "气气闷闷生大病，嘻嘻哈哈添寿命。"
+    },
+    {
+      "russian": "Я сегодня в плохом настроении.",
+      "chinese": "今天心情不好。"
+    },
+    {
+      "russian": "Постепенно дружба между ними переросла в любовь.",
+      "chinese": "他和她之間的友誼，漸漸地醞釀成了愛情。"
+    },
+    {
+      "russian": "Численность населения этой страны постепенно сокращается.",
+      "chinese": "这个国家的人口正在逐渐减少。"
+    },
+    {
+      "russian": "Каждому нужно выучить нечто большее, чем просто язык.",
+      "chinese": "人人需要学习的不仅仅是语言。"
+    },
+    {
+      "russian": "Мышление — это нечто прекрасное.",
+      "chinese": "思想是一个美人。"
+    },
+    {
+      "russian": "Я не могу найти его в толпе.",
+      "chinese": "我在人群中找不到他。"
+    },
+    {
+      "russian": "Я потерял его из вида в толпе.",
+      "chinese": "我在人群中和他走失了。"
+    },
+    {
+      "russian": "Через два-три дня ты снова будешь здоров.",
+      "chinese": "你兩三天就會回復健康了。"
+    },
+    {
+      "russian": "Итак, это означает более здоровый город?",
+      "chinese": "那么，这代表更健康的城市吗？"
+    },
+    {
+      "russian": "Земля, Марс и Юпитер - это планеты.",
+      "chinese": "地球、火星和木星是行星。"
+    },
+    {
+      "russian": "Мы все живём на планете Земля.",
+      "chinese": "我們都居住在地球上。"
+    },
+    {
+      "russian": "Обычай передавался из поколения в поколение.",
+      "chinese": "习惯一代代传承下来。"
+    },
+    {
+      "russian": "Когда он нашёл тебя, какая реакция была у тебя?",
+      "chinese": "他来找你的时候，当时你是什么反应？"
+    },
+    {
+      "russian": "У неё мгновенная реакция.",
+      "chinese": "她反應很快。"
+    },
+    {
+      "russian": "Он не такой умный, как его старший брат.",
+      "chinese": "他没他哥哥聪明。"
+    },
+    {
+      "russian": "Она такая же умная, как и он.",
+      "chinese": "她和他一样聪明。"
+    },
+    {
+      "russian": "Том, вероятно, знает причину переноса встречи.",
+      "chinese": "湯姆大概知道會議延期的原因。"
+    },
+    {
+      "russian": "Завтра, вероятно, пойдёт дождь.",
+      "chinese": "明天有可能會下雨。"
+    },
+    {
+      "russian": "Механизм работает за счёт магнитной силы.",
+      "chinese": "装置靠磁力运作。"
+    },
+    {
+      "russian": "Кто бы ни пришёл, дверь не открывай.",
+      "chinese": "誰來了也不要開門。"
+    },
+    {
+      "russian": "Хотя мама мальчика сказала ему не открывать окна, он их всё равно открыл.",
+      "chinese": "雖然小男孩的母親叫他不要開窗，但他還是開了。"
+    },
+    {
+      "russian": "Весь класс оживился, узнав, что переводится новый ученик.",
+      "chinese": "听说要来一个转校生之后，全班都乱哄哄地活跃起来。"
+    },
+    {
+      "russian": "В целом, к этому ученику нет никаких нареканий.",
+      "chinese": "他总体上是个无可非议的学生。"
+    },
+    {
+      "russian": "Есть ли на Марсе живые организмы?",
+      "chinese": "火星上有生物嗎？"
+    }
+  ]
+}

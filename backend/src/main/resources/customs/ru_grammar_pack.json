@@ -1,0 +1,279 @@
+{
+  "id": "ru-grammar-pack",
+  "title": "俄语语法精讲 · 专项训练",
+  "description": "系统梳理俄语核心语法点：名词性数格、形容词、动词变位、时态、前置词、数词等。每课一个语法主题，配规则说明与实用例句，适合巩固语法基础。",
+  "cover": "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ru-grammar-01",
+      "order": 1,
+      "title": "名词的性（Род имён существительных）",
+      "description": "俄语名词分阳、阴、中三性，通过词尾判断。学习基本规律与常见例外。",
+      "statements": [
+        { "english": "стол (м.р.) — 桌子", "chinese": "阳性名词，以硬辅音结尾", "soundmark": "stol" },
+        { "english": "дом (м.р.) — 房子", "chinese": "阳性名词，以硬辅音结尾", "soundmark": "dom" },
+        { "english": "книга (ж.р.) — 书", "chinese": "阴性名词，以 -а 结尾", "soundmark": "knee-ga" },
+        { "english": "мама (ж.р.) — 妈妈", "chinese": "阴性名词，以 -а 结尾", "soundmark": "ma-ma" },
+        { "english": "окно (ср.р.) — 窗户", "chinese": "中性名词，以 -о 结尾", "soundmark": "ak-no" },
+        { "english": "море (ср.р.) — 海", "chinese": "中性名词，以 -е 结尾", "soundmark": "mo-reh" },
+        { "english": "словарь (м.р.) — 词典", "chinese": "以 -ь 结尾，属于阳性", "soundmark": "sla-var" },
+        { "english": "тетрадь (ж.р.) — 练习本", "chinese": "以 -ь 结尾，属于阴性", "soundmark": "tet-rad" },
+        { "english": "кофе (м.р.) — 咖啡", "chinese": "以 -е 结尾，但属于阳性（特殊）", "soundmark": "ko-feh" },
+        { "english": "пальто (ср.р.) — 大衣", "chinese": "以 -о 结尾的中性外来词，不变化", "soundmark": "pal-to" }
+      ]
+    },
+    {
+      "id": "ru-grammar-02",
+      "order": 2,
+      "title": "名词的复数（Множественное число）",
+      "description": "俄语名词复数通过改变词尾构成，不同性有不同规则。",
+      "statements": [
+        { "english": "стол — столы", "chinese": "阳性：加 -ы（硬变化）", "soundmark": "sta-ly" },
+        { "english": "дом — дома", "chinese": "阳性：加 -а（特殊重音变化）", "soundmark": "da-ma" },
+        { "english": "книга — книги", "chinese": "阴性 -а → -ы（硬变）", "soundmark": "knee-gee" },
+        { "english": "мама — мамы", "chinese": "阴性 -а → -ы", "soundmark": "ma-my" },
+        { "english": "окно — окна", "chinese": "中性 -о → -а", "soundmark": "ok-na" },
+        { "english": "море — моря", "chinese": "中性 -е → -я", "soundmark": "mo-rya" },
+        { "english": "словарь — словари", "chinese": "阳性 -ь → -и（软变化）", "soundmark": "sla-va-ree" },
+        { "english": "тетрадь — тетради", "chinese": "阴性 -ь → -и", "soundmark": "tet-ra-dee" },
+        { "english": "стул — стулья", "chinese": "特殊变化：内部元音变化", "soundmark": "stool-ya" },
+        { "english": "друг — друзья", "chinese": "特殊变化：辅音替换", "soundmark": "drooz-ya" }
+      ]
+    },
+    {
+      "id": "ru-grammar-03",
+      "order": 3,
+      "title": "形容词（Имя прилагательное）",
+      "description": "形容词与名词在性、数上保持一致。学习形容词的性数变化规则。",
+      "statements": [
+        { "english": "новый стол (м.р.)", "chinese": "新的桌子 — 形容词阳性 -ый", "soundmark": "no-vy stol" },
+        { "english": "новая книга (ж.р.)", "chinese": "新的书 — 形容词阴性 -ая", "soundmark": "no-va-ya knee-ga" },
+        { "english": "новое окно (ср.р.)", "chinese": "新的窗户 — 形容词中性 -ое", "soundmark": "no-vo-ye ak-no" },
+        { "english": "новые столы (мн.ч.)", "chinese": "新的桌子们 — 复数 -ые", "soundmark": "no-vye sta-ly" },
+        { "english": "большой город — 大城市", "chinese": "形容词 -ой 结尾（重读）", "soundmark": "bal-shoy go-rod" },
+        { "english": "хороший человек — 好人", "chinese": "形容词 -ий 结尾（软变化）", "soundmark": "kha-ro-shiy che-la-vyek" },
+        { "english": "красивая девушка — 漂亮的女孩", "chinese": "阴性 -ая", "soundmark": "kra-see-va-ya dye-voosh-ka" },
+        { "english": "интересное дело — 有趣的事", "chinese": "中性 -ое", "soundmark": "in-te-res-no-ye dye-la" },
+        { "english": "русский язык — 俄语", "chinese": "形容词 -ий（软变化）", "soundmark": "rooss-kiy ya-zyk" },
+        { "english": "хорошие друзья — 好朋友", "chinese": "复数 -ие（软变化）", "soundmark": "kha-ro-shi-ye drooz-ya" }
+      ]
+    },
+    {
+      "id": "ru-grammar-04",
+      "order": 4,
+      "title": "动词变位 I（Глагол. I спряжение）",
+      "description": "俄语动词按人称变位。第一变位法以 -ть 结尾的动词。",
+      "statements": [
+        { "english": "Я читаю книгу.", "chinese": "我读书（читать 第一变位：-ю）", "soundmark": "ya chee-ta-yu knee-goo" },
+        { "english": "Ты читаешь книгу.", "chinese": "你读书（-ешь）", "soundmark": "ty chee-ta-yesh knee-goo" },
+        { "english": "Он читает книгу.", "chinese": "他读书（-ет）", "soundmark": "on chee-ta-yet knee-goo" },
+        { "english": "Мы читаем книгу.", "chinese": "我们读书（-ем）", "soundmark": "my chee-ta-yem knee-goo" },
+        { "english": "Вы читаете книгу.", "chinese": "你们读书（-ете）", "soundmark": "vy chee-ta-ye-tye knee-goo" },
+        { "english": "Они читают книгу.", "chinese": "他们读书（-ют）", "soundmark": "a-nee chee-ta-yut knee-goo" },
+        { "english": "Я делаю уроки.", "chinese": "我做功课（делать）", "soundmark": "ya dye-la-yu o-ro-kee" },
+        { "english": "Я играю в футбол.", "chinese": "我踢足球（играть）", "soundmark": "ya eeg-ra-yu f fud-bol" },
+        { "english": "Я понимаю по-русски.", "chinese": "我懂俄语（понимать）", "soundmark": "ya pa-nee-ma-yu pa-rooss-kee" },
+        { "english": "Я гуляю в парке.", "chinese": "我在公园散步（гулять）", "soundmark": "ya goo-lya-yu v par-kye" }
+      ]
+    },
+    {
+      "id": "ru-grammar-05",
+      "order": 5,
+      "title": "动词变位 II（Глагол. II спряжение）",
+      "description": "第二变位法动词以 -ить 结尾居多，变位时词干元音变化。",
+      "statements": [
+        { "english": "Я говорю по-русски.", "chinese": "我说俄语（говорить 第二变位）", "soundmark": "ya ga-va-ryu pa-rooss-kee" },
+        { "english": "Ты говоришь по-русски.", "chinese": "你说俄语（-ишь）", "soundmark": "ty ga-va-reesh pa-rooss-kee" },
+        { "english": "Он говорит по-русски.", "chinese": "他说俄语（-ит）", "soundmark": "on ga-va-reet pa-rooss-kee" },
+        { "english": "Мы говорим по-русски.", "chinese": "我们说俄语（-им）", "soundmark": "my ga-va-reem pa-rooss-kee" },
+        { "english": "Вы говорите по-русски.", "chinese": "你们说俄语（-ите）", "soundmark": "vy ga-va-ree-tye pa-rooss-kee" },
+        { "english": "Они говорят по-русски.", "chinese": "他们说俄语（-ят）", "soundmark": "a-nee ga-va-ryat pa-rooss-kee" },
+        { "english": "Я учу русский язык.", "chinese": "我学俄语（учить）", "soundmark": "ya oo-choo rooss-kiy ya-zyk" },
+        { "english": "Я смотрю телевизор.", "chinese": "我看电视（смотреть）", "soundmark": "ya sma-tryu tee-le-vee-zar" },
+        { "english": "Я стою здесь.", "chinese": "我站在这儿（стоять）", "soundmark": "ya sta-yu zdyes" },
+        { "english": "Они строят дом.", "chinese": "他们在盖房子（строить）", "soundmark": "a-nee stro-yat dom" }
+      ]
+    },
+    {
+      "id": "ru-grammar-06",
+      "order": 6,
+      "title": "动词过去时（Прошедшее время）",
+      "description": "俄语过去时由动词不定式词干加后缀 -л- 构成，有性数变化。",
+      "statements": [
+        { "english": "Он читал книгу.", "chinese": "他（曾）读书（阳性 -л）", "soundmark": "on chee-tal knee-goo" },
+        { "english": "Она читала книгу.", "chinese": "她（曾）读书（阴性 -ла）", "soundmark": "a-na chee-ta-la knee-goo" },
+        { "english": "Оно читало книгу.", "chinese": "它（曾）读书（中性 -ло）", "soundmark": "a-no chee-ta-la knee-goo" },
+        { "english": "Они читали книгу.", "chinese": "他们（曾）读书（复数 -ли）", "soundmark": "a-nee chee-ta-lee knee-goo" },
+        { "english": "Я был дома.", "chinese": "我在家（阳性）", "soundmark": "ya byl do-ma" },
+        { "english": "Я была дома.", "chinese": "我在家（阴性）", "soundmark": "ya by-la do-ma" },
+        { "english": "Он сказал: «Привет!»", "chinese": "他说：你好！（сказать）", "soundmark": "on ska-zal pree-vyet" },
+        { "english": "Мы были в музее.", "chinese": "我们曾去过博物馆", "soundmark": "my by-lee v moo-zye-ye" },
+        { "english": "Вчера шёл дождь.", "chinese": "昨天下雨了（идти→шёл）", "soundmark": "vche-ra shyol dosht" },
+        { "english": "Она написала письмо.", "chinese": "她写了一封信（написать）", "soundmark": "a-na na-pee-sa-la pees-mo" }
+      ]
+    },
+    {
+      "id": "ru-grammar-07",
+      "order": 7,
+      "title": "动词将来时（Будущее время）",
+      "description": "未完成体动词将来时由 быть 变位 + 动词不定式构成。完成体动词将来时用现在时形式表示。",
+      "statements": [
+        { "english": "Я буду читать.", "chinese": "我将要读（быть + 不定式）", "soundmark": "ya boo-doo chee-tat" },
+        { "english": "Ты будешь читать.", "chinese": "你将读", "soundmark": "ty boo-desh chee-tat" },
+        { "english": "Он будет читать.", "chinese": "他将读", "soundmark": "on boo-det chee-tat" },
+        { "english": "Мы будем учиться.", "chinese": "我们将学习", "soundmark": "my boo-dem oo-cheet-sya" },
+        { "english": "Вы будете работать.", "chinese": "你们将工作", "soundmark": "vy boo-de-tye ra-bo-tat" },
+        { "english": "Они будут жить здесь.", "chinese": "他们将住在这里", "soundmark": "a-nee boo-dut zhit zdyes" },
+        { "english": "Я прочитаю эту книгу.", "chinese": "我会读完这本书（完成体将来=现在变位）", "soundmark": "ya pra-chee-ta-yu e-too knee-goo" },
+        { "english": "Завтра мы поедем в Москву.", "chinese": "明天我们将去莫斯科", "soundmark": "zav-tra my pa-ye-dem v maz-kvoo" },
+        { "english": "Она напишет письмо.", "chinese": "她会写完信（написать 完成体）", "soundmark": "a-na na-pee-shet pees-mo" },
+        { "english": "Я сделаю уроки завтра.", "chinese": "我明天做作业（сделать）", "soundmark": "ya sdye-la-yu o-ro-kee zav-tra" }
+      ]
+    },
+    {
+      "id": "ru-grammar-08",
+      "order": 8,
+      "title": "第一格与第二格（Именительный и Родительный падежи）",
+      "description": "第一格为主格，作主语。第二格表所属、否定、数量等。",
+      "statements": [
+        { "english": "Это книга.", "chinese": "这是一本书（第一格）", "soundmark": "e-ta knee-ga" },
+        { "english": "Это книга студента.", "chinese": "这是大学生的书（第二格表所属）", "soundmark": "e-ta knee-ga stoo-dyen-ta" },
+        { "english": "У меня нет книги.", "chinese": "我没有书（нет+第二格）", "soundmark": "oo mee-nya nyet knee-gee" },
+        { "english": "Стакан воды.", "chinese": "一杯水（数量+第二格）", "soundmark": "sta-kan va-dy" },
+        { "english": "Дом отца.", "chinese": "父亲的房子（所属）", "soundmark": "dom at-tsa" },
+        { "english": "Я из Китая.", "chinese": "我来自中国（из+第二格）", "soundmark": "ya eez kee-ta-ya" },
+        { "english": "Он старше брата.", "chinese": "他比哥哥大（比较级+第二格）", "soundmark": "on star-she bra-ta" },
+        { "english": "Много студентов.", "chinese": "很多大学生（много+第二格复数）", "soundmark": "mno-ga stoo-dyen-tav" },
+        { "english": "Два стола.", "chinese": "两张桌子（2/3/4+第二格单数）", "soundmark": "dva sta-la" },
+        { "english": "Нет времени.", "chinese": "没有时间", "soundmark": "nyet vre-me-nee" }
+      ]
+    },
+    {
+      "id": "ru-grammar-09",
+      "order": 9,
+      "title": "第三格（Дательный падеж）",
+      "description": "第三格表间接宾语、动作方向、年龄、感受主体等。",
+      "statements": [
+        { "english": "Я даю книгу другу.", "chinese": "我把书给朋友（给+第三格）", "soundmark": "ya da-yu knee-goo droo-goo" },
+        { "english": "Он помогает маме.", "chinese": "他帮助妈妈（帮助+第三格）", "soundmark": "on pa-ma-ga-yet ma-mye" },
+        { "english": "Мне 20 лет.", "chinese": "我20岁（年龄用第三格）", "soundmark": "mnye dvad-tsat lyet" },
+        { "english": "Мне холодно.", "chinese": "我觉得冷（感受用第三格）", "soundmark": "mnye khol-ad-na" },
+        { "english": "Нам нужно работать.", "chinese": "我们需要工作", "soundmark": "nam noo-zhna ra-bo-tat" },
+        { "english": "Я звоню сестре.", "chinese": "我给姐姐打电话", "soundmark": "ya zva-nyu ses-trye" },
+        { "english": "К врачу.", "chinese": "去看医生（к+第三格表方向）", "soundmark": "k vra-choo" },
+        { "english": "По улице.", "chinese": "沿着街道走（по+第三格）", "soundmark": "pa oo-lee-tse" },
+        { "english": "Ему нравится музыка.", "chinese": "他喜欢音乐（нравиться+第三格）", "soundmark": "ye-moo nra-vee-tsa moo-zy-ka" },
+        { "english": "Спасибо вам!", "chinese": "谢谢您（感谢+第三格）", "soundmark": "spa-see-ba vam" }
+      ]
+    },
+    {
+      "id": "ru-grammar-10",
+      "order": 10,
+      "title": "第四格（Винительный падеж）",
+      "description": "第四格为直接宾语格，回答 кого? что? 多与及物动词连用。",
+      "statements": [
+        { "english": "Я вижу стол.", "chinese": "我看见桌子（阳性无生命同第一格）", "soundmark": "ya vee-zhu stol" },
+        { "english": "Я вижу книгу.", "chinese": "我看见书（阴性 -а→-у）", "soundmark": "ya vee-zhu knee-goo" },
+        { "english": "Я вижу брата.", "chinese": "我看见哥哥（阳性有生命同第二格）", "soundmark": "ya vee-zhu bra-ta" },
+        { "english": "Я люблю маму.", "chinese": "我爱妈妈", "soundmark": "ya lyub-lyu ma-moo" },
+        { "english": "Я читаю газету.", "chinese": "我读报纸", "soundmark": "ya chee-ta-yu ga-zye-too" },
+        { "english": "Он купил машину.", "chinese": "他买了一辆车", "soundmark": "on koo-peel ma-shee-noo" },
+        { "english": "Я жду друга.", "chinese": "我在等朋友", "soundmark": "ya zhdoo droo-ga" },
+        { "english": "Она знает Анну.", "chinese": "她认识安娜（阴性有生命）", "soundmark": "a-na zna-yet an-noo" },
+        { "english": "Я слушаю музыку.", "chinese": "我听音乐", "soundmark": "ya sloo-sha-yu moo-zy-koo" },
+        { "english": "Он смотрит фильм.", "chinese": "他在看电影", "soundmark": "on smo-trit feelm" }
+      ]
+    },
+    {
+      "id": "ru-grammar-11",
+      "order": 11,
+      "title": "第五格（Творительный падеж）",
+      "description": "第五格表工具、方式、共同行为，也做表语。",
+      "statements": [
+        { "english": "Я пишу ручкой.", "chinese": "我用钢笔写字（工具）", "soundmark": "ya pee-shoo rooch-koy" },
+        { "english": "Он работает врачом.", "chinese": "他是医生（职业表语）", "soundmark": "on ra-bo-ta-yet vra-chom" },
+        { "english": "Я иду с другом.", "chinese": "我和朋友一起走（с+第五格）", "soundmark": "ya ee-doo s droo-gom" },
+        { "english": "Мы говорим по-русски.", "chinese": "我们说俄语", "soundmark": "my ga-va-reem pa-rooss-kee" },
+        { "english": "Она интересуется музыкой.", "chinese": "她对音乐感兴趣", "soundmark": "a-na een-te-re-soo-yet-sa moo-zy-koy" },
+        { "english": "Москва — столица России.", "chinese": "莫斯科是俄罗斯的首都", "soundmark": "maz-kva sta-lee-tsa ras-see-ee" },
+        { "english": "Заниматься спортом.", "chinese": "从事体育运动", "soundmark": "za-nee-mat-sya spor-tom" },
+        { "english": "Перед домом.", "chinese": "在房子前面（перед+第五格）", "soundmark": "pye-red do-mom" },
+        { "english": "Между окном и дверью.", "chinese": "在窗户和门之间（между+第五格）", "soundmark": "myezh-doo ak-nom e dvyer-yu" },
+        { "english": "Горжусь сыном.", "chinese": "我为儿子骄傲（гордиться+第五格）", "soundmark": "gar-zhus sy-nom" }
+      ]
+    },
+    {
+      "id": "ru-grammar-12",
+      "order": 12,
+      "title": "第六格（Предложный падеж）",
+      "description": "第六格仅与前置词连用，表地点、思想对象。常见前置词：о, в, на。",
+      "statements": [
+        { "english": "Я живу в Москве.", "chinese": "我住在莫斯科（в+第六格表地点）", "soundmark": "ya zhee-voo v maz-kvye" },
+        { "english": "Он работает на заводе.", "chinese": "他在工厂工作（на+第六格）", "soundmark": "on ra-bo-ta-yet na za-vo-dye" },
+        { "english": "Мы говорим о работе.", "chinese": "我们谈论工作（о+第六格）", "soundmark": "my ga-va-reem a ra-bo-tye" },
+        { "english": "Я думаю о тебе.", "chinese": "我在想你（о+第六格）", "soundmark": "ya doo-ma-yu a tee-bye" },
+        { "english": "В университете.", "chinese": "在大学里", "soundmark": "v oo-nee-ver-see-tye" },
+        { "english": "На столе.", "chinese": "在桌子上", "soundmark": "na sta-lye" },
+        { "english": "В прошлом году.", "chinese": "在去年", "soundmark": "v prosh-lom ga-doo" },
+        { "english": "Она мечтает о путешествии.", "chinese": "她梦想旅行", "soundmark": "a-na mech-ta-yet a poo-tye-shest-vee-ee" },
+        { "english": "В этом городе.", "chinese": "在这个城市", "soundmark": "v e-tam go-ro-dye" },
+        { "english": "На уроке русского языка.", "chinese": "在俄语课上", "soundmark": "na o-ro-kye rooss-ka-va ya-zy-ka" }
+      ]
+    },
+    {
+      "id": "ru-grammar-13",
+      "order": 13,
+      "title": "前置词（Предлоги）",
+      "description": "常用前置词及其所接的格。",
+      "statements": [
+        { "english": "в + 第六格 — в школе", "chinese": "在…里：在学校", "soundmark": "v shko-lye" },
+        { "english": "на + 第六格 — на улице", "chinese": "在…上：在街上", "soundmark": "na oo-lee-tse" },
+        { "english": "из + 第二格 — из дома", "chinese": "从…出来：从家", "soundmark": "eez do-ma" },
+        { "english": "с + 第二格 — с работы", "chinese": "从…（表面）：从工作", "soundmark": "s ra-bo-ty" },
+        { "english": "к + 第三格 — к врачу", "chinese": "向…去：去看医生", "soundmark": "k vra-choo" },
+        { "english": "у + 第二格 — у окна", "chinese": "在…旁边：在窗户旁", "soundmark": "oo ak-na" },
+        { "english": "для + 第二格 — для тебя", "chinese": "为了：为了你", "soundmark": "dlya tee-bya" },
+        { "english": "после + 第二格 — после урока", "chinese": "在…之后：课后", "soundmark": "po-slye o-ro-ka" },
+        { "english": "до + 第二格 — до работы", "chinese": "在…之前：工作前", "soundmark": "da ra-bo-ty" },
+        { "english": "без + 第二格 — без воды", "chinese": "没有：没有水", "soundmark": "byez va-dy" }
+      ]
+    },
+    {
+      "id": "ru-grammar-14",
+      "order": 14,
+      "title": "数词（Числительные）",
+      "description": "基数词与名词的搭配规则。",
+      "statements": [
+        { "english": "один стол (1)", "chinese": "一张桌子（1+第一格单数）", "soundmark": "a-deen stol" },
+        { "english": "два стола (2)", "chinese": "两张桌子（2+第二格单数）", "soundmark": "dva sta-la" },
+        { "english": "три стола (3)", "chinese": "三张桌子（3+第二格单数）", "soundmark": "tree sta-la" },
+        { "english": "четыре стола (4)", "chinese": "四张桌子（4+第二格单数）", "soundmark": "chee-ty-reh sta-la" },
+        { "english": "пять столов (5)", "chinese": "五张桌子（5+第二格复数）", "soundmark": "pyat sta-lof" },
+        { "english": "десять книг (10)", "chinese": "十本书（10+第二格复数）", "soundmark": "dye-syat kneek" },
+        { "english": "сто рублей (100)", "chinese": "一百卢布", "soundmark": "sto roob-lyey" },
+        { "english": "первый урок (第1课)", "chinese": "序数词由基数词变来", "soundmark": "pyer-vy o-rok" },
+        { "english": "вторая книга (第2本书)", "chinese": "序数词与名词保持性数一致", "soundmark": "fta-ra-ya knee-ga" },
+        { "english": "третье окно (第3个窗户)", "chinese": "序数词中性形式", "soundmark": "tre-tye ak-no" }
+      ]
+    },
+    {
+      "id": "ru-grammar-15",
+      "order": 15,
+      "title": "主从复合句（Сложное предложение）",
+      "description": "常用连接词：что, чтобы, потому что, если, когда 等。",
+      "statements": [
+        { "english": "Я знаю, что он придёт.", "chinese": "我知道他会来（что 连接）", "soundmark": "ya zna-yu shto on pree-dyot" },
+        { "english": "Он сказал, что любит её.", "chinese": "他说他爱她", "soundmark": "on ska-zal shto lyu-bit ye-yo" },
+        { "english": "Я учусь, чтобы знать.", "chinese": "我学习为了懂（чтобы 表目的）", "soundmark": "ya oo-chus shto-by znat" },
+        { "english": "Я не пошёл, потому что было холодно.", "chinese": "我没去因为天冷（потому что）", "soundmark": "ya ne pa-shyol pa-ta-moo shto by-la khol-ad-na" },
+        { "english": "Если будет время, я приду.", "chinese": "如果有时间，我就来（если 表条件）", "soundmark": "yes-lee boo-dyet vre-mya ya pree-doo" },
+        { "english": "Когда я был маленьким...", "chinese": "当我小的时候…（когда 表时间）", "soundmark": "kag-da ya byl ma-lyen-keem" },
+        { "english": "Книга, которую я читаю...", "chinese": "我正在读的书（который 连接定语从句）", "soundmark": "knee-ga ka-to-roo-yu ya chee-ta-yu" },
+        { "english": "Где ты живёшь?", "chinese": "你住在哪里？", "soundmark": "gdye ty zhee-vyosh" },
+        { "english": "Почему ты не пришёл?", "chinese": "你为什么没来？", "soundmark": "pa-che-moo ty ne pree-shyol" },
+        { "english": "Сколько это стоит?", "chinese": "这个多少钱？", "soundmark": "skol-ka e-ta sto-eet" }
+      ]
+    }
+  ]
+}

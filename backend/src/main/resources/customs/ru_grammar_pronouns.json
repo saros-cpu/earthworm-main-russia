@@ -1,0 +1,299 @@
+{
+  "id": "ru-grammar-pronouns",
+  "title": "代词的变格",
+  "description": "人称代词、物主代词、指示代词等的变格与用法。",
+  "cover": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rupr-01",
+      "order": 1,
+      "title": "人称代词主格",
+      "description": "人称代词я, ты, он, она, мы, вы, они。",
+      "statements": [
+        {
+          "english": "Я студе́нт.",
+          "chinese": "我是大学生。",
+          "soundmark": "ya stoo-DYENT"
+        },
+        {
+          "english": "Ты мо́лод.",
+          "chinese": "你年轻。",
+          "soundmark": "ty MO-lad"
+        },
+        {
+          "english": "Она́ краси́вая.",
+          "chinese": "她很漂亮。",
+          "soundmark": "a-NA kra-SEE-va-ya"
+        },
+        {
+          "english": "Мы вме́сте.",
+          "chinese": "我们一起。",
+          "soundmark": "my VMYES-te"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/53-Урок 10-1.avi"
+    },
+    {
+      "id": "rupr-02",
+      "order": 2,
+      "title": "人称代词第二格",
+      "description": "у меня, у тебя等表达所属。",
+      "statements": [
+        {
+          "english": "У меня́ есть кни́га.",
+          "chinese": "我有一本书。",
+          "soundmark": "oo me-NYA yest' KNEE-ga"
+        },
+        {
+          "english": "У тебя́ краси́вый дом.",
+          "chinese": "你有漂亮的房子。",
+          "soundmark": "oo te-BYA kra-SEE-viyj dom"
+        },
+        {
+          "english": "У него́ мно́го друзе́й.",
+          "chinese": "他有很多朋友。",
+          "soundmark": "oo ne-VO MNO-ga droo-ZYEY"
+        },
+        {
+          "english": "У нас есть вре́мя.",
+          "chinese": "我们有时间。",
+          "soundmark": "oo nas yest' VRE-mya"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/54-Урок 10-2.avi"
+    },
+    {
+      "id": "rupr-03",
+      "order": 3,
+      "title": "人称代词第三格",
+      "description": "мне, тебе, ему等表间接宾语。",
+      "statements": [
+        {
+          "english": "Мне ну́жна по́мощь.",
+          "chinese": "我需要帮助。",
+          "soundmark": "mne NOOZH-na PO-mashch'"
+        },
+        {
+          "english": "Ему́ нра́вится э́тот фильм.",
+          "chinese": "他喜欢这部电影。",
+          "soundmark": "ye-MOO NRA-vee-tsa EH-tat feel'm"
+        },
+        {
+          "english": "Нам пора́ идти́.",
+          "chinese": "我们该走了。",
+          "soundmark": "nam pa-RA eet-TEE"
+        },
+        {
+          "english": "Им ну́жен о́тдых.",
+          "chinese": "他们需要休息。",
+          "soundmark": "eem NOO-zhen OT-dykh"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/55-Урок 10-3.avi"
+    },
+    {
+      "id": "rupr-04",
+      "order": 4,
+      "title": "人称代词第四格",
+      "description": "меня, тебя, его等表直接宾语。",
+      "statements": [
+        {
+          "english": "Он меня́ зна́ет.",
+          "chinese": "他认识我。",
+          "soundmark": "on me-NYA ZNA-yet"
+        },
+        {
+          "english": "Я тебя́ люблю́.",
+          "chinese": "我爱你。",
+          "soundmark": "ya te-BYA lyub-LYOO"
+        },
+        {
+          "english": "Мы его́ ждём.",
+          "chinese": "我们在等他。",
+          "soundmark": "my ye-VO zhdyom"
+        },
+        {
+          "english": "Она́ нас ви́дит.",
+          "chinese": "她看见我们。",
+          "soundmark": "a-NA nas VEE-deet"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/56-Урок 10-4.avi"
+    },
+    {
+      "id": "rupr-05",
+      "order": 5,
+      "title": "人称代词第五格",
+      "description": "мной, тобой, им等表共同/工具。",
+      "statements": [
+        {
+          "english": "Он идёт со мной.",
+          "chinese": "他和我一起走。",
+          "soundmark": "on ee-DYOT sa mnoy"
+        },
+        {
+          "english": "Мы горди́мся тобо́й.",
+          "chinese": "我们为你骄傲。",
+          "soundmark": "my gar-DEEM-sya ta-BOY"
+        },
+        {
+          "english": "Я занима́юсь с ним.",
+          "chinese": "我和他一起学习。",
+          "soundmark": "ya za-nee-MA-yus' s neem"
+        },
+        {
+          "english": "С ва́ми прия́тно рабо́тать.",
+          "chinese": "和你们一起工作很愉快。",
+          "soundmark": "s VA-mee pree-YAT-na ra-BO-tat'"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/57-Урок 10-5.avi"
+    },
+    {
+      "id": "rupr-06",
+      "order": 6,
+      "title": "人称代词第六格",
+      "description": "обо мне, о тебе等。",
+      "statements": [
+        {
+          "english": "Он ду́мает обо мне.",
+          "chinese": "他在想我。",
+          "soundmark": "on DOO-ma-yet o-ba mne"
+        },
+        {
+          "english": "Мы говори́м о тебе́.",
+          "chinese": "我们在谈论你。",
+          "soundmark": "my ga-va-REEM a te-BYE"
+        },
+        {
+          "english": "Я ду́маю о нём.",
+          "chinese": "我想他。",
+          "soundmark": "ya DOO-ma-yoo a NYOM"
+        },
+        {
+          "english": "Она́ вспомина́ет о нас.",
+          "chinese": "她回忆起我们。",
+          "soundmark": "a-NA fspa-mee-NA-yet a nas"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/58-Урок 10-6.avi"
+    },
+    {
+      "id": "rupr-07",
+      "order": 7,
+      "title": "物主代词",
+      "description": "мой, твой, его, её, наш, ваш,他们的变格。",
+      "statements": [
+        {
+          "english": "Моя́ кни́га.",
+          "chinese": "我的书。",
+          "soundmark": "ma-YA KNEE-ga"
+        },
+        {
+          "english": "Твой дом большо́й.",
+          "chinese": "你的房子很大。",
+          "soundmark": "tvoy dom bal'-SHOY"
+        },
+        {
+          "english": "На́ша шко́ла но́вая.",
+          "chinese": "我们的学校是新的。",
+          "soundmark": "NA-sha SHKO-la NO-va-ya"
+        },
+        {
+          "english": "Ва́ше предложе́ние интере́сно.",
+          "chinese": "您的建议很有趣。",
+          "soundmark": "VA-she pre-dla-ZHE-ne-ye in-te-RES-na"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/59-A1总复习1.avi"
+    },
+    {
+      "id": "rupr-08",
+      "order": 8,
+      "title": "指示代词",
+      "description": "этот, тот的变格。",
+      "statements": [
+        {
+          "english": "Э́тот дом высо́кий.",
+          "chinese": "这栋楼很高。",
+          "soundmark": "EH-tat dom vy-SO-kiyj"
+        },
+        {
+          "english": "В э́том до́ме тепло́.",
+          "chinese": "这栋楼里很暖和。",
+          "soundmark": "v EH-tam DO-me te-PLO"
+        },
+        {
+          "english": "Я ви́жу ту де́вушку.",
+          "chinese": "我看见那个女孩。",
+          "soundmark": "ya VEE-zhoo too DE-voo-shkoo"
+        },
+        {
+          "english": "С э́тим зада́нием тру́дно.",
+          "chinese": "这个任务很难。",
+          "soundmark": "s EH-teem za-DA-ne-yem TROOD-na"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/60-A1总复习2.avi"
+    },
+    {
+      "id": "rupr-09",
+      "order": 9,
+      "title": "疑问代词",
+      "description": "кто, что, какой, чей的变格。",
+      "statements": [
+        {
+          "english": "Кто э́то?",
+          "chinese": "这是谁？",
+          "soundmark": "kto EH-ta"
+        },
+        {
+          "english": "Чья э́то кни́га?",
+          "chinese": "这是谁的书？",
+          "soundmark": "ch'ya EH-ta KNEE-ga"
+        },
+        {
+          "english": "Како́й сего́дня день?",
+          "chinese": "今天星期几？",
+          "soundmark": "ka-KOY se-VOD-nya dyen'"
+        },
+        {
+          "english": "С кем ты говори́л?",
+          "chinese": "你和谁说话了？",
+          "soundmark": "s kem ty ga-va-REEL"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/61-Урок 1-1.avi"
+    },
+    {
+      "id": "rupr-10",
+      "order": 10,
+      "title": "综合练习",
+      "description": "代词综合运用。",
+      "statements": [
+        {
+          "english": "Я ду́маю о тебе́ и твое́й семье́.",
+          "chinese": "我在想你和你家人。",
+          "soundmark": "ya DOO-ma-yoo a te-BYE i tva-YOY sem'-YE"
+        },
+        {
+          "english": "Наш но́вый учи́тель нам о́чень нра́вится.",
+          "chinese": "我们很喜欢我们的新老师。",
+          "soundmark": "nash NO-viyj oo-CHEE-tel' nam O-chen' NRA-vee-tsa"
+        },
+        {
+          "english": "У меня́ есть для тебя́ пода́рок.",
+          "chinese": "我有礼物给你。",
+          "soundmark": "oo me-NYA yest' dlya te-BYA pa-DA-rak"
+        },
+        {
+          "english": "С кем вы хоти́те пойти́ в теа́тр?",
+          "chinese": "您想和谁去剧院？",
+          "soundmark": "s kem vy kha-TEE-te pay-TEE v te-ATR"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/62-Урок 1-2.avi"
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "id": "ru-movies",
+  "title": "俄语影视台词",
+  "description": "通过俄罗斯经典电影和电视剧台词学习地道俄语口语表达。",
+  "cover": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rumo-01",
+      "order": 1,
+      "title": "苏联经典电影",
+      "description": "苏联时期经典电影及台词。",
+      "statements": [
+        {
+          "english": "Москва́ слеза́м не ве́рит",
+          "chinese": "莫斯科不相信眼泪",
+          "soundmark": "mas-KVA sle-ZAM ne VE-reet"
+        },
+        {
+          "english": "Бриллиа́нтовая рука́",
+          "chinese": "钻石胳膊",
+          "soundmark": "bree-lee-AN-ta-va-ya roo-KA"
+        },
+        {
+          "english": "Иро́ния судьбы́",
+          "chinese": "命运的捉弄",
+          "soundmark": "ee-RO-nee-ya sood-BI"
+        },
+        {
+          "english": "Де́вять дней одного́ го́да",
+          "chinese": "一年的九天",
+          "soundmark": "DE-vyat dney ad-na-VO GO-da"
+        },
+        {
+          "english": "Соля́рис",
+          "chinese": "索拉里斯",
+          "soundmark": "sa-LYA-ris"
+        }
+      ]
+    },
+    {
+      "id": "rumo-02",
+      "order": 2,
+      "title": "现代俄罗斯电影",
+      "description": "当代俄罗斯电影相关词汇。",
+      "statements": [
+        {
+          "english": "Левиафа́н",
+          "chinese": "利维坦",
+          "soundmark": "le-vee-a-FAN"
+        },
+        {
+          "english": "Война́ Анны́",
+          "chinese": "安娜的战争",
+          "soundmark": "voy-NA an-NY"
+        },
+        {
+          "english": "Текст",
+          "chinese": "短信",
+          "soundmark": "tekst"
+        },
+        {
+          "english": "Холо́п",
+          "chinese": "农奴",
+          "soundmark": "kha-LOP"
+        },
+        {
+          "english": "Притяже́ние",
+          "chinese": "引力",
+          "soundmark": "pree-tya-ZHE-nee-ye"
+        }
+      ]
+    },
+    {
+      "id": "rumo-03",
+      "order": 3,
+      "title": "动画词汇",
+      "description": "动画电影相关俄语词汇。",
+      "statements": [
+        {
+          "english": "мультфи́льм",
+          "chinese": "动画片",
+          "soundmark": "moolt-FEELM"
+        },
+        {
+          "english": "анима́ция",
+          "chinese": "动画制作",
+          "soundmark": "a-nee-MA-tsee-ya"
+        },
+        {
+          "english": "персона́ж",
+          "chinese": "角色",
+          "soundmark": "per-sa-NASH"
+        },
+        {
+          "english": "рисовка",
+          "chinese": "绘画风格",
+          "soundmark": "ree-SOV-ka"
+        },
+        {
+          "english": "дубля́ж",
+          "chinese": "配音",
+          "soundmark": "doob-LYAZH"
+        }
+      ]
+    },
+    {
+      "id": "rumo-04",
+      "order": 4,
+      "title": "电影类型",
+      "description": "电影类型相关俄语词汇。",
+      "statements": [
+        {
+          "english": "коме́дия",
+          "chinese": "喜剧",
+          "soundmark": "ka-ME-dee-ya"
+        },
+        {
+          "english": "дра́ма",
+          "chinese": "剧情片",
+          "soundmark": "DRA-ma"
+        },
+        {
+          "english": "боеви́к",
+          "chinese": "动作片",
+          "soundmark": "ba-e-VEEK"
+        },
+        {
+          "english": "мелодра́ма",
+          "chinese": "爱情片",
+          "soundmark": "me-la-DRA-ma"
+        },
+        {
+          "english": "три́ллер",
+          "chinese": "惊悚片",
+          "soundmark": "TREEL-ler"
+        }
+      ]
+    },
+    {
+      "id": "rumo-05",
+      "order": 5,
+      "title": "在电影院",
+      "description": "去电影院观影相关词汇。",
+      "statements": [
+        {
+          "english": "кинотеа́тр",
+          "chinese": "电影院",
+          "soundmark": "kee-na-te-ATR"
+        },
+        {
+          "english": "биле́т",
+          "chinese": "电影票",
+          "soundmark": "bee-LET"
+        },
+        {
+          "english": "сеа́нс",
+          "chinese": "场次",
+          "soundmark": "se-ANS"
+        },
+        {
+          "english": "попко́рн",
+          "chinese": "爆米花",
+          "soundmark": "pop-KORN"
+        },
+        {
+          "english": "ряд",
+          "chinese": "排",
+          "soundmark": "ryat"
+        }
+      ]
+    },
+    {
+      "id": "rumo-06",
+      "order": 6,
+      "title": "描述电影",
+      "description": "描述和评价电影的相关词汇。",
+      "statements": [
+        {
+          "english": "сюже́т",
+          "chinese": "剧情",
+          "soundmark": "syoo-ZHET"
+        },
+        {
+          "english": "интере́сный",
+          "chinese": "有趣的",
+          "soundmark": "een-te-RES-ny"
+        },
+        {
+          "english": "ску́чный",
+          "chinese": "无聊的",
+          "soundmark": "SKOOSH-ny"
+        },
+        {
+          "english": "захва́тывающий",
+          "chinese": "扣人心弦的",
+          "soundmark": "za-KHVA-ty-va-yoo-shchee"
+        },
+        {
+          "english": "концо́вка",
+          "chinese": "结尾",
+          "soundmark": "kan-TSOV-ka"
+        }
+      ]
+    },
+    {
+      "id": "rumo-07",
+      "order": 7,
+      "title": "影评用语",
+      "description": "撰写影评常用俄语表达。",
+      "statements": [
+        {
+          "english": "реце́нзия",
+          "chinese": "评论",
+          "soundmark": "re-TSEN-zee-ya"
+        },
+        {
+          "english": "рейтинг",
+          "chinese": "评分",
+          "soundmark": "RAY-ting"
+        },
+        {
+          "english": "рекомендую",
+          "chinese": "推荐",
+          "soundmark": "re-ka-men-DU-yu"
+        },
+        {
+          "english": "впечатле́ние",
+          "chinese": "印象",
+          "soundmark": "fpe-chat-LE-nee-ye"
+        },
+        {
+          "english": "оце́нка зри́телей",
+          "chinese": "观众评分",
+          "soundmark": "a-TSEN-ka ZREE-te-ley"
+        }
+      ]
+    },
+    {
+      "id": "rumo-08",
+      "order": 8,
+      "title": "演员词汇",
+      "description": "演员和表演相关俄语词汇。",
+      "statements": [
+        {
+          "english": "актёр",
+          "chinese": "演员",
+          "soundmark": "ak-TYOR"
+        },
+        {
+          "english": "актри́са",
+          "chinese": "女演员",
+          "soundmark": "ak-TREE-sa"
+        },
+        {
+          "english": "режиссёр",
+          "chinese": "导演",
+          "soundmark": "re-zhee-SYOR"
+        },
+        {
+          "english": "ро́ль",
+          "chinese": "角色",
+          "soundmark": "rol"
+        },
+        {
+          "english": "игра́ актёров",
+          "chinese": "演技",
+          "soundmark": "ee-GRA ak-TYO-raf"
+        }
+      ]
+    },
+    {
+      "id": "rumo-09",
+      "order": 9,
+      "title": "电影奖项",
+      "description": "电影节和奖项相关俄语词汇。",
+      "statements": [
+        {
+          "english": "кинофестива́ль",
+          "chinese": "电影节",
+          "soundmark": "kee-na-fes-tee-VAL"
+        },
+        {
+          "english": "пре́мия",
+          "chinese": "奖项",
+          "soundmark": "PRE-mee-ya"
+        },
+        {
+          "english": "но́минация",
+          "chinese": "提名",
+          "soundmark": "na-mee-NA-tsee-ya"
+        },
+        {
+          "english": "Золота́я ма́ска",
+          "chinese": "金面具奖",
+          "soundmark": "za-la-TA-ya MAS-ka"
+        },
+        {
+          "english": "Ни́ка",
+          "chinese": "尼卡奖",
+          "soundmark": "NEE-ka"
+        }
+      ]
+    },
+    {
+      "id": "rumo-10",
+      "order": 10,
+      "title": "电视剧用语",
+      "description": "电视节目和剧集相关词汇。",
+      "statements": [
+        {
+          "english": "сериа́л",
+          "chinese": "电视剧",
+          "soundmark": "se-ree-AL"
+        },
+        {
+          "english": "шо́у",
+          "chinese": "节目",
+          "soundmark": "sho"
+        },
+        {
+          "english": "эпизо́д",
+          "chinese": "集",
+          "soundmark": "e-pee-ZOD"
+        },
+        {
+          "english": "сезо́н",
+          "chinese": "季",
+          "soundmark": "se-ZON"
+        },
+        {
+          "english": "телепереда́ча",
+          "chinese": "电视节目",
+          "soundmark": "te-le-pe-re-DA-cha"
+        }
+      ]
+    }
+  ]
+}

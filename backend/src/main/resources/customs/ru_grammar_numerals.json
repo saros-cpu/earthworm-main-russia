@@ -1,0 +1,299 @@
+{
+  "id": "ru-grammar-numerals",
+  "title": "数词",
+  "description": "基数词、序数词、分数、时间表达等。",
+  "cover": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rungn-01",
+      "order": 1,
+      "title": "基数词1-10",
+      "description": "один, два, три等基本基数词。",
+      "statements": [
+        {
+          "english": "У меня́ одна́ кни́га.",
+          "chinese": "我有一本书。",
+          "soundmark": "oo me-NYA ad-NA KNEE-ga"
+        },
+        {
+          "english": "Два сту́ла.",
+          "chinese": "两把椅子。",
+          "soundmark": "dva STOO-la"
+        },
+        {
+          "english": "Три окна́.",
+          "chinese": "三扇窗户。",
+          "soundmark": "tree ak-NA"
+        },
+        {
+          "english": "Пять я́блок.",
+          "chinese": "五个苹果。",
+          "soundmark": "pyat' YAB-lak"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/63-Урок 1-3.avi"
+    },
+    {
+      "id": "rungn-02",
+      "order": 2,
+      "title": "基数词11-100",
+      "description": "одиннадцать, сто等。",
+      "statements": [
+        {
+          "english": "Оди́ннадцать студе́нтов.",
+          "chinese": "十一名学生。",
+          "soundmark": "a-DEEN-nad-tsat' stoo-DYEN-tov"
+        },
+        {
+          "english": "Два́дцать пять дней.",
+          "chinese": "二十五天。",
+          "soundmark": "DVAD-tsat' pyat' dyey"
+        },
+        {
+          "english": "Сто рубле́й.",
+          "chinese": "一百卢布。",
+          "soundmark": "sto roob-LYEY"
+        },
+        {
+          "english": "Пятьдеся́т страни́ц.",
+          "chinese": "五十页。",
+          "soundmark": "pee-de-SYAT stra-NEETS"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/64-Урок 1-4.avi"
+    },
+    {
+      "id": "rungn-03",
+      "order": 3,
+      "title": "数词后名词变格",
+      "description": "数词后名词的格变化。",
+      "statements": [
+        {
+          "english": "Оди́н рубль.",
+          "chinese": "一个卢布。",
+          "soundmark": "a-DEEN roobl'"
+        },
+        {
+          "english": "Два рубля́.",
+          "chinese": "两个卢布。",
+          "soundmark": "dva roob-LYA"
+        },
+        {
+          "english": "Три рубля́.",
+          "chinese": "三个卢布。",
+          "soundmark": "tree roob-LYA"
+        },
+        {
+          "english": "Пять рубле́й.",
+          "chinese": "五个卢布。",
+          "soundmark": "pyat' roob-LYEY"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/65-Урок 1-5.avi"
+    },
+    {
+      "id": "rungn-04",
+      "order": 4,
+      "title": "序数词1-10",
+      "description": "первый, второй, третий等。",
+      "statements": [
+        {
+          "english": "Пе́рвый уро́к.",
+          "chinese": "第一课。",
+          "soundmark": "PYER-viyj oo-ROK"
+        },
+        {
+          "english": "Втора́я глава́.",
+          "chinese": "第二章。",
+          "soundmark": "fta-RA-ya gla-VA"
+        },
+        {
+          "english": "Тре́тье зада́ние.",
+          "chinese": "第三个任务。",
+          "soundmark": "TRE-t'e za-DA-ne-ye"
+        },
+        {
+          "english": "Деся́тый эта́ж.",
+          "chinese": "第十层。",
+          "soundmark": "de-SYA-tyj e-TAZH"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/66-Урок 2-1.avi"
+    },
+    {
+      "id": "rungn-05",
+      "order": 5,
+      "title": "日期表达",
+      "description": "日期的俄语表达。",
+      "statements": [
+        {
+          "english": "Пе́рвое января́.",
+          "chinese": "1月1日。",
+          "soundmark": "PYER-va-ye yan-va-RYA"
+        },
+        {
+          "english": "Восьмо́е ма́рта.",
+          "chinese": "3月8日。",
+          "soundmark": "vas'-MO-ye MAR-ta"
+        },
+        {
+          "english": "Девя́тое ма́я.",
+          "chinese": "5月9日。",
+          "soundmark": "de-VYA-ta-ye MA-ya"
+        },
+        {
+          "english": "Три́дцать пе́рвое декабря́.",
+          "chinese": "12月31日。",
+          "soundmark": "TREED-tsat' PYER-va-ye de-kab-RYA"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/67-Урок 2-2.avi"
+    },
+    {
+      "id": "rungn-06",
+      "order": 6,
+      "title": "时间表达",
+      "description": "几点了？含数词的时间表达。",
+      "statements": [
+        {
+          "english": "Кото́рый час?",
+          "chinese": "几点了？",
+          "soundmark": "ka-TO-ryj chas"
+        },
+        {
+          "english": "Час дня.",
+          "chinese": "下午一点。",
+          "soundmark": "chas dnya"
+        },
+        {
+          "english": "Два часа́.",
+          "chinese": "两点。",
+          "soundmark": "dva cha-SA"
+        },
+        {
+          "english": "Пять мину́т деся́того.",
+          "chinese": "十点零五分。",
+          "soundmark": "pyat' mee-NOOT de-SYA-ta-va"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/68-Урок 2-3.avi"
+    },
+    {
+      "id": "rungn-07",
+      "order": 7,
+      "title": "年龄表达",
+      "description": "几岁了？数词与年龄表达。",
+      "statements": [
+        {
+          "english": "Мне два́дцать лет.",
+          "chinese": "我20岁。",
+          "soundmark": "mne DVAD-tsat' lyet"
+        },
+        {
+          "english": "Ему́ оди́н год.",
+          "chinese": "他一岁。",
+          "soundmark": "ye-MOO a-DEEN god"
+        },
+        {
+          "english": "Ей три го́да.",
+          "chinese": "她三岁。",
+          "soundmark": "yey tree GO-da"
+        },
+        {
+          "english": "Вам пятьдеся́т лет?",
+          "chinese": "您50岁吗？",
+          "soundmark": "vam pee-de-SYAT lyet"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/69-Урок 2-4.avi"
+    },
+    {
+      "id": "rungn-08",
+      "order": 8,
+      "title": "分数与小数的表达",
+      "description": "половина, четверть, полтора等。",
+      "statements": [
+        {
+          "english": "Полови́на ча́са.",
+          "chinese": "半小时。",
+          "soundmark": "pa-la-VEE-na CHA-sa"
+        },
+        {
+          "english": "Че́тверть ча́са.",
+          "chinese": "一刻钟。",
+          "soundmark": "CHET-vert' CHA-sa"
+        },
+        {
+          "english": "Полтора́ часа́.",
+          "chinese": "一个半小时。",
+          "soundmark": "pal-ta-RA cha-SA"
+        },
+        {
+          "english": "Две тре́ти кла́сса.",
+          "chinese": "全班的三分之二。",
+          "soundmark": "dve TRE-tee KLAS-sa"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/70-Урок 2-5.avi"
+    },
+    {
+      "id": "rungn-09",
+      "order": 9,
+      "title": "大概数量表达",
+      "description": "около, более, менее等。",
+      "statements": [
+        {
+          "english": "О́коло десяти́ рубле́й.",
+          "chinese": "大约十卢布。",
+          "soundmark": "O-ka-la de-sya-TEE roob-LYEY"
+        },
+        {
+          "english": "Бо́лее ста челове́к.",
+          "chinese": "超过一百人。",
+          "soundmark": "BO-le-ye sta che-la-VYEK"
+        },
+        {
+          "english": "Ме́нее пяти́ мину́т.",
+          "chinese": "不到五分钟。",
+          "soundmark": "ME-ne-ye pya-TEE mee-NOOT"
+        },
+        {
+          "english": "Челове́к пять.",
+          "chinese": "大约五个人。",
+          "soundmark": "che-la-VYEEK pyat'"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/71-Урок 3-1.avi"
+    },
+    {
+      "id": "rungn-10",
+      "order": 10,
+      "title": "综合练习",
+      "description": "数词综合运用。",
+      "statements": [
+        {
+          "english": "В кла́ссе два́дцать пять студе́нтов.",
+          "chinese": "班里有二十五名学生。",
+          "soundmark": "v KLAS-se DVAD-tsat' pyat' stoo-DYEN-tov"
+        },
+        {
+          "english": "Он живёт на седьмо́м этаже́.",
+          "chinese": "他住在7楼。",
+          "soundmark": "on zhee-VYOT na sed'-MOM e-ta-ZHE"
+        },
+        {
+          "english": "Мой де́душка родился́ в тысяча девятьсо́т пя́том году́.",
+          "chinese": "我祖父出生在1905年。",
+          "soundmark": "moy DE-doo-shka ra-deel-SYA v TY-sya-cha de-vyt'-SOT PYA-tom ga-DOO"
+        },
+        {
+          "english": "Уро́к начина́ется в де́сять часо́в.",
+          "chinese": "课在十点开始。",
+          "soundmark": "oo-ROK na-chee-NA-ye-tsa v DE-syat' cha-SOF"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/72-Урок 3-2.avi"
+    }
+  ]
+}

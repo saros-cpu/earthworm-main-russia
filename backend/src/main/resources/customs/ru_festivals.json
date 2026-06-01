@@ -1,0 +1,289 @@
+{
+  "id": "ru-festivals",
+  "title": "俄罗斯节日与传统",
+  "description": "俄罗斯官方节日宗教节日和民间传统活动的俄语表达。",
+  "cover": "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rufe-01",
+      "order": 1,
+      "title": "新年庆祝",
+      "description": "俄罗斯新年庆祝活动相关词汇。",
+      "statements": [
+        {
+          "english": "Но́вый год",
+          "chinese": "新年",
+          "soundmark": "NO-vy god"
+        },
+        {
+          "english": "Дед Моро́з",
+          "chinese": "严寒老人（俄版圣诞老人）",
+          "soundmark": "dyed ma-ROS"
+        },
+        {
+          "english": "Снегу́рочка",
+          "chinese": "雪姑娘",
+          "soundmark": "sne-GOO-ra-chka"
+        },
+        {
+          "english": "ёлка",
+          "chinese": "新年枞树",
+          "soundmark": "YOL-ka"
+        }
+      ]
+    },
+    {
+      "id": "rufe-02",
+      "order": 2,
+      "title": "东正教圣诞节",
+      "description": "东正教圣诞节相关词汇。",
+      "statements": [
+        {
+          "english": "Рождество́ Христо́во",
+          "chinese": "东正教圣诞节1月7日",
+          "soundmark": "razh-de-STVO khrees-TO-va"
+        },
+        {
+          "english": "святки",
+          "chinese": "圣诞季",
+          "soundmark": "SVYAT-kee"
+        },
+        {
+          "english": "верте́п",
+          "chinese": "耶稣诞生场景",
+          "soundmark": "ver-TEP"
+        },
+        {
+          "english": "коляда́",
+          "chinese": "圣诞颂歌",
+          "soundmark": "ka-lee-DA"
+        }
+      ]
+    },
+    {
+      "id": "rufe-03",
+      "order": 3,
+      "title": "谢肉节",
+      "description": "谢肉节送冬迎春传统词汇。",
+      "statements": [
+        {
+          "english": "Ма́сленица",
+          "chinese": "谢肉节",
+          "soundmark": "MAS-le-nee-tsa"
+        },
+        {
+          "english": "блин",
+          "chinese": "薄饼",
+          "soundmark": "bleen"
+        },
+        {
+          "english": "чуче́ло",
+          "chinese": "稻草人",
+          "soundmark": "CHOO-che-la"
+        },
+        {
+          "english": "проводы зимы́",
+          "chinese": "送冬",
+          "soundmark": "PRO-va-dy zee-MY"
+        }
+      ]
+    },
+    {
+      "id": "rufe-04",
+      "order": 4,
+      "title": "胜利日",
+      "description": "5月9日胜利日相关词汇。",
+      "statements": [
+        {
+          "english": "День Побе́ды",
+          "chinese": "胜利日",
+          "soundmark": "den pa-BYE-dy"
+        },
+        {
+          "english": "ветера́н",
+          "chinese": "老战士",
+          "soundmark": "ve-te-RAN"
+        },
+        {
+          "english": "пара́д",
+          "chinese": "阅兵式",
+          "soundmark": "pa-RAD"
+        },
+        {
+          "english": "салю́т",
+          "chinese": "礼花",
+          "soundmark": "sa-LYUT"
+        }
+      ]
+    },
+    {
+      "id": "rufe-05",
+      "order": 5,
+      "title": "三八妇女节",
+      "description": "国际妇女节相关词汇。",
+      "statements": [
+        {
+          "english": "Междунаро́дный же́нский день",
+          "chinese": "国际妇女节",
+          "soundmark": "mezh-doo-na-ROD-ny ZHEN-skee den"
+        },
+        {
+          "english": "цветы́",
+          "chinese": "鲜花",
+          "soundmark": "tsve-TY"
+        },
+        {
+          "english": "поздра́вление",
+          "chinese": "祝贺",
+          "soundmark": "paz-DRAV-le-nee-ye"
+        },
+        {
+          "english": "мимоза",
+          "chinese": "含羞草",
+          "soundmark": "mee-MO-za"
+        }
+      ]
+    },
+    {
+      "id": "rufe-06",
+      "order": 6,
+      "title": "复活节传统",
+      "description": "东正教复活节相关词汇。",
+      "statements": [
+        {
+          "english": "Па́сха",
+          "chinese": "复活节",
+          "soundmark": "PAS-kha"
+        },
+        {
+          "english": "кули́ч",
+          "chinese": "复活节面包",
+          "soundmark": "koo-LEECH"
+        },
+        {
+          "english": "кра́шеное яйцо́",
+          "chinese": "彩蛋",
+          "soundmark": "KRA-she-na-ye yay-TSO"
+        },
+        {
+          "english": "Христо́с воскре́с!",
+          "chinese": "基督复活了！",
+          "soundmark": "khree-STOS vas-KRES"
+        }
+      ]
+    },
+    {
+      "id": "rufe-07",
+      "order": 7,
+      "title": "伊万库帕拉节",
+      "description": "民间传统节日伊万库帕拉节词汇。",
+      "statements": [
+        {
+          "english": "Ива́н Купа́ла",
+          "chinese": "伊万库帕拉节",
+          "soundmark": "ee-VAN koo-PA-la"
+        },
+        {
+          "english": "пры́жки че́рез костёр",
+          "chinese": "跳过篝火",
+          "soundmark": "PRYZH-kee CHE-rez ka-STYOR"
+        },
+        {
+          "english": "венки́",
+          "chinese": "花环",
+          "soundmark": "ven-KEE"
+        },
+        {
+          "english": "гада́ние",
+          "chinese": "占卜",
+          "soundmark": "ga-DA-nee-ye"
+        }
+      ]
+    },
+    {
+      "id": "rufe-08",
+      "order": 8,
+      "title": "知识节",
+      "description": "9月1日知识节相关词汇。",
+      "statements": [
+        {
+          "english": "День зна́ний",
+          "chinese": "知识节",
+          "soundmark": "den ZNA-nee"
+        },
+        {
+          "english": "шко́льная лине́йка",
+          "chinese": "开学典礼",
+          "soundmark": "SHKOL-na-ya lee-NEY-ka"
+        },
+        {
+          "english": "первокла́ссник",
+          "chinese": "一年级新生",
+          "soundmark": "per-va-KLAS-neek"
+        },
+        {
+          "english": "первый звонок",
+          "chinese": "第一声铃响",
+          "soundmark": "PYER-vy zva-NOK"
+        }
+      ]
+    },
+    {
+      "id": "rufe-09",
+      "order": 9,
+      "title": "宇航节",
+      "description": "4月12日宇航节相关词汇。",
+      "statements": [
+        {
+          "english": "День космона́втики",
+          "chinese": "宇航节",
+          "soundmark": "den kas-ma-NAV-tee-kee"
+        },
+        {
+          "english": "Гага́рин",
+          "chinese": "加加林",
+          "soundmark": "ga-GA-reen"
+        },
+        {
+          "english": "косми́ческий кора́бль",
+          "chinese": "宇宙飞船",
+          "soundmark": "kas-MEE-che-skee ka-RABL"
+        },
+        {
+          "english": "запу́ск",
+          "chinese": "发射",
+          "soundmark": "za-POOSK"
+        }
+      ]
+    },
+    {
+      "id": "rufe-10",
+      "order": 10,
+      "title": "城市日",
+      "description": "俄罗斯城市日庆祝活动词汇。",
+      "statements": [
+        {
+          "english": "День го́рода",
+          "chinese": "城市日",
+          "soundmark": "den GO-ra-da"
+        },
+        {
+          "english": "гуля́ние",
+          "chinese": "游园活动",
+          "soundmark": "goo-LYA-nee-ye"
+        },
+        {
+          "english": "фе́йерверк",
+          "chinese": "烟花",
+          "soundmark": "FEY-er-verk"
+        },
+        {
+          "english": "конце́рт",
+          "chinese": "音乐会",
+          "soundmark": "kan-TSERT"
+        }
+      ]
+    }
+  ]
+}

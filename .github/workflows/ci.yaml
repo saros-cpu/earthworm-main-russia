@@ -1,0 +1,111 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  repository-hygiene:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject tracked generated and backup artifacts
+        shell: bash
+        run: |
+          if git ls-files --error-unmatch backend/target runtime >/dev/null 2>&1; then
+            echo "Generated runtime or backend build output must not be tracked."
+            exit 1
+          fi
+          if git ls-files | grep -E '(^earthworm.*\.(sql|zip)$|^tmp\.json$)' >/dev/null; then
+            echo "Database backup or temporary export files must not be tracked."
+            exit 1
+          fi
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Setup pnpm
+        run: corepack enable
+      - name: Install
+        run: pnpm install
+      - name: Lint
+        run: cd apps/client && pnpm run type-check
+
+  frontend-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Setup pnpm
+        run: corepack enable
+      - name: Install
+        run: pnpm install
+      - name: Build frontend
+        run: cd apps/client && pnpm run build
+
+  backend-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: "21"
+          distribution: "temurin"
+      - name: Build backend
+        run: cd backend && mvn compile -q
+
+  frontend-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Setup pnpm
+        run: corepack enable
+      - name: Install
+        run: pnpm install
+      - name: Run unit tests
+        run: cd apps/client && pnpm run test:unit:run
+
+  backend-tests:
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: testpass
+          MYSQL_DATABASE: earthworm_test
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd "mysqladmin ping -h localhost"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: "21"
+          distribution: "temurin"
+      - name: Run backend tests
+        run: cd backend && mvn test
+        env:
+          SPRING_DATASOURCE_URL: jdbc:mysql://localhost:3306/earthworm_test?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+          SPRING_DATASOURCE_USERNAME: root
+          SPRING_DATASOURCE_PASSWORD: testpass
+          JWT_SECRET: ci-test-jwt-secret-key-not-for-production-1234567890

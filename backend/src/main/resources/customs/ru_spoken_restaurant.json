@@ -1,0 +1,324 @@
+{
+  "id": "ru-spoken-restaurant",
+  "title": "餐厅就餐俄语",
+  "description": "在俄语国家餐厅点餐付款评价的全过程对话。",
+  "cover": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rurs-01",
+      "order": 1,
+      "title": "预订餐桌",
+      "description": "提前预订餐厅桌位。",
+      "statements": [
+        {
+          "english": "Мо́жно заброни́ровать столи́к на ве́чер?",
+          "chinese": "可以预订今晚的桌子吗？",
+          "soundmark": "MOZH-na za-bra-NEE-ra-vat sta-LEEK na VE-cher"
+        },
+        {
+          "english": "Нас бу́дет двое.",
+          "chinese": "我们两个人。",
+          "soundmark": "nas BOO-det DVO-ye"
+        },
+        {
+          "english": "В семь часо́в ве́чера.",
+          "chinese": "晚上七点。",
+          "soundmark": "v sem cha-SOF VE-che-ra"
+        },
+        {
+          "english": "На како́е и́мя брони́ровать?",
+          "chinese": "以什么名字预订？",
+          "soundmark": "na ka-KO-ye EE-mya bra-NEE-ra-vat"
+        },
+        {
+          "english": "Мо́жно столи́к у окна́?",
+          "chinese": "可以要靠窗的桌子吗？",
+          "soundmark": "MOZH-na sta-LEEK oo ak-NA"
+        }
+      ]
+    },
+    {
+      "id": "rurs-02",
+      "order": 2,
+      "title": "点餐",
+      "description": "在餐厅点餐时的常用表达。",
+      "statements": [
+        {
+          "english": "Здра́вствуйте! У вас есть свобо́дный столи́к?",
+          "chinese": "您好！有空桌吗？",
+          "soundmark": "ZDRA-stvooy-tye oo vas YEST sva-BOD-ny sta-LEEK"
+        },
+        {
+          "english": "Да́йте, пожа́луйста, меню́.",
+          "chinese": "请拿菜单。",
+          "soundmark": "DAY-tye pa-ZHAL-sta me-NYU"
+        },
+        {
+          "english": "Что вы порекоменду́ете?",
+          "chinese": "您推荐什么？",
+          "soundmark": "shto vy pa-re-ka-men-DOO-ye-tye"
+        },
+        {
+          "english": "Я бу́ду борщ.",
+          "chinese": "我要一份罗宋汤。",
+          "soundmark": "ya BOO-doo borshch"
+        },
+        {
+          "english": "Э́то о́чень вку́сно!",
+          "chinese": "这非常好吃！",
+          "soundmark": "E-ta O-chen VKOOS-na"
+        }
+      ]
+    },
+    {
+      "id": "rurs-03",
+      "order": 3,
+      "title": "询问菜品",
+      "description": "询问菜品的材料和做法。",
+      "statements": [
+        {
+          "english": "Что вхо́дит в э́то блю́до?",
+          "chinese": "这道菜里有什么？",
+          "soundmark": "shto VKHO-deet v E-ta BLYOO-da"
+        },
+        {
+          "english": "Э́то о́строе?",
+          "chinese": "这个辣吗？",
+          "soundmark": "E-ta OS-tro-ye"
+        },
+        {
+          "english": "У вас есть вегетариа́нские блю́да?",
+          "chinese": "有素食吗？",
+          "soundmark": "oo vas YEST ve-ge-ta-ree-AN-skee-ye BLYOO-da"
+        },
+        {
+          "english": "Како́й суп сего́дня дежу́рный?",
+          "chinese": "今天的例汤是什么？",
+          "soundmark": "ka-KOY soop se-VOD-nya de-ZHOOR-ny"
+        },
+        {
+          "english": "Ско́лько ну́жно ждать?",
+          "chinese": "要等多久？",
+          "soundmark": "SKOL-ka NOOZH-na zhdat"
+        }
+      ]
+    },
+    {
+      "id": "rurs-04",
+      "order": 4,
+      "title": "要求结账",
+      "description": "用餐结束要求结账。",
+      "statements": [
+        {
+          "english": "Принеси́те счёт, пожа́луйста.",
+          "chinese": "请拿账单来。",
+          "soundmark": "pri-ne-SEE-tye shyot pa-ZHAL-sta"
+        },
+        {
+          "english": "Счёт, пожа́луйста!",
+          "chinese": "买单！",
+          "soundmark": "shyot pa-ZHAL-sta"
+        },
+        {
+          "english": "Мы гото́вы плати́ть.",
+          "chinese": "我们准备付钱。",
+          "soundmark": "my ga-TO-vy pla-TEET"
+        },
+        {
+          "english": "Э́то включено́ в счёт?",
+          "chinese": "这个包括在账单里吗？",
+          "soundmark": "E-ta vklyu-che-NO f shyot"
+        },
+        {
+          "english": "Мне ка́жется, в счёте оши́бка.",
+          "chinese": "我觉得账单有误。",
+          "soundmark": "mne KA-zhe-tsa f SHYO-te a-SHEEP-ka"
+        }
+      ]
+    },
+    {
+      "id": "rurs-05",
+      "order": 5,
+      "title": "饮食禁忌",
+      "description": "告知饮食限制和要求。",
+      "statements": [
+        {
+          "english": "У меня́ аллерги́я на оре́хи.",
+          "chinese": "我对坚果过敏。",
+          "soundmark": "oo me-NYA a-ler-GEE-ya na a-RE-khee"
+        },
+        {
+          "english": "Я не ем мясо.",
+          "chinese": "我不吃肉。",
+          "soundmark": "ya ne yem MYA-sa"
+        },
+        {
+          "english": "Без лу́ка, пожа́луйста.",
+          "chinese": "请不要放洋葱。",
+          "soundmark": "byez LOO-ka pa-ZHAL-sta"
+        },
+        {
+          "english": "Э́то блю́до без глюте́на?",
+          "chinese": "这道菜不含麸质吗？",
+          "soundmark": "E-ta BLYOO-da byez glyu-TE-na"
+        }
+      ]
+    },
+    {
+      "id": "rurs-06",
+      "order": 6,
+      "title": "称赞菜品",
+      "description": "称赞食物美味的表达。",
+      "statements": [
+        {
+          "english": "О́чень вку́сно! Вы заме́чательный повар!",
+          "chinese": "非常好吃！您是一位出色的厨师！",
+          "soundmark": "O-chen VKOOS-na vy za-me-CHA-tel-ny PO-var"
+        },
+        {
+          "english": "Э́то лу́чшее блю́до, кото́рое я про́бовал(а).",
+          "chinese": "这是我吃过最好吃的菜。",
+          "soundmark": "E-ta LOOCH-she-ye BLYOO-da ka-TO-ra-ye ya PRO-ba-val(a)"
+        },
+        {
+          "english": "Идеа́льно приготовлено!",
+          "chinese": "做得完美！",
+          "soundmark": "ee-de-AL-na pree-ga-TOV-le-na"
+        },
+        {
+          "english": "Все́ бы́ло замеча́тельно.",
+          "chinese": "一切都很棒。",
+          "soundmark": "VSYO BY-la za-me-CHA-tel-na"
+        }
+      ]
+    },
+    {
+      "id": "rurs-07",
+      "order": 7,
+      "title": "投诉处理",
+      "description": "对菜品或服务不满时的表达。",
+      "statements": [
+        {
+          "english": "Моё блю́до холо́дное.",
+          "chinese": "我的菜是凉的。",
+          "soundmark": "ma-YO BLYOO-da kha-LOD-na-ye"
+        },
+        {
+          "english": "Э́то не то, что я зака́зывал(а).",
+          "chinese": "这不是我点的。",
+          "soundmark": "E-ta ne to shto ya za-KA-zy-val(a)"
+        },
+        {
+          "english": "Мы до́лго ждём.",
+          "chinese": "我们等了很久。",
+          "soundmark": "my DOL-ga zhdyom"
+        },
+        {
+          "english": "Позови́те, пожа́луйста, официа́нта.",
+          "chinese": "请叫服务员来。",
+          "soundmark": "pa-za-VEE-tye pa-ZHAL-sta a-fee-tsee-AN-ta"
+        },
+        {
+          "english": "Э́то мясо пережа́рено.",
+          "chinese": "这肉煎过头了。",
+          "soundmark": "E-ta MYA-sa pe-re-ZHA-re-na"
+        }
+      ]
+    },
+    {
+      "id": "rurs-08",
+      "order": 8,
+      "title": "打包带走",
+      "description": "要求打包剩余食物。",
+      "statements": [
+        {
+          "english": "Заверни́те э́то, пожа́луйста, с собо́й.",
+          "chinese": "请把这个打包带走。",
+          "soundmark": "za-ver-NEE-tye E-ta pa-ZHAL-sta sa-BOY"
+        },
+        {
+          "english": "Мо́жно взять э́то с собо́й?",
+          "chinese": "这个可以打包吗？",
+          "soundmark": "MOZH-na vzyat E-ta sa-BOY"
+        },
+        {
+          "english": "Да́йте паке́т, пожа́луйста.",
+          "chinese": "请给个袋子。",
+          "soundmark": "DAY-tye pa-KYET pa-ZHAL-sta"
+        },
+        {
+          "english": "Я хочу́ заказа́ть еду́ на вы́нос.",
+          "chinese": "我想点外卖。",
+          "soundmark": "ya kha-CHOO za-ka-ZAT ye-DOO na VY-nas"
+        },
+        {
+          "english": "Ско́лько ждать зака́з на вы́нос?",
+          "chinese": "外卖需要等多久？",
+          "soundmark": "SKOL-ka zhdat za-KAZ na VY-nas"
+        }
+      ]
+    },
+    {
+      "id": "rurs-09",
+      "order": 9,
+      "title": "给小费",
+      "description": "关于小费的习惯用语。",
+      "statements": [
+        {
+          "english": "Оста́вьте сда́чу себе́.",
+          "chinese": "不用找了。",
+          "soundmark": "as-TAV-tye ZDA-choo se-BYE"
+        },
+        {
+          "english": "Э́то вам чаевы́е.",
+          "chinese": "这是给您的消费。",
+          "soundmark": "E-ta vam cha-e-VY-ye"
+        },
+        {
+          "english": "Ско́лько при́нято оставля́ть чаевы́х?",
+          "chinese": "一般给多少小费？",
+          "soundmark": "SKOL-ka PREE-nya-ta as-tav-LYAT cha-e-VYKH"
+        },
+        {
+          "english": "Чаевы́е уже́ включены́ в счёт?",
+          "chinese": "小费含在账单里了吗？",
+          "soundmark": "cha-e-VY-ye oo-ZHE vklyu-che-NY f shyot"
+        }
+      ]
+    },
+    {
+      "id": "rurs-10",
+      "order": 10,
+      "title": "刷卡支付",
+      "description": "用银行卡支付的对话。",
+      "statements": [
+        {
+          "english": "Мо́жно заплати́ть ка́ртой?",
+          "chinese": "可以用卡支付吗？",
+          "soundmark": "MOZH-na za-pla-TEET KAR-toy"
+        },
+        {
+          "english": "Термина́л не рабо́тает.",
+          "chinese": "刷卡机坏了。",
+          "soundmark": "ter-mee-NAL ne ra-BO-ta-yet"
+        },
+        {
+          "english": "Оплочените че́рез банко́вский перево́д?",
+          "chinese": "可以银行转账吗？",
+          "soundmark": "a-pla-TEE-tye CHE-rez ban-KOV-skee pe-re-VOT"
+        },
+        {
+          "english": "Вот ва́ша ка́рта и че́к.",
+          "chinese": "您的卡和小票。",
+          "soundmark": "vot VA-sha KAR-ta i chek"
+        },
+        {
+          "english": "Мо́жно оплати́ть нали́чными?",
+          "chinese": "可以付现金吗？",
+          "soundmark": "MOZH-na a-pla-TEET na-LEECH-ny-mi"
+        }
+      ]
+    }
+  ]
+}

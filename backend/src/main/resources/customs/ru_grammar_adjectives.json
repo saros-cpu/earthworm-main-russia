@@ -1,0 +1,299 @@
+{
+  "id": "ru-grammar-adjectives",
+  "title": "形容词的变格",
+  "description": "俄语形容词性、数、格变化及其用法。",
+  "cover": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ruad-01",
+      "order": 1,
+      "title": "形容词与名词的性一致",
+      "description": "形容词要与名词的性一致。",
+      "statements": [
+        {
+          "english": "Но́вый стол.",
+          "chinese": "新桌子（阳）",
+          "soundmark": "NO-viyj stol"
+        },
+        {
+          "english": "Но́вая кни́га.",
+          "chinese": "新书（阴）",
+          "soundmark": "NO-va-ya KNEE-ga"
+        },
+        {
+          "english": "Но́вое окно́.",
+          "chinese": "新窗户（中）",
+          "soundmark": "NO-va-ye ak-NO"
+        },
+        {
+          "english": "Но́вые уче́бники.",
+          "chinese": "新教科书（复）",
+          "soundmark": "NO-vye oo-CHEB-nee-kee"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/43-Урок 8-2.avi"
+    },
+    {
+      "id": "ruad-02",
+      "order": 2,
+      "title": "形容词第二格",
+      "description": "形容词与名词一起变为第二格。",
+      "statements": [
+        {
+          "english": "Цена́ но́вого стола́.",
+          "chinese": "新桌子的价格。",
+          "soundmark": "tse-NA NO-va-ga sta-LA"
+        },
+        {
+          "english": "Обло́жка но́вой кни́ги.",
+          "chinese": "新书的封面。",
+          "soundmark": "ab-LOZH-ka NO-vay KNEE-gee"
+        },
+        {
+          "english": "Окно́ но́вого зда́ния.",
+          "chinese": "新楼的窗户。",
+          "soundmark": "ak-NO NO-va-ga ZDA-nee-ya"
+        },
+        {
+          "english": "Нет больши́х пробле́м.",
+          "chinese": "没有大问题。",
+          "soundmark": "nyet bal'-SHEEKHR PRA-blem"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/44-Урок 8-3.avi"
+    },
+    {
+      "id": "ruad-03",
+      "order": 3,
+      "title": "形容词第三格",
+      "description": "形容词与名词一起变为第三格。",
+      "statements": [
+        {
+          "english": "Но́вому студе́нту.",
+          "chinese": "给新大学生。",
+          "soundmark": "NO-va-moo stoo-DYEN-too"
+        },
+        {
+          "english": "Ста́рой учи́тельнице.",
+          "chinese": "给老教师。",
+          "soundmark": "STA-raj oo-CHEE-tel-nee-tse"
+        },
+        {
+          "english": "Хоро́шему дру́гу.",
+          "chinese": "给好朋友。",
+          "soundmark": "kha-RO-she-moo DROO-goo"
+        },
+        {
+          "english": "Интере́сному заня́тию.",
+          "chinese": "给有趣的课程。",
+          "soundmark": "in-te-RES-na-moo za-NYA-tee-yoo"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/45-Урок 8-4.avi"
+    },
+    {
+      "id": "ruad-04",
+      "order": 4,
+      "title": "形容词第四格",
+      "description": "形容词与名词一起变为第四格。",
+      "statements": [
+        {
+          "english": "Я ви́жу но́вый дом.",
+          "chinese": "我看见新房子。",
+          "soundmark": "ya VEE-zhoo NO-viyj dom"
+        },
+        {
+          "english": "Он чита́ет интере́сную кни́гу.",
+          "chinese": "他在读有趣的书。",
+          "soundmark": "on chee-TA-yet in-te-RES-noo-yoo KNEE-goo"
+        },
+        {
+          "english": "Мы смо́трим хоро́ший фильм.",
+          "chinese": "我们看一部好电影。",
+          "soundmark": "my SMOT-reem kha-RO-shiyj feel'm"
+        },
+        {
+          "english": "Купи́ краси́вое пла́тье.",
+          "chinese": "买一件漂亮的裙子。",
+          "soundmark": "koo-PEE kra-SEE-va-ye PLA-t'e"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/46-Урок 8-5.avi"
+    },
+    {
+      "id": "ruad-05",
+      "order": 5,
+      "title": "形容词第五格",
+      "description": "形容词与名词一起变为第五格。",
+      "statements": [
+        {
+          "english": "Но́вым авто́бусом.",
+          "chinese": "乘坐新公交车。",
+          "soundmark": "NO-vym af-TO-boo-som"
+        },
+        {
+          "english": "Краси́вой приро́дой.",
+          "chinese": "被美丽的自然。",
+          "soundmark": "kra-SEE-vaj pree-RO-daj"
+        },
+        {
+          "english": "Хоро́шим дру́гом.",
+          "chinese": "与好朋友一起。",
+          "soundmark": "kha-RO-shim DROO-gom"
+        },
+        {
+          "english": "Тёплым мо́локом.",
+          "chinese": "用温牛奶。",
+          "soundmark": "TYOP-lym MO-lo-kom"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/47-Урок 9-1.avi"
+    },
+    {
+      "id": "ruad-06",
+      "order": 6,
+      "title": "形容词第六格",
+      "description": "形容词与名词一起变为第六格。",
+      "statements": [
+        {
+          "english": "В но́вом до́ме.",
+          "chinese": "在新房子里。",
+          "soundmark": "v NO-vam DO-me"
+        },
+        {
+          "english": "О краси́вом го́роде.",
+          "chinese": "关于美丽的城市。",
+          "soundmark": "o kra-SEE-vam GO-ra-de"
+        },
+        {
+          "english": "В большо́й шко́ле.",
+          "chinese": "在大学校里。",
+          "soundmark": "v bal'-SHOY SHKO-le"
+        },
+        {
+          "english": "На ста́рой у́лице.",
+          "chinese": "在旧街道上。",
+          "soundmark": "na STA-raj OO-lee-tse"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/48-Урок 9-2.avi"
+    },
+    {
+      "id": "ruad-07",
+      "order": 7,
+      "title": "短尾形容词",
+      "description": "短尾形容词的构成与用法。",
+      "statements": [
+        {
+          "english": "Зда́ние высо́ко.",
+          "chinese": "楼房很高。",
+          "soundmark": "ZDA-ne-ye vy-SO-ka"
+        },
+        {
+          "english": "Зада́ча трудна́.",
+          "chinese": "任务很难。",
+          "soundmark": "za-DA-cha trood-NA"
+        },
+        {
+          "english": "Он бо́лен.",
+          "chinese": "他病了。",
+          "soundmark": "on BO-len"
+        },
+        {
+          "english": "Мы гото́вы к уро́ку.",
+          "chinese": "我们准备好上课了。",
+          "soundmark": "my ga-TO-vy k oo-RO-koo"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/49-Урок 9-3.avi"
+    },
+    {
+      "id": "ruad-08",
+      "order": 8,
+      "title": "比较级",
+      "description": "形容词比较级的构成。",
+      "statements": [
+        {
+          "english": "Э́тот дом вы́ше.",
+          "chinese": "这栋房子更高。",
+          "soundmark": "EH-tat dom VY-she"
+        },
+        {
+          "english": "Моя́ кни́га интере́снее.",
+          "chinese": "我的书更有趣。",
+          "soundmark": "ma-YA KNEE-ga in-te-RES-ne-ye"
+        },
+        {
+          "english": "Здесь тепле́е, чем там.",
+          "chinese": "这里比那里暖和。",
+          "soundmark": "zd'es' te-PLYE-ye, chem tam"
+        },
+        {
+          "english": "Новый курс лу́чше.",
+          "chinese": "新课程更好。",
+          "soundmark": "NO-viyj koorz LOOCH-she"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/50-Урок 9-4.avi"
+    },
+    {
+      "id": "ruad-09",
+      "order": 9,
+      "title": "最高级",
+      "description": "形容词最高级的构成与用法。",
+      "statements": [
+        {
+          "english": "Э́то са́мое интере́сное заня́тие.",
+          "chinese": "这是最有趣的课。",
+          "soundmark": "EH-ta SA-ma-ye in-te-RES-na-ye za-NYA-te-ye"
+        },
+        {
+          "english": "Он лу́чший студе́нт.",
+          "chinese": "他是最好的学生。",
+          "soundmark": "on LOOCH-shiyj stoo-DYENT"
+        },
+        {
+          "english": "Э́то са́мая краси́вая у́лица.",
+          "chinese": "这是最美的街道。",
+          "soundmark": "EH-ta SA-ma-ya kra-SEE-va-ya OO-lee-tsa"
+        },
+        {
+          "english": "Лу́чшее реше́ние.",
+          "chinese": "最好的解决方案。",
+          "soundmark": "LOOCH-she-ye re-SHE-ne-ye"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/51-Урок 9-5.avi"
+    },
+    {
+      "id": "ruad-10",
+      "order": 10,
+      "title": "综合练习",
+      "description": "形容词变格与比较综合运用。",
+      "statements": [
+        {
+          "english": "Я купи́л но́вый ру́сский уче́бник.",
+          "chinese": "我买了一本新的俄语教科书。",
+          "soundmark": "ya koo-PEEL NO-viyj ROOS-kiyj oo-CHEB-neek"
+        },
+        {
+          "english": "В э́том большо́м го́роде мно́го краси́вых мест.",
+          "chinese": "这座城市有很多漂亮的地方。",
+          "soundmark": "v EH-tam bal'-SHOM GO-ra-de MNO-ga kra-SEE-vykh mest"
+        },
+        {
+          "english": "На́ша но́вая учи́тельница о́чень до́брая.",
+          "chinese": "我们的新老师非常善良。",
+          "soundmark": "NA-sha NO-va-ya oo-CHEE-tel-nee-tsa O-chen' DO-bra-ya"
+        },
+        {
+          "english": "Русский язы́к — са́мый интере́сный.",
+          "chinese": "俄语是最有趣的。",
+          "soundmark": "ROOS-kiyj ya-ZYK — SA-myj in-te-RES-nyj"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/52-Урок 9-6.avi"
+    }
+  ]
+}

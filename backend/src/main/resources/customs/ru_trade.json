@@ -1,0 +1,389 @@
+{
+  "id": "ru-trade",
+  "title": "经贸俄语",
+  "description": "国际贸易商务谈判和市场销售等商务俄语专业词汇。",
+  "cover": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rutd-01",
+      "order": 1,
+      "title": "贸易词汇",
+      "description": "国际贸易基础专业词汇。",
+      "statements": [
+        {
+          "english": "вне́шняя торго́вля",
+          "chinese": "对外贸易",
+          "soundmark": "VNESH-nyay-a tar-GOV-lya"
+        },
+        {
+          "english": "и́мпорт",
+          "chinese": "进口",
+          "soundmark": "EEM-port"
+        },
+        {
+          "english": "э́кспорт",
+          "chinese": "出口",
+          "soundmark": "EK-sport"
+        },
+        {
+          "english": "контра́кт",
+          "chinese": "合约",
+          "soundmark": "kan-TRAKT"
+        },
+        {
+          "english": "сде́лка",
+          "chinese": "交易",
+          "soundmark": "ZDYEL-ka"
+        },
+        {
+          "english": "поста́вка",
+          "chinese": "供货",
+          "soundmark": "pas-TAV-ka"
+        }
+      ]
+    },
+    {
+      "id": "rutd-02",
+      "order": 2,
+      "title": "谈判与市场",
+      "description": "商务谈判和市场推广词汇。",
+      "statements": [
+        {
+          "english": "перегово́ры",
+          "chinese": "谈判",
+          "soundmark": "pe-re-ga-VO-ry"
+        },
+        {
+          "english": "ски́дка",
+          "chinese": "折扣",
+          "soundmark": "SKEED-ka"
+        },
+        {
+          "english": "конкуре́нт",
+          "chinese": "竞争者",
+          "soundmark": "kan-koo-RENT"
+        },
+        {
+          "english": "рекла́ма",
+          "chinese": "广告",
+          "soundmark": "rek-LA-ma"
+        },
+        {
+          "english": "партнёр",
+          "chinese": "合作伙伴",
+          "soundmark": "part-NYOR"
+        },
+        {
+          "english": "при́быль",
+          "chinese": "利润",
+          "soundmark": "PREE-bel"
+        }
+      ]
+    },
+    {
+      "id": "rutd-03",
+      "order": 3,
+      "title": "支付条款",
+      "description": "国际支付和结算方式相关词汇。",
+      "statements": [
+        {
+          "english": "опла́та",
+          "chinese": "付款",
+          "soundmark": "a-PLA-ta"
+        },
+        {
+          "english": "инка́ссо",
+          "chinese": "托收",
+          "soundmark": "in-KAS-sa"
+        },
+        {
+          "english": "аккредити́в",
+          "chinese": "信用证",
+          "soundmark": "a-kre-dee-TEEF"
+        },
+        {
+          "english": "предопла́та",
+          "chinese": "预付款",
+          "soundmark": "pre-da-PLA-ta"
+        },
+        {
+          "english": "отсро́чка платежа́",
+          "chinese": "延期付款",
+          "soundmark": "at-SROCH-ka pla-te-ZHA"
+        },
+        {
+          "english": "нал",
+          "chinese": "现金",
+          "soundmark": "nal"
+        }
+      ]
+    },
+    {
+      "id": "rutd-04",
+      "order": 4,
+      "title": "进出口",
+      "description": "进出口业务相关词汇。",
+      "statements": [
+        {
+          "english": "импортёр",
+          "chinese": "进口商",
+          "soundmark": "eem-por-TYOR"
+        },
+        {
+          "english": "экспортёр",
+          "chinese": "出口商",
+          "soundmark": "eks-por-TYOR"
+        },
+        {
+          "english": "тамо́женная очи́стка",
+          "chinese": "清关",
+          "soundmark": "ta-MO-zhen-na-ya a-CHEEST-ka"
+        },
+        {
+          "english": "лицензи́рование",
+          "chinese": "许可",
+          "soundmark": "lee-tsen-ZEE-ro-va-nee-ye"
+        },
+        {
+          "english": "кво́та",
+          "chinese": "配额",
+          "soundmark": "KVO-ta"
+        },
+        {
+          "english": "сертифика́т",
+          "chinese": "证书",
+          "soundmark": "ser-tee-fee-KAT"
+        }
+      ]
+    },
+    {
+      "id": "rutd-05",
+      "order": 5,
+      "title": "市场分析",
+      "description": "市场研究和分析相关词汇。",
+      "statements": [
+        {
+          "english": "ры́нок",
+          "chinese": "市场",
+          "soundmark": "RY-nak"
+        },
+        {
+          "english": "спрос",
+          "chinese": "需求",
+          "soundmark": "spros"
+        },
+        {
+          "english": "предложе́ние",
+          "chinese": "供给",
+          "soundmark": "pred-la-ZHE-nee-ye"
+        },
+        {
+          "english": "марке́тинг",
+          "chinese": "市场营销",
+          "soundmark": "mar-KE-ting"
+        },
+        {
+          "english": "анали́з",
+          "chinese": "分析",
+          "soundmark": "a-NA-leez"
+        },
+        {
+          "english": "конкурентоспосо́бность",
+          "chinese": "竞争力",
+          "soundmark": "kan-koo-ren-ta-spa-SOB-nast"
+        }
+      ]
+    },
+    {
+      "id": "rutd-06",
+      "order": 6,
+      "title": "商务会议",
+      "description": "商务会议和洽谈相关词汇。",
+      "statements": [
+        {
+          "english": "совеща́ние",
+          "chinese": "会议",
+          "soundmark": "sa-ve-SHCHA-nee-ye"
+        },
+        {
+          "english": "повестка дня",
+          "chinese": "议程",
+          "soundmark": "pa-VYEST-ka dnya"
+        },
+        {
+          "english": "презента́ция",
+          "chinese": "演示",
+          "soundmark": "pre-zen-TA-tsee-ya"
+        },
+        {
+          "english": "предложе́ние о сотру́дничестве",
+          "chinese": "合作建议",
+          "soundmark": "pred-la-ZHE-nee-ye a sa-TROOD-nee-che-stve"
+        },
+        {
+          "english": "о́бсуждение",
+          "chinese": "讨论",
+          "soundmark": "ob-soo-ZHDE-nee-ye"
+        },
+        {
+          "english": "соглаше́ние",
+          "chinese": "协议",
+          "soundmark": "sa-gla-SHE-nee-ye"
+        }
+      ]
+    },
+    {
+      "id": "rutd-07",
+      "order": 7,
+      "title": "贸易单证",
+      "description": "国际贸易单证和文件词汇。",
+      "statements": [
+        {
+          "english": "счёт",
+          "chinese": "发票",
+          "soundmark": "shchot"
+        },
+        {
+          "english": "специфика́ция",
+          "chinese": "规格书",
+          "soundmark": "spe-tsee-fee-KA-tsee-ya"
+        },
+        {
+          "english": "накладна́я",
+          "chinese": "运单",
+          "soundmark": "nak-lad-NA-ya"
+        },
+        {
+          "english": "коносаме́нт",
+          "chinese": "提单",
+          "soundmark": "ka-na-sa-MENT"
+        },
+        {
+          "english": "отгру́зочная специфика́ция",
+          "chinese": "装运明细",
+          "soundmark": "at-GROO-za-chna-ya spe-tsee-fee-KA-tsee-ya"
+        },
+        {
+          "english": "деклара́ция",
+          "chinese": "申报单",
+          "soundmark": "de-kla-RA-tsee-ya"
+        }
+      ]
+    },
+    {
+      "id": "rutd-08",
+      "order": 8,
+      "title": "银行术语",
+      "description": "国际结算和银行业务词汇。",
+      "statements": [
+        {
+          "english": "ба́нк",
+          "chinese": "银行",
+          "soundmark": "bank"
+        },
+        {
+          "english": "валю́та",
+          "chinese": "货币",
+          "soundmark": "va-LYU-ta"
+        },
+        {
+          "english": "ку́рс",
+          "chinese": "汇率",
+          "soundmark": "koors"
+        },
+        {
+          "english": "перево́д",
+          "chinese": "转账",
+          "soundmark": "pe-re-VOD"
+        },
+        {
+          "english": "ба́нковская га́рантия",
+          "chinese": "银行保函",
+          "soundmark": "BAN-kov-ska-ya ga-RAN-tee-ya"
+        },
+        {
+          "english": "счёт",
+          "chinese": "账户",
+          "soundmark": "shchot"
+        }
+      ]
+    },
+    {
+      "id": "rutd-09",
+      "order": 9,
+      "title": "定价",
+      "description": "价格和定价策略相关词汇。",
+      "statements": [
+        {
+          "english": "цена́",
+          "chinese": "价格",
+          "soundmark": "tse-NA"
+        },
+        {
+          "english": "сто́имость",
+          "chinese": "成本",
+          "soundmark": "STO-ee-mast"
+        },
+        {
+          "english": "торги́",
+          "chinese": "竞价",
+          "soundmark": "tar-GHEE"
+        },
+        {
+          "english": "себесто́имость",
+          "chinese": "成本价",
+          "soundmark": "se-bes-TO-ee-mast"
+        },
+        {
+          "english": "наце́нка",
+          "chinese": "加价",
+          "soundmark": "na-TSEN-ka"
+        },
+        {
+          "english": "торго́вля",
+          "chinese": "讨价还价",
+          "soundmark": "tar-GOV-lya"
+        }
+      ]
+    },
+    {
+      "id": "rutd-10",
+      "order": 10,
+      "title": "商务函电",
+      "description": "商务书信和电邮常用表达。",
+      "statements": [
+        {
+          "english": "письмо́",
+          "chinese": "信件",
+          "soundmark": "pees-MO"
+        },
+        {
+          "english": "запро́с",
+          "chinese": "询盘",
+          "soundmark": "za-PROS"
+        },
+        {
+          "english": "оффе́рта",
+          "chinese": "发盘",
+          "soundmark": "a-FER-ta"
+        },
+        {
+          "english": "подтвержде́ние",
+          "chinese": "确认",
+          "soundmark": "pot-tverd-ZHE-nee-ye"
+        },
+        {
+          "english": "напомина́ние",
+          "chinese": "催告",
+          "soundmark": "na-po-mee-NA-nee-ye"
+        },
+        {
+          "english": "прете́нзия",
+          "chinese": "索赔",
+          "soundmark": "pre-TEN-zee-ya"
+        }
+      ]
+    }
+  ]
+}

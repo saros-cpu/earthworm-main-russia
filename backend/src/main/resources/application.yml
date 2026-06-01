@@ -1,0 +1,104 @@
+server:
+  port: 8080
+  tomcat:
+    max-swallow-size: -1
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 120MB
+      max-request-size: 120MB
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:mysql://127.0.0.1:3306/earthworm?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&useUnicode=true}
+    username: ${SPRING_DATASOURCE_USERNAME:reader}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 5
+      connection-timeout: 10000
+      idle-timeout: 300000
+      max-lifetime: 600000
+      pool-name: EarthwormPool
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate.format_sql: true
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+
+jwt:
+  secret: ${JWT_SECRET}
+  expirationMs: 604800000
+
+cors:
+  allowedOrigins: ${CORS_ALLOWED_ORIGINS:http://localhost:3000,http://localhost:3001}
+
+auth:
+  registration-requests-per-minute: ${AUTH_REGISTRATION_REQUESTS_PER_MINUTE:5}
+  login-requests-per-minute: ${AUTH_LOGIN_REQUESTS_PER_MINUTE:30}
+  session-cookie-name: ${AUTH_SESSION_COOKIE_NAME:EW_SESSION}
+  session-cookie-secure: ${AUTH_SESSION_COOKIE_SECURE:true}
+  session-cookie-same-site: ${AUTH_SESSION_COOKIE_SAME_SITE:Strict}
+
+public-rate-limit:
+  max-tracked-windows: ${PUBLIC_RATE_LIMIT_MAX_TRACKED_WINDOWS:10000}
+
+openai:
+  provider: ${AI_PROVIDER:openrouter}
+  enabled: ${OPENAI_ENABLED:true}
+  apiKey: ${OPENROUTER_API_KEY:${OPENAI_API_KEY:}}
+  baseUrl: ${OPENROUTER_BASE_URL:https://openrouter.ai/api/v1}
+  model: ${OPENROUTER_MODEL:openai/gpt-4o-mini}
+  siteUrl: ${OPENROUTER_SITE_URL:http://localhost:3000}
+  appName: ${OPENROUTER_APP_NAME:Russian Learning}
+  assistant-max-question-length: ${AI_ASSISTANT_MAX_QUESTION_LENGTH:2000}
+  max-response-chars: ${AI_MAX_RESPONSE_CHARS:200000}
+  max-answer-length: ${AI_MAX_ANSWER_LENGTH:10000}
+  max-output-tokens: ${AI_MAX_OUTPUT_TOKENS:1200}
+  assistant-requests-per-minute: ${AI_ASSISTANT_REQUESTS_PER_MINUTE:10}
+  generation-requests-per-minute: ${AI_GENERATION_REQUESTS_PER_MINUTE:5}
+  daily-max-reserved-output-tokens: ${AI_DAILY_MAX_RESERVED_OUTPUT_TOKENS:100000}
+  max-tracked-rate-limit-windows: ${AI_MAX_TRACKED_RATE_LIMIT_WINDOWS:10000}
+
+media:
+  root-path: ${MEDIA_ROOT_PATH:D:/BaiduNetdiskDownload/俄语教程}
+  ffmpeg-path: ${FFMPEG_PATH:ffmpeg}
+  cache-max-bytes: ${MEDIA_CACHE_MAX_BYTES:2147483648}
+  transcode-workers: ${MEDIA_TRANSCODE_WORKERS:2}
+  transcode-queue-capacity: ${MEDIA_TRANSCODE_QUEUE_CAPACITY:8}
+  health-cache-ms: ${MEDIA_HEALTH_CACHE_MS:60000}
+  health-timeout-ms: ${MEDIA_HEALTH_TIMEOUT_MS:3000}
+
+tts:
+  max-text-length: ${TTS_MAX_TEXT_LENGTH:500}
+  requests-per-minute: ${TTS_REQUESTS_PER_MINUTE:20}
+  cache-max-bytes: ${TTS_CACHE_MAX_BYTES:268435456}
+  max-audio-bytes: ${TTS_MAX_AUDIO_BYTES:10485760}
+
+seed:
+  write-on-startup: ${SEED_WRITE_ON_STARTUP:false}
+
+logging:
+  file:
+    path: runtime/logs
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: when-authorized
+      show-components: when-authorized
+
+springdoc:
+  api-docs:
+    enabled: ${SPRINGDOC_API_DOCS_ENABLED:false}
+  swagger-ui:
+    enabled: ${SPRINGDOC_SWAGGER_UI_ENABLED:false}

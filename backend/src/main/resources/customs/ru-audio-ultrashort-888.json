@@ -1,0 +1,18 @@
+{
+  "id": "ru-audio-ultrashort-888",
+  "title": "俄语流行口语极短句888个（9课）",
+  "description": "俄语最流行口语极短句888个音频集，共9课时。涵盖日常交流中最简短实用的俄语短句，一学就会。",
+  "cover": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {"id":"rus-01","order":1,"title":"极短句01","description":"俄语极短句训练。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语流行口语极短句888个/06-07-03-俄语极短句01.mp3","statements":[{"english":"короткая фраза","chinese":"短句","soundmark":"ka-rot-ka-ya fra-za"},{"english":"коротко и ясно","chinese":"简短明了","soundmark":"ka-rot-ka e yas-na"}]},
+    {"id":"rus-02","order":2,"title":"极短句02","description":"俄语极短句训练。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语流行口语极短句888个/06-07-03-俄语极短句02.mp3","statements":[{"english":"привет","chinese":"嗨","soundmark":"pree-vyet"},{"english":"пока","chinese":"拜拜","soundmark":"pa-ka"}]},
+    {"id":"rus-03","order":3,"title":"极短句03","description":"俄语极短句训练。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语流行口语极短句888个/06-07-03-俄语极短句03.mp3","statements":[{"english":"да","chinese":"是","soundmark":"da"},{"english":"нет","chinese":"不","soundmark":"nyet"}]},
+    {"id":"rus-04","order":4,"title":"极短句04","description":"俄语极短句训练。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语流行口语极短句888个/06-07-03-俄语极短句04.mp3","statements":[{"english":"спасибо","chinese":"谢谢","soundmark":"spa-see-ba"},{"english":"пожалуйста","chinese":"请/不客气","soundmark":"pa-zhal-sta"}]},
+    {"id":"rus-05","order":5,"title":"极短句05","description":"俄语极短句训练。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语流行口语极短句888个/06-07-03-俄语极短句05.mp3","statements":[{"english":"хорошо","chinese":"好","soundmark":"kha-ra-sho"},{"english":"плохо","chinese":"不好","soundmark":"plo-kha"}]},
+    {"id":"rus-06","order":6,"title":"极短句06","description":"俄语极短句训练。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语流行口语极短句888个/06-07-03-俄语极短句06.mp3","statements":[{"english":"можно","chinese":"可以","soundmark":"mozh-na"},{"english":"нельзя","chinese":"不可以","soundmark":"nel-zya"}]},
+    {"id":"rus-07","order":7,"title":"极短句07","description":"俄语极短句训练。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语流行口语极短句888个/06-07-03-俄语极短句07.mp3","statements":[{"english":"конечно","chinese":"当然","soundmark":"ka-nyech-na"},{"english":"точно","chinese":"确实","soundmark":"toch-na"}]},
+    {"id":"rus-08","order":8,"title":"极短句08","description":"俄语极短句训练。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语流行口语极短句888个/06-07-03-俄语极短句08.mp3","statements":[{"english":"ничего","chinese":"没什么","soundmark":"nee-che-vo"},{"english":"всё","chinese":"一切","soundmark":"vsyo"}]},
+    {"id":"rus-09","order":9,"title":"极短句09","description":"俄语极短句训练。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语流行口语极短句888个/06-07-03-俄语极短句09.mp3","statements":[{"english":"отлично","chinese":"太棒了","soundmark":"at-leech-na"},{"english":"прекрасно","chinese":"非常好","soundmark":"pre-kras-na"}]}
+  ]
+}

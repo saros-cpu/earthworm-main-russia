@@ -1,0 +1,384 @@
+{
+  "id": "ru-construction",
+  "title": "建筑工程俄语",
+  "description": "建筑工地工程管理施工材料等建筑行业常用俄语词汇。",
+  "cover": "https://images.unsplash.com/photo-1504307651254-84280e79f956?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rucon-01",
+      "order": 1,
+      "title": "建筑材料",
+      "description": "常见建筑材料的俄语名称。",
+      "statements": [
+        {
+          "english": "цеме́нт",
+          "chinese": "水泥",
+          "soundmark": "tse-MENT"
+        },
+        {
+          "english": "бето́н",
+          "chinese": "混凝土",
+          "soundmark": "be-TON"
+        },
+        {
+          "english": "кирпи́ч",
+          "chinese": "砖",
+          "soundmark": "keer-PEECH"
+        },
+        {
+          "english": "песо́к",
+          "chinese": "沙子",
+          "soundmark": "pe-SOK"
+        },
+        {
+          "english": "сталь",
+          "chinese": "钢材",
+          "soundmark": "stal"
+        },
+        {
+          "english": "де́рево",
+          "chinese": "木材",
+          "soundmark": "DYE-re-va"
+        }
+      ]
+    },
+    {
+      "id": "rucon-02",
+      "order": 2,
+      "title": "施工现场",
+      "description": "施工现场常用词汇和指令。",
+      "statements": [
+        {
+          "english": "строи́тельная площа́дка",
+          "chinese": "建筑工地",
+          "soundmark": "stra-EE-tel-na-ya pla-SHCHAD-ka"
+        },
+        {
+          "english": "кра́н",
+          "chinese": "起重机",
+          "soundmark": "kran"
+        },
+        {
+          "english": "армату́ра",
+          "chinese": "钢筋",
+          "soundmark": "ar-ma-TOO-ra"
+        },
+        {
+          "english": "те́хника безопа́сности",
+          "chinese": "安全规范",
+          "soundmark": "TEKH-nee-ka be-za-PAS-nas-tee"
+        },
+        {
+          "english": "ка́ска",
+          "chinese": "安全帽",
+          "soundmark": "KAS-ka"
+        }
+      ]
+    },
+    {
+      "id": "rucon-03",
+      "order": 3,
+      "title": "建筑工具",
+      "description": "建筑手工和电动工具的俄语名称。",
+      "statements": [
+        {
+          "english": "мо́лоток",
+          "chinese": "锤子",
+          "soundmark": "MO-la-tok"
+        },
+        {
+          "english": "отвёртка",
+          "chinese": "螺丝刀",
+          "soundmark": "at-VYORT-ka"
+        },
+        {
+          "english": "дрель",
+          "chinese": "电钻",
+          "soundmark": "drel"
+        },
+        {
+          "english": "у́ровень",
+          "chinese": "水平仪",
+          "soundmark": "OO-ra-ven"
+        },
+        {
+          "english": "руле́тка",
+          "chinese": "卷尺",
+          "soundmark": "roo-LET-ka"
+        },
+        {
+          "english": "шпа́тель",
+          "chinese": "抹刀",
+          "soundmark": "SHPA-tel"
+        }
+      ]
+    },
+    {
+      "id": "rucon-04",
+      "order": 4,
+      "title": "测量与图纸",
+      "description": "工程测量和图纸相关词汇。",
+      "statements": [
+        {
+          "english": "чертёж",
+          "chinese": "图纸",
+          "soundmark": "cher-TYOHZH"
+        },
+        {
+          "english": "разме́р",
+          "chinese": "尺寸",
+          "soundmark": "raz-MYER"
+        },
+        {
+          "english": "длина́",
+          "chinese": "长度",
+          "soundmark": "dlee-NA"
+        },
+        {
+          "english": "высота́",
+          "chinese": "高度",
+          "soundmark": "vy-sa-TA"
+        },
+        {
+          "english": "масшта́б",
+          "chinese": "比例尺",
+          "soundmark": "ma-SHTAB"
+        },
+        {
+          "english": "прое́кт",
+          "chinese": "设计图",
+          "soundmark": "pra-YEKT"
+        }
+      ]
+    },
+    {
+      "id": "rucon-05",
+      "order": 5,
+      "title": "安全防护",
+      "description": "工地安全防护设备和措施词汇。",
+      "statements": [
+        {
+          "english": "защи́тная ка́ска",
+          "chinese": "安全帽",
+          "soundmark": "za-SHEET-na-ya KAS-ka"
+        },
+        {
+          "english": "страхо́вочный по́яс",
+          "chinese": "安全带",
+          "soundmark": "stra-KHO-va-chny PO-yas"
+        },
+        {
+          "english": "перча́тки",
+          "chinese": "手套",
+          "soundmark": "per-CHAT-kee"
+        },
+        {
+          "english": "спецо́бужь",
+          "chinese": "工作服",
+          "soundmark": "spets-O-boot"
+        },
+        {
+          "english": "ава́рия",
+          "chinese": "事故",
+          "soundmark": "a-VA-ree-ya"
+        },
+        {
+          "english": "пожа́рная безопа́сность",
+          "chinese": "消防安全",
+          "soundmark": "pa-ZHAR-na-ya be-za-PAS-nast"
+        }
+      ]
+    },
+    {
+      "id": "rucon-06",
+      "order": 6,
+      "title": "工人与岗位",
+      "description": "建筑工地各工种和岗位名称。",
+      "statements": [
+        {
+          "english": "строи́тель",
+          "chinese": "建筑工人",
+          "soundmark": "stra-EE-tel"
+        },
+        {
+          "english": "инжене́р",
+          "chinese": "工程师",
+          "soundmark": "een-zhe-NYER"
+        },
+        {
+          "english": "прора́б",
+          "chinese": "工长",
+          "soundmark": "pra-RAB"
+        },
+        {
+          "english": "архите́ктор",
+          "chinese": "建筑师",
+          "soundmark": "ar-khee-TEK-tor"
+        },
+        {
+          "english": "эле́ктрик",
+          "chinese": "电工",
+          "soundmark": "e-LEK-treek"
+        },
+        {
+          "english": "сва́рщик",
+          "chinese": "焊工",
+          "soundmark": "SVAR-shcheek"
+        }
+      ]
+    },
+    {
+      "id": "rucon-07",
+      "order": 7,
+      "title": "建筑机械",
+      "description": "大型建筑机械和设备词汇。",
+      "statements": [
+        {
+          "english": "экскава́тор",
+          "chinese": "挖掘机",
+          "soundmark": "eks-ka-VA-tor"
+        },
+        {
+          "english": "бульдо́зер",
+          "chinese": "推土机",
+          "soundmark": "bool-DO-zer"
+        },
+        {
+          "english": "самосва́л",
+          "chinese": "自卸车",
+          "soundmark": "sa-mas-VAL"
+        },
+        {
+          "english": "бето́номеша́лка",
+          "chinese": "混凝土搅拌机",
+          "soundmark": "be-TO-na-me-SHAL-ka"
+        },
+        {
+          "english": "подъёмник",
+          "chinese": "升降机",
+          "soundmark": "pad-YOM-neek"
+        },
+        {
+          "english": "виброплита́",
+          "chinese": "振动板",
+          "soundmark": "vee-bra-plee-TA"
+        }
+      ]
+    },
+    {
+      "id": "rucon-08",
+      "order": 8,
+      "title": "装修工程",
+      "description": "室内装修和表面处理相关词汇。",
+      "statements": [
+        {
+          "english": "обо́и",
+          "chinese": "壁纸",
+          "soundmark": "a-BO-ee"
+        },
+        {
+          "english": "кра́ска",
+          "chinese": "油漆",
+          "soundmark": "KRAS-ka"
+        },
+        {
+          "english": "пли́тка",
+          "chinese": "瓷砖",
+          "soundmark": "PLEET-ka"
+        },
+        {
+          "english": "парке́т",
+          "chinese": "木地板",
+          "soundmark": "par-KET"
+        },
+        {
+          "english": "штукату́рка",
+          "chinese": "抹灰",
+          "soundmark": "shtoo-ka-TOOR-ka"
+        },
+        {
+          "english": "потоло́к",
+          "chinese": "天花板",
+          "soundmark": "pa-ta-LOK"
+        }
+      ]
+    },
+    {
+      "id": "rucon-09",
+      "order": 9,
+      "title": "许可证与文件",
+      "description": "建筑许可和工程文件相关词汇。",
+      "statements": [
+        {
+          "english": "разреше́ние на строи́тельство",
+          "chinese": "施工许可证",
+          "soundmark": "raz-re-SHE-nee-ye na stra-EE-tel-stva"
+        },
+        {
+          "english": "контра́кт",
+          "chinese": "合同",
+          "soundmark": "kan-TRAKT"
+        },
+        {
+          "english": "сме́та",
+          "chinese": "预算书",
+          "soundmark": "SMYE-ta"
+        },
+        {
+          "english": "сертифика́т",
+          "chinese": "合格证书",
+          "soundmark": "ser-tee-fee-KAT"
+        },
+        {
+          "english": "но́рма",
+          "chinese": "规范",
+          "soundmark": "NOR-ma"
+        },
+        {
+          "english": "документа́ция",
+          "chinese": "文件资料",
+          "soundmark": "da-koo-men-TA-tsee-ya"
+        }
+      ]
+    },
+    {
+      "id": "rucon-10",
+      "order": 10,
+      "title": "项目管理",
+      "description": "工程项目管理常用词汇。",
+      "statements": [
+        {
+          "english": "срок выполне́ния",
+          "chinese": "工期",
+          "soundmark": "srok vy-pal-NYE-nee-ya"
+        },
+        {
+          "english": "объе́кт",
+          "chinese": "工程项目",
+          "soundmark": "ab-YEKT"
+        },
+        {
+          "english": "подря́дчик",
+          "chinese": "承包商",
+          "soundmark": "pad-RYAD-cheek"
+        },
+        {
+          "english": "контро́ль ка́чества",
+          "chinese": "质量控制",
+          "soundmark": "kan-TROL KA-chest-va"
+        },
+        {
+          "english": "сда́ча объе́кта",
+          "chinese": "工程交付",
+          "soundmark": "ZDA-cha ab-YEK-ta"
+        },
+        {
+          "english": "бюдже́т",
+          "chinese": "预算",
+          "soundmark": "byud-ZHET"
+        }
+      ]
+    }
+  ]
+}
