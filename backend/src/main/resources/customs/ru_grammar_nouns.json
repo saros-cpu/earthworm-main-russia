@@ -1,0 +1,324 @@
+{
+  "id": "ru-grammar-nouns",
+  "title": "名词的性数格",
+  "description": "系统学习俄语名词性阳/阴/中、数和六格变化基本规律。",
+  "cover": "https://images.unsplash.com/photo-1455390587902-285d26427c2b?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rung-01",
+      "order": 1,
+      "title": "名词的性",
+      "description": "通过词尾判断俄语名词的性属。",
+      "statements": [
+        {
+          "english": "стол (он)",
+          "chinese": "桌子（阳性）",
+          "soundmark": "stol"
+        },
+        {
+          "english": "кни́га (она́)",
+          "chinese": "书（阴性）",
+          "soundmark": "KNEE-ga"
+        },
+        {
+          "english": "окно́ (оно́)",
+          "chinese": "窗户（中性）",
+          "soundmark": "ak-NO"
+        },
+        {
+          "english": "уче́бник (он)",
+          "chinese": "教科书（阳性）",
+          "soundmark": "oo-CHEB-neek"
+        },
+        {
+          "english": "ру́чка (она́)",
+          "chinese": "笔（阴性）",
+          "soundmark": "ROOCH-ka"
+        },
+        {
+          "english": "письмо́ (оно́)",
+          "chinese": "信（中性）",
+          "soundmark": "pees-MO"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/13-Урок 1-1.avi"
+    },
+    {
+      "id": "rung-02",
+      "order": 2,
+      "title": "名词的复数",
+      "description": "名词复数形式的构成。",
+      "statements": [
+        {
+          "english": "стол — столы́",
+          "chinese": "桌子们",
+          "soundmark": "sta-LY"
+        },
+        {
+          "english": "кни́га — кни́ги",
+          "chinese": "多本书",
+          "soundmark": "KNEE-gee"
+        },
+        {
+          "english": "окно́ — о́кна",
+          "chinese": "多扇窗户",
+          "soundmark": "OK-na"
+        },
+        {
+          "english": "ночь — но́чи",
+          "chinese": "多个夜晚",
+          "soundmark": "NO-chee"
+        },
+        {
+          "english": "слова́рь — словари́",
+          "chinese": "多本词典",
+          "soundmark": "sla-va-REE"
+        },
+        {
+          "english": "ме́сто — места́",
+          "chinese": "多个地方",
+          "soundmark": "myes-TA"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/14-Урок 1-2.avi"
+    },
+    {
+      "id": "rung-03",
+      "order": 3,
+      "title": "名词的第一格（主格）",
+      "description": "第一格作主语。",
+      "statements": [
+        {
+          "english": "Уче́бник лежи́т на столе́.",
+          "chinese": "教科书在桌子上。",
+          "soundmark": "oo-CHEB-neek le-ZHEET na sta-LE"
+        },
+        {
+          "english": "Кни́га интере́сная.",
+          "chinese": "书很有趣。",
+          "soundmark": "KNEE-ga in-te-RES-na-ya"
+        },
+        {
+          "english": "Окно́ откры́то.",
+          "chinese": "窗户开着。",
+          "soundmark": "ak-NO at-KRY-ta"
+        },
+        {
+          "english": "Ру́чка но́вая.",
+          "chinese": "笔是新的。",
+          "soundmark": "ROOCH-ka NO-va-ya"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/15-Урок 1-3.avi"
+    },
+    {
+      "id": "rung-04",
+      "order": 4,
+      "title": "名词的第二格（属格）",
+      "description": "第二格表示所属、否定、数量。",
+      "statements": [
+        {
+          "english": "Это кни́га студе́нта.",
+          "chinese": "这是学生的书。",
+          "soundmark": "EH-ta KNEE-ga stoo-DYEN-ta"
+        },
+        {
+          "english": "У меня́ нет ру́чки.",
+          "chinese": "我没有笔。",
+          "soundmark": "oo me-NYA nyet ROOCH-kee"
+        },
+        {
+          "english": "Стака́н воды́.",
+          "chinese": "一杯水。",
+          "soundmark": "sta-KAN va-DY"
+        },
+        {
+          "english": "Цена́ биле́та — сто рубле́й.",
+          "chinese": "票价一百卢布。",
+          "soundmark": "tse-NA bee-LYE-ta sto roob-LYAY"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/16-Урок 2-1.avi"
+    },
+    {
+      "id": "rung-05",
+      "order": 5,
+      "title": "名词的第三格（与格）",
+      "description": "第三格表示间接宾语。",
+      "statements": [
+        {
+          "english": "Я даю́ кни́гу бра́ту.",
+          "chinese": "我把书给哥哥。",
+          "soundmark": "ya da-YOO KNEE-goo BRA-too"
+        },
+        {
+          "english": "Позвони́ ма́ме.",
+          "chinese": "给妈妈打电话。",
+          "soundmark": "paz-va-NEE MA-me"
+        },
+        {
+          "english": "Детя́м ну́жен о́тдых.",
+          "chinese": "孩子们需要休息。",
+          "soundmark": "de-TYAM NOO-zhen OTD-yh"
+        },
+        {
+          "english": "Дру́гу нра́вится э́та кни́га.",
+          "chinese": "朋友喜欢这本书。",
+          "soundmark": "DROO-goo NRA-vee-tsa EH-ta KNEE-ga"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/17-Урок 2-2.avi"
+    },
+    {
+      "id": "rung-06",
+      "order": 6,
+      "title": "名词的第四格（宾格）",
+      "description": "第四格表示直接宾语。",
+      "statements": [
+        {
+          "english": "Я чита́ю кни́гу.",
+          "chinese": "我在读书。",
+          "soundmark": "ya chee-TA-yoo KNEE-goo"
+        },
+        {
+          "english": "Он ви́дит стол.",
+          "chinese": "他看见桌子。",
+          "soundmark": "on VEE-deet stol"
+        },
+        {
+          "english": "Ма́ма мо́ет окно́.",
+          "chinese": "妈妈擦窗户。",
+          "soundmark": "MA-ma MO-yet ak-NO"
+        },
+        {
+          "english": "Я люблю́ Росси́ю.",
+          "chinese": "我爱俄罗斯。",
+          "soundmark": "ya lyub-LYOO ras-SEE-yoo"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/18-Урок 3-1.avi"
+    },
+    {
+      "id": "rung-07",
+      "order": 7,
+      "title": "名词的第五格（工具格）",
+      "description": "第五格表示工具、方式。",
+      "statements": [
+        {
+          "english": "Я пишу́ ру́чкой.",
+          "chinese": "我用笔写字。",
+          "soundmark": "ya pee-SHOO ROOCH-kay"
+        },
+        {
+          "english": "Он рису́ет карандашо́м.",
+          "chinese": "他用铅笔画画。",
+          "soundmark": "on ree-SOO-yet ka-ran-da-SHOM"
+        },
+        {
+          "english": "Мы горди́мся шко́лой.",
+          "chinese": "我们为学校骄傲。",
+          "soundmark": "my gor-DEEM-sya SHKO-lay"
+        },
+        {
+          "english": "Лю́ди иду́т па́рой.",
+          "chinese": "人们成对走。",
+          "soundmark": "LYOO-dee ee-DOOT PA-roy"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/19-Урок 3-2.avi"
+    },
+    {
+      "id": "rung-08",
+      "order": 8,
+      "title": "名词的第六格（前置格）",
+      "description": "第六格与前置词连用表地点、思想。",
+      "statements": [
+        {
+          "english": "Он говори́т о кни́ге.",
+          "chinese": "他谈论书。",
+          "soundmark": "on ga-va-REET o KNEE-ge"
+        },
+        {
+          "english": "Мы живём в го́роде.",
+          "chinese": "我们住在城市里。",
+          "soundmark": "my zhee-VYOM v GO-ra-de"
+        },
+        {
+          "english": "Де́ти игра́ют во дворе́.",
+          "chinese": "孩子们在院子里玩。",
+          "soundmark": "DYE-tee ig-RA-yoot va dva-RE"
+        },
+        {
+          "english": "Кни́ги лежа́т на столе́.",
+          "chinese": "书放在桌子上。",
+          "soundmark": "KNEE-gee le-ZHAT na sta-LE"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/20-Урок 3-3.avi"
+    },
+    {
+      "id": "rung-09",
+      "order": 9,
+      "title": "特殊变化名词",
+      "description": "特殊词尾变化的俄语名词。",
+      "statements": [
+        {
+          "english": "вре́мя — вре́мени",
+          "chinese": "时间（变格）",
+          "soundmark": "VRE-mya — VRE-me-nee"
+        },
+        {
+          "english": "и́мя — и́мени",
+          "chinese": "名字（变格）",
+          "soundmark": "EE-mya — EE-me-nee"
+        },
+        {
+          "english": "путь — пути́",
+          "chinese": "道路（变格）",
+          "soundmark": "poot' — poo-TEE"
+        },
+        {
+          "english": "мать — ма́тери",
+          "chinese": "母亲（变格）",
+          "soundmark": "mat' — MA-te-ree"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/21-Урок 3-4.avi"
+    },
+    {
+      "id": "rung-10",
+      "order": 10,
+      "title": "综合练习",
+      "description": "名词六格综合应用。",
+      "statements": [
+        {
+          "english": "Студе́нт чита́ет интере́сную кни́гу.",
+          "chinese": "大学生在读一本有趣的书。",
+          "soundmark": "stoo-DYENT chee-TA-yet in-te-RES-noo-yoo KNEE-goo"
+        },
+        {
+          "english": "Мы говори́ли о но́вом фи́льме.",
+          "chinese": "我们谈论了新电影。",
+          "soundmark": "my ga-va-REE-lee o NO-vam FEEL-me"
+        },
+        {
+          "english": "Я хожу́ в шко́лу ка́ждый день.",
+          "chinese": "我每天去学校。",
+          "soundmark": "ya kha-ZHOO v SHKO-loo KAZH-dyj dyen'"
+        },
+        {
+          "english": "Друзья́ подари́ли мне цвета́.",
+          "chinese": "朋友们送了我花。",
+          "soundmark": "droo-ZYA pa-da-REE-lee mne tsve-TA"
+        },
+        {
+          "english": "Он рабо́тает инжене́ром.",
+          "chinese": "他做工程师工作。",
+          "soundmark": "on ra-BO-ta-yet in-zhe-NYE-rom"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/22-Урок 4-1.avi"
+    }
+  ]
+}

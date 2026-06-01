@@ -1,0 +1,16 @@
+{
+  "id": "ru-audio-common-340",
+  "title": "俄语常见口语表达340个（7课）",
+  "description": "俄语最常见口语表达句型340个音频集，共7课时。涵盖生活中最常用的俄语句型，帮助快速提升口语能力。",
+  "cover": "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {"id":"rcm-01","order":1,"title":"口语340个-01","description":"常见口语表达训练。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语常见口语表达340个/06-07-08俄语句型340个-01.mp3","statements":[{"english":"разговорное выражение","chinese":"口语表达","soundmark":"raz-ga-vor-na-ye vy-ra-zhe-nee-ye"},{"english":"обиходная фраза","chinese":"日常用语","soundmark":"a-bee-khod-na-ya fra-za"}]},
+    {"id":"rcm-02","order":2,"title":"口语340个-02","description":"常见口语表达训练。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语常见口语表达340个/06-07-08俄语句型340个-02.mp3","statements":[{"english":"вопрос","chinese":"疑问句","soundmark":"vap-ros"},{"english":"ответ","chinese":"答句","soundmark":"at-vyet"}]},
+    {"id":"rcm-03","order":3,"title":"口语340个-03","description":"常见口语表达训练。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语常见口语表达340个/06-07-08俄语句型340个-03.mp3","statements":[{"english":"просьба","chinese":"请求","soundmark":"proz-ba"},{"english":"предложение","chinese":"提议","soundmark":"pred-la-zhe-nee-ye"}]},
+    {"id":"rcm-04","order":4,"title":"口语340个-04","description":"常见口语表达训练。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语常见口语表达340个/06-07-08俄语句型340个-04.mp3","statements":[{"english":"отказ","chinese":"拒绝","soundmark":"at-kaz"},{"english":"согласие","chinese":"同意","soundmark":"sag-la-see-ye"}]},
+    {"id":"rcm-05","order":5,"title":"口语340个-05","description":"常见口语表达训练。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语常见口语表达340个/06-07-08俄语句型340个-05.mp3","statements":[{"english":"благодарность","chinese":"感谢","soundmark":"bla-go-dar-nast"},{"english":"извинение","chinese":"道歉","soundmark":"eez-vee-ne-nee-ye"}]},
+    {"id":"rcm-06","order":6,"title":"口语340个-06","description":"常见口语表达训练。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语常见口语表达340个/06-07-08俄语句型340个-06.mp3","statements":[{"english":"поздравление","chinese":"祝贺","soundmark":"paz-drav-le-nee-ye"},{"english":"пожелание","chinese":"祝愿","soundmark":"pa-zhe-la-nee-ye"}]},
+    {"id":"rcm-07","order":7,"title":"口语340个-07","description":"常见口语表达训练。","video":"5.初学者第五步 俄语资料/俄语大礼包/俄语常见口语表达340个/06-07-08俄语句型340个-07.mp3","statements":[{"english":"комплимент","chinese":"称赞","soundmark":"kom-plee-ment"},{"english":"сожаление","chinese":"遗憾","soundmark":"sa-zha-le-nee-ye"}]}
+  ]
+}

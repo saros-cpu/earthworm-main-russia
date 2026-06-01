@@ -1,0 +1,394 @@
+{
+  "id": "exam-graduate-ru",
+  "title": "考研俄语 · 备考练习",
+  "description": "全国硕士研究生入学统一考试俄语202备考词汇与练习。",
+  "cover": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "exgr-01",
+      "order": 1,
+      "title": "考研高频词汇",
+      "description": "考研俄语常见高频词汇。",
+      "statements": [
+        {
+          "english": "иссле́дование",
+          "chinese": "研究",
+          "soundmark": "ees-SLYE-da-va-nee-ye"
+        },
+        {
+          "english": "разви́тие",
+          "chinese": "发展",
+          "soundmark": "raz-VEE-tee-ye"
+        },
+        {
+          "english": "управле́ние",
+          "chinese": "管理",
+          "soundmark": "oo-prav-LE-nee-ye"
+        },
+        {
+          "english": "экономи́ческий",
+          "chinese": "经济的",
+          "soundmark": "e-ka-na-MEE-che-skee"
+        },
+        {
+          "english": "обще́ственный",
+          "chinese": "社会的",
+          "soundmark": "ap-SHCHEST-ven-ny"
+        },
+        {
+          "english": "де́ятельность",
+          "chinese": "活动",
+          "soundmark": "DYE-ya-tel-nost"
+        },
+        {
+          "english": "увели́чивать",
+          "chinese": "增加",
+          "soundmark": "oo-ve-LEE-chee-vat"
+        },
+        {
+          "english": "снижа́ть",
+          "chinese": "降低",
+          "soundmark": "snee-ZHAT"
+        }
+      ]
+    },
+    {
+      "id": "exgr-02",
+      "order": 2,
+      "title": "阅读理解基础",
+      "description": "考研阅读中常见句式和连接词。",
+      "statements": [
+        {
+          "english": "В да́нной статье́ ...",
+          "chinese": "在本文中……",
+          "soundmark": "v DAN-nay sta-TYE"
+        },
+        {
+          "english": "Автор счита́ет, что ...",
+          "chinese": "作者认为……",
+          "soundmark": "AF-tar schee-TA-yet shto"
+        },
+        {
+          "english": "Ва́жно подчеркну́ть, что ...",
+          "chinese": "重要的是强调……",
+          "soundmark": "VAZH-na pad-cherk-NOOT shto"
+        },
+        {
+          "english": "таки́м о́бразом",
+          "chinese": "因此",
+          "soundmark": "ta-KEEM OB-ra-zam"
+        }
+      ]
+    },
+    {
+      "id": "exgr-03",
+      "order": 3,
+      "title": "完形填空考点词汇",
+      "description": "完形填空常考词汇与固定搭配。",
+      "statements": [
+        {
+          "english": "зави́сеть от",
+          "chinese": "取决于",
+          "soundmark": "za-VEE-set ot"
+        },
+        {
+          "english": "влия́ть на",
+          "chinese": "影响",
+          "soundmark": "vlee-YAT na"
+        },
+        {
+          "english": "относи́ться к",
+          "chinese": "属于对待",
+          "soundmark": "at-na-SEE-tsa k"
+        },
+        {
+          "english": "состоя́ть из",
+          "chinese": "由……组成",
+          "soundmark": "sas-ta-YAT eez"
+        },
+        {
+          "english": "отлича́ться от",
+          "chinese": "不同于",
+          "soundmark": "at-lee-CHA-tsa ot"
+        },
+        {
+          "english": "приводи́ть к",
+          "chinese": "导致",
+          "soundmark": "pree-va-DEET k"
+        }
+      ]
+    },
+    {
+      "id": "exgr-04",
+      "order": 4,
+      "title": "翻译常考句型",
+      "description": "俄译汉常见句型与处理方法。",
+      "statements": [
+        {
+          "english": "Необходи́мо отме́тить, что ...",
+          "chinese": "必须指出……",
+          "soundmark": "ne-a-bha-DEE-ma at-ME-teet shto"
+        },
+        {
+          "english": "Сле́дует подчеркну́ть, что ...",
+          "chinese": "应该强调……",
+          "soundmark": "SLYE-doo-yet pad-cherk-NOOT shto"
+        },
+        {
+          "english": "Что каса́ется ... то ...",
+          "chinese": "至于……那么……",
+          "soundmark": "shto ka-SA-ye-tsa to"
+        },
+        {
+          "english": "В свя́зи с э́тим",
+          "chinese": "因此在这方面",
+          "soundmark": "v SVYA-zee s E-teem"
+        },
+        {
+          "english": "таки́м о́бразом",
+          "chinese": "由此可见",
+          "soundmark": "ta-KEEM OB-ra-zam"
+        }
+      ]
+    },
+    {
+      "id": "exgr-05",
+      "order": 5,
+      "title": "写作模板与表达",
+      "description": "考研俄语写作常用模板句型。",
+      "statements": [
+        {
+          "english": "Во-пе́рвых, ... Во-вторы́х, ...",
+          "chinese": "首先……其次……",
+          "soundmark": "va-PER-vykh va-fta-RYKH"
+        },
+        {
+          "english": "С однóй стороны́, ... с друго́й ...",
+          "chinese": "一方面……另一方面……",
+          "soundmark": "s ad-NOY sta-ra-NY s droo-GOY"
+        },
+        {
+          "english": "Кро́ме того́, ...",
+          "chinese": "除此之外……",
+          "soundmark": "KRO-me ta-VO"
+        },
+        {
+          "english": "Таки́м о́бразом, мо́жно сде́лать вы́вод.",
+          "chinese": "因此可以得出结论。",
+          "soundmark": "ta-KEEM OB-ra-zam MOZH-na SDYE-lat VY-vad"
+        },
+        {
+          "english": "На осно́вании вы́шесказанного ...",
+          "chinese": "综上所述……",
+          "soundmark": "na as-na-VA-nee VY-she-ska-zan-na-va"
+        }
+      ]
+    },
+    {
+      "id": "exgr-06",
+      "order": 6,
+      "title": "科技类阅读词汇",
+      "description": "考研科技类文章高频词汇。",
+      "statements": [
+        {
+          "english": "нау́чный",
+          "chinese": "科学的",
+          "soundmark": "na-OOCH-ny"
+        },
+        {
+          "english": "экспериме́нт",
+          "chinese": "实验",
+          "soundmark": "ek-spe-ree-MENT"
+        },
+        {
+          "english": "откры́тие",
+          "chinese": "发现",
+          "soundmark": "at-KRY-tee-ye"
+        },
+        {
+          "english": "изобрете́ние",
+          "chinese": "发明",
+          "soundmark": "ee-za-bre-TE-nee-ye"
+        },
+        {
+          "english": "информа́ция",
+          "chinese": "信息",
+          "soundmark": "in-far-MA-tsee-ya"
+        },
+        {
+          "english": "обрабо́тка да́нных",
+          "chinese": "数据处理",
+          "soundmark": "a-bra-BOT-ka DAN-nykh"
+        },
+        {
+          "english": "иссле́дователь",
+          "chinese": "研究者",
+          "soundmark": "ees-SLYE-da-va-tel"
+        }
+      ]
+    },
+    {
+      "id": "exgr-07",
+      "order": 7,
+      "title": "社科类阅读词汇",
+      "description": "考研社科类文章高频词汇。",
+      "statements": [
+        {
+          "english": "поли́тика",
+          "chinese": "政治",
+          "soundmark": "pa-LEE-tee-ka"
+        },
+        {
+          "english": "эконо́мика",
+          "chinese": "经济",
+          "soundmark": "e-ka-NO-mee-ka"
+        },
+        {
+          "english": "культу́ра",
+          "chinese": "文化",
+          "soundmark": "kool-TOO-ra"
+        },
+        {
+          "english": "тради́ция",
+          "chinese": "传统",
+          "soundmark": "tra-DEE-tsee-ya"
+        },
+        {
+          "english": "рефо́рма",
+          "chinese": "改革",
+          "soundmark": "re-FOR-ma"
+        },
+        {
+          "english": "обще́ство",
+          "chinese": "社会",
+          "soundmark": "ap-SHCHEST-va"
+        }
+      ]
+    },
+    {
+      "id": "exgr-08",
+      "order": 8,
+      "title": "政治经济类词汇",
+      "description": "考研政治经济类文章高频词汇。",
+      "statements": [
+        {
+          "english": "госуда́рство",
+          "chinese": "国家",
+          "soundmark": "ga-soo-DAR-stva"
+        },
+        {
+          "english": "предпринима́тель",
+          "chinese": "企业家",
+          "soundmark": "pred-pree-nee-MA-tel"
+        },
+        {
+          "english": "ры́нок",
+          "chinese": "市场",
+          "soundmark": "RY-nak"
+        },
+        {
+          "english": "инфля́ция",
+          "chinese": "通货膨胀",
+          "soundmark": "in-FLYA-tsee-ya"
+        },
+        {
+          "english": "бюдже́т",
+          "chinese": "预算",
+          "soundmark": "byud-ZHET"
+        },
+        {
+          "english": "нал́ог",
+          "chinese": "税收",
+          "soundmark": "na-LOG"
+        },
+        {
+          "english": "внешняя торго́вля",
+          "chinese": "对外贸易",
+          "soundmark": "VNESH-nyaya tar-GOV-lya"
+        }
+      ]
+    },
+    {
+      "id": "exgr-09",
+      "order": 9,
+      "title": "真题模拟词汇",
+      "description": "历年真题中出现的高频词汇。",
+      "statements": [
+        {
+          "english": "ана́лиз",
+          "chinese": "分析",
+          "soundmark": "a-NA-leez"
+        },
+        {
+          "english": "систе́ма",
+          "chinese": "系统体系",
+          "soundmark": "sees-TYE-ma"
+        },
+        {
+          "english": "функция",
+          "chinese": "功能函数",
+          "soundmark": "FUNK-tsee-ya"
+        },
+        {
+          "english": "проце́сс",
+          "chinese": "过程",
+          "soundmark": "pra-TSESS"
+        },
+        {
+          "english": "фактор",
+          "chinese": "因素",
+          "soundmark": "FAK-tar"
+        },
+        {
+          "english": "результа́т",
+          "chinese": "结果效果",
+          "soundmark": "re-zool-TAT"
+        },
+        {
+          "english": "тенде́нция",
+          "chinese": "趋势",
+          "soundmark": "ten-DEN-tsee-ya"
+        }
+      ]
+    },
+    {
+      "id": "exgr-10",
+      "order": 10,
+      "title": "考研语法难点",
+      "description": "考研常考语法难点归纳。",
+      "statements": [
+        {
+          "english": "прича́стие",
+          "chinese": "形动词",
+          "soundmark": "pree-CHA-stee-ye"
+        },
+        {
+          "english": "дееприча́стие",
+          "chinese": "副动词",
+          "soundmark": "de-ye-pree-CHA-stee-ye"
+        },
+        {
+          "english": "безли́чноепредложе́ние",
+          "chinese": "无人称句",
+          "soundmark": "bez-LEECH-na-ye pred-la-ZHE-nee-ye"
+        },
+        {
+          "english": "усло́вноена̊клоне́ние",
+          "chinese": "假定式",
+          "soundmark": "oo-SLOV-na-ye nak-la-NE-nee-ye"
+        },
+        {
+          "english": "повели́тельноенаклоне́ние",
+          "chinese": "命令式",
+          "soundmark": "pa-ve-LEE-tel-na-ye nak-la-NE-nee-ye"
+        },
+        {
+          "english": "страда́тельныйзало́г",
+          "chinese": "被动语态",
+          "soundmark": "stra-DA-tel-ny za-LOG"
+        }
+      ]
+    }
+  ]
+}

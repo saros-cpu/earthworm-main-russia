@@ -1,0 +1,159 @@
+{
+  "id": "east-uni-2",
+  "title": "大学俄语(东方) · 第2册",
+  "description": "大学俄语(东方)第二册。继续深入语法（格的用法、动词体、运动动词），扩展日常交际场景。",
+  "cover": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "eu2-01", "order": 1, "title": "第1课 在食堂（В столовой）",
+      "statements": [
+        { "english": "Мы обедаем в студенческой столовой.", "chinese": "我们在学生食堂吃午饭。", "soundmark": "my a-bye-da-yem v stoo-dyen-che-skay sta-lo-vay" },
+        { "english": "Что у вас сегодня на обед?", "chinese": "今天午饭吃什么？", "soundmark": "shto oo vas see-vod-nya na a-byet" },
+        { "english": "Я взял суп и салат.", "chinese": "我拿了汤和沙拉。", "soundmark": "ya vzyal soop e sa-lat" },
+        { "english": "Здесь вкусно готовят.", "chinese": "这里做的饭好吃。", "soundmark": "zdyes vkoos-na ga-to-vyat" },
+        { "english": "Сколько стоит обед?", "chinese": "午饭多少钱？", "soundmark": "skol-ka sto-eet a-byet" },
+        { "english": "Мне, пожалуйста, компот.", "chinese": "请给我一杯果汁饮料。", "soundmark": "mnye pa-zhal-sta kam-pot" },
+        { "english": "Хлеб бесплатно.", "chinese": "面包免费。", "soundmark": "khlyeb bes-plat-na" },
+        { "english": "У нас есть первое и второе.", "chinese": "我们有第一道菜和第二道菜。", "soundmark": "oo nas yest pyer-va-ye e fta-ro-ye" },
+        { "english": "Я не люблю кашу.", "chinese": "我不喜欢粥。", "soundmark": "ya ne lyub-lyu ka-shoo" },
+        { "english": "Спасибо, я уже поел.", "chinese": "谢谢，我已经吃了。", "soundmark": "spa-see-ba ya oo-zhe pa-yel" }
+      ]
+    },
+    {
+      "id": "eu2-02", "order": 2, "title": "第2课 动词体的初步概念（Вид глагола）",
+      "statements": [
+        { "english": "Я читал эту книгу вчера.", "chinese": "我昨天读了这本书（未完成体，强调过程）", "soundmark": "ya chee-tal e-too knee-goo vche-ra" },
+        { "english": "Я прочитал эту книгу.", "chinese": "我读完了这本书（完成体，强调结果）", "soundmark": "ya pra-chee-tal e-too knee-goo" },
+        { "english": "Он делал уроки два часа.", "chinese": "他做了两个小时功课（过程）", "soundmark": "on dye-lal o-ro-kee dva cha-sa" },
+        { "english": "Он сделал уроки.", "chinese": "他做完了功课（结果）", "soundmark": "on sdye-lal o-ro-kee" },
+        { "english": "Мы обедали в ресторане.", "chinese": "我们在餐厅吃过饭（过程）", "soundmark": "my a-bye-da-lee v re-sta-ra-nye" },
+        { "english": "Мы пообедали и пошли домой.", "chinese": "我们吃完饭回家了（结果）", "soundmark": "my pa-a-bye-da-lee e pa-shlee da-moy" },
+        { "english": "Она писала письмо.", "chinese": "她写了一封信（过程）", "soundmark": "a-na pee-sa-la pees-mo" },
+        { "english": "Она написала письмо другу.", "chinese": "她给朋友写了一封信（结果）", "soundmark": "a-na na-pee-sa-la pees-mo droo-goo" },
+        { "english": "Я часто покупаю хлеб здесь.", "chinese": "我经常在这里买面包（经常性）", "soundmark": "ya chas-ta pa-koo-pa-yu khlyeb zdyes" },
+        { "english": "Сегодня я купил хлеб.", "chinese": "今天我买了面包（一次性完成）", "soundmark": "see-vod-nya ya koo-peel khlyeb" }
+      ]
+    },
+    {
+      "id": "eu2-03", "order": 3, "title": "第3课 外出与交通（Транспорт）",
+      "statements": [
+        { "english": "Я еду в центр на автобусе.", "chinese": "我坐公交车去市中心。", "soundmark": "ya ye-doo v tsentr na af-to-boo-se" },
+        { "english": "Как доехать до вокзала?", "chinese": "怎么去火车站？", "soundmark": "kak da-ye-khat da vok-za-la" },
+        { "english": "Метро — самый удобный транспорт.", "chinese": "地铁是最方便的交通工具。", "soundmark": "meet-ro sa-my oo-dob-ny trans-port" },
+        { "english": "Билет стоит 50 рублей.", "chinese": "票价为50卢布。", "soundmark": "bee-lyet sto-eet pyat-de-syat roob-lyey" },
+        { "english": "Где остановка такси?", "chinese": "出租车停靠站在哪？", "soundmark": "gdye a-sta-nov-ka tak-see" },
+        { "english": "Мы поедем на поезде.", "chinese": "我们将乘火车去。", "soundmark": "my pa-ye-dem na po-yez-dye" },
+        { "english": "Поезд отправляется в 6 вечера.", "chinese": "火车晚上6点出发。", "soundmark": "po-yest at-prav-lya-yet-sya v shest vye-che-ra" },
+        { "english": "Сколько минут ехать до центра?", "chinese": "到市中心需要多少分钟？", "soundmark": "skol-ka mee-noot ye-khat da tsent-ra" },
+        { "english": "Выхожу на следующей остановке.", "chinese": "我在下一站下车。", "soundmark": "vy-kha-zhoo na sled-yu-shchey a-sta-nov-ke" },
+        { "english": "Передайте за проезд, пожалуйста.", "chinese": "请传一下车费。", "soundmark": "pe-re-day-tye za pra-yest pa-zhal-sta" }
+      ]
+    },
+    {
+      "id": "eu2-04", "order": 4, "title": "第4课 购物（Покупки）",
+      "statements": [
+        { "english": "Я хожу в магазин каждый день.", "chinese": "我每天去商店。", "soundmark": "ya kho-zhoo v ma-ga-zeen kazh-dy dyen" },
+        { "english": "Мне нужно купить продукты.", "chinese": "我需要买食品。", "soundmark": "mnye noo-zhna koo-peet pra-dook-ty" },
+        { "english": "Этот магазин работает до 10 вечера.", "chinese": "这家商店营业到晚上10点。", "soundmark": "e-tat ma-ga-zeen ra-bo-ta-yet da dye-sya-tee vye-che-ra" },
+        { "english": "У вас есть свежие овощи?", "chinese": "有新鲜蔬菜吗？", "soundmark": "oo vas yest svezhee-ye o-va-shchee" },
+        { "english": "Сколько стоит килограмм яблок?", "chinese": "一公斤苹果多少钱？", "soundmark": "skol-ka sto-eet kee-la-gram yab-lak" },
+        { "english": "Взвесьте, пожалуйста, полкило сыра.", "chinese": "请称半公斤奶酪。", "soundmark": "vzves-tye pa-zhal-sta pol-kee-la sy-ra" },
+        { "english": "У вас есть скидочная карта?", "chinese": "有折扣卡吗？", "soundmark": "oo vas yest skee-dach-na-ya kar-ta" },
+        { "english": "Спасибо, сдачи не надо.", "chinese": "谢谢，不用找零了。", "soundmark": "spa-see-ba sda-chee ne na-da" },
+        { "english": "Этот товар сейчас со скидкой.", "chinese": "这个商品正在打折。", "soundmark": "e-tat to-var sey-chas sa skee-dkoy" },
+        { "english": "Упакуйте, пожалуйста.", "chinese": "请包起来。", "soundmark": "oo-pa-kooy-tye pa-zhal-sta" }
+      ]
+    },
+    {
+      "id": "eu2-05", "order": 5, "title": "第5课 运动动词（Глаголы движения）",
+      "statements": [
+        { "english": "Я иду в библиотеку.", "chinese": "我正在去图书馆（定向运动）", "soundmark": "ya ee-doo v beeb-lee-a-tye-koo" },
+        { "english": "Я хожу в библиотеку каждый день.", "chinese": "我每天去图书馆（不定向运动）", "soundmark": "ya kho-zhoo v beeb-lee-a-tye-koo kazh-dy dyen" },
+        { "english": "Куда ты едешь?", "chinese": "你坐车去哪？", "soundmark": "koo-da ty ye-desh" },
+        { "english": "Летом я езжу на море.", "chinese": "夏天我常去海边（不定向）", "soundmark": "lye-tom ya yez-zhoo na mo-re" },
+        { "english": "Дети бегут в парк.", "chinese": "孩子们正在跑向公园（定向）", "soundmark": "dye-tee be-goot v park" },
+        { "english": "Мальчик бегает по двору.", "chinese": "小男孩在院子里跑来跑去（不定向）", "soundmark": "mal-chik bye-ga-yet pa dvo-roo" },
+        { "english": "Самолёт летит в Москву.", "chinese": "飞机正飞往莫斯科（定向）", "soundmark": "sa-ma-lyot le-teet v maz-kvoo" },
+        { "english": "Птицы летают в небе.", "chinese": "鸟在天空中飞翔（不定向）", "soundmark": "ptee-tsy le-ta-yut v nye-be" },
+        { "english": "Я плыву к берегу.", "chinese": "我正游向岸边（定向）", "soundmark": "ya ply-voo k bye-re-goo" },
+        { "english": "Рыбы плавают в воде.", "chinese": "鱼在水中游来游去（不定向）", "soundmark": "ry-by pla-va-yut v va-dye" }
+      ]
+    },
+    {
+      "id": "eu2-06", "order": 6, "title": "第6课 在酒店（В гостинице）",
+      "statements": [
+        { "english": "Я хочу заказать номер в гостинице.", "chinese": "我想在酒店订房间。", "soundmark": "ya kha-choo za-ka-zat no-mer v gas-tee-nee-tse" },
+        { "english": "Сколько стоит номер в сутки?", "chinese": "房间一天多少钱？", "soundmark": "skol-ka sto-eet no-mer v soot-kee" },
+        { "english": "Мне нужен номер на двоих.", "chinese": "我需要一个双人间。", "soundmark": "mnye noo-zhen no-mer na dva-eeh" },
+        { "english": "Завтрак включён в стоимость.", "chinese": "早餐包含在费用里。", "soundmark": "zav-trak vklyu-chon v sto-eem-ast" },
+        { "english": "Можно заселиться сейчас?", "chinese": "现在可以入住吗？", "soundmark": "mo-zhna za-se-leet-sya sey-chas" },
+        { "english": "В номере есть кондиционер?", "chinese": "房间里有空调吗？", "soundmark": "v no-me-re yest kan-dee-tsi-o-nyer" },
+        { "english": "У меня не работает душ.", "chinese": "我的淋浴坏了。", "soundmark": "oo mee-nya ne ra-bo-ta-yet doosh" },
+        { "english": "Я хочу продлить проживание на два дня.", "chinese": "我想延长住宿两天。", "soundmark": "ya kha-choo pra-dleet pra-zhee-va-nee-ye na dva dnya" },
+        { "english": "В котором часу выезд?", "chinese": "几点退房？", "soundmark": "v ka-to-rom cha-soo vy-yest" },
+        { "english": "Спасибо, мне всё понравилось.", "chinese": "谢谢，我都很满意。", "soundmark": "spa-see-ba mnye vsyo pon-rav-e-las" }
+      ]
+    },
+    {
+      "id": "eu2-07", "order": 7, "title": "第7课 看病（У врача）",
+      "statements": [
+        { "english": "Я плохо себя чувствую.", "chinese": "我感觉不舒服。", "soundmark": "ya plo-kha se-bya choost-vo-yu" },
+        { "english": "У меня болит горло.", "chinese": "我嗓子疼。", "soundmark": "oo mee-nya ba-leet gor-la" },
+        { "english": "Нужно измерить температуру.", "chinese": "需要量体温。", "soundmark": "noo-zhna eez-mye-reet tem-pe-ra-too-roo" },
+        { "english": "Я простудился.", "chinese": "我感冒了。", "soundmark": "ya pra-stoo-deel-sya" },
+        { "english": "Врач выписал рецепт.", "chinese": "医生开了处方。", "soundmark": "vrach vy-pee-sal re-tsept" },
+        { "english": "Принимайте лекарство 3 раза в день.", "chinese": "一天吃三次药。", "soundmark": "pree-nee-may-tye le-karst-va tree ra-za v dyen" },
+        { "english": "Где здесь аптека?", "chinese": "附近有药店吗？", "soundmark": "gdye zdyes ap-tye-ka" },
+        { "english": "Мне нужен больничный лист.", "chinese": "我需要病假条。", "soundmark": "mnye noo-zhen bal-neech-ny leest" },
+        { "english": "Я записался к врачу на завтра.", "chinese": "我约了明天看医生。", "soundmark": "ya za-pee-sal-sya k vra-choo na zav-tra" },
+        { "english": "Поправляйтесь!", "chinese": "祝您早日康复！", "soundmark": "pa-prav-lyay-tyes" }
+      ]
+    },
+    {
+      "id": "eu2-08", "order": 8, "title": "第8课 节日与庆祝（Праздники）",
+      "statements": [
+        { "english": "Новый год — мой любимый праздник.", "chinese": "新年是我最喜欢的节日。", "soundmark": "no-vy got moy lyu-bee-my prazd-neek" },
+        { "english": "В России отмечают Новый год 1 января.", "chinese": "俄罗斯1月1日庆祝新年。", "soundmark": "v ras-see-ee at-me-cha-yut no-vy got pyer-va-ye yan-va-rya" },
+        { "english": "Поздравляю вас с праздником!", "chinese": "祝您节日快乐！", "soundmark": "paz-drav-lya-yu vas s prazd-nee-kom" },
+        { "english": "Желаю вам счастья и здоровья!", "chinese": "祝您幸福健康！", "soundmark": "zhe-la-yu vam schas-tya e zda-rov-ya" },
+        { "english": "День Победы — важный праздник.", "chinese": "胜利日是重要的节日。", "soundmark": "dyen pa-bye-dy vazh-ny prazd-neek" },
+        { "english": "На день рождения я получил подарки.", "chinese": "生日那天我收到了礼物。", "soundmark": "na dyen razh-de-nee-ya ya pa-lu-cheel pa-dar-kee" },
+        { "english": "Мы собираемся всей семьёй.", "chinese": "我们全家聚在一起。", "soundmark": "my sa-bee-ra-yem-sya vsyey sem-yoy" },
+        { "english": "За ваше здоровье!", "chinese": "为您的健康干杯！", "soundmark": "za va-she zda-rov-ye" },
+        { "english": "Пасха — главный религиозный праздник.", "chinese": "复活节是主要的宗教节日。", "soundmark": "pas-kha glav-ny re-lee-gee-oz-ny prazd-neek" },
+        { "english": "С Рождеством!", "chinese": "圣诞快乐！", "soundmark": "s razh-deest-vom" }
+      ]
+    },
+    {
+      "id": "eu2-09", "order": 9, "title": "第9课 谈论爱好（Хобби）",
+      "statements": [
+        { "english": "Моё хобби — чтение.", "chinese": "我的爱好是阅读。", "soundmark": "ma-yo ho-bee chte-nee-ye" },
+        { "english": "Я увлекаюсь спортом.", "chinese": "我爱好运动。", "soundmark": "ya oo-vle-ka-yus spor-tom" },
+        { "english": "Он занимается музыкой.", "chinese": "他从事音乐。", "soundmark": "on za-nee-ma-yet-sya moo-zy-koy" },
+        { "english": "Я люблю фотографировать.", "chinese": "我喜欢拍照。", "soundmark": "ya lyub-lyu fo-ta-gra-fee-ro-vat" },
+        { "english": "Она коллекционирует марки.", "chinese": "她集邮。", "soundmark": "a-na ka-lek-tsi-o-nee-ru-yet mar-kee" },
+        { "english": "Мы играем в футбол по выходным.", "chinese": "我们周末踢足球。", "soundmark": "my eeg-ra-yem v fud-bol pa vy-khod-nym" },
+        { "english": "Свободное время я провожу с друзьями.", "chinese": "业余时间和朋友一起度过。", "soundmark": "sva-bod-na-ye vre-mya ya pra-vo-zhoo s drooz-ya-mee" },
+        { "english": "Рисование успокаивает.", "chinese": "画画让人平静。", "soundmark": "ree-so-va-nee-ye oo-spa-ka-ee-va-yet" },
+        { "english": "Я хожу в тренажёрный зал.", "chinese": "我去健身房。", "soundmark": "ya kho-zhoo v tre-na-zhor-ny zal" },
+        { "english": "Танцы — это весело!", "chinese": "跳舞真好玩！", "soundmark": "tan-tsy e-ta vye-se-la" }
+      ]
+    },
+    {
+      "id": "eu2-10", "order": 10, "title": "第10课 复习（Повторение）",
+      "statements": [
+        { "english": "За этот год я многому научился.", "chinese": "这一年我学到了很多东西。", "soundmark": "za e-tat got ya mno-ga-mu na-oo-cheel-sya" },
+        { "english": "Я уже хорошо говорю по-русски.", "chinese": "我已经俄语说得不错了。", "soundmark": "ya oo-zhe kha-ra-sho ga-va-ryu pa-rooss-kee" },
+        { "english": "Летом я хочу поехать в Россию.", "chinese": "夏天我想去俄罗斯。", "soundmark": "lye-tom ya kha-choo pa-ye-khat v ras-see-yu" },
+        { "english": "Мне нравится русская культура.", "chinese": "我喜欢俄罗斯文化。", "soundmark": "mnye nra-vee-tsa rooss-ka-ya kool-too-ra" },
+        { "english": "Друзья помогают мне учить язык.", "chinese": "朋友们帮我学习语言。", "soundmark": "drooz-ya pa-ma-ga-yut mnye oo-cheet ya-zyk" },
+        { "english": "Каждый день я узнаю что-то новое.", "chinese": "每天我学到新东西。", "soundmark": "kazh-dy dyen ya ooz-na-yu shto-ta no-va-ye" },
+        { "english": "Спасибо всем за помощь!", "chinese": "感谢大家的帮助！", "soundmark": "spa-see-ba vsyem za po-mash" },
+        { "english": "В следующем году я продолжу учёбу.", "chinese": "明年我将继续学习。", "soundmark": "v sled-yu-shchem ga-doo ya pra-dol-zhu oo-chyo-boo" },
+        { "english": "Русский язык — это интересно!", "chinese": "俄语真有意思！", "soundmark": "rooss-kiy ya-zyk e-ta een-te-res-na" },
+        { "english": "Я мечтаю побывать в Москве.", "chinese": "我梦想去莫斯科。", "soundmark": "ya mech-ta-yu pa-by-vat v maz-kvye" }
+      ]
+    }
+  ]
+}

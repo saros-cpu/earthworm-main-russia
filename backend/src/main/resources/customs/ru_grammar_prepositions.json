@@ -1,0 +1,299 @@
+{
+  "id": "ru-grammar-prepositions",
+  "title": "前置词",
+  "description": "俄语前置词的用法及所接格的关系。",
+  "cover": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ruprp-01",
+      "order": 1,
+      "title": "前置词в + 四格/六格",
+      "description": "в表方向(四格)或位置(六格)。",
+      "statements": [
+        {
+          "english": "Я иду́ в шко́лу.",
+          "chinese": "我去学校。（方向，四格）",
+          "soundmark": "ya ee-DOO v SHKO-loo"
+        },
+        {
+          "english": "Я в шко́ле.",
+          "chinese": "我在学校。（位置，六格）",
+          "soundmark": "ya v SHKO-le"
+        },
+        {
+          "english": "Мы идём в теа́тр.",
+          "chinese": "我们去剧院。（方向）",
+          "soundmark": "my ee-DYOM v te-ATR"
+        },
+        {
+          "english": "Мы в теа́тре.",
+          "chinese": "我们在剧院。（位置）",
+          "soundmark": "my v te-AT-re"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/73-Урок 3-3.avi"
+    },
+    {
+      "id": "ruprp-02",
+      "order": 2,
+      "title": "前置词на + 四格/六格",
+      "description": "на表方向(四格)或位置(六格)。",
+      "statements": [
+        {
+          "english": "Он идёт на уро́к.",
+          "chinese": "他去上课。（方向）",
+          "soundmark": "on ee-DYOT na oo-ROK"
+        },
+        {
+          "english": "Он на уро́ке.",
+          "chinese": "他在上课。（位置）",
+          "soundmark": "on na oo-RO-ke"
+        },
+        {
+          "english": "Мы едем на мо́ре.",
+          "chinese": "我们去海边。（方向）",
+          "soundmark": "my YE-dem na MO-re"
+        },
+        {
+          "english": "Мы на мо́ре.",
+          "chinese": "我们在海边。（位置）",
+          "soundmark": "my na MO-re"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/74-Урок 3-4.avi"
+    },
+    {
+      "id": "ruprp-03",
+      "order": 3,
+      "title": "前置词у + 二格",
+      "description": "у表“在…附近”或所属。",
+      "statements": [
+        {
+          "english": "Я стою́ у окна́.",
+          "chinese": "我站在窗边。",
+          "soundmark": "ya sta-YOO oo ak-NA"
+        },
+        {
+          "english": "У меня́ есть брат.",
+          "chinese": "我有一个兄弟。",
+          "soundmark": "oo me-NYA yest' brat"
+        },
+        {
+          "english": "Дом у о́зера.",
+          "chinese": "湖边的房子。",
+          "soundmark": "dom oo O-ze-ra"
+        },
+        {
+          "english": "У них больша́я семья́.",
+          "chinese": "他们有一个大家庭。",
+          "soundmark": "oo neekh bal'-SHA-ya sem'-YA"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/75-Урок 3-5.avi"
+    },
+    {
+      "id": "ruprp-04",
+      "order": 4,
+      "title": "前置词из + 二格",
+      "description": "из表“来自…内部”。",
+      "statements": [
+        {
+          "english": "Я из Кита́я.",
+          "chinese": "我来自中国。",
+          "soundmark": "ya iz kee-TA-ya"
+        },
+        {
+          "english": "Он вы́шел из до́ма.",
+          "chinese": "他从房子里出来。",
+          "soundmark": "on VY-shel iz DO-ma"
+        },
+        {
+          "english": "Письмо́ из Москвы́.",
+          "chinese": "来自莫斯科的信。",
+          "soundmark": "pees'-MO iz mask-VY"
+        },
+        {
+          "english": "Она́ верну́лась из шко́лы.",
+          "chinese": "她从学校回来了。",
+          "soundmark": "a-NA ver-NOO-las' iz SHKO-ly"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/76-Урок 4-1.avi"
+    },
+    {
+      "id": "ruprp-05",
+      "order": 5,
+      "title": "前置词с + 二格/五格",
+      "description": "с表“从…表面”(二格)或“与…一起”(五格)。",
+      "statements": [
+        {
+          "english": "Он спусти́лся с горы́.",
+          "chinese": "他从山上下来。（二格）",
+          "soundmark": "on spoos-TEEL-sya z ga-RY"
+        },
+        {
+          "english": "Я с дру́гом.",
+          "chinese": "我和朋友一起。（五格）",
+          "soundmark": "ya z DROO-gom"
+        },
+        {
+          "english": "Чай с са́харом.",
+          "chinese": "加糖的茶。（五格）",
+          "soundmark": "chay s SA-kha-rom"
+        },
+        {
+          "english": "Он ушёл с рабо́ты.",
+          "chinese": "他下班了。（二格）",
+          "soundmark": "on oo-SHYOL s ra-BO-ty"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/77-Урок 4-2.avi"
+    },
+    {
+      "id": "ruprp-06",
+      "order": 6,
+      "title": "前置词к + 三格",
+      "description": "к表“朝向、去往”。",
+      "statements": [
+        {
+          "english": "Я иду́ к врачу́.",
+          "chinese": "我去看医生。",
+          "soundmark": "ya ee-DOO k vra-CHOO"
+        },
+        {
+          "english": "Он подошёл к окну́.",
+          "chinese": "他走近窗户。",
+          "soundmark": "on pa-da-SHYOL k ak-NOO"
+        },
+        {
+          "english": "Мы гото́вимся к экза́мену.",
+          "chinese": "我们准备考试。",
+          "soundmark": "my ga-TO-veem-sya k ek-ZA-me-noo"
+        },
+        {
+          "english": "К ве́черу похолода́ло.",
+          "chinese": "到傍晚时变冷了。",
+          "soundmark": "k VYE-che-roo pa-kha-la-DA-la"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/78-Урок 4-3.avi"
+    },
+    {
+      "id": "ruprp-07",
+      "order": 7,
+      "title": "前置词о/об + 六格",
+      "description": "о/об表“关于”。",
+      "statements": [
+        {
+          "english": "Мы говори́м об уро́ке.",
+          "chinese": "我们在谈论课程。",
+          "soundmark": "my ga-va-REEM ob oo-RO-ke"
+        },
+        {
+          "english": "Кни́га о Росси́и.",
+          "chinese": "关于俄罗斯的书。",
+          "soundmark": "KNEE-ga a ras-SEE-ee"
+        },
+        {
+          "english": "Я ду́маю о до́ме.",
+          "chinese": "我想家。",
+          "soundmark": "ya DOO-ma-yoo a DO-me"
+        },
+        {
+          "english": "Мы вспомина́ем о пра́зднике.",
+          "chinese": "我们回忆节日。",
+          "soundmark": "my fspa-mee-NA-yem a PRAZ-nee-ke"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/79-Урок 4-4.avi"
+    },
+    {
+      "id": "ruprp-08",
+      "order": 8,
+      "title": "前置词для + 二格",
+      "description": "для表“为了、给”。",
+      "statements": [
+        {
+          "english": "Э́то пода́рок для тебя́.",
+          "chinese": "这是给你的礼物。",
+          "soundmark": "EH-ta pa-DA-rak dlya te-BYA"
+        },
+        {
+          "english": "Кни́га для дете́й.",
+          "chinese": "儿童书籍。",
+          "soundmark": "KNEE-ga dlya de-TYEY"
+        },
+        {
+          "english": "Для меня́ э́то ва́жно.",
+          "chinese": "对我来说这很重要。",
+          "soundmark": "dlya me-NYA EH-ta VAZH-na"
+        },
+        {
+          "english": "Вре́мя для обе́да.",
+          "chinese": "午饭时间。",
+          "soundmark": "VRE-mya dlya a-BYE-da"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/80-Урок 4-5.avi"
+    },
+    {
+      "id": "ruprp-09",
+      "order": 9,
+      "title": "前置词до, после, без + 二格",
+      "description": "до(之前), после(之后), без(没有)。",
+      "statements": [
+        {
+          "english": "До уро́ка пять мину́т.",
+          "chinese": "距上课还有五分钟。",
+          "soundmark": "da oo-RO-ka pyat' mee-NOOT"
+        },
+        {
+          "english": "По́сле обе́да я сплю.",
+          "chinese": "午饭后我睡觉。",
+          "soundmark": "PO-sle a-BYE-da ya splyoo"
+        },
+        {
+          "english": "Я пью чай без са́хара.",
+          "chinese": "我喝不加糖的茶。",
+          "soundmark": "ya p'yoo chay byez SA-kha-ra"
+        },
+        {
+          "english": "До встре́чи!",
+          "chinese": "再见！（见面之前）",
+          "soundmark": "da VSTRE-chee"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/81-Урок 4-6.avi"
+    },
+    {
+      "id": "ruprp-10",
+      "order": 10,
+      "title": "综合练习",
+      "description": "前置词综合运用。",
+      "statements": [
+        {
+          "english": "Я иду́ с дру́гом в кино́.",
+          "chinese": "我和朋友去电影院。",
+          "soundmark": "ya ee-DOO z DROO-gom v kee-NO"
+        },
+        {
+          "english": "Мы говори́ли о пое́здке в Москву́.",
+          "chinese": "我们谈论了去莫斯科的旅行。",
+          "soundmark": "my ga-va-REE-lee a pa-YEZD-ke v mask-VOO"
+        },
+        {
+          "english": "Кни́га лежи́т на столе́ у окна́.",
+          "chinese": "书在窗边的桌子上。",
+          "soundmark": "KNEE-ga le-ZHEET na sta-LE oo ak-NA"
+        },
+        {
+          "english": "Он прие́хал из Росси́и для рабо́ты.",
+          "chinese": "他从俄罗斯来工作。",
+          "soundmark": "on pree-YE-khal iz ras-SEE-ee dlya ra-BO-ty"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A2【52课时】/82-Урок 5-1.avi"
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "id": "ru-spoken-daily",
+  "title": "日常起居对话",
+  "description": "从起床到就寝的日常生活常用俄语对话。",
+  "cover": "https://images.unsplash.com/photo-1517457215247-5ff9f200adb0?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rusd-01",
+      "order": 1,
+      "title": "早上起床",
+      "description": "早晨起床后常用对话。",
+      "statements": [
+        {
+          "english": "До́брое у́тро! Пора́ встава́ть.",
+          "chinese": "早上好！该起床了。",
+          "soundmark": "DOB-ra-ye OOT-ra pa-RA vsta-VAT"
+        },
+        {
+          "english": "Кото́рый час?",
+          "chinese": "几点了？",
+          "soundmark": "ka-TO-ry chas"
+        },
+        {
+          "english": "Я проспа́л(а)!",
+          "chinese": "我睡过头了！",
+          "soundmark": "ya pras-PAL(a)"
+        },
+        {
+          "english": "Ну́жно чи́стить зу́бы.",
+          "chinese": "要刷牙。",
+          "soundmark": "NOOZH-na CHEEST-eet ZOO-by"
+        },
+        {
+          "english": "Что у нас на за́втрак?",
+          "chinese": "早餐吃什么？",
+          "soundmark": "shto oo nas na ZAV-trak"
+        }
+      ]
+    },
+    {
+      "id": "rusd-02",
+      "order": 2,
+      "title": "晚间休息",
+      "description": "晚上回家和就寝前常用表达。",
+      "statements": [
+        {
+          "english": "Я верну́лся(ась) домо́й.",
+          "chinese": "我回家了。",
+          "soundmark": "ya ver-NOOL-sya(s) da-MOY"
+        },
+        {
+          "english": "Да, я о́чень уста́л(а).",
+          "chinese": "是的，我很累。",
+          "soundmark": "da ya O-chen oo-STAL(a)"
+        },
+        {
+          "english": "Хо́чешь посмотре́ть фильм?",
+          "chinese": "想看个电影吗？",
+          "soundmark": "KHO-chesh pa-sma-TRYET feelm"
+        },
+        {
+          "english": "Споко́йной но́чи!",
+          "chinese": "晚安！",
+          "soundmark": "spa-KOY-noy NO-chee"
+        }
+      ]
+    },
+    {
+      "id": "rusd-03",
+      "order": 3,
+      "title": "穿衣打扮",
+      "description": "早上穿衣打扮时的常用表达。",
+      "statements": [
+        {
+          "english": "Что мне сего́дня наде́ть?",
+          "chinese": "我今天穿什么？",
+          "soundmark": "shto mne se-VOD-nya na-DYET"
+        },
+        {
+          "english": "Э́та руба́шка мне идёт?",
+          "chinese": "这件衬衫适合我吗？",
+          "soundmark": "E-ta roo-BASH-ka mne ee-DYOT"
+        },
+        {
+          "english": "Я наде́ну джи́нсы.",
+          "chinese": "我穿牛仔裤。",
+          "soundmark": "ya na-DE-noo DZHIN-sy"
+        },
+        {
+          "english": "Где моя́ ку́ртка?",
+          "chinese": "我的外套在哪？",
+          "soundmark": "gde ma-YA KOORT-ka"
+        },
+        {
+          "english": "Э́ти ту́фли мне жа́лмут.",
+          "chinese": "这双鞋夹脚。",
+          "soundmark": "E-tee TOOF-lee mne ZHMOOT"
+        }
+      ]
+    },
+    {
+      "id": "rusd-04",
+      "order": 4,
+      "title": "早餐时间",
+      "description": "吃早餐时的日常对话。",
+      "statements": [
+        {
+          "english": "За́втрак гото́в!",
+          "chinese": "早餐好了！",
+          "soundmark": "ZAV-trak ga-TOF"
+        },
+        {
+          "english": "На́лей мне чай, пожа́луйста.",
+          "chinese": "请给我倒杯茶。",
+          "soundmark": "NA-ley mne chay pa-ZHAL-sta"
+        },
+        {
+          "english": "Ка́ша о́чень вку́сная.",
+          "chinese": "粥很好吃。",
+          "soundmark": "KA-sha O-chen VKOOS-na-ya"
+        },
+        {
+          "english": "Вку́сный ко́фе!",
+          "chinese": "咖啡好喝！",
+          "soundmark": "VKOOS-ny KO-fye"
+        },
+        {
+          "english": "Я не хочу́ есть у́тром.",
+          "chinese": "我早上不想吃。",
+          "soundmark": "ya ne kha-CHOO yest OOT-ram"
+        }
+      ]
+    },
+    {
+      "id": "rusd-05",
+      "order": 5,
+      "title": "出门之前",
+      "description": "出门前的准备和告别用语。",
+      "statements": [
+        {
+          "english": "Я ухожу́. До ве́чера!",
+          "chinese": "我走了。晚上见！",
+          "soundmark": "ya oo-kha-ZHOO da VYE-che-ra"
+        },
+        {
+          "english": "Ты взял(а) ключи́?",
+          "chinese": "你带钥匙了吗？",
+          "soundmark": "ty vzyal(a) klyu-CHEE"
+        },
+        {
+          "english": "Не забу́дь зо́нтик!",
+          "chinese": "别忘了雨伞！",
+          "soundmark": "ne za-BOOT ZON-teek"
+        },
+        {
+          "english": "Закро́й дверь, пожа́луйста.",
+          "chinese": "请关上门。",
+          "soundmark": "za-KROY dver pa-ZHAL-sta"
+        },
+        {
+          "english": "Когда́ ты ве́рнешься?",
+          "chinese": "你什么时候回来？",
+          "soundmark": "kag-DA ty VYER-nyesh-sya"
+        }
+      ]
+    },
+    {
+      "id": "rusd-06",
+      "order": 6,
+      "title": "做饭",
+      "description": "在家做饭时的常用表达。",
+      "statements": [
+        {
+          "english": "Что мы бу́дем гото́вить?",
+          "chinese": "我们做什么吃？",
+          "soundmark": "shto my BOO-dem ga-TO-veet"
+        },
+        {
+          "english": "Наре́жь лук, пожа́луйста.",
+          "chinese": "请切洋葱。",
+          "soundmark": "na-RYEZH look pa-ZHAL-sta"
+        },
+        {
+          "english": "Доба́вь соль и пе́рец.",
+          "chinese": "加盐和胡椒。",
+          "soundmark": "da-BAV sol ee PE-rets"
+        },
+        {
+          "english": "У́жин бу́дет че́рез полчаса́.",
+          "chinese": "晚饭半小时后好。",
+          "soundmark": "OO-zhen BOO-det CHE-rez pol-cha-SA"
+        },
+        {
+          "english": "Како́е твоё коро́нное блю́до?",
+          "chinese": "你的拿手菜是什么？",
+          "soundmark": "ka-KO-ye two-YO ka-RON-na-ye BLYOO-da"
+        }
+      ]
+    },
+    {
+      "id": "rusd-07",
+      "order": 7,
+      "title": "打扫卫生",
+      "description": "打扫房间时的常用对话。",
+      "statements": [
+        {
+          "english": "На́до убра́ться в ко́мнате.",
+          "chinese": "需要收拾房间。",
+          "soundmark": "NA-da oo-BRA-tsa v KOM-na-tye"
+        },
+        {
+          "english": "Пропылесо́сь, пожа́луйста.",
+          "chinese": "请吸一下地。",
+          "soundmark": "pra-py-le-SOS pa-ZHAL-sta"
+        },
+        {
+          "english": "Вы́три пыль со стола́.",
+          "chinese": "擦一下桌子上的灰。",
+          "soundmark": "VY-tree pyl sa sta-LA"
+        },
+        {
+          "english": "Помо́й посу́ду, пожа́луйста.",
+          "chinese": "请洗碗。",
+          "soundmark": "pa-MOY pa-SOO-doo pa-ZHAL-sta"
+        }
+      ]
+    },
+    {
+      "id": "rusd-08",
+      "order": 8,
+      "title": "洗衣服",
+      "description": "洗衣服和整理衣物的常用表达。",
+      "statements": [
+        {
+          "english": "Ну́жно постира́ть бельё.",
+          "chinese": "需要洗衣服。",
+          "soundmark": "NOOZH-na pa-stee-RAT bel-YO"
+        },
+        {
+          "english": "Раздели́ бе́лое и цветно́е.",
+          "chinese": "把白色和彩色分开。",
+          "soundmark": "raz-de-LEE BYE-la-ye e tsvet-NO-ye"
+        },
+        {
+          "english": "Включи́ стира́льную маши́ну.",
+          "chinese": "打开洗衣机。",
+          "soundmark": "vklyu-CHEE stee-RAL-noo-yu ma-SHY-noo"
+        },
+        {
+          "english": "Ну́жно погла́дить руба́шку.",
+          "chinese": "需要熨衬衫。",
+          "soundmark": "NOOZH-na pag-LA-deet roo-BASH-koo"
+        },
+        {
+          "english": "Где суши́лка для белья́?",
+          "chinese": "晾衣架在哪？",
+          "soundmark": "gde soo-SHYL-ka dlya bel-YA"
+        }
+      ]
+    },
+    {
+      "id": "rusd-09",
+      "order": 9,
+      "title": "在家休息",
+      "description": "在家休闲放松时的日常对话。",
+      "statements": [
+        {
+          "english": "Сего́дня мо́жно отдохну́ть.",
+          "chinese": "今天可以休息一下。",
+          "soundmark": "se-VOD-nya MOZH-na ad-dakh-NOOT"
+        },
+        {
+          "english": "Дава́й посмо́трим сериа́л.",
+          "chinese": "我们看剧吧。",
+          "soundmark": "da-VAY pa-SMOT-reem se-ree-AL"
+        },
+        {
+          "english": "Я почита́ю кни́гу.",
+          "chinese": "我看看书。",
+          "soundmark": "ya pa-chee-TA-yoo KNEE-goo"
+        },
+        {
+          "english": "Включи́ му́зыку, пожа́луйста.",
+          "chinese": "请放点音乐。",
+          "soundmark": "vklyu-CHEE MOO-zy-koo pa-ZHAL-sta"
+        }
+      ]
+    },
+    {
+      "id": "rusd-10",
+      "order": 10,
+      "title": "准备睡觉",
+      "description": "睡前准备的常用表达。",
+      "statements": [
+        {
+          "english": "Я уста́л(а), пойду́ спать.",
+          "chinese": "我累了，去睡觉了。",
+          "soundmark": "ya oo-STAL(a) poy-DOO spat"
+        },
+        {
+          "english": "Вы́ключи свет, пожа́луйста.",
+          "chinese": "请关灯。",
+          "soundmark": "VY-klyu-chee svyet pa-ZHAL-sta"
+        },
+        {
+          "english": "Споко́йной но́чи, ма́ма!",
+          "chinese": "晚安，妈妈！",
+          "soundmark": "spa-KOY-noy NO-chee MA-ma"
+        },
+        {
+          "english": "Прия́тных сно́в!",
+          "chinese": "好梦！",
+          "soundmark": "pree-YAT-nykh snof"
+        }
+      ]
+    }
+  ]
+}

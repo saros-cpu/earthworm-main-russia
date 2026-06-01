@@ -1,0 +1,159 @@
+{
+  "id": "east-uni-8",
+  "title": "大学俄语(东方) · 第8册",
+  "description": "大学俄语(东方)第八册（最终册）。专业俄语、商务俄语、翻译理论与实践、俄语成语词典、国情文化深度拓展。",
+  "cover": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "eu8-01", "order": 1, "title": "第1课 商务俄语基础（Деловой русский）",
+      "statements": [
+        { "english": "Мы заинтересованы в сотрудничестве с вашей компанией.", "chinese": "我们对与贵公司合作感兴趣。", "soundmark": "my za-een-te-re-so-va-ny f sa-trud-nee-chest-ve s va-shey kam-pa-nee-yey" },
+        { "english": "Наша компания предлагает широкий спектр услуг.", "chinese": "我们公司提供广泛的服务。", "soundmark": "na-sha kam-pa-nee-ya pred-la-ga-yet shy-ro-keey spektr oo-sloop" },
+        { "english": "Просим рассмотреть наше коммерческое предложение.", "chinese": "请审议我们的商业建议。", "soundmark": "pro-seem ras-sma-tryet na-she ka-myer-che-ska-ye preed-la-zhe-nee-ye" },
+        { "english": "Каковы условия оплаты?", "chinese": "付款条件是什么？", "soundmark": "ka-ko-vy oo-slo-vee-ya a-pla-ty" },
+        { "english": "Мы готовы подписать контракт на следующий неделе.", "chinese": "我们准备下周签订合同。", "soundmark": "my ga-to-vy pad-pee-sat kan-trakt na slye-du-yu-shchey ne-dye-le" },
+        { "english": "Скидка для постоянных клиентов составляет 10 процентов.", "chinese": "老客户折扣为10％。", "soundmark": "skeet-ka dlya pa-sta-yan-nykh klee-yen-tav sa-stav-la-yet dye-syat pra-tsen-taf" },
+        { "english": "Гарантийный срок составляет один год.", "chinese": "保修期为一年。", "soundmark": "ga-ran-tee-ny srok sa-stav-la-yet a-deen got" },
+        { "english": "Просим подтвердить получение нашего письма.", "chinese": "请确认收到我方信函。", "soundmark": "pro-seem pat-tver-deet pa-lu-che-nee-ye na-she-va pees-ma" },
+        { "english": "Благодарим вас за сотрудничество.", "chinese": "感谢您的合作。", "soundmark": "bla-go-da-reem vas za sa-trud-nee-chest-va" },
+        { "english": "Надеемся на долгосрочное и взаимовыгодное сотрудничество.", "chinese": "期待长期互利合作。", "soundmark": "na-de-yem-sya na dol-ga-sroch-na-ye ee vza-ee-mo-vy-gad-na-ye sa-trud-nee-chest-vo" }
+      ]
+    },
+    {
+      "id": "eu8-02", "order": 2, "title": "第2课 商务文件与合同",
+      "statements": [
+        { "english": "Стороны пришли к соглашению по всем пунктам.", "chinese": "双方在所有条款上达成了协议。", "soundmark": "sta-ro-ny pree-shlee k sa-gla-she-nee-yu pa vsem punk-tam" },
+        { "english": "Договор вступает в силу с момента подписания.", "chinese": "合同自签署之日起生效。", "soundmark": "da-go-vor fstoo-pa-yet v see-loo s ma-men-ta pad-pee-sa-nee-ya" },
+        { "english": "Цена включает стоимость доставки и страховки.", "chinese": "价格包含运费和保险费。", "soundmark": "tse-na vklyu-cha-yet sto-eemost da-staf-kee ee stra-khov-kee" },
+        { "english": "Оплата производится в рублях по курсу ЦБ.", "chinese": "以卢布按央行汇率支付。", "soundmark": "a-pla-ta pra-eez-vo-deet-sya v roob-lyakh pa koor-soo tse-bey" },
+        { "english": "Поставка товара осуществляется в течение 30 дней.", "chinese": "货物在30天内交付。", "soundmark": "pa-staf-ka to-va-ra oo-shchestv-lya-yet-sya f te-che-nee-ye tree-tsa-tee dnyey" },
+        { "english": "В случае форс-мажора стороны освобождаются от ответственности.", "chinese": "如遇不可抗力，双方免责。", "soundmark": "f slu-cha-ye fors-ma-zho-ra sta-ro-ny as-va-bozh-da-yut-sya at at-vyet-stven-nos-tee" },
+        { "english": "Арбитражный суд Москвы рассматривает споры.", "chinese": "争议由莫斯科仲裁法院审理。", "soundmark": "ar-bee-trazh-ny soot maz-kvy ras-sma-tree-va-yet spo-ry" },
+        { "english": "Все приложения являются неотъемлемой частью договора.", "chinese": "所有附件是合同不可分割的一部分。", "soundmark": "vsye pree-la-zhe-nee-ya yav-lya-yut-sya ne-a-tyem-lye-may chas-tyu da-go-vo-ra" },
+        { "english": "Настоящий контракт составлен на русском и китайском языках.", "chinese": "本合同以俄文和中文拟就。", "soundmark": "na-sta-yash-chee kan-trakt sa-staf-len na ross-kom ee kee-tay-skam ya-zy-kakh" },
+        { "english": "Обе стороны имеют равные права и обязанности.", "chinese": "双方享有平等的权利和义务。", "soundmark": "o-be sta-ro-ny ee-may-ut rav-ny-ye pra-va ee a-by-zan-nos-tee" }
+      ]
+    },
+    {
+      "id": "eu8-03", "order": 3, "title": "第3课 翻译理论与实践基础（Основы перевода）",
+      "statements": [
+        { "english": "Перевод — это не только замена слов, но и передача смысла.", "chinese": "翻译不仅是替换单词，更是传递意思。", "soundmark": "pe-re-vot e-ta ne tol-ka za-mye-na slov no ee pe-re-da-cha smys-la" },
+        { "english": "При переводе нужно учитывать контекст.", "chinese": "翻译时需要考虑上下文。", "soundmark": "pree pe-re-vo-dye noo-zhna oo-chee-ty-vat kon-tekst" },
+        { "english": "Это выражение непереводимо на китайский язык.", "chinese": "这个表达无法译成中文。", "soundmark": "e-ta vy-ra-zhe-nee-ye ne-pe-re-vo-dee-ma na kee-tay-skeey ya-zyk" },
+        { "english": "Переводчик должен обладать фоновыми знаниями.", "chinese": "译者应具备背景知识。", "soundmark": "pe-re-vod-cheek dol-zhen ab-la-dat fo-no-vy-mi zna-nee-ya-mi" },
+        { "english": "Хороший перевод звучит естественно на языке перевода.", "chinese": "好的译文在目标语言中听起来自然。", "soundmark": "kha-ro-shiy pe-re-vot zvu-cheet yes-tyest-ven-na na ya-zy-ke pe-re-vo-da" },
+        { "english": "Буквальный перевод не всегда точен.", "chinese": "直译并不总是准确。", "soundmark": "book-val-ny pe-re-vot ne vseeg-da to-chen" },
+        { "english": "Калькирование — один из приёмов перевода.", "chinese": "仿译是翻译方法之一。", "soundmark": "kal-kee-ro-va-nee-ye a-deen eez pree-yo-maf pe-re-vo-da" },
+        { "english": "Смысловой перевод важнее формального соответствия.", "chinese": "意译比形式对应更重要。", "soundmark": "smys-la-voy pe-re-vot vazh-nye-ye for-mal-na-va sa-at-vyet-stvee-ya" },
+        { "english": "Перевод фразеологизмов требует особого подхода.", "chinese": "成语的翻译需要特殊处理。", "soundmark": "pe-re-vot fra-ze-o-lo-geez-maf tre-bu-yet a-so-bo-va pat-kho-da" },
+        { "english": "Практика — ключ к успеху в переводе.", "chinese": "实践是翻译成功的关键。", "soundmark": "prak-tee-ka klyuch k oos-pe-khoo f pe-re-vo-dye" }
+      ]
+    },
+    {
+      "id": "eu8-04", "order": 4, "title": "第4课 俄汉翻译实践（Практика перевода）",
+      "statements": [
+        { "english": "Москва — столица Российской Федерации.", "chinese": "莫斯科是俄罗斯联邦的首都。", "soundmark": "maz-kva sta-lee-tsa ras-see-skey fe-de-ra-tsi-ee" },
+        { "english": "Экономическое сотрудничество между нашими странами активно развивается.", "chinese": "我们两国之间的经济合作正在积极发展。", "soundmark": "e-ka-no-mee-che-ska-ye sa-trud-nee-chest-va mezh-doo na-shee-mee stra-na-mee ak-teev-na raz-vee-va-yet-sya" },
+        { "english": "Китай и Россия являются стратегическими партнёрами.", "chinese": "中国和俄罗斯是战略伙伴。", "soundmark": "kee-tay ee ras-see-ya yav-lya-yut-sya stra-te-gee-che-skee-mee part-nyo-ra-mee" },
+        { "english": "Объём торговли между нашими странами растёт с каждым годом.", "chinese": "我们两国之间的贸易额逐年增长。", "soundmark": "a-byom tar-gov-lee mezh-doo na-shee-mee stra-na-mee ra-syot s kazh-dym go-dom" },
+        { "english": "Сохранение культурного наследия — важная задача.", "chinese": "保护文化遗产是重要的任务。", "soundmark": "sa-khra-ne-nee-ye kul-toor-na-va nas-lye-dee-ya vazh-na-ya za-da-cha" },
+        { "english": "Наука и образование являются приоритетами государства.", "chinese": "科学和教育是国家的优先事项。", "soundmark": "na-oo-ka ee a-bra-za-va-nee-ye yav-lya-yut-sya pree-o-ree-te-ta-mee ga-soo-dar-stva" },
+        { "english": "Россия славится своими природными ресурсами.", "chinese": "俄罗斯以其自然资源闻名。", "soundmark": "ras-see-ya sla-veet-sya sva-ee-mee pree-rod-ny-mi re-soor-sa-mi" },
+        { "english": "Китайская культура имеет тысячелетнюю историю.", "chinese": "中国文化有数千年的历史。", "soundmark": "kee-tay-ska-ya kul-too-ra ee-may-et ty-sya-che-let-nyu-yu ee-sto-ree-yu" },
+        { "english": "Молодёжь двух стран активно обменивается опытом.", "chinese": "两国青年积极交流经验。", "soundmark": "ma-la-dyozh dvukh stran ak-teev-na ab-me-nee-va-yet-sya o-py-tom" },
+        { "english": "Международное сотрудничество приносит взаимную пользу.", "chinese": "国际合作带来互利共赢。", "soundmark": "mezh-doo-na-rod-na-ye sa-trud-nee-chest-vo pree-no-seet vza-eem-noo-yu pol-zu" }
+      ]
+    },
+    {
+      "id": "eu8-05", "order": 5, "title": "第5课 俄语成语词典精选",
+      "statements": [
+        { "english": "Без труда не выловишь и рыбку из пруда.", "chinese": "不努力连池塘里的鱼也捞不到（不劳无获）。", "soundmark": "byez too-da ne vy-lo-veesh ee ryp-koo eez proo-da" },
+        { "english": "Лучше синица в руках, чем журавль в небе.", "chinese": "手中的山雀胜过天上的鹤（一鸟在手胜似二鸟在林）。", "soundmark": "looch-she see-nee-tsa v roo-kakh chem zhoor-avl v nye-bye" },
+        { "english": "Яблоко от яблони недалеко падает.", "chinese": "苹果落地离苹果树不远（有其父必有其子）。", "soundmark": "yab-la-ka at yab-la-nee ne-da-lye-ko pa-da-yet" },
+        { "english": "Семь раз отмерь, один раз отрежь.", "chinese": "七次量，一次裁（三思而后行）。", "soundmark": "syem ras at-mer a-deen ras at-ryesh" },
+        { "english": "Не имей сто рублей, а имей сто друзей.", "chinese": "不要一百卢布，要一百个朋友（朋友胜于金钱）。", "soundmark": "ne ee-mey sto roob-ley a ee-mey sto droo-zyey" },
+        { "english": "Тише едешь — дальше будешь.", "chinese": "越安静行得越远（欲速则不达）。", "soundmark": "tee-she ye-desh dal-she bu-desh" },
+        { "english": "Цыплят по осени считают.", "chinese": "小鸡到秋天再数（别高兴太早）。", "soundmark": "tsy-plyat po o-se-nee schee-ta-yut" },
+        { "english": "Век живи — век учись.", "chinese": "活到老学到老。", "soundmark": "vyek zhee-vee vyek oo-chees" },
+        { "english": "Друзья познаются в беде.", "chinese": "朋友在患难中才能认清。", "soundmark": "droo-zya paz-na-yut-sya v bye-dye" },
+        { "english": "Слово не воробей, вылетит — не поймаешь.", "chinese": "话不是麻雀，飞出去就抓不回来（覆水难收）。", "soundmark": "slo-va ne va-ra-byey vy-le-teet ne poy-ma-yesh" }
+      ]
+    },
+    {
+      "id": "eu8-06", "order": 6, "title": "第6课 国情文化：俄罗斯地理与自然",
+      "statements": [
+        { "english": "Россия — самая большая страна в мире по площади.", "chinese": "俄罗斯是世界上面积最大的国家。", "soundmark": "ras-see-ya sa-ma-ya bol-sha-ya stra-na v mee-re pa plosh-shcha-dee" },
+        { "english": "Байкал — самое глубокое озеро на планете.", "chinese": "贝加尔湖是地球上最深的湖。", "soundmark": "bay-kal sa-ma-ye gloo-bo-ka-ye o-ze-ra na pla-nye-tye" },
+        { "english": "Уральские горы разделяют Европу и Азию.", "chinese": "乌拉尔山脉分隔欧洲和亚洲。", "soundmark": "oo-ral-skee-ye go-ry raz-de-lya-yut yev-ro-poo ee a-zee-yu" },
+        { "english": "Волга — самая длинная река в Европе.", "chinese": "伏尔加河是欧洲最长的河流。", "soundmark": "vol-ga sa-ma-ya dlin-na-ya re-ka v yev-ro-pye" },
+        { "english": "Сибирь известна своими суровыми зимами.", "chinese": "西伯利亚以其严冬著称。", "soundmark": "see-beer eez-vest-na sva-ee-mee soo-ro-vy-mi zee-ma-mi" },
+        { "english": "Камчатка — край вулканов и гейзеров.", "chinese": "堪察加是火山和间歇泉之地。", "soundmark": "kam-chat-ka kray vul-ka-nav ee gey-ze-raf" },
+        { "english": "Россия обладает огромными запасами пресной воды.", "chinese": "俄罗斯拥有巨大的淡水储量。", "soundmark": "ras-see-ya ab-la-day-ya-tog-rom-ny-mi za-pa-sa-mee pres-nay va-dy" },
+        { "english": "Тайга — крупнейшая лесная зона мира.", "chinese": "泰加林是世界上最大的森林带。", "soundmark": "tay-ga kroop-nyey-sha-ya les-na-ya zo-na mee-ra" },
+        { "english": "В России находится множество заповедников.", "chinese": "俄罗斯有很多自然保护区。", "soundmark": "v ras-see-ee na-kho-deet-sya mno-zhest-va za-pa-vyed-nee-kaf" },
+        { "english": "Арктика — важный регион для научных исследований.", "chinese": "北极是科学研究的重要区域。", "soundmark": "ark-tee-ka vazh-ny re-gy-on dlya na-ooch-nykh ees-slye-do-va-ny" }
+      ]
+    },
+    {
+      "id": "eu8-07", "order": 7, "title": "第7课 国情文化：俄罗斯节日与习俗",
+      "statements": [
+        { "english": "Новый год — самый любимый праздник в России.", "chinese": "新年是俄罗斯最喜爱的节日。", "soundmark": "no-vy got sa-my lyu-be-my prazd-neek v ras-see-ee" },
+        { "english": "Рождество отмечается 7 января.", "chinese": "圣诞节在1月7日庆祝。", "soundmark": "razh-dyest-vo a-met-cha-yet-sya sed-ma-va yan-va-rya" },
+        { "english": "Масленица — это проводы зимы.", "chinese": "谢肉节是送冬节。", "soundmark": "mas-le-nee-tsa e-ta pro-va-dy zee-my" },
+        { "english": "Пасха — главный православный праздник.", "chinese": "复活节是主要的东正教节日。", "soundmark": "pas-kha glav-ny pra-vas-lav-ny prazd-neek" },
+        { "english": "День Победы отмечается 9 мая.", "chinese": "胜利日在5月9日庆祝。", "soundmark": "dyen pa-bye-dy a-met-cha-yet-sya dye-va-ta may-ya" },
+        { "english": "День России — 12 июня.", "chinese": "俄罗斯日是6月12日。", "soundmark": "dyen ras-see-ee dye-na-dtsa-ta-ee yoo-nya" },
+        { "english": "На Масленицу пекут блины.", "chinese": "谢肉节时做薄饼。", "soundmark": "na mas-le-nee-tsoo pe-koot blee-ny" },
+        { "english": "На свадьбе молодожёнам желают счастья и любви.", "chinese": "婚礼上祝愿新人幸福和爱情。", "soundmark": "na svad-be ma-la-da-zho-nam zhe-la-yut shchas-tya ee lyub-vee" },
+        { "english": "Традиционная русская баня — это особый ритуал.", "chinese": "传统俄式桑拿是一种特殊的仪式。", "soundmark": "tra-dee-tsi-on-na-ya rooss-ka-ya ba-nya e-ta a-so-by ree-too-al" },
+        { "english": "Чаепитие — важная часть русской культуры.", "chinese": "喝茶是俄罗斯文化的重要部分。", "soundmark": "cha-ye-pee-tee-ye vazh-na-ya chast rooss-kay kul-too-ry" }
+      ]
+    },
+    {
+      "id": "eu8-08", "order": 8, "title": "第8课 国情文化：俄罗斯历史概览",
+      "statements": [
+        { "english": "Киевская Русь — первое государство восточных славян.", "chinese": "基辅罗斯是东斯拉夫人的第一个国家。", "soundmark": "kee-yev-ska-ya rus per-va-ye ga-soo-dar-stva vas-toch-nykh sla-vyan" },
+        { "english": "Пётр Первый основал Санкт-Петербург в 1703 году.", "chinese": "彼得大帝于1703年建立了圣彼得堡。", "soundmark": "pyotr pyer-vy a-sna-val sankt-pee-ter-burg v ty-sya-cha sem-sot tre-tyem ga-doo" },
+        { "english": "Отечественная война 1812 года — важное событие.", "chinese": "1812年的卫国战争是重要事件。", "soundmark": "a-te-chest-ven-na-ya vay-na ty-sya-cha vo-sem-sot dye-na-tsa-ta-va go-da vazh-na-ye sa-by-tee-ye" },
+        { "english": "Революция 1917 года изменила ход истории.", "chinese": "1917年的革命改变了历史进程。", "soundmark": "re-va-lyu-tsi-ya ty-sya-cha de-vyat-sot sem-nad-tsa-ta-va go-da eez-me-nee-la khot ee-sto-ree-ee" },
+        { "english": "Великая Отечественная война 1941-1945 годов.", "chinese": "1941-1945年伟大卫国战争。", "soundmark": "ve-lee-ka-ya a-te-chest-ven-na-ya vay-na ty-sya-cha de-vyat-sot sa-rok pyer-va-va pa ty-sya-cha de-vyat-sot sa-rok pyat-ta-va go-daf" },
+        { "english": "Юрий Гагарин стал первым космонавтом в 1961 году.", "chinese": "尤里·加加林在1961年成为第一个宇航员。", "soundmark": "yoo-reey ga-ga-reen stal pyer-vym kas-ma-nav-tam v ty-sya-cha de-vyat-sot shest-de-syat pyer-vom ga-doo" },
+        { "english": "Распад СССР произошёл в 1991 году.", "chinese": "苏联解体于1991年。", "soundmark": "ras-pat es-es-es-er pra-ee-zyo-shol v ty-sya-cha de-vyat-sot de-ve-nos-ta pyer-vom ga-doo" },
+        { "english": "Россия — постоянный член Совета Безопасности ООН.", "chinese": "俄罗斯是联合国安理会常任理事国。", "soundmark": "ras-see-ya pa-sta-yan-ny chlen sa-vye-ta be-za-pas-nos-tee o-on" },
+        { "english": "Культура России богата и многообразна.", "chinese": "俄罗斯文化丰富多样。", "soundmark": "kul-too-ra ras-see-ee bo-ga-ta ee mna-go-ab-raz-na" },
+        { "english": "Московский Кремль — символ России.", "chinese": "莫斯科克里姆林宫是俄罗斯的象征。", "soundmark": "mas-kov-skeey kreml seem-val ras-see-ee" }
+      ]
+    },
+    {
+      "id": "eu8-09", "order": 9, "title": "第9课 高级写作：议论文与评论",
+      "statements": [
+        { "english": "Данная проблема является актуальной в современном обществе.", "chinese": "这个问题在现代社会中具有现实性。", "soundmark": "dan-na-ya prab-lye-ma yav-lya-yet-sya ak-too-al-nay v sav-re-men-nom ap-shche-stve" },
+        { "english": "Существует несколько точек зрения на этот вопрос.", "chinese": "这个问题存在几种观点。", "soundmark": "soo-shche-stvu-yet ne-skol-ka ta-chek zre-nee-ya na e-tat vap-ros" },
+        { "english": "Во-первых, следует отметить положительные аспекты.", "chinese": "首先应指出积极方面。", "soundmark": "va-pyer-vykh slye-du-yet at-me-teet pa-la-zhee-tel-ny-ye a-spek-ty" },
+        { "english": "С одной стороны, это приносит пользу. С другой — есть риски.", "chinese": "一方面这带来好处。另一方面存在风险。", "soundmark": "s ad-noy sta-ro-ny e-ta pree-no-seet pol-zu s droo-goy ye-st rees-kee" },
+        { "english": "На мой взгляд, это решение является оптимальным.", "chinese": "在我看来这是一个最优决定。", "soundmark": "na moy vzglyad e-ta re-she-nee-ye yav-lya-yet-sya ap-tee-mal-nym" },
+        { "english": "Я хотел бы подчеркнуть, что данная тема требует дальнейшего изучения.", "chinese": "我想强调这个话题需要进一步研究。", "soundmark": "ya kha-tel by pad-cherk-noot shto dan-na-ya tye-ma tre-bu-yet dal-ney-she-va e-zu-che-nee-ya" },
+        { "english": "В заключение хочу сказать, что проблема имеет комплексный характер.", "chinese": "总结时我想说这个问题具有综合性。", "soundmark": "f za-klyu-che-nee-ye kha-choo ska-zat shto prab-lye-ma ee-may-et kom-pleks-ny kha-rak-ter" },
+        { "english": "Обобщая вышесказанное, можно сделать вывод.", "chinese": "综合以上所述，可以得出结论。", "soundmark": "a-bab-shcha-ya vy-she-ska-zan-na-ye mozh-na sdye-lat vy-vot" },
+        { "english": "Рекомендуется провести дополнительный анализ.", "chinese": "建议进行补充分析。", "soundmark": "re-ka-men-du-yet-sya pra-ves-te da-pol-nee-tel-ny a-na-lees" },
+        { "english": "Таким образом, аргументы «за» перевешивают аргументы «против».", "chinese": "因此赞成理由重于反对理由。", "soundmark": "ta-keem ab-ra-zem ar-goo-men-ty za pe-re-ve-shee-va-yut ar-goo-men-ty pro-teef" }
+      ]
+    },
+    {
+      "id": "eu8-10", "order": 10, "title": "第10课 全系列总结与展望（Заключение）",
+      "statements": [
+        { "english": "Поздравляю! Вы завершили полный курс «Восточный» из 8 книг.", "chinese": "恭喜！您学完了全部8册《大学俄语（东方）》课程。", "soundmark": "paz-drav-lya-yu vy za-ver-shee-lee pol-ny kors vas-toch-ny eez vo-smee kneeg" },
+        { "english": "За это время вы прошли путь от нуля до продвинутого уровня.", "chinese": "这期间您从零基础走到了高级水平。", "soundmark": "za e-ta vre-mya vy pro-shlee poot at noo-lya da pra-dvee-noo-ta-va u-rov-nya" },
+        { "english": "Вы освоили все 6 падежей, виды глагола, причастия и деепричастия.", "chinese": "您掌握了全部6个格、动词体、形动词和副动词。", "soundmark": "vy as-vo-ee-lee vsye shest pa-de-zhey vee-dy gla-go-la pree-chas-tee-ya ee de-ye-pree-chas-tee-ya" },
+        { "english": "Вы умеете строить сложные предложения разных типов.", "chinese": "您会构建不同类型的复合句。", "soundmark": "vy oo-me-ye-te stro-eet slozh-ny-ye preed-la-zhe-nee-ya raz-nykh tee-paf" },
+        { "english": "Вы познакомились с функциональными стилями русского языка.", "chinese": "您了解了俄语的功能语体。", "soundmark": "vy paz-na-ko-mee-lees s foonk-tsi-o-nal-ny-mee stee-la-mee ross-ka-va ya-zy-ka" },
+        { "english": "Ваш словарный запас значительно расширился.", "chinese": "您的词汇量大大增加了。", "soundmark": "vash sla-var-ny za-pas zna-chee-tel-na ras-shee-reel-sya" },
+        { "english": "Вы можете читать литературу и смотреть фильмы на русском.", "chinese": "您能阅读俄语文学作品和看电影了。", "soundmark": "vy mo-zhe-te chee-tat lee-te-ra-too-roo ee sma-tryet feel-my na ross-kom" },
+        { "english": "Дальнейшее совершенствование зависит от практики.", "chinese": "进一步提高靠实践。", "soundmark": "dal-ney-she-ye sa-ver-shen-stvo-va-nee-ye za-ve-seet at prak-tee-kee" },
+        { "english": "Читайте, слушайте, общайтесь — и успех придёт!", "chinese": "多读、多听、多交流——成功会来的！", "soundmark": "chee-tay-tye sloo-shay-tye ab-shchay-tyes ee oos-pekh pree-dyot" },
+        { "english": "Удачи в дальнейшем изучении русского языка!", "chinese": "祝您在俄语学习的路上好运！", "soundmark": "oo-da-chee v dal-ney-shem e-zu-che-nee-ee ross-ka-va ya-zy-ka" }
+      ]
+    }
+  ]
+}

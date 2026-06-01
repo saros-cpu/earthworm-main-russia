@@ -1,0 +1,389 @@
+{
+  "id": "ru-it-tech",
+  "title": "IT技术俄语",
+  "description": "计算机软件开发网络技术等信息科技领域俄语专业词汇。",
+  "cover": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ruit-01",
+      "order": 1,
+      "title": "计算机基础",
+      "description": "计算机软硬件基础词汇。",
+      "statements": [
+        {
+          "english": "компью́тер",
+          "chinese": "计算机",
+          "soundmark": "kam-PYU-tyer"
+        },
+        {
+          "english": "програ́ммное обеспе́чение",
+          "chinese": "软件",
+          "soundmark": "pra-GRAM-na-ye a-bes-PYE-che-nee-ye"
+        },
+        {
+          "english": "операцио́нная систе́ма",
+          "chinese": "操作系统",
+          "soundmark": "a-pe-ra-tsee-ON-na-ya sis-TYE-ma"
+        },
+        {
+          "english": "се́рвер",
+          "chinese": "服务器",
+          "soundmark": "SER-ver"
+        },
+        {
+          "english": "сеть",
+          "chinese": "网络",
+          "soundmark": "set"
+        },
+        {
+          "english": "ба́за да́нных",
+          "chinese": "数据库",
+          "soundmark": "BA-za DAN-nykh"
+        }
+      ]
+    },
+    {
+      "id": "ruit-02",
+      "order": 2,
+      "title": "编程与技术",
+      "description": "编程和技术开发的常用词汇。",
+      "statements": [
+        {
+          "english": "язы́к програ́ммирования",
+          "chinese": "编程语言",
+          "soundmark": "ya-ZYK pra-GRAM-mee-ro-va-nee-ya"
+        },
+        {
+          "english": "код",
+          "chinese": "代码",
+          "soundmark": "kod"
+        },
+        {
+          "english": "алгори́тм",
+          "chinese": "算法",
+          "soundmark": "al-go-REETM"
+        },
+        {
+          "english": "фу́нкция",
+          "chinese": "函数",
+          "soundmark": "FOONK-tsee-ya"
+        },
+        {
+          "english": "приложе́ние",
+          "chinese": "应用程序",
+          "soundmark": "pree-la-ZHE-nee-ye"
+        },
+        {
+          "english": "разрабо́тчик",
+          "chinese": "开发者",
+          "soundmark": "raz-ra-BOT-cheek"
+        }
+      ]
+    },
+    {
+      "id": "ruit-03",
+      "order": 3,
+      "title": "网络技术",
+      "description": "网络和通信技术相关词汇。",
+      "statements": [
+        {
+          "english": "маршрутиза́тор",
+          "chinese": "路由器",
+          "soundmark": "marsh-roo-tee-ZA-tor"
+        },
+        {
+          "english": "коммута́тор",
+          "chinese": "交换机",
+          "soundmark": "ka-moo-TA-tor"
+        },
+        {
+          "english": "протоко́л",
+          "chinese": "协议",
+          "soundmark": "pra-ta-KOL"
+        },
+        {
+          "english": "IP-а́дрес",
+          "chinese": "IP地址",
+          "soundmark": "ee-pe-AD-res"
+        },
+        {
+          "english": "ши́на",
+          "chinese": "总线",
+          "soundmark": "SHEE-na"
+        },
+        {
+          "english": "паке́т да́нных",
+          "chinese": "数据包",
+          "soundmark": "pa-KET DAN-nykh"
+        }
+      ]
+    },
+    {
+      "id": "ruit-04",
+      "order": 4,
+      "title": "数据库",
+      "description": "数据库管理和操作词汇。",
+      "statements": [
+        {
+          "english": "запро́с",
+          "chinese": "查询",
+          "soundmark": "za-PROS"
+        },
+        {
+          "english": "табли́ца",
+          "chinese": "表格",
+          "soundmark": "tab-LEE-tsa"
+        },
+        {
+          "english": "за́пись",
+          "chinese": "记录",
+          "soundmark": "ZA-pees"
+        },
+        {
+          "english": "инде́кс",
+          "chinese": "索引",
+          "soundmark": "in-DEKS"
+        },
+        {
+          "english": "храни́лище да́нных",
+          "chinese": "数据仓库",
+          "soundmark": "khra-NEE-lee-shche DAN-nykh"
+        },
+        {
+          "english": "резерви́рование",
+          "chinese": "备份",
+          "soundmark": "re-zer-VEE-ro-va-nee-ye"
+        }
+      ]
+    },
+    {
+      "id": "ruit-05",
+      "order": 5,
+      "title": "网页开发",
+      "description": "网页开发和前端技术词汇。",
+      "statements": [
+        {
+          "english": "веб-са́йт",
+          "chinese": "网站",
+          "soundmark": "veb-SAYT"
+        },
+        {
+          "english": "интерфе́йс",
+          "chinese": "界面",
+          "soundmark": "in-ter-FEYS"
+        },
+        {
+          "english": "гиперссы́лка",
+          "chinese": "超链接",
+          "soundmark": "gee-per-SSYL-ka"
+        },
+        {
+          "english": "бра́узер",
+          "chinese": "浏览器",
+          "soundmark": "BROW-zer"
+        },
+        {
+          "english": "шабло́н",
+          "chinese": "模板",
+          "soundmark": "shab-LON"
+        },
+        {
+          "english": "фреймво́рк",
+          "chinese": "框架",
+          "soundmark": "freym-VORK"
+        }
+      ]
+    },
+    {
+      "id": "ruit-06",
+      "order": 6,
+      "title": "网络安全",
+      "description": "网络和信息安全相关词汇。",
+      "statements": [
+        {
+          "english": "шифрова́ние",
+          "chinese": "加密",
+          "soundmark": "shif-ro-VA-nee-ye"
+        },
+        {
+          "english": "защи́та да́нных",
+          "chinese": "数据保护",
+          "soundmark": "za-SHEE-ta DAN-nykh"
+        },
+        {
+          "english": "ви́рус",
+          "chinese": "病毒",
+          "soundmark": "VEE-roos"
+        },
+        {
+          "english": "бре́ндма́уэр",
+          "chinese": "防火墙",
+          "soundmark": "brend-MA-uer"
+        },
+        {
+          "english": "аутентифика́ция",
+          "chinese": "身份验证",
+          "soundmark": "a-u-ten-tee-fee-KA-tsee-ya"
+        },
+        {
+          "english": "взлом",
+          "chinese": "黑客攻击",
+          "soundmark": "vzlom"
+        }
+      ]
+    },
+    {
+      "id": "ruit-07",
+      "order": 7,
+      "title": "IT支持",
+      "description": "IT支持和运维常用词汇。",
+      "statements": [
+        {
+          "english": "техни́ческая подде́ржка",
+          "chinese": "技术支持",
+          "soundmark": "tekh-NEE-che-ska-ya pad-DERZH-ka"
+        },
+        {
+          "english": "оши́бка",
+          "chinese": "错误",
+          "soundmark": "a-SHEEB-ka"
+        },
+        {
+          "english": "устано́вка",
+          "chinese": "安装",
+          "soundmark": "u-sta-NOV-ka"
+        },
+        {
+          "english": "обновле́ние",
+          "chinese": "更新",
+          "soundmark": "ab-nav-LE-nee-ye"
+        },
+        {
+          "english": "настро́йка",
+          "chinese": "设置",
+          "soundmark": "na-STROY-ka"
+        },
+        {
+          "english": "устране́ние неиспра́вностей",
+          "chinese": "故障排除",
+          "soundmark": "u-stra-NE-nee-ye ne-ees-PRAV-nas-tey"
+        }
+      ]
+    },
+    {
+      "id": "ruit-08",
+      "order": 8,
+      "title": "移动应用",
+      "description": "移动应用开发和手机技术词汇。",
+      "statements": [
+        {
+          "english": "мо́бильное приложе́ние",
+          "chinese": "移动应用",
+          "soundmark": "MO-beel-na-ye pree-la-ZHE-nee-ye"
+        },
+        {
+          "english": "смартфо́н",
+          "chinese": "智能手机",
+          "soundmark": "smart-FON"
+        },
+        {
+          "english": "операцио́нная систе́ма",
+          "chinese": "操作系统",
+          "soundmark": "a-pe-ra-tsee-ON-na-ya sis-TYE-ma"
+        },
+        {
+          "english": "же́ст",
+          "chinese": "手势",
+          "soundmark": "zhest"
+        },
+        {
+          "english": "уведомле́ние",
+          "chinese": "通知",
+          "soundmark": "u-ve-dam-LE-nee-ye"
+        },
+        {
+          "english": "магази́н приложе́ний",
+          "chinese": "应用商店",
+          "soundmark": "ma-ga-ZEEN pree-la-ZHE-ney"
+        }
+      ]
+    },
+    {
+      "id": "ruit-09",
+      "order": 9,
+      "title": "云计算",
+      "description": "云计算和虚拟化技术词汇。",
+      "statements": [
+        {
+          "english": "о́блачное храни́лище",
+          "chinese": "云存储",
+          "soundmark": "OB-lach-na-ye khra-NEE-lee-shche"
+        },
+        {
+          "english": "виртуализа́ция",
+          "chinese": "虚拟化",
+          "soundmark": "veer-too-a-lee-ZA-tsee-ya"
+        },
+        {
+          "english": "о́блачный се́рвер",
+          "chinese": "云服务器",
+          "soundmark": "OB-lach-ny SER-ver"
+        },
+        {
+          "english": "масштаби́рование",
+          "chinese": "扩展",
+          "soundmark": "ma-shta-BEE-ro-va-nee-ye"
+        },
+        {
+          "english": "развёртывание",
+          "chinese": "部署",
+          "soundmark": "raz-VYOR-ty-va-nee-ye"
+        },
+        {
+          "english": "конте́йнер",
+          "chinese": "容器",
+          "soundmark": "kan-TEY-ner"
+        }
+      ]
+    },
+    {
+      "id": "ruit-10",
+      "order": 10,
+      "title": "硬件设备",
+      "description": "计算机硬件和外设词汇。",
+      "statements": [
+        {
+          "english": "проце́ссор",
+          "chinese": "处理器",
+          "soundmark": "pra-TSE-sor"
+        },
+        {
+          "english": "операти́вная па́мять",
+          "chinese": "内存",
+          "soundmark": "a-pe-ra-TEEV-na-ya PA-myat"
+        },
+        {
+          "english": "жёсткий диск",
+          "chinese": "硬盘",
+          "soundmark": "ZHOST-keey disk"
+        },
+        {
+          "english": "матери́нская пла́та",
+          "chinese": "主板",
+          "soundmark": "ma-te-REEN-ska-ya PLA-ta"
+        },
+        {
+          "english": "видеока́рта",
+          "chinese": "显卡",
+          "soundmark": "vee-de-o-KAR-ta"
+        },
+        {
+          "english": "при́нтер",
+          "chinese": "打印机",
+          "soundmark": "PRIN-ter"
+        }
+      ]
+    }
+  ]
+}

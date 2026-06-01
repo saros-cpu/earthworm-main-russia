@@ -1,0 +1,529 @@
+{
+  "id": "ru-basic-colors",
+  "title": "俄语颜色与形状描述",
+  "description": "学习常见颜色、形状和尺寸的俄语形容词及用法。",
+  "cover": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ruco-01",
+      "order": 1,
+      "title": "基本颜色",
+      "description": "俄语基本颜色名称。",
+      "statements": [
+        {
+          "english": "кра́сный",
+          "chinese": "红色的",
+          "soundmark": "KRAS-ny"
+        },
+        {
+          "english": "си́ний",
+          "chinese": "蓝色的",
+          "soundmark": "SEE-ny"
+        },
+        {
+          "english": "зелёный",
+          "chinese": "绿色的",
+          "soundmark": "zee-LYO-ny"
+        },
+        {
+          "english": "жёлтый",
+          "chinese": "黄色的",
+          "soundmark": "ZHYOL-ty"
+        },
+        {
+          "english": "бе́лый",
+          "chinese": "白色的",
+          "soundmark": "BYE-ly"
+        },
+        {
+          "english": "чёрный",
+          "chinese": "黑色的",
+          "soundmark": "CHYOR-ny"
+        },
+        {
+          "english": "кори́чневый",
+          "chinese": "棕色的",
+          "soundmark": "ka-REECH-ne-vy"
+        },
+        {
+          "english": "се́рый",
+          "chinese": "灰色的",
+          "soundmark": "SYE-ry"
+        },
+        {
+          "english": "фиоле́товый",
+          "chinese": "紫色的",
+          "soundmark": "fee-a-LYE-ta-vy"
+        },
+        {
+          "english": "ро́зовый",
+          "chinese": "粉色的",
+          "soundmark": "RO-za-vy"
+        },
+        {
+          "english": "ора́нжевый",
+          "chinese": "橙色的",
+          "soundmark": "a-RAN-zhe-vy"
+        },
+        {
+          "english": "голубо́й",
+          "chinese": "天蓝色的",
+          "soundmark": "ga-loo-BOY"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/13-Урок 1-1.avi"
+    },
+    {
+      "id": "ruco-02",
+      "order": 2,
+      "title": "形状与尺寸",
+      "description": "形状和尺寸表达。",
+      "statements": [
+        {
+          "english": "круг",
+          "chinese": "圆形",
+          "soundmark": "krook"
+        },
+        {
+          "english": "квадра́т",
+          "chinese": "正方形",
+          "soundmark": "kva-DRAT"
+        },
+        {
+          "english": "треуго́льник",
+          "chinese": "三角形",
+          "soundmark": "tre-oo-GOL-neek"
+        },
+        {
+          "english": "большо́й",
+          "chinese": "大的",
+          "soundmark": "bal-SHOY"
+        },
+        {
+          "english": "ма́ленький",
+          "chinese": "小的",
+          "soundmark": "MA-lyen-kiy"
+        },
+        {
+          "english": "дли́нный",
+          "chinese": "长的",
+          "soundmark": "DLEEN-ny"
+        },
+        {
+          "english": "коро́ткий",
+          "chinese": "短的",
+          "soundmark": "ka-ROT-kiy"
+        },
+        {
+          "english": "высо́кий",
+          "chinese": "高的",
+          "soundmark": "vy-SO-kiy"
+        },
+        {
+          "english": "ни́зкий",
+          "chinese": "矮的",
+          "soundmark": "NEEZ-kiy"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/14-Урок 1-2.avi"
+    },
+    {
+      "id": "ruco-03",
+      "order": 3,
+      "title": "颜色深浅",
+      "description": "俄语中表达颜色深浅的方式。",
+      "statements": [
+        {
+          "english": "тёмно-си́ний",
+          "chinese": "深蓝色的",
+          "soundmark": "TYOM-na-SEE-ny"
+        },
+        {
+          "english": "све́тло-зелёный",
+          "chinese": "浅绿色的",
+          "soundmark": "SVYET-la-zee-LYO-ny"
+        },
+        {
+          "english": "я́рко-кра́сный",
+          "chinese": "鲜红色的",
+          "soundmark": "YAR-ka-KRAS-ny"
+        },
+        {
+          "english": "бле́дный",
+          "chinese": "苍白的/淡色的",
+          "soundmark": "BLED-ny"
+        },
+        {
+          "english": "тёмный",
+          "chinese": "暗的",
+          "soundmark": "TYOM-ny"
+        },
+        {
+          "english": "све́тлый",
+          "chinese": "亮的",
+          "soundmark": "SVYET-ly"
+        },
+        {
+          "english": "я́ркий",
+          "chinese": "鲜艳的",
+          "soundmark": "YAR-kiy"
+        },
+        {
+          "english": "тёмно-зелёный",
+          "chinese": "深绿色的",
+          "soundmark": "TYOM-na-zee-LYO-ny"
+        },
+        {
+          "english": "све́тло-кори́чневый",
+          "chinese": "浅棕色的",
+          "soundmark": "SVYET-la-ka-REECH-ne-vy"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/16-Урок 2-1.avi"
+    },
+    {
+      "id": "ruco-04",
+      "order": 4,
+      "title": "用颜色描述物体",
+      "description": "用颜色描述日常物品的表达。",
+      "statements": [
+        {
+          "english": "кра́сное я́блоко",
+          "chinese": "红色的苹果",
+          "soundmark": "KRAS-na-ye YAB-la-ka"
+        },
+        {
+          "english": "си́нее не́бо",
+          "chinese": "蓝色的天空",
+          "soundmark": "SEE-ne-ye NYE-ba"
+        },
+        {
+          "english": "зелёная трава́",
+          "chinese": "绿色的草",
+          "soundmark": "zee-LYO-na-ya tra-VA"
+        },
+        {
+          "english": "жёлтый лимо́н",
+          "chinese": "黄色的柠檬",
+          "soundmark": "ZHYOL-ty lee-MON"
+        },
+        {
+          "english": "бе́лый снег",
+          "chinese": "白色的雪",
+          "soundmark": "BYE-ly snyek"
+        },
+        {
+          "english": "чёрный кот",
+          "chinese": "黑色的猫",
+          "soundmark": "CHYOR-ny kot"
+        },
+        {
+          "english": "кори́чневый стул",
+          "chinese": "棕色的椅子",
+          "soundmark": "ka-REECH-ne-vy stool"
+        },
+        {
+          "english": "ро́зовый цвето́к",
+          "chinese": "粉色的花",
+          "soundmark": "RO-za-vy tsve-TOK"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/17-Урок 2-2.avi"
+    },
+    {
+      "id": "ruco-05",
+      "order": 5,
+      "title": "形状在日常生活中的应用",
+      "description": "日常物品的形状描述。",
+      "statements": [
+        {
+          "english": "прямоуго́льник",
+          "chinese": "长方形",
+          "soundmark": "prya-ma-oo-GOL-neek"
+        },
+        {
+          "english": "ова́л",
+          "chinese": "椭圆形",
+          "soundmark": "a-VAL"
+        },
+        {
+          "english": "звезда́",
+          "chinese": "星形",
+          "soundmark": "zvez-DA"
+        },
+        {
+          "english": "пряма́я ли́ния",
+          "chinese": "直线",
+          "soundmark": "prya-MA-ya LEE-nee-ya"
+        },
+        {
+          "english": "во́лна",
+          "chinese": "波浪线",
+          "soundmark": "VOL-na"
+        },
+        {
+          "english": "кру́глый стол",
+          "chinese": "圆桌",
+          "soundmark": "KROO-gly stol"
+        },
+        {
+          "english": "квадра́тное окно́",
+          "chinese": "方窗",
+          "soundmark": "kva-DRAT-na-ye ak-NO"
+        },
+        {
+          "english": "круг",
+          "chinese": "圆形",
+          "soundmark": "krook"
+        },
+        {
+          "english": "како́й э́то формы?",
+          "chinese": "这是什么形状？",
+          "soundmark": "ka-KOY E-ta FOR-my"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/18-Урок 3-1.avi"
+    },
+    {
+      "id": "ruco-06",
+      "order": 6,
+      "title": "颜色与名词的性数一致",
+      "description": "颜色形容词与名词的性数配合。",
+      "statements": [
+        {
+          "english": "кра́сный каранда́ш",
+          "chinese": "红色的铅笔（阳性）",
+          "soundmark": "KRAS-ny ka-ran-DASH"
+        },
+        {
+          "english": "кра́сная ру́чка",
+          "chinese": "红色的钢笔（阴性）",
+          "soundmark": "KRAS-na-ya ROOCH-ka"
+        },
+        {
+          "english": "кра́сное пла́тье",
+          "chinese": "红色的连衣裙（中性）",
+          "soundmark": "KRAS-na-ye PLA-tye"
+        },
+        {
+          "english": "кра́сные цветы́",
+          "chinese": "红色的花（复数）",
+          "soundmark": "KRAS-ny-ye tsve-TY"
+        },
+        {
+          "english": "си́ний костю́м",
+          "chinese": "蓝色的西装（阳性）",
+          "soundmark": "SEE-ny kas-TYUM"
+        },
+        {
+          "english": "си́няя ке́пка",
+          "chinese": "蓝色的帽子（阴性）",
+          "soundmark": "SEE-nya-ya KYEP-ka"
+        },
+        {
+          "english": "си́нее мо́ре",
+          "chinese": "蓝色的海（中性）",
+          "soundmark": "SEE-ne-ye MO-re"
+        },
+        {
+          "english": "си́ние джи́нсы",
+          "chinese": "蓝色的牛仔裤（复数）",
+          "soundmark": "SEE-ne-ye DZHIN-sy"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/19-Урок 3-2.avi"
+    },
+    {
+      "id": "ruco-07",
+      "order": 7,
+      "title": "最喜欢的颜色",
+      "description": "谈论最喜欢的颜色。",
+      "statements": [
+        {
+          "english": "Какой твой люби́мый цвет?",
+          "chinese": "你最喜欢什么颜色？",
+          "soundmark": "ka-KOY tvoy lyu-BEE-my tsvyet"
+        },
+        {
+          "english": "Мой люби́мый цвет — си́ний.",
+          "chinese": "我最喜欢的颜色是蓝色。",
+          "soundmark": "moy lyu-BEE-my tsvyet SEE-ny"
+        },
+        {
+          "english": "Она́ лю́бит ро́зовый.",
+          "chinese": "她喜欢粉色。",
+          "soundmark": "a-NA LYU-bit RO-za-vy"
+        },
+        {
+          "english": "Он предпочита́ет зелёный.",
+          "chinese": "他更喜欢绿色。",
+          "soundmark": "on pret-pa-chee-TA-yet zee-LYO-ny"
+        },
+        {
+          "english": "Какой цвет тебе́ нра́вится?",
+          "chinese": "你喜欢什么颜色？",
+          "soundmark": "ka-KOY tsvyet te-BE NRA-vee-tsa"
+        },
+        {
+          "english": "Мне нра́вится голубо́й.",
+          "chinese": "我喜欢天蓝色。",
+          "soundmark": "mnye NRA-vee-tsa ga-loo-BOY"
+        },
+        {
+          "english": "Тво́й люби́мый цвет кра́сный?",
+          "chinese": "你最喜欢的颜色是红色吗？",
+          "soundmark": "TVOY lyu-BEE-my tsvyet KRAS-ny"
+        },
+        {
+          "english": "Да, кра́сный.",
+          "chinese": "是的，红色。",
+          "soundmark": "da KRAS-ny"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/22-Урок 4-1.avi"
+    },
+    {
+      "id": "ruco-08",
+      "order": 8,
+      "title": "丰富多彩的描述",
+      "description": "用丰富多彩的词汇描绘世界。",
+      "statements": [
+        {
+          "english": "разноцве́тный",
+          "chinese": "五颜六色的",
+          "soundmark": "raz-na-TSVYET-ny"
+        },
+        {
+          "english": "золото́й",
+          "chinese": "金色的",
+          "soundmark": "za-la-TOY"
+        },
+        {
+          "english": "серебри́стый",
+          "chinese": "银色的",
+          "soundmark": "se-re-BREES-ty"
+        },
+        {
+          "english": "бе́жевый",
+          "chinese": "米色的",
+          "soundmark": "BE-zhe-vy"
+        },
+        {
+          "english": "бордо́вый",
+          "chinese": "酒红色的",
+          "soundmark": "bar-DO-vy"
+        },
+        {
+          "english": "сала́товый",
+          "chinese": "嫩绿色的",
+          "soundmark": "sa-LA-ta-vy"
+        },
+        {
+          "english": "бирюзо́вый",
+          "chinese": "青绿色的",
+          "soundmark": "bee-ryu-ZO-vy"
+        },
+        {
+          "english": "лило́вый",
+          "chinese": "淡紫色的",
+          "soundmark": "lee-LO-vy"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/23-Урок 4-2.avi"
+    },
+    {
+      "id": "ruco-09",
+      "order": 9,
+      "title": "比较颜色",
+      "description": "比较不同颜色的表达。",
+      "statements": [
+        {
+          "english": "Кра́сный я́рче, чем си́ний.",
+          "chinese": "红色比蓝色鲜艳。",
+          "soundmark": "KRAS-ny YAR-che chem SEE-ny"
+        },
+        {
+          "english": "Э́та ру́чка темне́е.",
+          "chinese": "这支笔颜色更深。",
+          "soundmark": "E-ta ROOCH-ka tem-NYE-ye"
+        },
+        {
+          "english": "Тако́й же цвет.",
+          "chinese": "一样的颜色。",
+          "soundmark": "ta-KOY zhe tsvyet"
+        },
+        {
+          "english": "Одинáковый цвет",
+          "chinese": "相同的颜色",
+          "soundmark": "a-dee-NA-ka-vy tsvyet"
+        },
+        {
+          "english": "Бе́лый и чёрный — противополо́жности.",
+          "chinese": "白色和黑色是对立的。",
+          "soundmark": "BYE-ly ee CHYOR-ny pro-tee-va-PO-lo-zhnos-tee"
+        },
+        {
+          "english": "Зелёный све́тлее кори́чневого.",
+          "chinese": "绿色比棕色浅。",
+          "soundmark": "zee-LYO-ny SVYET-le-ye ka-REECH-ne-va-va"
+        },
+        {
+          "english": "Какóй цвет тебе́ бо́льше нра́вится?",
+          "chinese": "你更喜欢哪个颜色？",
+          "soundmark": "ka-KOY tsvyet te-BE BOL-she NRA-vee-tsa"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/27-Урок 5-1.avi"
+    },
+    {
+      "id": "ruco-10",
+      "order": 10,
+      "title": "这是什么颜色？",
+      "description": "询问和回答颜色的疑问句型。",
+      "statements": [
+        {
+          "english": "Како́го э́то цве́та?",
+          "chinese": "这是什么颜色的？",
+          "soundmark": "ka-KO-va E-ta TSVYE-ta"
+        },
+        {
+          "english": "Э́то кра́сного цве́та.",
+          "chinese": "这是红色的。",
+          "soundmark": "E-ta KRAS-na-va TSVYE-ta"
+        },
+        {
+          "english": "Какóго цве́та твоя́ ма́шина?",
+          "chinese": "你的车是什么颜色的？",
+          "soundmark": "ka-KO-va TSVYE-ta tva-YA MA-shee-na"
+        },
+        {
+          "english": "Она́ си́него цве́та.",
+          "chinese": "它是蓝色的。",
+          "soundmark": "a-NA SEE-ne-va TSVYE-ta"
+        },
+        {
+          "english": "Э́тот каранда́ш какóго цве́та?",
+          "chinese": "这支铅笔是什么颜色的？",
+          "soundmark": "E-tat ka-ran-DASH ka-KO-va TSVYE-ta"
+        },
+        {
+          "english": "Он жёлтого цве́та.",
+          "chinese": "它是黄色的。",
+          "soundmark": "on ZHYOL-ta-va TSVYE-ta"
+        },
+        {
+          "english": "Какóго цве́та тво́й дом?",
+          "chinese": "你的房子是什么颜色的？",
+          "soundmark": "ka-KO-va TSVYE-ta tvoy dom"
+        },
+        {
+          "english": "Он бе́лого цве́та.",
+          "chinese": "它是白色的。",
+          "soundmark": "on BYE-la-va TSVYE-ta"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/28-Урок 5-2.avi"
+    }
+  ]
+}

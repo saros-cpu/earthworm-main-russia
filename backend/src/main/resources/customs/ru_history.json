@@ -1,0 +1,339 @@
+{
+  "id": "ru-history",
+  "title": "俄罗斯历史",
+  "description": "从基辅罗斯到现代俄罗斯的重要历史事件和人物相关俄语词汇。",
+  "cover": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ruhi-01",
+      "order": 1,
+      "title": "基辅罗斯",
+      "description": "基辅罗斯时期历史词汇。",
+      "statements": [
+        {
+          "english": "Ки́евская Русь",
+          "chinese": "基辅罗斯",
+          "soundmark": "KEE-yev-ska-ya Roos"
+        },
+        {
+          "english": "князь",
+          "chinese": "大公",
+          "soundmark": "knyaz"
+        },
+        {
+          "english": "Влади́мир Вели́кий",
+          "chinese": "弗拉基米尔大公",
+          "soundmark": "vla-DEE-meer ve-LEE-kee"
+        },
+        {
+          "english": "креще́ние Руси́",
+          "chinese": "罗斯受洗",
+          "soundmark": "kre-SHCHA-nee-ye roo-SEE"
+        },
+        {
+          "english": "дре́внеру́сское госуда́рство",
+          "chinese": "古罗斯国家",
+          "soundmark": "DREV-ne-ROOS-ska-ye ga-soo-DAR-stva"
+        }
+      ]
+    },
+    {
+      "id": "ruhi-02",
+      "order": 2,
+      "title": "彼得大帝",
+      "description": "彼得大帝改革与统治相关词汇。",
+      "statements": [
+        {
+          "english": "Пётр Вели́кий",
+          "chinese": "彼得大帝",
+          "soundmark": "pyotr ve-LEE-kee"
+        },
+        {
+          "english": "рефо́рмы",
+          "chinese": "改革",
+          "soundmark": "re-FOR-my"
+        },
+        {
+          "english": "Санкт-Петербу́рг",
+          "chinese": "圣彼得堡",
+          "soundmark": "sankt-pe-ter-BOORK"
+        },
+        {
+          "english": "флот",
+          "chinese": "海军舰队",
+          "soundmark": "flot"
+        },
+        {
+          "english": "окно в Европу",
+          "chinese": "面向欧洲的窗口",
+          "soundmark": "ak-NO v Yev-RO-poo"
+        }
+      ]
+    },
+    {
+      "id": "ruhi-03",
+      "order": 3,
+      "title": "叶卡捷琳娜二世",
+      "description": "叶卡捷琳娜大帝时期历史词汇。",
+      "statements": [
+        {
+          "english": "Екатери́на Вели́кая",
+          "chinese": "叶卡捷琳娜大帝",
+          "soundmark": "ye-ka-te-REE-na ve-LEE-ka-ya"
+        },
+        {
+          "english": "империя",
+          "chinese": "帝国",
+          "soundmark": "eem-PE-ree-ya"
+        },
+        {
+          "english": "дворя́нство",
+          "chinese": "贵族阶层",
+          "soundmark": "dva-RYAN-stva"
+        },
+        {
+          "english": "просвеще́ние",
+          "chinese": "启蒙运动",
+          "soundmark": "pra-sve-SHCHA-nee-ye"
+        },
+        {
+          "english": "Новороссия",
+          "chinese": "新俄罗斯",
+          "soundmark": "na-va-ROS-see-ya"
+        }
+      ]
+    },
+    {
+      "id": "ruhi-04",
+      "order": 4,
+      "title": "1812年卫国战争",
+      "description": "1812年抗击拿破仑战争词汇。",
+      "statements": [
+        {
+          "english": "Оте́чественная война́ 1812 го́да",
+          "chinese": "1812年卫国战争",
+          "soundmark": "a-TYE-che-stven-na-ya voy-NA"
+        },
+        {
+          "english": "Наполео́н",
+          "chinese": "拿破仑",
+          "soundmark": "na-pa-le-ON"
+        },
+        {
+          "english": "Бороди́нское сраже́ние",
+          "chinese": "博罗季诺战役",
+          "soundmark": "ba-ra-DEEN-ska-ye sra-ZHE-nee-ye"
+        },
+        {
+          "english": "Куту́зов",
+          "chinese": "库图佐夫",
+          "soundmark": "koo-TOO-zaf"
+        },
+        {
+          "english": "пожа́р Москвы́",
+          "chinese": "莫斯科大火",
+          "soundmark": "pa-ZHAR mas-KVY"
+        }
+      ]
+    },
+    {
+      "id": "ruhi-05",
+      "order": 5,
+      "title": "废除农奴制",
+      "description": "1861年废除农奴制相关词汇。",
+      "statements": [
+        {
+          "english": "крепостно́е пра́во",
+          "chinese": "农奴制",
+          "soundmark": "kre-pas-NO-ye PRA-va"
+        },
+        {
+          "english": "крестья́нин",
+          "chinese": "农民",
+          "soundmark": "kres-TYA-neen"
+        },
+        {
+          "english": "Алекса́ндр II",
+          "chinese": "亚历山大二世",
+          "soundmark": "a-lek-SANDR fta-ROY"
+        },
+        {
+          "english": "освобожде́ние",
+          "chinese": "解放",
+          "soundmark": "as-va-bazh-DE-nee-ye"
+        },
+        {
+          "english": "рефо́рма",
+          "chinese": "改革",
+          "soundmark": "re-FOR-ma"
+        }
+      ]
+    },
+    {
+      "id": "ruhi-06",
+      "order": 6,
+      "title": "俄国革命",
+      "description": "1917年俄国革命相关词汇。",
+      "statements": [
+        {
+          "english": "рево́люция",
+          "chinese": "革命",
+          "soundmark": "re-VO-lyu-tsee-ya"
+        },
+        {
+          "english": "Февра́льская революция",
+          "chinese": "二月革命",
+          "soundmark": "fev-RAL-ska-ya re-vo-LYU-tsee-ya"
+        },
+        {
+          "english": "Октя́брьская революция",
+          "chinese": "十月革命",
+          "soundmark": "ak-TYABR-ska-ya re-vo-LYU-tsee-ya"
+        },
+        {
+          "english": "Ле́нин",
+          "chinese": "列宁",
+          "soundmark": "LE-neen"
+        },
+        {
+          "english": "Сове́тская власть",
+          "chinese": "苏维埃政权",
+          "soundmark": "sa-VYET-ska-ya vlast"
+        }
+      ]
+    },
+    {
+      "id": "ruhi-07",
+      "order": 7,
+      "title": "卫国战争",
+      "description": "第二次世界大战苏联卫国战争词汇。",
+      "statements": [
+        {
+          "english": "Вели́кая Оте́чественная война́",
+          "chinese": "伟大的卫国战争",
+          "soundmark": "ve-LEE-ka-ya a-TYE-che-stven-na-ya voy-NA"
+        },
+        {
+          "english": "блокада Ленинграда",
+          "chinese": "列宁格勒围困",
+          "soundmark": "bla-KA-da le-neen-GRA-da"
+        },
+        {
+          "english": "Сталингра́дская би́тва",
+          "chinese": "斯大林格勒战役",
+          "soundmark": "sta-leen-GRAT-ska-ya BEET-va"
+        },
+        {
+          "english": "побе́да",
+          "chinese": "胜利",
+          "soundmark": "pa-BYE-da"
+        },
+        {
+          "english": "ветера́н",
+          "chinese": "老战士",
+          "soundmark": "ve-te-RAN"
+        }
+      ]
+    },
+    {
+      "id": "ruhi-08",
+      "order": 8,
+      "title": "苏联时期",
+      "description": "苏联时代相关历史词汇。",
+      "statements": [
+        {
+          "english": "СССР",
+          "chinese": "苏联",
+          "soundmark": "es-es-es-ER"
+        },
+        {
+          "english": "коммуни́зм",
+          "chinese": "共产主义",
+          "soundmark": "ka-moo-NEEZM"
+        },
+        {
+          "english": "пятиле́тка",
+          "chinese": "五年计划",
+          "soundmark": "pya-tee-LYET-ka"
+        },
+        {
+          "english": "косми́ческая гонка",
+          "chinese": "太空竞赛",
+          "soundmark": "kas-MEE-che-ska-ya GON-ka"
+        },
+        {
+          "english": "желе́зный за́навес",
+          "chinese": "铁幕",
+          "soundmark": "zhe-LEZ-ny ZA-na-ves"
+        }
+      ]
+    },
+    {
+      "id": "ruhi-09",
+      "order": 9,
+      "title": "改革与新思维",
+      "description": "戈尔巴乔夫改革时期词汇。",
+      "statements": [
+        {
+          "english": "перестро́йка",
+          "chinese": "改革",
+          "soundmark": "pe-re-STROY-ka"
+        },
+        {
+          "english": "гла́сность",
+          "chinese": "公开性",
+          "soundmark": "GLAS-nast"
+        },
+        {
+          "english": "Горбачёв",
+          "chinese": "戈尔巴乔夫",
+          "soundmark": "gar-ba-CHYOF"
+        },
+        {
+          "english": "распа́д СССР",
+          "chinese": "苏联解体",
+          "soundmark": "ras-PAD es-es-es-ER"
+        },
+        {
+          "english": "де́мократия",
+          "chinese": "民主",
+          "soundmark": "de-ma-KRA-tee-ya"
+        }
+      ]
+    },
+    {
+      "id": "ruhi-10",
+      "order": 10,
+      "title": "现代俄罗斯",
+      "description": "当代俄罗斯历史相关词汇。",
+      "statements": [
+        {
+          "english": "Росси́йская Федера́ция",
+          "chinese": "俄罗斯联邦",
+          "soundmark": "ras-SEE-ska-ya fe-de-RA-tsee-ya"
+        },
+        {
+          "english": "Конститу́ция",
+          "chinese": "宪法",
+          "soundmark": "kan-stee-TOO-tsee-ya"
+        },
+        {
+          "english": "ры́ночная эконо́мика",
+          "chinese": "市场经济",
+          "soundmark": "RY-na-cha-ya e-ka-NO-mee-ka"
+        },
+        {
+          "english": "эконо́мический рост",
+          "chinese": "经济增长",
+          "soundmark": "e-ka-NO-mee-che-skee rost"
+        },
+        {
+          "english": "совреме́нная Росси́я",
+          "chinese": "现代俄罗斯",
+          "soundmark": "sav-re-MEN-na-ya ras-SEE-ya"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "id": "ru-news",
+  "title": "俄语新闻用语",
+  "description": "政治经济社会等新闻中常用的俄语词汇和句式。",
+  "cover": "https://images.unsplash.com/photo-1495020689067-958852a7765e?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rune-01",
+      "order": 1,
+      "title": "政治新闻",
+      "description": "政治新闻常用俄语词汇。",
+      "statements": [
+        {
+          "english": "президе́нт",
+          "chinese": "总统",
+          "soundmark": "pre-zee-DENT"
+        },
+        {
+          "english": "прави́тельство",
+          "chinese": "政府",
+          "soundmark": "pra-vee-TEL-stva"
+        },
+        {
+          "english": "парла́мент",
+          "chinese": "议会",
+          "soundmark": "par-LA-ment"
+        },
+        {
+          "english": "вы́боры",
+          "chinese": "选举",
+          "soundmark": "VY-ba-ry"
+        },
+        {
+          "english": "перегово́ры",
+          "chinese": "谈判",
+          "soundmark": "pe-re-ga-VO-ry"
+        }
+      ]
+    },
+    {
+      "id": "rune-02",
+      "order": 2,
+      "title": "经济新闻",
+      "description": "经济新闻常用俄语词汇。",
+      "statements": [
+        {
+          "english": "эконо́мика",
+          "chinese": "经济",
+          "soundmark": "e-ka-NO-mee-ka"
+        },
+        {
+          "english": "ры́нок",
+          "chinese": "市场",
+          "soundmark": "RY-nak"
+        },
+        {
+          "english": "инфля́ция",
+          "chinese": "通货膨胀",
+          "soundmark": "een-FLYA-tsee-ya"
+        },
+        {
+          "english": "бюдже́т",
+          "chinese": "预算",
+          "soundmark": "byud-ZHET"
+        },
+        {
+          "english": "инвести́ции",
+          "chinese": "投资",
+          "soundmark": "een-ves-TEE-tsee-ee"
+        }
+      ]
+    },
+    {
+      "id": "rune-03",
+      "order": 3,
+      "title": "天气新闻",
+      "description": "天气预报和气候新闻词汇。",
+      "statements": [
+        {
+          "english": "пого́да",
+          "chinese": "天气",
+          "soundmark": "pa-GO-da"
+        },
+        {
+          "english": "температу́ра",
+          "chinese": "温度",
+          "soundmark": "tem-pe-ra-TOO-ra"
+        },
+        {
+          "english": "оса́дки",
+          "chinese": "降水",
+          "soundmark": "a-SAD-kee"
+        },
+        {
+          "english": "гроза́",
+          "chinese": "雷雨",
+          "soundmark": "gra-ZA"
+        },
+        {
+          "english": "прогно́з пого́ды",
+          "chinese": "天气预报",
+          "soundmark": "prag-NOZ pa-GO-dy"
+        }
+      ]
+    },
+    {
+      "id": "rune-04",
+      "order": 4,
+      "title": "体育新闻",
+      "description": "体育新闻常用俄语词汇。",
+      "statements": [
+        {
+          "english": "спорт",
+          "chinese": "体育",
+          "soundmark": "sport"
+        },
+        {
+          "english": "соревнова́ние",
+          "chinese": "比赛",
+          "soundmark": "sa-rev-na-VA-nee-ye"
+        },
+        {
+          "english": "чемпиона́т",
+          "chinese": "锦标赛",
+          "soundmark": "chem-pee-na-T"
+        },
+        {
+          "english": "стадио́н",
+          "chinese": "体育场",
+          "soundmark": "sta-dee-ON"
+        },
+        {
+          "english": "побе́да",
+          "chinese": "胜利",
+          "soundmark": "pa-BYE-da"
+        }
+      ]
+    },
+    {
+      "id": "rune-05",
+      "order": 5,
+      "title": "文化新闻",
+      "description": "文化艺术新闻常用俄语词汇。",
+      "statements": [
+        {
+          "english": "культу́ра",
+          "chinese": "文化",
+          "soundmark": "kool-TOO-ra"
+        },
+        {
+          "english": "вы́ставка",
+          "chinese": "展览",
+          "soundmark": "VY-stav-ka"
+        },
+        {
+          "english": "премье́ра",
+          "chinese": "首映",
+          "soundmark": "prem-YE-ra"
+        },
+        {
+          "english": "гастроли",
+          "chinese": "巡回演出",
+          "soundmark": "GAS-tra-lee"
+        },
+        {
+          "english": "фестива́ль",
+          "chinese": "艺术节",
+          "soundmark": "fes-tee-VAL"
+        }
+      ]
+    },
+    {
+      "id": "rune-06",
+      "order": 6,
+      "title": "国际新闻",
+      "description": "国际新闻常用俄语词汇。",
+      "statements": [
+        {
+          "english": "междунаро́дный",
+          "chinese": "国际的",
+          "soundmark": "mezh-doo-na-ROD-ny"
+        },
+        {
+          "english": "зарубе́жный",
+          "chinese": "国外的",
+          "soundmark": "za-roo-BEZH-ny"
+        },
+        {
+          "english": "Организа́ция Объединённых На́ций",
+          "chinese": "联合国",
+          "soundmark": "or-ga-nee-ZA-tsee-ya a-byed-nyo-nykh NA-tsee"
+        },
+        {
+          "english": "конфли́кт",
+          "chinese": "冲突",
+          "soundmark": "kan-FLEEKT"
+        },
+        {
+          "english": "сотру́дничество",
+          "chinese": "合作",
+          "soundmark": "sa-TROOD-nee-che-stva"
+        }
+      ]
+    },
+    {
+      "id": "rune-07",
+      "order": 7,
+      "title": "标题用语",
+      "description": "新闻标题常用词汇和句式。",
+      "statements": [
+        {
+          "english": "сро́чные новости",
+          "chinese": "紧急新闻",
+          "soundmark": "SROCH-ny-ye NO-va-stee"
+        },
+        {
+          "english": "эксклюзи́в",
+          "chinese": "独家新闻",
+          "soundmark": "ek-sklyu-ZEEF"
+        },
+        {
+          "english": "гла́вная но́вость",
+          "chinese": "头条新闻",
+          "soundmark": "GLAV-na-ya NO-vast"
+        },
+        {
+          "english": "прямо́й эфи́р",
+          "chinese": "直播",
+          "soundmark": "prya-MOY e-FEER"
+        },
+        {
+          "english": "горя́чая те́ма",
+          "chinese": "热门话题",
+          "soundmark": "ga-RYA-cha-ya TYE-ma"
+        }
+      ]
+    },
+    {
+      "id": "rune-08",
+      "order": 8,
+      "title": "新闻结构",
+      "description": "新闻报道结构和句式。",
+      "statements": [
+        {
+          "english": "По сообще́ниям...",
+          "chinese": "据……报道",
+          "soundmark": "pa sa-APSHCHA-nee-yam"
+        },
+        {
+          "english": "Ожида́ется, что...",
+          "chinese": "预计……",
+          "soundmark": "a-zhee-DA-ye-tsa shto"
+        },
+        {
+          "english": "Специали́сты отме́тили...",
+          "chinese": "专家指出……",
+          "soundmark": "spe-tsia-LEE-sty at-MYE-tee-lee"
+        },
+        {
+          "english": "Как сообща́ется...",
+          "chinese": "据悉……",
+          "soundmark": "kak sa-APSHCHA-ye-tsa"
+        },
+        {
+          "english": "По мне́нию экспертов...",
+          "chinese": "据专家意见……",
+          "soundmark": "pa MNE-nee-yu eks-PER-tov"
+        }
+      ]
+    },
+    {
+      "id": "rune-09",
+      "order": 9,
+      "title": "采访用语",
+      "description": "新闻采访常用短语。",
+      "statements": [
+        {
+          "english": "интервью́",
+          "chinese": "采访",
+          "soundmark": "een-ter-VYU"
+        },
+        {
+          "english": "корреспонде́нт",
+          "chinese": "记者",
+          "soundmark": "ka-res-pan-DENT"
+        },
+        {
+          "english": "вопро́с",
+          "chinese": "问题",
+          "soundmark": "va-PROS"
+        },
+        {
+          "english": "коммента́рий",
+          "chinese": "评论",
+          "soundmark": "ka-men-TA-ree"
+        },
+        {
+          "english": "пресс-конфере́нция",
+          "chinese": "新闻发布会",
+          "soundmark": "pres-kon-fe-REN-tsee-ya"
+        }
+      ]
+    },
+    {
+      "id": "rune-10",
+      "order": 10,
+      "title": "社交网络新闻",
+      "description": "社交媒体和网络新闻相关词汇。",
+      "statements": [
+        {
+          "english": "социа́льная сеть",
+          "chinese": "社交网络",
+          "soundmark": "sa-tsi-AL-na-ya set"
+        },
+        {
+          "english": "ла́йк",
+          "chinese": "点赞",
+          "soundmark": "layk"
+        },
+        {
+          "english": "репо́ст",
+          "chinese": "转发",
+          "soundmark": "re-POST"
+        },
+        {
+          "english": "подпи́счик",
+          "chinese": "订阅者",
+          "soundmark": "pad-PEESh-cheek"
+        },
+        {
+          "english": "вирусный",
+          "chinese": "病毒式传播的",
+          "soundmark": "VEE-roos-ny"
+        }
+      ]
+    }
+  ]
+}

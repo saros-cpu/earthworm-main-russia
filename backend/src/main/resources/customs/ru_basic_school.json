@@ -1,0 +1,529 @@
+{
+  "id": "ru-basic-school",
+  "title": "学习与课堂用语",
+  "description": "学习用品、课堂指令和学校相关词汇。",
+  "cover": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rusc-01",
+      "order": 1,
+      "title": "学习用品",
+      "description": "教室和学习用品俄语名称。",
+      "statements": [
+        {
+          "english": "кни́га",
+          "chinese": "书",
+          "soundmark": "KNEE-ga"
+        },
+        {
+          "english": "тетра́дь",
+          "chinese": "笔记本",
+          "soundmark": "tet-RAD"
+        },
+        {
+          "english": "ру́чка",
+          "chinese": "笔",
+          "soundmark": "ROOCH-ka"
+        },
+        {
+          "english": "каранда́ш",
+          "chinese": "铅笔",
+          "soundmark": "ka-ran-DASH"
+        },
+        {
+          "english": "слова́рь",
+          "chinese": "词典",
+          "soundmark": "sla-VAR"
+        },
+        {
+          "english": "уче́бник",
+          "chinese": "教科书",
+          "soundmark": "oo-CHEB-neek"
+        },
+        {
+          "english": "доска́",
+          "chinese": "黑板",
+          "soundmark": "das-KA"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/13-Урок 1-1.avi"
+    },
+    {
+      "id": "rusc-02",
+      "order": 2,
+      "title": "课堂指令",
+      "description": "课堂常用俄语指令和提问。",
+      "statements": [
+        {
+          "english": "Слу́шайте!",
+          "chinese": "请听！",
+          "soundmark": "SLOO-shay-tye"
+        },
+        {
+          "english": "Повтори́те!",
+          "chinese": "请重复！",
+          "soundmark": "pav-ta-REE-tye"
+        },
+        {
+          "english": "Чита́йте!",
+          "chinese": "请读！",
+          "soundmark": "chee-TAY-tye"
+        },
+        {
+          "english": "Пиши́те!",
+          "chinese": "请写！",
+          "soundmark": "pee-SHEE-tye"
+        },
+        {
+          "english": "Я не понима́ю.",
+          "chinese": "我不明白。",
+          "soundmark": "ya ne pa-nee-MA-yoo"
+        },
+        {
+          "english": "Мо́жно вы́йти?",
+          "chinese": "可以出去吗？",
+          "soundmark": "MOZH-na VY-tee"
+        },
+        {
+          "english": "Спаси́бо за уро́к.",
+          "chinese": "谢谢老师。",
+          "soundmark": "spa-SEE-ba za oo-ROK"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/14-Урок 1-2.avi"
+    },
+    {
+      "id": "rusc-03",
+      "order": 3,
+      "title": "学科名称",
+      "description": "中小学各学科的俄语名称。",
+      "statements": [
+        {
+          "english": "математика",
+          "chinese": "数学",
+          "soundmark": "ma-te-MA-tee-ka"
+        },
+        {
+          "english": "ру́сский язы́к",
+          "chinese": "俄语",
+          "soundmark": "ROOS-kiy ya-ZYK"
+        },
+        {
+          "english": "литерату́ра",
+          "chinese": "文学",
+          "soundmark": "lee-te-ra-TOO-ra"
+        },
+        {
+          "english": "исто́рия",
+          "chinese": "历史",
+          "soundmark": "ees-TO-ree-ya"
+        },
+        {
+          "english": "геогра́фия",
+          "chinese": "地理",
+          "soundmark": "gee-a-GRA-fee-ya"
+        },
+        {
+          "english": "фи́зика",
+          "chinese": "物理",
+          "soundmark": "FEE-zee-ka"
+        },
+        {
+          "english": "хи́мия",
+          "chinese": "化学",
+          "soundmark": "KHEE-mee-ya"
+        },
+        {
+          "english": "физкульту́ра",
+          "chinese": "体育",
+          "soundmark": "fez-kool-TOO-ra"
+        },
+        {
+          "english": "му́зыка",
+          "chinese": "音乐",
+          "soundmark": "MOO-zy-ka"
+        },
+        {
+          "english": "рисова́ние",
+          "chinese": "美术",
+          "soundmark": "ree-sa-VA-nee-ye"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/16-Урок 2-1.avi"
+    },
+    {
+      "id": "rusc-04",
+      "order": 4,
+      "title": "学生提问",
+      "description": "课堂上学生常用的提问表达。",
+      "statements": [
+        {
+          "english": "Мо́жно зада́ть вопро́с?",
+          "chinese": "可以问一个问题吗？",
+          "soundmark": "MOZH-na za-DAT vap-ROS"
+        },
+        {
+          "english": "Что зна́чит э́то сло́во?",
+          "chinese": "这个词是什么意思？",
+          "soundmark": "shto ZNA-cheet E-ta SLO-va"
+        },
+        {
+          "english": "Как э́то перевести́?",
+          "chinese": "这个怎么翻译？",
+          "soundmark": "kak E-ta pe-re-ves-TEE"
+        },
+        {
+          "english": "Мо́жно ещё раз?",
+          "chinese": "可以再来一次吗？",
+          "soundmark": "MOZH-na ye-SHCHYO raz"
+        },
+        {
+          "english": "Я не успе́л/успе́ла.",
+          "chinese": "我没来得及。（男/女）",
+          "soundmark": "ya ne oos-PYEL / oos-PYE-la"
+        },
+        {
+          "english": "Повтори́те, пожа́луйста.",
+          "chinese": "请重复一遍。",
+          "soundmark": "pav-ta-REE-tye pa-ZHA-loo-sta"
+        },
+        {
+          "english": "Мо́жно по́медленнее?",
+          "chinese": "可以慢一点吗？",
+          "soundmark": "MOZH-na pa-MYED-le-ne-ye"
+        },
+        {
+          "english": "Как э́то произноси́тся?",
+          "chinese": "这个怎么发音？",
+          "soundmark": "kak E-ta pra-eez-na-SEET-sya"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/17-Урок 2-2.avi"
+    },
+    {
+      "id": "rusc-05",
+      "order": 5,
+      "title": "作业与任务",
+      "description": "与作业和学习任务相关的词汇。",
+      "statements": [
+        {
+          "english": "дома́шнее зада́ние",
+          "chinese": "家庭作业",
+          "soundmark": "da-MASH-ne-ye za-DA-nee-ye"
+        },
+        {
+          "english": "упражне́ние",
+          "chinese": "练习",
+          "soundmark": "oo-prazh-NE-nee-ye"
+        },
+        {
+          "english": "зада́ча",
+          "chinese": "任务/题",
+          "soundmark": "za-DA-cha"
+        },
+        {
+          "english": "срок сда́чи",
+          "chinese": "截止日期",
+          "soundmark": "srok ZDA-chee"
+        },
+        {
+          "english": "вы́учить",
+          "chinese": "背会/学会",
+          "soundmark": "VY-oo-cheet"
+        },
+        {
+          "english": "подгото́виться",
+          "chinese": "准备",
+          "soundmark": "pad-ga-TO-veet-sya"
+        },
+        {
+          "english": "Я сде́лал/сде́лала зада́ние.",
+          "chinese": "我做完了作业。（男/女）",
+          "soundmark": "ya ZDYE-lal / ZDYE-la-la za-DA-nee-ye"
+        },
+        {
+          "english": "Мы должны́ сдать э́ту рабо́ту.",
+          "chinese": "我们必须交这份作业。",
+          "soundmark": "my dalzh-NY zdat E-too ra-BO-too"
+        },
+        {
+          "english": "сочине́ние",
+          "chinese": "作文",
+          "soundmark": "sa-chee-NE-nee-ye"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/18-Урок 3-1.avi"
+    },
+    {
+      "id": "rusc-06",
+      "order": 6,
+      "title": "考试与成绩",
+      "description": "考试和成绩相关的词汇。",
+      "statements": [
+        {
+          "english": "экза́мен",
+          "chinese": "考试",
+          "soundmark": "eg-ZA-men"
+        },
+        {
+          "english": "тест",
+          "chinese": "测验",
+          "soundmark": "test"
+        },
+        {
+          "english": "оце́нка",
+          "chinese": "分数/成绩",
+          "soundmark": "a-TSEN-ka"
+        },
+        {
+          "english": "пятёрка",
+          "chinese": "五分（最高分）",
+          "soundmark": "pe-TYOR-ka"
+        },
+        {
+          "english": "четвёрка",
+          "chinese": "四分",
+          "soundmark": "chet-VYOR-ka"
+        },
+        {
+          "english": "тро́йка",
+          "chinese": "三分",
+          "soundmark": "TROY-ka"
+        },
+        {
+          "english": "дво́йка",
+          "chinese": "二分（不及格）",
+          "soundmark": "DVOY-ka"
+        },
+        {
+          "english": "сдать экза́мен",
+          "chinese": "通过考试",
+          "soundmark": "zdat eg-ZA-men"
+        },
+        {
+          "english": "провали́ться на экза́мене",
+          "chinese": "考试不及格",
+          "soundmark": "pra-va-LEET-sya na eg-ZA-me-ne"
+        },
+        {
+          "english": "результа́т",
+          "chinese": "成绩/结果",
+          "soundmark": "re-zool-TAT"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/19-Урок 3-2.avi"
+    },
+    {
+      "id": "rusc-07",
+      "order": 7,
+      "title": "图书馆词汇",
+      "description": "图书馆和学习地点的相关表达。",
+      "statements": [
+        {
+          "english": "библиоте́ка",
+          "chinese": "图书馆",
+          "soundmark": "beeb-lee-a-TYE-ka"
+        },
+        {
+          "english": "чита́льный зал",
+          "chinese": "阅览室",
+          "soundmark": "chee-TAL-ny zal"
+        },
+        {
+          "english": "кни́жная по́лка",
+          "chinese": "书架",
+          "soundmark": "KNEEZH-na-ya POL-ka"
+        },
+        {
+          "english": "взять кни́гу",
+          "chinese": "借书",
+          "soundmark": "vzyat KNEE-goo"
+        },
+        {
+          "english": "верну́ть кни́гу",
+          "chinese": "还书",
+          "soundmark": "ver-NOOT KNEE-goo"
+        },
+        {
+          "english": "чита́тельский биле́т",
+          "chinese": "借书证",
+          "soundmark": "chee-TA-tel-skiy bee-LYET"
+        },
+        {
+          "english": "спра́вочник",
+          "chinese": "参考书/手册",
+          "soundmark": "SPRA-vach-neek"
+        },
+        {
+          "english": "энциклопе́дия",
+          "chinese": "百科全书",
+          "soundmark": "en-tsyk-la-PE-dee-ya"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/22-Урок 4-1.avi"
+    },
+    {
+      "id": "rusc-08",
+      "order": 8,
+      "title": "学校设施",
+      "description": "学校各处所的俄语名称。",
+      "statements": [
+        {
+          "english": "шко́ла",
+          "chinese": "学校",
+          "soundmark": "SHKO-la"
+        },
+        {
+          "english": "кла́сс",
+          "chinese": "教室/班级",
+          "soundmark": "klas"
+        },
+        {
+          "english": "столо́вая",
+          "chinese": "食堂",
+          "soundmark": "sta-LO-va-ya"
+        },
+        {
+          "english": "спортза́л",
+          "chinese": "体育馆",
+          "soundmark": "sport-ZAL"
+        },
+        {
+          "english": "кабине́т дире́ктора",
+          "chinese": "校长办公室",
+          "soundmark": "ka-bee-NET dee-REK-ta-ra"
+        },
+        {
+          "english": "раздева́лка",
+          "chinese": "更衣室",
+          "soundmark": "raz-de-VAL-ka"
+        },
+        {
+          "english": "медици́нский кабине́т",
+          "chinese": "医务室",
+          "soundmark": "me-dee-TSEEN-skiy ka-bee-NET"
+        },
+        {
+          "english": "шко́льный двор",
+          "chinese": "校园",
+          "soundmark": "SHKOL-ny dvor"
+        },
+        {
+          "english": "лаборато́рия",
+          "chinese": "实验室",
+          "soundmark": "la-ba-ra-TO-ree-ya"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/23-Урок 4-2.avi"
+    },
+    {
+      "id": "rusc-09",
+      "order": 9,
+      "title": "课外活动",
+      "description": "课外兴趣和活动的相关词汇。",
+      "statements": [
+        {
+          "english": "кружо́к",
+          "chinese": "兴趣小组/社团",
+          "soundmark": "kroo-ZHOK"
+        },
+        {
+          "english": "хор",
+          "chinese": "合唱团",
+          "soundmark": "khor"
+        },
+        {
+          "english": "спорти́вная секция",
+          "chinese": "体育训练班",
+          "soundmark": "spar-TEEV-na-ya SEK-tsee-ya"
+        },
+        {
+          "english": "экску́рсия",
+          "chinese": "远足/参观",
+          "soundmark": "eks-KOOR-see-ya"
+        },
+        {
+          "english": "шко́льный ве́чер",
+          "chinese": "学校晚会",
+          "soundmark": "SHKOL-ny VYE-cher"
+        },
+        {
+          "english": "конку́рс",
+          "chinese": "比赛/竞赛",
+          "soundmark": "kan-KOORS"
+        },
+        {
+          "english": "олимпиа́да",
+          "chinese": "奥林匹克竞赛",
+          "soundmark": "a-leem-pee-A-da"
+        },
+        {
+          "english": "волонтёрство",
+          "chinese": "志愿活动",
+          "soundmark": "va-lan-TYOR-stva"
+        },
+        {
+          "english": "кани́кулы",
+          "chinese": "假期",
+          "soundmark": "ka-NEE-koo-ly"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/27-Урок 5-1.avi"
+    },
+    {
+      "id": "rusc-10",
+      "order": 10,
+      "title": "学校沟通",
+      "description": "与老师和同学交往的常用表达。",
+      "statements": [
+        {
+          "english": "Учи́тель спроси́л меня́.",
+          "chinese": "老师叫了我。",
+          "soundmark": "oo-CHEE-tel spra-SEEL me-NYA"
+        },
+        {
+          "english": "Я отве́тил у доски́.",
+          "chinese": "我在黑板前回答。",
+          "soundmark": "ya at-VYE-teel oo das-KEE"
+        },
+        {
+          "english": "Прочита́йте текст.",
+          "chinese": "请朗读课文。",
+          "soundmark": "pra-chee-TAY-te tekst"
+        },
+        {
+          "english": "Сади́тесь, пожа́луйста.",
+          "chinese": "请坐。",
+          "soundmark": "sa-DEE-tes pa-ZHA-loo-sta"
+        },
+        {
+          "english": "Откро́йте тетра́ди.",
+          "chinese": "打开笔记本。",
+          "soundmark": "at-KROY-te tet-RA-dee"
+        },
+        {
+          "english": "Закро́йте кни́ги.",
+          "chinese": "合上书。",
+          "soundmark": "za-KROY-te KNEE-gee"
+        },
+        {
+          "english": "Кто дежу́рит сего́дня?",
+          "chinese": "今天谁值日？",
+          "soundmark": "kto de-ZHOO-reet se-VOD-nya"
+        },
+        {
+          "english": "Уро́к око́нчен.",
+          "chinese": "下课了。",
+          "soundmark": "oo-ROK a-KON-chen"
+        },
+        {
+          "english": "До свида́ния, ребя́та!",
+          "chinese": "同学们再见！",
+          "soundmark": "da svee-DA-nee-ya re-BYA-ta"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/28-Урок 5-2.avi"
+    }
+  ]
+}

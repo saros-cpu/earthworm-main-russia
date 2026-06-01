@@ -1,0 +1,189 @@
+{
+  "id": "east-uni-1",
+  "title": "大学俄语(东方) · 第1册",
+  "description": "大学俄语(东方)第一册课程同步练习。涵盖语音入门、基本问候、自我介绍、家庭、学习等主题，适合零起点或初级学习者。",
+  "cover": "https://images.unsplash.com/photo-1523050854058-8df90110c7f1?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "eu1-01",
+      "order": 1,
+      "title": "第1课 语音入门前（Фонетика I）",
+      "description": "俄语字母发音基础：元音和辅音的发音规则。",
+      "statements": [
+        { "english": "мама — [mama]", "chinese": "妈妈 — 字母 А, М 的发音", "soundmark": "ma-ma" },
+        { "english": "папа — [papa]", "chinese": "爸爸 — 字母 П 的发音", "soundmark": "pa-pa" },
+        { "english": "дом — [dom]", "chinese": "房子 — 字母 Д, О 的发音", "soundmark": "dom" },
+        { "english": "кот — [kot]", "chinese": "公猫 — 字母 К, Т 的发音", "soundmark": "kot" },
+        { "english": "нос — [nos]", "chinese": "鼻子 — 字母 Н, С 的发音", "soundmark": "nos" },
+        { "english": "рука — [ruka]", "chinese": "手 — 字母 Р 的颤音", "soundmark": "roo-ka" },
+        { "english": "мир — [mir]", "chinese": "和平/世界", "soundmark": "meer" },
+        { "english": "сад — [sat]", "chinese": "花园 — 词尾清化", "soundmark": "sat" },
+        { "english": "зуб — [zup]", "chinese": "牙齿 — 词尾清化 б→п", "soundmark": "zoop" },
+        { "english": "это — [eta]", "chinese": "这个 — 指示代词", "soundmark": "e-ta" }
+      ]
+    },
+    {
+      "id": "eu1-02",
+      "order": 2,
+      "title": "第2课 语音入门后（Фонетика II）",
+      "description": "继续学习俄语发音，掌握软硬辅音和调型。",
+      "statements": [
+        { "english": "дядя — [dʹadʹa]", "chinese": "叔叔 — 软辅音 Дʹ", "soundmark": "dya-dya" },
+        { "english": "тётя — [tʹotʹa]", "chinese": "阿姨 — 软辅音 Тʹ", "soundmark": "tyo-tya" },
+        { "english": "нёс — [nʹos]", "chinese": "提了（过去时）— 软辅音 Нʹ", "soundmark": "nyos" },
+        { "english": "пять — [pʹatʹ]", "chinese": "五 — 软辅音 Пʹ, Тʹ", "soundmark": "pyat" },
+        { "english": "здесь — [zʹdʹesʹ]", "chinese": "在这里", "soundmark": "zdyes" },
+        { "english": "сюда — [sʹuda]", "chinese": "到这里", "soundmark": "syu-da" },
+        { "english": "иду — [idu]", "chinese": "我走 — 动词变位", "soundmark": "ee-doo" },
+        { "english": "этаж — [etash]", "chinese": "楼层 — 词尾 ж→ш 清化", "soundmark": "e-tash" },
+        { "english": "сад — [sat]", "chinese": "花园", "soundmark": "sat" },
+        { "english": "рад — [rat]", "chinese": "高兴", "soundmark": "rat" }
+      ]
+    },
+    {
+      "id": "eu1-03",
+      "order": 3,
+      "title": "第3课  acquaintances（Знакомство）",
+      "description": "结识朋友，自我介绍，询问姓名。",
+      "statements": [
+        { "english": "Меня зовут Анна.", "chinese": "我叫安娜。", "soundmark": "mee-nya za-voot an-na" },
+        { "english": "Как вас зовут?", "chinese": "您叫什么名字？", "soundmark": "kak vas za-voot" },
+        { "english": "Меня зовут Иван.", "chinese": "我叫伊万。", "soundmark": "mee-nya za-voot ee-van" },
+        { "english": "Очень приятно!", "chinese": "很高兴（认识您）！", "soundmark": "o-chen pree-yat-na" },
+        { "english": "Это мой друг.", "chinese": "这是我的朋友。", "soundmark": "e-ta moy drook" },
+        { "english": "Это моя подруга.", "chinese": "这是我的女性朋友。", "soundmark": "e-ta ma-ya pa-droo-ga" },
+        { "english": "Кто это?", "chinese": "这是谁？", "soundmark": "kto e-ta" },
+        { "english": "Это преподаватель.", "chinese": "这是老师。", "soundmark": "e-ta pre-pa-da-va-tyel" },
+        { "english": "Откуда вы?", "chinese": "您来自哪里？", "soundmark": "at-koo-da vy" },
+        { "english": "Я из Китая.", "chinese": "我来自中国。", "soundmark": "ya eez kee-ta-ya" }
+      ]
+    },
+    {
+      "id": "eu1-04",
+      "order": 4,
+      "title": "第4课 我的家庭（Моя семья）",
+      "description": "介绍家庭成员，学习名词性和物主代词。",
+      "statements": [
+        { "english": "Моя семья большая.", "chinese": "我的家庭很大。", "soundmark": "ma-ya seem-ya bal-sha-ya" },
+        { "english": "Это мой папа.", "chinese": "这是我爸爸。", "soundmark": "e-ta moy pa-pa" },
+        { "english": "Это моя мама.", "chinese": "这是我妈妈。", "soundmark": "e-ta ma-ya ma-ma" },
+        { "english": "У меня есть брат.", "chinese": "我有一个兄弟。", "soundmark": "oo mee-nya yest brat" },
+        { "english": "У меня есть сестра.", "chinese": "我有一个姐妹。", "soundmark": "oo mee-nya yest ses-tra" },
+        { "english": "Моего брата зовут Дима.", "chinese": "我的兄弟叫吉马。", "soundmark": "ma-ye-vo bra-ta za-voot dee-ma" },
+        { "english": "Сколько человек в вашей семье?", "chinese": "你家有几口人？", "soundmark": "skol-ka che-la-vyek v va-shey sem-ye" },
+        { "english": "Нас пятеро.", "chinese": "我们家五口人。", "soundmark": "nas pya-te-ra" },
+        { "english": "Я люблю свою семью.", "chinese": "我爱我的家庭。", "soundmark": "ya lyub-lyu sva-yu sem-yu" },
+        { "english": "Мои родители — врачи.", "chinese": "我的父母是医生。", "soundmark": "ma-ee ra-dee-te-lee vra-chee" }
+      ]
+    },
+    {
+      "id": "eu1-05",
+      "order": 5,
+      "title": "第5课 我们的教室（Наш класс）",
+      "description": "学习教室和物品词汇，掌握指示代词和疑问词。",
+      "statements": [
+        { "english": "Это наш класс.", "chinese": "这是我们的教室。", "soundmark": "e-ta nash klas" },
+        { "english": "Где мой стол?", "chinese": "我的桌子在哪里？", "soundmark": "gdye moy stol" },
+        { "english": "Вот ваша книга.", "chinese": "这是您的书。", "soundmark": "vot va-sha knee-ga" },
+        { "english": "Что это?", "chinese": "这是什么？", "soundmark": "shto e-ta" },
+        { "english": "Это словарь.", "chinese": "这是词典。", "soundmark": "e-ta sla-var" },
+        { "english": "А это тетрадь.", "chinese": "而这是练习本。", "soundmark": "a e-ta tet-rad" },
+        { "english": "Где преподаватель?", "chinese": "老师在哪里？", "soundmark": "gdye pre-pa-da-va-tyel" },
+        { "english": "Он здесь.", "chinese": "他在这里。", "soundmark": "on zdyes" },
+        { "english": "Студенты в аудитории.", "chinese": "大学生们在教室里。", "soundmark": "stoo-dyen-ty v a-oo-dee-to-ree-ee" },
+        { "english": "У нас сегодня урок.", "chinese": "我们今天有课。", "soundmark": "oo nas see-vod-nya o-rok" }
+      ]
+    },
+    {
+      "id": "eu1-06",
+      "order": 6,
+      "title": "第6课 我的学习（Моя учёба）",
+      "description": "谈论学习生活，掌握动词第一变位法。",
+      "statements": [
+        { "english": "Я учусь в университете.", "chinese": "我在大学学习。", "soundmark": "ya oo-chus v oo-nee-ver-see-tye" },
+        { "english": "Я изучаю русский язык.", "chinese": "我学习俄语。", "soundmark": "ya e-zu-cha-yu rooss-kiy ya-zyk" },
+        { "english": "Мы читаем и пишем.", "chinese": "我们读和写。", "soundmark": "my chee-ta-yem e pee-shem" },
+        { "english": "Вы говорите по-русски?", "chinese": "您说俄语吗？", "soundmark": "vy ga-va-ree-tye pa-rooss-kee" },
+        { "english": "Я понимаю по-русски.", "chinese": "我懂俄语。", "soundmark": "ya pa-nee-ma-yu pa-rooss-kee" },
+        { "english": "Он говорит быстро.", "chinese": "他说得很快。", "soundmark": "on ga-vo-reet byst-ra" },
+        { "english": "Мы слушаем преподавателя.", "chinese": "我们听老师讲课。", "soundmark": "my sloo-sha-yem pre-pa-da-va-tye-lya" },
+        { "english": "Я отвечаю на вопрос.", "chinese": "我回答问题。", "soundmark": "ya at-ve-cha-yu na vap-ros" },
+        { "english": "Ты делаешь домашнее задание?", "chinese": "你做作业吗？", "soundmark": "ty dye-la-yesh da-mash-ne-ye za-da-nee-ye" },
+        { "english": "Урок начался в 9 часов.", "chinese": "课在9点开始。", "soundmark": "o-rok na-chal-sya v dye-vyat cha-sov" }
+      ]
+    },
+    {
+      "id": "eu1-07",
+      "order": 7,
+      "title": "第7课 在图书馆（В библиотеке）",
+      "description": "图书馆场景词汇和表达。",
+      "statements": [
+        { "english": "Где находится библиотека?", "chinese": "图书馆在哪里？", "soundmark": "gdye na-kho-deet-sa beeb-lee-a-tye-ka" },
+        { "english": "Я хочу взять книгу.", "chinese": "我想借一本书。", "soundmark": "ya kha-choo vzyat knee-goo" },
+        { "english": "У вас есть русско-китайский словарь?", "chinese": "有俄汉词典吗？", "soundmark": "oo vas yest rooss-ka kee-tay-skee sla-var" },
+        { "english": "Запишите меня в библиотеку.", "chinese": "请帮我办图书证。", "soundmark": "za-pee-shee-tye mee-nya v beeb-lee-a-tye-koo" },
+        { "english": "Сколько книг можно взять?", "chinese": "可以借几本书？", "soundmark": "skol-ka knaek mo-zhna vzyat" },
+        { "english": "Эта книга очень интересная.", "chinese": "这本书非常有意思。", "soundmark": "e-ta knee-ga o-chen een-te-res-na-ya" },
+        { "english": "Я читаю журнал.", "chinese": "我在看杂志。", "soundmark": "ya chee-ta-yu zhoor-nal" },
+        { "english": "Где читальный зал?", "chinese": "阅读室在哪里？", "soundmark": "gdye chee-tal-ny zal" },
+        { "english": "Здесь тихо.", "chinese": "这里很安静。", "soundmark": "zdyes tee-kha" },
+        { "english": "Книги можно вернуть до пятницы.", "chinese": "书可以在周五前归还。", "soundmark": "knee-gee mo-zhna ver-noot da pyat-nee-tsy" }
+      ]
+    },
+    {
+      "id": "eu1-08",
+      "order": 8,
+      "title": "第8课 我的日常生活（Мой день）",
+      "description": "描述日常作息和活动。",
+      "statements": [
+        { "english": "Я встаю в 7 часов.", "chinese": "我7点起床。", "soundmark": "ya fsta-yu v sem cha-sov" },
+        { "english": "Я умываюсь и одеваюсь.", "chinese": "我洗漱穿衣。", "soundmark": "ya oo-my-va-yus e a-de-va-yus" },
+        { "english": "Я завтракаю в 8 часов.", "chinese": "我8点吃早饭。", "soundmark": "ya zav-tra-ka-yu v vo-sem cha-sov" },
+        { "english": "Я иду в университет.", "chinese": "我去大学。", "soundmark": "ya ee-doo v oo-nee-ver-see-tet" },
+        { "english": "Уроки начинаются в 9.", "chinese": "9点开始上课。", "soundmark": "o-ro-kee na-chee-na-yut-sya v dye-vyat" },
+        { "english": "В 12 часов я обедаю.", "chinese": "12点我吃午饭。", "soundmark": "v dve-nat-sat cha-sov ya a-bye-da-yu" },
+        { "english": "После обеда я отдыхаю.", "chinese": "午饭后我休息。", "soundmark": "po-slye a-bye-da ya ad-dy-kha-yu" },
+        { "english": "Вечером я делаю уроки.", "chinese": "晚上我做功课。", "soundmark": "vye-che-rom ya dye-la-yu o-ro-kee" },
+        { "english": "Я ужинаю в 7 вечера.", "chinese": "我晚上7点吃晚饭。", "soundmark": "ya oo-zhee-na-yu v sem vye-che-ra" },
+        { "english": "Я ложусь спать в 11 часов.", "chinese": "我11点睡觉。", "soundmark": "ya la-zhus spat v a-dee-nat-sat cha-sov" }
+      ]
+    },
+    {
+      "id": "eu1-09",
+      "order": 9,
+      "title": "第9课 季节与天气（Время года и погода）",
+      "description": "谈论季节和天气。",
+      "statements": [
+        { "english": "В году четыре времени года.", "chinese": "一年有四季。", "soundmark": "v ga-doo che-ty-re vre-me-nee go-da" },
+        { "english": "Зима — холодное время года.", "chinese": "冬天是寒冷的季节。", "soundmark": "zee-ma kha-lod-na-ye vre-mya go-da" },
+        { "english": "Весной всё цветёт.", "chinese": "春天万物花开。", "soundmark": "ves-noy vsyo tsve-tyot" },
+        { "english": "Летом жарко и солнечно.", "chinese": "夏天炎热并晴朗。", "soundmark": "lye-tom zhar-ka e sol-nech-na" },
+        { "english": "Осенью идут дожди.", "chinese": "秋天多雨。", "soundmark": "o-se-nyu ee-doot dazh-dee" },
+        { "english": "Сегодня хорошая погода.", "chinese": "今天天气不错。", "soundmark": "see-vod-nya kha-ro-sha-ya pa-go-da" },
+        { "english": "На улице идёт снег.", "chinese": "外面在下雪。", "soundmark": "na oo-lee-tse ee-dyot snyek" },
+        { "english": "Температура минус 10 градусов.", "chinese": "气温零下10度。", "soundmark": "tem-pe-ra-too-ra mee-nus dye-syat gra-doo-saf" },
+        { "english": "Моё любимое время года — лето.", "chinese": "我最喜欢的季节是夏天。", "soundmark": "ma-yo lyu-bee-ma-ye vre-mya go-da lye-ta" },
+        { "english": "Осенью листья желтеют.", "chinese": "秋天叶子变黄。", "soundmark": "o-se-nyu lees-tya zhel-tye-yut" }
+      ]
+    },
+    {
+      "id": "eu1-10",
+      "order": 10,
+      "title": "第10课 复习（Повторение）",
+      "description": "第一册总复习：综合练习。",
+      "statements": [
+        { "english": "Меня зовут Александр.", "chinese": "我叫亚历山大。", "soundmark": "mee-nya za-voot a-lek-sandr" },
+        { "english": "Я студент первого курса.", "chinese": "我是一年级大学生。", "soundmark": "ya stoo-dyent pyer-va-va koor-sa" },
+        { "english": "Моя семья живёт в Москве.", "chinese": "我的家庭住在莫斯科。", "soundmark": "ma-ya seem-ya zhee-vyot v maz-kvye" },
+        { "english": "Я люблю учиться.", "chinese": "我喜欢学习。", "soundmark": "ya lyub-lyu oo-cheet-sya" },
+        { "english": "Каждый день я читаю и пишу.", "chinese": "每天我读和写。", "soundmark": "kazh-dy dyen ya chee-ta-yu e pee-shoo" },
+        { "english": "Мне нравится русский язык.", "chinese": "我喜欢俄语。", "soundmark": "mnye nra-vee-tsa rooss-kiy ya-zyk" },
+        { "english": "Зимой в Пекине холодно.", "chinese": "冬天北京很冷。", "soundmark": "zee-moy v pee-kee-ne khol-ad-na" },
+        { "english": "В библиотеке много книг.", "chinese": "图书馆有很多书。", "soundmark": "v beeb-lee-a-tye-ke mno-ga knaek" },
+        { "english": "Мы вместе учимся и отдыхаем.", "chinese": "我们一起学习和休息。", "soundmark": "my vmes-te oo-cheem-sya e ad-dy-kha-yem" },
+        { "english": "До свидания! До встречи!", "chinese": "再见！下次见！", "soundmark": "da svee-da-nee-ya da fstre-chee" }
+      ]
+    }
+  ]
+}

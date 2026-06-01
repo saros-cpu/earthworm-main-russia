@@ -1,0 +1,159 @@
+{
+  "id": "east-uni-7",
+  "title": "大学俄语(东方) · 第7册",
+  "description": "大学俄语(东方)第七册。进入高阶俄语：功能语体（口语/书面语/正式/科技），多重复合句，插入结构深化，修辞手法。",
+  "cover": "https://images.unsplash.com/photo-1522661067900-ab829854a57f?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "eu7-01", "order": 1, "title": "第1课 口语语体（Разговорный стиль）",
+      "statements": [
+        { "english": "Привет! Как дела? Давно не виделись!", "chinese": "嗨！最近怎么样？好久不见！", "soundmark": "pree-vyet kak dye-la dav-no ne vee-de-lees" },
+        { "english": "Ну ты даёшь! Я такого не ожидал.", "chinese": "你可真行！我没想到会这样。", "soundmark": "noo ty da-yosh ya ta-ko-va ne a-zhee-dal" },
+        { "english": "Да ладно? Не может быть!", "chinese": "真的吗？不可能！", "soundmark": "da lad-na ne mo-zhet byt" },
+        { "english": "Слушай, дай мне пожалуйста книгу на пару дней.", "chinese": "听着，把书借我几天。", "soundmark": "sloo-shai dai mnye pa-zhal-sta knee-goo na pa-roo dnyey" },
+        { "english": "Без проблем, всё сделаем.", "chinese": "没问题，我们会搞定的。", "soundmark": "byez prab-lyem vsyo sdye-la-yem" },
+        { "english": "Я сегодня прямо выжатый как лимон.", "chinese": "我今天累得像柠檬一样被榨干了。", "soundmark": "ya see-vod-nya prya-ma vy-zha-ty kak lee-mon" },
+        { "english": "Это просто здорово!", "chinese": "这太棒了！", "soundmark": "e-ta pros-ta zda-ro-va" },
+        { "english": "Да ну, не расстраивайся, всё будет нормально.", "chinese": "哎呀，别难过，一切都会好的。", "soundmark": "da noo ne ras-stra-ee-vay-sya vsyo bu-det nor-mal-na" },
+        { "english": "Лады, договорились!", "chinese": "好嘞，说定了！", "soundmark": "la-dy da-go-vo-ree-lees" },
+        { "english": "Я мигом — через пять минут вернусь.", "chinese": "我马上——五分钟就回来。", "soundmark": "ya mee-gom che-ryez pyat mee-noot ver-nus" }
+      ]
+    },
+    {
+      "id": "eu7-02", "order": 2, "title": "第2课 书面语与正式语体（Книжный и официальный стиль）",
+      "statements": [
+        { "english": "Настоящим уведомляем вас о повышении цен.", "chinese": "兹通知您价格调整。", "soundmark": "na-sta-yash-cheem oo-ve-dam-lya-yem vas o pa-vy-she-nee-ee tsen" },
+        { "english": "В соответствии с договором просим оплатить счёт.", "chinese": "根据合同请支付账单。", "soundmark": "f sa-at-vyet-stvee-ee s da-go-vo-rom pro-seem a-pla-teet schyot" },
+        { "english": "Данное положение вступает в силу с 1 января.", "chinese": "本规定自1月1日起生效。", "soundmark": "dan-na-ye pa-la-zhe-nee-ye fstoo-pa-yet v see-loo s pyer-va-va yan-va-rya" },
+        { "english": "Сообщаем вам, что собрание переносится.", "chinese": "兹通知您会议改期。", "soundmark": "sa-ab-shcha-yem vam shto sa-bra-nee-ye pe-re-no-seet-sya" },
+        { "english": "Вышеуказанные документы были рассмотрены.", "chinese": "上述文件已被审议。", "soundmark": "vy-she-oo-ka-zan-ny-ye da-koo-men-ty by-lee ras-sma-tre-ny" },
+        { "english": "Просим направить ответ в письменной форме.", "chinese": "请以书面形式回复。", "soundmark": "pro-seem na-pra-veet at-vyet f pees-men-nay for-mye" },
+        { "english": "На основании изложенного можно сделать вывод.", "chinese": "基于以上所述可以得出结论。", "soundmark": "na as-no-va-nee-ee eez-la-zhen-na-va mozh-na sdye-lat vy-vot" },
+        { "english": "В связи с вышеизложенным просим принять меры.", "chinese": "鉴于上述情况请采取措施。", "soundmark": "f svee-zee s vy-she-eez-la-zhen-nym pro-seem pree-nyat mye-ry" },
+        { "english": "Обращаем ваше внимание на пункт 3 договора.", "chinese": "我们提请贵方注意合同第3条。", "soundmark": "ab-ra-shcha-yem va-she vnee-ma-nee-ye na punkt tree da-go-vo-ra" },
+        { "english": "С уважением, коллектив компании.", "chinese": "此致敬礼，公司全体同仁。", "soundmark": "s oo-va-zhe-nee-yem ka-lek-teef kam-pa-nee-ee" }
+      ]
+    },
+    {
+      "id": "eu7-03", "order": 3, "title": "第3课 科技语体（Научный стиль）",
+      "statements": [
+        { "english": "Как известно, вода состоит из водорода и кислорода.", "chinese": "众所周知，水由氢和氧组成。", "soundmark": "kak eez-vest-na va-da sa-sta-eet eez va-do-ro-da ee kees-la-ro-da" },
+        { "english": "Данный эксперимент подтверждает нашу гипотезу.", "chinese": "本实验证实了我们的假说。", "soundmark": "dan-ny ek-spe-ree-ment pat-tverzh-da-yet na-shoo gee-po-te-zoo" },
+        { "english": "Следует отметить, что результаты оказались положительными.", "chinese": "应该指出结果是积极的。", "soundmark": "slye-du-yet at-me-teet shto re-zool-ta-ty a-ka-za-lees pa-la-zhee-tel-ny-mee" },
+        { "english": "Данные были получены в ходе многолетних наблюдений.", "chinese": "数据是在多年观察过程中获得的。", "soundmark": "dan-ny-ye by-lee pa-loo-che-ny f kho-dye mna-go-lyet-neekh nab-lyu-de-ny" },
+        { "english": "Исследование показало высокую эффективность метода.", "chinese": "研究表明该方法效果显著。", "soundmark": "ees-slye-do-va-nee-ye pa-ka-za-la vy-so-koo-u e-fek-teev-nost me-to-da" },
+        { "english": "В данной статье рассматривается проблема изменения климата.", "chinese": "本文探讨气候变化问题。", "soundmark": "f dan-nay stat-ye ras-sma-tree-va-yet-sya prab-lye-ma eez-me-ne-nee-ya klee-ma-ta" },
+        { "english": "Результаты эксперимента представлены в таблице 2.", "chinese": "实验结果见表2。", "soundmark": "re-zool-ta-ty ek-spe-ree-men-ta pred-stav-le-ny v tab-lee-tse dva" },
+        { "english": "Следует подчеркнуть важность данного открытия.", "chinese": "应强调这一发现的重要性。", "soundmark": "slye-du-yet pad-cherk-noot vazh-nost dan-na-va at-kry-tee-ya" },
+        { "english": "Выводы данного исследования имеют практическое значение.", "chinese": "本研究结论具有实践意义。", "soundmark": "vy-va-dy dan-na-va ees-slye-do-va-nee-ya ee-may-ut prak-thee-che-ska-ye zna-che-nee-ye" },
+        { "english": "Таким образом, цель исследования достигнута.", "chinese": "因此，研究目标已达到。", "soundmark": "ta-keem ab-ra-zem tsel ees-slye-do-va-nee-ya das-teeg-noo-ta" }
+      ]
+    },
+    {
+      "id": "eu7-04", "order": 4, "title": "第4课 多重复合句（Многочленные сложные предложения）",
+      "statements": [
+        { "english": "Я знаю, что он сказал, что придёт, если будет свободен.", "chinese": "我知道他说过，如果有空他就来（三重复合句）", "soundmark": "ya zna-yu shto on ska-zal shto pree-dyot ye-sle bu-det sva-bo-den" },
+        { "english": "Когда мы пришли в музей, который находится в центре города, экскурсия уже началась.", "chinese": "当我们来到位于市中心的博物馆时，参观已经开始了。", "soundmark": "kag-da my pree-shlee v moo-zyey ka-to-ry na-kho-deet-sya v tsen-tre go-ro-da eks-koor-see-ya oo-zhe na-cha-las" },
+        { "english": "Если ты сделаешь домашнее задание, которое задал преподаватель, то получишь хорошую оценку.", "chinese": "如果你完成老师布置的作业，就会得到好成绩。", "soundmark": "ye-sle ty sdye-la-yesh da-mash-nye-ye zad-nee-ye ka-to-ra-ye zad-al pre-pa-da-va-tyel to pa-lu-cheesh kha-ro-shoo-yu a-tsen-koo" },
+        { "english": "Хотя было уже поздно, никто не хотел расходиться, потому что всем было весело.", "chinese": "虽然已经很晚了，但没人想散，因为大家都很开心。", "soundmark": "kha-tya by-la oo-zhe poz-na nee-kto ne kha-tel ras-kho-deet-sya pa-to-mu shto vsem by-la vye-se-la" },
+        { "english": "Я хочу, чтобы ты понял, как это важно для меня.", "chinese": "我希望你理解这对我有多重要。", "soundmark": "ya kha-choo shto-by ty po-nyal kak e-ta vazh-na dlya mee-nya" },
+        { "english": "Мы поехали туда, где прошло наше детство, и увидели, как всё изменилось.", "chinese": "我们去了我们童年度过的地方，看到了一切都变了。", "soundmark": "my pa-ye-kha-lee too-da gdye pra-shlo na-she dyet-stva ee oo-vee-de-lee kak vsyo eez-me-nee-los" },
+        { "english": "Он не пришёл, потому что забыл, что мы договорились встретиться.", "chinese": "他没来，因为他忘了我们约好见面。", "soundmark": "on ne pree-shyol pa-to-mu shto za-byl shto my da-go-vo-ree-lees fstre-teet-sya" },
+        { "english": "Тот, кто много читает, обычно имеет богатый словарный запас.", "chinese": "那个读书多的人通常词汇量丰富。", "soundmark": "tot kto mno-ga chee-ta-yet abych-na ee-may-et ba-ga-ty sla-var-ny za-pas" },
+        { "english": "Вот дом, в котором я жил, когда учился в университете.", "chinese": "这就是我在大学学习时住过的房子。", "soundmark": "vot dom v ka-to-rom ya zheel kag-da oo-cheel-sya v oo-nee-ver-see-tye" },
+        { "english": "Если ты будешь стараться, то обязательно добьёшься успеха, о котором мечтаешь.", "chinese": "如果你努力，一定会取得你梦想的成功。", "soundmark": "ye-sle ty bu-desh sta-rat-sya to a-bya-zat-el-na dab-yosh-sya oos-pe-kha a ka-to-rom mech-ta-yesh" }
+      ]
+    },
+    {
+      "id": "eu7-05", "order": 5, "title": "第5课 成语与俗语（Фразеологизмы и поговорки）",
+      "statements": [
+        { "english": "Бить баклуши — значит ничего не делать.", "chinese": "无所事事——意味着什么也不干。", "soundmark": "beet bak-loo-shee zna-cheet nee-che-vo ne dye-lat" },
+        { "english": "У него семь пятниц на неделе.", "chinese": "他总是变卦（一周七天七个星期五）。", "soundmark": "oo ne-vo syem pyat-neets na ne-dye-lye" },
+        { "english": "Я это знаю как свои пять пальцев.", "chinese": "我对这个了如指掌（像自己的五个手指一样熟悉）。", "soundmark": "ya e-ta zna-yu kak sva-ee pyat pal-tsef" },
+        { "english": "После дождичка в четверг — это значит никогда.", "chinese": "雨后的星期四——意味着永远不会有那一天。", "soundmark": "po-slye dozh-deech-ka f chet-verg e-ta zna-cheet nee-kag-da" },
+        { "english": "Заруби себе на носу — запомни раз и навсегда.", "chinese": "刻在鼻子上——永远记住。", "soundmark": "za-roo-bee se-bye na na-soo za-pon-mee raz ee naf-seeg-da" },
+        { "english": "Работать спустя рукава — значит делать кое-как.", "chinese": "袖着手干活——意味着马虎了事。", "soundmark": "ra-bo-tat spoos-tya roo-ka-va zna-cheet dye-lat ko-ye-kak" },
+        { "english": "Он мастер на все руки.", "chinese": "他是个多面手（万能双手的大师）。", "soundmark": "on mas-ter na vsye roo-kee" },
+        { "english": "Смотреть сквозь пальцы на нарушения.", "chinese": "对违规行为视而不见（透过手指缝看）。", "soundmark": "sma-tryet skvoz pal-tsy na na-roo-she-nee-ya" },
+        { "english": "Воды не замутит — тихий и безобидный человек.", "chinese": "连水都不会搅浑——温和无害的人。", "soundmark": "va-dy ne za-moo-teet tee-khee ee be-za-beed-ny che-la-vyek" },
+        { "english": "Дело в шляпе — всё готово и успешно.", "chinese": "事在帽子里——一切顺利搞定。", "soundmark": "dye-la v shlya-pe vsyo ga-to-va ee oos-pe-shna" }
+      ]
+    },
+    {
+      "id": "eu7-06", "order": 6, "title": "第6课 俄语修辞手法（Стилистические приёмы）",
+      "statements": [
+        { "english": "Жизнь — это дорога.", "chinese": "人生就是一条路（隐喻）。", "soundmark": "zheezn e-ta da-ro-ga" },
+        { "english": "Время — деньги.", "chinese": "时间就是金钱（隐喻）。", "soundmark": "vre-mya den-gee" },
+        { "english": "Я сто раз тебе это говорил!", "chinese": "我跟你说了一百遍了！（夸张）", "soundmark": "ya sto ras te-bye e-ta ga-vo-reel" },
+        { "english": "Море волнуется, как живое.", "chinese": "大海像活物一样波动（明喻）。", "soundmark": "mo-re vol-noo-yet-sya kak zhee-vo-ye" },
+        { "english": "В саду горит костёр рябины красной.", "chinese": "花园里燃烧着红花椒的火焰（拟物/隐喻）", "soundmark": "f sa-doo go-reet kas-tyor rya-bee-ny kras-nay" },
+        { "english": "У него железные нервы.", "chinese": "他有钢铁般的神经（隐喻）。", "soundmark": "oo ne-vo zhe-lez-ny-ye nyer-vy" },
+        { "english": "Солнце смеётся.", "chinese": "太阳在微笑（拟人）。", "soundmark": "son-tse smye-yot-sya" },
+        { "english": "Чёрное золото — нефть.", "chinese": "黑色的金子——石油（换喻）。", "soundmark": "chyor-na-ye za-la-ta neft" },
+        { "english": "Я тебе миллион раз говорил!", "chinese": "我跟你说了一百万次了！（夸张）", "soundmark": "ya te-bye mee-lee-on raz ga-vo-reel" },
+        { "english": "Белая берёза под моим окном.", "chinese": "我窗下的白桦（常见的诗意意象）。", "soundmark": "bye-la-ya be-ryo-za pad ma-eem ak-nom" }
+      ]
+    },
+    {
+      "id": "eu7-07", "order": 7, "title": "第7课 阅读与分析：文学文本",
+      "statements": [
+        { "english": "Толстой — один из величайших русских писателей.", "chinese": "托尔斯泰是俄国最伟大的作家之一。", "soundmark": "tol-stoy a-deen eez ve-lee-chay-sheekh rooss-keekh pee-sa-tye-ley" },
+        { "english": "Роман «Война и мир» описывает события XIX века.", "chinese": "《战争与和平》描述了19世纪的事件。", "soundmark": "ra-man vay-na ee mir a-pee-sy-va-yet so-by-tee-ya de-vyat-nad-tsa-ta-va vye-ka" },
+        { "english": "Достоевский исследует глубины человеческой души.", "chinese": "陀思妥耶夫斯基探索人类灵魂深处。", "soundmark": "da-sta-yef-skee ees-slye-du-yet gloo-bee-ny che-la-vye-che-skoi doo-shee" },
+        { "english": "Чехов писал короткие рассказы и пьесы.", "chinese": "契诃夫写短篇小说和戏剧。", "soundmark": "che-khaf pee-sal ka-rot-ki-ye ras-ska-zy ee pyes-y" },
+        { "english": "Стихи Пушкина знает каждый русский.", "chinese": "每个俄罗斯人都知道普希金的诗。", "soundmark": "stee-khee poosh-kee-na zna-yet kazh-dy rooss-kee" },
+        { "english": "Это стихотворение написано в жанре романтизма.", "chinese": "这首诗是浪漫主义风格的。", "soundmark": "e-ta stee-kha-tvo-re-nee-ye na-pee-sa-na v zhan-re ra-man-teez-ma" },
+        { "english": "Главный герой этого романа — молодой дворянин.", "chinese": "这部小说的主人公是年轻的贵族。", "soundmark": "glav-ny ge-roy e-ta-va ra-ma-na ma-la-doy dva-rya-neen" },
+        { "english": "Автор использует яркие художественные средства.", "chinese": "作者使用了鲜明的艺术手法。", "soundmark": "af-tor ees-pol-zu-yet yar-kee khu-do-zhest-ven-ny-ye sryed-stva" },
+        { "english": "Тема любви — центральная в этом произведении.", "chinese": "爱情是这部作品的中心主题。", "soundmark": "tye-ma lyub-vee tsen-tral-na-ya v e-tom pra-eez-ve-de-nee-ee" },
+        { "english": "Русская литература оказала огромное влияние на мировую культуру.", "chinese": "俄罗斯文学对世界文化产生了巨大影响。", "soundmark": "rooss-ka-ya lee-te-ra-too-ra a-ka-za-la ag-rom-na-ye vlee-ya-nee-ye na mee-ro-vu-yu kul-too-roo" }
+      ]
+    },
+    {
+      "id": "eu7-08", "order": 8, "title": "第8课 新闻媒体语言（Язык СМИ）",
+      "statements": [
+        { "english": "По сообщениям информационных агентств, ситуация стабильна.", "chinese": "据通讯社报道，局势稳定。", "soundmark": "pa sa-ab-shche-nee-yam een-far-ma-tsi-on-nykh a-tyentstv see-too-a-tsi-ya sta-beel-na" },
+        { "english": "Согласно опросам общественного мнения, большинство поддержало реформу.", "chinese": "根据民调，大多数人支持改革。", "soundmark": "sag-las-na a-pro-sam ap-shche-stven-na-va mne-nee-ya bal-shee-stvo pad-der-zha-la re-for-moo" },
+        { "english": "Президент провёл пресс-конференцию для журналистов.", "chinese": "总统为记者举行了新闻发布会。", "soundmark": "pre-zee-dent pra-vyol pres-kon-fe-ren-tsi-yu dlya zhoor-na-lees-taf" },
+        { "english": "Эксперты отмечают рост экономики в этом квартале.", "chinese": "专家指出本季度经济增长。", "soundmark": "eks-per-ty at-me-cha-yut rost e-ka-no-mee-kee v e-tom kvar-ta-lye" },
+        { "english": "Переговоры между странами прошли в конструктивной атмосфере.", "chinese": "两国之间的谈判在建设性气氛中进行。", "soundmark": "pe-re-go-vo-ry mezh-doo stra-na-mee pro-shlee f kan-strook-teev-nay at-mas-fye-re" },
+        { "english": "По предварительным данным, ущерб составил миллионы рублей.", "chinese": "据初步数据，损失达数百万卢布。", "soundmark": "pa preed-va-ree-tel-nym dan-nykh oo-sherp sa-sta-veel mee-lee-o-ny roob-ley" },
+        { "english": "В эфире новости спорта.", "chinese": "现在播报体育新闻。", "soundmark": "v e-fye-re no-va-stee spor-ta" },
+        { "english": "Как передаёт наш корреспондент, событие вызвало широкий резонанс.", "chinese": "据本台记者报道，事件引起了广泛反响。", "soundmark": "kak pe-re-da-yot nash ka-rees-pa-nyent sa-by-tee-ye vy-zva-la shy-ro-kiy re-za-nans" },
+        { "english": "Цены на нефть выросли на 3 процента.", "chinese": "石油价格上涨了3％。", "soundmark": "tse-na na neft vy-ros-lee na tree pra-tsen-ta" },
+        { "english": "Прямой эфир из студии в центре Москвы.", "chinese": "来自莫斯科市中心演播室的直播。", "soundmark": "prya-moy e-feer eez stoo-dee-ee v tsen-tre maz-kvy" }
+      ]
+    },
+    {
+      "id": "eu7-09", "order": 9, "title": "第9课 辩论与演讲（Дискуссия и публичное выступление）",
+      "statements": [
+        { "english": "Уважаемые коллеги, разрешите представить наш проект.", "chinese": "尊敬的同事们，请允许我介绍我们的项目。", "soundmark": "oo-va-zha-ye-mye ka-le-gee raz-re-shee-tye pred-sta-veet nash pra-yekt" },
+        { "english": "Я хотел бы высказать свою точку зрения.", "chinese": "我想表达自己的观点。", "soundmark": "ya kha-tel by vy-ska-zat sva-yu to-chkoo zre-nee-ya" },
+        { "english": "Позвольте привести аргументы в пользу этого предложения.", "chinese": "请允许我提出支持该建议的论据。", "soundmark": "paz-vol-tye pree-ve-stee ar-goo-men-ty v pol-zo e-ta-va preed-la-zhe-nee-ya" },
+        { "english": "Я полностью согласен с предыдущим выступающим.", "chinese": "我完全同意前面发言人的观点。", "soundmark": "ya pol-nas-tyu sag-la-sen s pree-dy-doo-shcheem vy-stoo-pa-yu-shcheem" },
+        { "english": "Позвольте возразить. Я считаю иначе.", "chinese": "请允许我反驳。我有不同看法。", "soundmark": "paz-vol-tye a-zra-zeet ya schee-ta-yu ee-na-che" },
+        { "english": "В качестве примера можно рассмотреть ситуацию с экологией.", "chinese": "作为例子，可以考虑生态状况。", "soundmark": "f ka-chest-ve pree-mye-ra mozh-na ras-sma-tryet see-too-a-tsi-yu s e-ko-lo-gee-yey" },
+        { "english": "Подводя итог, хочу подчеркнуть три ключевых момента.", "chinese": "总结时，我想强调三个关键点。", "soundmark": "pad-vo-dya ee-tok kha-choo pad-cherk-noot tree klyu-che-vykh ma-men-tov" },
+        { "english": "Спасибо за внимание. Я готов ответить на ваши вопросы.", "chinese": "谢谢大家的关注。我准备好了回答你们的问题。", "soundmark": "spa-see-ba za vnee-ma-nee-ye ya ga-tof at-ve-teet na va-shee vap-ro-sy" },
+        { "english": "В заключение своего выступления я хотел бы сказать следующее.", "chinese": "在发言的最后，我想说以下几点。", "soundmark": "f za-klyu-che-nee-ye sva-ye-vo vy-stoo-plee-nee-ya ya kha-tel by ska-zat slye-du-yu-shche-ye" },
+        { "english": "Давайте перейдём к голосованию.", "chinese": "让我们进行投票。", "soundmark": "da-vay-tye pe-re-yom k go-la-sa-va-nee-yu" }
+      ]
+    },
+    {
+      "id": "eu7-10", "order": 10, "title": "第10课 综合复习（Комплексное повторение）",
+      "statements": [
+        { "english": "Седьмая книга была посвящена функциональным стилям речи.", "chinese": "第七册主要讲功能语体。", "soundmark": "sed-ma-ya knee-ga by-la pa-svyash-she-na foonk-tsi-o-nal-nym stee-lyam re-chee" },
+        { "english": "Разговорный стиль отличается от официального.", "chinese": "口语体与正式语体不同。", "soundmark": "raz-ga-vor-ny steel at-lee-cha-yet-sya at a-fee-tsi-al-na-va" },
+        { "english": "Научный стиль требует точности и объективности.", "chinese": "科学语体要求准确和客观。", "soundmark": "na-ooch-ny steel tre-bu-yet to-chna-stee ee ab-yek-teev-nos-tee" },
+        { "english": "Многочленные сложные предложения характерны для письменной речи.", "chinese": "多重复合句是书面语的特点。", "soundmark": "mna-goch-len-ny-ye slozh-ny-ye preed-la-zhe-nee-ya kha-rak-ter-ny dlya pees-men-nay re-chee" },
+        { "english": "Фразеологизмы делают речь образной и выразительной.", "chinese": "成语使语言形象生动。", "soundmark": "fra-ze-o-lo-geez-my dye-la-yut rech ob-raz-nay ee vy-ra-zee-tel-nay" },
+        { "english": "Я научился различать функциональные стили.", "chinese": "我学会了区分功能语体。", "soundmark": "ya na-oo-cheel-sya raz-lee-chat foonk-tsi-o-nal-ny-ye stee-lee" },
+        { "english": "Русская литература — это целый мир.", "chinese": "俄罗斯文学是一个完整的世界。", "soundmark": "rooss-ka-ya lee-te-ra-too-ra e-ta tse-ly mir" },
+        { "english": "Я могу читать новости на русском языке.", "chinese": "我能读俄语新闻了。", "soundmark": "ya ma-goo chee-tat no-va-stee na ross-kom ya-zy-ke" },
+        { "english": "Навыки публичных выступлений очень важны.", "chinese": "公共演讲技能非常重要。", "soundmark": "na-vy-kee poo-bleech-nykh vy-stoo-ple-ny o-chen vazh-ny" },
+        { "english": "Скоро мы перейдём к завершающему курсу!", "chinese": "我们很快将进入最后一册课程！", "soundmark": "sko-ra my pe-re-yom k za-ver-sha-yu-shche-moo koor-soo" }
+      ]
+    }
+  ]
+}

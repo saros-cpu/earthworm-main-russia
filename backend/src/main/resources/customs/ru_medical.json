@@ -1,0 +1,389 @@
+{
+  "id": "ru-medical",
+  "title": "医学俄语",
+  "description": "人体解剖疾病名称医疗操作等医学领域俄语词汇。",
+  "cover": "https://images.unsplash.com/photo-1559757175-5700dde675bc?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rumd-01",
+      "order": 1,
+      "title": "人体器官",
+      "description": "人体主要器官俄语名称。",
+      "statements": [
+        {
+          "english": "се́рдце",
+          "chinese": "心脏",
+          "soundmark": "SER-tse"
+        },
+        {
+          "english": "лёгкие",
+          "chinese": "肺",
+          "soundmark": "LYOHK-kee-ye"
+        },
+        {
+          "english": "пе́чень",
+          "chinese": "肝脏",
+          "soundmark": "PE-chen"
+        },
+        {
+          "english": "желу́док",
+          "chinese": "胃",
+          "soundmark": "zhe-LOO-dak"
+        },
+        {
+          "english": "кровь",
+          "chinese": "血液",
+          "soundmark": "krov"
+        },
+        {
+          "english": "мо́зг",
+          "chinese": "大脑",
+          "soundmark": "mozk"
+        }
+      ]
+    },
+    {
+      "id": "rumd-02",
+      "order": 2,
+      "title": "疾病与诊断",
+      "description": "常见疾病和诊断术语。",
+      "statements": [
+        {
+          "english": "диа́гноз",
+          "chinese": "诊断",
+          "soundmark": "dee-AG-nos"
+        },
+        {
+          "english": "симпто́м",
+          "chinese": "症状",
+          "soundmark": "seemp-TOM"
+        },
+        {
+          "english": "просту́да",
+          "chinese": "感冒",
+          "soundmark": "pra-STOO-da"
+        },
+        {
+          "english": "воспале́ние",
+          "chinese": "炎症",
+          "soundmark": "vas-pa-LE-nee-ye"
+        },
+        {
+          "english": "инфе́кция",
+          "chinese": "感染",
+          "soundmark": "in-FEK-tsee-ya"
+        },
+        {
+          "english": "реце́пт",
+          "chinese": "处方",
+          "soundmark": "re-TSEPT"
+        }
+      ]
+    },
+    {
+      "id": "rumd-03",
+      "order": 3,
+      "title": "医疗设备",
+      "description": "医院常用医疗设备词汇。",
+      "statements": [
+        {
+          "english": "рентге́н",
+          "chinese": "X光机",
+          "soundmark": "rent-GEN"
+        },
+        {
+          "english": "термо́метр",
+          "chinese": "体温计",
+          "soundmark": "ter-MO-metr"
+        },
+        {
+          "english": "шприц",
+          "chinese": "注射器",
+          "soundmark": "shpreets"
+        },
+        {
+          "english": "капе́льница",
+          "chinese": "输液器",
+          "soundmark": "ka-PEL-nee-tsa"
+        },
+        {
+          "english": "аппара́т УЗИ",
+          "chinese": "B超机",
+          "soundmark": "a-pa-RAT oo-zee-EE"
+        },
+        {
+          "english": "дефибрилля́тор",
+          "chinese": "除颤器",
+          "soundmark": "de-fee-bree-LYA-tor"
+        }
+      ]
+    },
+    {
+      "id": "rumd-04",
+      "order": 4,
+      "title": "医院科室",
+      "description": "医院各科室名称。",
+      "statements": [
+        {
+          "english": "терапе́втическое отделе́ние",
+          "chinese": "内科",
+          "soundmark": "te-ra-PEV-tee-che-ska-ye ot-de-LE-nee-ye"
+        },
+        {
+          "english": "хирурги́ческое отделе́ние",
+          "chinese": "外科",
+          "soundmark": "khee-roor-GHEE-che-ska-ye ot-de-LE-nee-ye"
+        },
+        {
+          "english": "реанима́ция",
+          "chinese": "重症监护室",
+          "soundmark": "re-a-nee-MA-tsee-ya"
+        },
+        {
+          "english": "приёмный поко́й",
+          "chinese": "急诊室",
+          "soundmark": "PREE-yom-ny pa-KOY"
+        },
+        {
+          "english": "роди́льное отделе́ние",
+          "chinese": "产科",
+          "soundmark": "ra-DEEL-na-ye ot-de-LE-nee-ye"
+        },
+        {
+          "english": "стоматоло́гия",
+          "chinese": "口腔科",
+          "soundmark": "sta-ma-ta-LO-ghee-ya"
+        }
+      ]
+    },
+    {
+      "id": "rumd-05",
+      "order": 5,
+      "title": "药物",
+      "description": "常见药品和用药相关词汇。",
+      "statements": [
+        {
+          "english": "лека́рство",
+          "chinese": "药物",
+          "soundmark": "le-KARST-va"
+        },
+        {
+          "english": "табле́тка",
+          "chinese": "药片",
+          "soundmark": "tab-LYET-ka"
+        },
+        {
+          "english": "мазь",
+          "chinese": "药膏",
+          "soundmark": "maz"
+        },
+        {
+          "english": "антибио́тик",
+          "chinese": "抗生素",
+          "soundmark": "an-tee-bee-O-teek"
+        },
+        {
+          "english": "побо́чный эффе́кт",
+          "chinese": "副作用",
+          "soundmark": "pa-BOCH-ny e-FEKT"
+        },
+        {
+          "english": "дозиро́вка",
+          "chinese": "剂量",
+          "soundmark": "da-zee-ROV-ka"
+        }
+      ]
+    },
+    {
+      "id": "rumd-06",
+      "order": 6,
+      "title": "手术术语",
+      "description": "外科手术和操作相关词汇。",
+      "statements": [
+        {
+          "english": "опера́ция",
+          "chinese": "手术",
+          "soundmark": "a-pe-RA-tsee-ya"
+        },
+        {
+          "english": "хиру́рг",
+          "chinese": "外科医生",
+          "soundmark": "khee-ROORG"
+        },
+        {
+          "english": "нарко́з",
+          "chinese": "麻醉",
+          "soundmark": "nar-KOZ"
+        },
+        {
+          "english": "ска́льпель",
+          "chinese": "手术刀",
+          "soundmark": "SKAL-pel"
+        },
+        {
+          "english": "шов",
+          "chinese": "缝合",
+          "soundmark": "shov"
+        },
+        {
+          "english": "переса́дка о́ргана",
+          "chinese": "器官移植",
+          "soundmark": "pe-re-SAD-ka OR-ga-na"
+        }
+      ]
+    },
+    {
+      "id": "rumd-07",
+      "order": 7,
+      "title": "急救",
+      "description": "急救和紧急医疗词汇。",
+      "statements": [
+        {
+          "english": "ско́рая по́мощь",
+          "chinese": "急救车",
+          "soundmark": "SKO-ra-ya PO-mash"
+        },
+        {
+          "english": "первая по́мощь",
+          "chinese": "急救",
+          "soundmark": "PER-va-ya PO-mash"
+        },
+        {
+          "english": "повя́зка",
+          "chinese": "绷带",
+          "soundmark": "pa-VYAZ-ka"
+        },
+        {
+          "english": "ра́на",
+          "chinese": "伤口",
+          "soundmark": "RA-na"
+        },
+        {
+          "english": "кровотече́ние",
+          "chinese": "出血",
+          "soundmark": "kra-va-te-CHE-nee-ye"
+        },
+        {
+          "english": "искусственное дыха́ние",
+          "chinese": "人工呼吸",
+          "soundmark": "ees-KOO-stven-na-ye dy-KHA-nee-ye"
+        }
+      ]
+    },
+    {
+      "id": "rumd-08",
+      "order": 8,
+      "title": "医务人员",
+      "description": "医疗行业各类人员名称。",
+      "statements": [
+        {
+          "english": "врач",
+          "chinese": "医生",
+          "soundmark": "vrach"
+        },
+        {
+          "english": "медсестра́",
+          "chinese": "护士",
+          "soundmark": "med-ses-TRA"
+        },
+        {
+          "english": "фе́льдшер",
+          "chinese": "医士",
+          "soundmark": "FELD-sher"
+        },
+        {
+          "english": "фармаце́вт",
+          "chinese": "药剂师",
+          "soundmark": "far-ma-TSEFT"
+        },
+        {
+          "english": "лабора́нт",
+          "chinese": "化验员",
+          "soundmark": "la-bo-RANT"
+        },
+        {
+          "english": "гла́вный врач",
+          "chinese": "主任医生",
+          "soundmark": "GLAV-ny vrach"
+        }
+      ]
+    },
+    {
+      "id": "rumd-09",
+      "order": 9,
+      "title": "诊断学",
+      "description": "医学诊断和检查方法词汇。",
+      "statements": [
+        {
+          "english": "а́нализ кро́ви",
+          "chinese": "血检",
+          "soundmark": "A-na-leez KRO-vee"
+        },
+        {
+          "english": "моча́",
+          "chinese": "尿液",
+          "soundmark": "ma-CHA"
+        },
+        {
+          "english": "томогра́фия",
+          "chinese": "断层扫描",
+          "soundmark": "ta-ma-GRA-fee-ya"
+        },
+        {
+          "english": "ка́рдиогра́мма",
+          "chinese": "心电图",
+          "soundmark": "kar-dee-o-GRAM-ma"
+        },
+        {
+          "english": "эндоскопи́я",
+          "chinese": "内窥镜检查",
+          "soundmark": "en-da-ska-PEE-ya"
+        },
+        {
+          "english": "приви́вка",
+          "chinese": "疫苗接种",
+          "soundmark": "pree-VEEV-ka"
+        }
+      ]
+    },
+    {
+      "id": "rumd-10",
+      "order": 10,
+      "title": "常见症状",
+      "description": "常见疾病和身体不适症状词汇。",
+      "statements": [
+        {
+          "english": "температу́ра",
+          "chinese": "发烧",
+          "soundmark": "tem-pe-ra-TOO-ra"
+        },
+        {
+          "english": "ка́шель",
+          "chinese": "咳嗽",
+          "soundmark": "KA-shel"
+        },
+        {
+          "english": "головна́я боль",
+          "chinese": "头痛",
+          "soundmark": "ga-lav-NA-ya bol"
+        },
+        {
+          "english": "насмо́рк",
+          "chinese": "流鼻涕",
+          "soundmark": "nas-MORK"
+        },
+        {
+          "english": "тошнота́",
+          "chinese": "恶心",
+          "soundmark": "tash-na-TA"
+        },
+        {
+          "english": "аллерги́я",
+          "chinese": "过敏",
+          "soundmark": "a-ler-GHEE-ya"
+        }
+      ]
+    }
+  ]
+}

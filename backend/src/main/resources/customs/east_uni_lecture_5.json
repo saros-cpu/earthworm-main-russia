@@ -1,0 +1,19 @@
+{
+  "id": "east-uni-lecture-5",
+  "title": "东方大学俄语第五册 · 精讲10课",
+  "description": "东方大学俄语（新版）第五册精讲视频课程，共10课时（含2节习题课）。重点训练高级俄语阅读、翻译与写作能力。",
+  "cover": "https://images.unsplash.com/photo-1523050854058-8df90110c7f1?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {"id":"eul5-01","order":1,"title":"五册第1讲","description":"东方俄语五册精讲。","video":"4.初学者第四步 俄语专项课/5.大学俄语第五册【10课时】/五册1.mp4","statements":[{"english":"урок первый","chinese":"第一课","soundmark":"oo-rok per-viy"},{"english":"текст","chinese":"课文","soundmark":"tekst"},{"english":"лексика","chinese":"词汇","soundmark":"lek-see-ka"}]},
+    {"id":"eul5-02","order":2,"title":"五册第2讲","description":"东方俄语五册精讲。","video":"4.初学者第四步 俄语专项课/5.大学俄语第五册【10课时】/五册2.mp4","statements":[{"english":"урок второй","chinese":"第二课","soundmark":"oo-rok fta-roy"},{"english":"грамматика","chinese":"语法","soundmark":"gra-ma-tee-ka"},{"english":"стилистика","chinese":"修辞学","soundmark":"stee-lee-stee-ka"}]},
+    {"id":"eul5-03","order":3,"title":"五册第3讲","description":"东方俄语五册精讲。","video":"4.初学者第四步 俄语专项课/5.大学俄语第五册【10课时】/五册3.mp4","statements":[{"english":"урок третий","chinese":"第三课","soundmark":"oo-rok tre-tee"},{"english":"чтение","chinese":"阅读","soundmark":"chte-nee-ye"},{"english":"перевод","chinese":"翻译","soundmark":"pe-re-vot"}]},
+    {"id":"eul5-04","order":4,"title":"五册第4讲","description":"东方俄语五册精讲。","video":"4.初学者第四步 俄语专项课/5.大学俄语第五册【10课时】/五册4.mp4","statements":[{"english":"урок четвёртый","chinese":"第四课","soundmark":"oo-rok chet-vyor-tiy"},{"english":"аудирование","chinese":"听力","soundmark":"a-oo-dee-ra-va-nee-ye"},{"english":"говорение","chinese":"口语","soundmark":"ga-va-re-nee-ye"}]},
+    {"id":"eul5-05","order":5,"title":"五册第5讲","description":"东方俄语五册精讲。","video":"4.初学者第四步 俄语专项课/5.大学俄语第五册【10课时】/五册5.mp4","statements":[{"english":"урок пятый","chinese":"第五课","soundmark":"oo-rok pya-tiy"},{"english":"сочинение","chinese":"作文","soundmark":"sa-chee-ne-nee-ye"},{"english":"реферат","chinese":"摘要","soundmark":"re-fe-rat"}]},
+    {"id":"eul5-06","order":6,"title":"五册第6讲","description":"东方俄语五册精讲。","video":"4.初学者第四步 俄语专项课/5.大学俄语第五册【10课时】/五册6.mp4","statements":[{"english":"урок шестой","chinese":"第六课","soundmark":"oo-rok shes-toy"},{"english":"дискуссия","chinese":"讨论","soundmark":"dees-koos-si-ya"},{"english":"аргументация","chinese":"论证","soundmark":"ar-goo-men-ta-tsi-ya"}]},
+    {"id":"eul5-07","order":7,"title":"五册第7讲","description":"东方俄语五册精讲。","video":"4.初学者第四步 俄语专项课/5.大学俄语第五册【10课时】/五册7.mp4","statements":[{"english":"урок седьмой","chinese":"第七课","soundmark":"oo-rok sed-moy"},{"english":"анализ текста","chinese":"课文分析","soundmark":"a-na-lis tek-sta"},{"english":"комментарий","chinese":"注释","soundmark":"ka-men-ta-ree"}]},
+    {"id":"eul5-08","order":8,"title":"五册第8讲","description":"东方俄语五册精讲。","video":"4.初学者第四步 俄语专项课/5.大学俄语第五册【10课时】/五册8.mp4","statements":[{"english":"урок восьмой","chinese":"第八课","soundmark":"oo-rok vas-moy"},{"english":"повторение","chinese":"复习","soundmark":"pav-ta-re-nee-ye"},{"english":"обобщение","chinese":"总结","soundmark":"a-bab-shche-nee-ye"}]},
+    {"id":"eul5-09","order":9,"title":"习题课1","description":"东方俄语五册习题课。","video":"4.初学者第四步 俄语专项课/5.大学俄语第五册【10课时】/五册习题课1.mp4","statements":[{"english":"упражнения","chinese":"练习","soundmark":"oop-razh-ne-nee-ya"},{"english":"самопроверка","chinese":"自查","soundmark":"sa-ma-pra-ver-ka"},{"english":"ошибки","chinese":"错误","soundmark":"a-shib-kee"}]},
+    {"id":"eul5-10","order":10,"title":"习题课2","description":"东方俄语五册习题课。","video":"4.初学者第四步 俄语专项课/5.大学俄语第五册【10课时】/五册习题课2.mp4","statements":[{"english":"контрольная работа","chinese":"测验","soundmark":"kant-rol-na-ya ra-bo-ta"},{"english":"тест","chinese":"测试","soundmark":"test"},{"english":"итоговая оценка","chinese":"总评","soundmark":"ee-to-go-va-ya a-tsen-ka"}]}
+  ]
+}

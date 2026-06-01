@@ -1,0 +1,279 @@
+{
+  "id": "ru-spoken-pack",
+  "title": "俄语口语会话 · 情景实战",
+  "description": "覆盖问候、购物、餐厅、旅行、酒店、就医、职场、紧急情况等日常场景。每课一个主题，精选高频对话句型，练就地道口语。",
+  "cover": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ru-spoken-01",
+      "order": 1,
+      "title": "问候与告别（Приветствие и прощание）",
+      "description": "最常用的见面打招呼和告别用语，分正式和非正式场合。",
+      "statements": [
+        { "english": "Здравствуйте! Как у вас дела?", "chinese": "您好！您怎么样？", "soundmark": "zdra-stvooy-tye kak oo vas dye-la" },
+        { "english": "Привет! Как дела?", "chinese": "嗨！最近怎么样？", "soundmark": "pree-vyet kak dye-la" },
+        { "english": "Всё хорошо, спасибо. А у вас?", "chinese": "一切都好，谢谢。您呢？", "soundmark": "vsyo kha-ra-sho spa-see-ba a oo vas" },
+        { "english": "Доброе утро! Выспался?", "chinese": "早上好！睡好了吗？", "soundmark": "dob-ra-ye oo-tra vy-spal-sya" },
+        { "english": "Добрый день! Давно не виделись.", "chinese": "下午好！好久不见。", "soundmark": "dob-ry den dav-no ne vee-de-lees" },
+        { "english": "Рад вас видеть!", "chinese": "很高兴见到您！", "soundmark": "rat vas vee-dyet" },
+        { "english": "До свидания! Всего доброго!", "chinese": "再见！祝一切好！", "soundmark": "da svee-da-nee-ya vsye-vo dob-ra-va" },
+        { "english": "Пока! Увидимся завтра!", "chinese": "拜拜！明天见！", "soundmark": "pa-ka oo-vee-deem-sya zav-tra" },
+        { "english": "Спокойной ночи!", "chinese": "晚安！", "soundmark": "spa-koy-nay no-chee" },
+        { "english": "Удачи!", "chinese": "祝好运！", "soundmark": "oo-da-chee" }
+      ]
+    },
+    {
+      "id": "ru-spoken-02",
+      "order": 2,
+      "title": "自我介绍（Знакомство）",
+      "description": "认识新朋友时的自我介绍与询问对方信息。",
+      "statements": [
+        { "english": "Меня зовут Алексей. А вас?", "chinese": "我叫阿列克谢。您呢？", "soundmark": "mee-nya za-voot a-lek-syey a vas" },
+        { "english": "Я из Китая. Приехал учиться.", "chinese": "我来自中国。来学习。", "soundmark": "ya eez kee-ta-ya pree-ye-khal oo-cheet-sya" },
+        { "english": "Очень приятно познакомиться!", "chinese": "很高兴认识您！", "soundmark": "o-chen pree-yat-na paz-na-kom-eet-sya" },
+        { "english": "Я студент. Учусь в университете.", "chinese": "我是学生。在大学学习。", "soundmark": "ya stoo-dyent oo-chus v oo-nee-ver-see-tye" },
+        { "english": "Чем вы занимаетесь?", "chinese": "您做什么工作？", "soundmark": "chem vy za-nee-ma-ye-tyes" },
+        { "english": "Я работаю переводчиком.", "chinese": "我做翻译工作。", "soundmark": "ya ra-bo-ta-yu pye-re-vod-chee-kom" },
+        { "english": "Сколько вам лет?", "chinese": "您多大了？", "soundmark": "skol-ka vam lyet" },
+        { "english": "Мне 25 лет.", "chinese": "我25岁。", "soundmark": "mnye dvad-tsat pyat lyet" },
+        { "english": "Откуда вы приехали?", "chinese": "您从哪里来？", "soundmark": "at-koo-da vy pree-ye-kha-lee" },
+        { "english": "Я из Пекина.", "chinese": "我来自北京。", "soundmark": "ya eez pee-kee-na" }
+      ]
+    },
+    {
+      "id": "ru-spoken-03",
+      "order": 3,
+      "title": "购物（В магазине）",
+      "description": "在商店购物时的常用表达。",
+      "statements": [
+        { "english": "Сколько это стоит?", "chinese": "这个多少钱？", "soundmark": "skol-ka e-ta sto-eet" },
+        { "english": "У вас есть хлеб?", "chinese": "你们有面包吗？", "soundmark": "oo vas yest khlyeb" },
+        { "english": "Покажите, пожалуйста.", "chinese": "请给我看看。", "soundmark": "pa-ka-zhee-tye pa-zhal-sta" },
+        { "english": "Это слишком дорого.", "chinese": "这太贵了。", "soundmark": "e-ta sleesh-kam do-ra-ga" },
+        { "english": "Дайте, пожалуйста, два.", "chinese": "请给我两个。", "soundmark": "day-tye pa-zhal-sta dva" },
+        { "english": "У вас есть скидка?", "chinese": "有折扣吗？", "soundmark": "oo vas yest skee-dka" },
+        { "english": "Можно примерить?", "chinese": "可以试穿吗？", "soundmark": "mo-zhna pree-mye-reet" },
+        { "english": "Мне нужен размер побольше.", "chinese": "我需要大一点的尺码。", "soundmark": "mnye noo-zhen ra-zmer pa-bol-she" },
+        { "english": "Я беру это.", "chinese": "我买这个。", "soundmark": "ya bye-roo e-ta" },
+        { "english": "Спасибо за покупку!", "chinese": "感谢您的购买！", "soundmark": "spa-see-ba za pa-koop-koo" }
+      ]
+    },
+    {
+      "id": "ru-spoken-04",
+      "order": 4,
+      "title": "餐厅点餐（В ресторане）",
+      "description": "去餐厅吃饭时的点餐和服务对话。",
+      "statements": [
+        { "english": "Можно меню?", "chinese": "可以看菜单吗？", "soundmark": "mo-zhna me-nyu" },
+        { "english": "Что вы порекомендуете?", "chinese": "您推荐什么？", "soundmark": "shto vy pa-re-ka-men-doo-ye-tye" },
+        { "english": "Я буду борщ.", "chinese": "我要一份罗宋汤。", "soundmark": "ya boo-doo borsh" },
+        { "english": "У вас есть вегетарианское?", "chinese": "有素食吗？", "soundmark": "oo vas yest vye-ge-ta-ree-an-ska-ye" },
+        { "english": "Счёт, пожалуйста.", "chinese": "买单，谢谢。", "soundmark": "shyot pa-zhal-sta" },
+        { "english": "Очень вкусно!", "chinese": "非常好吃！", "soundmark": "o-chen vkoos-na" },
+        { "english": "Мне, пожалуйста, чай.", "chinese": "请给我一杯茶。", "soundmark": "mnye pa-zhal-sta chay" },
+        { "english": "Это блюдо острое?", "chinese": "这道菜辣吗？", "soundmark": "e-ta blyu-da ost-ra-ye" },
+        { "english": "Можно воды?", "chinese": "可以来点水吗？", "soundmark": "mo-zhna va-dy" },
+        { "english": "Дайте, пожалуйста, вилку.", "chinese": "请给我一把叉子。", "soundmark": "day-tye pa-zhal-sta veel-koo" }
+      ]
+    },
+    {
+      "id": "ru-spoken-05",
+      "order": 5,
+      "title": "问路与交通（Ориентация на местности）",
+      "description": "问路、乘坐公共交通的表达方式。",
+      "statements": [
+        { "english": "Извините, как пройти в центр?", "chinese": "请问，去市中心怎么走？", "soundmark": "eez-vee-nee-tye kak pray-tee v tsentr" },
+        { "english": "Где находится метро?", "chinese": "地铁站在哪里？", "soundmark": "gdye na-kho-deet-sa meet-ro" },
+        { "english": "Это далеко отсюда?", "chinese": "离这儿远吗？", "soundmark": "e-ta da-le-ko ot-syu-da" },
+        { "english": "Идите прямо, потом налево.", "chinese": "直走，然后左转。", "soundmark": "ee-dee-tye prya-ma pa-tom na-lye-va" },
+        { "english": "Сколько остановок до центра?", "chinese": "到市中心有几站？", "soundmark": "skol-ka a-sta-no-vak da tsent-ra" },
+        { "english": "Можно дойти пешком?", "chinese": "可以步行去吗？", "soundmark": "mo-zhna day-tee pesh-kom" },
+        { "english": "Где остановка автобуса?", "chinese": "公交车站在哪里？", "soundmark": "gdye a-sta-nav-ka af-to-boo-sa" },
+        { "english": "Мне нужен билет до Москвы.", "chinese": "我要一张去莫斯科的票。", "soundmark": "mnye noo-zhen bee-lyet da maz-kvy" },
+        { "english": "Когда отправляется поезд?", "chinese": "火车什么时候出发？", "soundmark": "kag-da at-prav-lya-yet-sya po-yest" },
+        { "english": "Пожалуйста, вызовите такси.", "chinese": "请帮我叫一辆出租车。", "soundmark": "pa-zhal-sta vy-zo-vee-tye tak-see" }
+      ]
+    },
+    {
+      "id": "ru-spoken-06",
+      "order": 6,
+      "title": "酒店入住（В гостинице）",
+      "description": "酒店预订、入住和退房用语。",
+      "statements": [
+        { "english": "У вас есть свободные номера?", "chinese": "有空房吗？", "soundmark": "oo vas yest sva-bod-ny-ye no-me-ra" },
+        { "english": "Я забронировал номер.", "chinese": "我预订了房间。", "soundmark": "ya za-bra-nee-ra-val no-mer" },
+        { "english": "Сколько стоит一晚?", "chinese": "一晚多少钱？", "soundmark": "skol-ka sto-eet no-ch" },
+        { "english": "Мне нужен одноместный номер.", "chinese": "我需要一个单人间。", "soundmark": "mnye noo-zhen a-dnam-yest-ny no-mer" },
+        { "english": "Можно посмотреть номер?", "chinese": "可以看看房间吗？", "soundmark": "mo-zhna pa-sma-tryet no-mer" },
+        { "english": "Завтрак включён?", "chinese": "含早餐吗？", "soundmark": "zav-trak vklyu-chon" },
+        { "english": "У меня не работает кондиционер.", "chinese": "我的空调坏了。", "soundmark": "oo mee-nya ne ra-bo-ta-yet kan-dee-tsi-a-nyer" },
+        { "english": "Во сколько завтрак?", "chinese": "早餐几点？", "soundmark": "va skol-ka zav-trak" },
+        { "english": "Я хотел бы продлить проживание.", "chinese": "我想延长住宿。", "soundmark": "ya kha-tyel by pra-dleet pra-zhee-va-nee-ye" },
+        { "english": "Я выезжаю завтра.", "chinese": "我明天退房。", "soundmark": "ya vy-ye-zhzha-yu zav-tra" }
+      ]
+    },
+    {
+      "id": "ru-spoken-07",
+      "order": 7,
+      "title": "看病就医（У врача）",
+      "description": "去医院看病时的症状描述和医患对话。",
+      "statements": [
+        { "english": "Мне нужен врач.", "chinese": "我需要看医生。", "soundmark": "mnye noo-zhen vrach" },
+        { "english": "У меня болит голова.", "chinese": "我头疼。", "soundmark": "oo mee-nya ba-leet ga-la-va" },
+        { "english": "У меня температура.", "chinese": "我发烧了。", "soundmark": "oo mee-nya tem-pe-ra-too-ra" },
+        { "english": "Я плохо себя чувствую.", "chinese": "我感觉不舒服。", "soundmark": "ya plo-kha se-bya choost-vo-yu" },
+        { "english": "Вызывайте скорую!", "chinese": "叫救护车！", "soundmark": "vy-zy-vay-tye sko-roo-yu" },
+        { "english": "Где здесь аптека?", "chinese": "附近有药店吗？", "soundmark": "gdye zdyes ap-tye-ka" },
+        { "english": "Мне нужно лекарство от кашля.", "chinese": "我需要止咳药。", "soundmark": "mnye noo-zhna le-karst-va ot kash-lya" },
+        { "english": "Принимайте это три раза в день.", "chinese": "这个一天吃三次。", "soundmark": "pree-nee-may-tye e-ta tree ra-za v dyen" },
+        { "english": "У меня аллергия на...", "chinese": "我对…过敏。", "soundmark": "oo mee-nya al-ler-gee-ya na" },
+        { "english": "Когда будет готов анализ?", "chinese": "化验什么时候出结果？", "soundmark": "kag-da boo-det go-tov a-na-leez" }
+      ]
+    },
+    {
+      "id": "ru-spoken-08",
+      "order": 8,
+      "title": "打电话（По телефону）",
+      "description": "打电话常见用语。",
+      "statements": [
+        { "english": "Алло! Это Анна?", "chinese": "喂！是安娜吗？", "soundmark": "a-lo e-ta an-na" },
+        { "english": "Позовите, пожалуйста, Сергея.", "chinese": "请叫谢尔盖接电话。", "soundmark": "pa-za-vee-tye pa-zhal-sta ser-gye-ya" },
+        { "english": "Он сейчас занят. Перезвоните позже.", "chinese": "他现在很忙。请稍后再打。", "soundmark": "on sey-chas za-nyat pe-re-zva-nee-tye po-zhe" },
+        { "english": "Вы не туда попали.", "chinese": "您打错了。", "soundmark": "vy ne too-da pa-pa-lee" },
+        { "english": "Я перезвоню позже.", "chinese": "我稍后再打。", "soundmark": "ya pe-re-zva-nyu po-zhe" },
+        { "english": "Можно оставить сообщение?", "chinese": "可以留言吗？", "soundmark": "mo-zhna a-sta-veet sa-ab-shche-nee-ye" },
+        { "english": "Скажите, что звонил Иван.", "chinese": "请告诉他伊万打过电话。", "soundmark": "ska-zhee-tye shto zva-neel ee-van" },
+        { "english": "Плохо слышно. Перезвоните.", "chinese": "听不清。请重打。", "soundmark": "plo-kha slysh-na pe-re-zva-nee-tye" },
+        { "english": "Ждите на линии.", "chinese": "请稍等，别挂断。", "soundmark": "zhdee-tye na lee-nee-ee" },
+        { "english": "Спасибо за звонок. До свидания!", "chinese": "感谢来电。再见！", "soundmark": "spa-see-ba za zva-nok da svee-da-nee-ya" }
+      ]
+    },
+    {
+      "id": "ru-spoken-09",
+      "order": 9,
+      "title": "天气与季节（Погода и времена года）",
+      "description": "谈论天气和季节的常用表达。",
+      "statements": [
+        { "english": "Какая сегодня погода?", "chinese": "今天天气怎么样？", "soundmark": "ka-ka-ya see-vod-nya pa-go-da" },
+        { "english": "Сегодня тепло и солнечно.", "chinese": "今天暖和，阳光很好。", "soundmark": "see-vod-nya typ-lo e sol-nech-na" },
+        { "english": "Идёт дождь. Возьмите зонт.", "chinese": "在下雨。带上伞。", "soundmark": "ee-dyot dosht voz-mee-tye zont" },
+        { "english": "Зимой холодно, идёт снег.", "chinese": "冬天很冷，下雪。", "soundmark": "zee-moy khol-ad-na ee-dyot snyek" },
+        { "english": "Весна — моё любимое время года.", "chinese": "春天是我最喜欢的季节。", "soundmark": "ves-na ma-yo lyu-bee-ma-ye vre-mya go-da" },
+        { "english": "Летом жарко. Я люблю купаться.", "chinese": "夏天很热。我喜欢游泳。", "soundmark": "lye-tom zhar-ka ya lyub-lyu koo-pat-sya" },
+        { "english": "Осенью часто идут дожди.", "chinese": "秋天经常下雨。", "soundmark": "o-se-nyu chas-ta ee-doot dazh-dee" },
+        { "english": "Сколько градусов сегодня?", "chinese": "今天多少度？", "soundmark": "skol-ka gra-doo-sav see-vod-nya" },
+        { "english": "Мороз -10 градусов.", "chinese": "零下十度。", "soundmark": "ma-ros mye-nus dye-syat gra-doo-saf" },
+        { "english": "Ожидается дождь к вечеру.", "chinese": "预计傍晚有雨。", "soundmark": "a-zhee-da-yet-sya dosht k vye-che-roo" }
+      ]
+    },
+    {
+      "id": "ru-spoken-10",
+      "order": 10,
+      "title": "职场俄语（На работе）",
+      "description": "工作场景的常用俄语表达。",
+      "statements": [
+        { "english": "Доброе утро! Начнём совещание.", "chinese": "早上好！我们开始开会。", "soundmark": "dob-ra-ye oo-tra nach-nyom sa-ve-shcha-nee-ye" },
+        { "english": "Я подготовил отчёт.", "chinese": "我准备好了报告。", "soundmark": "ya pad-go-to-veel ot-chyot" },
+        { "english": "Какие планы на сегодня?", "chinese": "今天有什么计划？", "soundmark": "ka-kee-ye pla-ny na see-vod-nya" },
+        { "english": "Мне нужно отправить письмо.", "chinese": "我需要发一封邮件。", "soundmark": "mnye noo-zhna at-pra-veet pees-mo" },
+        { "english": "Когда дедлайн?", "chinese": "截止日期是什么时候？", "soundmark": "kag-da ded-layn" },
+        { "english": "Перезвоните мне после обеда.", "chinese": "午饭后给我回电话。", "soundmark": "pe-re-zva-nee-tye mnye po-slye a-bye-da" },
+        { "english": "У нас завтра встреча с клиентом.", "chinese": "明天我们和客户有会。", "soundmark": "oo nas zav-tra fstre-cha s klee-yen-tom" },
+        { "english": "Хорошая работа! Спасибо всем.", "chinese": "干得好！谢谢大家。", "soundmark": "kha-ro-sha-ya ra-bo-ta spa-see-ba vsyem" },
+        { "english": "Я ухожу в отпуск на неделю.", "chinese": "我要休假一周。", "soundmark": "ya oo-kho-zhoo v ot-poosk na nee-dye-lyu" },
+        { "english": "Пришлите, пожалуйста, файл.", "chinese": "请把文件发过来。", "soundmark": "preesh-lee-tye pa-zhal-sta fayl" }
+      ]
+    },
+    {
+      "id": "ru-spoken-11",
+      "order": 11,
+      "title": "紧急情况（Экстренные ситуации）",
+      "description": "遇到紧急情况时的求助用语。",
+      "statements": [
+        { "english": "Помогите!", "chinese": "救命！", "soundmark": "pa-ma-gee-tye" },
+        { "english": "Пожар! Вызовите пожарных!", "chinese": "着火了！叫消防队！", "soundmark": "pa-zhar vy-zo-vee-tye pa-zhar-nykh" },
+        { "english": "Меня ограбили!", "chinese": "我被抢劫了！", "soundmark": "mee-nya a-gra-bee-lee" },
+        { "english": "Я потерялся. Помогите, пожалуйста.", "chinese": "我迷路了。请帮帮我。", "soundmark": "ya pa-tye-ryal-sya pa-ma-gee-tye pa-zhal-sta" },
+        { "english": "Вызовите полицию!", "chinese": "叫警察！", "soundmark": "vy-zo-vee-tye pa-lee-tsi-yu" },
+        { "english": "Мне нужна помощь.", "chinese": "我需要帮助。", "soundmark": "mnye noo-zhna po-mash" },
+        { "english": "Я потерял паспорт.", "chinese": "我丢了护照。", "soundmark": "ya pa-tye-ryal pas-port" },
+        { "english": "Где находится посольство Китая?", "chinese": "中国大使馆在哪里？", "soundmark": "gdye na-kho-deet-sa pa-sol-stva kee-ta-ya" },
+        { "english": "Мне нужно позвонить.", "chinese": "我需要打个电话。", "soundmark": "mnye noo-zhna paz-va-neet" },
+        { "english": "Не подходите! Опасно!", "chinese": "别靠近！危险！", "soundmark": "ne pad-kha-dee-tye a-pas-na" }
+      ]
+    },
+    {
+      "id": "ru-spoken-12",
+      "order": 12,
+      "title": "社交与邀请（Общение и приглашение）",
+      "description": "邀请朋友、表达喜好、安排活动的表达。",
+      "statements": [
+        { "english": "Давай встретимся завтра?", "chinese": "我们明天见个面吧？", "soundmark": "da-vay fstre-teem-sya zav-tra" },
+        { "english": "Приглашаю тебя на день рождения.", "chinese": "邀请你来参加生日聚会。", "soundmark": "pree-gla-sha-yu tee-bya na dyen razh-de-nee-ya" },
+        { "english": "С удовольствием!", "chinese": "很乐意！", "soundmark": "s oo-da-vol-stve-yem" },
+        { "english": "Извини, я не могу.", "chinese": "抱歉，我去不了。", "soundmark": "eez-vee-nee ya ne ma-goo" },
+        { "english": "Давай сходим в кино?", "chinese": "一起去看电影吧？", "soundmark": "da-vay skho-deem v kee-no" },
+        { "english": "Какие у тебя хобби?", "chinese": "你有什么爱好？", "soundmark": "ka-kee-ye oo tee-bya ho-bee" },
+        { "english": "Я люблю читать и путешествовать.", "chinese": "我喜欢读书和旅行。", "soundmark": "ya lyub-lyu chee-tat e poo-tye-shest-va-vat" },
+        { "english": "Спасибо за приглашение!", "chinese": "感谢邀请！", "soundmark": "spa-see-ba za pree-gla-she-nee-ye" },
+        { "english": "Было очень весело!", "chinese": "玩得很开心！", "soundmark": "by-la o-chen vye-se-la" },
+        { "english": "Давай как-нибудь ещё встретимся!", "chinese": "我们改天再聚！", "soundmark": "da-vay kak-nee-boot ye-sho fstre-teem-sya" }
+      ]
+    },
+    {
+      "id": "ru-spoken-13",
+      "order": 13,
+      "title": "在银行（В банке）",
+      "description": "银行业务办理常用俄语。",
+      "statements": [
+        { "english": "Я хочу открыть счёт.", "chinese": "我想开一个账户。", "soundmark": "ya kha-choo at-kryt shchyot" },
+        { "english": "Мне нужно обменять валюту.", "chinese": "我需要换钱。", "soundmark": "mnye noo-zhna ab-me-nyat va-lyu-too" },
+        { "english": "Какой курс доллара?", "chinese": "美元汇率是多少？", "soundmark": "ka-koy koors do-la-ra" },
+        { "english": "Я хочу снять деньги с карты.", "chinese": "我想从卡里取钱。", "soundmark": "ya kha-choo snyat dye-nee-gi s kar-ty" },
+        { "english": "Заполните, пожалуйста, форму.", "chinese": "请填写表格。", "soundmark": "za-pol-nee-tye pa-zhal-sta for-moo" },
+        { "english": "Где здесь банкомат?", "chinese": "这里有自动取款机吗？", "soundmark": "gdye zdyes ban-ko-mat" },
+        { "english": "У меня украли карту.", "chinese": "我的卡被偷了。", "soundmark": "oo mee-nya oo-kra-lee kar-too" },
+        { "english": "Нужно заблокировать карту.", "chinese": "需要锁卡。", "soundmark": "noo-zhna za-bla-kee-ra-vat kar-too" },
+        { "english": "Сколько комиссия за перевод?", "chinese": "转账手续费多少？", "soundmark": "skol-ka ka-mee-see-ya za pe-re-vot" },
+        { "english": "Подпишите здесь.", "chinese": "请在这里签字。", "soundmark": "pad-pee-shee-tye zdyes" }
+      ]
+    },
+    {
+      "id": "ru-spoken-14",
+      "order": 14,
+      "title": "在邮局（На почте）",
+      "description": "邮局寄信、寄包裹、买邮票等。",
+      "statements": [
+        { "english": "Я хочу отправить посылку.", "chinese": "我想寄一个包裹。", "soundmark": "ya kha-choo at-pra-veet pa-syl-koo" },
+        { "english": "Сколько стоит марка в Китай?", "chinese": "寄往中国的邮票多少钱？", "soundmark": "skol-ka sto-eet mar-ka v kee-tay" },
+        { "english": "Письмо авиапочтой.", "chinese": "航空信。", "soundmark": "pees-mo a-vee-a-poch-toy" },
+        { "english": "Сколько дней идёт посылка?", "chinese": "包裹需要寄几天？", "soundmark": "skol-ka dnyey ee-dyot pa-syl-ka" },
+        { "english": "Мне нужна открытка.", "chinese": "我想要一张明信片。", "soundmark": "mnye noo-zhna at-kryt-ka" },
+        { "english": "Я хочу отправить заказным письмом.", "chinese": "我想寄挂号信。", "soundmark": "ya kha-choo at-pra-veet za-kaz-nym pees-mom" },
+        { "english": "Упакуйте, пожалуйста.", "chinese": "请帮我包装。", "soundmark": "oo-pa-kooy-tye pa-zhal-sta" },
+        { "english": "Сдайте посылку в окошко.", "chinese": "请把包裹交到窗口。", "soundmark": "zday-tye pa-syl-koo v a-kosh-ka" },
+        { "english": "Где здесь почтовый ящик?", "chinese": "邮箱在哪里？", "soundmark": "gdye zdyes pach-to-vy ya-shchik" },
+        { "english": "Спасибо! Сколько я должен?", "chinese": "谢谢！我该付多少钱？", "soundmark": "spa-see-ba skol-ka ya dol-zhen" }
+      ]
+    },
+    {
+      "id": "ru-spoken-15",
+      "order": 15,
+      "title": "网络与沟通（Интернет и общение）",
+      "description": "网络相关表达。",
+      "statements": [
+        { "english": "У вас есть Wi-Fi?", "chinese": "有Wi-Fi吗？", "soundmark": "oo vas yest wi-fi" },
+        { "english": "Какой пароль от Wi-Fi?", "chinese": "Wi-Fi密码是什么？", "soundmark": "ka-koy pa-rol ot wi-fi" },
+        { "english": "Мой телефон разрядился.", "chinese": "我的手机没电了。", "soundmark": "moy tee-lee-fon raz-rya-deel-sya" },
+        { "english": "Зарядка здесь есть?", "chinese": "有充电器吗？", "soundmark": "za-ryad-ka zdyes yest" },
+        { "english": "Можно зарядить телефон?", "chinese": "可以充一下电吗？", "soundmark": "mo-zhna za-rya-deet tee-lee-fon" },
+        { "english": "У вас есть зарядное устройство?", "chinese": "有充电器吗？", "soundmark": "oo vas yest za-ryad-no-ye oo-stroy-stva" },
+        { "english": "Какой у тебя номер телефона?", "chinese": "你的手机号是多少？", "soundmark": "ka-koy oo tee-bya no-mer tee-lee-fo-na" },
+        { "english": "Давай обменяемся контактами.", "chinese": "我们交换一下联系方式。", "soundmark": "da-vay ab-me-nya-yem-sya kon-tak-ta-mee" },
+        { "english": "Я тебе напишу в WhatsApp.", "chinese": "我在WhatsApp上给你写。", "soundmark": "ya tee-bye na-pee-shoo v whatsapp" },
+        { "english": "Есть ли у вас страница вконтакте?", "chinese": "你有VK账号吗？", "soundmark": "yest lee oo vas stra-nee-tsa vkon-tak-tye" }
+      ]
+    }
+  ]
+}

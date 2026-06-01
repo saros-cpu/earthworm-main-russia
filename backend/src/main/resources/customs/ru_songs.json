@@ -1,0 +1,477 @@
+{
+  "id": "ru-songs",
+  "title": "俄语经典歌曲",
+  "description": "通过俄罗斯经典歌曲学习俄语歌词中的常用词汇和表达。",
+  "cover": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ruso-01",
+      "order": 1,
+      "title": "喀秋莎",
+      "description": "著名苏联歌曲喀秋莎相关词汇。",
+      "video": "https://youtu.be/7J__ZdvsZaE",
+      "lyrics": [
+        {"russian": "Расцветали яблони и груши,", "chinese": "苹果树和梨树开了花"},
+        {"russian": "Поплыли туманы над рекой.", "chinese": "河面上飘荡着薄雾"},
+        {"russian": "Выходила на берег Катюша,", "chinese": "喀秋莎来到了河岸上"},
+        {"russian": "На высокий берег, на крутой.", "chinese": "来到了高高的陡峭河岸"},
+        {"russian": "Выходила, песню заводила", "chinese": "她走出来唱起了歌"},
+        {"russian": "Про степного сизого орла,", "chinese": "歌唱草原上的灰色雄鹰"},
+        {"russian": "Про того, которого любила,", "chinese": "歌唱她心爱的人"},
+        {"russian": "Про того, чьи письма берегла.", "chinese": "歌唱她珍藏着他信件的人"},
+        {"russian": "Ой ты, песня, песенка девичья,", "chinese": "哦你这少女的歌儿啊"},
+        {"russian": "Ты лети за ясным солнцем вслед,", "chinese": "请跟着明媚的太阳飞翔"},
+        {"russian": "И бойцу на дальнем пограничье", "chinese": "飞到远方边防战士的身旁"},
+        {"russian": "От Катюши передай привет.", "chinese": "把喀秋莎的问候带去"},
+        {"russian": "Пусть он вспомнит девушку простую,", "chinese": "让他想起这普通的姑娘"},
+        {"russian": "Пусть услышит, как она поёт,", "chinese": "让他听见她的歌声"},
+        {"russian": "Пусть он землю бережёт родную,", "chinese": "让他保卫自己的祖国"},
+        {"russian": "А любовь Катюша сбережёт.", "chinese": "而爱情由喀秋莎来守护"}
+      ],
+      "statements": [
+        {
+          "english": "Катю́ша",
+          "chinese": "喀秋莎",
+          "soundmark": "ka-TYOO-sha"
+        },
+        {
+          "english": "я́блони и гру́ши",
+          "chinese": "苹果树和梨树",
+          "soundmark": "YAB-la-nee ee GROO-shee"
+        },
+        {
+          "english": "пе́сня",
+          "chinese": "歌曲",
+          "soundmark": "PES-nya"
+        },
+        {
+          "english": "на высо́кий берег",
+          "chinese": "在高的河岸上",
+          "soundmark": "na vy-SO-kee BE-rek"
+        },
+        {
+          "english": "степь",
+          "chinese": "草原",
+          "soundmark": "step"
+        }
+      ]
+    },
+    {
+      "id": "ruso-02",
+      "order": 2,
+      "title": "卡林卡",
+      "description": "著名民歌卡林卡相关词汇。",
+      "video": "https://youtu.be/_XxK2JJisEc",
+      "lyrics": [
+        {"russian": "Калинка, калинка, калинка моя!", "chinese": "卡林卡，卡林卡，我的卡林卡"},
+        {"russian": "В саду ягода малинка, малинка моя!", "chinese": "花园里的马林果，我的马林果"},
+        {"russian": "Ах, под сосною, под зелёною,", "chinese": "啊，在松树下，在绿荫下"},
+        {"russian": "Спать положите вы меня.", "chinese": "请让我安睡"},
+        {"russian": "Ай-люли, люли, ай-люли, люли,", "chinese": "啊留里，留里，啊留里，留里"},
+        {"russian": "Спать положите вы меня.", "chinese": "请让我安睡"},
+        {"russian": "Калинка, калинка, калинка моя!", "chinese": "卡林卡，卡林卡，我的卡林卡"},
+        {"russian": "В саду ягода малинка, малинка моя!", "chinese": "花园里的马林果，我的马林果"},
+        {"russian": "Ах, ты, калинушка, размалинушка,", "chinese": "啊，你这卡林卡，你这马林果"},
+        {"russian": "Ты не стой, не стой на горе!", "chinese": "你不要站在山上"},
+        {"russian": "Ай-люли, люли, ай-люли, люли,", "chinese": "啊留里，留里，啊留里，留里"},
+        {"russian": "Ты не стой, не стой на горе!", "chinese": "你不要站在山上"}
+      ],
+      "statements": [
+        {
+          "english": "Кали́нка",
+          "chinese": "卡林卡",
+          "soundmark": "ka-LEEN-ka"
+        },
+        {
+          "english": "мали́нка",
+          "chinese": "小马林果",
+          "soundmark": "ma-LEEN-ka"
+        },
+        {
+          "english": "саду́",
+          "chinese": "在花园里",
+          "soundmark": "sa-DOO"
+        },
+        {
+          "english": "я́года",
+          "chinese": "浆果",
+          "soundmark": "YA-go-da"
+        },
+        {
+          "english": "наро́дная пе́сня",
+          "chinese": "民歌",
+          "soundmark": "na-ROD-na-ya PES-nya"
+        }
+      ]
+    },
+    {
+      "id": "ruso-03",
+      "order": 3,
+      "title": "莫斯科郊外的晚上",
+      "description": "歌曲莫斯科郊外的晚上相关词汇。",
+      "video": "https://youtu.be/r3-z_KKsYhA",
+      "lyrics": [
+        {"russian": "Не слышны в саду даже шорохи,", "chinese": "花园里听不到一丝声响"},
+        {"russian": "Всё здесь замерло до утра.", "chinese": "一切都沉睡到天亮"},
+        {"russian": "Если б знали вы, как мне дороги", "chinese": "如果你知道我多么珍惜"},
+        {"russian": "Подмосковные вечера.", "chinese": "莫斯科郊外的晚上"},
+        {"russian": "Речка движется и не движется,", "chinese": "小河在流淌仿佛静止"},
+        {"russian": "Вся из лунного серебра.", "chinese": "全由月亮的银辉铸成"},
+        {"russian": "Песня слышится и не слышится", "chinese": "歌声隐约可闻"},
+        {"russian": "В эти тихие вечера.", "chinese": "在这宁静的晚上"},
+        {"russian": "Что ж ты, милая, смотришь искоса,", "chinese": "为什么你亲爱的斜眼望着我"},
+        {"russian": "Низко голову наклоня?", "chinese": "低垂着头"},
+        {"russian": "Трудно высказать и не высказать", "chinese": "难以言表又想要诉说"},
+        {"russian": "Всё, что на сердце у меня.", "chinese": "我心中所有的话语"}
+      ],
+      "statements": [
+        {
+          "english": "Подмоско́вные вечера́",
+          "chinese": "莫斯科郊外的晚上",
+          "soundmark": "pad-mas-KOV-ny-ye ve-che-RA"
+        },
+        {
+          "english": "вече́р",
+          "chinese": "傍晚",
+          "soundmark": "ve-CHER"
+        },
+        {
+          "english": "река́",
+          "chinese": "河流",
+          "soundmark": "re-KA"
+        },
+        {
+          "english": "тишина́",
+          "chinese": "寂静",
+          "soundmark": "tee-shee-NA"
+        },
+        {
+          "english": "слы́шать",
+          "chinese": "听见",
+          "soundmark": "SLY-shat"
+        }
+      ]
+    },
+    {
+      "id": "ruso-04",
+      "order": 4,
+      "title": "黑眼睛",
+      "description": "经典俄语歌曲黑眼睛相关词汇。",
+      "video": "https://youtu.be/b3nOBw2UlkI",
+      "lyrics": [
+        {"russian": "Очи чёрные, очи жгучие,", "chinese": "黑眼睛，炽热的眼睛"},
+        {"russian": "Очи страстные и прекрасные!", "chinese": "多情又美丽的眼睛"},
+        {"russian": "Как люблю я вас, как боюсь я вас!", "chinese": "我多么爱你，又多么怕你"},
+        {"russian": "Знать, увидел вас я не в добрый час!", "chinese": "看来遇见你并非好时辰"},
+        {"russian": "Очи чёрные, жгучие пламенны", "chinese": "黑眼睛，燃烧着火焰"},
+        {"russian": "И манят они в страны дальние,", "chinese": "它们召唤我前往远方"},
+        {"russian": "Где царит любовь, где царит покой,", "chinese": "那里有爱情，那里有安宁"},
+        {"russian": "Где страданья нет, где вражды запрет.", "chinese": "那里没有痛苦，没有敌意"},
+        {"russian": "Не встречал бы вас, не страдал бы я,", "chinese": "如果没遇见你，我就不会痛苦"},
+        {"russian": "Я бы прожил жизнь улыбаючись.", "chinese": "我会微笑着度过一生"},
+        {"russian": "Вы сгубили меня очи чёрные,", "chinese": "你毁了我，黑眼睛"},
+        {"russian": "Унесли навек моё счастье.", "chinese": "永远带走了我的幸福"}
+      ],
+      "statements": [
+        {
+          "english": "О́чи чёрные",
+          "chinese": "黑眼睛",
+          "soundmark": "O-chee CHYOR-ny-ye"
+        },
+        {
+          "english": "очи",
+          "chinese": "眼睛（诗歌用语）",
+          "soundmark": "O-chee"
+        },
+        {
+          "english": "взгляд",
+          "chinese": "目光",
+          "soundmark": "vzglyat"
+        },
+        {
+          "english": "рома́нс",
+          "chinese": "浪漫曲",
+          "soundmark": "ra-MANS"
+        },
+        {
+          "english": "стра́стный",
+          "chinese": "热情的",
+          "soundmark": "STRAS-ny"
+        }
+      ]
+    },
+    {
+      "id": "ruso-05",
+      "order": 5,
+      "title": "伏尔加船夫曲",
+      "description": "伏尔加船夫曲相关词汇。",
+      "video": "https://youtu.be/0tw3g88JtWA",
+      "lyrics": [
+        {"russian": "Эй, ухнем! Эй, ухнем!", "chinese": "哎哟嗬！哎哟嗬！"},
+        {"russian": "Ещё разик, ещё раз!", "chinese": "再来一次，再来一次！"},
+        {"russian": "Эй, ухнем! Эй, ухнем!", "chinese": "哎哟嗬！哎哟嗬！"},
+        {"russian": "Ещё разик, ещё раз!", "chinese": "再来一次，再来一次！"},
+        {"russian": "Разовьём мы берёзу,", "chinese": "我们摆动白桦树"},
+        {"russian": "Разовьём мы кудряву.", "chinese": "我们摆动枝叶繁茂的树"},
+        {"russian": "Ай-да, да, ай-да!", "chinese": "哎哒，哒，哎哒！"},
+        {"russian": "Разовьём мы кудряву.", "chinese": "我们摆动枝叶繁茂的树"},
+        {"russian": "Эй, ухнем! Эй, ухнем!", "chinese": "哎哟嗬！哎哟嗬！"},
+        {"russian": "Мы по бережку идём,", "chinese": "我们沿着河岸走"},
+        {"russian": "Песню солнышку поём.", "chinese": "向着太阳唱起歌"},
+        {"russian": "Эх ты, Волга, мать-река,", "chinese": "啊，伏尔加河母亲"},
+        {"russian": "Широка и глубока.", "chinese": "宽阔又深邃"}
+      ],
+      "statements": [
+        {
+          "english": "Эй, ухнем!",
+          "chinese": "哎哟嗬！伏尔加船夫曲",
+          "soundmark": "ey OOKH-nyem"
+        },
+        {
+          "english": "Волга",
+          "chinese": "伏尔加河",
+          "soundmark": "VOL-ga"
+        },
+        {
+          "english": "бурла́к",
+          "chinese": "纤夫",
+          "soundmark": "boor-LAK"
+        },
+        {
+          "english": "ло́дка",
+          "chinese": "小船",
+          "soundmark": "LOT-ka"
+        },
+        {
+          "english": "сила",
+          "chinese": "力量",
+          "soundmark": "SEE-la"
+        }
+      ]
+    },
+    {
+      "id": "ruso-06",
+      "order": 6,
+      "title": "三套车",
+      "description": "俄罗斯民歌三套车相关词汇。",
+      "video": "https://youtu.be/tyBQ_EHEpqI",
+      "lyrics": [
+        {"russian": "Вот мчится тройка почтовая", "chinese": "邮政三套车在疾驰"},
+        {"russian": "По Волге-матушке зимой.", "chinese": "沿着冬天的伏尔加母亲河"},
+        {"russian": "Ямщик, уныло напевая,", "chinese": "车夫忧郁地哼唱着"},
+        {"russian": "Качает буйной головой.", "chinese": "摇晃着他蓬乱的头"},
+        {"russian": "Что ты, ямщик, приумолк дорогой?", "chinese": "车夫啊，你为什么沉默不语？"},
+        {"russian": "Или с дороги сбиться боишься?", "chinese": "还是担心迷了路？"},
+        {"russian": "Иль у тебя, мой хороший, кручина,", "chinese": "还是你有什么忧愁"},
+        {"russian": "Расскажи мне, что с тобой.", "chinese": "告诉我你怎么了"},
+        {"russian": "Колокольчик звонко плачет,", "chinese": "铃铛在清脆地哭泣"},
+        {"russian": "И ямщик порой молчит...", "chinese": "车夫时而沉默"},
+        {"russian": "А дорога дальняя,", "chinese": "道路多么漫长"},
+        {"russian": "А путь-дорога дальняя...", "chinese": "这路途是多么遥远"}
+      ],
+      "statements": [
+        {
+          "english": "Тро́йка",
+          "chinese": "三套车",
+          "soundmark": "TROY-ka"
+        },
+        {
+          "english": "ямщи́к",
+          "chinese": "车夫",
+          "soundmark": "yam-SHCHIK"
+        },
+        {
+          "english": "колоко́льчик",
+          "chinese": "铃铛",
+          "soundmark": "ka-la-KOL-cheek"
+        },
+        {
+          "english": "гру́стно",
+          "chinese": "忧伤地",
+          "soundmark": "GROOS-na"
+        },
+        {
+          "english": "дорога",
+          "chinese": "道路",
+          "soundmark": "da-RO-ga"
+        }
+      ]
+    },
+    {
+      "id": "ruso-07",
+      "order": 7,
+      "title": "莫斯科之夜",
+      "description": "歌曲莫斯科之夜相关词汇。",
+      "statements": [
+        {
+          "english": "Но́чь в Москве́",
+          "chinese": "莫斯科之夜",
+          "soundmark": "noch v mas-KVE"
+        },
+        {
+          "english": "звезда́",
+          "chinese": "星星",
+          "soundmark": "zvez-DA"
+        },
+        {
+          "english": "луна́",
+          "chinese": "月亮",
+          "soundmark": "loo-NA"
+        },
+        {
+          "english": "встре́ча",
+          "chinese": "约会",
+          "soundmark": "VSTRE-cha"
+        },
+        {
+          "english": "проща́ние",
+          "chinese": "告别",
+          "soundmark": "pra-SHCHA-nee-ye"
+        }
+      ]
+    },
+    {
+      "id": "ruso-08",
+      "order": 8,
+      "title": "雪花飘落",
+      "description": "歌曲雪花飘落相关词汇。",
+      "video": "https://youtu.be/q5BhkTNO2tM",
+      "lyrics": [
+        {"russian": "А снег идёт, а снег идёт,", "chinese": "雪花飘落，雪花飘落"},
+        {"russian": "И всё вокруг чего-то ждёт.", "chinese": "周围一切都在等待"},
+        {"russian": "Под этот снег, под тихий снег", "chinese": "在这雪下，在静静的雪下"},
+        {"russian": "Хочу сказать при всех:", "chinese": "我想当着大家说："},
+        {"russian": "«Главный человек — это ты!»", "chinese": "最重要的人就是你！"},
+        {"russian": "А снег идёт, а снег идёт,", "chinese": "雪花飘落，雪花飘落"},
+        {"russian": "И всё мерцает и плывёт.", "chinese": "一切都在闪烁浮动"},
+        {"russian": "За то, что ты в моей судьбе,", "chinese": "因为你出现在我的命运中"},
+        {"russian": "Спасибо, снег, тебе.", "chinese": "谢谢你，雪花"}
+      ],
+      "statements": [
+        {
+          "english": "Снег идёт",
+          "chinese": "雪花飘落",
+          "soundmark": "snek ee-DYOT"
+        },
+        {
+          "english": "снег",
+          "chinese": "雪",
+          "soundmark": "snek"
+        },
+        {
+          "english": "снежи́нка",
+          "chinese": "雪花",
+          "soundmark": "sne-ZHEEN-ka"
+        },
+        {
+          "english": "зима́",
+          "chinese": "冬天",
+          "soundmark": "zee-MA"
+        },
+        {
+          "english": "ти́хо",
+          "chinese": "安静地",
+          "soundmark": "TEE-kha"
+        }
+      ]
+    },
+    {
+      "id": "ruso-09",
+      "order": 9,
+      "title": "漫长之路",
+      "description": "歌曲漫长之路相关词汇。",
+      "video": "https://youtu.be/vd5q1Ioo588",
+      "lyrics": [
+        {"russian": "Ехали на тройке с бубенцами,", "chinese": "坐着带铃铛的三套车赶路"},
+        {"russian": "А вдали мелькали огоньки.", "chinese": "远处闪烁着灯火"},
+        {"russian": "Эх, когда бы мне теперь за вами,", "chinese": "唉，我多想现在跟随着你"},
+        {"russian": "Душу бы развеять от тоски!", "chinese": "把心中的忧伤驱散"},
+        {"russian": "Дорогой длинною, погодой лунною,", "chinese": "漫长的路上，月色中"},
+        {"russian": "Да с песней той, что вдаль летит звеня,", "chinese": "伴着那首响彻远方歌曲"},
+        {"russian": "Да с той старинною, да с семиструнною,", "chinese": "还有那把古老的七弦琴"},
+        {"russian": "Что по ночам так мучила меня.", "chinese": "它曾在夜晚如此折磨我"},
+        {"russian": "Да, выходит, пели мы задаром,", "chinese": "是啊，看来我们的歌白唱了"},
+        {"russian": "Понапрасну ночь за ночью жгли.", "chinese": "一夜又一夜白白燃烧"},
+        {"russian": "Если мы покончили со старым,", "chinese": "如果我们已告别过去"},
+        {"russian": "Так и ночи эти отошли.", "chinese": "那么这些夜晚也已远去"}
+      ],
+      "statements": [
+        {
+          "english": "Доро́гой дли́нною",
+          "chinese": "漫长之路",
+          "soundmark": "da-RO-goy DLEE-nayu"
+        },
+        {
+          "english": "ночь темна́",
+          "chinese": "夜黑",
+          "soundmark": "noch tem-NA"
+        },
+        {
+          "english": "ко́ни",
+          "chinese": "马匹",
+          "soundmark": "KO-nee"
+        },
+        {
+          "english": "бу́бенцы",
+          "chinese": "铃铛",
+          "soundmark": "BOO-ben-tsy"
+        },
+        {
+          "english": "печа́ль",
+          "chinese": "忧伤",
+          "soundmark": "pe-CHAL"
+        }
+      ]
+    },
+    {
+      "id": "ruso-10",
+      "order": 10,
+      "title": "音乐词汇",
+      "description": "歌曲和音乐相关基础词汇。",
+      "statements": [
+        {"english": "му́зыка","chinese": "音乐","soundmark": "MOO-zy-ka"},
+        {"english": "гита́ра","chinese": "吉他","soundmark": "gee-TA-ra"},
+        {"english": "балала́йка","chinese": "巴拉莱卡琴","soundmark": "ba-la-LAY-ka"},
+        {"english": "конце́рт","chinese": "音乐会","soundmark": "kan-TSERT"},
+        {"english": "мело́дия","chinese": "旋律","soundmark": "me-LO-dee-ya"}
+      ]
+    },
+    {
+      "id": "ruso-11",
+      "order": 11,
+      "title": "Нежность（温柔）",
+      "description": "课后歌曲欣赏：温柔，完整音频。",
+      "video": "5.初学者第五步 俄语资料/【课后歌曲欣赏】Урок 1 - Нежность.mp3",
+      "statements": [
+        {"english":"Нежность — это когда ты рядом.","chinese":"温柔就是你在身边。","soundmark":"NEZH-nast e-ta kag-da ty RYA-dam"},
+        {"english":"Тишина в доме, свет в окне.","chinese":"屋里的寂静，窗前的灯光。","soundmark":"tee-shee-NA v DO-me svet v ak-NE"},
+        {"english":"Музыка сердца звучит для нас.","chinese":"心中的音乐为我们奏响。","soundmark":"MOO-zy-ka SER-dsa zvu-CHEET dlya nas"}
+      ]
+    },
+    {
+      "id": "ruso-12",
+      "order": 12,
+      "title": "Иногда（有时候）",
+      "description": "课后歌曲欣赏：有时候，完整音频。",
+      "video": "5.初学者第五步 俄语资料/【课后歌曲欣赏】Урок 3 - Иногда.mp3",
+      "statements": [
+        {"english":"Иногда мы встречаемся взглядом.","chinese":"有时候我们目光相遇。","soundmark":"ee-nag-DA my vstre-cha-yem-sya VZGLYA-dom"},
+        {"english":"Иногда слова не нужны.","chinese":"有时候不需要言语。","soundmark":"ee-nag-DA sla-VA ne NOOZH-ny"},
+        {"english":"Просто быть рядом — это счастье.","chinese":"只要在身边就是幸福。","soundmark":"PROS-ta byt RYA-dam e-ta SCHAS-tye"}
+      ]
+    },
+    {
+      "id": "ruso-13",
+      "order": 13,
+      "title": "Берёзы（白桦）",
+      "description": "课后歌曲欣赏：白桦，完整音频。",
+      "video": "5.初学者第五步 俄语资料/【课后歌曲欣赏】Урок 4 - Берёзы.mp3",
+      "statements": [
+        {"english":"Белые берёзы под окном.","chinese":"窗前的白桦树。","soundmark":"BYE-ly-ye be-ryo-zy pad ak-NOM"},
+        {"english":"Родина моя, я люблю тебя.","chinese":"我的祖国，我爱你。","soundmark":"RO-dee-na ma-YA ya lyub-LYU te-BYA"},
+        {"english":"Русская душа в каждой ветке.","chinese":"俄罗斯的灵魂在每根枝条中。","soundmark":"ROOS-ka-ya doo-SHA v KAZH-day VYET-ke"}
+      ]
+    }
+  ]
+}

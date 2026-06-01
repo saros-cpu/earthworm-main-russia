@@ -1,0 +1,334 @@
+{
+  "id": "ru-spoken-visiting",
+  "title": "做客与社交俄语",
+  "description": "拜访朋友参加聚会和社交场合的俄语表达。",
+  "cover": "https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ruvs-01",
+      "order": 1,
+      "title": "发出邀请",
+      "description": "邀请朋友做客的用语。",
+      "statements": [
+        {
+          "english": "Приходи́те к нам в го́сти!",
+          "chinese": "来我们家做客吧！",
+          "soundmark": "pree-kha-DEE-tye k nam v GOS-tee"
+        },
+        {
+          "english": "Вы свобо́дны в суббо́ту?",
+          "chinese": "您周六有空吗？",
+          "soundmark": "vy sva-BOD-ny v soo-BO-too"
+        },
+        {
+          "english": "Приглаша́ю вас на у́жин.",
+          "chinese": "我邀请您吃晚饭。",
+          "soundmark": "pree-gla-SHA-yoo vas na OO-zhen"
+        },
+        {
+          "english": "Бу́ду рад(а) вас ви́деть.",
+          "chinese": "很高兴见到您。",
+          "soundmark": "BOO-doo rad(a) vas VEE-det"
+        },
+        {
+          "english": "В како́е вре́мя прийти́?",
+          "chinese": "几点过来合适？",
+          "soundmark": "v ka-KO-ye VRE-mya pree-EE-tee"
+        }
+      ]
+    },
+    {
+      "id": "ruvs-02",
+      "order": 2,
+      "title": "到达朋友家",
+      "description": "到达朋友家时的礼貌用语。",
+      "statements": [
+        {
+          "english": "Проходи́те, сади́тесь.",
+          "chinese": "请进请坐。",
+          "soundmark": "pra-kha-DEE-tye sa-DEE-tyes"
+        },
+        {
+          "english": "Чу́вствуйте себя́ как до́ма.",
+          "chinese": "别客气，像在家一样。",
+          "soundmark": "CHOOF-stvooy-tye se-BYA kak DO-ma"
+        },
+        {
+          "english": "Мо́жно разу́ться?",
+          "chinese": "要脱鞋吗？",
+          "soundmark": "MOZH-na ra-ZOOT-sya"
+        },
+        {
+          "english": "Кака́я у вас ую́тная кварти́ра!",
+          "chinese": "您家真温馨！",
+          "soundmark": "ka-KA-ya oo vas oo-YUT-na-ya kvar-TEE-ra"
+        },
+        {
+          "english": "Э́то вам пода́рок.",
+          "chinese": "这是给您的礼物。",
+          "soundmark": "E-ta vam pa-DA-rak"
+        }
+      ]
+    },
+    {
+      "id": "ruvs-03",
+      "order": 3,
+      "title": "夸奖赞美",
+      "description": "赞美主人和环境的表达。",
+      "statements": [
+        {
+          "english": "У вас о́чень краси́во!",
+          "chinese": "您家真漂亮！",
+          "soundmark": "oo vas O-chen kra-SEE-va"
+        },
+        {
+          "english": "Како́й чуде́сный вид из окна́!",
+          "chinese": "窗外的景色真好！",
+          "soundmark": "ka-KOY choo-DES-ny veed eez ak-NA"
+        },
+        {
+          "english": "У вас отли́чный вкус.",
+          "chinese": "您品味真好。",
+          "soundmark": "oo vas at-LEECH-ny vkoos"
+        },
+        {
+          "english": "Э́то вы сами́ гото́вили? О́чень вку́сно!",
+          "chinese": "这是您自己做的吗？非常好吃！",
+          "soundmark": "E-ta vy sa-MEE ga-TO-vee-lee O-chen VKOOS-na"
+        }
+      ]
+    },
+    {
+      "id": "ruvs-04",
+      "order": 4,
+      "title": "喝茶喝咖啡",
+      "description": "喝茶喝咖啡时的对话。",
+      "statements": [
+        {
+          "english": "Бу́дете чай или ко́фе?",
+          "chinese": "您喝茶还是咖啡？",
+          "soundmark": "BOO-de-tye chay EE-lee KO-fye"
+        },
+        {
+          "english": "Я пью чай с лимо́ном.",
+          "chinese": "我喝柠檬茶。",
+          "soundmark": "ya p-yoo chay s lee-MO-nom"
+        },
+        {
+          "english": "Вам са́хар ну́жен?",
+          "chinese": "您要加糖吗？",
+          "soundmark": "vam SA-khar NOO-zhen"
+        },
+        {
+          "english": "Ещё кусо́чек то́рта?",
+          "chinese": "再来一块蛋糕？",
+          "soundmark": "ye-SHCHO ku-SO-chek TOR-ta"
+        },
+        {
+          "english": "Спаси́бо, всё о́чень вку́сно!",
+          "chinese": "谢谢，都很好吃！",
+          "soundmark": "spa-SEE-ba vsyo O-chen VKOUS-na"
+        }
+      ]
+    },
+    {
+      "id": "ruvs-05",
+      "order": 5,
+      "title": "聊天话题",
+      "description": "社交场合聊天的开场表达。",
+      "statements": [
+        {
+          "english": "Как ва́ши дела́?",
+          "chinese": "您最近怎么样？",
+          "soundmark": "kak VA-shee de-LA"
+        },
+        {
+          "english": "Чем вы увлека́етесь?",
+          "chinese": "您有什么爱好？",
+          "soundmark": "chem vy oov-le-ka-ye-tyes"
+        },
+        {
+          "english": "Отку́да вы ро́дом?",
+          "chinese": "您老家在哪？",
+          "soundmark": "at-KOO-da vy RO-dam"
+        },
+        {
+          "english": "Вы уже́ бы́ли в Росси́и?",
+          "chinese": "您去过俄罗斯吗？",
+          "soundmark": "vy oo-ZHE BY-lee v ras-SEE-ee"
+        },
+        {
+          "english": "Кака́я сего́дня чуде́сная пого́да!",
+          "chinese": "今天天气真好！",
+          "soundmark": "ka-KA-ya se-VOD-nya choo-DES-na-ya pa-GO-da"
+        }
+      ]
+    },
+    {
+      "id": "ruvs-06",
+      "order": 6,
+      "title": "感谢主人",
+      "description": "离开前感谢主人的表达。",
+      "statements": [
+        {
+          "english": "Спаси́бо за гостеприи́мство!",
+          "chinese": "谢谢款待！",
+          "soundmark": "spa-SEE-ba za gas-te-pree-EEM-stva"
+        },
+        {
+          "english": "Всё бы́ло замеча́тельно!",
+          "chinese": "一切都非常棒！",
+          "soundmark": "vsyo BY-la za-me-CHA-tel-na"
+        },
+        {
+          "english": "Вы превосхо́дный хозя́ин!",
+          "chinese": "您是一位出色的主人！",
+          "soundmark": "vy pre-vas-KHOD-ny kha-ZYA-in"
+        },
+        {
+          "english": "Мне о́чень понра́вилось у вас.",
+          "chinese": "我在您这很开心。",
+          "soundmark": "mne O-chen pa-NRA-vee-las oo vas"
+        },
+        {
+          "english": "Обяза́тельно приду́ ещё!",
+          "chinese": "我一定还会来！",
+          "soundmark": "a-bya-ZA-tel-na pree-DOO ye-SHCHO"
+        }
+      ]
+    },
+    {
+      "id": "ruvs-07",
+      "order": 7,
+      "title": "告别用语",
+      "description": "道别时的礼貌表达。",
+      "statements": [
+        {
+          "english": "До свида́ния! Приходи́те ещё!",
+          "chinese": "再见！下次再来！",
+          "soundmark": "da svee-DA-nee-ya pree-kha-DEE-tye ye-SHCHO"
+        },
+        {
+          "english": "Споко́йной но́чи, до за́втра!",
+          "chinese": "晚安，明天见！",
+          "soundmark": "spa-KOY-noy NO-chee da ZAV-tra"
+        },
+        {
+          "english": "Счастли́вого пути́!",
+          "chinese": "一路平安！",
+          "soundmark": "shchees-LEE-va-va poo-TEE"
+        },
+        {
+          "english": "Передава́йте приве́т ва́шим!",
+          "chinese": "向您的家人问好！",
+          "soundmark": "pe-re-da-VAY-tye pree-VYET VA-sheem"
+        },
+        {
+          "english": "Бу́дем на связи!",
+          "chinese": "保持联系！",
+          "soundmark": "BOO-dem na SVYA-zee"
+        }
+      ]
+    },
+    {
+      "id": "ruvs-08",
+      "order": 8,
+      "title": "聚会交谈",
+      "description": "在聚会上的社交表达。",
+      "statements": [
+        {
+          "english": "Отли́чная вечери́нка!",
+          "chinese": "派对太棒了！",
+          "soundmark": "at-LEECH-na-ya ve-che-REEN-ka"
+        },
+        {
+          "english": "Дава́йте вы́пьем за встре́чу!",
+          "chinese": "为这次相聚干杯！",
+          "soundmark": "da-VAY-tye VY-pem za VSTRE-choo"
+        },
+        {
+          "english": "Знако́мьтесь, э́то мой друг.",
+          "chinese": "认识一下，这是我的朋友。",
+          "soundmark": "zna-KOM-tyes E-ta moy droog"
+        },
+        {
+          "english": "Кака́я хоро́шая му́зыка!",
+          "chinese": "音乐真好！",
+          "soundmark": "ka-KA-ya kha-RO-sha-ya MOO-zy-ka"
+        },
+        {
+          "english": "Вы танцу́ете?",
+          "chinese": "您跳舞吗？",
+          "soundmark": "vy tan-TSOO-ye-tye"
+        }
+      ]
+    },
+    {
+      "id": "ruvs-09",
+      "order": 9,
+      "title": "赠送礼物",
+      "description": "赠送和收礼时的表达。",
+      "statements": [
+        {
+          "english": "Э́то вам небольшо́й сувени́р.",
+          "chinese": "这是给您的小纪念品。",
+          "soundmark": "E-ta vam ne-bal-SHOY soo-ve-NEER"
+        },
+        {
+          "english": "Мо́жно откры́ть?",
+          "chinese": "可以打开吗？",
+          "soundmark": "MOZH-na at-KRYT"
+        },
+        {
+          "english": "О́чень краси́во! Спаси́бо большо́е!",
+          "chinese": "太漂亮了！非常感谢！",
+          "soundmark": "O-chen kra-SEE-va spa-SEE-ba bal-SHO-ye"
+        },
+        {
+          "english": "Не сто́ило беспоко́иться.",
+          "chinese": "您太客气了。",
+          "soundmark": "ne STO-ee-la bes-pa-KO-eet-sya"
+        },
+        {
+          "english": "Ва́ше внима́ние для меня́ о́чень ценно.",
+          "chinese": "您的心意对我来说很珍贵。",
+          "soundmark": "VA-she vnee-MA-nee-ye dlya me-NYA O-chen TSEN-na"
+        }
+      ]
+    },
+    {
+      "id": "ruvs-10",
+      "order": 10,
+      "title": "做客礼仪",
+      "description": "做客时的礼貌用语和注意事项。",
+      "statements": [
+        {
+          "english": "Мо́жно вам помо́чь с посу́дой?",
+          "chinese": "我来帮您洗碗吧？",
+          "soundmark": "MOZH-na vam pa-MOCH s pa-SOO-doy"
+        },
+        {
+          "english": "Не беспоко́йтесь, всё под контролем.",
+          "chinese": "别担心，一切都在掌控中。",
+          "soundmark": "ne bes-pa-KOY-tyes vsyo pad kan-TRO-lem"
+        },
+        {
+          "english": "Са́дитесь побли́же к столу́.",
+          "chinese": "请坐得离桌子近一点。",
+          "soundmark": "SA-dee-tyes pob-LEE-zhe k sta-LOO"
+        },
+        {
+          "english": "Извини́те, мне ну́жно идти́.",
+          "chinese": "抱歉，我得走了。",
+          "soundmark": "eez-vee-NEE-tye mne NOOZH-na ee-TEE"
+        },
+        {
+          "english": "Спаси́бо за прекра́сный ве́чер!",
+          "chinese": "感谢这个美好的晚上！",
+          "soundmark": "spa-SEE-ba za pre-KRAS-ny VE-cher"
+        }
+      ]
+    }
+  ]
+}

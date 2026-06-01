@@ -1,0 +1,201 @@
+{
+  "id": "ru-pronunciation-course",
+  "title": "俄语发音入门课（12讲）",
+  "description": "俄语发音入门12讲视频课程，涵盖字母发音、元音辅音、重音语调等基础语音知识。",
+  "cover": "https://images.unsplash.com/photo-1536064479547-7ee40b74b0f4?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rupc-01",
+      "order": 1,
+      "title": "语音入门 第1讲",
+      "description": "俄语字母基础发音。",
+      "statements": [
+        {"english": "А а — [а]", "chinese": "字母Аа读作[a]，口张大", "soundmark": "a"},
+        {"english": "О о — [о]", "chinese": "字母Оо读作[o]，双唇收圆", "soundmark": "o"},
+        {"english": "У у — [у]", "chinese": "字母Уу读作[u]，双唇前伸", "soundmark": "oo"},
+        {"english": "Э э — [э]", "chinese": "字母Ээ读作[e]", "soundmark": "eh"},
+        {"english": "ы — [ы]", "chinese": "字母ы读作[ɨ]", "soundmark": "y"},
+        {"english": "И и — [и]", "chinese": "字母Ии读作[i]", "soundmark": "ee"}
+      ],
+      "video": "2.初学者第二步 俄语发音入门课/ypok 1.avi"
+    },
+    {
+      "id": "rupc-02",
+      "order": 2,
+      "title": "语音入门 第2讲",
+      "description": "俄语辅音与元音组合发音。",
+      "statements": [
+        {"english": "Б б — [b]", "chinese": "浊辅音б，声带振动", "soundmark": "b"},
+        {"english": "П п — [p]", "chinese": "清辅音п，声带不振动", "soundmark": "p"},
+        {"english": "В в — [v]", "chinese": "浊辅音в，上齿咬下唇", "soundmark": "v"},
+        {"english": "Ф ф — [f]", "chinese": "清辅音ф，上齿咬下唇", "soundmark": "f"},
+        {"english": "М м — [m]", "chinese": "鼻辅音м", "soundmark": "m"},
+        {"english": "Н н — [n]", "chinese": "鼻辅音н", "soundmark": "n"}
+      ],
+      "video": "2.初学者第二步 俄语发音入门课/ypok 2.avi"
+    },
+    {
+      "id": "rupc-03",
+      "order": 3,
+      "title": "语音入门 第3讲",
+      "description": "俄语硬辅音与软辅音的区别。",
+      "statements": [
+        {"english": "Т т — [t/tʲ]", "chinese": "清辅音т（硬/软）", "soundmark": "t/t"},
+        {"english": "Д д — [d/dʲ]", "chinese": "浊辅音д（硬/软）", "soundmark": "d/d"},
+        {"english": "С с — [s/sʲ]", "chinese": "清辅音с（硬/软）", "soundmark": "s/s"},
+        {"english": "З з — [z/zʲ]", "chinese": "浊辅音з（硬/软）", "soundmark": "z/z"},
+        {"english": "Л л — [l/lʲ]", "chinese": "边辅音л（硬/软）", "soundmark": "l/l"},
+        {"english": "Р р — [r/rʲ]", "chinese": "颤音р（硬/软）", "soundmark": "r/r"}
+      ],
+      "video": "2.初学者第二步 俄语发音入门课/ypok 3.avi"
+    },
+    {
+      "id": "rupc-04",
+      "order": 4,
+      "title": "语音入门 第4讲",
+      "description": "俄语清浊辅音对应及词尾清化规则。",
+      "statements": [
+        {"english": "Г г — [g/k]", "chinese": "浊辅音г — 词尾清化为к", "soundmark": "g/k"},
+        {"english": "К к — [k]", "chinese": "清辅音к", "soundmark": "k"},
+        {"english": "Х х — [x]", "chinese": "清辅音х，类似汉语'h'", "soundmark": "kh"},
+        {"english": "Ж ж — [ʐ/ʂ]", "chinese": "浊辅音ж — 词尾清化为ш", "soundmark": "zh/sh"},
+        {"english": "Ш ш — [ʂ]", "chinese": "清辅音ш", "soundmark": "sh"},
+        {"english": "Щ щ — [ɕː]", "chinese": "清辅音щ，长软音", "soundmark": "shch"}
+      ],
+      "video": "2.初学者第二步 俄语发音入门课/ypok 4.avi"
+    },
+    {
+      "id": "rupc-05",
+      "order": 5,
+      "title": "语音入门 第5讲",
+      "description": "俄语重音规律与读音变化。",
+      "statements": [
+        {"english": "молоко́", "chinese": "牛奶（重音在最后音节）", "soundmark": "ma-la-KO"},
+        {"english": "хо́рошо", "chinese": "好（重音在第一音节）", "soundmark": "KHO-ra-sha"},
+        {"english": "говори́ть", "chinese": "说（重音在-ри́ть）", "soundmark": "ga-va-REET"},
+        {"english": "у́ченик", "chinese": "学生（重音在第一音节）", "soundmark": "OO-che-nik"},
+        {"english": "ру́сский", "chinese": "俄语的（重音在第一个у）", "soundmark": "ROOS-kiy"},
+        {"english": "интересный", "chinese": "有趣的（重音在-ре́с-）", "soundmark": "in-te-RES-nyi"}
+      ],
+      "video": "2.初学者第二步 俄语发音入门课/ypok 5.avi"
+    },
+    {
+      "id": "rupc-06",
+      "order": 6,
+      "title": "语音入门 第6讲",
+      "description": "俄语调型基础（ИК-1, ИК-2, ИК-3）。",
+      "statements": [
+        {"english": "Он дома. (ИК-1)", "chinese": "他在家。（陈述语调）", "soundmark": "on DO-ma"},
+        {"english": "Он дома? (ИК-3)", "chinese": "他在家吗？（疑问语调）", "soundmark": "on da-MA"},
+        {"english": "Кто он? (ИК-2)", "chinese": "他是谁？（疑问词重音）", "soundmark": "kto on"},
+        {"english": "Какой красивый! (ИК-5)", "chinese": "多漂亮啊！（感叹语调）", "soundmark": "ka-KOY kra-SEE-viy"},
+        {"english": "Что это?", "chinese": "这是什么？（疑问）", "soundmark": "shto E-ta"},
+        {"english": "Это книга.", "chinese": "这是一本书。（陈述）", "soundmark": "E-ta KNEE-ga"}
+      ],
+      "video": "2.初学者第二步 俄语发音入门课/ypok 6.avi"
+    },
+    {
+      "id": "rupc-07",
+      "order": 7,
+      "title": "语音入门 第7讲",
+      "description": "俄语元音弱化规律与非重读元音。",
+      "statements": [
+        {"english": "молоко [məlɐˈko]", "chinese": "牛奶（о非重读弱化）", "soundmark": "ma-la-KO"},
+        {"english": "хорошо [xərɐˈʂo]", "chinese": "好（两个о均弱化）", "soundmark": "kha-ra-SHO"},
+        {"english": "перевод [pʲɪrʲɪˈvot]", "chinese": "翻译（е非重读→и）", "soundmark": "pee-re-VOT"},
+        {"english": "язык [jɪˈzɨk]", "chinese": "语言（я非重读弱化）", "soundmark": "yee-ZYK"},
+        {"english": "этаж [ɪˈtaʂ]", "chinese": "楼层（э非重读→и）", "soundmark": "ee-TASH"},
+        {"english": "пятак [pʲɪˈtak]", "chinese": "五戈比（я弱化）", "soundmark": "pee-TAK"}
+      ],
+      "video": "2.初学者第二步 俄语发音入门课/ypok 7.avi"
+    },
+    {
+      "id": "rupc-08",
+      "order": 8,
+      "title": "语音入门 第8讲",
+      "description": "俄语清浊辅音同化规则（逆行同化）。",
+      "statements": [
+        {"english": "дуб [dup]", "chinese": "橡树（б词尾清化→п）", "soundmark": "doop"},
+        {"english": "просьба [ˈprozʲbə]", "chinese": "请求（с→з浊化）", "soundmark": "PROZ-ba"},
+        {"english": "вокзал [vagˈzal]", "chinese": "火车站（к→г浊化）", "soundmark": "vag-ZAL"},
+        {"english": "завтра [ˈzaftrə]", "chinese": "明天（в→ф清化）", "soundmark": "ZAF-tra"},
+        {"english": "сказка [ˈskaskə]", "chinese": "童话（з→с清化）", "soundmark": "SKAS-ka"},
+        {"english": "сделать [ˈzʲdʲelətʲ]", "chinese": "做（с→з浊化）", "soundmark": "ZDYE-lat"}
+      ],
+      "video": "2.初学者第二步 俄语发音入门课/ypok 8.avi"
+    },
+    {
+      "id": "rupc-09",
+      "order": 9,
+      "title": "语音入门 第9讲",
+      "description": "俄语软音符号Ь与硬音符号Ъ的用法。",
+      "statements": [
+        {"english": "мать [matʲ]", "chinese": "母亲（Ь使т软化）", "soundmark": "mat"},
+        {"english": "день [dʲenʲ]", "chinese": "白天（Ь使д和н软化）", "soundmark": "dyen"},
+        {"english": "письмо [pʲisʲˈmo]", "chinese": "信（Ь使с软化）", "soundmark": "pees-MO"},
+        {"english": "подъезд", "chinese": "入口（Ъ分隔前缀与词根）", "soundmark": "pad-YEZD"},
+        {"english": "объявление", "chinese": "公告（Ъ分隔）", "soundmark": "ab-yav-LE-ne-ye"},
+        {"english": "съесть", "chinese": "吃掉（Ъ后发йэ音）", "soundmark": "syest"}
+      ],
+      "video": "2.初学者第二步 俄语发音入门课/ypok 9.avi"
+    },
+    {
+      "id": "rupc-10",
+      "order": 10,
+      "title": "语音入门 第10讲",
+      "description": "俄语连读与语流音变现象。",
+      "statements": [
+        {"english": "в армию [ˈva‿rmʲɪjʊ]", "chinese": "去参军（前置词与名词连读）", "soundmark": "VAR-mee-yoo"},
+        {"english": "на уроке [nə‿ʊˈrokʲe]", "chinese": "在课上（连读）", "soundmark": "na-oo-RO-ke"},
+        {"english": "у отца [ʊ‿ɐˈt͡sa]", "chinese": "在父亲那里", "soundmark": "oo-at-SA"},
+        {"english": "он ушёл [ɐnuˈʂoɫ]", "chinese": "他走了", "soundmark": "a-noo-SHOL"},
+        {"english": "не было [ˈnʲebɨɫə]", "chinese": "没有", "soundmark": "NYE-by-la"},
+        {"english": "вчера [ft͡ɕɪˈra]", "chinese": "昨天（连读）", "soundmark": "fchee-RA"}
+      ],
+      "video": "2.初学者第二步 俄语发音入门课/ypok 10.avi"
+    },
+    {
+      "id": "rupc-11",
+      "order": 11,
+      "title": "语音入门 第11讲",
+      "description": "俄语常用问候与自我介绍语音练习。",
+      "statements": [
+        {"english": "Здравствуйте!", "chinese": "您好！（正式问候）", "soundmark": "ZDRA-stvooy-te"},
+        {"english": "Доброе утро!", "chinese": "早上好！", "soundmark": "DOB-ra-ye UT-ra"},
+        {"english": "Меня зовут Анна.", "chinese": "我叫安娜。", "soundmark": "me-NYA za-VOOT AN-na"},
+        {"english": "Я из Китая.", "chinese": "我来自中国。", "soundmark": "ya iz kee-TA-ya"},
+        {"english": "Очень приятно!", "chinese": "很高兴认识你！", "soundmark": "O-chen pri-YAT-na"},
+        {"english": "До свидания!", "chinese": "再见！", "soundmark": "da svee-DA-ne-ya"}
+      ],
+      "video": "2.初学者第二步 俄语发音入门课/ypok 11.avi"
+    },
+    {
+      "id": "rupc-12",
+      "order": 12,
+      "title": "语音入门 第12讲",
+      "description": "俄语发音综合练习与纠音。",
+      "statements": [
+        {"english": "Сегодня хорошая погода.", "chinese": "今天天气好。", "soundmark": "se-VOD-nya kha-RO-sha-ya pa-GO-da"},
+        {"english": "Я люблю читать русские книги.", "chinese": "我喜欢读俄语书。", "soundmark": "ya lyub-LYU chee-TAT ROO-skee-ye KNEE-gee"},
+        {"english": "Сколько это стоит?", "chinese": "这个多少钱？", "soundmark": "SKOL-ka E-ta STO-eet"},
+        {"english": "Где находится библиотека?", "chinese": "图书馆在哪里？", "soundmark": "gde na-KHO-deet-sya bib-lee-a-TE-ka"},
+        {"english": "Как пройти к метро?", "chinese": "去地铁怎么走？", "soundmark": "kak proy-TEE k met-RO"},
+        {"english": "Спасибо большое!", "chinese": "非常感谢！", "soundmark": "spa-SEE-ba bal-SHO-ye"}
+      ],
+      "video": "2.初学者第二步 俄语发音入门课/ypok 12.avi"
+    },
+    {
+      "id": "rupc-13",
+      "order": 13,
+      "title": "入门课试听与歌曲欣赏",
+      "description": "俄语入门课试听及课后歌曲欣赏。",
+      "statements": [
+        {"english": "Урок 1 - Нежность", "chinese": "课后歌曲欣赏：温柔", "soundmark": "NEZH-nost"},
+        {"english": "Урок 3 - Иногда", "chinese": "课后歌曲欣赏：有时", "soundmark": "ee-nag-DA"},
+        {"english": "Урок 4 - Берёзы", "chinese": "课后歌曲欣赏：白桦", "soundmark": "be-RO-zy"}
+      ],
+      "video": "2.初学者第二步 俄语发音入门课/俄语入门课试听.avi"
+    }
+  ]
+}

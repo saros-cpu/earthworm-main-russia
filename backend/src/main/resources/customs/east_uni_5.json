@@ -1,0 +1,159 @@
+{
+  "id": "east-uni-5",
+  "title": "大学俄语(东方) · 第5册",
+  "description": "大学俄语(东方)第五册。学习主动形动词的深入，被动形动词，副动词完成体与未完成体，从句的扩展。",
+  "cover": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "eu5-01", "order": 1, "title": "第1课 主动形动词现在时深化",
+      "statements": [
+        { "english": "Студент, изучающий иностранные языки, много читает.", "chinese": "学习外语的学生读很多书。", "soundmark": "stoo-dyent e-zu-cha-yu-shchee e-nas-tran-ny-ye ya-zy-ki mno-ga chee-ta-yet" },
+        { "english": "Учёные, исследующие космос, сделали открытие.", "chinese": "研究宇宙的科学家们做出了发现。", "soundmark": "oo-chyo-ny-ye ees-sle-du-yu-shchi-ye kos-mas sdye-la-le at-kry-tee-ye" },
+        { "english": "Журналист, берущий интервью, работает в газете.", "chinese": "正在采访的记者在报社工作。", "soundmark": "zhoor-na-leest be-roo-shchee een-ter-vyu ra-bo-ta-yet v ga-zye-tye" },
+        { "english": "Люди, живущие в этом городе, очень дружелюбны.", "chinese": "住在这座城市的人们非常友好。", "soundmark": "lyu-dee zhee-voo-shchi-ye v e-tom go-ro-dye o-chen droo-zhe-lyub-ny" },
+        { "english": "Спортсмен, бегущий марафон, тренируется каждый день.", "chinese": "跑马拉松的运动员每天训练。", "soundmark": "sparts-men bye-goo-shchee ma-ra-fon tre-nee-ru-yet-sya kazh-dy dyen" },
+        { "english": "Родители, воспитывающие детей, заслуживают уважения.", "chinese": "抚养孩子的父母值得尊重。", "soundmark": "ra-dee-te-lee vas-pee-ty-va-yu-shchi-ye dye-tyey za-slu-zhee-va-yut oo-va-zhe-nee-ya" },
+        { "english": "Учёные, работающие над новым лекарством, добились успеха.", "chinese": "研发新药的科学家们取得了成功。", "soundmark": "oo-chyo-ny-ye ra-bo-ta-yu-shchi-ye nad no-vym le-kar-stvam da-bee-lees oos-pe-kha" },
+        { "english": "Путешественник, объездивший весь мир, написал книгу.", "chinese": "走遍全世界的旅行家写了一本书（主动形动词过去时）", "soundmark": "poo-tye-shest-ven-neek a-by-ez-deel veys mir na-pee-sal knee-goo" },
+        { "english": "Делегация, прибывшая вчера, остановилась в гостинице.", "chinese": "昨天到达的代表团住在了宾馆（主动形动词过去时）", "soundmark": "de-le-ga-tsi-ya pree-byf-sha-ya vche-ra a-sta-na-vee-las v ga-stee-nee-tse" },
+        { "english": "Эксперты, проводившие анализ, пришли к выводу.", "chinese": "进行分析的专家们得出了结论（主动形动词过去时）", "soundmark": "eks-per-ty pra-va-deef-shi-ye a-na-leez pree-shlee k vy-va-doo" }
+      ]
+    },
+    {
+      "id": "eu5-02", "order": 2, "title": "第2课 被动形动词现在时",
+      "statements": [
+        { "english": "Эти книги читаются миллионами людей.", "chinese": "这些书被数百万人阅读。", "soundmark": "e-tee knee-gee chee-ta-yut-sya mee-lee-o-na-mee lyu-dey" },
+        { "english": "Вопрос решается директором.", "chinese": "问题由经理决定。", "soundmark": "vap-ros re-sha-yet-sya dee-rek-ta-rom" },
+        { "english": "Это здание строится известным архитектором.", "chinese": "这座建筑由著名建筑师建造。", "soundmark": "e-ta zdan-nee-ye stro-eet-sya eez-vest-nym ar-khee-tek-ta-rom" },
+        { "english": "Документы готовятся секретарём.", "chinese": "文件由秘书准备。", "soundmark": "da-koo-men-ty ga-to-vyat-sya sek-re-ta-ryom" },
+        { "english": "Учебники выдаются библиотекой.", "chinese": "教材由图书馆发放。", "soundmark": "oo-cheb-nee-kee vy-da-yut-sya beeb-lee-a-tye-koy" },
+        { "english": "Музей посещается тысячами туристов.", "chinese": "博物馆被成千上万的游客参观。", "soundmark": "moo-zyey pa-se-shcha-yet-sya ty-sya-cha-mee too-rees-tav" },
+        { "english": "Эта программа поддерживается правительством.", "chinese": "这个项目由政府支持。", "soundmark": "e-ta pra-gram-ma pad-der-zhee-va-yet-sya pra-vee-tel-stvam" },
+        { "english": "Награды вручаются президентом.", "chinese": "奖项由总统颁发。", "soundmark": "na-gra-dy vroo-cha-yut-sya pree-zee-den-tom" },
+        { "english": "Конференция организуется университетом.", "chinese": "会议由大学组织。", "soundmark": "kon-fe-ren-tsi-ya or-ga-nee-zu-yet-sya oo-nee-ver-see-te-tom" },
+        { "english": "Эти законы принимаются Государственной Думой.", "chinese": "这些法律由国家杜马通过。", "soundmark": "e-tee za-ko-ny pree-nee-ma-yut-sya ga-soo-dar-stven-noy doo-moy" }
+      ]
+    },
+    {
+      "id": "eu5-03", "order": 3, "title": "第3课 被动形动词过去时深化",
+      "statements": [
+        { "english": "Письмо написано мной.", "chinese": "信被我写好了。", "soundmark": "pees-mo na-pee-sa-no mnoy" },
+        { "english": "Экзамены сданы успешно.", "chinese": "考试已经被成功通过了。", "soundmark": "ek-za-me-ny sda-ny oos-pe-shna" },
+        { "english": "Дом построен в прошлом году.", "chinese": "房子是去年建成的。", "soundmark": "dom pa-stro-yen v prosh-lom ga-doo" },
+        { "english": "Задача решена учеником.", "chinese": "习题被学生解出来了。", "soundmark": "za-da-cha re-she-na oo-che-nee-kom" },
+        { "english": "Контракт подписан сторонами.", "chinese": "合同由双方签署。", "soundmark": "kan-trakt pad-pee-san sta-ra-na-mee" },
+        { "english": "Выставка открыта известным художником.", "chinese": "展览由著名画家开幕。", "soundmark": "vy-staf-ka at-kry-ta eez-vest-nym khu-dozh-nee-kom" },
+        { "english": "Все билеты уже проданы.", "chinese": "所有票已经售罄。", "soundmark": "vsye bee-lye-ty oo-zhe pro-da-ny" },
+        { "english": "Статья опубликована в научном журнале.", "chinese": "文章发表在科学期刊上。", "soundmark": "stat-ya a-poo-blee-ko-va-na v na-ooch-nom zhoor-na-lye" },
+        { "english": "Дороги построены в этом районе.", "chinese": "道路已在这个地区建成。", "soundmark": "da-ro-gee pa-stro-ye-ny v e-tom ra-yo-nye" },
+        { "english": "Закон принят единогласно.", "chinese": "法律全票通过。", "soundmark": "za-kon pree-nyat ye-dee-nag-las-na" }
+      ]
+    },
+    {
+      "id": "eu5-04", "order": 4, "title": "第4课 副动词完成体与未完成体",
+      "statements": [
+        { "english": "Готовя ужин, она слушала новости.", "chinese": "准备晚饭时（过程），她听了新闻（未完成体副动词）", "soundmark": "ga-to-vya oo-zheen a-na sloo-sha-la no-va-stee" },
+        { "english": "Приготовив ужин, она позвала всех к столу.", "chinese": "准备好晚饭后（完成），她叫了大家上桌（完成体副动词）", "soundmark": "pree-go-to-veef oo-zheen a-na paz-va-la vsyek k sta-loo" },
+        { "english": "Читая этот роман, я вспоминал свои студенческие годы.", "chinese": "读这部小说时（过程中），我想起了自己的学生时代。", "soundmark": "chee-ta-ya e-tat ra-man ya fspa-mee-nal sva-yee stoo-dyen-chee-ski-ye go-dy" },
+        { "english": "Прочитав этот роман, я решил написать рецензию.", "chinese": "读完了这部小说后，我决定写一篇评论。", "soundmark": "pra-chee-taf e-tat ra-man ya re-sheel na-pee-sat re-tsen-zee-yu" },
+        { "english": "Отвечая на вопросы, он нервничал.", "chinese": "回答问题时（过程中），他很紧张。", "soundmark": "at-ve-cha-ya na vap-ro-sy on ner-vee-chal" },
+        { "english": "Ответив на все вопросы, он вздохнул с облегчением.", "chinese": "回答了所有问题后，他松了一口气。", "soundmark": "at-ve-teef na vsye vap-ro-sy on vzda-nul s ab-leg-che-nee-yem" },
+        { "english": "Переводя текст, я пользовался словарём.", "chinese": "翻译文本时（过程中），我用了词典。", "soundmark": "pe-re-vo-dya tekst ya pol-zo-val-sya sla-va-ryom" },
+        { "english": "Переведя текст, я сдал его преподавателю.", "chinese": "翻译完文本后，我把它交给了老师。", "soundmark": "pe-re-ve-dya tekst ya sdal ye-vo pre-pa-da-va-tye-lyu" },
+        { "english": "Собираясь в поездку, проверьте документы.", "chinese": "准备出行时，检查一下证件。", "soundmark": "sa-bee-ra-yus v pa-yest-koo pro-ver-tye da-koo-men-ty" },
+        { "english": "Собравшись, мы вышли из дома.", "chinese": "收拾好后，我们出了家门。", "soundmark": "sa-braf-sya my vy-shlee eez do-ma" }
+      ]
+    },
+    {
+      "id": "eu5-05", "order": 5, "title": "第5课 定语从句（Определительные придаточные）",
+      "statements": [
+        { "english": "Я знаю студента, который отлично сдал экзамен.", "chinese": "我认识那个考试考得很好的学生。", "soundmark": "ya zna-yu stoo-dyen-ta ka-to-ry ot-leech-na sdal ek-za-men" },
+        { "english": "Книга, которую я читаю, очень интересная.", "chinese": "我正在读的这本书非常有意思。", "soundmark": "knee-ga ka-to-roo-ya ya chee-ta-yu o-chen een-te-res-na-ya" },
+        { "english": "Университет, в котором я учусь, основан в 1950 году.", "chinese": "我所在的大学成立于1950年。", "soundmark": "oo-nee-ver-see-tet v ka-to-rom ya oo-chus a-sno-van v ty-sya-cha de-vyat-sot pyat-de-sya-tom ga-doo" },
+        { "english": "Преподаватель, которого мы уважаем, ушёл на пенсию.", "chinese": "我们尊敬的那位老师退休了。", "soundmark": "pre-pa-da-va-tyel ka-to-ro-va my oo-va-zha-yem oo-shyol na pyen-see-yu" },
+        { "english": "Фильм, который мы посмотрели, был очень трогательным.", "chinese": "我们看的那部电影非常感人。", "soundmark": "feelm ka-to-ry my pa-sma-tre-lee byl o-chen tro-ga-tel-nym" },
+        { "english": "Друзья, с которыми я познакомился в Москве, приехали в гости.", "chinese": "我在莫斯科认识的那些朋友们来做客了。", "soundmark": "droo-zya s ka-to-ry-mee ya paz-na-ko-meel-sya v maz-kve pree-ye-kha-lee v go-stee" },
+        { "english": "Город, в который мы поедем летом, находится на Волге.", "chinese": "我们夏天要去的城市在伏尔加河畔。", "soundmark": "go-rod v ka-to-ry my pa-ye-dem lye-tom na-kho-deet-sya na vol-gye" },
+        { "english": "Вопрос, о котором мы говорили, уже решён.", "chinese": "我们谈到的那个问题已经解决了。", "soundmark": "vap-ros a ka-to-rom my ga-vo-ree-lee oo-zhe re-shon" },
+        { "english": "Студенты, которым нужна помощь, могут обратиться к преподавателю.", "chinese": "需要帮助的学生可以找老师。", "soundmark": "stoo-dyen-ty ka-to-rym noo-zhna po-mashch mo-goob-ra-teet-sya k pre-pa-da-va-tye-lyu" },
+        { "english": "Это та самая книга, которую я искал.", "chinese": "这正是我一直在找的那本书。", "soundmark": "e-ta ta sa-ma-ya knee-ga ka-to-roo-ya ya ee-skal" }
+      ]
+    },
+    {
+      "id": "eu5-06", "order": 6, "title": "第6课 条件从句与让步从句",
+      "statements": [
+        { "english": "Если будет хорошая погода, мы поедем за город.", "chinese": "如果天气好，我们就去郊外。", "soundmark": "ye-sle bu-det kha-ro-sha-ya pa-go-da my pa-ye-dem za go-rod" },
+        { "english": "Если бы я знал, я бы пришёл раньше.", "chinese": "如果我早知道，我就会早点来（虚拟语气）", "soundmark": "ye-sle by ya znal ya by pree-shyol ran-she" },
+        { "english": "Если ты будешь усердно заниматься, ты сдашь экзамен.", "chinese": "如果你努力学习，你就会通过考试。", "soundmark": "ye-sle ty bu-desh oo-ser-da za-nee-mat-sya ty zdash ek-za-men" },
+        { "english": "Хотя было холодно, он пошёл гулять.", "chinese": "虽然很冷，他还是去散步了。", "soundmark": "kha-tya by-la kha-lod-na on pa-shyol goo-lyat" },
+        { "english": "Несмотря на дождь, матч состоялся.", "chinese": "尽管下雨，比赛还是进行了。", "soundmark": "ne-sma-trya na dozhd mach sa-sta-yal-sya" },
+        { "english": "Даже если ты устал, нужно закончить работу.", "chinese": "即使你累了，也需要完成工作。", "soundmark": "da-zhe ye-sle ty oo-stal noo-zhna za-kon-cheet ra-bo-too" },
+        { "english": "Если не знаешь, спроси у преподавателя.", "chinese": "如果不知道，就去问老师。", "soundmark": "ye-sle ne zna-yesh spra-see oo pre-pa-da-va-tye-lya" },
+        { "english": "При условии, что вы сдадите вовремя, оценка будет высокая.", "chinese": "条件是你们按时提交，分数会很高。", "soundmark": "pree oo-slo-vee-ee shto vy zda-dee-tye vo-vre-mya a-tsen-ka bu-det vy-so-ka-ya" },
+        { "english": "Хотя он опоздал, его всё равно пустили.", "chinese": "虽然他迟到了，还是让他进去了。", "soundmark": "kha-tya on a-paz-dal ye-vo vsyo rav-no poo-stee-lee" },
+        { "english": "В случае необходимости звоните мне.", "chinese": "如有必要，给我打电话。", "soundmark": "f slu-cha-ye ne-a-bkho-dee-mo-stee zva-nee-tye mnye" }
+      ]
+    },
+    {
+      "id": "eu5-07", "order": 7, "title": "第7课 因果关系从句",
+      "statements": [
+        { "english": "Я опоздал, потому что проспал.", "chinese": "我迟到了，因为睡过头了。", "soundmark": "ya a-paz-dal pa-to-mu shto pra-spal" },
+        { "english": "Так как было поздно, we решили остаться.", "chinese": "因为天色已晚，我们决定留下来。", "soundmark": "tak kak by-la poz-na my re-shee-lee a-sta-tsa" },
+        { "english": "Из-за дождя матч отменили.", "chinese": "因为下雨，比赛被取消了。", "soundmark": "eez-za dazh-dya mach at-me-nee-lee" },
+        { "english": "Благодаря помощи друга я сдал экзамен.", "chinese": "多亏朋友的帮助，我通过了考试。", "soundmark": "bla-go-da-rya po-mash-chee droo-ga ya sdal ek-za-men" },
+        { "english": "По причине болезни он не пришёл.", "chinese": "由于生病，他没有来。", "soundmark": "pa pree-chee-ne bolyez-nee on ne pree-shyol" },
+        { "english": "В связи с отъездом он сдал ключи.", "chinese": "由于要离开，他交了钥匙。", "soundmark": "f svee-zee s at-yez-dam on sdal klyu-chee" },
+        { "english": "Вследствие аварии движение было остановлено.", "chinese": "由于事故，交通被停止了。", "soundmark": "fslyed-stvee-ya-va-ree-ee dvee-zhe-nee-ye by-la a-sta-nov-le-na" },
+        { "english": "Я рад, что вы пришли.", "chinese": "我很高兴你们来了。", "soundmark": "ya rat shto vy pree-shlee" },
+        { "english": "Мы огорчены, что вы уезжаете.", "chinese": "您要走了我们很难过。", "soundmark": "my a-gar-chee-ny shto vy oo-ye-zha-ye-tye" },
+        { "english": "Он выглядит уставшим, потому что много работал.", "chinese": "他看起来很累，因为工作了很多。", "soundmark": "on vy-glya-deet oo-staf-sheem pa-to-mu shto mno-ga ra-bo-tal" }
+      ]
+    },
+    {
+      "id": "eu5-08", "order": 8, "title": "第8课 目的从句与说明从句",
+      "statements": [
+        { "english": "Я пришёл, чтобы помочь тебе.", "chinese": "我来是为了帮助你。", "soundmark": "ya pree-shyol shto-by pa-moch tye-bye" },
+        { "english": "Она учится, чтобы стать врачом.", "chinese": "她学习是为了成为医生。", "soundmark": "a-na oo-cheet-sya shto-by stat vra-chom" },
+        { "english": "Мы работаем, чтобы жить, а не наоборот.", "chinese": "我们工作是为了生活，而不是反过来。", "soundmark": "my ra-bo-ta-yem shto-by zheet a ne na-o-bo-rot" },
+        { "english": "Для того чтобы выучить язык, нужно практиковаться каждый день.", "chinese": "为了学会语言，需要每天练习。", "soundmark": "dlya ta-vo shto-by vy-oo-cheet ya-zyk noo-zhna prak-tee-ka-vat-sya kazh-dy dyen" },
+        { "english": "Он дал мне книгу, чтобы я прочитал её.", "chinese": "他给了我一本书，让我读一读。", "soundmark": "on dal mnye knee-goo shto-by ya pra-chee-tal ye-yo" },
+        { "english": "Зачем ты это сделал?", "chinese": "你为什么要做这个？", "soundmark": "za-chem ty e-ta sdye-lal" },
+        { "english": "Мы договорились, что встретимся у метро.", "chinese": "我们商量好在地铁站见面（说明从句）", "soundmark": "my da-ga-vo-ree-lees shto fstre-teem-sya oo meet-ro" },
+        { "english": "Он сказал, что завтра придёт.", "chinese": "他说他明天来（说明从句）", "soundmark": "on ska-zal shto zav-tra pree-dyot" },
+        { "english": "Я думаю, что это правильное решение.", "chinese": "我认为这是正确的决定（说明从句）", "soundmark": "ya doo-may-u shto e-ta pra-veel-na-ye re-she-nee-ye" },
+        { "english": "Мы надеемся, что вы согласитесь.", "chinese": "我们希望您同意（说明从句）", "soundmark": "my na-de-yem-sya shto vy sag-la-see-tes" }
+      ]
+    },
+    {
+      "id": "eu5-09", "order": 9, "title": "第9课 时间从句（Придаточные времени）",
+      "statements": [
+        { "english": "Когда я пришёл домой, уже было темно.", "chinese": "当我回到家时，天已经黑了。", "soundmark": "kag-da ya pree-shyol da-moy oo-zhe by-la tem-no" },
+        { "english": "Когда мы учились в университете, мы часто встречались.", "chinese": "当我们在大学学习时，我们经常见面。", "soundmark": "kag-da my oo-chee-lees v oo-nee-ver-see-tye my chas-ta fstre-cha-lees" },
+        { "english": "Пока я готовил ужин, она убирала комнату.", "chinese": "我在做晚饭时，她在打扫房间。", "soundmark": "pa-ka ya ga-to-veel oo-zheen a-na oo-bee-ra-la kom-na-too" },
+        { "english": "После того как прозвенел звонок, урок начался.", "chinese": "铃响之后，课开始了。", "soundmark": "po-slye ta-vo kak paz-ve-nel zva-nok o-rok na-chal-sya" },
+        { "english": "До того как уйти, проверьте все окна.", "chinese": "走之前检查所有的窗户。", "soundmark": "do ta-vo kak oo-tee pro-ver-tye vsye ok-na" },
+        { "english": "Перед тем как выйти, наденьте шапку.", "chinese": "出门之前戴上帽子。", "soundmark": "pe-red tem kak vy-tee na-den-tye shap-koo" },
+        { "english": "Как только я приду, я позвоню.", "chinese": "我一到就打电话。", "soundmark": "kak tol-ka ya pree-doo ya paz-va-nyu" },
+        { "english": "В то время как он учился, он работал.", "chinese": "在他学习期间，他在工作。", "soundmark": "f to vre-mya kak on oo-cheel-sya on ra-bo-tal" },
+        { "english": "К тому времени когда мы вернулись, ужин уже был готов.", "chinese": "到我们回来的时候，晚饭已经准备好了。", "soundmark": "k ta-moo vre-me-nee kag-da my ver-noo-lees oo-zheen oo-zhe byl ga-tof" },
+        { "english": "С тех пор как он уехал, прошёл год.", "chinese": "从他离开起，已经过去一年了。", "soundmark": "s tyekh por kak on oo-ye-khal pra-shyol got" }
+      ]
+    },
+    {
+      "id": "eu5-10", "order": 10, "title": "第10课 综合复习（Комплексное повторение）",
+      "statements": [
+        { "english": "За этот курс я узнал много новых грамматических конструкций.", "chinese": "在这个课程中我学到了很多新的语法结构。", "soundmark": "za e-tat kors ya oo-znal mno-ga no-vykh gra-ma-tee-che-skeekh kan-strook-tsiy" },
+        { "english": "Я могу свободно строить сложные предложения.", "chinese": "我能自由地构建复合句。", "soundmark": "ya ma-goo sva-bod-na stro-eet slozh-ny-ye preed-la-zhe-nee-ya" },
+        { "english": "Причастия и деепричастия — важная часть русского языка.", "chinese": "形动词和副动词是俄语的重要部分。", "soundmark": "pree-chas-tee-ya ee de-ye-pree-chas-tee-ya vazh-na-ya chast rooss-ka-va ya-zy-ka" },
+        { "english": "Я научился использовать разные типы придаточных предложений.", "chinese": "我学会了使用不同类型的从句。", "soundmark": "ya na-oo-cheel-sya ees-pol-zo-vat raz-ny-ye tee-py pree-da-toch-nykh preed-la-zhe-ny" },
+        { "english": "Без практики знания быстро забываются.", "chinese": "没有练习，知识很快被遗忘（被动意义）", "soundmark": "byez prak-tee-kee zna-nee-ya byst-ra za-by-va-yut-sya" },
+        { "english": "Я рекомендую читать русские книги в оригинале.", "chinese": "我建议读俄语原版书。", "soundmark": "ya re-ka-men-du-yu chee-tat rooss-kee-ye knee-gee v a-ree-gee-na-lye" },
+        { "english": "Грамматика — это фундамент языка.", "chinese": "语法是语言的基石。", "soundmark": "gra-ma-tee-ka e-ta foo-da-ment ya-zy-ka" },
+        { "english": "С каждым днём мой русский становится лучше.", "chinese": "我的俄语一天天变好。", "soundmark": "s kazh-dym dnyom moy ross-kiy sta-no-veet-sya looch-she" },
+        { "english": "Я горжусь своими успехами.", "chinese": "我为自己的进步自豪。", "soundmark": "ya gar-zhus sva-ee-mee oos-pe-kha-mee" },
+        { "english": "Продолжаем двигаться дальше!", "chinese": "我们继续前进！", "soundmark": "pra-dol-zha-yem dvee-gat-sya dal-she" }
+      ]
+    }
+  ]
+}

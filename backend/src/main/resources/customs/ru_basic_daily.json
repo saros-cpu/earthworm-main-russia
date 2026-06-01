@@ -1,0 +1,559 @@
+{
+  "id": "ru-basic-daily",
+  "title": "日常生活词汇",
+  "description": "涵盖饮食、家居等日常生活中最常用的俄语词汇和表达。",
+  "cover": "https://images.unsplash.com/photo-1544027993-37dbfe43562a?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "ruda-01",
+      "order": 1,
+      "title": "饮食",
+      "description": "常见食物和饮品的俄语名称。",
+      "statements": [
+        {
+          "english": "хлеб",
+          "chinese": "面包",
+          "soundmark": "khlyep"
+        },
+        {
+          "english": "молоко́",
+          "chinese": "牛奶",
+          "soundmark": "ma-la-KO"
+        },
+        {
+          "english": "ма́сло",
+          "chinese": "黄油/油",
+          "soundmark": "MAS-la"
+        },
+        {
+          "english": "мя́со",
+          "chinese": "肉",
+          "soundmark": "MYA-sa"
+        },
+        {
+          "english": "ры́ба",
+          "chinese": "鱼",
+          "soundmark": "RY-ba"
+        },
+        {
+          "english": "я́йцо",
+          "chinese": "鸡蛋",
+          "soundmark": "yay-TSO"
+        },
+        {
+          "english": "рис",
+          "chinese": "米饭",
+          "soundmark": "rees"
+        },
+        {
+          "english": "суп",
+          "chinese": "汤",
+          "soundmark": "soop"
+        },
+        {
+          "english": "чай",
+          "chinese": "茶",
+          "soundmark": "chay"
+        },
+        {
+          "english": "ко́фе",
+          "chinese": "咖啡",
+          "soundmark": "KO-fye"
+        },
+        {
+          "english": "са́хар",
+          "chinese": "糖",
+          "soundmark": "SA-khar"
+        },
+        {
+          "english": "соль",
+          "chinese": "盐",
+          "soundmark": "sol"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/13-Урок 1-1.avi"
+    },
+    {
+      "id": "ruda-02",
+      "order": 2,
+      "title": "家居物品",
+      "description": "家中常见物品的俄语名称。",
+      "statements": [
+        {
+          "english": "дом",
+          "chinese": "房子",
+          "soundmark": "dom"
+        },
+        {
+          "english": "ко́мната",
+          "chinese": "房间",
+          "soundmark": "KOM-na-ta"
+        },
+        {
+          "english": "ку́хня",
+          "chinese": "厨房",
+          "soundmark": "KOOKH-nya"
+        },
+        {
+          "english": "спа́льня",
+          "chinese": "卧室",
+          "soundmark": "SPAL-nya"
+        },
+        {
+          "english": "ва́нная",
+          "chinese": "浴室",
+          "soundmark": "VAN-na-ya"
+        },
+        {
+          "english": "крова́ть",
+          "chinese": "床",
+          "soundmark": "kra-VAT"
+        },
+        {
+          "english": "шкаф",
+          "chinese": "柜子",
+          "soundmark": "shkaf"
+        },
+        {
+          "english": "стол",
+          "chinese": "桌子",
+          "soundmark": "stol"
+        },
+        {
+          "english": "стул",
+          "chinese": "椅子",
+          "soundmark": "stool"
+        },
+        {
+          "english": "ла́мпа",
+          "chinese": "灯",
+          "soundmark": "LAM-pa"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/14-Урок 1-2.avi"
+    },
+    {
+      "id": "ruda-03",
+      "order": 3,
+      "title": "早晨日常",
+      "description": "早晨起床、洗漱等日常表达。",
+      "statements": [
+        {
+          "english": "просыпа́ться",
+          "chinese": "醒来",
+          "soundmark": "pra-sy-PA-tsa"
+        },
+        {
+          "english": "встава́ть",
+          "chinese": "起床",
+          "soundmark": "fsta-VAT"
+        },
+        {
+          "english": "умыва́ться",
+          "chinese": "洗脸",
+          "soundmark": "oo-my-VA-tsa"
+        },
+        {
+          "english": "чи́стить зу́бы",
+          "chinese": "刷牙",
+          "soundmark": "CHEES-teet ZOO-by"
+        },
+        {
+          "english": "одева́ться",
+          "chinese": "穿衣服",
+          "soundmark": "a-de-VA-tsa"
+        },
+        {
+          "english": "за́втракать",
+          "chinese": "吃早餐",
+          "soundmark": "ZAVT-ra-kat"
+        },
+        {
+          "english": "Я встаю́ в семь часо́в.",
+          "chinese": "我七点起床。",
+          "soundmark": "ya fsta-YOO v sem cha-SOF"
+        },
+        {
+          "english": "Утро",
+          "chinese": "早晨",
+          "soundmark": "OOT-ra"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/16-Урок 2-1.avi"
+    },
+    {
+      "id": "ruda-04",
+      "order": 4,
+      "title": "衣服与穿搭",
+      "description": "衣物名称和穿搭表达。",
+      "statements": [
+        {
+          "english": "руба́шка",
+          "chinese": "衬衫",
+          "soundmark": "roo-BASH-ka"
+        },
+        {
+          "english": "брю́ки",
+          "chinese": "裤子",
+          "soundmark": "BRYU-kee"
+        },
+        {
+          "english": "пла́тье",
+          "chinese": "连衣裙",
+          "soundmark": "PLA-tye"
+        },
+        {
+          "english": "ку́ртка",
+          "chinese": "外套",
+          "soundmark": "KOORT-ka"
+        },
+        {
+          "english": "боти́нки",
+          "chinese": "靴子",
+          "soundmark": "ba-TEEN-kee"
+        },
+        {
+          "english": "ша́пка",
+          "chinese": "帽子",
+          "soundmark": "SHAP-ka"
+        },
+        {
+          "english": "шарф",
+          "chinese": "围巾",
+          "soundmark": "sharf"
+        },
+        {
+          "english": "носки́",
+          "chinese": "袜子",
+          "soundmark": "nas-KEE"
+        },
+        {
+          "english": "пальто́",
+          "chinese": "大衣",
+          "soundmark": "pal-TO"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/17-Урок 2-2.avi"
+    },
+    {
+      "id": "ruda-05",
+      "order": 5,
+      "title": "日常作息",
+      "description": "描述每日作息的表达。",
+      "statements": [
+        {
+          "english": "ка́ждый день",
+          "chinese": "每天",
+          "soundmark": "KAZH-dy den"
+        },
+        {
+          "english": "обы́чно",
+          "chinese": "通常",
+          "soundmark": "a-BYCH-na"
+        },
+        {
+          "english": "всегда́",
+          "chinese": "总是",
+          "soundmark": "vseg-DA"
+        },
+        {
+          "english": "и́ногда",
+          "chinese": "有时候",
+          "soundmark": "EE-na-gda"
+        },
+        {
+          "english": "Я рабо́таю ка́ждый день.",
+          "chinese": "我每天工作。",
+          "soundmark": "ya ra-BO-ta-yoo KAZH-dy den"
+        },
+        {
+          "english": "Я обе́даю в час.",
+          "chinese": "我一点吃午饭。",
+          "soundmark": "ya a-BYE-da-yoo v chas"
+        },
+        {
+          "english": "Я возвраща́юсь домо́й ве́чером.",
+          "chinese": "我晚上回家。",
+          "soundmark": "ya vaz-vra-SHCHA-yoos da-MOY VYE-che-ram"
+        },
+        {
+          "english": "распоря́док дня",
+          "chinese": "作息时间表",
+          "soundmark": "ra-spa-RYA-dak dnya"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/18-Урок 3-1.avi"
+    },
+    {
+      "id": "ruda-06",
+      "order": 6,
+      "title": "家务活",
+      "description": "常见家务劳动的俄语表达。",
+      "statements": [
+        {
+          "english": "убира́ть",
+          "chinese": "打扫",
+          "soundmark": "oo-bee-RAT"
+        },
+        {
+          "english": "мыть посу́ду",
+          "chinese": "洗碗",
+          "soundmark": "myt pa-SOO-doo"
+        },
+        {
+          "english": "стира́ть",
+          "chinese": "洗衣服",
+          "soundmark": "stee-RAT"
+        },
+        {
+          "english": "пылесо́сить",
+          "chinese": "吸尘",
+          "soundmark": "py-le-SO-sit"
+        },
+        {
+          "english": "гото́вить еду́",
+          "chinese": "做饭",
+          "soundmark": "ga-TO-vit ye-DOO"
+        },
+        {
+          "english": "вытира́ть пыль",
+          "chinese": "擦灰尘",
+          "soundmark": "vy-tee-RAT pyl"
+        },
+        {
+          "english": "гла́дить",
+          "chinese": "熨烫",
+          "soundmark": "GLA-deet"
+        },
+        {
+          "english": "полива́ть цветы́",
+          "chinese": "浇花",
+          "soundmark": "pa-lee-VAT tsve-TY"
+        },
+        {
+          "english": "выно́сить му́сор",
+          "chinese": "倒垃圾",
+          "soundmark": "vy-NO-sit MOO-sar"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/19-Урок 3-2.avi"
+    },
+    {
+      "id": "ruda-07",
+      "order": 7,
+      "title": "个人卫生",
+      "description": "个人护理和卫生习惯的俄语表达。",
+      "statements": [
+        {
+          "english": "душ",
+          "chinese": "淋浴",
+          "soundmark": "doosh"
+        },
+        {
+          "english": "принима́ть душ",
+          "chinese": "洗澡",
+          "soundmark": "pree-nee-MAT doosh"
+        },
+        {
+          "english": "мы́ло",
+          "chinese": "肥皂",
+          "soundmark": "MY-la"
+        },
+        {
+          "english": "шампу́нь",
+          "chinese": "洗发水",
+          "soundmark": "sham-POON"
+        },
+        {
+          "english": "зубна́я па́ста",
+          "chinese": "牙膏",
+          "soundmark": "zoob-NA-ya PAS-ta"
+        },
+        {
+          "english": "полоте́нце",
+          "chinese": "毛巾",
+          "soundmark": "pa-la-TEN-tse"
+        },
+        {
+          "english": "расчёска",
+          "chinese": "梳子",
+          "soundmark": "ras-CHYOS-ka"
+        },
+        {
+          "english": "бри́тва",
+          "chinese": "剃须刀",
+          "soundmark": "BREET-va"
+        },
+        {
+          "english": "нóгти",
+          "chinese": "指甲",
+          "soundmark": "NOK-tee"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/22-Урок 4-1.avi"
+    },
+    {
+      "id": "ruda-08",
+      "order": 8,
+      "title": "日常购物",
+      "description": "购物相关的常用词汇和表达。",
+      "statements": [
+        {
+          "english": "магази́н",
+          "chinese": "商店",
+          "soundmark": "ma-ga-ZEEN"
+        },
+        {
+          "english": "ры́нок",
+          "chinese": "市场",
+          "soundmark": "RY-nak"
+        },
+        {
+          "english": "цена́",
+          "chinese": "价格",
+          "soundmark": "tse-NA"
+        },
+        {
+          "english": "дешёвый",
+          "chinese": "便宜的",
+          "soundmark": "de-SHYO-vy"
+        },
+        {
+          "english": "дорого́й",
+          "chinese": "贵的",
+          "soundmark": "da-ra-GOY"
+        },
+        {
+          "english": "покупа́ть",
+          "chinese": "购买",
+          "soundmark": "pa-koo-PAT"
+        },
+        {
+          "english": "плати́ть",
+          "chinese": "付款",
+          "soundmark": "pla-TEET"
+        },
+        {
+          "english": "де́ньги",
+          "chinese": "钱",
+          "soundmark": "DEN-gee"
+        },
+        {
+          "english": "сда́ча",
+          "chinese": "找零",
+          "soundmark": "ZDA-cha"
+        },
+        {
+          "english": "Ско́лько э́то сто́ит?",
+          "chinese": "这个多少钱？",
+          "soundmark": "SKOL-ka E-ta STO-eet"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/23-Урок 4-2.avi"
+    },
+    {
+      "id": "ruda-09",
+      "order": 9,
+      "title": "晚间日常",
+      "description": "晚间回家到入睡的表达。",
+      "statements": [
+        {
+          "english": "ве́чер",
+          "chinese": "晚上",
+          "soundmark": "VYE-cher"
+        },
+        {
+          "english": "у́жинать",
+          "chinese": "吃晚饭",
+          "soundmark": "OO-zhy-nat"
+        },
+        {
+          "english": "смотре́ть телеви́зор",
+          "chinese": "看电视",
+          "soundmark": "smat-RET te-le-VEE-zar"
+        },
+        {
+          "english": "чита́ть кни́гу",
+          "chinese": "看书",
+          "soundmark": "chee-TAT KNEE-goo"
+        },
+        {
+          "english": "ложи́ться спать",
+          "chinese": "睡觉",
+          "soundmark": "la-ZHEET-sya spat"
+        },
+        {
+          "english": "отдыха́ть",
+          "chinese": "休息",
+          "soundmark": "ad-dy-KHAT"
+        },
+        {
+          "english": "Я ложу́сь спать в де́сять.",
+          "chinese": "我十点睡觉。",
+          "soundmark": "ya la-ZHOOS spat v DYE-syat"
+        },
+        {
+          "english": "Споко́йной но́чи!",
+          "chinese": "晚安！",
+          "soundmark": "spa-KOY-noy NO-chee"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/27-Урок 5-1.avi"
+    },
+    {
+      "id": "ruda-10",
+      "order": 10,
+      "title": "周末活动",
+      "description": "表达周末和业余活动的俄语。",
+      "statements": [
+        {
+          "english": "выходны́е",
+          "chinese": "周末",
+          "soundmark": "vy-khad-NY-ye"
+        },
+        {
+          "english": "отдыха́ть на вы́ходных",
+          "chinese": "周末休息",
+          "soundmark": "ad-dy-KHAT na VY-khad-nykh"
+        },
+        {
+          "english": "гуля́ть в па́рке",
+          "chinese": "在公园散步",
+          "soundmark": "goo-LYAT v PAR-ke"
+        },
+        {
+          "english": "встреча́ться с друзья́ми",
+          "chinese": "和朋友见面",
+          "soundmark": "fstre-CHA-tsa z droo-ZYA-mee"
+        },
+        {
+          "english": "ходи́ть в кино́",
+          "chinese": "去看电影",
+          "soundmark": "kha-DEET v kee-NO"
+        },
+        {
+          "english": "занима́ться спо́ртом",
+          "chinese": "做运动",
+          "soundmark": "za-nee-MA-tsa SPOR-tam"
+        },
+        {
+          "english": "Что ты де́лаешь на вы́ходных?",
+          "chinese": "你周末做什么？",
+          "soundmark": "shto ty DYE-la-yesh na VY-khad-nykh"
+        },
+        {
+          "english": "Я люблю́ проводи́ть вре́мя с семьёй.",
+          "chinese": "我喜欢和家人在一起。",
+          "soundmark": "ya lyub-LYU pra-va-DEET VRE-mya s sem-YOY"
+        },
+        {
+          "english": "путеше́ствовать",
+          "chinese": "旅行",
+          "soundmark": "poo-te-SHEST-va-vat"
+        }
+      ],
+      "video": "3.初学者第三步 俄语主课程系统课【推荐】/01.新版俄语0-C1【推荐考试考级同学学习】/A1【48课时】/28-Урок 5-2.avi"
+    }
+  ]
+}

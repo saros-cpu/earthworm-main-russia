@@ -1,0 +1,389 @@
+{
+  "id": "ru-culture",
+  "title": "俄罗斯文化",
+  "description": "俄罗斯文学艺术传统习俗等文化知识相关俄语词汇。",
+  "cover": "https://images.unsplash.com/photo-1513326738677-b964603b136d?q=80&w=1200&auto=format&fit=crop",
+  "isFree": true,
+  "courses": [
+    {
+      "id": "rucu-01",
+      "order": 1,
+      "title": "芭蕾艺术",
+      "description": "俄罗斯芭蕾艺术相关词汇。",
+      "statements": [
+        {
+          "english": "бале́т",
+          "chinese": "芭蕾舞",
+          "soundmark": "ba-LET"
+        },
+        {
+          "english": "балери́на",
+          "chinese": "芭蕾舞女演员",
+          "soundmark": "ba-le-REE-na"
+        },
+        {
+          "english": "танцо́вщик",
+          "chinese": "舞蹈演员",
+          "soundmark": "tan-TSOV-shcheek"
+        },
+        {
+          "english": "пуа́нты",
+          "chinese": "足尖鞋",
+          "soundmark": "poo-AN-ty"
+        },
+        {
+          "english": "спекта́кль",
+          "chinese": "演出",
+          "soundmark": "spek-TAKL"
+        },
+        {
+          "english": "Большо́й теа́тр",
+          "chinese": "莫斯科大剧院",
+          "soundmark": "bal-SHOY te-ATR"
+        }
+      ]
+    },
+    {
+      "id": "rucu-02",
+      "order": 2,
+      "title": "文学巨匠",
+      "description": "俄罗斯文学大师相关词汇。",
+      "statements": [
+        {
+          "english": "писа́тель",
+          "chinese": "作家",
+          "soundmark": "pee-SA-tel"
+        },
+        {
+          "english": "Толсто́й",
+          "chinese": "托尔斯泰",
+          "soundmark": "tal-STOY"
+        },
+        {
+          "english": "Достое́вский",
+          "chinese": "陀思妥耶夫斯基",
+          "soundmark": "da-sta-YEF-skee"
+        },
+        {
+          "english": "рома́н",
+          "chinese": "长篇小说",
+          "soundmark": "ra-MAN"
+        },
+        {
+          "english": "шеде́вр",
+          "chinese": "杰作",
+          "soundmark": "she-DEVR"
+        },
+        {
+          "english": "кла́ссика",
+          "chinese": "经典作品",
+          "soundmark": "KLAS-see-ka"
+        }
+      ]
+    },
+    {
+      "id": "rucu-03",
+      "order": 3,
+      "title": "套娃工艺",
+      "description": "俄罗斯套娃与传统手工艺词汇。",
+      "statements": [
+        {
+          "english": "матрёшка",
+          "chinese": "套娃",
+          "soundmark": "ma-TRYOSH-ka"
+        },
+        {
+          "english": "деревя́нная игру́шка",
+          "chinese": "木制玩具",
+          "soundmark": "de-re-VYAN-na-ya e-GROOSH-ka"
+        },
+        {
+          "english": "ро́спись",
+          "chinese": "彩绘",
+          "soundmark": "ROS-pees"
+        },
+        {
+          "english": "наро́дный промы́сел",
+          "chinese": "民间手工艺",
+          "soundmark": "na-ROD-ny pro-MY-sel"
+        },
+        {
+          "english": "сувени́р",
+          "chinese": "纪念品",
+          "soundmark": "soo-ve-NEER"
+        },
+        {
+          "english": "хохлома́",
+          "chinese": "霍赫洛玛彩绘",
+          "soundmark": "kha-khla-MA"
+        }
+      ]
+    },
+    {
+      "id": "rucu-04",
+      "order": 4,
+      "title": "茶文化",
+      "description": "俄罗斯传统茶文化词汇。",
+      "statements": [
+        {
+          "english": "самова́р",
+          "chinese": "俄式茶炊",
+          "soundmark": "sa-ma-VAR"
+        },
+        {
+          "english": "чай",
+          "chinese": "茶",
+          "soundmark": "chai"
+        },
+        {
+          "english": "ча́йная церемо́ния",
+          "chinese": "茶道",
+          "soundmark": "CHAI-na-ya tse-re-MO-nee-ya"
+        },
+        {
+          "english": "ба́ранка",
+          "chinese": "环形面包圈",
+          "soundmark": "BA-ran-ka"
+        },
+        {
+          "english": "варе́нье",
+          "chinese": "果酱",
+          "soundmark": "va-REN-ye"
+        },
+        {
+          "english": "ча́шка",
+          "chinese": "茶杯",
+          "soundmark": "CHASH-ka"
+        }
+      ]
+    },
+    {
+      "id": "rucu-05",
+      "order": 5,
+      "title": "俄式桑拿",
+      "description": "俄罗斯传统桑拿文化词汇。",
+      "statements": [
+        {
+          "english": "ба́ня",
+          "chinese": "俄式桑拿",
+          "soundmark": "BA-nya"
+        },
+        {
+          "english": "па́рная",
+          "chinese": "蒸汽浴室",
+          "soundmark": "PAR-na-ya"
+        },
+        {
+          "english": "ве́ник",
+          "chinese": "桦树枝浴帚",
+          "soundmark": "VYE-neek"
+        },
+        {
+          "english": "па́риться",
+          "chinese": "蒸桑拿",
+          "soundmark": "PA-ree-tsa"
+        },
+        {
+          "english": "купе́ль",
+          "chinese": "冷水池",
+          "soundmark": "koo-PEL"
+        },
+        {
+          "english": "здоро́вье",
+          "chinese": "健康",
+          "soundmark": "zda-ROV-ye"
+        }
+      ]
+    },
+    {
+      "id": "rucu-06",
+      "order": 6,
+      "title": "待客之道",
+      "description": "俄罗斯热情好客相关词汇。",
+      "statements": [
+        {
+          "english": "гостеприи́мство",
+          "chinese": "好客",
+          "soundmark": "gas-te-pree-EEM-stva"
+        },
+        {
+          "english": "гость",
+          "chinese": "客人",
+          "soundmark": "gost"
+        },
+        {
+          "english": "угоще́ние",
+          "chinese": "款待",
+          "soundmark": "oo-ga-SHCHA-nee-ye"
+        },
+        {
+          "english": "хлеб да соль",
+          "chinese": "面包和盐（传统欢迎仪式）",
+          "soundmark": "hleb da sol"
+        },
+        {
+          "english": "засто́лье",
+          "chinese": "宴席",
+          "soundmark": "za-STOL-ye"
+        },
+        {
+          "english": "тост",
+          "chinese": "祝酒词",
+          "soundmark": "tost"
+        }
+      ]
+    },
+    {
+      "id": "rucu-07",
+      "order": 7,
+      "title": "苏联遗产",
+      "description": "苏联时期文化遗产相关词汇。",
+      "statements": [
+        {
+          "english": "со́ветский",
+          "chinese": "苏维埃的",
+          "soundmark": "sa-VYET-skee"
+        },
+        {
+          "english": "Кремль",
+          "chinese": "克里姆林宫",
+          "soundmark": "kreml"
+        },
+        {
+          "english": "Кра́сная пло́щадь",
+          "chinese": "红场",
+          "soundmark": "KRAS-na-ya PLO-shchad"
+        },
+        {
+          "english": "па́мятник",
+          "chinese": "纪念碑",
+          "soundmark": "PA-mya-neek"
+        },
+        {
+          "english": "му́рманск",
+          "chinese": "摩尔曼斯克",
+          "soundmark": "MOOR-mansk"
+        },
+        {
+          "english": "космона́вт",
+          "chinese": "宇航员",
+          "soundmark": "kas-ma-NAFT"
+        }
+      ]
+    },
+    {
+      "id": "rucu-08",
+      "order": 8,
+      "title": "东正教堂",
+      "description": "俄罗斯东正教文化相关词汇。",
+      "statements": [
+        {
+          "english": "церковь",
+          "chinese": "教堂",
+          "soundmark": "TSER-kav"
+        },
+        {
+          "english": "правостла́вный",
+          "chinese": "东正教的",
+          "soundmark": "pra-vas-LAV-ny"
+        },
+        {
+          "english": "ико́на",
+          "chinese": "圣像",
+          "soundmark": "ee-KO-na"
+        },
+        {
+          "english": "ку́пол",
+          "chinese": "圆顶",
+          "soundmark": "KOO-pal"
+        },
+        {
+          "english": "мо́литва",
+          "chinese": "祈祷",
+          "soundmark": "mo-LEET-va"
+        },
+        {
+          "english": "звон",
+          "chinese": "钟声",
+          "soundmark": "zvon"
+        }
+      ]
+    },
+    {
+      "id": "rucu-09",
+      "order": 9,
+      "title": "俄式美食",
+      "description": "俄罗斯传统美食词汇。",
+      "statements": [
+        {
+          "english": "борщ",
+          "chinese": "红菜汤",
+          "soundmark": "borshch"
+        },
+        {
+          "english": "пельме́ни",
+          "chinese": "饺子",
+          "soundmark": "pel-ME-nee"
+        },
+        {
+          "english": "блины́",
+          "chinese": "薄饼",
+          "soundmark": "blee-NY"
+        },
+        {
+          "english": "икра́",
+          "chinese": "鱼子酱",
+          "soundmark": "ee-KRA"
+        },
+        {
+          "english": "ка́ша",
+          "chinese": "粥",
+          "soundmark": "KA-sha"
+        },
+        {
+          "english": "квас",
+          "chinese": "格瓦斯",
+          "soundmark": "kvas"
+        }
+      ]
+    },
+    {
+      "id": "rucu-10",
+      "order": 10,
+      "title": "文化节庆",
+      "description": "俄罗斯民间文化节庆活动词汇。",
+      "statements": [
+        {
+          "english": "фестива́ль",
+          "chinese": "节日",
+          "soundmark": "fes-tee-VAL"
+        },
+        {
+          "english": "я́рмарка",
+          "chinese": "集市",
+          "soundmark": "YAR-mar-ka"
+        },
+        {
+          "english": "карнава́л",
+          "chinese": "狂欢节",
+          "soundmark": "kar-na-VAL"
+        },
+        {
+          "english": "песня",
+          "chinese": "歌曲",
+          "soundmark": "PES-nya"
+        },
+        {
+          "english": "та́нец",
+          "chinese": "舞蹈",
+          "soundmark": "TA-nets"
+        },
+        {
+          "english": "наро́дный гуля́ния",
+          "chinese": "民间游园活动",
+          "soundmark": "na-ROD-ny goo-LYA-nee-ya"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "mainMenu": "主菜单",
+    "avatar": "头像",
+    "login": "登录",
+    "register": "注册",
+    "logout": "退出",
+    "profile": "个人中心"
+  },
+  "landing": {
+    "learningPath": "学习路径",
+    "bannerBadge": "Привет! 从俄语字母到整句表达",
+    "brandName": "Russian Learning"
+  },
+  "summary": {
+    "congratulations": "🎉 恭喜！",
+    "dailyPhrase": "—— 每日一句",
+    "completedTasks": "已完成 {count} 题，用时 {time}",
+    "todayStudied": "今天学习了 {minutes} 分钟！",
+    "greatJob": "太棒了，给自己鼓掌吧！😄",
+    "rating": "评级",
+    "maxCombo": "最大连击",
+    "accuracy": "正确率",
+    "points": "得分",
+    "share": "分享",
+    "again": "再来一次",
+    "toList": "返回列表",
+    "next": "继续",
+    "ratingLabels": {
+      "C": "C · 加油",
+      "B": "B · 良好",
+      "A": "A · 优秀",
+      "S": "S · 卓越",
+      "SS": "SS · 完美",
+      "SSS": "SSS · 无双"
+    },
+    "allMastered": "全部掌握！返回列表",
+    "moreFeatures": "✨ 更多功能",
+    "registerPrompt": "注册后可继续学习并保存进度！",
+    "cancel": "稍后",
+    "register": "注册",
+    "lastLesson": "已是最后一课，返回列表！"
+  },
+  "stats": {
+    "title": "统计",
+    "yourStats": "你的统计",
+    "description": "你的成绩、进度和每日活动",
+    "total": "总计",
+    "accuracy": "正确率",
+    "streak": "连续学习",
+    "days": "天",
+    "points": "得分",
+    "heatmap": "热力图",
+    "exercises": "{count} 题",
+    "little": "少",
+    "much": "多",
+    "details": "详情",
+    "noData": "暂无数据，开始学习吧！",
+    "ex": "题",
+    "correct": "对",
+    "pt": "分",
+    "maxStreak": "最长连续"
+  },
+  "pages": {
+    "review": "复习",
+    "wrongAnswers": "错题本",
+    "vocabulary": "词汇表",
+    "mediaCourses": "媒体课程",
+    "mastered": "已掌握",
+    "help": "帮助",
+    "groups": "学习小组",
+    "feedback": "意见反馈",
+    "courseLibrary": "课程库",
+    "duel": "对战",
+    "statistics": "统计"
+  },
+  "coursePack": {
+    "title": "俄语课程包",
+    "description": "从入门课程到教材 PDF 自动生成内容，按系列浏览，选择一套课程开始闯关。",
+    "backToHome": "返回首页",
+    "comingSoon": "即将上线",
+    "targetVocab": "目标词汇量 {target}",
+    "levelElementary": "初级",
+    "levelBasic": "基础",
+    "levelTRKI1": "ТРКИ-1",
+    "levelTRKI2": "ТРКИ-2",
+    "levelTRKI3": "ТРКИ-3",
+    "levelTRKI4": "ТРКИ-4",
+    "levels": {
+      "A1": { "label": "入门级 (Элементарный)", "target": "~ 760 词", "desc": "最基本的问候、自我介绍、日常用语，能应付最简单的交际场景。" },
+      "A2": { "label": "基础级 (Базовый)", "target": "~ 1 300 词", "desc": "日常生活、家庭、学习、工作等场景的基础词汇与表达。" },
+      "B1": { "label": "一级 (ТРКИ-1)", "target": "~ 2 300 词", "desc": "能在常见社会场景流利使用俄语，达到留学预科水平。" },
+      "B2": { "label": "二级 (ТРКИ-2)", "target": "~ 6 000 词", "desc": "工作、专业、媒体等较复杂场景，是本科教学常见门槛。" },
+      "C1": { "label": "三级 (ТРКИ-3)", "target": "~ 11 000 词", "desc": "几乎所有领域的高级词汇和正式表达。" },
+      "C2": { "label": "四级 (ТРКИ-4)", "target": "~ 12 000+ 词", "desc": "母语级精通，覆盖学术、文学、专业等所有领域。" }
+    }
+  },
+  "ai": {
+    "greeting": "你好！我是你的俄语语法助手。关于变位、变格、词义或任何俄语相关问题，尽管问我！"
+  },
+  "admin": {
+    "fillRussianText": "请输入俄语文本"
+  },
+  "common": {
+    "confirm": "确认",
+    "cancel": "取消",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "loading": "加载中...",
+    "retry": "重试",
+    "noPacks": "这个系列下还没有课程包。",
+    "noPacksAtAll": "暂时没有课程包，去后台或通过 PDF 导入新增。",
+    "loadError": "课程包加载失败",
+    "unknownError": "未知错误"
+  },
+  "auth": {
+    "username": "用户名",
+    "password": "密码",
+    "nickname": "昵称",
+    "loginError": "用户名或密码错误",
+    "registerError": "注册失败",
+    "passwordPolicy": "密码至少6位，需包含字母和数字"
+  }
+}
