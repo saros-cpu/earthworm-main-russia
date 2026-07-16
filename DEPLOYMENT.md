@@ -1,6 +1,6 @@
-# 鹅语菌 · 完整部署文档
+# 俄语学习平台 · 完整部署文档
 
-> 目标：从一台**全新 Windows 电脑**起步，30 分钟内完成部署，跑出与当前本地环境**完全一致**的鹅语菌服务（25 课程包 / 1 841 节 / 19 103 句词）。
+> 目标：从一台**全新 Windows 电脑**起步，30 分钟内完成部署，跑出与当前本地环境**完全一致**的俄语学习平台服务（25 课程包 / 1 841 节 / 19 103 句词）。
 >
 > 适用范围：Windows 10 / 11 (64-bit)。Linux / macOS 仅做最小提示，命令需自行适配。
 
@@ -10,10 +10,10 @@
 
 在开始之前先决定你要哪种部署：
 
-| 路径                            | 包含什么                                                               | 什么不包含                                         | 适用场景                                      |
-| ------------------------------- | ---------------------------------------------------------------------- | -------------------------------------------------- | --------------------------------------------- |
-| **A. 全新部署**（默认）         | 25 课程包 + 1 841 课时 + 19 103 句词（从 git 仓库里的 JSON 自动 seed） | 以前的用户账号 / 错题本 / 生词本 / 打卡记录 / 留言 | 另一台机器从零跑项目 · CI/微服务器 · 多人开发 |
-| **B. 完整迁移**（A + 动态数据） | A 的全部 **加上** 当前本机的账号 / 学习记录 / 留言等运行时数据         | —                                                  | 备份到另一台机器继续用 · 服务器照搬           |
+| 路径                            | 包含什么                                                           | 什么不包含                                         | 适用场景                                      |
+| ------------------------------- | ------------------------------------------------------------------ | -------------------------------------------------- | --------------------------------------------- |
+| **A. 全新部署**（默认）         | 25 课程包 + 1 841 课时 + 19 103 句词（空库时显式开启 JSON 初始化） | 以前的用户账号 / 错题本 / 生词本 / 打卡记录 / 留言 | 另一台机器从零跑项目 · CI/微服务器 · 多人开发 |
+| **B. 完整迁移**（A + 动态数据） | A 的全部 **加上** 当前本机的账号 / 学习记录 / 留言等运行时数据     | —                                                  | 备份到另一台机器继续用 · 服务器照搬           |
 
 **只记住一句**：**课程包内容不需要备份**（在 git 里），只有 _用户产生的动态数据_ 才需要备份。
 
@@ -47,16 +47,16 @@ mysqldump -u root -p `
 
 ### 备份包含什么？
 
-| 表                                                       | 内容                                                      |
-| -------------------------------------------------------- | --------------------------------------------------------- |
-| `course_packs` / `courses` / `statements`                | 25 包 + 1 841 课时 + 19 103 句词（跳过也行，seed 会重建） |
-| `users` / `user_accounts`                                | 所有账号与密码 hash                                       |
-| `course_history`                                         | 每人的闯关进度 / 对错统计 / 连击                          |
-| `wrong_answer_items` / `vocabulary_words` / `mastered_*` | 错题本 / 生词本 / 掌握列表                                |
-| `review_tasks`                                           | SRS 复习安排                                              |
-| `study_groups` / `study_group_members`                   | 学习小组                                                  |
-| `battle_*`                                               | PK 房间 / 记录                                            |
-| `flyway_schema_history`                                  | 迁移历史（恢复后 Flyway 会跳过重应用）                    |
+| 表                                                       | 内容                                                                   |
+| -------------------------------------------------------- | ---------------------------------------------------------------------- |
+| `course_packs` / `courses` / `statements`                | 25 包 + 1 841 课时 + 19 103 句词（空库可显式初始化，已有库勿自动覆盖） |
+| `users` / `user_accounts`                                | 所有账号与密码 hash                                                    |
+| `course_history`                                         | 每人的闯关进度 / 对错统计 / 连击                                       |
+| `wrong_answer_items` / `vocabulary_words` / `mastered_*` | 错题本 / 生词本 / 掌握列表                                             |
+| `review_tasks`                                           | SRS 复习安排                                                           |
+| `study_groups` / `study_group_members`                   | 学习小组                                                               |
+| `battle_*`                                               | PK 房间 / 记录                                                         |
+| `flyway_schema_history`                                  | 迁移历史（恢复后 Flyway 会跳过重应用）                                 |
 
 ### 不需要备份的东西
 
@@ -70,17 +70,17 @@ mysqldump -u root -p `
 
 ## 0. 当前本机环境概览（参照基线）
 
-| 组件              | 版本                                         | 端口 |
-| ----------------- | -------------------------------------------- | ---- |
-| Windows           | 10 / 11 64-bit                               | —    |
-| OpenJDK           | Eclipse Temurin **21**                       | —    |
-| Maven             | 3.9+                                         | —    |
-| Node.js           | **20+** LTS                                  | —    |
-| pnpm              | 9.x                                          | —    |
-| MySQL             | **8.x**（root / `***REDACTED***` / `earthworm`） | 3306 |
-| Spring Boot 后端  | 自带                                         | 8080 |
-| Nuxt 3 前端       | 自带                                         | 3000 |
-| ngrok（可选公网） | ≥ 3.20.0                                     | —    |
+| 组件              | 版本                                            | 端口 |
+| ----------------- | ----------------------------------------------- | ---- |
+| Windows           | 10 / 11 64-bit                                  | —    |
+| OpenJDK           | Eclipse Temurin **21**                          | —    |
+| Maven             | 3.9+                                            | —    |
+| Node.js           | **20+** LTS                                     | —    |
+| pnpm              | 9.x                                             | —    |
+| MySQL             | **8.x**（root / `your_password` / `earthworm`） | 3306 |
+| Spring Boot 后端  | 自带                                            | 8080 |
+| Nuxt 3 前端       | 自带                                            | 3000 |
+| ngrok（可选公网） | ≥ 3.20.0                                        | —    |
 
 ---
 
@@ -150,23 +150,29 @@ EXIT;
 
 ### 3.2 修改连接信息（如果你的 root 密码不是默认值）
 
-打开 `backend/src/main/resources/application.yml`，改这两行：
+使用环境变量配置数据库连接，不要把密码写入 `backend/src/main/resources/application.yml`：
 
-```yaml
-spring:
-  datasource:
-    username: root # ← 你的 MySQL 用户名
-    password: ***REDACTED*** # ← 你的 MySQL 密码
+```powershell
+$env:SPRING_DATASOURCE_USERNAME = "reader"
+$env:SPRING_DATASOURCE_PASSWORD = "你的数据库密码"
 ```
 
-> ⚠️ 不建议直接改 yml；推荐用环境变量覆盖（见 §4），避免密码进 git。
+> 正式部署请为应用使用权限受限的数据库账号，并按 §4 持久化环境变量。
 
-### 3.3 自动建表 + 自动 seed（无需手工导入）
+### 3.3 自动建表 + 受控空库初始化
 
-后端**首次启动**时会做两件事：
+后端启动时 Flyway 会自动执行结构迁移。为避免普通重启修改现有课程数据，种子课程写入默认关闭。
 
-1. **Flyway** 自动跑 `backend/src/main/resources/db/migration/V1~V5.sql`，建出全部表结构
-2. **TorflPackService + CustomCoursePackService** 自动从 `resources/torfl/levels/*.json` 和 `resources/customs/*.json` seed 出 25 个课程包
+仅路径 A 的空数据库初始化时，在首次启动该进程前设置：
+
+```powershell
+$env:SEED_WRITE_ON_STARTUP = "true"
+```
+
+1. **Flyway** 自动跑 `backend/src/main/resources/db/migration/V1~V9.sql`，建出全部表结构、AI 每日用量预算表及课程内容归档字段
+2. **TorflPackService + CustomCoursePackService** 在显式开启后，从 `resources/torfl/levels/*.json` 和 `resources/customs/*.json` 装载课程包
+
+初始化验证完成后，将 `SEED_WRITE_ON_STARTUP` 清除或设回 `false`。路径 B 的迁移数据库不得开启该值。
 
 完成后数据库内容应是：
 
@@ -194,24 +200,32 @@ mysql -u root -p earthworm -e "SELECT COUNT(*) AS packs FROM course_packs; SELEC
 
 应该看到同样的 25 / 1 841 / 19 103，加上你之前产生的用户 / 学习 / 错题 表行数。
 
-**重点**：后端首次启动时会检测到表里已经有 25 个包 → 自动跳过 seed，你从源机器带过来的所有动态数据不会被覆盖。
+**重点**：完整迁移场景保持 `SEED_WRITE_ON_STARTUP=false`，后端普通启动不会因仓库里的 JSON 内容而写入课程数据。
 
 ---
 
 ## 4. 环境变量
 
-只有 AI 相关变量是**必填**（没有的话 AI 助手会显示「AI not configured」，但其它功能不受影响）。
+`JWT_SECRET` 与 `SPRING_DATASOURCE_PASSWORD` 是启动必填项；AI 相关变量是可选项（没有的话 AI 功能不可用，其它功能不受影响）。
 
 ```powershell
 # OpenRouter API（推荐，每月 1 美元额度免费）
-[Environment]::SetEnvironmentVariable("OPENROUTER_API_KEY", "sk-or-v1-...", "User")
+[Environment]::SetEnvironmentVariable("OPENROUTER_API_KEY", "your_openrouter_key_here", "User")
 [Environment]::SetEnvironmentVariable("OPENROUTER_MODEL",   "openai/gpt-4o-mini", "User")
+# AI 功能的每日预留输出 token 上限；超限后当日新请求会被拒绝
+[Environment]::SetEnvironmentVariable("AI_DAILY_MAX_RESERVED_OUTPUT_TOKENS", "100000", "User")
 
 # 〔可选〕指向本地 OneAPI / vLLM
 # [Environment]::SetEnvironmentVariable("OPENROUTER_BASE_URL", "http://localhost:3000/v1", "User")
 
 # 〔可选〕用环境变量覆盖数据库密码（推荐，避免改 yml）
 # [Environment]::SetEnvironmentVariable("SPRING_DATASOURCE_PASSWORD", "你的密码", "User")
+
+# 仅空库第一次装载内置课程时临时设置；已有数据库保持 false
+# [Environment]::SetEnvironmentVariable("SEED_WRITE_ON_STARTUP", "true", "Process")
+
+# 浏览器会话 JWT 使用 HttpOnly Cookie；正式 HTTPS 部署必须保持 true
+[Environment]::SetEnvironmentVariable("AUTH_SESSION_COOKIE_SECURE", "true", "User")
 ```
 
 设完**新开 PowerShell** 才生效。
@@ -220,7 +234,7 @@ mysql -u root -p earthworm -e "SELECT COUNT(*) AS packs FROM course_packs; SELEC
 
 ## 5. 第一次启动（最关键的一步）
 
-### 5.1 启动后端（前台跑，方便看 Flyway / seed 日志）
+### 5.1 启动后端（前台跑，方便看 Flyway / 初始化日志）
 
 ```powershell
 mvn -f backend/pom.xml spring-boot:run
@@ -231,13 +245,13 @@ mvn -f backend/pom.xml spring-boot:run
 ```
 ... Flyway Community Edition ...
 ... Successfully applied 5 migrations ...
-... TorflPackService: seeding 6 TORFL packs ...
-... CustomCoursePackService: seeding 2 custom packs ...
+... [torfl] bootstrap creating pack for level A1 ...
+... [custom] seeded pack ...
 ... Started EarthwormApplication in 12.345 seconds ...
 ... Tomcat started on port(s): 8080 (http) ...
 ```
 
-如果停在「Successfully applied N migrations」之后没有 seed 日志，可能 seed 已被跳过（表里已经有数据）— 正常。
+如果未设置 `SEED_WRITE_ON_STARTUP=true`，日志会提示启动写入已关闭；这对现有数据库是正常且推荐的行为。
 
 ### 5.2 验证后端
 
@@ -285,12 +299,10 @@ pnpm --filter client dev
 
 执行结束后会有 `Local app is running.` 提示。
 
-停止：
+开发入口在端口被占用时会拒绝启动，不会结束现有进程。日常生产运行建议使用 `.\prod-start.ps1` 与 `.\prod-stop.ps1`；后者仅停止由生产启动脚本记录的进程。
 
 ```powershell
-Get-NetTCPConnection -LocalPort 8080,3000 -State Listen | ForEach-Object {
-    Stop-Process -Id $_.OwningProcess -Force
-}
+.\prod-stop.ps1
 ```
 
 ---
@@ -396,12 +408,7 @@ python scripts/custom-import/build_baby_care.py
 python scripts/custom-import/build_oil_engineering.py
 ```
 
-生成完调一次后台 reseed：
-
-```powershell
-Invoke-RestMethod -Method POST http://localhost:8080/admin/torfl-pack/reseed
-Invoke-RestMethod -Method POST http://localhost:8080/admin/custom-pack/reseed
-```
+生成内容后，全新部署或空库初始化会加载新的种子数据。已有业务库应先备份，在测试库验证迁移方案后再发布；后台重灌接口已停用，不要用于现有数据。
 
 ---
 
@@ -413,20 +420,14 @@ Invoke-RestMethod -Method POST http://localhost:8080/admin/custom-pack/reseed
 Validate failed: Migration checksum mismatch ...
 ```
 
-**A**：你修改了已经执行过的 migration 文件。要么改回原内容，要么手动执行：
-
-```sql
-DELETE FROM earthworm.flyway_schema_history WHERE version = '<出错的版本号>';
-```
-
-然后重新启动。**生产环境绝不能这么干**。
+**A**：你修改了已经执行过的 migration 文件。请先停止启动，保留数据库备份并恢复该 migration 的原内容；需要新增结构变更时，新增一个后续版本的 migration，并先在测试库验证。不要删除 `flyway_schema_history` 记录。
 
 ### Q: 端口被占用
 
 ```powershell
 # 找进程
 Get-NetTCPConnection -LocalPort 8080,3000 -State Listen
-# 杀进程
+# 仅在确认 PID 属于本项目且无需保留时停止
 Stop-Process -Id <PID> -Force
 ```
 
@@ -439,7 +440,7 @@ pnpm install
 
 ### Q: 后端启动后 stats 显示 packs=0
 
-说明 seed 没跑。检查日志里有没有 `TorflPackService: seeding`，如果没有，可能是 `application.yml` 的 datasource 连不上数据库。先用 `mysql -u root -p` 手动连一次确认账密。
+仅在空库初始化流程中出现此情况时，确认启动该进程前已设置 `SEED_WRITE_ON_STARTUP=true`，并检查数据库连接。现有业务数据库不要为解决该提示而开启自动写入。
 
 ### Q: 前端显示「Failed to fetch / ERR_CONNECTION_REFUSED」
 
@@ -466,7 +467,7 @@ ngrok 账号要求最低版本 3.20.0+。
 - [ ] `mvn -f backend/pom.xml spring-boot:run` 启动成功，日志无 ERROR
 - [ ] `Invoke-RestMethod http://localhost:8080/admin/stats` 返回 `{packs:25, courses:1841, statements:19103}`
 - [ ] `pnpm --filter client dev` 启动成功
-- [ ] 浏览器打开 <http://localhost:3000> 能看到「鹅语菌 · Джунда русский」首页
+- [ ] 浏览器打开 <http://localhost:3000> 能看到「俄语学习平台 · Russian Learning」首页
 - [ ] <http://localhost:3000/course-pack> 能看到 25 个课程包，分 6 个系列 tab
 - [ ] <http://localhost:3000/dashboard> 显示 25 / 1841 / 19103 三大计数 + 系列分布进度条
 - [ ] <http://localhost:3000/help> 能看到帮助文档，4 个分区卡 + 快捷键速查

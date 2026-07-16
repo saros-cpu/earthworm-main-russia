@@ -35,7 +35,9 @@ export function useShortcutKeyMode() {
 
   function setShortcutKeys() {
     const cached = readShortcutCache();
-    shortcutKeys.value = cached ? { ...DEFAULT_SHORTCUT_KEYS, ...cached } : { ...DEFAULT_SHORTCUT_KEYS };
+    shortcutKeys.value = cached
+      ? { ...DEFAULT_SHORTCUT_KEYS, ...cached }
+      : { ...DEFAULT_SHORTCUT_KEYS };
   }
 
   function reset() {
@@ -156,11 +158,29 @@ export function parseShortcut(shortcut: string) {
   return shortcut.split("+").map((key) => (key.length === 1 ? key.toUpperCase() : key));
 }
 
-export function convertMacKey(key: string) {
-  if (key === "Meta") return "Command";
-  if (key === "Control") return "Ctrl";
+const KEY_CODE_FALLBACKS: Record<string, string> = {
+  Quote: "'",
+  Semicolon: ";",
+  Comma: ",",
+  Period: ".",
+  Space: "Space",
+};
+
+const QUOTE_KEY_VALUES = new Set(["'", '"', "’", "‘", "´", "`", "Dead"]);
+
+export function normalizeShortcutKey(key: string, code?: string) {
+  if (code && KEY_CODE_FALLBACKS[code]) {
+    return KEY_CODE_FALLBACKS[code];
+  }
+  if (QUOTE_KEY_VALUES.has(key)) return "'";
   if (key === " ") return "Space";
   return key;
+}
+
+export function convertMacKey(key: string, code?: string) {
+  if (key === "Meta") return "Command";
+  if (key === "Control") return "Ctrl";
+  return normalizeShortcutKey(key, code);
 }
 
 function eventToShortcut(event: KeyboardEvent) {
@@ -169,7 +189,7 @@ function eventToShortcut(event: KeyboardEvent) {
   if (event.metaKey) keys.push("Command");
   if (event.altKey) keys.push("Alt");
   if (event.shiftKey) keys.push("Shift");
-  keys.push(convertMacKey(event.key));
+  keys.push(convertMacKey(event.key, event.code));
   return keys.join("+");
 }
 

@@ -1,8 +1,9 @@
-import type { CourseApiResponse } from "./course";
-import type { CoursePack, CoursePacksItem } from "~/types";
 import { useRuntimeConfig } from "#app";
 import { ofetch } from "ofetch";
-import { getHttp } from "./http";
+
+import type { CourseApiResponse } from "./course";
+import type { CoursePack, CoursePacksItem } from "~/types";
+import { csrfRequestHeaders, getHttp } from "./http";
 
 export type CoursePacksItemApiResponse = {
   id: string;
@@ -83,6 +84,8 @@ export async function uploadPdfCoursePack(file: File, title?: string) {
   return await ofetch<PdfImportResponse>("/course-pack/import/pdf", {
     baseURL: config.public.apiBase as string,
     method: "POST",
+    credentials: "include",
+    headers: csrfRequestHeaders(),
     body: formData,
   });
 }
@@ -98,6 +101,8 @@ export async function createPdfImportJob(file: File, title?: string) {
   return await ofetch<PdfImportJobResponse>("/course-pack/import/pdf/jobs", {
     baseURL: config.public.apiBase as string,
     method: "POST",
+    credentials: "include",
+    headers: csrfRequestHeaders(),
     body: formData,
   });
 }

@@ -1,5 +1,11 @@
 <template>
   <div class="space-y-4">
+    <section
+      class="rounded-md border border-amber-200 bg-amber-50 p-3 text-sm text-amber-900 dark:border-amber-800 dark:bg-amber-950 dark:text-amber-100"
+    >
+      为保护学习记录，下架操作会将内容归档而不物理删除；历史学习记录继续保留，归档内容也可恢复。
+    </section>
+
     <!-- 工具栏 -->
     <div class="flex flex-wrap items-center gap-3">
       <select
@@ -12,7 +18,7 @@
           :key="p.id"
           :value="p.id"
         >
-          {{ p.title }}
+          {{ p.title }}{{ p.archived ? "（已归档）" : "" }}
         </option>
       </select>
       <template v-if="selectedPack">
@@ -26,7 +32,7 @@
             :key="c.id"
             :value="c.id"
           >
-            {{ c.title }}
+            {{ c.title }}{{ c.archived ? "（已归档）" : "" }}
           </option>
         </select>
         <button
@@ -96,6 +102,12 @@
             >
               保存
             </button>
+            <button
+              class="btn btn-outline btn-xs"
+              @click="togglePackArchive"
+            >
+              {{ selectedPack.archived ? "恢复课程包" : "归档课程包" }}
+            </button>
           </div>
         </div>
       </div>
@@ -131,10 +143,10 @@
             保存
           </button>
           <button
-            class="btn btn-outline btn-error btn-xs"
-            @click="removeCourse"
+            class="btn btn-outline btn-xs"
+            @click="toggleCourseArchive"
           >
-            删除
+            {{ selectedCourse.archived ? "恢复课程" : "归档课程" }}
           </button>
         </div>
       </div>
@@ -174,21 +186,11 @@
             >
             <button
               class="rounded p-1 text-slate-400 hover:text-emerald-600"
-              title="AI 精炼"
+              title="规则精炼"
               @click="refineStatement(s)"
             >
               <UIcon
                 name="i-ph-sparkle"
-                class="h-3.5 w-3.5"
-              />
-            </button>
-            <button
-              class="rounded p-1 text-slate-400 hover:text-red-600"
-              title="删除"
-              @click="removeStatement(s)"
-            >
-              <UIcon
-                name="i-ph-trash"
                 class="h-3.5 w-3.5"
               />
             </button>
@@ -230,12 +232,20 @@
             @input="updateVocab(s, $event)"
           />
         </div>
-        <button
-          class="btn btn-outline btn-xs mt-3"
-          @click="saveStatement(s)"
-        >
-          保存句子
-        </button>
+        <div class="mt-3 flex gap-2">
+          <button
+            class="btn btn-outline btn-xs"
+            @click="saveStatement(s)"
+          >
+            保存句子
+          </button>
+          <button
+            class="btn btn-outline btn-xs"
+            @click="toggleStatementArchive(s)"
+          >
+            {{ s.archived ? "恢复句子" : "归档句子" }}
+          </button>
+        </div>
       </article>
       <div
         v-if="(selectedCourse.statements || []).length === 0"
@@ -269,6 +279,7 @@ import {
   createAdminCourse,
   createAdminStatement,
   deleteAdminCourse,
+  deleteAdminCoursePack,
   deleteAdminStatement,
   fetchAdminCourse,
   fetchAdminCoursePack,
@@ -331,6 +342,20 @@ async function savePack() {
   toast.success("课程包已保存");
 }
 
+async function togglePackArchive() {
+  if (!selectedPack.value) return;
+  const id = selectedPack.value.id;
+  if (selectedPack.value.archived) {
+    await updateAdminCoursePack(id, { archived: false });
+    toast.success("课程包已恢复，请确认公开状态后再发布");
+  } else {
+    await deleteAdminCoursePack(id);
+    toast.success("课程包已归档");
+  }
+  coursePacks.value = await fetchAdminCoursePacks();
+  await selectPack(id);
+}
+
 async function addCourse() {
   if (!selectedPack.value) return;
   const c = await createAdminCourse(selectedPack.value.id, {
@@ -349,12 +374,17 @@ async function saveCourse() {
   toast.success("课程已保存");
 }
 
-async function removeCourse() {
-  if (!selectedCourse.value || !selectedPack.value) return;
-  if (!confirm(`确认删除课程「${selectedCourse.value.title}」吗？`)) return;
-  await deleteAdminCourse(selectedCourse.value.id);
-  await selectPack(selectedPack.value.id);
-  toast.success("课程已删除");
+async function toggleCourseArchive() {
+  if (!selectedCourse.value) return;
+  if (selectedCourse.value.archived) {
+    await updateAdminCourse(selectedCourse.value.id, { archived: false });
+    toast.success("课程已恢复");
+  } else {
+    await deleteAdminCourse(selectedCourse.value.id);
+    toast.success("课程已归档");
+  }
+  if (selectedPack.value) await selectPack(selectedPack.value.id);
+  await selectCourse(selectedCourse.value.id);
 }
 
 async function addStatement() {
@@ -382,18 +412,21 @@ async function saveStatement(s: AdminStatement) {
   toast.success("句子已保存");
 }
 
+async function toggleStatementArchive(s: AdminStatement) {
+  if (s.archived) {
+    Object.assign(s, await updateAdminStatement(s.id, { archived: false }));
+    toast.success("句子已恢复");
+  } else {
+    await deleteAdminStatement(s.id);
+    s.archived = true;
+    toast.success("句子已归档");
+  }
+}
+
 async function refineStatement(s: AdminStatement) {
   const updated = await refineAdminStatement(s.id);
   Object.assign(s, updated);
-  toast.success(updated.refinementMode === "ai" ? "AI 精炼完成" : "规则精炼完成");
-}
-
-async function removeStatement(s: AdminStatement) {
-  if (!selectedCourse.value) return;
-  if (!confirm(`确认删除第 ${s.order} 句吗？`)) return;
-  await deleteAdminStatement(s.id);
-  await selectCourse(selectedCourse.value.id);
-  toast.success("句子已删除");
+  toast.success("规则精炼完成");
 }
 
 function vocabText(s: AdminStatement) {

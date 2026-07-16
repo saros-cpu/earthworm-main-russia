@@ -3,7 +3,7 @@ import { getHttp } from "./http";
 
 export interface DailySentenceApiResponse {
   zh: string;
-  en: string;
+  ru: string;
 }
 
 export async function fetchDailySentence() {

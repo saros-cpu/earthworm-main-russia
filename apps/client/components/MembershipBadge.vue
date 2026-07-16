@@ -4,7 +4,7 @@
       v-if="userStore.isFounderMembership()"
       name="i-ph-crown-simple-fill"
       class="glimmer relative overflow-hidden bg-yellow-400"
-      title="感谢你支持中大俄语"
+      title="感谢你支持俄语学习平台"
       style="width: 20px; height: 20px"
     >
     </UIcon>

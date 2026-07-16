@@ -11,9 +11,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.annotation.PostConstruct;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.io.InputStream;
 import java.util.*;
@@ -24,7 +27,7 @@ import java.util.*;
  *   - 多节单词卡课程（每课 10 词，看中文输入俄语）
  *   - 多节例句课程（看中文输入俄语整句）
  * 词表来自 backend/src/main/resources/torfl/seed.json，是 ТРКИ Лексический Минимум 范围内的精选高频词。
- * 应用启动时自动 seed 缺失的等级包。
+ * 可在显式开启初始化开关时 seed 缺失的等级包。
  */
 @Service
 public class TorflPackService {
@@ -37,6 +40,9 @@ public class TorflPackService {
     private final StatementRepository statementRepository;
     private final ObjectMapper objectMapper = new ObjectMapper();
 
+    @Value("${seed.write-on-startup:false}")
+    private boolean writeOnStartup;
+
     private Map<String, LevelSeed> seedCache;
 
     public TorflPackService(CoursePackRepository coursePackRepository,
@@ -48,10 +54,14 @@ public class TorflPackService {
     }
 
     /**
-     * 应用启动后自动 seed 缺失的等级包，让 6 个 A1-C2 课程包一启动就存在。
+     * 仅在显式初始化空库时 seed 缺失的等级包，避免普通重启修改业务数据。
      */
     @PostConstruct
     public void bootstrap() {
+        if (!writeOnStartup) {
+            log.info("[torfl] startup seed writes disabled");
+            return;
+        }
         try {
             for (String level : LEVEL_ORDER) {
                 if (!packExistsForLevel(level)) {
@@ -94,7 +104,7 @@ public class TorflPackService {
         }
 
         CoursePack pack = new CoursePack();
-        pack.setId("torfl-" + level.toLowerCase(Locale.ROOT) + "-" + shortUuid());
+        pack.setId(packId(level));
         pack.setTitle(seed.title != null ? seed.title : "TORFL " + level + " 核心词汇与例句");
         pack.setDescription(seed.description != null ? seed.description :
                 "TORFL " + level + " 等级核心词汇练习，含单词卡和例句两类课程。");
@@ -112,7 +122,7 @@ public class TorflPackService {
         for (int i = 0; i < seed.words.size(); i += chunk) {
             List<WordItem> slice = seed.words.subList(i, Math.min(i + chunk, seed.words.size()));
             Course course = new Course();
-            course.setId("torfl-" + level.toLowerCase(Locale.ROOT) + "-w" + courseOrder + "-" + shortUuid());
+            course.setId(packId(level) + "-w" + courseOrder);
             course.setTitle("第 " + courseOrder + " 课：核心单词 " + (i + 1) + "-" + (i + slice.size()));
             course.setDescription("TORFL " + level + " 高频词。看中文输入俄语单词。");
             course.setOrder(courseOrder);
@@ -129,7 +139,7 @@ public class TorflPackService {
                         ? word.chinese
                         : word.chinese + "（" + word.pos + "）";
                 Statement statement = new Statement();
-                statement.setId("torfl-stmt-" + shortUuid());
+                statement.setId(course.getId() + "-s" + stmtOrder);
                 statement.setOrder(stmtOrder++);
                 statement.setEnglish(word.russian);
                 statement.setChinese(chineseLabel);
@@ -145,7 +155,7 @@ public class TorflPackService {
             for (int i = 0; i < seed.sentences.size(); i += chunk) {
                 List<SentenceItem> slice = seed.sentences.subList(i, Math.min(i + chunk, seed.sentences.size()));
                 Course course = new Course();
-                course.setId("torfl-" + level.toLowerCase(Locale.ROOT) + "-s" + courseOrder + "-" + shortUuid());
+                course.setId(packId(level) + "-s" + courseOrder);
                 course.setTitle("第 " + courseOrder + " 课：组词成句 " + (i + 1) + "-" + (i + slice.size()));
                 course.setDescription("用学过的核心词组成完整句子。看中文输入俄语整句。");
                 course.setOrder(courseOrder);
@@ -159,7 +169,7 @@ public class TorflPackService {
                         continue;
                     }
                     Statement statement = new Statement();
-                    statement.setId("torfl-stmt-" + shortUuid());
+                    statement.setId(course.getId() + "-s" + stmtOrder);
                     statement.setOrder(stmtOrder++);
                     statement.setEnglish(sentence.russian);
                     statement.setChinese(sentence.chinese);
@@ -176,15 +186,19 @@ public class TorflPackService {
     }
 
     private boolean packExistsForLevel(String level) {
-        String prefix = "torfl-" + level.toLowerCase(Locale.ROOT) + "-";
+        String stableId = packId(level);
+        String prefix = stableId + "-";
         return coursePackRepository.findAll().stream()
-                .anyMatch(p -> p.getId() != null && p.getId().startsWith(prefix));
+                .anyMatch(p -> stableId.equals(p.getId())
+                        || p.getId() != null && p.getId().startsWith(prefix));
     }
 
     private Optional<CoursePack> findFirstPackForLevel(String level) {
-        String prefix = "torfl-" + level.toLowerCase(Locale.ROOT) + "-";
+        String stableId = packId(level);
+        String prefix = stableId + "-";
         return coursePackRepository.findAll().stream()
-                .filter(p -> p.getId() != null && p.getId().startsWith(prefix))
+                .filter(p -> stableId.equals(p.getId())
+                        || p.getId() != null && p.getId().startsWith(prefix))
                 .findFirst();
     }
 
@@ -242,42 +256,9 @@ public class TorflPackService {
      */
     @Transactional
     public Map<String, Object> reseed() {
-        seedCache = null; // 清缓存，重新加载文件
-        // 找到所有 torfl 包并删除
-        List<CoursePack> oldPacks = coursePackRepository.findAll().stream()
-                .filter(p -> p.getId() != null && p.getId().startsWith("torfl-"))
-                .toList();
-        for (CoursePack pack : oldPacks) {
-            List<Course> courses = courseRepository.findByCoursePackIdOrderByOrderAsc(pack.getId());
-            for (Course c : courses) {
-                List<Statement> stmts = statementRepository.findByCourseIdOrderByOrderAsc(c.getId());
-                for (Statement s : stmts) statementRepository.delete(s);
-                courseRepository.delete(c);
-            }
-            coursePackRepository.delete(pack);
-        }
-        Map<String, Object> result = new LinkedHashMap<>();
-        List<Map<String, Object>> created = new ArrayList<>();
-        int totalWords = 0;
-        int totalSentences = 0;
-        for (String level : LEVEL_ORDER) {
-            try {
-                CoursePack pack = createPackFromSeed(level);
-                Map<String, Object> summary = summarize(pack);
-                created.add(summary);
-                Object wc = summary.get("wordCount");
-                Object sc = summary.get("sentenceCount");
-                if (wc instanceof Number) totalWords += ((Number) wc).intValue();
-                if (sc instanceof Number) totalSentences += ((Number) sc).intValue();
-            } catch (Exception e) {
-                log.warn("[torfl] reseed level {} failed: {}", level, e.getMessage());
-            }
-        }
-        result.put("deleted", oldPacks.size());
-        result.put("created", created);
-        result.put("totalWords", totalWords);
-        result.put("totalSentences", totalSentences);
-        return result;
+        throw new ResponseStatusException(
+                HttpStatus.CONFLICT,
+                "TORFL reseed is disabled until existing learning progress can be preserved.");
     }
 
     private int nextPackOrder() {
@@ -305,8 +286,8 @@ public class TorflPackService {
         return s.isBlank() ? fallback : s;
     }
 
-    private String shortUuid() {
-        return UUID.randomUUID().toString().substring(0, 8);
+    private String packId(String level) {
+        return "torfl-" + level.toLowerCase(Locale.ROOT);
     }
 
     // ---- Jackson-friendly seed shape ----

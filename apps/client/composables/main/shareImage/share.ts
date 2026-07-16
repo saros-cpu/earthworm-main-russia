@@ -1,6 +1,5 @@
 import type { SatoriNode } from "satori";
 
-import satori from "satori";
 import { ref } from "vue";
 
 import { useDailySentence } from "../summary";
@@ -17,7 +16,7 @@ export interface ShareImageTemplateData {
   coursePackTitle: string;
   courseTitle: string;
   zhSentence: string;
-  enSentence: string;
+  ruSentence: string;
   userName: string;
   dateStr: string;
   totalRecordNumber: number;
@@ -75,7 +74,7 @@ export interface GalleryItem {
 }
 
 export function useGenerateShareImage() {
-  const { zhSentence, enSentence } = useDailySentence();
+  const { zhSentence, ruSentence } = useDailySentence();
 
   const currImageSrc = ref("");
   const currImageIndex = ref(0);
@@ -96,7 +95,7 @@ export function useGenerateShareImage() {
       coursePackTitle,
       courseTitle,
       zhSentence: zhSentence.value,
-      enSentence: enSentence.value,
+      ruSentence: ruSentence.value,
       userName,
       dateStr,
       totalRecordNumber,
@@ -112,18 +111,21 @@ export function useGenerateShareImage() {
     totalRecordNumber: number,
     totalTime: string,
   ) => {
-    Object.values(ShareImageTemplate).forEach(async (template, index) => {
-      generateImage(
-        coursePackTitle,
-        courseTitle,
-        template,
-        index,
-        userName,
-        dateStr,
-        totalRecordNumber,
-        totalTime,
-      );
-    });
+    const templates = Object.values(ShareImageTemplate);
+    await Promise.all(
+      templates.map((template, index) =>
+        generateImage(
+          coursePackTitle,
+          courseTitle,
+          template,
+          index,
+          userName,
+          dateStr,
+          totalRecordNumber,
+          totalTime,
+        ),
+      ),
+    );
   };
 
   const generateImage = async (
@@ -136,6 +138,7 @@ export function useGenerateShareImage() {
     totalRecordNumber: number,
     totalTime: string,
   ) => {
+    const satori = await import("satori").then((m) => m.default);
     const canvasEl = initCanvas();
     galleryImgs.value[index] = {
       src: "",
@@ -183,13 +186,6 @@ export function useGenerateShareImage() {
     currImageSrc.value = src;
     currImageIndex.value = index;
   };
-
-  const preLoadFont = () => {
-    fontEn();
-    fontZh();
-  };
-
-  preLoadFont();
 
   return {
     shareImageSrc: currImageSrc,

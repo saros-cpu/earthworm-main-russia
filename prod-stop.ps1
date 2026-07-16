@@ -1,21 +1,17 @@
-# 鹅语菌 - 生产模式停止
-$ErrorActionPreference = "Continue"
+$ErrorActionPreference = "Stop"
+$root = Split-Path -Parent $MyInvocation.MyCommand.Path
+$runtimeDir = if ($env:EARTHWORM_RUNTIME_DIR) { $env:EARTHWORM_RUNTIME_DIR } else { Join-Path $root "runtime" }
+. (Join-Path $root "scripts\prod-process-control.ps1")
 
-function Stop-Port($port, $name) {
-    $ids = Get-NetTCPConnection -State Listen -LocalPort $port -ErrorAction SilentlyContinue |
-        Select-Object -ExpandProperty OwningProcess -Unique
-    if ($ids) {
-        foreach ($id in $ids) {
-            Stop-Process -Id $id -Force -ErrorAction SilentlyContinue
-            Write-Host "✓ 已停掉 $name (PID $id)"
-        }
-    } else {
-        Write-Host "  $name 端口 $port 未监听"
-    }
+$backendStopped = Stop-ManagedProcess $runtimeDir "backend"
+$frontendStopped = Stop-ManagedProcess $runtimeDir "frontend"
+
+if (-not $backendStopped) {
+    Write-Host "No managed backend process was stopped."
+}
+if (-not $frontendStopped) {
+    Write-Host "No managed frontend process was stopped."
 }
 
-Stop-Port 8080 "Backend"
-Stop-Port 3000 "Frontend"
-
 Write-Host ""
-Write-Host "鹅语菌已停止" -ForegroundColor Green
+Write-Host "Managed production processes stopped. Unknown port owners were left untouched." -ForegroundColor Green

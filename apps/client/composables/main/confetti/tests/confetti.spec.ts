@@ -1,7 +1,14 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
+import { useSetup } from "~/tests/helper/component";
 import { normalEffect, redFireworksEffect, schoolPrideEffect } from "../confettiEffect";
 import { useConfetti } from "../useConfetti";
+
+vi.mock("canvas-confetti", () => ({
+  default: {
+    create: vi.fn(() => vi.fn()),
+  },
+}));
 
 vi.mock("../confettiEffect", () => {
   return {
@@ -20,6 +27,14 @@ const setupCurrentDay = ([year, month, day]: [number, number, number]) => {
 const setupNormalDay = () => setupCurrentDay([2024, 1, 8]);
 const setupLastDayOfLunarYear = () => setupCurrentDay([2024, 1, 9]);
 const setupFirstDayOfLunarYear = () => setupCurrentDay([2024, 1, 10]);
+const setupPlayConfetti = () => {
+  let playConfetti = () => {};
+  useSetup(() => {
+    ({ playConfetti } = useConfetti());
+    return {};
+  });
+  return playConfetti;
+};
 
 describe("confetti", () => {
   beforeEach(() => {
@@ -32,22 +47,19 @@ describe("confetti", () => {
 
   it("should play the normal confetti in normal day", () => {
     setupNormalDay();
-    const { playConfetti } = useConfetti();
-    playConfetti();
+    setupPlayConfetti()();
     expect(normalEffect).toBeCalled();
   });
 
   it("should play the special confetti for the first day of lunar year", () => {
     setupFirstDayOfLunarYear();
-    const { playConfetti } = useConfetti();
-    playConfetti();
+    setupPlayConfetti()();
     expect(redFireworksEffect).toBeCalled();
   });
 
   it("should play the special confetti for the last day of lunar year", () => {
     setupLastDayOfLunarYear();
-    const { playConfetti } = useConfetti();
-    playConfetti();
+    setupPlayConfetti()();
     expect(schoolPrideEffect).toBeCalled();
   });
 });

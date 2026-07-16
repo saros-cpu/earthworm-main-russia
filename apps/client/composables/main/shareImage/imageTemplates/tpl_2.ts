@@ -2,7 +2,7 @@ import type { ShareImageTemplateData } from "../share";
 
 export const tpl_2 = ({
   zhSentence,
-  enSentence,
+  ruSentence,
   coursePackTitle,
   courseTitle,
   userName,
@@ -12,7 +12,7 @@ export const tpl_2 = ({
   props: {
     tw: "w-full h-full flex flex-col overflow-hidden",
     style: {
-      backgroundImage: `url('https://picsum.photos/400/600?blur&random=${Date.now()}')`,
+      backgroundImage: "linear-gradient(145deg, #111827 0%, #334155 48%, #92400e 100%)",
       fontFamily: '"EBGaramond", "SourceHanSerifSCBold" , sans-serif',
     },
     children: [
@@ -88,7 +88,7 @@ export const tpl_2 = ({
                   {
                     type: "p",
                     props: {
-                      children: enSentence,
+                      children: ruSentence,
                     },
                   },
                   {

@@ -6,12 +6,6 @@
   "main": "index.js",
   "scripts": {
     "prepare": "simple-git-hooks",
-    "schema:build": "pnpm -F @earthworm/schema build",
-    "db:init": "pnpm schema:build && pnpm -F @earthworm/db run init",
-    "db:init:test": "pnpm schema:build && pnpm -F @earthworm/db run init:test",
-    "db:init:test:ci": "pnpm schema:build && pnpm -F @earthworm/db run init:ci",
-    "db:studio": "pnpm -F @earthworm/db db:studio",
-    "db:upload": "pnpm -F @earthworm/xingrong-courses upload",
     "dev:serve": "mvn -f backend/pom.xml spring-boot:run",
     "dev:client": "pnpm -F client dev",
     "build:server": "mvn -f backend/pom.xml -DskipTests package",
@@ -51,9 +45,5 @@
     "tsup": "^8.0.1",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"
-  },
-  "dependencies": {
-    "@t3-oss/env-core": "^0.7.1",
-    "zod": "^3.22.4"
   }
 }

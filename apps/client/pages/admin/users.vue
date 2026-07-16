@@ -3,7 +3,9 @@
     <header class="flex items-center justify-between">
       <div>
         <h1 class="text-2xl font-black text-slate-950 dark:text-white">用户管理</h1>
-        <p class="mt-1 text-sm text-slate-500">管理系统注册用户和角色权限</p>
+        <p class="mt-1 text-sm text-slate-500">
+          管理系统注册用户和角色权限；账号删除已停用以保留学习历史
+        </p>
       </div>
       <button
         class="inline-flex h-9 items-center rounded-md border border-slate-300 bg-white px-3 text-sm font-bold text-slate-700 hover:border-emerald-400 hover:text-emerald-700 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200"
@@ -55,12 +57,12 @@
                 <span
                   class="rounded px-2 py-0.5 text-xs font-bold"
                   :class="
-                    user.role === 'admin'
+                    isAdmin(user)
                       ? 'bg-purple-100 text-purple-700 dark:bg-purple-950 dark:text-purple-200'
                       : 'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-300'
                   "
                 >
-                  {{ user.role === "admin" ? "管理员" : "用户" }}
+                  {{ isAdmin(user) ? "管理员" : "用户" }}
                 </span>
               </td>
               <td class="px-5 py-3 text-right font-mono text-xs text-slate-400">
@@ -75,25 +77,14 @@
                     编辑
                   </button>
                   <button
-                    v-if="user.role !== 'admin'"
+                    v-if="!isAdmin(user)"
                     class="rounded px-2 py-1 text-xs font-bold text-purple-600 hover:bg-purple-50 hover:text-purple-800 dark:text-purple-400 dark:hover:bg-purple-950/50"
                     :disabled="toggling === user.id"
                     @click="toggleRole(user)"
                   >
                     {{ toggling === user.id ? "..." : "设为管理" }}
                   </button>
-                  <button
-                    v-if="user.role !== 'admin'"
-                    class="rounded px-2 py-1 text-xs font-bold text-red-600 hover:bg-red-50 hover:text-red-800 dark:text-red-400 dark:hover:bg-red-950/50"
-                    @click="confirmDelete(user)"
-                  >
-                    删除
-                  </button>
-                  <span
-                    v-else
-                    class="text-xs text-slate-400"
-                    >—</span
-                  >
+                  <span class="text-xs text-slate-400">保留历史</span>
                 </div>
               </td>
             </tr>
@@ -153,7 +144,7 @@
             >
             <input
               v-model="editForm.password"
-              type="text"
+              type="password"
               class="h-10 w-full rounded-md border border-slate-200 bg-white px-3 text-sm outline-none focus:border-emerald-400 dark:border-slate-700 dark:bg-slate-800"
               placeholder="输入新密码"
             />
@@ -185,12 +176,7 @@ import { onMounted, ref } from "vue";
 import { toast } from "vue-sonner";
 
 import type { AdminUser } from "~/api/admin";
-import {
-  deleteAdminUser,
-  fetchAdminUsers,
-  updateAdminUser,
-  updateAdminUserRole,
-} from "~/api/admin";
+import { fetchAdminUsers, updateAdminUser, updateAdminUserRole } from "~/api/admin";
 
 definePageMeta({ layout: "admin", middleware: "admin" });
 
@@ -202,6 +188,10 @@ const lastMessage = ref("");
 const editing = ref<AdminUser | null>(null);
 const editForm = ref({ nickname: "", email: "", password: "" });
 const saving = ref(false);
+
+function isAdmin(user: AdminUser) {
+  return user.role?.toUpperCase() === "ADMIN";
+}
 
 function formatDate(dateStr: string) {
   try {
@@ -261,17 +251,6 @@ async function saveEdit() {
     toast.error(`保存失败: ${e?.message || e}`);
   } finally {
     saving.value = false;
-  }
-}
-
-async function confirmDelete(user: AdminUser) {
-  if (!confirm(`确认删除用户 "${user.nickname || user.username}"？此操作不可恢复。`)) return;
-  try {
-    await deleteAdminUser(user.id);
-    toast.success(`已删除用户 ${user.nickname || user.username}`);
-    await load();
-  } catch (e: any) {
-    toast.error(`删除失败: ${e?.message || e}`);
   }
 }
 

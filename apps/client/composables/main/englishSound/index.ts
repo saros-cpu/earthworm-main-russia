@@ -5,9 +5,9 @@ import { useToolbar } from "~/composables/main/dictation";
 import { useGamePlayMode } from "~/composables/user/gamePlayMode";
 import { usePronunciation } from "~/composables/user/pronunciation";
 import { useCourseStore } from "~/store/course";
-import { play, playSource, speakRussian, updateSource } from "./audio";
+import { playSource, speakRussian, updateSource } from "./audio";
 
-const { getPronunciationUrl } = usePronunciation();
+const { getPronunciationUrl, shouldUseSystemVoice } = usePronunciation();
 
 let lastPronunciationUrl = "";
 export function useCurrentStatementEnglishSound() {
@@ -29,9 +29,6 @@ export function useCurrentStatementEnglishSound() {
       const text = courseStore.currentStatement?.english;
       if (isDictationMode()) {
         const { times, rate, interval } = toolBarData;
-        if (speakRussian(text, { times, rate, interval })) {
-          return () => window.speechSynthesis?.cancel();
-        }
         return playRussianText(text, { times, rate, interval });
       } else {
         return playRussianText(text, options);
@@ -44,7 +41,7 @@ export function playRussianText(text: string | undefined, options?: PlayOptions)
   if (!text) {
     return () => {};
   }
-  if (speakRussian(text, options)) {
+  if (shouldUseSystemVoice() && speakRussian(text, options)) {
     return () => window.speechSynthesis?.cancel();
   }
   return playSource(getPronunciationUrl(text), options);

@@ -1,17 +1,12 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { nextTick } from "vue";
 
-import { updateDailyLearningDailyTotalTime } from "~/api/user-learning-activity";
 import { useLearningTimeTracker } from "../learningTimeTracker";
 
 vi.mock("~/store/user", () => ({
   useUserStore: vi.fn(() => ({
     user: { id: "testUser" },
   })),
-}));
-
-vi.mock("~/api/user-learning-activity", () => ({
-  updateDailyLearningDailyTotalTime: vi.fn(),
 }));
 
 describe("useLearningTimeTracker", () => {
@@ -78,14 +73,12 @@ describe("useLearningTimeTracker", () => {
     expect(tracker.totalSeconds.value).toBe(initialSeconds + 1); // 只增加了1秒
   });
 
-  it("should upload time when stopping tracking", () => {
+  it("should save time locally when stopping tracking", () => {
     tracker.startTracking();
     vi.advanceTimersByTime(5000);
     tracker.stopTracking();
-    expect(updateDailyLearningDailyTotalTime).toHaveBeenCalledWith({
-      date: expect.any(String),
-      duration: 5,
-    });
+    const date = new Date().toISOString().split("T")[0];
+    expect(localStorage.getItem(`learningTime_testUser_${date}`)).toBe("5");
   });
 
   it("should reset totalSeconds to zero when a new day starts", async () => {

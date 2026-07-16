@@ -10,7 +10,7 @@
 import { onMounted, onUnmounted } from "vue";
 import { useRouter } from "vue-router";
 
-import { isAuthenticated } from "~/services/auth";
+import { isAuthenticated } from "~/api/auth";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 
 const { startLesson } = useShortcutToGame();

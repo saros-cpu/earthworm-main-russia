@@ -145,7 +145,8 @@
             :count="course.completionCount"
             :statement-count="course.statementCount"
             :coursePackId="course.coursePackId"
-            @click="handleChangeCourse(course.id)"
+            :locked="course.locked"
+            @click="handleChangeCourse(course.id, course.locked)"
           />
         </div>
 
@@ -274,7 +275,8 @@ function startSelectedCategory() {
   }
 }
 
-function handleChangeCourse(courseId: string) {
+function handleChangeCourse(courseId: string, locked?: boolean) {
+  if (locked) return;
   updateActiveCourseMap(coursePackId, courseId);
   navigateTo(`/game/${coursePackId}/${courseId}`);
 }

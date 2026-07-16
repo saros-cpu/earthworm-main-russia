@@ -1,6 +1,9 @@
 package com.earthworm.service;
 import com.earthworm.config.UserContext;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.earthworm.model.MasteredElement;
 import com.earthworm.repository.MasteredElementRepository;
 import org.springframework.stereotype.Service;
@@ -11,10 +14,13 @@ import java.util.*;
 
 @Service
 public class MasteredElementService {
+    private static final int MAX_CONTENT_LENGTH = 4000;
     private final MasteredElementRepository repository;
+    private final ObjectMapper objectMapper;
 
-    public MasteredElementService(MasteredElementRepository repository) {
+    public MasteredElementService(MasteredElementRepository repository, ObjectMapper objectMapper) {
         this.repository = repository;
+        this.objectMapper = objectMapper;
     }
 
     public List<Map<String, Object>> findAll() {
@@ -37,8 +43,12 @@ public class MasteredElementService {
 
     @Transactional
     public Boolean remove(String id) {
-        repository.deleteById(id);
-        return true;
+        return repository.findByIdAndUserId(id, UserContext.getUserId())
+                .map(element -> {
+                    repository.delete(element);
+                    return true;
+                })
+                .orElse(false);
     }
 
     private Map<String, Object> toItem(MasteredElement element) {
@@ -61,18 +71,17 @@ public class MasteredElementService {
             result.put("targetText", "");
             return result;
         }
-        String marker = "\"english\"";
-        int markerIndex = content.indexOf(marker);
-        if (markerIndex >= 0) {
-            int colon = content.indexOf(':', markerIndex);
-            int firstQuote = content.indexOf('"', colon + 1);
-            int secondQuote = content.indexOf('"', firstQuote + 1);
-            if (firstQuote >= 0 && secondQuote > firstQuote) {
-                String targetText = content.substring(firstQuote + 1, secondQuote);
-                result.put("english", targetText);
-                result.put("targetText", targetText);
-                return result;
-            }
+        try {
+            Map<String, Object> parsed = objectMapper.readValue(content, new TypeReference<>() {});
+            String targetText = Objects.toString(
+                    parsed.getOrDefault("targetText", parsed.getOrDefault("english", "")),
+                    ""
+            );
+            result.put("english", targetText);
+            result.put("targetText", targetText);
+            return result;
+        } catch (JsonProcessingException ignored) {
+            // Keep reading legacy plain-text content if an old row was not stored as JSON.
         }
         result.put("english", content);
         result.put("targetText", content);
@@ -80,19 +89,23 @@ public class MasteredElementService {
     }
 
     private String toJson(Object content) {
+        String value;
         if (content instanceof Map<?, ?>) {
             Map<?, ?> map = (Map<?, ?>) content;
             Object targetText = map.get("targetText");
             Object english = map.get("english");
-            String value = targetText == null ? (english == null ? "" : english.toString()) : targetText.toString();
-            return "{\"english\":\"" + escapeJson(value) + "\",\"targetText\":\"" + escapeJson(value) + "\"}";
+            value = targetText == null ? (english == null ? "" : english.toString()) : targetText.toString();
+        } else {
+            value = content == null ? "" : content.toString();
         }
-        String value = content == null ? "" : content.toString();
-        return "{\"english\":\"" + escapeJson(value) + "\",\"targetText\":\"" + escapeJson(value) + "\"}";
-    }
-
-    private String escapeJson(String value) {
-        return value.replace("\\", "\\\\").replace("\"", "\\\"");
+        if (value.length() > MAX_CONTENT_LENGTH) {
+            throw new IllegalArgumentException("Mastered element content is too long");
+        }
+        try {
+            return objectMapper.writeValueAsString(Map.of("english", value, "targetText", value));
+        } catch (JsonProcessingException exception) {
+            throw new IllegalArgumentException("Unable to store mastered element", exception);
+        }
     }
 }
 

@@ -189,11 +189,11 @@
 import { useAsyncData } from "#imports";
 import { computed, ref } from "vue";
 
+import { signOut } from "~/api/auth";
 import { fetchTodayLearningTime } from "~/api/user-learning-activity";
 import { Theme, useDarkMode } from "~/composables/darkMode";
 import { useLearningDailyTime } from "~/composables/learningDailyTime";
 import { type CalendarDataItem } from "~/composables/user/calendarGraph";
-import { clearAuth } from "~/services/auth";
 import { useCoursePackStore } from "~/store/coursePack";
 import { useUserStore } from "~/store/user";
 import { useLearningTimeTracker } from "../../composables/main/learningTimeTracker";
@@ -239,11 +239,10 @@ const { toggleYear } = useCalendarGraph();
 const { darkMode, toggleDarkMode } = useDarkMode();
 const isDarkMode = computed(() => darkMode.value === Theme.DARK);
 
-function handleLogout() {
+async function handleLogout() {
   const confirmed = window.confirm("确定退出登录吗？");
   if (!confirmed) return;
-  clearAuth();
-  window.location.href = "/";
+  await signOut("/");
 }
 
 useAsyncData("home-course-packs", async () => {

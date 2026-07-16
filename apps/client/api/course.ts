@@ -33,6 +33,7 @@ export interface CourseApiResponse {
   statements: StatementApiResponse[];
   coursePackId: string;
   completionCount: number;
+  locked: boolean;
   statementCount?: number;
   statementIndex: number;
   video: string;

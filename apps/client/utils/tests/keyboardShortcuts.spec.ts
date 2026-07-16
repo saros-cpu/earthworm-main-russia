@@ -68,6 +68,44 @@ describe("keyboardShortcuts", () => {
     expect(commandB).toBeCalled();
   });
 
+  it("should normalize quote key variants for Ctrl+'", () => {
+    const command = vi.fn();
+
+    registerShortcut("Ctrl+'", command);
+
+    fireEvent.keyDown({
+      ctrlKey: true,
+      key: "’",
+      code: "Quote",
+    });
+    fireEvent.keyDown({
+      ctrlKey: true,
+      key: "Dead",
+      code: "Quote",
+    });
+    fireEvent.keyDown({
+      ctrlKey: true,
+      key: "э",
+      code: "Quote",
+    });
+
+    expect(command).toBeCalledTimes(3);
+  });
+
+  it("should normalize a stored curly quote shortcut", () => {
+    const command = vi.fn();
+
+    registerShortcut("Ctrl+’", command);
+
+    fireEvent.keyDown({
+      ctrlKey: true,
+      key: "'",
+      code: "Quote",
+    });
+
+    expect(command).toBeCalled();
+  });
+
   it("should trigger multiple same shortcut key", () => {
     let commandA = vi.fn();
     let commandB = vi.fn();

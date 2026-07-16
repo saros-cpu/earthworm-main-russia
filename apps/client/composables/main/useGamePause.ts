@@ -32,7 +32,6 @@ export function useGamePause() {
       disableAutoPauseCheck();
     } else {
       // 游戏还有其他的状态 比如关卡完成
-      console.log("游戏没开始 暂停不了");
     }
   }
 

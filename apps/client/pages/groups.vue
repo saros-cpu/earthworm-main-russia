@@ -5,7 +5,9 @@
     >
       <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div>
-          <p class="text-sm font-bold text-emerald-600 dark:text-emerald-300">Учебные группы</p>
+          <p class="text-sm font-bold text-emerald-600 dark:text-emerald-300">
+            {{ $t("pages.groups") }}
+          </p>
           <h1 class="mt-1 text-3xl font-black text-slate-950 dark:text-white">学习小组</h1>
           <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
             和学习伙伴一起打卡、互相激励。
@@ -65,16 +67,26 @@
           :key="g.id"
           class="rounded-md border border-slate-200 bg-white p-4 shadow-sm hover:shadow-md dark:border-slate-800 dark:bg-slate-900"
         >
-          <div class="text-lg font-black text-slate-950 dark:text-white">{{ g.name }}</div>
-          <div
-            v-if="g.description"
-            class="mt-1 line-clamp-2 text-sm text-slate-500"
-          >
-            {{ g.description }}
+          <div class="flex items-start justify-between">
+            <div>
+              <div class="text-lg font-black text-slate-950 dark:text-white">{{ g.name }}</div>
+              <div
+                v-if="g.description"
+                class="mt-1 line-clamp-2 text-sm text-slate-500"
+              >
+                {{ g.description }}
+              </div>
+            </div>
+            <button
+              @click="leaveGroup(g.id)"
+              class="ml-3 shrink-0 rounded-md border border-red-200 px-3 py-1.5 text-xs font-bold text-red-500 hover:bg-red-50"
+            >
+              退出
+            </button>
           </div>
           <div class="mt-3 flex items-center justify-between text-xs text-slate-400">
             <span>{{ g.memberCount }} 位成员</span>
-            <span
+            <span v-if="g.inviteCode"
               >邀请码:
               <span class="font-mono font-bold text-emerald-600">{{ g.inviteCode }}</span></span
             >
@@ -91,16 +103,25 @@
           :key="g.id"
           class="rounded-md border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900"
         >
-          <div class="text-lg font-black text-slate-950 dark:text-white">{{ g.name }}</div>
-          <div
-            v-if="g.description"
-            class="mt-1 line-clamp-2 text-sm text-slate-500"
-          >
-            {{ g.description }}
+          <div class="flex items-start justify-between">
+            <div class="flex-1">
+              <div class="text-lg font-black text-slate-950 dark:text-white">{{ g.name }}</div>
+              <div
+                v-if="g.description"
+                class="mt-1 line-clamp-2 text-sm text-slate-500"
+              >
+                {{ g.description }}
+              </div>
+            </div>
+            <button
+              v-if="!isMyGroup(g.id)"
+              @click="joinGroup(g.id)"
+              class="ml-3 shrink-0 rounded-md bg-emerald-600 px-3 py-1.5 text-xs font-bold text-white hover:bg-emerald-700"
+            >
+              加入
+            </button>
           </div>
-          <div class="mt-3 text-xs text-slate-400">
-            {{ g.memberCount }} 位成员 · {{ g.creatorId === "dev-user-001" ? "创建者" : "" }}
-          </div>
+          <div class="mt-3 text-xs text-slate-400">{{ g.memberCount }} 位成员</div>
         </article>
       </div>
     </section>
@@ -115,7 +136,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { computed, onMounted, ref } from "vue";
 
 import { getHttp } from "~/api/http";
 
@@ -124,6 +145,12 @@ const newGroupName = ref("");
 const newGroupDesc = ref("");
 const myGroups = ref<any[]>([]);
 const allGroups = ref<any[]>([]);
+
+const myGroupIds = computed(() => new Set(myGroups.value.map((g: any) => g.id)));
+
+function isMyGroup(id: string) {
+  return myGroupIds.value.has(id);
+}
 
 async function createGroup() {
   if (!newGroupName.value.trim()) return;
@@ -137,6 +164,30 @@ async function createGroup() {
     newGroupName.value = "";
     newGroupDesc.value = "";
     showCreate.value = false;
+  } catch (_) {}
+}
+
+async function joinGroup(groupId: string) {
+  try {
+    const http = getHttp();
+    const group = await http<any>(`/groups/${groupId}/join`, { method: "post" });
+    myGroups.value.unshift(group);
+    const idx = allGroups.value.findIndex((g: any) => g.id === groupId);
+    if (idx !== -1) {
+      allGroups.value[idx] = { ...allGroups.value[idx], memberCount: group.memberCount };
+    }
+  } catch (_) {}
+}
+
+async function leaveGroup(groupId: string) {
+  try {
+    const http = getHttp();
+    const group = await http<any>(`/groups/${groupId}/leave`, { method: "post" });
+    myGroups.value = myGroups.value.filter((g: any) => g.id !== groupId);
+    const idx = allGroups.value.findIndex((g: any) => g.id === groupId);
+    if (idx !== -1) {
+      allGroups.value[idx] = { ...allGroups.value[idx], memberCount: group.memberCount };
+    }
   } catch (_) {}
 }
 

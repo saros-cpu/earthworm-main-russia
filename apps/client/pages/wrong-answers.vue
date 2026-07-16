@@ -5,7 +5,9 @@
     >
       <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div>
-          <p class="text-sm font-bold text-red-600 dark:text-red-400">Работа над ошибками</p>
+          <p class="text-sm font-bold text-red-600 dark:text-red-400">
+            {{ $t("pages.wrongAnswers") }}
+          </p>
           <h1 class="mt-1 text-3xl font-black text-slate-950 dark:text-white">错题本</h1>
           <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
             练习中答错的句子会自动记录到这里，集中攻克薄弱环节。

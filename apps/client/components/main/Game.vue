@@ -1,56 +1,75 @@
 <template>
-  <MainComboDisplay
-    :combo-count="gameStore.comboCount"
-    :combo-label="gameStore.getComboLabel(gameStore.comboCount)"
-    :score="lastScore"
-    :rating="gameStore.getRating()"
-    :show-rating="showRating"
-  />
-  <template v-if="isDictationMode()">
-    <ModeDictationMode />
-  </template>
-  <template v-else-if="isChineseToEnglishMode()">
-    <ModeChineseToEnglishMode />
-  </template>
-  <template v-else-if="isWordAssemblyMode()">
-    <ModeWordAssemblyMode />
-  </template>
-  <template v-else-if="isSpeechAssessmentMode()">
-    <ModeSpeechAssessmentMode />
-  </template>
-  <template v-else-if="isAudioCourseMode()">
-    <ModeAudioCourseMode />
-  </template>
+  <div
+    @touchstart="onTouchStart"
+    @touchend="onTouchEnd"
+    class="min-h-screen select-none"
+  >
+    <MainComboDisplay
+      :combo-count="gameStore.comboCount"
+      :combo-label="gameStore.getComboLabel(gameStore.comboCount)"
+      :score="lastScore"
+      :rating="gameStore.getRating()"
+      :show-rating="showRating"
+    />
+    <template v-if="effectiveMode === GamePlayMode.Dictation">
+      <ModeDictationMode />
+    </template>
+    <template v-else-if="effectiveMode === GamePlayMode.ChineseToEnglish">
+      <ModeChineseToEnglishMode />
+    </template>
+    <template v-else-if="effectiveMode === GamePlayMode.WordAssembly">
+      <ModeWordAssemblyMode />
+    </template>
+    <template v-else-if="effectiveMode === GamePlayMode.SpeechAssessment">
+      <ModeSpeechAssessmentMode />
+    </template>
+    <template v-else-if="isAudioCourseMode()">
+      <ModeAudioCourseMode />
+    </template>
 
-  <MainLearningTimer v-if="isAuthenticated()"></MainLearningTimer>
-  <MainTips />
-  <MainSummary />
-  <MainShare />
-  <GamePauseModal v-if="isAuthenticated()"></GamePauseModal>
-  <MainGameSettingModal />
-  <MainAiAssistant />
+    <MainLearningTimer v-if="isAuthenticated()"></MainLearningTimer>
+    <MainTips />
+    <MainSummary />
+    <LazyMainShare />
+    <GamePauseModal v-if="isAuthenticated()"></GamePauseModal>
+    <MainGameSettingModal />
+    <MainAiAssistant />
+  </div>
 </template>
 
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref, watch } from "vue";
+import { computed, onMounted, onUnmounted, ref, watch } from "vue";
 
+import { isAuthenticated } from "~/api/auth";
 import { fetchSaveExercise } from "~/api/learning";
 import comboMilestoneSound from "~/assets/sounds/right.mp3";
 import comboMaxSound from "~/assets/sounds/right.mp3";
 import GamePauseModal from "~/components/main/GamePauseModal.vue";
 import { courseTimer } from "~/composables/courses/courseTimer";
-import { useGamePlayMode } from "~/composables/user/gamePlayMode";
-import { isAuthenticated } from "~/services/auth";
+import { playRussianText } from "~/composables/main/englishSound";
+import { GamePlayMode, useGamePlayMode } from "~/composables/user/gamePlayMode";
 import { useCourseStore } from "~/store/course";
 import { useGameStore } from "~/store/game";
 
-const {
-  isChineseToEnglishMode,
-  isDictationMode,
-  isWordAssemblyMode,
-  isSpeechAssessmentMode,
-  isAudioCourseMode,
-} = useGamePlayMode();
+const SWIPE_THRESHOLD = 50;
+let touchStartX = 0;
+
+function onTouchStart(e: TouchEvent) {
+  touchStartX = e.touches[0].clientX;
+}
+
+function onTouchEnd(e: TouchEvent) {
+  const dx = e.changedTouches[0].clientX - touchStartX;
+  if (Math.abs(dx) < SWIPE_THRESHOLD) return;
+  if (dx < 0) {
+    courseStore.toNextStatement();
+  } else {
+    playRussianText(courseStore.currentStatement?.english);
+  }
+}
+
+const { currentOrMixedMode, isAudioCourseMode } = useGamePlayMode();
+const effectiveMode = computed(() => currentOrMixedMode());
 const gameStore = useGameStore();
 const courseStore = useCourseStore();
 const lastScore = ref(0);

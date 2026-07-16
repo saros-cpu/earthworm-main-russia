@@ -19,10 +19,10 @@ export function useSummary() {
   };
 }
 
-export const defaultEnSentence = "To be, or not to be, that is the question.";
-export const defaultZhSentence = "生存还是毁灭，这是一个问题。";
+export const defaultRuSentence = "Повторение — мать учения.";
+export const defaultZhSentence = "重复是学习之母。";
 
-const enSentence = ref(defaultEnSentence);
+const ruSentence = ref(defaultRuSentence);
 const zhSentence = ref(defaultZhSentence);
 const hasLoadingDailySentence = ref(false);
 
@@ -32,11 +32,11 @@ export function useDailySentence() {
   const getDailySentence = async () => {
     if (!hasLoadingDailySentence.value) {
       hasLoadingDailySentence.value = true;
-      const { en, zh } = await fetchDailySentence().catch((err) => {
+      const { ru, zh } = await fetchDailySentence().catch((err) => {
         hasLoadingDailySentence.value = false;
         return Promise.reject(err);
       });
-      enSentence.value = en;
+      ruSentence.value = ru;
       zhSentence.value = zh;
     }
   };
@@ -46,7 +46,7 @@ export function useDailySentence() {
   });
 
   return {
-    enSentence,
+    ruSentence,
     zhSentence,
     getDailySentence,
   };

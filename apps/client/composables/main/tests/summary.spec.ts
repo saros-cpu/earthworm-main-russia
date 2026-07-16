@@ -10,7 +10,7 @@ vi.mock("~/api/tool");
 describe("summary", () => {
   describe("summary sentence", () => {
     const dummyRes = {
-      en: "en",
+      ru: "ru",
       zh: "zh",
     };
     beforeEach(() => {
@@ -23,20 +23,20 @@ describe("summary", () => {
 
     it("should load the daily sentence", async () => {
       const { wrapper } = useSetup(() => {
-        const { zhSentence, enSentence } = useDailySentence();
+        const { zhSentence, ruSentence } = useDailySentence();
         return {
           zhSentence,
-          enSentence,
+          ruSentence,
         };
       });
 
       await flushPromises();
 
-      const { zhSentence, enSentence } = wrapper.vm;
+      const { zhSentence, ruSentence } = wrapper.vm;
 
       expect(toolApi.fetchDailySentence).toBeCalled();
       expect(zhSentence).toBe(dummyRes.zh);
-      expect(enSentence).toBe(dummyRes.en);
+      expect(ruSentence).toBe(dummyRes.ru);
     });
 
     it("should only load sentence once", async () => {

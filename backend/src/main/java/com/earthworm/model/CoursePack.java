@@ -35,6 +35,9 @@ public class CoursePack {
     @Column(name = "share_level", length = 64)
     private String shareLevel;
 
+    @Column(nullable = false)
+    private Boolean archived = false;
+
     @Column(name = "created_at", insertable = false, updatable = false)
     private LocalDateTime createdAt;
 

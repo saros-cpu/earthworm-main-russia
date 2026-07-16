@@ -46,8 +46,8 @@
           <p class="program-description">
             {{
               feature.type === "免费"
-                ? "基础服务已经能覆盖大部分日常练习，足够开启你的中大俄语之旅。"
-                : "终身解锁所有定制功能，中大俄语全方位陪你打磨俄语课程。"
+                ? "基础服务已经能覆盖大部分日常练习，足够开启你的俄语学习平台之旅。"
+                : "终身解锁所有定制功能，俄语学习平台全方位陪你打磨俄语课程。"
             }}
           </p>
         </div>
@@ -95,7 +95,7 @@
         >7 天内获得 100% 退款</span
       >
       在购买之日起<br />
-      购买中大俄语许可证后，
+      购买俄语学习平台许可证后，
       <span
         class="bg-gradient-to-r from-purple-400 via-purple-400 to-gray-400 bg-clip-text text-transparent dark:from-purple-600 dark:via-purple-600 dark:to-gray-500"
         >登录</span

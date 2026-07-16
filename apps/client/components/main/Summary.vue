@@ -11,7 +11,7 @@
     >
       <div class="mb-4 flex items-center justify-between">
         <div class="flex items-center gap-3">
-          <h3 class="text-lg font-bold">🎉 恭喜!</h3>
+          <h3 class="text-lg font-bold">{{ $t("summary.congratulations") }}</h3>
           <span
             v-if="gameStore.totalQuestions > 0"
             class="rounded-full px-4 py-1 text-sm font-black tracking-wider"
@@ -36,7 +36,7 @@
         <div class="flex">
           <span class="text-3xl font-bold sm:text-4xl lg:text-6xl">"</span>
           <div class="flex-1 text-center text-sm leading-loose sm:text-base lg:text-xl">
-            {{ enSentence }}
+            {{ ruSentence }}
           </div>
           <span class="invisible text-3xl font-bold sm:text-4xl lg:text-6xl">"</span>
         </div>
@@ -48,22 +48,23 @@
           </div>
           <span class="text-3xl font-bold sm:text-4xl lg:text-6xl">"</span>
         </div>
-        <p class="text-right text-xs text-gray-200 sm:text-sm">—— 金山词霸「每日一句」</p>
+        <p class="text-right text-xs text-gray-200 sm:text-sm">{{ $t("summary.dailyPhrase") }}</p>
         <p
           class="pl-2 text-xs leading-loose text-gray-600 sm:pl-4 sm:text-sm lg:pl-14 lg:text-base"
         >
           {{
-            `恭喜您一共完成 ${courseTimer.totalRecordNumber()} 道题，用时 ${formatSecondsToTime(
-              courseTimer.calculateTotalTime(),
-            )} `
+            $t("summary.completedTasks", {
+              count: courseTimer.totalRecordNumber(),
+              time: formatSecondsToTime(courseTimer.calculateTotalTime()),
+            })
           }}
         </p>
         <p
           v-if="isAuthenticated()"
           class="pl-2 text-xs leading-loose text-gray-400 sm:pl-4 sm:text-sm lg:pl-14 lg:text-base"
         >
-          今天一共学习 <span class="text-purple-500">{{ formattedMinutes }}分钟</span> 啦！
-          <span v-if="totalMinutes >= 30">太强了，给自己来点掌声 😄</span>
+          {{ $t("summary.todayStudied", { minutes: formattedMinutes }) }}
+          <span v-if="totalMinutes >= 30">{{ $t("summary.greatJob") }}</span>
         </p>
       </div>
       <div
@@ -76,23 +77,72 @@
           >
             {{ gameStore.getRating() }}
           </div>
-          <div class="text-xs text-slate-400">评级</div>
+          <div class="text-xs text-slate-400">{{ $t("summary.rating") }}</div>
         </div>
         <div>
           <div class="text-lg font-black text-emerald-600 dark:text-emerald-400">
             {{ maxComboText }}
           </div>
-          <div class="text-xs text-slate-400">最大连击</div>
+          <div class="text-xs text-slate-400">{{ $t("summary.maxCombo") }}</div>
         </div>
         <div>
           <div class="text-lg font-black text-slate-950 dark:text-white">{{ accuracyText }}%</div>
-          <div class="text-xs text-slate-400">正确率</div>
+          <div class="text-xs text-slate-400">{{ $t("summary.accuracy") }}</div>
         </div>
         <div>
           <div class="text-lg font-black text-amber-600 dark:text-amber-400">
             {{ gameStore.totalScore }}
           </div>
-          <div class="text-xs text-slate-400">总得分</div>
+          <div class="text-xs text-slate-400">{{ $t("summary.points") }}</div>
+        </div>
+      </div>
+      <div
+        v-if="errorCount > 0"
+        class="mt-3 rounded-md border border-rose-100 bg-rose-50 p-3 text-sm dark:border-rose-900 dark:bg-rose-950/40"
+      >
+        <div class="flex items-center gap-2 text-rose-700 dark:text-rose-300">
+          <UIcon
+            name="i-ph-warning-circle"
+            class="h-4 w-4"
+          />
+          <span class="font-bold">{{ $t("summary.wrongCount", { count: errorCount }) }}</span>
+          <span class="text-xs text-rose-500 dark:text-rose-400"
+            >({{ $t("summary.accuracy") }} {{ accuracyText }}%)</span
+          >
+          <button
+            class="btn btn-ghost btn-xs ml-auto"
+            @click="showWrongList = !showWrongList"
+          >
+            <UIcon
+              :name="showWrongList ? 'i-ph-caret-up' : 'i-ph-caret-down'"
+              class="h-3 w-3"
+            />
+          </button>
+        </div>
+        <div class="mt-2 h-2 w-full overflow-hidden rounded-full bg-rose-200 dark:bg-rose-900">
+          <div
+            class="h-full rounded-full bg-emerald-500 transition-all"
+            :style="{ width: accuracyText + '%' }"
+          ></div>
+        </div>
+        <div
+          v-if="showWrongList && gameStore.wrongAnswers.length > 0"
+          class="mt-3 max-h-48 space-y-2 overflow-y-auto"
+        >
+          <div
+            v-for="(item, idx) in gameStore.wrongAnswers"
+            :key="idx"
+            class="rounded border border-rose-200 bg-white p-2 dark:border-rose-800 dark:bg-rose-950"
+          >
+            <div class="text-xs font-bold text-slate-700 dark:text-slate-300">
+              {{ item.english }}
+            </div>
+            <div class="text-xs text-slate-500 dark:text-slate-400">{{ item.chinese }}</div>
+            <div class="mt-1 text-xs text-rose-500">
+              <span class="font-medium">{{ $t("summary.yourAnswer") }}:</span>
+              {{ item.yourAnswer || "—" }}
+            </div>
+          </div>
         </div>
       </div>
       <div className="modal-action flex flex-col sm:flex-row gap-2 justify-center sm:justify-end">
@@ -100,25 +150,25 @@
           class="btn btn-primary w-full sm:w-auto"
           @click="toShare"
         >
-          生成打卡图
+          {{ $t("summary.share") }}
         </button>
         <button
           class="btn w-full sm:w-auto"
           @click="handleDoAgain"
         >
-          再来一次
+          {{ $t("summary.again") }}
         </button>
         <button
           class="btn w-full sm:w-auto"
           @click="handleGoToCourseList"
         >
-          课程列表
+          {{ $t("summary.toList") }}
         </button>
         <button
           class="btn w-full sm:w-auto"
           @click="goToNextCourse"
         >
-          下一课
+          {{ $t("summary.next") }}
           <UKbd> ↵ </UKbd>
         </button>
       </div>
@@ -134,8 +184,10 @@
 <script setup lang="ts">
 import { useModal } from "#imports";
 import { computed, ref, watch } from "vue";
+import { useI18n } from "vue-i18n";
 import { toast } from "vue-sonner";
 
+import { isAuthenticated, signIn } from "~/api/auth";
 import Dialog from "~/components/common/Dialog.vue";
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
 import { courseTimer } from "~/composables/courses/courseTimer";
@@ -143,16 +195,16 @@ import { useConfetti } from "~/composables/main/confetti/useConfetti";
 import { readOneSentencePerDayAloud } from "~/composables/main/englishSound";
 import { useGameMode } from "~/composables/main/game";
 import { useLearningTimeTracker } from "~/composables/main/learningTimeTracker";
-import { useShareModal } from "~/composables/main/shareImage/share";
 import { useDailySentence, useSummary } from "~/composables/main/summary";
 import { useNavigation } from "~/composables/useNavigation";
-import { isAuthenticated, signIn } from "~/services/auth";
 import { useCourseStore } from "~/store/course";
 import { useCoursePackStore } from "~/store/coursePack";
 import { useGameStore } from "~/store/game";
 import { permitSaveStatement, preventSaveStatement } from "~/store/statement";
 import { formatSecondsToTime } from "~/utils/date";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
+
+const { t } = useI18n();
 
 const courseStore = useCourseStore();
 const coursePackStore = useCoursePackStore();
@@ -161,16 +213,17 @@ const { showQuestion } = useGameMode();
 const { handleGoToCourseList, goToNextCourse, completeCourse } = useCourse();
 const { handleDoAgain } = useDoAgain();
 const { showModal, hideSummary } = useSummary();
-const { zhSentence, enSentence } = useDailySentence();
+const { zhSentence, ruSentence } = useDailySentence();
 const { confettiCanvasRef, playConfetti } = useConfetti();
-const { showShareModal } = useShareModal();
 const { updateActiveCourseMap } = useActiveCourseMap();
 const { totalMinutes, formattedMinutes } = useTotalLearningTime();
 
 const gameStore = useGameStore();
 const modal = useModal();
 
+const showWrongList = ref(false);
 const maxComboText = computed(() => `${gameStore.maxCombo}x`);
+const errorCount = computed(() => Math.max(0, gameStore.totalQuestions - gameStore.totalCorrect));
 const accuracyText = computed(() => {
   return gameStore.totalQuestions > 0
     ? Math.round((gameStore.totalCorrect / gameStore.totalQuestions) * 100)
@@ -179,12 +232,12 @@ const accuracyText = computed(() => {
 const ratingText = computed(() => {
   const r = gameStore.getRating();
   const labels: Record<string, string> = {
-    C: "C · 继续加油",
-    B: "B · 不错",
-    A: "A · 良好",
-    S: "S · 优秀",
-    SS: "SS · 卓越",
-    SSS: "SSS · 完美",
+    C: t("summary.ratingLabels.C"),
+    B: t("summary.ratingLabels.B"),
+    A: t("summary.ratingLabels.A"),
+    S: t("summary.ratingLabels.S"),
+    SS: t("summary.ratingLabels.SS"),
+    SSS: t("summary.ratingLabels.SSS"),
   };
   return labels[r] || r;
 });
@@ -257,7 +310,7 @@ function useDoAgain() {
     // 看看是不是没有全部掌握了
     // 如果是全部掌握了 那么给个提示 然后挑战到课程列表
     if (courseStore.isAllMastered()) {
-      toast.info("你已经全部都掌握 自动帮你跳转到课程列表啦", {
+      toast.info(t("summary.allMastered"), {
         duration: 1500,
         onAutoClose: () => {
           handleGoToCourseList();
@@ -279,7 +332,7 @@ function useDoAgain() {
 
 // 朗读每日一句
 function soundSentence() {
-  readOneSentencePerDayAloud(enSentence.value);
+  readOneSentencePerDayAloud(ruSentence.value);
 }
 
 function useCourse() {
@@ -293,12 +346,12 @@ function useCourse() {
     if (!isAuthenticated()) {
       // 去注册
       modal.open(Dialog, {
-        title: "✨ 解锁更多学习体验",
-        content: "注册后可以进行下一课学习 记录每日学习数据 开启更多功能哦",
+        title: t("summary.moreFeatures"),
+        content: t("summary.registerPrompt"),
         showCancel: true,
         showConfirm: true,
-        cancelText: "稍后再说",
-        confirmText: "立即注册",
+        cancelText: t("summary.cancel"),
+        confirmText: t("summary.register"),
         async onConfirm() {
           courseStore.resetStatementIndex();
           showQuestion();
@@ -312,7 +365,7 @@ function useCourse() {
     hideSummary();
 
     if (!haveNextCourse.value) {
-      toast.info("已经是最后一课 自动帮你跳转到课程列表啦", {
+      toast.info(t("summary.lastLesson"), {
         duration: 1500,
         onAutoClose: () => {
           handleGoToCourseList();
@@ -355,7 +408,9 @@ function useCourse() {
   };
 }
 
-const toShare = () => {
+const toShare = async () => {
+  const { useShareModal } = await import("~/composables/main/shareImage/share");
+  const { showShareModal } = useShareModal();
   showShareModal();
 };
 </script>

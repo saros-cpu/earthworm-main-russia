@@ -11,16 +11,18 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.annotation.PostConstruct;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.io.InputStream;
 import java.time.LocalDateTime;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * 加载 backend/src/main/resources/customs/*.json 中的预编排课程包数据
@@ -37,6 +39,9 @@ public class CustomCoursePackService {
     private final CourseRepository courseRepository;
     private final StatementRepository statementRepository;
     private final ObjectMapper objectMapper = new ObjectMapper();
+
+    @Value("${seed.write-on-startup:false}")
+    private boolean writeOnStartup;
 
     public CustomCoursePackService(CoursePackRepository coursePackRepository,
                                    CourseRepository courseRepository,
@@ -56,10 +61,15 @@ public class CustomCoursePackService {
                     continue;
                 }
                 if (coursePackRepository.findById(packId).isPresent()) {
-                    syncVideoPaths(pack);
+                    syncVideoPaths(pack, writeOnStartup);
                     continue;
                 }
-                createPack(pack);
+                if (writeOnStartup) {
+                    createPack(pack);
+                }
+            }
+            if (!writeOnStartup) {
+                log.info("[custom] startup seed writes disabled");
             }
         } catch (Exception e) {
             log.warn("[custom] bootstrap failed: {}", e.getMessage(), e);
@@ -68,47 +78,9 @@ public class CustomCoursePackService {
 
     @Transactional
     public Map<String, Object> reseed() {
-        List<Map<String, Object>> created = new ArrayList<>();
-        int deleted = 0;
-        try {
-            List<JsonNode> packs = loadPackResources();
-            // Delete existing packs first
-            for (JsonNode pack : packs) {
-                String packId = pack.path("id").asText();
-                if (packId.isBlank()) continue;
-                Optional<CoursePack> existing = coursePackRepository.findById(packId);
-                if (existing.isPresent()) {
-                    List<Course> oldCourses = courseRepository.findByCoursePackIdOrderByOrderAsc(packId);
-                    for (Course c : oldCourses) {
-                        List<Statement> stmts = statementRepository.findByCourseIdOrderByOrderAsc(c.getId());
-                        for (Statement s : stmts) statementRepository.delete(s);
-                        courseRepository.delete(c);
-                    }
-                    coursePackRepository.delete(existing.get());
-                    deleted++;
-                }
-            }
-            for (JsonNode pack : packs) {
-                CoursePack saved = createPack(pack);
-                if (saved == null) continue;
-                Map<String, Object> summary = new LinkedHashMap<>();
-                summary.put("id", saved.getId());
-                summary.put("title", saved.getTitle());
-                int courseCount = pack.path("courses").size();
-                int stmtCount = 0;
-                for (JsonNode c : pack.path("courses")) stmtCount += c.path("statements").size();
-                summary.put("courseCount", courseCount);
-                summary.put("statementCount", stmtCount);
-                created.add(summary);
-            }
-        } catch (Exception e) {
-            log.error("[custom] reseed failed: {}", e.getMessage(), e);
-            throw new RuntimeException(e);
-        }
-        Map<String, Object> result = new LinkedHashMap<>();
-        result.put("deleted", deleted);
-        result.put("created", created);
-        return result;
+        throw new ResponseStatusException(
+                HttpStatus.CONFLICT,
+                "Custom course reseed is disabled until existing learning progress can be preserved.");
     }
 
     private List<JsonNode> loadPackResources() throws Exception {
@@ -141,7 +113,7 @@ public class CustomCoursePackService {
         cp.setCover(pack.path("cover").asText(""));
         cp.setIsFree(pack.path("isFree").asBoolean(true));
         cp.setCreatorId(pack.path("creatorId").asText("system"));
-        cp.setShareLevel(pack.path("shareLevel").asText("PUBLIC"));
+        cp.setShareLevel(pack.path("shareLevel").asText("public").toLowerCase(Locale.ROOT));
         cp.setOrder(nextPackOrder());
         cp.setCreatedAt(LocalDateTime.now());
         cp.setUpdatedAt(LocalDateTime.now());
@@ -154,7 +126,7 @@ public class CustomCoursePackService {
             courseOrder++;
             String courseId = courseNode.path("id").asText();
             if (courseId.isBlank()) {
-                courseId = packId + "-c" + courseOrder + "-" + shortRandom();
+                courseId = packId + "-c" + courseOrder;
             }
             Course c = new Course();
             c.setId(courseId);
@@ -172,7 +144,7 @@ public class CustomCoursePackService {
             int stmtOrder = 0;
             for (JsonNode s : courseNode.path("statements")) {
                 stmtOrder++;
-                String stmtId = courseId + "-s" + stmtOrder + "-" + shortRandom();
+                String stmtId = courseId + "-s" + stmtOrder;
                 Statement st = new Statement();
                 st.setId(stmtId);
                 st.setOrder(stmtOrder);
@@ -190,22 +162,37 @@ public class CustomCoursePackService {
         return cp;
     }
 
-    private void syncVideoPaths(JsonNode pack) {
+    void syncVideoPaths(JsonNode pack) {
+        syncVideoPaths(pack, true);
+    }
+
+    void syncVideoPaths(JsonNode pack, boolean allowMediaPathWrite) {
         String packId = pack.path("id").asText();
-        List<Course> courses = courseRepository.findByCoursePackIdOrderByOrderAsc(packId);
-        for (Course course : courses) {
-            for (JsonNode cn : pack.path("courses")) {
-                if (cn.path("id").asText("").equals(course.getId())) {
-                    String jsonVideo = cn.path("video").asText("");
-                    if (!jsonVideo.isEmpty() && !jsonVideo.equals(course.getVideo())) {
-                        course.setVideo(jsonVideo);
-                        courseRepository.save(course);
-                        log.info("[custom] updated video for {}: {}", course.getId(), jsonVideo);
-                    }
-                    syncLyricsCache(course.getId(), cn);
-                    break;
-                }
+        Map<String, Course> coursesById = new LinkedHashMap<>();
+        for (Course course : courseRepository.findByCoursePackIdOrderByOrderAsc(packId)) {
+            if (course.getId() != null) {
+                coursesById.put(course.getId(), course);
             }
+        }
+        JsonNode courseNodes = pack.path("courses");
+        int courseOrder = 0;
+        for (JsonNode courseNode : courseNodes) {
+            courseOrder++;
+            String courseId = courseNode.path("id").asText();
+            if (courseId.isBlank()) {
+                courseId = packId + "-c" + courseOrder;
+            }
+            Course course = coursesById.get(courseId);
+            if (course == null) {
+                continue;
+            }
+            String jsonVideo = courseNode.path("video").asText("");
+            if (allowMediaPathWrite && !jsonVideo.isEmpty() && (course.getVideo() == null || course.getVideo().isBlank())) {
+                course.setVideo(jsonVideo);
+                courseRepository.save(course);
+                log.info("[custom] filled missing video for {}", course.getId());
+            }
+            syncLyricsCache(course.getId(), courseNode);
         }
     }
 
@@ -226,8 +213,4 @@ public class CustomCoursePackService {
                 .orElse(0) + 1;
     }
 
-    private String shortRandom() {
-        int n = ThreadLocalRandom.current().nextInt(0x10000000, 0x7fffffff);
-        return Integer.toHexString(n);
-    }
 }

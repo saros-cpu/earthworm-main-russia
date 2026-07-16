@@ -20,10 +20,10 @@
       >
         <img
           src="/logo-circle.png"
-          alt="logo"
+          alt="应用图标"
           class="h-8 w-8"
         />
-        <span class="text-lg font-black text-slate-950 dark:text-white">中大俄语</span>
+        <span class="text-lg font-black text-slate-950 dark:text-white">俄语学习平台</span>
         <span
           class="rounded bg-purple-100 px-1.5 py-0.5 text-[10px] font-bold text-purple-700 dark:bg-purple-950 dark:text-purple-200"
           >管理</span
@@ -118,7 +118,7 @@
 import { computed, ref } from "vue";
 import { useRoute } from "vue-router";
 
-import { clearAuth, getStoredUser } from "~/services/auth";
+import { getStoredUser, signOut } from "~/api/auth";
 
 const route = useRoute();
 const sidebarOpen = ref(false);
@@ -127,7 +127,6 @@ const menuItems = [
   { to: "/admin", icon: "i-ph-chart-bar", label: "仪表盘" },
   { to: "/admin/courses", icon: "i-ph-book-open", label: "课程管理" },
   { to: "/admin/media", icon: "i-ph-play-circle", label: "媒体管理" },
-  { to: "/admin/pdf", icon: "i-ph-file-pdf", label: "PDF 导入" },
   { to: "/admin/ai", icon: "i-ph-sparkle", label: "AI 工具" },
   { to: "/admin/users", icon: "i-ph-users-three", label: "用户管理" },
 ];
@@ -141,8 +140,7 @@ const storedUser = getStoredUser();
 const userName = computed(() => storedUser?.nickname || storedUser?.username || "管理员");
 const userInitial = computed(() => (userName.value.charAt(0) || "A").toUpperCase());
 
-function handleLogout() {
-  clearAuth();
-  window.location.href = "/login";
+async function handleLogout() {
+  await signOut();
 }
 </script>

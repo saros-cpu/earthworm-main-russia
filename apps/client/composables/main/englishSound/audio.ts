@@ -8,7 +8,7 @@ export function updateSource(src: string) {
   audio.load();
 }
 
-const { getPronunciationUrl, shouldPreferRussianVoice } = usePronunciation();
+const { getPronunciationUrl, shouldUseSystemVoice } = usePronunciation();
 export function usePlayWordSound() {
   let lastWord = "";
   let isPlaying = false;
@@ -19,7 +19,7 @@ export function usePlayWordSound() {
       return;
     }
     lastWord = word;
-    if (speakRussian(word)) {
+    if (shouldUseSystemVoice() && speakRussian(word)) {
       return;
     }
     isPlaying = true;

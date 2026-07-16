@@ -6,13 +6,16 @@
     >
       <video
         ref="videoRef"
-        :src="src"
         controls
         class="w-full"
         style="max-height: 70vh"
         @error="onError"
       >
-        <source :src="src" />
+        <source
+          v-if="mediaSrc"
+          :src="mediaSrc"
+          type="video/mp4"
+        />
         您的浏览器不支持视频播放。
       </video>
     </div>
@@ -29,7 +32,7 @@
         />
         <audio
           ref="audioRef"
-          :src="src"
+          :src="mediaSrc"
           controls
           class="w-full"
           @error="onError"
@@ -49,7 +52,7 @@
       <span
         v-if="isTranscoding"
         class="font-bold"
-        >转码中：</span
+        >正在准备：</span
       >
       <span
         v-else
@@ -94,7 +97,7 @@
 </template>
 
 <script setup lang="ts">
-import { onUnmounted, ref } from "vue";
+import { nextTick, onMounted, onUnmounted, ref, watch } from "vue";
 
 const props = defineProps<{
   src: string;
@@ -106,55 +109,118 @@ const videoRef = ref<HTMLVideoElement | null>(null);
 const audioRef = ref<HTMLAudioElement | null>(null);
 const error = ref("");
 const isTranscoding = ref(false);
+const mediaSrc = ref("");
 const playbackRate = ref(1);
 let retryTimer: ReturnType<typeof setTimeout> | null = null;
+let probeId = 0;
+
+function mediaElement() {
+  return videoRef.value || audioRef.value;
+}
+
+function clearRetryTimer() {
+  if (retryTimer) {
+    clearTimeout(retryTimer);
+    retryTimer = null;
+  }
+}
+
+function retryAfterMs(res: Response): number {
+  const retryAfter = Number(res.headers.get("Retry-After"));
+  return Number.isFinite(retryAfter) && retryAfter > 0 ? retryAfter * 1000 : 15000;
+}
+
+async function prepareMedia(autoplay = false) {
+  const currentProbe = ++probeId;
+  clearRetryTimer();
+  mediaSrc.value = "";
+  error.value = "";
+  isTranscoding.value = false;
+
+  try {
+    const res = await fetch(props.src, {
+      method: "HEAD",
+      credentials: "include",
+    });
+    if (currentProbe !== probeId) return;
+
+    if (res.ok) {
+      mediaSrc.value = props.src;
+      await nextTick();
+      const el = mediaElement();
+      if (el) {
+        el.load();
+        el.playbackRate = playbackRate.value;
+        if (autoplay) {
+          await el.play().catch(() => {});
+        }
+      }
+      return;
+    }
+
+    if (res.status === 503 && res.headers.get("X-Transcoding")) {
+      isTranscoding.value = true;
+      const state = res.headers.get("X-Transcoding");
+      error.value =
+        state === "queue-full"
+          ? "转码任务较多，系统会稍后自动重试。"
+          : "视频首次打开需要转码，系统会自动重试。";
+      retryTimer = setTimeout(() => prepareMedia(autoplay), retryAfterMs(res));
+      return;
+    }
+
+    isTranscoding.value = false;
+    error.value =
+      res.status === 404
+        ? "找不到视频文件，请检查课程包里的视频路径和本地媒体目录。"
+        : `媒体服务返回 ${res.status}，请稍后重试。`;
+  } catch (_) {
+    if (currentProbe !== probeId) return;
+    isTranscoding.value = false;
+    error.value = "无法连接媒体服务，请确认后端服务仍在运行。";
+  }
+}
 
 function onError(e: Event) {
   checkAndRetry(e);
 }
 
 async function checkAndRetry(e: Event) {
-  const el = videoRef.value || audioRef.value;
-  if (!el) return;
   try {
-    const res = await fetch(props.src, { method: "HEAD" });
-    if (res.status === 503 && res.headers.get("X-Transcoding") === "in-progress") {
+    const res = await fetch(props.src, {
+      method: "HEAD",
+      credentials: "include",
+    });
+    if (res.status === 503 && res.headers.get("X-Transcoding")) {
       isTranscoding.value = true;
-      error.value = "视频正在转码中，系统将自动重试...";
-      retryTimer = setTimeout(() => {
-        error.value = "";
-        el.load();
-        el.play();
-      }, 15000);
+      error.value = "视频首次打开需要转码，系统会自动重试。";
+      retryTimer = setTimeout(() => prepareMedia(true), retryAfterMs(res));
       return;
     }
   } catch (_) {}
   isTranscoding.value = false;
   const target = e?.target as HTMLMediaElement | null;
-  error.value = target?.error?.message || "未知错误，可能是格式不支持或路径不存在";
+  error.value = target?.error?.message || "未知错误，可能是格式不支持或路径不存在。";
 }
 
 function retry() {
-  if (retryTimer) {
-    clearTimeout(retryTimer);
-    retryTimer = null;
-  }
-  isTranscoding.value = false;
-  error.value = "";
-  const el = videoRef.value || audioRef.value;
-  if (el) {
-    el.load();
-    el.play();
-  }
+  prepareMedia(true);
 }
 
+onMounted(() => prepareMedia(false));
+
+watch(
+  () => props.src,
+  () => prepareMedia(false),
+);
+
 onUnmounted(() => {
-  if (retryTimer) clearTimeout(retryTimer);
+  clearRetryTimer();
 });
 
 function setPlaybackRate(rate: number) {
   playbackRate.value = rate;
-  const el = videoRef.value || audioRef.value;
+  const el = mediaElement();
   if (el) el.playbackRate = rate;
 }
 </script>

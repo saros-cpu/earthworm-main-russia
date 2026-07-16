@@ -3,10 +3,12 @@
     <section
       class="mb-5 rounded-md border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900"
     >
-      <p class="text-sm font-bold text-emerald-600 dark:text-emerald-300">Статистика</p>
-      <h1 class="mt-1 text-3xl font-black text-slate-950 dark:text-white">学习统计</h1>
+      <p class="text-sm font-bold text-emerald-600 dark:text-emerald-300">统计 / Статистика</p>
+      <h1 class="mt-1 text-3xl font-black text-slate-950 dark:text-white">
+        你的学习统计 / Ваша статистика
+      </h1>
       <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
-        查看你的学习数据、成长轨迹和每日打卡情况。
+        查看你的成绩、学习进度和每日活动记录 / Ваши результаты, прогресс и ежедневная активность
       </p>
     </section>
 
@@ -14,7 +16,7 @@
       <div
         class="rounded-md border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900"
       >
-        <div class="text-xs font-semibold text-slate-400">总练习</div>
+        <div class="text-xs font-semibold text-slate-400">{{ $t("stats.total") }}</div>
         <div class="mt-1 text-2xl font-black text-slate-950 dark:text-white">
           {{ totalStats.totalExercises || 0 }}
         </div>
@@ -22,7 +24,7 @@
       <div
         class="rounded-md border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900"
       >
-        <div class="text-xs font-semibold text-slate-400">正确率</div>
+        <div class="text-xs font-semibold text-slate-400">{{ $t("stats.accuracy") }}</div>
         <div class="mt-1 text-2xl font-black text-emerald-600 dark:text-emerald-400">
           {{ accuracy }}%
         </div>
@@ -30,15 +32,15 @@
       <div
         class="rounded-md border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900"
       >
-        <div class="text-xs font-semibold text-slate-400">当前连续学习</div>
+        <div class="text-xs font-semibold text-slate-400">{{ $t("stats.streak") }}</div>
         <div class="mt-1 text-2xl font-black text-amber-600 dark:text-amber-400">
-          {{ totalStats.currentStreak || 0 }} 天
+          {{ totalStats.currentStreak || 0 }} {{ $t("stats.days") }}
         </div>
       </div>
       <div
         class="rounded-md border border-slate-200 bg-white p-4 shadow-sm dark:border-slate-800 dark:bg-slate-900"
       >
-        <div class="text-xs font-semibold text-slate-400">总得分</div>
+        <div class="text-xs font-semibold text-slate-400">{{ $t("stats.points") }}</div>
         <div class="mt-1 text-2xl font-black text-purple-600 dark:text-purple-400">
           {{ totalStats.totalScore || 0 }}
         </div>
@@ -48,36 +50,40 @@
     <section
       class="mb-5 rounded-md border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900"
     >
-      <h2 class="mb-4 text-lg font-bold text-slate-950 dark:text-white">学习热力图</h2>
+      <h2 class="mb-4 text-lg font-bold text-slate-950 dark:text-white">
+        {{ $t("stats.heatmap") }}
+      </h2>
       <div class="flex flex-wrap gap-1">
         <div
           v-for="(day, i) in heatmapData"
           :key="i"
           class="heatmap-cell"
           :class="getHeatmapColor(day.count)"
-          :title="`${day.date}: ${day.count} 题`"
+          :title="$t('stats.exercises', { count: day.count })"
         ></div>
       </div>
       <div class="mt-3 flex items-center gap-2 text-xs text-slate-400">
-        <span>少</span>
+        <span>{{ $t("stats.little") }}</span>
         <div class="h-3 w-3 rounded-sm bg-slate-100 dark:bg-slate-800"></div>
         <div class="h-3 w-3 rounded-sm bg-emerald-200 dark:bg-emerald-900"></div>
         <div class="h-3 w-3 rounded-sm bg-emerald-400 dark:bg-emerald-700"></div>
         <div class="h-3 w-3 rounded-sm bg-emerald-600 dark:bg-emerald-500"></div>
         <div class="h-3 w-3 rounded-sm bg-emerald-800 dark:bg-emerald-300"></div>
-        <span>多</span>
+        <span>{{ $t("stats.much") }}</span>
       </div>
     </section>
 
     <section
       class="rounded-md border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900"
     >
-      <h2 class="mb-4 text-lg font-bold text-slate-950 dark:text-white">每日详情</h2>
+      <h2 class="mb-4 text-lg font-bold text-slate-950 dark:text-white">
+        {{ $t("stats.details") }}
+      </h2>
       <div
         v-if="dailyStats.length === 0"
         class="py-8 text-center text-sm text-slate-400"
       >
-        暂无学习数据，开始练习吧！
+        {{ $t("stats.noData") }}
       </div>
       <div
         v-else
@@ -91,15 +97,17 @@
           <div>
             <div class="text-sm font-bold text-slate-950 dark:text-white">{{ stat.date }}</div>
             <div class="text-xs text-slate-400">
-              {{ stat.totalExercises }} 题 · {{ stat.correctExercises }} 正确 ·
-              {{ formatTime(stat.totalTimeSeconds) }}
+              {{ stat.totalExercises }} {{ $t("stats.ex") }} · {{ stat.correctExercises }}
+              {{ $t("stats.correct") }} · {{ formatTime(stat.totalTimeSeconds) }}
             </div>
           </div>
           <div class="text-right">
             <div class="text-sm font-bold text-emerald-600 dark:text-emerald-400">
-              {{ stat.totalScore }} 分
+              {{ stat.totalScore }} {{ $t("stats.pt") }}
             </div>
-            <div class="text-xs text-slate-400">最高连击 {{ stat.maxCombo }}x</div>
+            <div class="text-xs text-slate-400">
+              {{ $t("stats.maxStreak") }} {{ stat.maxCombo }}x
+            </div>
           </div>
         </div>
       </div>
@@ -148,8 +156,8 @@ function getHeatmapColor(count: number): string {
 function formatTime(seconds: number): string {
   const m = Math.floor(seconds / 60);
   const s = seconds % 60;
-  if (m === 0) return `${s}秒`;
-  return `${m}分${s}秒`;
+  if (m === 0) return `${s}с`;
+  return `${m}м ${s}с`;
 }
 
 onMounted(async () => {

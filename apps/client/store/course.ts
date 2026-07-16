@@ -2,11 +2,11 @@ import { defineStore } from "pinia";
 import { computed, ref, watchEffect } from "vue";
 
 import type { Course, Statement } from "~/types";
+import { isAuthenticated } from "~/api/auth";
 import { fetchCompleteCourse, fetchCourse } from "~/api/course";
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
-import { isAuthenticated } from "~/services/auth";
-import { useMasteredElementsStore } from "~/store/masteredElements";
 import { splitDisplayTokens } from "~/composables/main/question";
+import { useMasteredElementsStore } from "~/store/masteredElements";
 import { useStatement } from "./statement";
 
 export const useCourseStore = defineStore("course", () => {
@@ -26,7 +26,9 @@ export const useCourseStore = defineStore("course", () => {
   });
 
   const displayTokens = computed(() => {
-    return splitDisplayTokens(currentStatement.value?.targetText || currentStatement.value?.english);
+    return splitDisplayTokens(
+      currentStatement.value?.targetText || currentStatement.value?.english,
+    );
   });
 
   const visibleStatementsCount = computed(

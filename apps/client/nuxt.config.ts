@@ -1,16 +1,24 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
+const devOrigin = process.env.DEV_ORIGIN?.trim();
+const devHost = process.env.DEV_HOST?.trim();
+const devPort = Number(process.env.NUXT_DEV_PORT || 3000);
+
 export default defineNuxtConfig({
+  buildDir: process.env.NUXT_BUILD_DIR || ".nuxt",
   ssr: false,
   imports: {
     autoImport: true,
   },
   devtools: {
-    enabled: true,
+    enabled: false,
+  },
+  experimental: {
+    viteEnvironmentApi: true,
   },
   app: {
     head: {
-      title: "中大俄语",
+      title: "俄语学习平台",
       link: [{ rel: "icon", type: "image/png", href: "/logo-circle.png" }],
     },
   },
@@ -21,7 +29,61 @@ export default defineNuxtConfig({
     "@nuxt/test-utils/module",
     "@hypernym/nuxt-anime",
     "@nuxt/image",
+    "@vite-pwa/nuxt",
   ],
+  pwa: {
+    registerType: "autoUpdate",
+    includeAssets: ["logo-circle.png", "logo.png"],
+    manifest: {
+      name: "俄语学习平台",
+      short_name: "Earthworm",
+      description: "俄语学习平台 — 通过句子学习俄语",
+      theme_color: "#0f172a",
+      background_color: "#ffffff",
+      display: "standalone",
+      orientation: "portrait",
+      start_url: "/",
+      icons: [
+        { src: "logo-circle.png", sizes: "192x192", type: "image/png" },
+        { src: "logo-circle.png", sizes: "512x512", type: "image/png" },
+        { src: "logo-circle.png", sizes: "512x512", type: "image/png", purpose: "maskable" },
+      ],
+    },
+    workbox: {
+      globPatterns: ["**/*.{js,css,html,ico,png,svg,woff,woff2,ttf}"],
+      globIgnores: ["**/fonts/*.otf"],
+      navigateFallback: "/",
+      maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
+      runtimeCaching: [
+        {
+          urlPattern: /^\/api\/backend\/.*/i,
+          handler: "NetworkFirst",
+          method: "GET",
+          options: {
+            cacheName: "api-cache",
+            expiration: { maxEntries: 100, maxAgeSeconds: 60 * 60 * 24 },
+          },
+        },
+        {
+          urlPattern: /\.(?:otf|ttf|woff2?)$/i,
+          handler: "CacheFirst",
+          method: "GET",
+          options: {
+            cacheName: "font-cache",
+            expiration: { maxEntries: 20, maxAgeSeconds: 60 * 60 * 24 * 30 },
+          },
+        },
+      ],
+    },
+    client: {
+      installPrompt: true,
+      periodicSyncForUpdates: 3600,
+    },
+    devOptions: {
+      enabled: true,
+      type: "module",
+    },
+  },
   image: {
     domains: ["earthworm-prod-1312884695.cos.ap-beijing.myqcloud.com"],
     presets: {
@@ -35,7 +97,7 @@ export default defineNuxtConfig({
       },
     },
   },
-  plugins: ["~/plugins/logto.ts", "~/plugins/http.ts"],
+  plugins: ["~/plugins/http.ts"],
   runtimeConfig: {
     public: {
       // 默认走 Nuxt 反向代理 /api/backend，开发时可设 API_BASE=http://localhost:8080 直连
@@ -51,24 +113,25 @@ export default defineNuxtConfig({
   },
   // 把 /api/backend/* 反代到本地 Spring Boot，让 ngrok 单 tunnel 也能跑通
   routeRules: {
-    "/api/backend/**": { proxy: "http://localhost:8080/**" },
+    "/api/backend/**": {
+      proxy: process.env.BACKEND_PROXY_TARGET || "http://localhost:8000/api/v1/**",
+    },
   },
   vite: {
     server: {
-      host: "0.0.0.0",
-      allowedHosts: true,
-      origin: "http://109.71.228.50:3000",
+      ...(devOrigin ? { origin: devOrigin } : {}),
       hmr: {
-        host: "109.71.228.50",
+        ...(devHost ? { host: devHost } : {}),
         protocol: "ws",
+      },
+      fs: {
+        allow: ["..", "../.."],
       },
     },
   },
   devServer: {
-    url: "http://localhost:3000",
     host: "0.0.0.0",
+    port: devPort,
   },
-  build: {
-    transpile: ["vue-sonner"],
-  },
+  build: {},
 });

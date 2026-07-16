@@ -1,7 +1,10 @@
 import { defineNuxtPlugin } from "nuxt/app";
 
-import { setupHttp } from "../api/http";
+import { initializeCsrf, setupHttp } from "../api/http";
 
-export default defineNuxtPlugin(() => {
+export default defineNuxtPlugin(async () => {
   setupHttp();
+  if (import.meta.client) {
+    await initializeCsrf().catch(() => undefined);
+  }
 });

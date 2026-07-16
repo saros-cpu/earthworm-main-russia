@@ -35,8 +35,14 @@ export const useMasteredElementsStore = defineStore("masteredElements", () => {
   }
 
   function checkMastered(english: string) {
+    const norm = (s: string) =>
+      s
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase();
+    const nEnglish = norm(english);
     return !!masteredElements.value.find((element) => {
-      return element.content.english.toLowerCase() === english.toLowerCase();
+      return norm(element.content.english) === nEnglish;
     });
   }
 

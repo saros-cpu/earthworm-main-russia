@@ -9,6 +9,7 @@ export interface AdminCoursePack {
   isFree: boolean;
   shareLevel: string;
   order: number;
+  archived: boolean;
   courses?: AdminCourse[];
 }
 
@@ -19,6 +20,7 @@ export interface AdminCourse {
   video?: string;
   order: number;
   coursePackId: string;
+  archived: boolean;
   statements?: AdminStatement[];
 }
 
@@ -36,6 +38,7 @@ export interface AdminStatement {
   sourceText: string;
   targetText: string;
   phonetic: string;
+  archived: boolean;
   translation?: string;
   vocabulary?: AdminVocabularyItem[];
   grammarNote?: string;

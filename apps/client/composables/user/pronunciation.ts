@@ -1,5 +1,5 @@
-import { ref } from "vue";
 import { useRuntimeConfig } from "#app";
+import { ref } from "vue";
 
 /**
  * 俄语朗读优先使用浏览器内置语音；浏览器不支持时，使用远程 TTS 作为兜底。
@@ -38,6 +38,10 @@ export function usePronunciation() {
     return pronunciation.value === PronunciationType.American;
   }
 
+  function shouldUseSystemVoice() {
+    return pronunciation.value === PronunciationType.British;
+  }
+
   function getPronunciationOptions() {
     return Object.entries(pronunciationLabels).map(([key, value]) => {
       return {
@@ -62,6 +66,7 @@ export function usePronunciation() {
     getPronunciationOptions,
     getPronunciationUrl,
     shouldPreferRussianVoice,
+    shouldUseSystemVoice,
     togglePronunciation,
   };
 }

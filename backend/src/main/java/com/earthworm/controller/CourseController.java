@@ -15,7 +15,10 @@ public class CourseController {
     }
 
     @GetMapping("/course-pack")
-    public List<Map<String, Object>> coursePacks() {
+    public List<Map<String, Object>> coursePacks(@RequestParam(name = "q", required = false) String query) {
+        if (query != null && !query.isBlank()) {
+            return courseService.searchCoursePacks(query.trim());
+        }
         return courseService.findCoursePacks();
     }
 

@@ -1,12 +1,21 @@
 import { defineNuxtRouteMiddleware, navigateTo } from "nuxt/app";
 
-export default defineNuxtRouteMiddleware(() => {
+import { clearAuth, setStoredUser } from "~/api/auth";
+import { fetchAuthenticatedIdentity } from "~/api/user";
+
+export default defineNuxtRouteMiddleware(async () => {
   try {
-    const raw = localStorage.getItem("ew_user");
-    if (raw) {
-      const user = JSON.parse(raw);
-      if (user.role === "ADMIN") return;
-    }
-  } catch {}
+    const user = await fetchAuthenticatedIdentity();
+    setStoredUser({
+      userId: user.userId,
+      username: user.username,
+      nickname: user.nickname,
+      avatar: user.avatar,
+      role: user.role || "USER",
+    });
+    if (user.role === "ADMIN") return;
+  } catch {
+    clearAuth();
+  }
   return navigateTo("/");
 });

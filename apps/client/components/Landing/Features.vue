@@ -8,7 +8,7 @@
         <p
           class="text-sm font-bold uppercase tracking-normal text-emerald-600 dark:text-emerald-300"
         >
-          Учебный путь
+          {{ $t("landing.learningPath") }}
         </p>
         <h2 class="mt-2 text-3xl font-black text-slate-950 dark:text-white md:text-4xl">
           把俄语教材变成可练习的关卡
@@ -50,7 +50,7 @@ const FEATURES = [
   {
     icon: "i-ph-book-open-text",
     title: "教材课程包",
-    desc: "本地 PDF 可批量转成课程包，适合把《走遍俄罗斯》等教材拆成可练习内容。",
+    desc: "内置教材课程包已经整理为可练习内容；PDF 自动导入能力仍在建设中。",
   },
   {
     icon: "i-ph-speaker-high",
@@ -59,7 +59,7 @@ const FEATURES = [
   },
   {
     icon: "i-ph-sparkle",
-    title: "AI 精炼",
+    title: "课程精炼",
     desc: "后台可以继续补充翻译、词汇点和语法提示，把粗生成课程逐步打磨成正式课程。",
   },
 ];

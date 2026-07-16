@@ -32,6 +32,7 @@ describe("course pack store", () => {
       order: 1,
       coursePackId: coursePack.id,
       completionCount: 0,
+      locked: false,
       statementIndex: 0,
       statements: [
         { id: "1", order: 1, english: "I", chinese: "我", soundmark: "/aɪ/", isMastered: false },
@@ -54,6 +55,7 @@ describe("course pack store", () => {
       video: "",
       coursePackId: coursePack.id,
       completionCount: 0,
+      locked: false,
       statementIndex: 0,
       statements: [
         { id: "1", order: 1, english: "I", chinese: "我", soundmark: "/aɪ/", isMastered: false },

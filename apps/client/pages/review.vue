@@ -5,7 +5,9 @@
     >
       <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div>
-          <p class="text-sm font-bold text-emerald-600 dark:text-emerald-300">Повторение</p>
+          <p class="text-sm font-bold text-emerald-600 dark:text-emerald-300">
+            {{ $t("pages.review") }}
+          </p>
           <h1 class="mt-1 text-3xl font-black text-slate-950 dark:text-white">复习</h1>
           <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
             基于间隔重复算法，在最佳时间安排复习，巩固记忆。
@@ -37,6 +39,32 @@
       <div
         class="rounded-md border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900"
       >
+        <div
+          v-if="!checked"
+          class="mb-4 flex items-center gap-3 rounded-md bg-slate-50 p-2 text-xs text-slate-500 dark:bg-slate-800 dark:text-slate-400"
+        >
+          <span class="flex items-center gap-1">
+            <UIcon
+              name="i-ph-arrow-counter-clockwise"
+              class="h-3 w-3"
+            />
+            重复 {{ currentReview.repetitions }} 次
+          </span>
+          <span class="flex items-center gap-1">
+            <UIcon
+              name="i-ph-calendar-blank"
+              class="h-3 w-3"
+            />
+            间隔 {{ currentReview.interval }} 天
+          </span>
+          <span class="flex items-center gap-1">
+            <UIcon
+              name="i-ph-gauge"
+              class="h-3 w-3"
+            />
+            EF {{ currentReview.easiness.toFixed(2) }}
+          </span>
+        </div>
         <div class="mb-6 text-center">
           <div class="text-2xl font-black text-slate-950 dark:text-white md:text-3xl">
             {{ currentStatement?.chinese || "加载中..." }}
@@ -83,6 +111,28 @@
             >
               {{ q.label }}
             </button>
+          </div>
+          <div class="mt-4 rounded-md bg-slate-50 p-3 dark:bg-slate-800">
+            <div
+              class="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400"
+            >
+              <span>掌握度</span>
+              <span>{{ masteryPercent }}%</span>
+            </div>
+            <div
+              class="mt-1 h-2 w-full overflow-hidden rounded-full bg-slate-200 dark:bg-slate-700"
+            >
+              <div
+                class="h-full rounded-full transition-all"
+                :class="masteryBarClass"
+                :style="{ width: masteryPercent + '%' }"
+              ></div>
+            </div>
+            <div class="mt-2 flex justify-between text-[10px] text-slate-400">
+              <span>间隔 {{ currentReview.interval }} 天</span>
+              <span>重复 {{ currentReview.repetitions }} 次</span>
+              <span>EF {{ currentReview.easiness.toFixed(2) }}</span>
+            </div>
           </div>
           <div class="mt-3 text-xs text-slate-400">
             你记得怎么样？选择对应分数，系统会自动安排下次复习时间。
@@ -181,6 +231,23 @@ const qualityOptions = [
   },
 ];
 
+const masteryPercent = computed(() => {
+  if (!currentReview.value) return 0;
+  const ef = currentReview.value.easiness;
+  const reps = currentReview.value.repetitions;
+  const interval = currentReview.value.interval;
+  const efScore = Math.min(100, Math.round(((ef - 1.3) / 2.0) * 50));
+  const repsScore = Math.min(40, reps * 10);
+  const intervalScore = Math.min(30, Math.round(Math.log2(interval + 1) * 8));
+  return Math.min(100, efScore + repsScore + intervalScore);
+});
+
+const masteryBarClass = computed(() => {
+  if (masteryPercent.value >= 80) return "bg-emerald-500";
+  if (masteryPercent.value >= 50) return "bg-amber-500";
+  return "bg-red-500";
+});
+
 function checkAnswer() {
   const correct = (currentStatement.value?.english || "").trim().toLowerCase();
   const answer = userAnswer.value.trim().toLowerCase();
@@ -189,7 +256,13 @@ function checkAnswer() {
 }
 
 function sameSentence(a: string, b: string): boolean {
-  return a.replace(/\s+/g, " ").trim() === b.replace(/\s+/g, " ").trim();
+  const norm = (s: string) =>
+    s
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
+  return norm(a) === norm(b);
 }
 
 async function submitReview(quality: number) {

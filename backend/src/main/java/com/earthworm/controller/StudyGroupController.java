@@ -37,7 +37,26 @@ public class StudyGroupController {
 
     @GetMapping("/{id}")
     public Map<String, Object> get(@PathVariable("id") String id) {
-        return service.getGroup(id);
+        return service.getGroup(id, UserContext.getUserId());
+    }
+
+    @PostMapping("/{id}/join")
+    public Map<String, Object> join(@PathVariable("id") String id) {
+        return service.joinGroup(id, UserContext.getUserId());
+    }
+
+    @PostMapping("/{id}/leave")
+    public Map<String, Object> leave(@PathVariable("id") String id) {
+        return service.leaveGroup(id, UserContext.getUserId());
+    }
+
+    @GetMapping("/{id}/members")
+    public List<Map<String, Object>> members(@PathVariable("id") String id) {
+        return service.getGroupMembers(id);
+    }
+
+    @GetMapping("/{id}/activities")
+    public List<Map<String, Object>> activities(@PathVariable("id") String id) {
+        return service.getGroupActivities(id);
     }
 }
-

@@ -82,7 +82,14 @@
               class="w-full"
               style="height: 70vh"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+              "
               allowfullscreen
             ></iframe>
           </div>
@@ -105,7 +112,14 @@
               class="w-full"
               style="height: 50vh"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+              "
               allowfullscreen
             ></iframe>
           </div>
@@ -150,7 +164,7 @@
                     ? 'border-emerald-400 bg-emerald-50 dark:border-emerald-600 dark:bg-emerald-950/40'
                     : 'border-slate-200 bg-white hover:border-slate-300 dark:border-slate-800 dark:bg-slate-900 dark:hover:border-slate-700',
                 ]"
-                @click="currentQuizIndex = idx"
+                @click="currentQuizIndex = Number(idx)"
               >
                 <div class="font-bold text-slate-950 dark:text-white">{{ line.chinese }}</div>
                 <div
@@ -177,11 +191,19 @@
             style="max-height: 50vh"
           >
             <iframe
-              :src="youtubeEmbedUrl"
+              :id="youtubeLrcIframeId"
+              :src="youtubeLrcEmbedUrl"
               class="w-full"
               style="height: 50vh"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+              "
               allowfullscreen
             ></iframe>
           </div>
@@ -189,6 +211,7 @@
             v-if="!isYouTubeUrl"
             :src="streamUrl"
             :title="course.title"
+            :lrc-lines="lrcLines"
           />
           <div
             v-if="isYouTubeUrl"
@@ -196,6 +219,7 @@
           >
             <div class="w-full max-w-4xl">
               <div
+                ref="youtubeLrcContainer"
                 class="rounded-lg border border-slate-200 bg-white p-4 dark:border-slate-800 dark:bg-slate-900"
                 style="max-height: 40vh; overflow-y: auto"
               >
@@ -206,10 +230,11 @@
                   <div
                     v-for="(line, idx) in lrcLines"
                     :key="idx"
+                    :data-active="currentLrcIndex === idx ? 'true' : undefined"
                     :class="[
                       'rounded px-4 py-2 text-sm leading-6 transition',
                       currentLrcIndex === idx
-                        ? 'bg-emerald-100 font-bold text-emerald-800 dark:bg-emerald-950 dark:text-emerald-200'
+                        ? 'scale-105 bg-emerald-100 font-bold text-emerald-800 dark:bg-emerald-950 dark:text-emerald-200'
                         : 'text-slate-700 dark:text-slate-300',
                     ]"
                   >
@@ -284,12 +309,20 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed, nextTick, onUnmounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 
 import type { Course } from "~/types";
 import { fetchCourse } from "~/api/course";
 import { playRussianText } from "~/composables/main/englishSound";
+import { getMediaPlaybackUrl, getYouTubeEmbedUrl } from "~/utils/media";
+
+declare global {
+  interface Window {
+    YT?: any;
+    onYouTubeIframeAPIReady?: () => void;
+  }
+}
 
 const route = useRoute();
 const packId = route.params.packId as string;
@@ -300,6 +333,10 @@ const activeMode = ref<string>("player");
 const courseRef = ref<Course>();
 const currentQuizIndex = ref(0);
 const showAnswer = ref(false);
+const youtubeLrcContainer = ref<HTMLDivElement | null>(null);
+const lrcDuration = ref(0);
+const youtubeLrcPlayer = ref<any>(null);
+let youtubeApiReady: Promise<void> | null = null;
 
 const modes = [
   { key: "player", label: "播放器", icon: "i-ph-play-circle" },
@@ -322,56 +359,235 @@ const mediaType = computed(() => {
   return "video";
 });
 
-const isExternalUrl = computed(() => {
-  const v = course.value?.video || "";
-  return v.startsWith("http://") || v.startsWith("https://");
-});
-
-const isYouTubeUrl = computed(() => {
-  const v = course.value?.video || "";
-  return (
-    v.includes("youtube.com/watch") || v.includes("youtu.be/") || v.includes("youtube.com/embed")
-  );
-});
-
 const youtubeEmbedUrl = computed(() => {
-  const v = course.value?.video || "";
-  const match = v.match(
-    /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([a-zA-Z0-9_-]+)/,
-  );
-  if (match) return `https://www.youtube.com/embed/${match[1]}?autoplay=1`;
-  return v;
+  return getYouTubeEmbedUrl(course.value?.video) || "";
 });
+
+const youtubeLrcIframeId = computed(() => {
+  return `youtube-lrc-${String(courseId).replace(/[^A-Za-z0-9_-]/g, "-")}`;
+});
+
+const youtubeLrcEmbedUrl = computed(() => {
+  const origin = typeof window === "undefined" ? undefined : window.location.origin;
+  return (
+    getYouTubeEmbedUrl(course.value?.video, {
+      enableJsApi: true,
+      origin,
+    }) || ""
+  );
+});
+
+const isYouTubeUrl = computed(() => Boolean(youtubeEmbedUrl.value));
 
 const streamUrl = computed(() => {
-  const v = course.value?.video;
-  if (!v) return "";
-  if (v.startsWith("http://") || v.startsWith("https://")) return v;
-  return `/api/backend/media/stream?path=${encodeURIComponent(v)}`;
+  return getMediaPlaybackUrl(course.value?.video);
 });
 
 const lyricsArray = computed(() => {
   const raw = course.value?.lyrics;
-  if (!raw) return [];
-  try {
-    return JSON.parse(raw);
-  } catch {
-    return [];
+  if (raw) {
+    try {
+      return JSON.parse(raw);
+    } catch {
+      /* fall through */
+    }
   }
+  // fallback: generate lyrics from course statements
+  const stmts = course.value?.statements;
+  if (stmts?.length) {
+    return stmts.map((s: any) => ({ russian: s.english, chinese: s.chinese }));
+  }
+  return [];
 });
+
+function estimatedSongDuration(lineCount: number): number {
+  return Math.max(120, lineCount * 8);
+}
 
 const lrcLines = computed(() => {
   const lines = lyricsArray.value;
   if (!lines.length) return [];
-  const interval = 30 / lines.length;
+  const hasExplicitTime = lines.some(
+    (line: any) => typeof line.time === "number" && Number.isFinite(line.time),
+  );
+  const duration = lrcDuration.value > 0 ? lrcDuration.value : estimatedSongDuration(lines.length);
+  const interval = duration / lines.length;
   return lines.map((s: any, i: number) => ({
-    time: i * interval,
+    time: hasExplicitTime && typeof s.time === "number" ? s.time : i * interval,
     russian: s.russian,
     translation: s.chinese,
   }));
 });
 
-const currentLrcIndex = computed(() => 0);
+const lrcTime = ref(0);
+let lrcTimer: ReturnType<typeof setInterval> | null = null;
+let quizTimer: ReturnType<typeof setInterval> | null = null;
+
+function loadYouTubeApi() {
+  if (typeof window === "undefined") return Promise.resolve();
+  if (window.YT?.Player) return Promise.resolve();
+  if (youtubeApiReady) return youtubeApiReady;
+
+  youtubeApiReady = new Promise((resolve) => {
+    const previousReady = window.onYouTubeIframeAPIReady;
+    window.onYouTubeIframeAPIReady = () => {
+      previousReady?.();
+      resolve();
+    };
+    if (!document.querySelector('script[src="https://www.youtube.com/iframe_api"]')) {
+      const script = document.createElement("script");
+      script.src = "https://www.youtube.com/iframe_api";
+      script.async = true;
+      document.head.appendChild(script);
+    }
+  });
+  return youtubeApiReady;
+}
+
+function updateLrcFromYouTube() {
+  const player = youtubeLrcPlayer.value;
+  if (!player) return;
+  try {
+    const currentTime = player.getCurrentTime?.();
+    if (typeof currentTime === "number" && Number.isFinite(currentTime)) {
+      lrcTime.value = currentTime;
+    }
+    const duration = player.getDuration?.();
+    if (typeof duration === "number" && Number.isFinite(duration) && duration > 0) {
+      lrcDuration.value = duration;
+    }
+  } catch {
+    // The iframe can be destroyed while switching modes; the next init will recreate it.
+  }
+}
+
+function updateQuizFromYouTube() {
+  const player = youtubeLrcPlayer.value;
+  if (!player) return;
+  try {
+    const currentTime = player.getCurrentTime?.();
+    if (typeof currentTime === "number" && Number.isFinite(currentTime)) {
+      const totalDuration = Math.max(lrcDuration.value, 1);
+      const avgLen = totalDuration / Math.max(lyricsArray.value.length, 1);
+      const idx = Math.min(Math.floor(currentTime / avgLen), lyricsArray.value.length - 1);
+      if (idx >= 0) currentQuizIndex.value = idx;
+    }
+  } catch {}
+}
+
+function startLrcTimer() {
+  stopLrcTimer();
+  updateLrcFromYouTube();
+  lrcTimer = setInterval(updateLrcFromYouTube, 500);
+}
+function stopLrcTimer() {
+  if (lrcTimer !== null) {
+    clearInterval(lrcTimer);
+    lrcTimer = null;
+  }
+}
+
+function startQuizTimer() {
+  stopQuizTimer();
+  updateQuizFromYouTube();
+  quizTimer = setInterval(updateQuizFromYouTube, 500);
+}
+function stopQuizTimer() {
+  if (quizTimer !== null) {
+    clearInterval(quizTimer);
+    quizTimer = null;
+  }
+}
+
+function destroyYoutubeLrcPlayer() {
+  stopLrcTimer();
+  stopQuizTimer();
+  try {
+    youtubeLrcPlayer.value?.destroy?.();
+  } catch {
+    // Ignore iframe teardown races while switching modes.
+  }
+  youtubeLrcPlayer.value = null;
+}
+
+async function initYoutubeLrcPlayer() {
+  if (!isYouTubeUrl.value || activeMode.value !== "lrc") return;
+  await nextTick();
+  await loadYouTubeApi();
+  if (!window.YT?.Player || youtubeLrcPlayer.value) return;
+
+  youtubeLrcPlayer.value = new window.YT.Player(youtubeLrcIframeId.value, {
+    events: {
+      onReady(event: any) {
+        const duration = event.target.getDuration?.();
+        if (typeof duration === "number" && duration > 0) {
+          lrcDuration.value = duration;
+        }
+        startLrcTimer();
+      },
+      onStateChange(event: any) {
+        updateLrcFromYouTube();
+        if (event.data === window.YT?.PlayerState?.PLAYING) {
+          startLrcTimer();
+        } else if (
+          event.data === window.YT?.PlayerState?.PAUSED ||
+          event.data === window.YT?.PlayerState?.ENDED
+        ) {
+          stopLrcTimer();
+        }
+      },
+    },
+  });
+}
+
+const currentLrcIndex = computed(() => {
+  const t = lrcTime.value;
+  const lines = lrcLines.value;
+  if (!lines.length) return 0;
+  let idx = lines.length - 1;
+  for (let i = 0; i < lines.length; i++) {
+    if (t < lines[i].time) {
+      idx = i - 1;
+      break;
+    }
+  }
+  return Math.max(0, idx);
+});
+
+watch(activeMode, (val) => {
+  if (val === "lrc" && isYouTubeUrl.value) {
+    initYoutubeLrcPlayer();
+  } else if (isYouTubeUrl.value) {
+    destroyYoutubeLrcPlayer();
+  } else if (val === "lrc") {
+    lrcTime.value = 0;
+  } else {
+    stopLrcTimer();
+  }
+});
+
+watch(currentLrcIndex, () => {
+  nextTick(() => {
+    const active = youtubeLrcContainer.value?.querySelector('[data-active="true"]');
+    active?.scrollIntoView({ block: "center", behavior: "smooth" });
+  });
+});
+
+watch(
+  () => course.value?.id,
+  () => {
+    lrcTime.value = 0;
+    lrcDuration.value = 0;
+    destroyYoutubeLrcPlayer();
+    if (activeMode.value === "lrc") {
+      initYoutubeLrcPlayer();
+    }
+  },
+);
+
+onUnmounted(() => {
+  destroyYoutubeLrcPlayer();
+});
 
 setup();
 

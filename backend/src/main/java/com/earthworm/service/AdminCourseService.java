@@ -1,5 +1,6 @@
 package com.earthworm.service;
 
+import com.earthworm.config.UserContext;
 import com.earthworm.model.Course;
 import com.earthworm.model.CoursePack;
 import com.earthworm.model.Statement;
@@ -13,14 +14,25 @@ import java.util.*;
 
 @Service
 public class AdminCourseService {
+    private static final int MAX_TITLE_LENGTH = 200;
+    private static final int MAX_DESCRIPTION_LENGTH = 4000;
+    private static final int MAX_RESOURCE_PATH_LENGTH = 2048;
+    private static final int MAX_STATEMENT_TEXT_LENGTH = 4000;
+    private static final int MAX_PHONETIC_LENGTH = 1000;
+    private static final int MAX_VOCABULARY_ITEMS = 100;
+    private static final Set<String> SHARE_LEVELS = Set.of("public", "private");
+    private static final Set<String> DIFFICULTIES = Set.of("beginner", "elementary", "intermediate");
     private final CoursePackRepository coursePackRepository;
     private final CourseRepository courseRepository;
     private final StatementRepository statementRepository;
+    private final CourseRefinementService courseRefinementService;
 
-    public AdminCourseService(CoursePackRepository coursePackRepository, CourseRepository courseRepository, StatementRepository statementRepository) {
+    public AdminCourseService(CoursePackRepository coursePackRepository, CourseRepository courseRepository,
+                              StatementRepository statementRepository, CourseRefinementService courseRefinementService) {
         this.coursePackRepository = coursePackRepository;
         this.courseRepository = courseRepository;
         this.statementRepository = statementRepository;
+        this.courseRefinementService = courseRefinementService;
     }
 
     public List<Map<String, Object>> coursePacks() {
@@ -29,22 +41,30 @@ public class AdminCourseService {
 
     /**
      * Aggregated statistics for the admin dashboard + landing page.
+     * Public callers only see public packs; admins retain full management totals.
      * Returns:
      *   { totals: { packs, courses, statements },
      *     packs: [ { id, title, courses, statements } sorted by statements desc ],
      *     series: [ { key, label, packs, courses, statements } ] }
      */
     public Map<String, Object> stats() {
-        List<CoursePack> packs = coursePackRepository.findAll();
+        boolean administrator = "ADMIN".equalsIgnoreCase(UserContext.getRole());
+        List<CoursePack> packs = administrator
+                ? coursePackRepository.findAll()
+                : coursePackRepository.findByShareLevelIgnoreCaseAndArchivedFalseOrderByOrderAsc("public");
         long totalCourses = 0;
         long totalStatements = 0;
         List<Map<String, Object>> packStats = new ArrayList<>();
         Map<String, long[]> seriesAgg = new LinkedHashMap<>(); // key → [packs, courses, stmts]
         for (CoursePack p : packs) {
-            List<Course> courses = courseRepository.findByCoursePackIdOrderByOrderAsc(p.getId());
+            List<Course> courses = administrator
+                    ? courseRepository.findByCoursePackIdOrderByOrderAsc(p.getId())
+                    : courseRepository.findByCoursePackIdAndArchivedFalseOrderByOrderAsc(p.getId());
             long stmts = 0;
             for (Course c : courses) {
-                stmts += statementRepository.findByCourseIdOrderByOrderAsc(c.getId()).size();
+                stmts += administrator
+                        ? statementRepository.findByCourseIdOrderByOrderAsc(c.getId()).size()
+                        : statementRepository.findByCourseIdAndArchivedFalseOrderByOrderAsc(c.getId()).size();
             }
             totalCourses += courses.size();
             totalStatements += stmts;
@@ -128,18 +148,29 @@ public class AdminCourseService {
     public Map<String, Object> course(String courseId) {
         Course course = courseRepository.findById(courseId).orElseThrow();
         Map<String, Object> result = toCourseItem(course);
-        result.put("statements", statementRepository.findByCourseIdOrderByOrderAsc(courseId).stream().map(s -> toStatementItem(s)).toList());
+        List<Statement> statements = statementRepository.findByCourseIdOrderByOrderAsc(courseId);
+        Map<String, Map<String, Object>> refinements = courseRefinementService.findRefinements(
+                statements.stream().map(Statement::getId).toList());
+        result.put("statements", statements.stream()
+                .map(statement -> toStatementItem(statement, refinements.get(statement.getId())))
+                .toList());
         return result;
     }
 
     @Transactional
     public Map<String, Object> updateCoursePack(String id, Map<String, Object> body) {
         CoursePack pack = coursePackRepository.findById(id).orElseThrow();
-        if (body.containsKey("title")) pack.setTitle((String) body.get("title"));
-        if (body.containsKey("description")) pack.setDescription((String) body.get("description"));
-        if (body.containsKey("cover")) pack.setCover((String) body.get("cover"));
-        if (body.containsKey("shareLevel")) pack.setShareLevel((String) body.get("shareLevel"));
-        if (body.containsKey("isFree")) pack.setIsFree((Boolean) body.get("isFree"));
+        if (body.containsKey("title")) pack.setTitle(requiredTitle(body.get("title")));
+        if (body.containsKey("description")) pack.setDescription(optionalText(body.get("description"), "Description", MAX_DESCRIPTION_LENGTH));
+        if (body.containsKey("cover")) pack.setCover(optionalText(body.get("cover"), "Cover", MAX_RESOURCE_PATH_LENGTH));
+        if (body.containsKey("shareLevel")) pack.setShareLevel(shareLevel(body.get("shareLevel")));
+        if (body.containsKey("isFree")) pack.setIsFree(booleanValue(body.get("isFree"), "isFree"));
+        if (body.containsKey("archived")) {
+            pack.setArchived(booleanValue(body.get("archived"), "archived"));
+            if (Boolean.TRUE.equals(pack.getArchived())) {
+                pack.setShareLevel("private");
+            }
+        }
         coursePackRepository.save(pack);
         return toPackItem(pack);
     }
@@ -151,8 +182,10 @@ public class AdminCourseService {
                 .map(Course::getOrder).filter(Objects::nonNull).max(Integer::compareTo).orElse(0) + 1;
         Course course = new Course();
         course.setId("course-" + UUID.randomUUID());
-        course.setTitle((String) body.getOrDefault("title", "New Course"));
-        course.setDescription((String) body.getOrDefault("description", ""));
+        course.setTitle(body.containsKey("title") ? requiredTitle(body.get("title")) : "New Course");
+        course.setDescription(body.containsKey("description")
+                ? optionalText(body.get("description"), "Description", MAX_DESCRIPTION_LENGTH)
+                : "");
         course.setOrder(nextOrder);
         course.setCoursePack(pack);
         courseRepository.save(course);
@@ -167,9 +200,15 @@ public class AdminCourseService {
         Statement stmt = new Statement();
         stmt.setId("stmt-" + UUID.randomUUID());
         stmt.setOrder(nextOrder);
-        stmt.setChinese((String) body.getOrDefault("sourceText", "Please fill Chinese"));
-        stmt.setEnglish((String) body.getOrDefault("targetText", "Please fill Russian"));
-        stmt.setSoundmark((String) body.getOrDefault("phonetic", ""));
+        stmt.setChinese(body.containsKey("sourceText")
+                ? requiredText(body.get("sourceText"), "Source text", MAX_STATEMENT_TEXT_LENGTH)
+                : "Please fill Chinese");
+        stmt.setEnglish(body.containsKey("targetText")
+                ? requiredText(body.get("targetText"), "Target text", MAX_STATEMENT_TEXT_LENGTH)
+                : "Please fill Russian");
+        stmt.setSoundmark(body.containsKey("phonetic")
+                ? requiredText(body.get("phonetic"), "Phonetic", MAX_PHONETIC_LENGTH)
+                : "");
         stmt.setCourse(course);
         statementRepository.save(stmt);
         return toStatementItem(stmt);
@@ -181,6 +220,7 @@ public class AdminCourseService {
         m.put("description", pack.getDescription()); m.put("order", pack.getOrder());
         m.put("shareLevel", pack.getShareLevel()); m.put("isFree", pack.getIsFree());
         m.put("cover", pack.getCover());
+        m.put("archived", Boolean.TRUE.equals(pack.getArchived()));
         return m;
     }
 
@@ -190,45 +230,67 @@ public class AdminCourseService {
         m.put("description", c.getDescription()); m.put("order", c.getOrder());
         m.put("coursePackId", c.getCoursePackId());
         m.put("video", c.getVideo());
+        m.put("archived", Boolean.TRUE.equals(c.getArchived()));
         return m;
     }
 
     public Map<String, Object> updateCourse(String id, Map<String, Object> body) {
         Course course = courseRepository.findById(id).orElseThrow();
-        if (body.containsKey("title")) course.setTitle((String) body.get("title"));
-        if (body.containsKey("description")) course.setDescription((String) body.get("description"));
-        if (body.containsKey("video")) course.setVideo((String) body.get("video"));
+        if (body.containsKey("title")) course.setTitle(requiredTitle(body.get("title")));
+        if (body.containsKey("description")) course.setDescription(optionalText(body.get("description"), "Description", MAX_DESCRIPTION_LENGTH));
+        if (body.containsKey("video")) course.setVideo(optionalText(body.get("video"), "Video path", MAX_RESOURCE_PATH_LENGTH));
+        if (body.containsKey("archived")) course.setArchived(booleanValue(body.get("archived"), "archived"));
         courseRepository.save(course);
         return toCourseItem(course);
     }
 
     @Transactional
     public Boolean deleteCoursePack(String id) {
-        coursePackRepository.deleteById(id);
+        CoursePack pack = coursePackRepository.findById(id).orElseThrow();
+        pack.setArchived(true);
+        pack.setShareLevel("private");
+        coursePackRepository.save(pack);
         return true;
     }
 
+    @Transactional
     public Boolean deleteCourse(String id) {
-        courseRepository.deleteById(id);
+        Course course = courseRepository.findById(id).orElseThrow();
+        course.setArchived(true);
+        courseRepository.save(course);
         return true;
     }
 
+    @Transactional
     public Map<String, Object> updateStatement(String id, Map<String, Object> body) {
         Statement stmt = statementRepository.findById(id).orElseThrow();
-        if (body.containsKey("sourceText")) stmt.setChinese((String) body.get("sourceText"));
-        if (body.containsKey("targetText")) stmt.setEnglish((String) body.get("targetText"));
-        if (body.containsKey("phonetic")) stmt.setSoundmark((String) body.get("phonetic"));
+        if (body.containsKey("sourceText")) stmt.setChinese(requiredText(body.get("sourceText"), "Source text", MAX_STATEMENT_TEXT_LENGTH));
+        if (body.containsKey("targetText")) stmt.setEnglish(requiredText(body.get("targetText"), "Target text", MAX_STATEMENT_TEXT_LENGTH));
+        if (body.containsKey("phonetic")) stmt.setSoundmark(requiredText(body.get("phonetic"), "Phonetic", MAX_PHONETIC_LENGTH));
+        if (body.containsKey("archived")) stmt.setArchived(booleanValue(body.get("archived"), "archived"));
         statementRepository.save(stmt);
-        return toStatementItem(stmt);
+        if (containsRefinementFields(body)) {
+            Map<String, Object> refinement = manualRefinement(stmt, body);
+            saveRefinement(stmt, refinement);
+            return toStatementItem(stmt, refinement);
+        }
+        return toStatementItem(stmt, findRefinement(id));
     }
 
+    @Transactional
     public Boolean deleteStatement(String id) {
-        statementRepository.deleteById(id);
+        Statement statement = statementRepository.findById(id).orElseThrow();
+        statement.setArchived(true);
+        statementRepository.save(statement);
         return true;
     }
 
+    @Transactional
     public Map<String, Object> refineStatement(String id) {
-        return toStatementItem(statementRepository.findById(id).orElseThrow());
+        Statement statement = statementRepository.findById(id).orElseThrow();
+        Map<String, Object> refinement = courseRefinementService.refineStatementWithRules(statement);
+        saveRefinement(statement, refinement);
+        return toStatementItem(statement, refinement);
     }
 
     public int refineCourseStatements(String courseId) {
@@ -242,10 +304,133 @@ public class AdminCourseService {
     }
 
     private Map<String, Object> toStatementItem(Statement s) {
+        return toStatementItem(s, null);
+    }
+
+    private Map<String, Object> toStatementItem(Statement s, Map<String, Object> refinement) {
         Map<String, Object> m = new LinkedHashMap<>();
         m.put("id", s.getId()); m.put("order", s.getOrder());
         m.put("sourceText", s.getChinese()); m.put("targetText", s.getEnglish());
         m.put("phonetic", s.getSoundmark());
+        m.put("archived", Boolean.TRUE.equals(s.getArchived()));
+        if (refinement != null) {
+            m.putAll(refinement);
+        }
         return m;
     }
+
+    private boolean containsRefinementFields(Map<String, Object> body) {
+        return body.containsKey("translation")
+                || body.containsKey("vocabulary")
+                || body.containsKey("grammarNote")
+                || body.containsKey("difficulty");
+    }
+
+    private Map<String, Object> manualRefinement(Statement statement, Map<String, Object> body) {
+        Map<String, Object> existing = findRefinement(statement.getId());
+        Map<String, Object> refinement = new LinkedHashMap<>();
+        refinement.put("translation", body.containsKey("translation")
+                ? optionalText(body.get("translation"), "Translation", MAX_STATEMENT_TEXT_LENGTH)
+                : existing.getOrDefault("translation", statement.getChinese()));
+        refinement.put("vocabulary", body.containsKey("vocabulary")
+                ? vocabulary(body.get("vocabulary"))
+                : vocabulary(existing.get("vocabulary")));
+        refinement.put("grammarNote", body.containsKey("grammarNote")
+                ? optionalText(body.get("grammarNote"), "Grammar note", MAX_DESCRIPTION_LENGTH)
+                : existing.get("grammarNote"));
+        refinement.put("difficulty", body.containsKey("difficulty")
+                ? difficulty(body.get("difficulty"))
+                : existing.getOrDefault("difficulty", "beginner"));
+        refinement.put("refinementMode", "rules");
+        return refinement;
+    }
+
+    private Map<String, Object> findRefinement(String statementId) {
+        return courseRefinementService.findRefinements(List.of(statementId))
+                .getOrDefault(statementId, Map.of());
+    }
+
+    private void saveRefinement(Statement statement, Map<String, Object> refinement) {
+        courseRefinementService.upsertRefinement(
+                statement.getId(),
+                statement.getChinese(),
+                statement.getEnglish(),
+                (String) refinement.get("translation"),
+                vocabulary(refinement.get("vocabulary")),
+                (String) refinement.get("grammarNote"),
+                (String) refinement.get("difficulty"));
+    }
+
+    private List<Map<String, String>> vocabulary(Object value) {
+        if (value == null) {
+            return List.of();
+        }
+        if (!(value instanceof List<?> entries) || entries.size() > MAX_VOCABULARY_ITEMS) {
+            throw new IllegalArgumentException("Vocabulary must contain no more than 100 entries");
+        }
+        List<Map<String, String>> normalized = new ArrayList<>();
+        for (Object entryValue : entries) {
+            if (!(entryValue instanceof Map<?, ?> entry)) {
+                throw new IllegalArgumentException("Vocabulary entries must be objects");
+            }
+            String word = requiredText(entry.get("word"), "Vocabulary word", MAX_TITLE_LENGTH).trim();
+            if (word.isBlank()) {
+                throw new IllegalArgumentException("Vocabulary word must not be blank");
+            }
+            Map<String, String> item = new LinkedHashMap<>();
+            item.put("word", word);
+            item.put("meaning", optionalText(entry.get("meaning"), "Vocabulary meaning", MAX_STATEMENT_TEXT_LENGTH));
+            item.put("partOfSpeech", optionalText(entry.get("partOfSpeech"), "Part of speech", MAX_TITLE_LENGTH));
+            item.put("example", optionalText(entry.get("example"), "Vocabulary example", MAX_STATEMENT_TEXT_LENGTH));
+            item.put("exampleTranslation", optionalText(entry.get("exampleTranslation"), "Vocabulary example translation", MAX_STATEMENT_TEXT_LENGTH));
+            normalized.add(item);
+        }
+        return normalized;
+    }
+
+    private String difficulty(Object value) {
+        String difficulty = requiredText(value, "Difficulty", 32).toLowerCase(Locale.ROOT);
+        if (!DIFFICULTIES.contains(difficulty)) {
+            throw new IllegalArgumentException("Difficulty must be beginner, elementary or intermediate");
+        }
+        return difficulty;
+    }
+
+    private String requiredTitle(Object value) {
+        String title = requiredText(value, "Title", MAX_TITLE_LENGTH).trim();
+        if (title.isBlank()) {
+            throw new IllegalArgumentException("Title must not be blank");
+        }
+        return title;
+    }
+
+    private String requiredText(Object value, String field, int maximumLength) {
+        if (!(value instanceof String text)) {
+            throw new IllegalArgumentException(field + " must be text");
+        }
+        if (text.length() > maximumLength) {
+            throw new IllegalArgumentException(field + " is too long");
+        }
+        return text;
+    }
+
+    private String optionalText(Object value, String field, int maximumLength) {
+        return value == null ? null : requiredText(value, field, maximumLength);
+    }
+
+    private String shareLevel(Object value) {
+        String level = requiredText(value, "Share level", 64).toLowerCase(Locale.ROOT);
+        if (!SHARE_LEVELS.contains(level)) {
+            throw new IllegalArgumentException("Share level must be public or private");
+        }
+        return level;
+    }
+
+    private Boolean booleanValue(Object value, String field) {
+        if (!(value instanceof Boolean booleanValue)) {
+            throw new IllegalArgumentException(field + " must be boolean");
+        }
+        return booleanValue;
+    }
+
 }

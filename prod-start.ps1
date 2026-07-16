@@ -1,21 +1,34 @@
-# 鹅语菌 - 生产模式启动（迁移到固定 IP 服务器后日常用）
-# 假设：jar 已打好（mvn package），.output 已构建好（pnpm build）
-
-$ErrorActionPreference = "Stop"
+﻿$ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $root
+$runtimeDir = if ($env:EARTHWORM_RUNTIME_DIR) { $env:EARTHWORM_RUNTIME_DIR } else { Join-Path $root "runtime" }
+if (-not (Test-Path $runtimeDir)) { New-Item -ItemType Directory -Path $runtimeDir | Out-Null }
+. (Join-Path $root "scripts\prod-process-control.ps1")
 
-# 让前端 Nitro 监听全部接口（外网可访问）
-if (-not $env:NITRO_HOST) { $env:NITRO_HOST = "0.0.0.0" }
-if (-not $env:NITRO_PORT) { $env:NITRO_PORT = "3000" }
+# ─── 加载 .env 文件（如有） ───
+$envFile = Join-Path $root ".env"
+if (Test-Path $envFile) {
+    Get-Content $envFile | ForEach-Object {
+        if ($_ -match '^\s*([^#=]+)=(.*)\s*$') {
+            $k = $matches[1].Trim()
+            $v = $matches[2].Trim()
+            if (-not [Environment]::GetEnvironmentVariable($k, "Process")) {
+                [Environment]::SetEnvironmentVariable($k, $v, "Process")
+            }
+        }
+    }
+    Write-Host "Loaded .env file"
+}
 
-# 把 User / Machine 范围的 OPENROUTER_* / SPRING_DATASOURCE_* 注入到当前进程
+# ─── 从 User/Machine 范围补充缺失变量 ───
 foreach ($scope in @("User", "Machine")) {
     foreach ($name in @(
         "OPENROUTER_API_KEY", "OPENROUTER_BASE_URL", "OPENROUTER_MODEL",
         "OPENROUTER_SITE_URL", "OPENROUTER_APP_NAME", "AI_PROVIDER",
         "SPRING_DATASOURCE_URL", "SPRING_DATASOURCE_USERNAME", "SPRING_DATASOURCE_PASSWORD",
-        "JWT_SECRET"
+        "JWT_SECRET", "CORS_ALLOWED_ORIGINS", "MEDIA_ROOT_PATH", "FFMPEG_PATH",
+        "MEDIA_CACHE_MAX_BYTES", "MEDIA_TRANSCODE_WORKERS", "MEDIA_TRANSCODE_QUEUE_CAPACITY",
+        "TTS_MAX_TEXT_LENGTH", "TTS_REQUESTS_PER_MINUTE", "TTS_CACHE_MAX_BYTES"
     )) {
         if (-not [Environment]::GetEnvironmentVariable($name, "Process")) {
             $value = [Environment]::GetEnvironmentVariable($name, $scope)
@@ -24,17 +37,36 @@ foreach ($scope in @("User", "Machine")) {
     }
 }
 
-function Stop-Port($port) {
-    Get-NetTCPConnection -State Listen -LocalPort $port -ErrorAction SilentlyContinue |
-        Select-Object -ExpandProperty OwningProcess -Unique |
-        ForEach-Object { Stop-Process -Id $_ -Force -ErrorAction SilentlyContinue }
+# ─── 设置前端服务默认值（非敏感，允许 fallback） ───
+if (-not $env:NITRO_HOST) { $env:NITRO_HOST = "0.0.0.0" }
+if (-not $env:NITRO_PORT) { $env:NITRO_PORT = "3000" }
+if (-not $env:HOST) { $env:HOST = $env:NITRO_HOST }
+if (-not $env:PORT) { $env:PORT = $env:NITRO_PORT }
+if (-not $env:API_BASE) { $env:API_BASE = "/api/backend" }
+if (-not $env:BACKEND_ENDPOINT) { $env:BACKEND_ENDPOINT = "/api/backend/" }
+if (-not $env:BACKEND_PROXY_TARGET) { $env:BACKEND_PROXY_TARGET = "http://localhost:8000/api/v1/**" }
+
+# Ensure the Java process receives a stable ffmpeg executable path when ffmpeg is on PATH.
+if (-not $env:FFMPEG_PATH) {
+    $ffmpegCommand = Get-Command ffmpeg -ErrorAction SilentlyContinue
+    if ($ffmpegCommand) { $env:FFMPEG_PATH = $ffmpegCommand.Source }
+}
+
+# ─── 验证必填敏感变量 ───
+$required = @("SPRING_DATASOURCE_PASSWORD", "JWT_SECRET")
+$missing = $required | Where-Object { -not [Environment]::GetEnvironmentVariable($_, "Process") }
+if ($missing) {
+    Write-Host "缺失敏感环境变量，无法启动:" -ForegroundColor Red
+    $missing | ForEach-Object { Write-Host "  - $_" }
+    Write-Host "请创建 .env 文件（参考 .env 模板）或在系统环境变量中设置。" -ForegroundColor Yellow
+    exit 1
 }
 
 function Wait-Http($url, $name, $timeoutSec = 60) {
     for ($i = 0; $i -lt $timeoutSec; $i++) {
         try {
-            $r = Invoke-WebRequest -Uri $url -UseBasicParsing -TimeoutSec 2
-            if ($r.StatusCode -ge 200 -and $r.StatusCode -lt 500) {
+            $code = & curl.exe -s -o NUL -w "%{http_code}" --max-time 3 $url
+            if ([int]$code -ge 200 -and [int]$code -lt 400) {
                 Write-Host "$name ready: $url"
                 return
             }
@@ -44,62 +76,82 @@ function Wait-Http($url, $name, $timeoutSec = 60) {
     throw "$name did not become ready within $timeoutSec sec: $url"
 }
 
-# -- locate artifacts ----------------------------------------------------
 $jar = Get-ChildItem -Path "$root\backend\target\*.jar" -ErrorAction SilentlyContinue |
-    Where-Object { $_.Name -notmatch '\.original$' } | Select-Object -First 1
+    Where-Object { $_.Name -notmatch '\.original$' } |
+    Sort-Object LastWriteTime -Descending |
+    Select-Object -First 1
 if (-not $jar) {
-    Write-Host "❌ 找不到 backend/target/*.jar — 先跑 mvn -f backend/pom.xml -DskipTests package" -ForegroundColor Red
+    Write-Host "Missing backend jar. Run: .\prod-build.ps1" -ForegroundColor Red
     exit 1
 }
 
-$nitroEntry = "$root\apps\client\.output\server\index.mjs"
-if (-not (Test-Path $nitroEntry)) {
-    Write-Host "❌ 找不到 apps/client/.output/server/index.mjs — 先跑 pnpm --filter client build" -ForegroundColor Red
+# SSR 模式下使用 Nitro 服务端（.output/server/index.mjs），替代 prod-frontend-server.mjs 纯静态服务器
+$nitroServer = "$root\apps\client\.output\server\index.mjs"
+if (-not (Test-Path $nitroServer)) {
+    Write-Host "Missing Nuxt SSR output. Run: .\prod-build.ps1" -ForegroundColor Red
     exit 1
 }
 
-# -- start ---------------------------------------------------------------
-Write-Host "==> 停掉 8080 / 3000 上的旧进程"
-Stop-Port 8080
-Stop-Port 3000
+Write-Host "Stopping processes previously started by this launcher"
+Stop-ManagedProcess $runtimeDir "backend" | Out-Null
+Stop-ManagedProcess $runtimeDir "frontend" | Out-Null
+Assert-PortAvailable 8000 "Backend"
+Assert-PortAvailable 3000 "Frontend"
 Start-Sleep -Seconds 1
 
-Write-Host "==> 启动后端 jar => $($jar.Name)"
-Start-Process `
+Write-Host "Starting backend jar: $($jar.Name)"
+$jvmArgs = @(
+    "-Dspring.profiles.active=prod"
+)
+if ($env:CORS_ALLOWED_ORIGINS) {
+    $jvmArgs += "-Dcors.allowedOrigins=$env:CORS_ALLOWED_ORIGINS"
+}
+$jvmArgs += @("-jar", "`"$($jar.FullName)`"")
+$backendProcess = Start-Process `
     -FilePath "java" `
-    -ArgumentList "-jar","`"$($jar.FullName)`"" `
+    -ArgumentList $jvmArgs `
     -WorkingDirectory $root `
-    -RedirectStandardOutput "$root\backend-prod.log" `
-    -RedirectStandardError "$root\backend-prod.err.log" `
-    -WindowStyle Hidden
+    -RedirectStandardOutput "$runtimeDir\backend-prod.log" `
+    -RedirectStandardError "$runtimeDir\backend-prod.err.log" `
+    -WindowStyle Hidden `
+    -PassThru
+Save-ManagedProcessRecord $runtimeDir "backend" $backendProcess
 
-Wait-Http "http://localhost:8080/admin/stats" "Backend"
+try {
+    Wait-Http "http://localhost:8000/api/v1/course-pack" "Backend" 90
+} catch {
+    Stop-ManagedProcess $runtimeDir "backend" | Out-Null
+    throw
+}
 
-Write-Host "==> 启动前端 Nitro (host=$env:NITRO_HOST port=$env:NITRO_PORT)"
-Start-Process `
+Write-Host "Starting Nuxt SSR server on $env:NITRO_HOST`:$env:NITRO_PORT"
+$frontendProcess = Start-Process `
     -FilePath "node" `
-    -ArgumentList "`"$nitroEntry`"" `
+    -ArgumentList "`"$nitroServer`"" `
     -WorkingDirectory $root `
-    -RedirectStandardOutput "$root\frontend-prod.log" `
-    -RedirectStandardError "$root\frontend-prod.err.log" `
-    -WindowStyle Hidden
+    -RedirectStandardOutput "$runtimeDir\frontend-prod.log" `
+    -RedirectStandardError "$runtimeDir\frontend-prod.err.log" `
+    -WindowStyle Hidden `
+    -PassThru
+Save-ManagedProcessRecord $runtimeDir "frontend" $frontendProcess
 
-Wait-Http "http://localhost:3000" "Frontend"
+try {
+    Wait-Http "http://localhost:3000" "Frontend" 60
+} catch {
+    Stop-ManagedProcess $runtimeDir "frontend" | Out-Null
+    Stop-ManagedProcess $runtimeDir "backend" | Out-Null
+    throw
+}
 
-# -- summary -------------------------------------------------------------
 $ip = (Get-NetIPAddress -AddressFamily IPv4 -PrefixOrigin Dhcp,Manual -ErrorAction SilentlyContinue |
     Where-Object { $_.IPAddress -notlike "169.*" -and $_.IPAddress -ne "127.0.0.1" } |
     Select-Object -First 1).IPAddress
 
 Write-Host ""
-Write-Host "========================================" -ForegroundColor Green
-Write-Host " 鹅语菌生产模式已启动" -ForegroundColor Green
-Write-Host "========================================" -ForegroundColor Green
-Write-Host "本机访问 : http://localhost:3000"
-if ($ip) { Write-Host "局域网/公网: http://$ip`:3000  ← 把这个 URL 发给别人" -ForegroundColor Yellow }
-Write-Host ""
-Write-Host "日志:"
-Write-Host "  backend-prod.log / backend-prod.err.log"
-Write-Host "  frontend-prod.log / frontend-prod.err.log"
-Write-Host ""
-Write-Host "停止: .\prod-stop.ps1"
+Write-Host "Production mode started." -ForegroundColor Green
+Write-Host "Local: http://localhost:3000"
+if ($ip) { Write-Host "Network: http://$ip`:3000" -ForegroundColor Yellow }
+Write-Host "Logs:"
+Write-Host "  runtime\backend-prod.log / runtime\backend-prod.err.log"
+Write-Host "  runtime\frontend-prod.log / runtime\frontend-prod.err.log"
+Write-Host "Stop: .\prod-stop.ps1"

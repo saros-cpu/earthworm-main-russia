@@ -1,13 +1,13 @@
 {
   "name": "@earthworm/game-data-sdk",
   "version": "1.0.11",
-  "description": "",
+  "description": "[DEPRECATED] Legacy game data SDK - replaced by backend/ services. apps/api no longer exists.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "env-cmd -f .env.test vitest",
     "build": "tsup",
-    "release": "pnpm publish --registry http://124.223.41.130:4873/ --no-git-checks"
+    "release": "pnpm publish --registry http://your-private-registry:4873/ --no-git-checks"
   },
   "keywords": [],
   "author": "cuixiaorui",

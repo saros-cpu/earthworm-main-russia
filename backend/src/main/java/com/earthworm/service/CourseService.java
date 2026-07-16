@@ -1,6 +1,7 @@
 package com.earthworm.service;
 
 import com.earthworm.config.CurrentUser;
+import com.earthworm.config.UserContext;
 import com.earthworm.model.*;
 import com.earthworm.repository.*;
 import org.springframework.stereotype.Service;
@@ -10,14 +11,13 @@ import java.util.*;
 
 @Service
 public class CourseService {
-    public static final String DEV_USER_ID = "dev-user-001";
-
     private final CurrentUser currentUser;
     private final CoursePackRepository coursePackRepository;
     private final CourseRepository courseRepository;
     private final StatementRepository statementRepository;
     private final UserCourseProgressRepository progressRepository;
     private final CourseHistoryRepository historyRepository;
+    private final CoursePrerequisiteRepository prerequisiteRepository;
     private final CourseRefinementService courseRefinementService;
 
     public CourseService(
@@ -27,6 +27,7 @@ public class CourseService {
             StatementRepository statementRepository,
             UserCourseProgressRepository progressRepository,
             CourseHistoryRepository historyRepository,
+            CoursePrerequisiteRepository prerequisiteRepository,
             CourseRefinementService courseRefinementService
     ) {
         this.currentUser = currentUser;
@@ -35,26 +36,33 @@ public class CourseService {
         this.statementRepository = statementRepository;
         this.progressRepository = progressRepository;
         this.historyRepository = historyRepository;
+        this.prerequisiteRepository = prerequisiteRepository;
         this.courseRefinementService = courseRefinementService;
     }
 
     private String userId() {
-        String uid = currentUser.getUserId();
-        return uid != null ? uid : DEV_USER_ID;
+        return currentUser.getUserId();
+    }
+
+    public List<Map<String, Object>> searchCoursePacks(String keyword) {
+        return coursePackRepository
+                .findByShareLevelIgnoreCaseAndArchivedFalseAndTitleContainingIgnoreCaseOrderByOrderAsc("public", keyword)
+                .stream()
+                .map(this::toCoursePackItem)
+                .toList();
     }
 
     public List<Map<String, Object>> findCoursePacks() {
-        return coursePackRepository.findByShareLevelOrderByOrderAsc("public")
+        return coursePackRepository.findByShareLevelIgnoreCaseAndArchivedFalseOrderByOrderAsc("public")
                 .stream()
                 .map(this::toCoursePackItem)
                 .toList();
     }
 
     public Map<String, Object> findCoursePack(String coursePackId) {
-        CoursePack pack = coursePackRepository.findById(coursePackId)
-                .orElseThrow(() -> new NoSuchElementException("Course pack not found"));
+        CoursePack pack = requireAccessiblePack(coursePackId);
 
-        List<Map<String, Object>> courses = courseRepository.findByCoursePackIdOrderByOrderAsc(coursePackId)
+        List<Map<String, Object>> courses = courseRepository.findByCoursePackIdAndArchivedFalseOrderByOrderAsc(coursePackId)
                 .stream()
                 .map(course -> toCourseItem(course, completionCount(coursePackId, course.getId())))
                 .toList();
@@ -65,10 +73,11 @@ public class CourseService {
     }
 
     public Map<String, Object> findCourse(String coursePackId, String courseId) {
-        Course course = courseRepository.findByCoursePackIdAndId(coursePackId, courseId)
+        requireAccessiblePack(coursePackId);
+        Course course = courseRepository.findByCoursePackIdAndIdAndArchivedFalse(coursePackId, courseId)
                 .orElseThrow(() -> new NoSuchElementException("Course not found"));
 
-        List<Statement> courseStatements = statementRepository.findByCourseIdOrderByOrderAsc(courseId);
+        List<Statement> courseStatements = statementRepository.findByCourseIdAndArchivedFalseOrderByOrderAsc(courseId);
         Map<String, Map<String, Object>> refinements = courseRefinementService.findRefinements(
                 courseStatements.stream().map(Statement::getId).toList()
         );
@@ -83,25 +92,31 @@ public class CourseService {
     }
 
     public Map<String, Object> findNextCourse(String coursePackId, String courseId) {
-        Course current = courseRepository.findByCoursePackIdAndId(coursePackId, courseId)
+        requireAccessiblePack(coursePackId);
+        Course current = courseRepository.findByCoursePackIdAndIdAndArchivedFalse(coursePackId, courseId)
                 .orElseThrow(() -> new NoSuchElementException("Course not found"));
 
-        return courseRepository.findByCoursePackIdAndOrder(coursePackId, current.getOrder() + 1)
+        return courseRepository.findFirstByCoursePackIdAndArchivedFalseAndOrderGreaterThanOrderByOrderAsc(coursePackId, current.getOrder())
                 .map(course -> toCourseItem(course, completionCount(coursePackId, course.getId())))
                 .orElse(null);
     }
 
     @Transactional
     public Map<String, Object> completeCourse(String coursePackId, String courseId) {
-        Course current = courseRepository.findByCoursePackIdAndId(coursePackId, courseId)
+        String uid = UserContext.getUserIdOptional().orElse(null);
+        if (uid == null) {
+            return Map.of("error", "Login required");
+        }
+        requireAccessiblePack(coursePackId);
+        Course current = courseRepository.findByCoursePackIdAndIdAndArchivedFalse(coursePackId, courseId)
                 .orElseThrow(() -> new NoSuchElementException("Course not found"));
 
         CourseHistory history = historyRepository
-                .findByUserIdAndCoursePackIdAndCourseId(userId(), coursePackId, courseId)
+                .findByUserIdAndCoursePackIdAndCourseId(uid, coursePackId, courseId)
                 .orElseGet(() -> {
                     CourseHistory entity = new CourseHistory();
                     entity.setId(UUID.randomUUID().toString());
-                    entity.setUserId(userId());
+                    entity.setUserId(uid);
                     entity.setCoursePackId(coursePackId);
                     entity.setCourseId(courseId);
                     entity.setCompletionCount(0);
@@ -110,7 +125,7 @@ public class CourseService {
         history.setCompletionCount(history.getCompletionCount() + 1);
         historyRepository.save(history);
 
-        Course next = courseRepository.findByCoursePackIdAndOrder(coursePackId, current.getOrder() + 1)
+        Course next = courseRepository.findFirstByCoursePackIdAndArchivedFalseAndOrderGreaterThanOrderByOrderAsc(coursePackId, current.getOrder())
                 .orElse(null);
         if (next != null) {
             upsertProgress(coursePackId, next.getId(), 0);
@@ -123,6 +138,12 @@ public class CourseService {
 
     @Transactional
     public Map<String, Object> upsertProgress(String coursePackId, String courseId, Integer statementIndex) {
+        requireAccessiblePack(coursePackId);
+        Course course = courseRepository.findByCoursePackIdAndIdAndArchivedFalse(coursePackId, courseId)
+                .orElseThrow(() -> new NoSuchElementException("Course not found"));
+        long statementCount = statementRepository.countByCourseIdAndArchivedFalse(courseId);
+        int maximumIndex = (int) Math.max(0L, Math.min(Integer.MAX_VALUE, statementCount - 1));
+        int safeStatementIndex = Math.max(0, Math.min(statementIndex == null ? 0 : statementIndex, maximumIndex));
         UserCourseProgress progress = progressRepository
                 .findByUserIdAndCoursePackId(userId(), coursePackId)
                 .orElseGet(() -> {
@@ -133,17 +154,82 @@ public class CourseService {
                     return entity;
                 });
 
-        progress.setCourseId(courseId);
-        progress.setStatementIndex(statementIndex == null ? 0 : statementIndex);
+        progress.setCourseId(course.getId());
+        progress.setStatementIndex(safeStatementIndex);
         progressRepository.save(progress);
 
-        return Map.of("courseId", courseId);
+        return Map.of("courseId", course.getId());
+    }
+
+    public void requireAccessibleStatement(String coursePackId, String courseId, String statementId) {
+        requireAccessiblePack(coursePackId);
+        courseRepository.findByCoursePackIdAndIdAndArchivedFalse(coursePackId, courseId)
+                .orElseThrow(() -> new NoSuchElementException("Course not found"));
+        if (statementId == null || !statementRepository.existsByIdAndCourseIdAndArchivedFalse(statementId, courseId)) {
+            throw new NoSuchElementException("Statement not found");
+        }
+    }
+
+    public void requireAccessibleStatement(String statementId) {
+        requireAccessibleStatementSource(statementId, null);
+    }
+
+    public boolean canAccessStatement(String statementId) {
+        try {
+            requireAccessibleStatement(statementId);
+            return true;
+        } catch (NoSuchElementException exception) {
+            return false;
+        }
+    }
+
+    public Set<String> accessibleStatementIds(Collection<String> statementIds) {
+        List<String> requestedIds = statementIds == null
+                ? List.of()
+                : statementIds.stream().filter(Objects::nonNull).distinct().toList();
+        if (requestedIds.isEmpty()) {
+            return Set.of();
+        }
+        String uid = UserContext.getUserIdOptional().orElse("");
+        boolean administrator = "ADMIN".equalsIgnoreCase(UserContext.getRole());
+        return Set.copyOf(statementRepository.findAccessibleIds(requestedIds, uid, administrator));
+    }
+
+    public void requireAccessibleStatementSource(String statementId, String expectedCoursePackId) {
+        if (statementId == null || statementId.isBlank()) {
+            throw new NoSuchElementException("Statement not found");
+        }
+        Statement statement = statementRepository.findById(statementId)
+                .orElseThrow(() -> new NoSuchElementException("Statement not found"));
+        if (Boolean.TRUE.equals(statement.getArchived())) {
+            throw new NoSuchElementException("Statement not found");
+        }
+        String courseId = statement.getCourseId();
+        if (courseId == null || courseId.isBlank()) {
+            throw new NoSuchElementException("Statement not found");
+        }
+        Course course = courseRepository.findById(courseId)
+                .orElseThrow(() -> new NoSuchElementException("Course not found"));
+        if (Boolean.TRUE.equals(course.getArchived())) {
+            throw new NoSuchElementException("Course not found");
+        }
+        String coursePackId = course.getCoursePackId();
+        if (coursePackId == null || coursePackId.isBlank()) {
+            throw new NoSuchElementException("Course pack not found");
+        }
+        requireAccessiblePack(coursePackId);
+        if (expectedCoursePackId != null
+                && !expectedCoursePackId.isBlank()
+                && !expectedCoursePackId.equals(coursePackId)) {
+            throw new NoSuchElementException("Statement not found");
+        }
     }
 
     public List<Map<String, Object>> recentCoursePacks() {
         return progressRepository.findTop5ByUserIdOrderByUpdatedAtDesc(userId())
                 .stream()
                 .map(progress -> coursePackRepository.findById(progress.getCoursePackId())
+                        .filter(this::canAccess)
                         .map(pack -> {
                             Map<String, Object> item = toCoursePackItem(pack);
                             item.put("coursePackId", progress.getCoursePackId());
@@ -156,6 +242,7 @@ public class CourseService {
     }
 
     public List<Map<String, Object>> courseHistory(String coursePackId) {
+        requireAccessiblePack(coursePackId);
         return historyRepository.findByUserIdAndCoursePackId(userId(), coursePackId)
                 .stream()
                 .map(history -> {
@@ -167,17 +254,67 @@ public class CourseService {
                 .toList();
     }
 
+    public boolean canStreamMedia(String mediaPath) {
+        if (mediaPath == null || mediaPath.isBlank()) {
+            return false;
+        }
+        return courseRepository.findByVideoAndArchivedFalse(mediaPath).stream()
+                .map(course -> coursePackRepository.findById(course.getCoursePackId()).orElse(null))
+                .filter(Objects::nonNull)
+                .anyMatch(this::canAccess);
+    }
+
+    private CoursePack requireAccessiblePack(String coursePackId) {
+        CoursePack pack = coursePackRepository.findById(coursePackId)
+                .orElseThrow(() -> new NoSuchElementException("Course pack not found"));
+        if (!canAccess(pack)) {
+            throw new NoSuchElementException("Course pack not found");
+        }
+        return pack;
+    }
+
+    private boolean canAccess(CoursePack pack) {
+        if (Boolean.TRUE.equals(pack.getArchived())) {
+            return false;
+        }
+        if ("public".equalsIgnoreCase(pack.getShareLevel())) {
+            return true;
+        }
+        if ("ADMIN".equalsIgnoreCase(UserContext.getRole())) {
+            return true;
+        }
+        return UserContext.getUserIdOptional()
+                .map(uid -> uid.equals(pack.getCreatorId()))
+                .orElse(false);
+    }
+
     private Integer statementIndex(String coursePackId, String courseId) {
-        return progressRepository
-                .findByUserIdAndCoursePackIdAndCourseId(userId(), coursePackId, courseId)
-                .map(UserCourseProgress::getStatementIndex)
+        return UserContext.getUserIdOptional()
+                .flatMap(uid -> progressRepository
+                        .findByUserIdAndCoursePackIdAndCourseId(uid, coursePackId, courseId)
+                        .map(UserCourseProgress::getStatementIndex))
                 .orElse(0);
     }
 
+    private boolean isCourseLocked(String coursePackId, String courseId) {
+        return UserContext.getUserIdOptional()
+                .map(uid -> {
+                    List<String> requiredIds = prerequisiteRepository.findRequiredCourseIdsByCourseId(courseId);
+                    if (requiredIds.isEmpty()) return false;
+                    return requiredIds.stream().anyMatch(rid ->
+                        historyRepository.findByUserIdAndCoursePackIdAndCourseId(uid, coursePackId, rid)
+                                .map(h -> h.getCompletionCount() <= 0)
+                                .orElse(true)
+                    );
+                })
+                .orElse(false);
+    }
+
     private Integer completionCount(String coursePackId, String courseId) {
-        return historyRepository
-                .findByUserIdAndCoursePackIdAndCourseId(userId(), coursePackId, courseId)
-                .map(CourseHistory::getCompletionCount)
+        return UserContext.getUserIdOptional()
+                .flatMap(uid -> historyRepository
+                        .findByUserIdAndCoursePackIdAndCourseId(uid, coursePackId, courseId)
+                        .map(CourseHistory::getCompletionCount))
                 .orElse(0);
     }
 
@@ -199,8 +336,9 @@ public class CourseService {
         item.put("order", course.getOrder());
         item.put("coursePackId", course.getCoursePackId());
         item.put("completionCount", completionCount);
+        item.put("locked", isCourseLocked(course.getCoursePackId(), course.getId()));
         item.put("statementIndex", 0);
-        item.put("statementCount", statementRepository.countByCourseId(course.getId()));
+        item.put("statementCount", statementRepository.countByCourseIdAndArchivedFalse(course.getId()));
         item.put("video", course.getVideo());
         String lyrics = CustomCoursePackService.LYRICS_CACHE.get(course.getId());
         if (lyrics != null) item.put("lyrics", lyrics);

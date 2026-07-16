@@ -17,12 +17,14 @@
       >
         <video
           v-if="isVideoFile"
-          :src="streamUrl"
           controls
           class="w-full rounded-md shadow-sm"
           @ended="markCompleted"
         >
-          <source :src="streamUrl" />
+          <source
+            :src="streamUrl"
+            type="video/mp4"
+          />
         </video>
         <audio
           v-else
@@ -80,6 +82,7 @@ import { computed, onMounted, ref, watch } from "vue";
 
 import { useCourseStore } from "~/store/course";
 import { useGameStore } from "~/store/game";
+import { getLocalMediaStreamUrl } from "~/utils/media";
 
 const props = defineProps<{ mode?: string }>();
 const courseStore = useCourseStore();
@@ -98,10 +101,7 @@ const isVideoFile = computed(() => {
 });
 
 const streamUrl = computed(() => {
-  const v = courseStore.currentCourse?.video;
-  if (!v) return "";
-  if (v.startsWith("http://") || v.startsWith("https://")) return v;
-  return `/api/backend/media/stream?path=${encodeURIComponent(v)}`;
+  return getLocalMediaStreamUrl(courseStore.currentCourse?.video, "&v=mp4");
 });
 
 const modeLabel = computed(() => (isVideoFile.value ? "视频学习" : "听力训练"));

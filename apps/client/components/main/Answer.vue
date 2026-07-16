@@ -1,7 +1,11 @@
 <template>
   <div class="mx-auto max-w-5xl text-center">
-    <div class="rounded-md border border-emerald-200 bg-white p-6 shadow-sm dark:border-emerald-800 dark:bg-slate-900">
-      <div class="mb-4 inline-flex items-center gap-2 rounded-md bg-emerald-50 px-3 py-2 text-sm font-bold text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
+    <div
+      class="rounded-md border border-emerald-200 bg-white p-6 shadow-sm dark:border-emerald-800 dark:bg-slate-900"
+    >
+      <div
+        class="mb-4 inline-flex items-center gap-2 rounded-md bg-emerald-50 px-3 py-2 text-sm font-bold text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300"
+      >
         <UIcon
           name="i-ph-check-circle"
           class="h-4 w-4"
@@ -9,7 +13,9 @@
         回答正确
       </div>
 
-      <div class="inline-flex flex-wrap items-center justify-center gap-1 text-4xl font-black text-slate-950 dark:text-white md:text-5xl">
+      <div
+        class="inline-flex flex-wrap items-center justify-center gap-1 text-4xl font-black text-slate-950 dark:text-white md:text-5xl"
+      >
         <span
           v-for="word in words"
           :key="word"
@@ -26,11 +32,18 @@
       </div>
     </div>
 
-    <div
-      v-if="phoneticText"
-      class="my-5 text-xl text-gray-500"
-    >
-      {{ phoneticText }}
+    <div class="my-5 flex items-center justify-center gap-3">
+      <span
+        v-if="phoneticText"
+        class="text-xl text-gray-500"
+        >{{ phoneticText }}</span
+      >
+      <span
+        v-if="difficultyLabel"
+        class="rounded-full px-2.5 py-0.5 text-xs font-bold"
+        :class="difficultyColor"
+        >{{ difficultyLabel }}</span
+      >
     </div>
 
     <div class="my-5 text-xl text-gray-500">
@@ -99,36 +112,70 @@
           </div>
         </article>
       </div>
-      </div>
+    </div>
 
-      <MainStatementNotes :statement-id="courseStore.currentStatement?.id" />
-
-      <div class="space-y-3">
-        <div class="flex flex-wrap items-center justify-center gap-2">
-          <button
-            class="btn btn-outline btn-sm"
-            @click="showQuestion"
-          >
-            再来一次
-          </button>
-          <button
-            class="btn btn-sm border-none bg-slate-950 text-white hover:bg-slate-800 dark:bg-white dark:text-slate-950"
-            @click="goToNextQuestion"
-          >
-            下一题
-          </button>
-          <button
-            class="btn btn-outline btn-sm"
-            @click="addWordsToVocabulary"
-          >
-            <UIcon name="i-ph-bookmark-simple" class="h-4 w-4" />
-            收藏生词
-          </button>
-        </div>
-        <div class="md:hidden">
-          <MainMasteredBtn />
-        </div>
+    <div
+      v-if="errorExplanation"
+      class="mx-auto mb-6 max-w-3xl rounded-md border border-rose-200 bg-white p-4 text-left text-sm shadow-sm dark:border-rose-900 dark:bg-slate-900"
+    >
+      <div class="mb-2 flex items-center gap-2 font-semibold text-rose-600 dark:text-rose-300">
+        <UIcon
+          name="i-ph-warning-circle"
+          class="h-4 w-4"
+        />
+        AI 错误分析
       </div>
+      <div
+        v-if="errorExplanation.loading"
+        class="text-slate-400"
+      >
+        <span class="animate-pulse">分析中...</span>
+      </div>
+      <div
+        v-else
+        class="leading-6 text-slate-700 dark:text-slate-300"
+      >
+        {{ errorExplanation.aiExplanation }}
+      </div>
+      <div
+        v-if="errorExplanation.userAnswer"
+        class="mt-2 rounded bg-rose-50 p-2 text-xs text-rose-600 dark:bg-rose-950 dark:text-rose-300"
+      >
+        你的答案：{{ errorExplanation.userAnswer }}
+      </div>
+    </div>
+
+    <MainStatementNotes :statement-id="courseStore.currentStatement?.id" />
+
+    <div class="space-y-3">
+      <div class="flex flex-wrap items-center justify-center gap-2">
+        <button
+          class="btn btn-outline btn-sm"
+          @click="showQuestion"
+        >
+          再来一次
+        </button>
+        <button
+          class="btn btn-sm border-none bg-slate-950 text-white hover:bg-slate-800 dark:bg-white dark:text-slate-950"
+          @click="goToNextQuestion"
+        >
+          下一题
+        </button>
+        <button
+          class="btn btn-outline btn-sm"
+          @click="addWordsToVocabulary"
+        >
+          <UIcon
+            name="i-ph-bookmark-simple"
+            class="h-4 w-4"
+          />
+          收藏生词
+        </button>
+      </div>
+      <div class="md:hidden">
+        <MainMasteredBtn />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -136,12 +183,13 @@
 import { computed, onMounted, onUnmounted } from "vue";
 import { toast } from "vue-sonner";
 
+import { fetchAddVocabulary } from "~/api/learning";
 import { playRussianText } from "~/composables/main/englishSound";
 import { usePlayWordSound } from "~/composables/main/englishSound/audio";
+import { useErrorExplanationStore } from "~/composables/main/errorExplanationStore";
 import { useGameMode } from "~/composables/main/game";
 import { useAutoPronunciation } from "~/composables/user/sound";
 import { useCourseStore } from "~/store/course";
-import { fetchAddVocabulary } from "~/api/learning";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";
 import { useAnswer } from "./QuestionInput/useAnswer";
 
@@ -150,6 +198,7 @@ const { handlePlayWordSound } = usePlayWordSound();
 const { showQuestion } = useGameMode();
 const { isAutoPlaySound } = useAutoPronunciation();
 const { goToNextQuestion } = useAnswer();
+const { getExplanation } = useErrorExplanationStore();
 
 const words = computed(() => courseStore.currentStatement?.english.split(" ") || []);
 const phoneticText = computed(
@@ -159,8 +208,33 @@ const sourceText = computed(
   () => courseStore.currentStatement?.sourceText || courseStore.currentStatement?.chinese || "",
 );
 const hasLearningNotes = computed(
-  () => !!courseStore.currentStatement?.grammarNote || !!courseStore.currentStatement?.vocabulary?.length,
+  () =>
+    !!courseStore.currentStatement?.grammarNote ||
+    !!courseStore.currentStatement?.vocabulary?.length,
 );
+const difficultyLabel = computed(() => {
+  const d = courseStore.currentStatement?.difficulty;
+  if (!d) return null;
+  const map: Record<string, string> = {
+    beginner: "入门",
+    elementary: "初级",
+    intermediate: "中级",
+  };
+  return map[d] || d;
+});
+const difficultyColor = computed(() => {
+  const d = courseStore.currentStatement?.difficulty;
+  if (d === "beginner") return "bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-300";
+  if (d === "elementary") return "bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300";
+  if (d === "intermediate")
+    return "bg-amber-100 text-amber-700 dark:bg-amber-950 dark:text-amber-300";
+  return "bg-slate-100 text-slate-500";
+});
+const errorExplanation = computed(() => {
+  const stmtId = courseStore.currentStatement?.id;
+  if (!stmtId) return null;
+  return getExplanation(stmtId);
+});
 
 registerShortcutKeyForNextQuestion();
 
@@ -174,7 +248,10 @@ async function addWordsToVocabulary() {
   const text = courseStore.currentStatement?.english;
   if (!text) return;
   const words = text.split(" ").filter((w) => /[а-яё]/i.test(w));
-  if (words.length === 0) { toast.info("没有可收藏的俄语单词"); return; }
+  if (words.length === 0) {
+    toast.info("没有可收藏的俄语单词");
+    return;
+  }
   let added = 0;
   for (const word of words) {
     try {

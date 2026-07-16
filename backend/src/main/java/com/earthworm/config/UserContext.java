@@ -1,6 +1,6 @@
 package com.earthworm.config;
 
-import com.earthworm.service.CourseService;
+import java.util.Optional;
 
 public class UserContext {
     private static final ThreadLocal<String> userIdHolder = new ThreadLocal<>();
@@ -21,8 +21,14 @@ public class UserContext {
 
     public static String getUserId() {
         String uid = userIdHolder.get();
-        if (uid != null) return uid;
-        return CourseService.DEV_USER_ID;
+        if (uid == null) {
+            throw new IllegalStateException("No authenticated user in context");
+        }
+        return uid;
+    }
+
+    public static Optional<String> getUserIdOptional() {
+        return Optional.ofNullable(userIdHolder.get());
     }
 
     public static String getRole() {

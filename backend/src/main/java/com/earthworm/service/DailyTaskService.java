@@ -2,6 +2,8 @@ package com.earthworm.service;
 
 import com.earthworm.model.DailyTask;
 import com.earthworm.repository.DailyTaskRepository;
+import com.earthworm.repository.DailyStatsRepository;
+import com.earthworm.model.DailyStats;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -10,10 +12,18 @@ import java.util.*;
 
 @Service
 public class DailyTaskService {
-    private final DailyTaskRepository repository;
+    private static final Map<String, Integer> REWARD_SCORES = Map.of(
+            "complete_10", 50,
+            "combo_5", 100,
+            "learn_15min", 50
+    );
 
-    public DailyTaskService(DailyTaskRepository repository) {
+    private final DailyTaskRepository repository;
+    private final DailyStatsRepository dailyStatsRepository;
+
+    public DailyTaskService(DailyTaskRepository repository, DailyStatsRepository dailyStatsRepository) {
         this.repository = repository;
+        this.dailyStatsRepository = dailyStatsRepository;
     }
 
     public List<Map<String, Object>> getTodayTasks(String userId) {
@@ -78,6 +88,20 @@ public class DailyTaskService {
         if (task != null && task.getCompleted() && !task.getRewardClaimed()) {
             task.setRewardClaimed(true);
             repository.save(task);
+
+            int bonusScore = REWARD_SCORES.getOrDefault(taskType, 0);
+            if (bonusScore > 0) {
+                DailyStats stats = dailyStatsRepository.findByUserIdAndDate(userId, today)
+                        .orElseGet(() -> {
+                            DailyStats s = new DailyStats();
+                            s.setId(UUID.randomUUID().toString());
+                            s.setUserId(userId);
+                            s.setDate(today);
+                            return s;
+                        });
+                stats.setTotalScore((stats.getTotalScore() == null ? 0 : stats.getTotalScore()) + bonusScore);
+                dailyStatsRepository.save(stats);
+            }
         }
         return task != null ? toMap(task) : Map.of();
     }

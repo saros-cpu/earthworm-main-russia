@@ -10,8 +10,8 @@ public class ToolController {
     @GetMapping("/tool/dailySentence")
     public Map<String, Object> dailySentence() {
         return Map.of(
-                "en", "A journey of a thousand miles begins with a single step.",
-                "zh", "千里之行，始于足下。"
+                "ru", "Повторение — мать учения.",
+                "zh", "重复是学习之母。"
         );
     }
 }

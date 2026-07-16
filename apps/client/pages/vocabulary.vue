@@ -5,7 +5,9 @@
     >
       <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div>
-          <p class="text-sm font-bold text-emerald-600 dark:text-emerald-300">Словарь</p>
+          <p class="text-sm font-bold text-emerald-600 dark:text-emerald-300">
+            {{ $t("pages.vocabulary") }}
+          </p>
           <h1 class="mt-1 text-3xl font-black text-slate-950 dark:text-white">生词本</h1>
           <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
             记录学习过程中遇到的生词，集中回顾和复习。

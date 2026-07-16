@@ -130,11 +130,13 @@
 
 <script setup lang="ts">
 import { nextTick, onMounted, ref } from "vue";
+import { useI18n } from "vue-i18n";
 
 import { getHttp } from "~/api/http";
 import { useCourseStore } from "~/store/course";
 
 const courseStore = useCourseStore();
+const { t } = useI18n();
 const open = ref(false);
 const question = ref("");
 const loading = ref(false);
@@ -197,11 +199,7 @@ onMounted(() => {
   const today = new Date().toISOString().split("T")[0];
   const saved = localStorage.getItem("ai_questions_" + today);
   if (saved) questionCount.value = parseInt(saved);
-  messages.value.push({
-    role: "assistant",
-    content:
-      "Привет! Я твой помощник по русской грамматике. Спрашивай о спряжениях, падежах, значениях слов и любых других вопросах по русскому языку!",
-  });
+  messages.value.push({ role: "assistant", content: t("ai.greeting") });
 });
 </script>
 

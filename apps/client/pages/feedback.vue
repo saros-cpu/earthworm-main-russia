@@ -3,7 +3,9 @@
     <section
       class="mb-5 rounded-md border border-slate-200 bg-white p-5 shadow-sm dark:border-slate-800 dark:bg-slate-900"
     >
-      <p class="text-sm font-bold text-emerald-600 dark:text-emerald-300">Обратная связь</p>
+      <p class="text-sm font-bold text-emerald-600 dark:text-emerald-300">
+        {{ $t("pages.feedback") }}
+      </p>
       <h1 class="mt-1 text-3xl font-black text-slate-950 dark:text-white">建议反馈</h1>
       <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
         在网页留言，记录你的使用感受、想要的功能或遇到的 bug。留言会保存在当前浏览器本地。

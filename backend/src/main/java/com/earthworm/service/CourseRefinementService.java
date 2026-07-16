@@ -1,6 +1,7 @@
 package com.earthworm.service;
 
 import com.earthworm.model.Statement;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -53,17 +54,19 @@ public class CourseRefinementService {
         try {
             String vocabJson = objectMapper.writeValueAsString(vocabulary);
             jdbcTemplate.update(
-                "INSERT INTO statement_refinements (statement_id, source_text, target_text, translation, vocabulary_json, grammar_note, difficulty, refinement_mode) VALUES (?, ?, ?, ?, ?, ?, ?, 'rules') ON DUPLICATE KEY UPDATE source_text=VALUES(source_text), target_text=VALUES(target_text), translation=VALUES(translation), vocabulary_json=VALUES(vocabulary_json), grammar_note=VALUES(grammar_note), difficulty=VALUES(difficulty)",
+                "INSERT INTO statement_refinements (statement_id, source_text, target_text, translation, vocabulary_json, grammar_note, difficulty, refinement_mode) VALUES (?, ?, ?, ?, ?, ?, ?, 'rules') ON DUPLICATE KEY UPDATE source_text=VALUES(source_text), target_text=VALUES(target_text), translation=VALUES(translation), vocabulary_json=VALUES(vocabulary_json), grammar_note=VALUES(grammar_note), difficulty=VALUES(difficulty), refinement_mode='rules'",
                 statementId, sourceText, targetText, translation, vocabJson, grammarNote, difficulty
             );
-        } catch (Exception ignored) {}
+        } catch (JsonProcessingException exception) {
+            throw new IllegalArgumentException("Vocabulary data could not be saved", exception);
+        }
     }
 
     public void deleteRefinement(String statementId) {
         jdbcTemplate.update("DELETE FROM statement_refinements WHERE statement_id = ?", statementId);
     }
 
-    public Map<String, Object> refineStatementWithAiOrRules(Statement statement) {
+    public Map<String, Object> refineStatementWithRules(Statement statement) {
         Map<String, Object> refinement = new LinkedHashMap<>();
         refinement.put("translation", statement.getChinese());
         refinement.put("grammarNote", extractGrammarNote(statement.getEnglish()));

@@ -2,7 +2,10 @@
   <article
     :ref="isActiveCourse ? 'activeCourseRef' : undefined"
     :class="[
-      'group relative flex min-h-[260px] w-full cursor-pointer flex-col rounded-md border bg-white p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-lg dark:bg-slate-900',
+      'group relative flex min-h-[260px] w-full flex-col rounded-md border bg-white p-4 shadow-sm transition dark:bg-slate-900',
+      locked
+        ? 'cursor-not-allowed opacity-60'
+        : 'cursor-pointer hover:-translate-y-1 hover:shadow-lg',
       hasFinished
         ? 'border-emerald-300 dark:border-emerald-700'
         : isActiveCourse
@@ -81,6 +84,16 @@
         class="h-5 w-5 text-slate-400 group-hover:text-emerald-600"
       />
     </div>
+
+    <div
+      v-if="locked"
+      class="absolute inset-0 z-10 flex items-center justify-center rounded-md bg-white/60 dark:bg-slate-900/60"
+    >
+      <UIcon
+        name="i-ph-lock-simple"
+        class="h-8 w-8 text-slate-400"
+      />
+    </div>
   </article>
 </template>
 
@@ -96,6 +109,7 @@ const props = defineProps<{
   coursePackId: string;
   description: string;
   statementCount?: number;
+  locked?: boolean;
 }>();
 const { activeCourseMap } = useActiveCourseMap();
 

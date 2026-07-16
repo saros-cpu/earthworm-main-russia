@@ -21,12 +21,13 @@ if (typeof window !== "undefined") {
 }
 
 function parseKey(keyString: string) {
-  const keys = keyString.toLowerCase().split("+");
+  const keys = keyString.split("+").map((key) => key.trim());
+  const lowerKeys = keys.map((key) => key.toLowerCase());
 
   const result = {
-    key: keys[keys.length - 1], // 取数组最后一个元素作为 key
-    ctrlKey: keys.includes("ctrl"),
-    metaKey: keys.includes("command"),
+    key: convertMacKey(keys[keys.length - 1]).toLowerCase(), // 取数组最后一个元素作为 key
+    ctrlKey: lowerKeys.includes("ctrl"),
+    metaKey: lowerKeys.includes("command"),
   };
 
   return result;
@@ -37,7 +38,7 @@ function findMatchingShortcut(event: KeyboardEvent): Shortcut[] {
     const preciseMatching =
       shortcut.ctrlKey === event.ctrlKey &&
       shortcut.metaKey === event.metaKey &&
-      shortcut.key === convertMacKey(event.key).toLowerCase();
+      shortcut.key === convertMacKey(event.key, event.code).toLowerCase();
 
     const anyMatching = shortcut.key === "*";
 

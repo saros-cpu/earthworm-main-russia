@@ -40,13 +40,13 @@ export function formatTimestamp({ timestamp }: Timestamp) {
 }
 
 export function formatSecondsToTime(time: number) {
-  if (time === 0) return "0秒";
+  if (time === 0) return "0с";
 
   const hours = Math.floor(time / 3600);
   const minutes = Math.floor((time % 3600) / 60);
   const seconds = time % 60;
 
   return (
-    (hours ? `${hours}时` : "") + (minutes ? `${minutes}分` : "") + (seconds ? `${seconds}秒` : "")
+    (hours ? `${hours}ч` : "") + (minutes ? `${minutes}м` : "") + (seconds ? `${seconds}с` : "")
   );
 }

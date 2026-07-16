@@ -1,46 +1,75 @@
 package com.earthworm.controller;
 
+import com.earthworm.model.ApiResponse;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.multipart.MaxUploadSizeExceededException;
 import org.springframework.web.multipart.MultipartException;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.io.IOException;
-import java.util.Map;
+import java.util.NoSuchElementException;
 
 @RestControllerAdvice
 public class ApiExceptionHandler {
+    private static final Logger log = LoggerFactory.getLogger(ApiExceptionHandler.class);
+
     @ExceptionHandler(IllegalArgumentException.class)
-    public ResponseEntity<Map<String, Object>> handleBadRequest(IllegalArgumentException exception) {
-        return badRequest(exception.getMessage());
+    public ResponseEntity<ApiResponse<Void>> handleBadRequest(IllegalArgumentException exception) {
+        return error(HttpStatus.BAD_REQUEST, exception.getMessage());
     }
 
     @ExceptionHandler(MultipartException.class)
-    public ResponseEntity<Map<String, Object>> handleMultipartError(MultipartException exception) {
-        return badRequest("PDF import failed: file may be encrypted or not contain readable text");
+    public ResponseEntity<ApiResponse<Void>> handleMultipartError(MultipartException exception) {
+        return error(HttpStatus.BAD_REQUEST, "PDF import failed: file may be encrypted or not contain readable text");
     }
 
     @ExceptionHandler(MissingServletRequestParameterException.class)
-    public ResponseEntity<Map<String, Object>> handleMissingParam(MissingServletRequestParameterException e) {
-        return badRequest("Missing required parameter: " + e.getParameterName());
+    public ResponseEntity<ApiResponse<Void>> handleMissingParam(MissingServletRequestParameterException e) {
+        return error(HttpStatus.BAD_REQUEST, "Missing required parameter: " + e.getParameterName());
     }
 
     @ExceptionHandler(IOException.class)
-    public ResponseEntity<Map<String, Object>> handleIoError(IOException exception) {
-        return badRequest("IO error: " + exception.getMessage());
+    public ResponseEntity<ApiResponse<Void>> handleIoError(IOException exception) {
+        return error(HttpStatus.BAD_REQUEST, "Request processing failed");
     }
 
     @ExceptionHandler(MaxUploadSizeExceededException.class)
-    public ResponseEntity<Map<String, Object>> handleMaxUploadSize() {
-        return badRequest("File too large, max upload size is 120MB");
+    public ResponseEntity<ApiResponse<Void>> handleMaxUploadSize() {
+        return error(HttpStatus.BAD_REQUEST, "File too large, max upload size is 120MB");
     }
 
-    private ResponseEntity<Map<String, Object>> badRequest(String message) {
+    @ExceptionHandler(NoSuchElementException.class)
+    public ResponseEntity<ApiResponse<Void>> handleNotFound(NoSuchElementException e) {
+        return error(HttpStatus.NOT_FOUND, e.getMessage() != null ? e.getMessage() : "Resource not found");
+    }
+
+    @ExceptionHandler(AccessDeniedException.class)
+    public ResponseEntity<ApiResponse<Void>> handleAccessDenied(AccessDeniedException e) {
+        return error(HttpStatus.FORBIDDEN, "Access denied");
+    }
+
+    @ExceptionHandler(ResponseStatusException.class)
+    public ResponseEntity<ApiResponse<Void>> handleResponseStatus(ResponseStatusException e) {
+        return error(HttpStatus.valueOf(e.getStatusCode().value()), e.getReason());
+    }
+
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<ApiResponse<Void>> handleGeneric(Exception e) {
+        log.error("Unexpected error", e);
+        return error(HttpStatus.INTERNAL_SERVER_ERROR, "Internal server error");
+    }
+
+    private ResponseEntity<ApiResponse<Void>> error(HttpStatus status, String message) {
         return ResponseEntity
-                .status(HttpStatus.BAD_REQUEST)
-                .body(Map.of("message", message == null ? "Bad request" : message));
+                .status(status)
+                .body(ApiResponse.error(status.value(), message == null ? status.getReasonPhrase() : message));
     }
 }

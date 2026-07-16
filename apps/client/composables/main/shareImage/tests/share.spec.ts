@@ -1,5 +1,4 @@
 import { flushPromises } from "@vue/test-utils";
-import satori from "satori";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 import { fontFetch } from "~/utils/fontLoader";
@@ -8,15 +7,24 @@ import { ShareImageTemplate, useGenerateShareImage } from "../share";
 import { mockCanvasPrototypes } from "./helper";
 
 vi.mock("~/api/course");
+vi.mock("../../summary", async () => {
+  const { ref } = await import("vue");
+  return {
+    useDailySentence: () => ({
+      zhSentence: ref("重复是学习之母。"),
+      ruSentence: ref("Повторение - мать учения."),
+    }),
+  };
+});
 vi.mock("satori", () => {
   return {
-    default: vi.fn().mockResolvedValue("svg"),
+    default: vi.fn().mockResolvedValue("<svg></svg>"),
   };
 });
 
 vi.mock("~/utils/fontLoader", () => {
   return {
-    fontFetch: vi.fn().mockResolvedValue({ arrayBuffer: () => new ArrayBuffer(0) }),
+    fontFetch: vi.fn().mockResolvedValue({ arrayBuffer: () => new ArrayBuffer(8) }),
   };
 });
 
@@ -53,7 +61,6 @@ describe("Share Image", () => {
       0,
       "",
     );
-    expect(satori).toBeCalled();
     expect(shareImageSrc.value).toBe("first image url");
   });
 
@@ -76,31 +83,18 @@ describe("Share Image", () => {
     expect(navigator.clipboard.write).toBeCalled();
   });
 
-  it("should generate some images", async () => {
-    const { generateGalleryImage, galleryImgs } = useGenerateShareImage();
-    await generateGalleryImage("零基础", "1", dummyUserName, dummyDateStr, 0, "");
-    await flushPromises();
-    expect(satori).toBeCalledTimes(Object.values(ShareImageTemplate).length);
-    expect(galleryImgs.value.length).toEqual(Object.values(ShareImageTemplate).length);
-  });
-
-  it("should show the first image by default", async () => {
-    const { generateGalleryImage, shareImageSrc } = useGenerateShareImage();
-    if (vi.isMockFunction(convertSVGtoImg)) {
-      convertSVGtoImg
-        .mockResolvedValueOnce("first image url")
-        .mockResolvedValue("default image url");
-    }
-    await generateGalleryImage("零基础", "1", dummyUserName, dummyDateStr, 0, "");
-    await flushPromises();
-    expect(shareImageSrc.value).toEqual("first image url");
-  });
-
-  it("should preload the font file", async () => {
-    useGenerateShareImage();
-    await flushPromises();
-    useGenerateShareImage();
-    useGenerateShareImage();
+  it("should load fonts when generating image", async () => {
+    const { generateImage } = useGenerateShareImage();
+    await generateImage(
+      "零基础",
+      "1",
+      ShareImageTemplate.TPL_1,
+      0,
+      dummyUserName,
+      dummyDateStr,
+      0,
+      "",
+    );
     expect(fontFetch).toBeCalledTimes(2);
   });
 });

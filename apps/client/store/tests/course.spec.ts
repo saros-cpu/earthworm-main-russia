@@ -2,17 +2,17 @@ import { createPinia, setActivePinia } from "pinia";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 import { ref } from "vue";
 
+import { isAuthenticated } from "~/api/auth";
 import { fetchCompleteCourse, fetchCourse } from "~/api/course";
 import { fetchAddMasteredElement, fetchGetMasteredElements } from "~/api/mastered-elements";
 import { useActiveCourseMap } from "~/composables/courses/activeCourse";
-import { isAuthenticated } from "~/services/auth";
 import { useMasteredElementsStore } from "~/store/masteredElements";
 import { useCourseStore } from "../course";
 import { useStatement } from "../statement";
 
 vi.mock("~/api/course");
 vi.mock("~/api/mastered-elements");
-vi.mock("~/services/auth");
+vi.mock("~/api/auth");
 vi.mock("~/composables/courses/activeCourse");
 
 let mockSetupAutoSaveProgress = vi.fn();
@@ -64,6 +64,7 @@ const mockCourse = {
   ],
   coursePackId: "pack1",
   completionCount: 0,
+  locked: false,
   statementIndex: 0,
   video: "https://example.com/test-video.mp4",
 };

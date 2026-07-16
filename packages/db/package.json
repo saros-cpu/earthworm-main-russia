@@ -1,7 +1,7 @@
 {
   "name": "@earthworm/db",
   "version": "1.0.0",
-  "description": "",
+  "description": "[DEPRECATED] Legacy Drizzle DB utilities - replaced by backend/ (Spring Data JPA + Flyway). apps/api no longer exists.",
   "main": "src/index.ts",
   "scripts": {
     "init:ci": "tsx src/migrate.ts",

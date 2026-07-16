@@ -1,4 +1,4 @@
-# 鹅语菌 - 一键导出 MySQL 数据库
+# 俄语学习平台 - 一键导出 MySQL 数据库
 # 用途：换电脑/迁移服务器前，在本机产出可恢复的 SQL 备份。
 # 用法：在仓库根目录直接运行 .\backup-db.ps1
 
@@ -6,14 +6,15 @@ $ErrorActionPreference = "Continue"
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $root
 
-# 从 application.yml 读默认连接信息（如果你改过这里就 sync 一下）
+# 从环境变量读取数据库连接信息
+# 建议创建 .env 文件并运行前加载：Get-Content .env | ForEach-Object { $k,$v=$_.Split('=',2); [Environment]::SetEnvironmentVariable($k,$v,"Process") }
 $dbName     = "earthworm"
-$dbUser     = "root"
-$dbPassword = "***REDACTED***"
-
-# 允许通过环境变量覆盖（推荐，避免把密码进 git）
-if ($env:SPRING_DATASOURCE_USERNAME) { $dbUser     = $env:SPRING_DATASOURCE_USERNAME }
-if ($env:SPRING_DATASOURCE_PASSWORD) { $dbPassword = $env:SPRING_DATASOURCE_PASSWORD }
+$dbUser     = if ($env:SPRING_DATASOURCE_USERNAME) { $env:SPRING_DATASOURCE_USERNAME } else { "root" }
+$dbPassword = $env:SPRING_DATASOURCE_PASSWORD
+if (-not $dbPassword) {
+    Write-Host "请在运行前设置环境变量 SPRING_DATASOURCE_PASSWORD，或从 .env 文件加载。" -ForegroundColor Red
+    exit 1
+}
 
 if (-not (Get-Command mysqldump -ErrorAction SilentlyContinue)) {
     Write-Host "mysqldump not found. Add MySQL bin/ to PATH and try again." -ForegroundColor Red
@@ -25,15 +26,24 @@ $outFile   = Join-Path $root "earthworm-dump-$timestamp.sql"
 
 Write-Host "Backing up database '$dbName' to $outFile" -ForegroundColor Cyan
 
-# Use --password=xxx to avoid interactive password prompt
-& mysqldump `
-    --user=$dbUser `
-    --password=$dbPassword `
-    --single-transaction `
-    --default-character-set=utf8mb4 `
-    --routines --triggers `
-    --add-drop-table `
-    $dbName 2> "$root\backup-db.err.log" | Out-File -FilePath $outFile -Encoding UTF8
+$previousMysqlPwd = $env:MYSQL_PWD
+try {
+    # Avoid exposing the password in the mysqldump command line.
+    $env:MYSQL_PWD = $dbPassword
+    & mysqldump `
+        --user=$dbUser `
+        --single-transaction `
+        --default-character-set=utf8mb4 `
+        --routines --triggers `
+        --add-drop-table `
+        $dbName 2> "$root\backup-db.err.log" | Out-File -FilePath $outFile -Encoding UTF8
+} finally {
+    if ($null -eq $previousMysqlPwd) {
+        Remove-Item Env:MYSQL_PWD -ErrorAction SilentlyContinue
+    } else {
+        $env:MYSQL_PWD = $previousMysqlPwd
+    }
+}
 
 if ($LASTEXITCODE -ne 0) {
     Write-Host "mysqldump failed, check backup-db.err.log" -ForegroundColor Red

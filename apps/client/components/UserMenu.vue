@@ -65,10 +65,10 @@ import { navigateTo, useModal } from "#imports";
 import { useRuntimeConfig } from "nuxt/app";
 import { computed } from "vue";
 
+import { signOut } from "~/api/auth";
 import Dialog from "~/components/common/Dialog.vue";
 import { Theme, useDarkMode } from "~/composables/darkMode";
 import { useUserMenu } from "~/composables/user/useUserMenu";
-import { getStoredUser, signOut } from "~/services/auth";
 import { useUserStore } from "~/store/user";
 
 const { isUserMenuOpen, closeUserMenu } = useUserMenu();
@@ -84,7 +84,7 @@ const isDarkMode = computed(() => darkMode.value === Theme.DARK);
 const modal = useModal();
 
 const showMenuOptions = computed(() => {
-  const isAdmin = getStoredUser()?.role === "ADMIN";
+  const isAdmin = userStore.user?.role === "ADMIN";
   const options = [
     {
       title: "设置",

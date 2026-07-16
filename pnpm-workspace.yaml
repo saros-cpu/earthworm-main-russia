@@ -1,3 +1,10 @@
 packages:
   - 'apps/*'
-  - 'packages/*'
+  - 'packages/docs'
+  # packages/{schema,db,game-data-sdk,xingrong-courses} are deprecated; legacy Drizzle tooling was replaced by backend/
+allowBuilds:
+  '@parcel/watcher': true
+  cypress: true
+  esbuild: true
+  sharp: true
+  vue-demi: true

@@ -5,8 +5,8 @@
 <script setup lang="ts">
 import { toast } from "vue-sonner";
 
+import { signIn } from "~/api/auth";
 import { injectHttpStatusErrorHandler } from "~/api/http.js";
-import { signIn } from "~/services/auth";
 
 useHttpStatusError();
 

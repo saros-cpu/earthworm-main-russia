@@ -1,8 +1,8 @@
 import { defineStore } from "pinia";
 import { computed, ref } from "vue";
 
+import { isAuthenticated } from "~/api/auth";
 import { useLearningTimeTracker } from "~/composables/main/learningTimeTracker";
-import { isAuthenticated } from "~/services/auth";
 
 export type ComboRating = "C" | "B" | "A" | "S" | "SS" | "SSS";
 
@@ -21,6 +21,11 @@ export const useGameStore = defineStore("game", () => {
   const totalScore = ref(0);
   const totalCorrect = ref(0);
   const totalQuestions = ref(0);
+  const wrongAnswers = ref<{ english: string; chinese: string; yourAnswer: string }[]>([]);
+
+  function recordWrongAnswer(english: string, chinese: string, yourAnswer: string) {
+    wrongAnswers.value.push({ english, chinese, yourAnswer });
+  }
 
   function startGame() {
     gameStatus.value = GameStatus.STARTED;
@@ -44,7 +49,6 @@ export const useGameStore = defineStore("game", () => {
       }
       return true;
     } else {
-      console.log("Game is not started or already paused");
       return false;
     }
   }
@@ -56,7 +60,6 @@ export const useGameStore = defineStore("game", () => {
         startTracking();
       }
     } else {
-      console.log("Game is not paused");
     }
   }
 
@@ -67,7 +70,6 @@ export const useGameStore = defineStore("game", () => {
         stopTracking();
       }
     } else {
-      console.log("Game is not started so cannot complete level");
     }
   }
 
@@ -85,9 +87,9 @@ export const useGameStore = defineStore("game", () => {
     const accuracy = totalQuestions.value > 0 ? totalCorrect.value / totalQuestions.value : 0;
     if (accuracy >= 0.98 && maxCombo.value >= 10) return "SSS";
     if (accuracy >= 0.95 && maxCombo.value >= 7) return "SS";
-    if (accuracy >= 0.90 && maxCombo.value >= 5) return "S";
-    if (accuracy >= 0.80) return "A";
-    if (accuracy >= 0.60) return "B";
+    if (accuracy >= 0.9 && maxCombo.value >= 5) return "S";
+    if (accuracy >= 0.8) return "A";
+    if (accuracy >= 0.6) return "B";
     return "C";
   }
 
@@ -126,6 +128,7 @@ export const useGameStore = defineStore("game", () => {
     totalScore.value = 0;
     totalCorrect.value = 0;
     totalQuestions.value = 0;
+    wrongAnswers.value = [];
   }
 
   function isGameNotPlayed() {
@@ -164,5 +167,7 @@ export const useGameStore = defineStore("game", () => {
     isGameStarted,
     isGamePaused,
     isLevelCompleted,
+    wrongAnswers,
+    recordWrongAnswer,
   };
 });

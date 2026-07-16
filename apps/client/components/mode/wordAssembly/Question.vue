@@ -1,36 +1,64 @@
 <template>
-  <div class="mx-auto flex w-full max-w-5xl flex-col items-center" @keydown="handleKeydown" tabindex="0" ref="containerRef">
-    <div class="mb-4 inline-flex items-center gap-2 rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-bold text-slate-500 shadow-sm dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300">
-      <UIcon name="i-ph-keyboard" class="h-4 w-4 text-emerald-600 dark:text-emerald-300" />
+  <div
+    class="mx-auto flex w-full max-w-5xl flex-col items-center"
+    @keydown="handleKeydown"
+    tabindex="0"
+    ref="containerRef"
+  >
+    <div
+      class="mb-4 inline-flex items-center gap-2 rounded-md border border-slate-200 bg-white px-3 py-2 text-sm font-bold text-slate-500 shadow-sm dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300"
+    >
+      <UIcon
+        name="i-ph-keyboard"
+        class="h-4 w-4 text-emerald-600 dark:text-emerald-300"
+      />
       点击或拖拽单词拼成句子 · ← → 移动 · Backspace 移除
     </div>
 
-    <div class="mb-6 max-w-3xl text-center text-2xl font-black leading-snug text-slate-950 dark:text-gray-50 md:text-3xl">
+    <div
+      class="mb-6 max-w-3xl text-center text-2xl font-black leading-snug text-slate-950 dark:text-gray-50 md:text-3xl"
+    >
       {{ promptText }}
     </div>
 
     <div class="mb-6 flex items-center gap-4 text-sm text-slate-400">
       <span>{{ selectedWords.length }} / {{ totalWords }} 词</span>
-      <span v-if="timerRunning" class="font-mono text-emerald-600">{{ elapsed }}s</span>
+      <span
+        v-if="timerRunning"
+        class="font-mono text-emerald-600"
+        >{{ elapsed }}s</span
+      >
     </div>
 
     <!-- Built sentence area with drag-drop -->
-    <div class="mb-6 min-h-20 w-full max-w-3xl rounded-md border-2 border-dashed border-emerald-300 bg-emerald-50/50 p-4 dark:border-emerald-700 dark:bg-emerald-950/30"
-      @dragover.prevent @drop="onDropToSelected">
+    <div
+      class="mb-6 min-h-20 w-full max-w-3xl rounded-md border-2 border-dashed border-emerald-300 bg-emerald-50/50 p-4 dark:border-emerald-700 dark:bg-emerald-950/30"
+      @dragover.prevent
+      @drop="onDropToSelected"
+    >
       <div class="flex flex-wrap items-center gap-2">
-        <div v-for="(word, i) in selectedWords" :key="'s-' + i"
+        <div
+          v-for="(word, i) in selectedWords"
+          :key="'s-' + i"
           draggable="true"
           @dragstart="onDragStart(i, 'selected')"
           @dragover.prevent="dragOverIndex = i"
           @dragleave="dragOverIndex = -1"
           @drop="onDropReorder(i)"
           class="assembled-word"
-          :class="[dragOverIndex === i ? 'drag-over' : '', focusIndex === i ? 'ring-2 ring-emerald-400' : '']"
-          @click="removeWord(i)">
+          :class="[
+            dragOverIndex === i ? 'drag-over' : '',
+            focusIndex === i ? 'ring-2 ring-emerald-400' : '',
+          ]"
+          @click="removeWord(i)"
+        >
           {{ word }}
           <span class="ml-1 text-[10px] opacity-60">✕</span>
         </div>
-        <div v-if="selectedWords.length === 0" class="w-full py-4 text-center text-sm text-slate-400">
+        <div
+          v-if="selectedWords.length === 0"
+          class="w-full py-4 text-center text-sm text-slate-400"
+        >
           点击下方单词或拖拽到这里
         </div>
       </div>
@@ -38,25 +66,38 @@
 
     <!-- Scrambled word bank with drag -->
     <div class="mb-6 flex max-w-3xl flex-wrap justify-center gap-2">
-      <div v-for="(word, i) in availableWords" :key="'a-' + i"
+      <div
+        v-for="(word, i) in availableWords"
+        :key="'a-' + i"
         draggable="true"
         @dragstart="onDragStart(i, 'available')"
         class="word-chip"
-        @click="selectWord(i)">
+        @click="selectWord(i)"
+      >
         {{ word }}
       </div>
     </div>
 
-    <div v-if="wrongAttempt" class="mb-4 text-sm font-bold text-red-500 animate-shake">
+    <div
+      v-if="wrongAttempt"
+      class="mb-4 animate-shake text-sm font-bold text-red-500"
+    >
       顺序不对，再试一次
     </div>
 
     <div class="flex gap-3">
-      <button class="btn btn-outline btn-sm" @click="resetAssembly" :disabled="selectedWords.length === 0">
+      <button
+        class="btn btn-outline btn-sm"
+        @click="resetAssembly"
+        :disabled="selectedWords.length === 0"
+      >
         重置
       </button>
-      <button class="btn btn-sm border-none bg-slate-950 text-white hover:bg-slate-800 disabled:opacity-50 dark:bg-white dark:text-slate-950"
-        :disabled="selectedWords.length === 0 || !allWordsSelected" @click="submitAssembly">
+      <button
+        class="btn btn-sm border-none bg-slate-950 text-white hover:bg-slate-800 disabled:opacity-50 dark:bg-white dark:text-slate-950"
+        :disabled="selectedWords.length === 0 || !allWordsSelected"
+        @click="submitAssembly"
+      >
         提交 (Enter)
       </button>
     </div>
@@ -94,8 +135,8 @@ const elapsed = ref(0);
 const timerRunning = ref(false);
 let timerInterval: ReturnType<typeof setInterval> | null = null;
 
-const promptText = computed(() =>
-  courseStore.currentStatement?.sourceText || courseStore.currentStatement?.chinese || ""
+const promptText = computed(
+  () => courseStore.currentStatement?.sourceText || courseStore.currentStatement?.chinese || "",
 );
 
 const allWordsSelected = computed(() => availableWords.value.length === 0);
@@ -125,11 +166,16 @@ function initWords() {
 function startTimer() {
   stopTimer();
   timerRunning.value = true;
-  timerInterval = setInterval(() => { elapsed.value++; }, 1000);
+  timerInterval = setInterval(() => {
+    elapsed.value++;
+  }, 1000);
 }
 
 function stopTimer() {
-  if (timerInterval) { clearInterval(timerInterval); timerInterval = null; }
+  if (timerInterval) {
+    clearInterval(timerInterval);
+    timerInterval = null;
+  }
   timerRunning.value = false;
 }
 
@@ -159,7 +205,7 @@ function onDragStart(index: number, type: string) {
 
 function onDropToSelected(e: DragEvent) {
   if (!dragSource.value) return;
-  if (dragSource.value.type === 'available') {
+  if (dragSource.value.type === "available") {
     selectWord(dragSource.value.index);
   }
   dragSource.value = null;
@@ -167,7 +213,7 @@ function onDropToSelected(e: DragEvent) {
 
 function onDropReorder(targetIndex: number) {
   dragOverIndex.value = -1;
-  if (!dragSource.value || dragSource.value.type !== 'selected') return;
+  if (!dragSource.value || dragSource.value.type !== "selected") return;
   const from = dragSource.value.index;
   if (from === targetIndex) return;
   const [word] = selectedWords.value.splice(from, 1);
@@ -180,25 +226,25 @@ function onDropReorder(targetIndex: number) {
 function handleKeydown(e: KeyboardEvent) {
   if (submitted.value) return;
 
-  if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+  if (e.key === "ArrowRight" || e.key === "ArrowDown") {
     e.preventDefault();
     if (focusIndex.value < selectedWords.value.length - 1) {
       focusIndex.value++;
     } else if (availableWords.value.length > 0) {
       selectWord(0);
     }
-  } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+  } else if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
     e.preventDefault();
     if (focusIndex.value > 0) {
       focusIndex.value--;
     }
-  } else if (e.key === 'Backspace' && focusIndex.value >= 0) {
+  } else if (e.key === "Backspace" && focusIndex.value >= 0) {
     e.preventDefault();
     removeWord(focusIndex.value);
-  } else if (e.key === 'Enter' && allWordsSelected.value) {
+  } else if (e.key === "Enter" && allWordsSelected.value) {
     e.preventDefault();
     submitAssembly();
-  } else if (e.key === 'r' || e.key === 'R') {
+  } else if (e.key === "r" || e.key === "R") {
     if (selectedWords.value.length > 0) resetAssembly();
   }
 }
@@ -222,8 +268,18 @@ function submitAssembly() {
     showAnswer();
   } else {
     gameStore.recordAnswer(false);
+    const stmt = courseStore.currentStatement;
+    if (stmt) {
+      gameStore.recordWrongAnswer(
+        stmt.english || "",
+        stmt.chinese || "",
+        selectedWords.value.join(" "),
+      );
+    }
     wrongAttempt.value = true;
-    setTimeout(() => { wrongAttempt.value = false; }, 1500);
+    setTimeout(() => {
+      wrongAttempt.value = false;
+    }, 1500);
   }
 }
 
@@ -237,10 +293,13 @@ onUnmounted(() => {
   stopTimer();
 });
 
-watch(() => courseStore.statementIndex, () => {
-  initWords();
-  setTimeout(() => playSound(), 100);
-});
+watch(
+  () => courseStore.statementIndex,
+  () => {
+    initWords();
+    setTimeout(() => playSound(), 100);
+  },
+);
 </script>
 
 <style scoped>
@@ -253,7 +312,7 @@ watch(() => courseStore.statementIndex, () => {
   font-size: 1.125rem;
   font-weight: 700;
   color: #065f46;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   transition: all 0.15s;
   user-select: none;
 }
@@ -276,7 +335,7 @@ watch(() => courseStore.statementIndex, () => {
   font-size: 1.125rem;
   font-weight: 700;
   color: #020617;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   transition: all 0.15s;
   user-select: none;
 }
@@ -293,9 +352,18 @@ watch(() => courseStore.statementIndex, () => {
   animation: shake 0.4s ease-in-out;
 }
 @keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  25% { transform: translateX(-8px); }
-  50% { transform: translateX(8px); }
-  75% { transform: translateX(-4px); }
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-8px);
+  }
+  50% {
+    transform: translateX(8px);
+  }
+  75% {
+    transform: translateX(-4px);
+  }
 }
 </style>

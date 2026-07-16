@@ -48,6 +48,29 @@ export interface VocabularyItem {
   createdAt: string;
 }
 
+export interface WordItem {
+  id: string;
+  word: string;
+  chinese: string | null;
+  partOfSpeech: string | null;
+  phonetic: string | null;
+  exampleSentence: string | null;
+  exampleTranslation: string | null;
+  studyLevel: number;
+  sourceStatementId: string | null;
+  sourceCoursePackId: string | null;
+  notes: string | null;
+  createdAt: string;
+}
+
+export interface PaginatedWords {
+  content: WordItem[];
+  totalElements: number;
+  totalPages: number;
+  number: number;
+  size: number;
+}
+
 export async function fetchSaveExercise(params: {
   coursePackId: string;
   courseId: string;
@@ -96,7 +119,11 @@ export async function fetchRecordReview(statementId: string, quality: number) {
   });
 }
 
-export async function fetchScheduleReview(statementId: string, coursePackId: string, courseId: string) {
+export async function fetchScheduleReview(
+  statementId: string,
+  coursePackId: string,
+  courseId: string,
+) {
   const http = getHttp();
   return http("/reviews/schedule", {
     method: "post",
@@ -129,4 +156,27 @@ export async function fetchRemoveVocabulary(word: string) {
     method: "delete",
     params: { word },
   });
+}
+
+export async function fetchWords(params: { page?: number; size?: number; search?: string }) {
+  const http = getHttp();
+  return http<PaginatedWords>("/words", { method: "get", params });
+}
+
+export async function fetchWordById(id: string) {
+  const http = getHttp();
+  return http<WordItem>(`/words/${id}`, { method: "get" });
+}
+
+export async function fetchUpdateWord(id: string, updates: Partial<WordItem>) {
+  const http = getHttp();
+  return http<WordItem>(`/words/${id}`, {
+    method: "patch",
+    body: updates,
+  });
+}
+
+export async function fetchDeleteWord(id: string) {
+  const http = getHttp();
+  return http<{ removed: boolean }>(`/words/${id}`, { method: "delete" });
 }

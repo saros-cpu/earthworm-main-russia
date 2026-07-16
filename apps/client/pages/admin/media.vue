@@ -42,19 +42,34 @@
                 <span class="text-sm font-bold text-slate-900 dark:text-slate-100">{{
                   pack.title
                 }}</span>
+                <span
+                  v-if="pack.archived"
+                  class="ml-2 rounded bg-amber-100 px-2 py-0.5 text-xs text-amber-700 dark:bg-amber-950 dark:text-amber-200"
+                  >已归档</span
+                >
                 <span class="ml-2 text-xs text-slate-400">{{ pack.id }}</span>
               </div>
             </div>
             <div class="flex items-center gap-3">
               <span
+                v-if="pack.mediaCount !== null"
                 class="rounded bg-emerald-100 px-2 py-0.5 text-xs font-bold text-emerald-700 dark:bg-emerald-950 dark:text-emerald-200"
                 >{{ pack.mediaCount }} 个媒体</span
               >
               <span
+                v-else
+                class="rounded bg-slate-100 px-2 py-0.5 text-xs text-slate-500 dark:bg-slate-800 dark:text-slate-300"
+                >展开后统计</span
+              >
+              <span
+                v-if="pack.mediaCount !== null"
                 class="rounded bg-slate-100 px-2 py-0.5 text-xs text-slate-600 dark:bg-slate-800 dark:text-slate-300"
               >
-                <template v-if="pack.videoCount > 0">{{ pack.videoCount }} 视频</template>
-                <template v-else-if="pack.audioCount > 0">{{ pack.audioCount }} 音频</template>
+                <template v-if="(pack.videoCount ?? 0) > 0">{{ pack.videoCount }} 视频</template>
+                <template v-else-if="(pack.audioCount ?? 0) > 0"
+                  >{{ pack.audioCount }} 音频</template
+                >
+                <template v-else>无媒体</template>
               </span>
             </div>
           </button>
@@ -92,6 +107,12 @@
                 <div class="min-w-0 flex-1">
                   <div class="font-medium text-slate-900 dark:text-slate-100">
                     {{ course.title }}
+                  </div>
+                  <div
+                    v-if="course.archived"
+                    class="text-xs text-amber-600 dark:text-amber-300"
+                  >
+                    已归档
                   </div>
                 </div>
                 <div
@@ -196,19 +217,19 @@ import { computed, ref } from "vue";
 import { toast } from "vue-sonner";
 
 import type { AdminCourse, AdminCoursePack } from "~/api/admin";
-import {
-  fetchAdminCourse,
-  fetchAdminCoursePack,
-  fetchAdminCoursePacks,
-  updateAdminCourse,
-} from "~/api/admin";
+import { fetchAdminCoursePack, fetchAdminCoursePacks, updateAdminCourse } from "~/api/admin";
+import { isVideoMediaSource } from "~/utils/media";
 
 definePageMeta({ layout: "admin", middleware: "admin" });
 
+type MediaPack = AdminCoursePack & {
+  mediaCount: number | null;
+  videoCount: number | null;
+  audioCount: number | null;
+};
+
 const searchQuery = ref("");
-const packs = ref<
-  (AdminCoursePack & { mediaCount: number; videoCount: number; audioCount: number })[]
->([]);
+const packs = ref<MediaPack[]>([]);
 const expandedPacks = ref(new Set<string>());
 const packCourses = ref<Record<string, AdminCourse[]>>({});
 const loadingCourses = ref(new Set<string>());
@@ -224,8 +245,7 @@ const filteredPacks = computed(() => {
 });
 
 function isVideo(path: string) {
-  const ext = path.split(".").pop()?.toLowerCase();
-  return ["mp4", "avi", "flv", "wmv", "webm"].includes(ext || "");
+  return isVideoMediaSource(path);
 }
 
 function togglePack(id: string) {
@@ -243,7 +263,10 @@ async function loadPackCourses(id: string) {
   loadingCourses.value.add(id);
   try {
     const pack = await fetchAdminCoursePack(id);
-    packCourses.value[id] = pack.courses || [];
+    const courses = pack.courses || [];
+    packCourses.value[id] = courses;
+    const summary = summarizeMedia(courses);
+    packs.value = packs.value.map((item) => (item.id === id ? { ...item, ...summary } : item));
   } catch {
     toast.error("加载课程失败");
   } finally {
@@ -259,12 +282,18 @@ function editCourseMedia(course: AdminCourse) {
 async function saveMediaPath() {
   if (!editTarget.value) return;
   try {
-    await updateAdminCourse(editTarget.value.id, {
+    const updated = await updateAdminCourse(editTarget.value.id, {
       title: editTarget.value.title,
       description: editTarget.value.description,
       video: editPath.value,
     });
-    const packId = editTarget.value.id.split("-").slice(0, -1).join("-");
+    Object.assign(editTarget.value, updated);
+    const containingPack = packs.value.find((pack) =>
+      packCourses.value[pack.id]?.some((course) => course.id === updated.id),
+    );
+    if (containingPack) {
+      Object.assign(containingPack, summarizeMedia(packCourses.value[containingPack.id]));
+    }
     toast.success("媒体路径已更新");
     editTarget.value = null;
   } catch {
@@ -275,16 +304,16 @@ async function saveMediaPath() {
 async function load() {
   try {
     const raw = await fetchAdminCoursePacks();
-    packs.value = raw.map((p) => {
-      const courses = p.courses || [];
-      const mediaCount = courses.filter((c) => c.video && c.video.trim()).length;
-      const videoCount = courses.filter((c) => c.video && isVideo(c.video)).length;
-      const audioCount = mediaCount - videoCount;
-      return { ...p, mediaCount, videoCount, audioCount };
-    });
+    packs.value = raw.map((p) => ({ ...p, mediaCount: null, videoCount: null, audioCount: null }));
   } catch {
     toast.error("加载失败");
   }
+}
+
+function summarizeMedia(courses: AdminCourse[]) {
+  const mediaCount = courses.filter((course) => course.video && course.video.trim()).length;
+  const videoCount = courses.filter((course) => course.video && isVideo(course.video)).length;
+  return { mediaCount, videoCount, audioCount: mediaCount - videoCount };
 }
 
 load();

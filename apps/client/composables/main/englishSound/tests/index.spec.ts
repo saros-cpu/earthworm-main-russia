@@ -1,14 +1,15 @@
 import { createTestingPinia } from "@pinia/testing";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
+import { PronunciationType, usePronunciation } from "~/composables/user/pronunciation";
 import { useCourseStore } from "~/store/course";
-import { play, updateSource } from "../audio";
+import { playSource, speakRussian, updateSource } from "../audio";
 import { useCurrentStatementEnglishSound } from "../index";
 
 vi.mock("../audio.ts", () => {
   return {
     updateSource: vi.fn(),
-    play: vi.fn(),
+    playSource: vi.fn(),
     speakRussian: vi.fn(() => false),
   };
 });
@@ -16,6 +17,7 @@ vi.mock("../audio.ts", () => {
 describe("useCurrentStatementEnglishSound", () => {
   beforeEach(() => {
     vi.useFakeTimers();
+    localStorage.clear();
     createTestingPinia({
       createSpy: vi.fn,
     });
@@ -33,12 +35,25 @@ describe("useCurrentStatementEnglishSound", () => {
     vi.clearAllMocks();
   });
 
-  it("plays sound", async () => {
+  it("plays sound with the backend TTS voice by default", async () => {
     const { playSound } = useCurrentStatementEnglishSound();
 
     playSound();
 
-    expect(play).toHaveBeenCalled();
+    expect(speakRussian).not.toHaveBeenCalled();
+    expect(playSource).toHaveBeenCalled();
+  });
+
+  it("uses the system voice only when system default pronunciation is selected", async () => {
+    const { togglePronunciation } = usePronunciation();
+    togglePronunciation(PronunciationType.British);
+    vi.mocked(speakRussian).mockReturnValueOnce(() => {});
+    const { playSound } = useCurrentStatementEnglishSound();
+
+    playSound();
+
+    expect(speakRussian).toHaveBeenCalled();
+    expect(playSource).not.toHaveBeenCalled();
   });
 
   it("should updates audio source", async () => {

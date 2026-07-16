@@ -24,6 +24,16 @@
         </UTooltip>
       </div>
       <MainStudyVideoLink :video="courseStore.currentCourse?.video" />
+      <button
+        @click="showAiDialogue = true"
+        class="ml-2 hidden h-8 items-center gap-1 rounded-md border border-purple-200 px-2.5 text-xs font-bold text-purple-600 transition hover:bg-purple-50 dark:border-purple-800 dark:text-purple-300 dark:hover:bg-purple-950 sm:inline-flex"
+      >
+        <UIcon
+          name="i-ph-sparkle"
+          class="h-3.5 w-3.5"
+        />
+        AI 对话
+      </button>
     </div>
 
     <!-- 右侧 -->
@@ -70,30 +80,23 @@
           />
         </UTooltip>
       </div>
-      <div @click="rankingStore.showRankModal">
-        <UTooltip text="排行榜">
-          <UIcon
-            name="i-ph-ranking"
-            class="clickable-icon"
-          />
-        </UTooltip>
-      </div>
     </div>
 
     <MainCourseContents v-model:isOpen="isOpenCourseContents"></MainCourseContents>
+    <MainAiDialogue v-model="showAiDialogue" />
   </div>
 
   <CommonProgressBar
     class="h-2 rounded-none p-0"
     :percentage="currentPercentage"
   />
-  <RankRankingBoard />
 </template>
 
 <script setup lang="ts">
 import { useModal } from "#imports";
 import { computed, ref } from "vue";
 
+import { isAuthenticated } from "~/api/auth";
 import Dialog from "~/components/common/Dialog.vue";
 import { useQuestionInput } from "~/components/main/QuestionInput/questionInputHelper";
 import { courseTimer } from "~/composables/courses/courseTimer";
@@ -102,10 +105,8 @@ import { clearQuestionInput } from "~/composables/main/question";
 import { useCourseContents } from "~/composables/main/useCourseContents";
 import { useGamePause } from "~/composables/main/useGamePause";
 import { useGameSetting } from "~/composables/main/useGameSetting";
-import { useRanking } from "~/composables/rank/rankingList";
 import { useGamePlayMode } from "~/composables/user/gamePlayMode";
 import { parseShortcut, useShortcutKeyMode } from "~/composables/user/shortcutKey";
-import { isAuthenticated } from "~/services/auth";
 import { useCourseStore } from "~/store/course";
 
 const { shortcutKeys } = useShortcutKeyMode();
@@ -123,7 +124,6 @@ const modeOptions = computed(() =>
 function switchMode(option: any) {
   if (option?.value) toggleGamePlayMode(option.value);
 }
-const rankingStore = useRanking();
 const courseStore = useCourseStore();
 const { focusInput } = useQuestionInput();
 const { openCourseContents } = useCourseContents();
@@ -150,6 +150,7 @@ const currentPercentage = computed(() => {
 });
 
 const isOpenCourseContents = ref(false);
+const showAiDialogue = ref(false);
 
 function useDoAgain() {
   const { showQuestion } = useGameMode();

@@ -3,6 +3,7 @@ $ErrorActionPreference = "Stop"
 
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $root
+. (Join-Path $root "scripts\prod-process-control.ps1")
 
 foreach ($name in @("AI_PROVIDER", "OPENROUTER_API_KEY", "OPENROUTER_BASE_URL", "OPENROUTER_MODEL", "OPENROUTER_SITE_URL", "OPENROUTER_APP_NAME")) {
     if (-not [Environment]::GetEnvironmentVariable($name, "Process")) {
@@ -10,15 +11,6 @@ foreach ($name in @("AI_PROVIDER", "OPENROUTER_API_KEY", "OPENROUTER_BASE_URL", 
         if ($value) {
             [Environment]::SetEnvironmentVariable($name, $value, "Process")
         }
-    }
-}
-
-function Stop-Port($port) {
-    $processIds = Get-NetTCPConnection -State Listen -LocalPort $port -ErrorAction SilentlyContinue |
-        Select-Object -ExpandProperty OwningProcess -Unique
-
-    foreach ($processId in $processIds) {
-        Stop-Process -Id $processId -Force -ErrorAction SilentlyContinue
     }
 }
 
@@ -37,11 +29,11 @@ function Wait-Http($url, $name) {
     throw "$name did not become ready: $url"
 }
 
-Write-Host "Stopping old local services on ports 8080 and 3000..."
-Stop-Port 8080
-Stop-Port 3000
+Write-Host "Checking that local ports 8000 and 3000 are available..."
+Assert-PortAvailable 8000 "Backend"
+Assert-PortAvailable 3000 "Frontend"
 
-Write-Host "Starting Spring Boot backend on http://localhost:8080 ..."
+Write-Host "Starting Spring Boot backend on http://localhost:8000 ..."
 Start-Process `
     -FilePath "mvn" `
     -ArgumentList "-f backend/pom.xml spring-boot:run" `
@@ -50,7 +42,7 @@ Start-Process `
     -RedirectStandardError "$root\backend-spring.err.log" `
     -WindowStyle Hidden
 
-Wait-Http "http://localhost:8080/course-pack" "Backend"
+Wait-Http "http://localhost:8000/course-pack" "Backend"
 
 $pnpm = (Get-Command pnpm.cmd -ErrorAction Stop).Source
 
@@ -68,6 +60,6 @@ Wait-Http "http://localhost:3000" "Frontend"
 Write-Host ""
 Write-Host "Local app is running."
 Write-Host "Frontend: http://localhost:3000"
-Write-Host "Backend:  http://localhost:8080"
+Write-Host "Backend:  http://localhost:8000"
 Write-Host "Backend log:  backend-spring.log"
 Write-Host "Frontend log: frontend-nuxt.log"

@@ -1,35 +1,42 @@
 @echo off
 chcp 65001 >nul
-title 中大俄语 - 一键启动
+title 俄语学习平台 - 一键启动
 cd /d D:\earthworm-main
 
+REM ⚠ 此脚本仅用于开发模式（pnpm dev），生产环境请使用 .\prod-start.ps1
+
 echo ========================================
-echo   中大俄语 - 一键启动
+echo   俄语学习平台 - 一键启动
 echo ========================================
 echo.
 
 :: ==========================================
-:: 1️⃣ 清理端口残留进程
+:: 1️⃣ 确认服务端口可用
 :: ==========================================
-echo [1/5] 清理端口 8080 和 3000 残留进程...
-
-for /f "tokens=5" %%a in ('netstat -ano ^| findstr ":8080"') do (
-    if not "%%a"=="0" taskkill /F /PID %%a >nul 2>&1
+echo [1/5] 检查端口 8000 和 3000...
+powershell -NoProfile -ExecutionPolicy Bypass -Command ". '.\scripts\prod-process-control.ps1'; Assert-PortAvailable 8000 'Backend'; Assert-PortAvailable 3000 'Frontend'"
+if errorlevel 1 (
+    echo [ERROR] 端口已被其他程序占用，未结束任何进程。
+    exit /b 1
 )
-for /f "tokens=5" %%a in ('netstat -ano ^| findstr ":3000"') do (
-    if not "%%a"=="0" taskkill /F /PID %%a >nul 2>&1
-)
-echo [OK] 端口已清理
-timeout /t 2 /nobreak >nul
+echo [OK] 端口可用
 
 :: ==========================================
 :: 2️⃣ 设置后端环境变量
 :: ==========================================
 echo [2/5] 设置环境变量...
-set JWT_SECRET=YOUR_RANDOM_256_BIT_STRING
-set SPRING_DATASOURCE_URL=jdbc:mysql://localhost:3306/earthworm?useSSL=false&serverTimezone=UTC
-set SPRING_DATASOURCE_USERNAME=root
-set SPIRNG_DATASOURCE_PASSWORD=***REDACTED***
+if "%JWT_SECRET%"=="" (
+    echo [ERROR] JWT_SECRET must be set before startup.
+    exit /b 1
+)
+if "%SPRING_DATASOURCE_URL%"=="" set SPRING_DATASOURCE_URL=jdbc:mysql://127.0.0.1:3306/earthworm?useSSL=false^&serverTimezone=UTC
+if "%SPRING_DATASOURCE_USERNAME%"=="" set SPRING_DATASOURCE_USERNAME=reader
+if "%SPRING_DATASOURCE_PASSWORD%"=="" (
+    echo [ERROR] SPRING_DATASOURCE_PASSWORD must be set before startup.
+    exit /b 1
+)
+REM ⚠ 密码已从代码中移除。请在系统环境变量中设置 SPRING_DATASOURCE_PASSWORD，或在运行前 set 该变量。
+REM set SPRING_DATASOURCE_PASSWORD=你的密码
 echo [OK] 环境变量已设置
 
 :: ==========================================
@@ -51,7 +58,7 @@ echo [OK] 启动脚本已生成
 :: ==========================================
 :: 4️⃣ 启动前后端
 :: ==========================================
-echo [4/5] 启动后端 Spring Boot（端口 8080）...
+echo [4/5] 启动后端 Spring Boot（端口 8000）...
 wscript //nologo "%TEMP%\start-be.vbs"
 echo      日志: backend-spring.log
 
@@ -66,8 +73,8 @@ echo [5/5] 等待服务启动（最长 90 秒）...
 
 set BACKEND_OK=0
 for /l %%i in (1,1,30) do (
-    >nul 2>&1 curl -s http://localhost:8080/actuator/health && set BACKEND_OK=1 && goto backend_ok
-    >nul 2>&1 curl -s http://localhost:8080/course-pack && set BACKEND_OK=1 && goto backend_ok
+    >nul 2>&1 curl -s http://localhost:8000/actuator/health && set BACKEND_OK=1 && goto backend_ok
+    >nul 2>&1 curl -s http://localhost:8000/course-pack && set BACKEND_OK=1 && goto backend_ok
     timeout /t 2 /nobreak >nul
 )
 :backend_ok
@@ -84,7 +91,7 @@ for /l %%i in (1,1,30) do (
 :: ==========================================
 echo.
 echo ========================================
-if "%BACKEND_OK%"=="1" ( echo [OK] 后端 http://localhost:8080 ) else ( echo [!!] 后端启动异常，请检查 backend-spring.log )
+if "%BACKEND_OK%"=="1" ( echo [OK] 后端 http://localhost:8000 ) else ( echo [!!] 后端启动异常，请检查 backend-spring.log )
 if "%FRONTEND_OK%"=="1" ( echo [OK] 前端 http://localhost:3000 ) else ( echo [!!] 前端启动异常，请检查 frontend-nuxt.log )
 echo ========================================
 if not "%BACKEND_OK%"=="1" echo 查看日志: type backend-spring.log ^| more

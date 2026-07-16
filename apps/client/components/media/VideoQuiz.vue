@@ -7,13 +7,16 @@
       >
         <video
           ref="mediaRef"
-          :src="src"
           controls
           class="w-full"
           style="max-height: 50vh"
           @error="onError"
+          @timeupdate="onTimeUpdate"
         >
-          <source :src="src" />
+          <source
+            :src="src"
+            type="video/mp4"
+          />
         </video>
       </div>
       <div
@@ -30,6 +33,7 @@
           controls
           class="w-full"
           @error="onError"
+          @timeupdate="onTimeUpdate"
         ></audio>
       </div>
 
@@ -114,7 +118,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onUnmounted, ref } from "vue";
+import { computed, onMounted, onUnmounted, ref } from "vue";
 
 import type { Course } from "~/types";
 
@@ -130,9 +134,37 @@ const error = ref("");
 const isTranscoding = ref(false);
 const currentIndex = ref(0);
 const showAnswer = ref(false);
+const mediaTime = ref(0);
 let retryTimer: ReturnType<typeof setTimeout> | null = null;
 
 const statements = computed(() => props.course.statements || []);
+
+const estimatedStatementIndex = computed(() => {
+  const stmts = statements.value;
+  const time = mediaTime.value;
+  if (!stmts.length || time <= 0) return -1;
+  const hasTimestamps = stmts.some((s: any) => typeof s.startTime === "number");
+  if (hasTimestamps) {
+    for (let i = stmts.length - 1; i >= 0; i--) {
+      const s = stmts[i] as any;
+      if (typeof s.startTime === "number" && time >= s.startTime) return i;
+    }
+    return -1;
+  }
+  const avgLen = Math.max(5, (mediaRef.value?.duration || 120) / stmts.length);
+  return Math.min(Math.floor(time / avgLen), stmts.length - 1);
+});
+
+function onTimeUpdate() {
+  const el = mediaRef.value;
+  if (el) {
+    mediaTime.value = el.currentTime;
+    const idx = estimatedStatementIndex.value;
+    if (idx >= 0 && idx !== currentIndex.value) {
+      currentIndex.value = idx;
+    }
+  }
+}
 
 function onError(e: Event) {
   checkAndRetry(e);

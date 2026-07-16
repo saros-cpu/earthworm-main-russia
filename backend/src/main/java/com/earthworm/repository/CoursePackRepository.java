@@ -5,5 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface CoursePackRepository extends JpaRepository<CoursePack, String> {
-    List<CoursePack> findByShareLevelOrderByOrderAsc(String shareLevel);
+    List<CoursePack> findByShareLevelIgnoreCaseAndArchivedFalseOrderByOrderAsc(String shareLevel);
+
+    List<CoursePack> findByShareLevelIgnoreCaseAndArchivedFalseAndTitleContainingIgnoreCaseOrderByOrderAsc(String shareLevel, String keyword);
 }

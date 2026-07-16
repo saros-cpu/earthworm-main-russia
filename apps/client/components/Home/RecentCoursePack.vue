@@ -24,6 +24,7 @@
               cover: coursePack.cover,
               isFree: coursePack.isFree,
             }"
+            @cardClick="gotoGame(coursePack.coursePackId, coursePack.courseId)"
           >
             <template #actions>
               <div class="mt-3 flex gap-2">

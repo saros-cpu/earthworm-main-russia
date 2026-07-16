@@ -10,6 +10,7 @@ import java.util.*;
 
 @Service
 public class NoteService {
+    private static final int MAX_CONTENT_LENGTH = 4000;
     private final StatementNoteRepository repository;
 
     public NoteService(StatementNoteRepository repository) {
@@ -22,8 +23,28 @@ public class NoteService {
     }
 
     @Transactional
+    public List<Map<String, Object>> getAllNotes() {
+        String userId = UserContext.getUserId();
+        return repository.findByUserIdOrderByUpdatedAtDesc(userId).stream().map(this::toMap).toList();
+    }
+
+    @Transactional
+    public void deleteNote(String noteId) {
+        String userId = UserContext.getUserId();
+        StatementNote note = repository.findById(noteId)
+                .orElseThrow(() -> new NoSuchElementException("Note not found"));
+        if (!note.getUserId().equals(userId)) {
+            throw new IllegalArgumentException("Cannot delete another user's note");
+        }
+        repository.delete(note);
+    }
+
     public Map<String, Object> upsertNote(String statementId, String content) {
         String userId = UserContext.getUserId();
+        String safeContent = content == null ? "" : content;
+        if (safeContent.length() > MAX_CONTENT_LENGTH) {
+            throw new IllegalArgumentException("Note content is too long");
+        }
         List<StatementNote> existing = repository.findByUserIdAndStatementId(userId, statementId);
         StatementNote note;
         if (!existing.isEmpty()) {
@@ -34,7 +55,7 @@ public class NoteService {
             note.setUserId(userId);
             note.setStatementId(statementId);
         }
-        note.setContent(content);
+        note.setContent(safeContent);
         repository.save(note);
         return toMap(note);
     }

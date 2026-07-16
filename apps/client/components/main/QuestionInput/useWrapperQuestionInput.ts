@@ -1,7 +1,10 @@
+import { fetchAiGrammarExplanation } from "~/api/ai";
 import { courseTimer } from "~/composables/courses/courseTimer";
+import { useErrorExplanationStore } from "~/composables/main/errorExplanationStore";
 import { useGameMode } from "~/composables/main/game";
 import { useInput } from "~/composables/main/question";
 import { useSummary } from "~/composables/main/summary";
+import { useWeaknessAnalysis } from "~/composables/main/weaknessAnalysis";
 import { useAutoNextQuestion } from "~/composables/user/autoNext";
 import { useKeyboardSound } from "~/composables/user/sound";
 import { useSpaceSubmitAnswer } from "~/composables/user/submitKey";
@@ -35,7 +38,8 @@ export function useWrapperQuestionInput() {
     isFixMode,
     isFixInputMode,
   } = useInput({
-    source: () => courseStore.currentStatement?.targetText || courseStore.currentStatement?.english || "",
+    source: () =>
+      courseStore.currentStatement?.targetText || courseStore.currentStatement?.english || "",
     setInputCursorPosition,
     getInputCursorPosition,
     inputChangedCallback,
@@ -63,6 +67,34 @@ export function useWrapperQuestionInput() {
     }
   }
 
+  function handleAnswerWrong() {
+    const stmt = courseStore.currentStatement;
+    if (stmt) {
+      useWeaknessAnalysis().analyzeError(stmt.english || stmt.targetText || "");
+      gameStore.recordWrongAnswer(
+        stmt.english || stmt.targetText || "",
+        stmt.chinese || "",
+        inputValue.value,
+      );
+      const stmtId = stmt.id || String(courseStore.statementIndex);
+      const { setLoading, setExplanation } = useErrorExplanationStore();
+      setLoading(stmtId, {
+        sentenceRussian: stmt.english || stmt.targetText || "",
+        sentenceChinese: stmt.chinese || "",
+        userAnswer: inputValue.value,
+      });
+      fetchAiGrammarExplanation({
+        sentenceRussian: stmt.english || stmt.targetText || "",
+        sentenceChinese: stmt.chinese || "",
+        userAnswer: inputValue.value,
+      })
+        .then((text) => setExplanation(stmtId, text))
+        .catch(() => {});
+    }
+    gameStore.recordAnswer(false);
+    handleAnswerError();
+  }
+
   return {
     initializeQuestionInput,
     isFixMode,
@@ -71,7 +103,7 @@ export function useWrapperQuestionInput() {
     inputValue,
     setInputValue,
     submitAnswer() {
-      submitAnswer(handleAnswerRight, handleAnswerError);
+      submitAnswer(handleAnswerRight, handleAnswerWrong);
       focusInput();
     },
     handleKeyboardInput(e: KeyboardEvent) {
@@ -79,7 +111,7 @@ export function useWrapperQuestionInput() {
         useSpaceSubmitAnswer: {
           enable: isUseSpaceSubmitAnswer(),
           rightCallback: handleAnswerRight,
-          errorCallback: handleAnswerError,
+          errorCallback: handleAnswerWrong,
         },
       });
     },

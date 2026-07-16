@@ -29,17 +29,17 @@
             class="mb-5 inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white/70 px-3 py-1 text-sm font-semibold text-slate-700 shadow-sm dark:border-slate-700 dark:bg-slate-900/70 dark:text-slate-200"
           >
             <span class="h-2 w-2 rounded-full bg-emerald-500"></span>
-            Привет! 从俄语字母到整句表达
+            {{ $t("landing.bannerBadge") }}
           </div>
 
           <h1
             class="text-5xl font-black leading-tight tracking-normal text-slate-950 dark:text-white md:text-6xl lg:text-7xl"
           >
-            中大俄语
+            俄语学习平台
             <span
               class="ml-3 align-middle text-2xl font-bold text-emerald-700 dark:text-emerald-300 md:text-3xl"
             >
-              Джунда&nbsp;русский
+              {{ $t("landing.brandName") }}
             </span>
           </h1>
           <p
@@ -81,7 +81,7 @@
           <div class="relative">
             <img
               src="/logo-circle.png"
-              alt="中大俄语 logo"
+              alt="俄语学习平台图标"
               width="280"
               height="280"
               class="h-56 w-56 lg:h-72 lg:w-72"
@@ -198,12 +198,14 @@ function handleKeydown() {
 
 <style scoped>
 .banner-hero {
-  background: radial-gradient(1200px 600px at 12% 10%, rgba(16, 185, 129, 0.16), transparent 60%),
+  background:
+    radial-gradient(1200px 600px at 12% 10%, rgba(16, 185, 129, 0.16), transparent 60%),
     radial-gradient(900px 500px at 88% 90%, rgba(168, 85, 247, 0.18), transparent 60%),
     linear-gradient(180deg, #fbf7f0 0%, #f3efe7 100%);
 }
 :global(.dark) .banner-hero {
-  background: radial-gradient(1200px 600px at 12% 10%, rgba(16, 185, 129, 0.2), transparent 60%),
+  background:
+    radial-gradient(1200px 600px at 12% 10%, rgba(16, 185, 129, 0.2), transparent 60%),
     radial-gradient(900px 500px at 88% 90%, rgba(168, 85, 247, 0.22), transparent 60%),
     linear-gradient(180deg, #0f1218 0%, #14161d 100%);
 }

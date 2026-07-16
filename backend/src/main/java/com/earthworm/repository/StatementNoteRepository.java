@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface StatementNoteRepository extends JpaRepository<StatementNote, String> {
     List<StatementNote> findByUserIdAndStatementId(String userId, String statementId);
+    List<StatementNote> findByUserIdOrderByUpdatedAtDesc(String userId);
 }

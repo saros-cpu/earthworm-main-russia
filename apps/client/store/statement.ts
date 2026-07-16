@@ -4,8 +4,8 @@ import { debounce } from "lodash-es";
 import { ref, watch } from "vue";
 
 import type { Course } from "~/types";
+import { isAuthenticated } from "~/api/auth";
 import { fetchUpdateCourseProgress } from "~/api/user-course-progress";
-import { isAuthenticated } from "~/services/auth";
 
 const DEBOUNCE_TIME = 5000;
 const INTERVAL_TIME = 60 * 1000 * 5;

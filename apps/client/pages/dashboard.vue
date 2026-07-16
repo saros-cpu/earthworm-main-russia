@@ -4,7 +4,7 @@
       <div>
         <h1 class="text-3xl font-black text-slate-950 dark:text-white">课程库总览</h1>
         <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">
-          实时统计、按系列分布、单包详情，并提供一键重灌按钮。
+          实时统计、按系列分布与单包详情。
         </p>
       </div>
       <div class="flex gap-2">
@@ -15,20 +15,11 @@
         >
           {{ loading ? "刷新中…" : "刷新" }}
         </button>
-        <button
-          class="inline-flex h-9 items-center rounded-md bg-fuchsia-600 px-3 text-sm font-bold text-white hover:bg-fuchsia-700 disabled:opacity-50"
-          :disabled="!!busy"
-          @click="reseed('torfl')"
+        <span
+          class="inline-flex h-9 items-center rounded-md bg-amber-50 px-3 text-xs font-bold text-amber-700 dark:bg-amber-950 dark:text-amber-300"
         >
-          {{ busy === "torfl" ? "TORFL 重灌中…" : "重灌 TORFL" }}
-        </button>
-        <button
-          class="inline-flex h-9 items-center rounded-md bg-indigo-600 px-3 text-sm font-bold text-white hover:bg-indigo-700 disabled:opacity-50"
-          :disabled="!!busy"
-          @click="reseed('custom')"
-        >
-          {{ busy === "custom" ? "专业包重灌中…" : "重灌专业包" }}
-        </button>
+          重灌已停用：保护学习记录
+        </span>
       </div>
     </header>
 
@@ -180,7 +171,6 @@ type Stats = {
 
 const stats = ref<Stats | null>(null);
 const loading = ref(false);
-const busy = ref<"torfl" | "custom" | "">("");
 const lastMessage = ref("");
 
 const maxStatements = computed(() =>
@@ -199,21 +189,6 @@ async function reload() {
     lastMessage.value = `加载失败: ${e?.message || e}`;
   } finally {
     loading.value = false;
-  }
-}
-
-async function reseed(kind: "torfl" | "custom") {
-  busy.value = kind;
-  lastMessage.value = "";
-  try {
-    const path = kind === "torfl" ? "/admin/torfl-pack/reseed" : "/admin/custom-pack/reseed";
-    const res = await getHttp()<Record<string, unknown>>(path, { method: "post" });
-    lastMessage.value = `${kind === "torfl" ? "TORFL" : "专业包"} 重灌完成: ${JSON.stringify(res).slice(0, 240)}…`;
-    await reload();
-  } catch (e: any) {
-    lastMessage.value = `重灌失败: ${e?.message || e}`;
-  } finally {
-    busy.value = "";
   }
 }
 

@@ -3,11 +3,14 @@ import type { $Fetch } from "ofetch";
 import { useRuntimeConfig } from "#app";
 import { ofetch } from "ofetch";
 
-function getAuthToken(): string | null {
-  if (typeof window !== "undefined") {
-    return localStorage.getItem("ew_token");
-  }
-  return null;
+let csrfTokenValue: string | null = null;
+
+function isStateChanging(method: string | undefined): boolean {
+  return ["POST", "PUT", "PATCH", "DELETE"].includes((method || "GET").toUpperCase());
+}
+
+export function csrfRequestHeaders(): Record<string, string> {
+  return csrfTokenValue ? { "X-XSRF-TOKEN": csrfTokenValue } : {};
 }
 
 let http: $Fetch;
@@ -19,11 +22,11 @@ export function setupHttp() {
 
   http = ofetch.create({
     baseURL,
+    credentials: "include",
     headers: { "Content-Type": "application/json" },
     onRequest({ options }) {
-      const token = getAuthToken();
-      if (token) {
-        options.headers = { ...options.headers, Authorization: `Bearer ${token}` };
+      if (isStateChanging(options.method as string | undefined)) {
+        options.headers = { ...options.headers, ...csrfRequestHeaders() };
       }
     },
     async onResponseError({ response }) {
@@ -37,9 +40,13 @@ export function setupHttp() {
       }
       return Promise.reject(response._data);
     },
-    retry: 3,
-    retryDelay: 1000,
+    retry: 0,
   });
+}
+
+export async function initializeCsrf() {
+  const data = await getHttp()<{ token: string }>("/auth/csrf", { method: "get" });
+  csrfTokenValue = data.token;
 }
 
 type HttpStatusErrorHandler = (message: string, statusCode: number) => void;

@@ -1,4 +1,4 @@
-# 鹅语菌 · 完整迁移手册（本地 → 固定 IP 服务器）
+# 俄语学习平台 · 完整迁移手册（本地 → 固定 IP 服务器）
 
 > **使用前提**：你已经决定要按 `DEPLOYMENT.md` 的「**路径 B：完整迁移**」操作。这份文档是路径 B 的**专用 runbook**：从当前本地机器把数据 + 代码 + 配置全部搬到一台**有固定 IP 的目标机器**，并以**生产模式**（jar + nuxt build）24/7 运行。
 >
@@ -177,7 +177,7 @@ mysql -u root -p earthworm -e "SELECT COUNT(*) FROM course_packs; SELECT COUNT(*
 
 ### D.1 修改数据库连接（如有不同）
 
-打开 `backend/src/main/resources/application.yml`，把 `username/password` 改成目标机器 MySQL 的实际值。或者用环境变量覆盖（推荐）：
+在目标机器上通过环境变量设置数据库连接信息，不要把 `username/password` 写入仓库配置：
 
 ```powershell
 [Environment]::SetEnvironmentVariable("SPRING_DATASOURCE_USERNAME", "root", "Machine")
@@ -189,7 +189,7 @@ mysql -u root -p earthworm -e "SELECT COUNT(*) FROM course_packs; SELECT COUNT(*
 ### D.2 必填环境变量
 
 ```powershell
-[Environment]::SetEnvironmentVariable("OPENROUTER_API_KEY", "sk-or-v1-...", "Machine")
+[Environment]::SetEnvironmentVariable("OPENROUTER_API_KEY", "your_openrouter_key_here", "Machine")
 [Environment]::SetEnvironmentVariable("OPENROUTER_MODEL",   "openai/gpt-4o-mini", "Machine")
 
 # JWT 密钥要换成新随机串（不要复用源机器的，除非你想保持已签的 token 还有效）
@@ -274,6 +274,8 @@ java -jar (Resolve-Path backend\target\*.jar | Select-Object -First 1).Path
 
 第一次启动会看到 Flyway 迁移信息（应该是 0 条，因为 dump 已带 `flyway_schema_history` 表），然后 `Tomcat started on port(s): 8080`。
 
+完整迁移使用已有业务数据库时请保持 `SEED_WRITE_ON_STARTUP=false`（默认值），避免普通启动对课程内容产生写入。
+
 测试：
 
 ```powershell
@@ -307,7 +309,7 @@ Listening on http://[::]:3000
 http://<SERVER_IP>:3000
 ```
 
-应该看到鹅语菌主页。点登录用源机器上的账号密码登录，看到学习历史 = 迁移成功。
+应该看到俄语学习平台主页。点登录用源机器上的账号密码登录，看到学习历史 = 迁移成功。
 
 ### F.4 配置 Windows 防火墙
 
@@ -412,7 +414,7 @@ sudo systemctl status earthworm-backend earthworm-frontend
 - [ ] 后端启动日志含 `Started ... Application in N seconds`，无 `ERROR` 关键字
 - [ ] 本机 `curl http://localhost:8080/admin/stats` 返回正确 JSON
 - [ ] 本机 `curl http://localhost:3000/api/backend/admin/stats` 返回**同样**的 JSON（验证 Nitro 反代）
-- [ ] 同局域网 / 公网另一台机器打开 `http://<SERVER_IP>:3000` 看到鹅语菌主页
+- [ ] 同局域网 / 公网另一台机器打开 `http://<SERVER_IP>:3000` 看到俄语学习平台主页
 - [ ] 用源机器上的账号密码登录成功，能看到原来的学习记录 / 错题本 / 生词本
 - [ ] 8080 端口对外**不可访问**（外网 telnet `<SERVER_IP> 8080` 拒绝）
 - [ ] 重启服务器后 `EarthwormBackend` / `EarthwormFrontend` 自动起来（NSSM/systemd 配过）
@@ -442,7 +444,7 @@ mysql -u root -p earthworm < earthworm-dump-clean.sql
 dump 带过来的 `flyway_schema_history` 行数比目标机器代码 `db/migration/V*.sql` 多。两种情况：
 
 - **目标代码比源旧**：拉新代码（`git pull`）后再启动
-- **暂时绕过**：在 `application.yml` 把 `flyway.enabled: false`，启动一次让 Spring Boot 用现有表跑，再改回 `true`
+- **迁移历史不一致**：先停止应用启动，保留 dump，拉齐源端和目标端的 migration 文件；在备份副本或测试库验证修复方案后，再恢复正式服务。不要绕过 Flyway 校验直接启动。
 
 ### Q: 浏览器访问 `http://<SERVER_IP>:3000` 超时
 

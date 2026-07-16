@@ -1,9 +1,9 @@
 import { ref } from "vue";
 import { toast } from "vue-sonner";
 
+import { isAuthenticated } from "~/api/auth";
 import { useGameMode } from "~/composables/main/game";
 import { useSummary } from "~/composables/main/summary";
-import { isAuthenticated } from "~/services/auth";
 import { useCourseStore } from "~/store/course";
 import { useMasteredElementsStore } from "~/store/masteredElements";
 import { cancelShortcut, registerShortcut } from "~/utils/keyboardShortcuts";

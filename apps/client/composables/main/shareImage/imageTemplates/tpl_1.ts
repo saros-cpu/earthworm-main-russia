@@ -6,7 +6,7 @@ import type { ShareImageTemplateData } from "../share";
 
 export const tpl_1 = ({
   zhSentence,
-  enSentence,
+  ruSentence,
   coursePackTitle,
   courseTitle,
   totalRecordNumber,
@@ -47,7 +47,7 @@ export const tpl_1 = ({
                 type: "div",
                 props: {
                   tw: "text-slate-400 text-lg mb-6",
-                  children: `恭喜您一共完成 ${totalRecordNumber} 道题，用时${totalTime}`,
+                  children: `Выполнено ${totalRecordNumber} зад. за ${totalTime}`,
                 },
               },
               {
@@ -62,7 +62,7 @@ export const tpl_1 = ({
                       type: "div",
                       props: {
                         tw: "mb-2",
-                        children: enSentence,
+                        children: ruSentence,
                       },
                     },
                     {
@@ -91,14 +91,14 @@ export const tpl_1 = ({
             src: "/logo-circle.png",
             width: "48",
             height: "48",
-            alt: "中大俄语 logo",
+            alt: "俄语学习平台图标",
           },
         },
         {
           type: "p",
           props: {
             tw: "text-lg mb-2",
-            children: "© 中大俄语",
+            children: "© 俄语学习平台",
           },
         },
       ],

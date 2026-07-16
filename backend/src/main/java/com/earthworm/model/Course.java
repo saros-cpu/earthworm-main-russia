@@ -33,6 +33,9 @@ public class Course {
     @JoinColumn(name = "course_pack_id", nullable = false)
     private CoursePack coursePack;
 
+    @Column(nullable = false)
+    private Boolean archived = false;
+
     @Column(name = "created_at", insertable = false, updatable = false)
     private LocalDateTime createdAt;
 

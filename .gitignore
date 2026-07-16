@@ -91,6 +91,8 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
+.nuxt-*
+.output
 dist
 
 # Gatsby files
@@ -138,3 +140,31 @@ dist
 .volumes
 cache
 course-db
+
+# Runtime data (logs, caches, temporary files)
+runtime/
+.corepack/
+.codegraph/
+.workbuddy/
+.atomcode/
+.opencode/
+.tools/
+BOOT-INF/
+backend/runtime/
+scripts/**/output/
+packages/xingrong-courses/data/pdf/
+apps/client/assets/font/SourceHanSerif/
+
+# Database backups
+/*.sql
+earthworm-dump-*
+/earthworm*.zip
+/tmp.json
+!backend/src/main/resources/db/migration/*.sql
+
+# Maven build output
+backend/target/
+
+# Python generated cache
+__pycache__/
+*.py[cod]

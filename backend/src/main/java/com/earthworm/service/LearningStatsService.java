@@ -14,21 +14,28 @@ public class LearningStatsService {
     private final ExerciseRecordRepository exerciseRecordRepository;
     private final DailyStatsRepository dailyStatsRepository;
     private final UserStatsRepository userStatsRepository;
+    private final DailyTaskService dailyTaskService;
 
     public LearningStatsService(
             ExerciseRecordRepository exerciseRecordRepository,
             DailyStatsRepository dailyStatsRepository,
-            UserStatsRepository userStatsRepository
+            UserStatsRepository userStatsRepository,
+            DailyTaskService dailyTaskService
     ) {
         this.exerciseRecordRepository = exerciseRecordRepository;
         this.dailyStatsRepository = dailyStatsRepository;
         this.userStatsRepository = userStatsRepository;
+        this.dailyTaskService = dailyTaskService;
     }
 
     @Transactional
     public ExerciseRecord saveExercise(String userId, String coursePackId, String courseId,
                                         String statementId, boolean correct, int attempts,
-                                        int timeSpentMs, int score, int combo) {
+                                        int timeSpentMs, int ignoredScore, int ignoredCombo) {
+        int safeAttempts = Math.max(1, Math.min(attempts, 100));
+        int safeTimeSpentMs = Math.max(0, Math.min(timeSpentMs, 3_600_000));
+        int score = correct ? Math.max(10, 100 - (safeAttempts - 1) * 20) : 0;
+        int combo = calculateCombo(userId, correct);
         ExerciseRecord record = new ExerciseRecord();
         record.setId(UUID.randomUUID().toString());
         record.setUserId(userId);
@@ -36,16 +43,37 @@ public class LearningStatsService {
         record.setCourseId(courseId);
         record.setStatementId(statementId);
         record.setCorrect(correct);
-        record.setAttempts(attempts);
-        record.setTimeSpentMs(timeSpentMs);
+        record.setAttempts(safeAttempts);
+        record.setTimeSpentMs(safeTimeSpentMs);
         record.setScore(score);
         record.setComboAtTime(combo);
         exerciseRecordRepository.save(record);
 
-        updateDailyStats(userId, correct, timeSpentMs / 1000, score, combo);
-        updateUserStats(userId, correct, timeSpentMs / 1000, score);
+        updateDailyStats(userId, correct, safeTimeSpentMs / 1000, score, combo);
+        updateUserStats(userId, correct, safeTimeSpentMs / 1000, score);
+
+        dailyTaskService.ensureTasks(userId);
+        dailyTaskService.updateProgress(userId, "complete_10", 1);
+        dailyTaskService.updateProgress(userId, "learn_15min", safeTimeSpentMs / 60000);
+        if (correct && combo > 1) {
+            dailyTaskService.updateProgress(userId, "combo_5", 1);
+        }
 
         return record;
+    }
+
+    private int calculateCombo(String userId, boolean correct) {
+        if (!correct) {
+            return 0;
+        }
+        int combo = 1;
+        for (ExerciseRecord record : exerciseRecordRepository.findTop100ByUserIdOrderByCreatedAtDesc(userId)) {
+            if (!Boolean.TRUE.equals(record.getCorrect())) {
+                break;
+            }
+            combo++;
+        }
+        return Math.min(combo, 101);
     }
 
     @Transactional

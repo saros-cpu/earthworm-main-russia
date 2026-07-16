@@ -1,4 +1,3 @@
-import SourceHanSerifSCBold from "~/assets/font/SourceHanSerif/SourceHanSerifSC-Bold.otf";
 import { fontFetch } from "~/utils/fontLoader";
 
 const loadImage = async (url: string): Promise<HTMLImageElement> => {
@@ -37,7 +36,6 @@ export const copyImage = (canvasEl: HTMLCanvasElement, fullFormat: string) => {
   canvasEl?.toBlob((blob) => {
     if (blob) {
       navigator.clipboard.write([new ClipboardItem({ [blob.type]: blob })]).then(() => {
-        console.log("Image copied.");
         return true;
       });
     }
@@ -68,7 +66,7 @@ export const fontZh = () => {
   if (preLoadZhFontData) {
     return preLoadZhFontData;
   }
-  return fontFetch(new URL(SourceHanSerifSCBold, import.meta.url)).then((res) => {
+  return fontFetch("/fonts/SourceHanSerifSC-Bold.otf").then((res) => {
     preLoadZhFontData = res.arrayBuffer();
     return preLoadZhFontData;
   });

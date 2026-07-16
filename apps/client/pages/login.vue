@@ -78,7 +78,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-import { login, register } from "~/services/auth";
+import { login, register } from "~/api/auth";
 
 const isLogin = ref(true);
 const username = ref("");

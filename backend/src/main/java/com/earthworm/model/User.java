@@ -13,6 +13,7 @@ public class User {
     @Column(columnDefinition = "TEXT") private String avatar;
     @Column(length = 128) private String email;
     @Column(length = 32) private String role = "USER";
+    @Column(name = "token_version", nullable = false) private Integer tokenVersion = 0;
     @Column(name = "created_at", insertable = false, updatable = false) private LocalDateTime createdAt;
     @Column(name = "updated_at", insertable = false, updatable = false) private LocalDateTime updatedAt;
 
@@ -23,5 +24,6 @@ public class User {
     public String getAvatar() { return avatar; } public void setAvatar(String v) { this.avatar = v; }
     public String getEmail() { return email; } public void setEmail(String v) { this.email = v; }
     public String getRole() { return role; } public void setRole(String v) { this.role = v; }
+    public Integer getTokenVersion() { return tokenVersion; } public void setTokenVersion(Integer v) { this.tokenVersion = v; }
     public LocalDateTime getCreatedAt() { return createdAt; }
 }

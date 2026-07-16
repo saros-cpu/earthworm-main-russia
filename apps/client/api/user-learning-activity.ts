@@ -6,30 +6,30 @@ export interface LearningTimeApiResponse {
   duration: number;
 }
 
-interface UpdateLearningTimeParams {
+interface DailyStatsResponse {
   date: string;
-  duration: number;
+  totalTimeSeconds?: number;
 }
 
-export async function updateDailyLearningDailyTotalTime(params: UpdateLearningTimeParams) {
-  const http = getHttp();
-  return await http<boolean>("/user-learning-activities", {
-    method: "post",
-    body: {
-      ...params,
-      activityType: "daily_total",
-    },
-  });
+interface TotalStatsResponse {
+  totalTimeSeconds?: number;
+}
+
+function toLearningTime(stat: DailyStatsResponse): LearningTimeApiResponse {
+  return {
+    date: stat.date,
+    duration: Number(stat.totalTimeSeconds || 0),
+  };
 }
 
 export async function fetchTodayLearningTime() {
   const http = getHttp();
-  const learningTimeList = await http<LearningTimeApiResponse[]>("/user-learning-activities", {
+  const today = new Date().toISOString().split("T")[0];
+  const learningTimeList = await http<DailyStatsResponse[]>("/stats/daily", {
     method: "get",
     params: {
-      startDate: new Date().toISOString().split("T")[0],
-      endDate: new Date().toISOString().split("T")[0],
-      activityType: "daily_total",
+      startDate: today,
+      endDate: today,
     },
   });
 
@@ -37,28 +37,30 @@ export async function fetchTodayLearningTime() {
     return 0;
   }
 
-  return learningTimeList[0].duration;
+  return Number(learningTimeList[0].totalTimeSeconds || 0);
 }
 
 export async function fetchAllLearningTime() {
   const http = getHttp();
-  return (await http<LearningTimeApiResponse[]>("/user-learning-activities", {
+  const end = new Date();
+  const start = new Date();
+  start.setDate(start.getDate() - 365);
+  const stats = await http<DailyStatsResponse[]>("/stats/daily", {
     method: "get",
     params: {
-      activityType: "daily_total",
+      startDate: start.toISOString().split("T")[0],
+      endDate: end.toISOString().split("T")[0],
     },
-  })) as UserLearningDailyTime[];
+  });
+  return stats.map(toLearningTime) as UserLearningDailyTime[];
 }
 
 /**获取总的学习时长 */
 export async function fetchTotalLearningTime() {
   const http = getHttp();
-  const result = await http<number>("/user-learning-activities/total", {
+  const result = await http<TotalStatsResponse>("/stats/total", {
     method: "get",
-    params: {
-      activityType: "daily_total",
-    },
   });
 
-  return Number(result);
+  return Number(result.totalTimeSeconds || 0);
 }

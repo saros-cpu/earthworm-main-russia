@@ -40,9 +40,7 @@ export function isWord(content: string) {
 }
 
 export function answerTokenText(content: string) {
-  return content
-    .replace(/^[^\p{L}\p{N}]+/u, "")
-    .replace(/[^\p{L}\p{N}]+$/u, "");
+  return content.replace(/^[^\p{L}\p{N}]+/u, "").replace(/[^\p{L}\p{N}]+$/u, "");
 }
 
 export function splitAnswerToken(content: string) {
@@ -202,7 +200,7 @@ export function useInput({
     userInputWords.forEach((word) => {
       const formattedWord = answerTokenText(formatInputText(word.userInput));
 
-      if (formattedWord !== word.text.toLocaleLowerCase()) {
+      if (formattedWord !== normalizeText(word.text.toLocaleLowerCase())) {
         word.incorrect = true;
       } else {
         word.incorrect = false;
@@ -232,9 +230,14 @@ export function useInput({
     }
   }
 
+  // Normalize text by removing combining diacritical marks (e.g. stress accents)
+  function normalizeText(s: string): string {
+    return s.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  }
+
   // 将‘ 转化为', 做模糊匹配, 后续可拓展其他的模糊匹配算法
   function formatInputText(word: string) {
-    return word.toLocaleLowerCase().replace(/‘|’|“|"|”/g, "'");
+    return normalizeText(word.toLocaleLowerCase().replace(/‘|’|“|"|”/g, "'"));
   }
 
   // 当前编辑的单词是否为最后一个错误单词

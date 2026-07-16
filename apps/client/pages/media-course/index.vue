@@ -4,7 +4,9 @@
       class="mb-6 flex flex-col gap-3 border-b border-slate-200 pb-5 dark:border-slate-800 md:flex-row md:items-end md:justify-between"
     >
       <div>
-        <p class="text-sm font-bold text-emerald-600 dark:text-emerald-300">Медиа-курсы</p>
+        <p class="text-sm font-bold text-emerald-600 dark:text-emerald-300">
+          {{ $t("pages.mediaCourses") }}
+        </p>
         <h2 class="mt-1 text-3xl font-black text-slate-950 dark:text-white">视频 · 音频学习</h2>
         <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
           从课程包中选择带媒体资源的课程，切换播放器、答题或字幕模式学习。
@@ -408,7 +410,7 @@ const groupedSeries = computed<MediaSeries[]>(() => {
       key: "foundation",
       label: "基础入门",
       description: "字母、发音、数字、颜色、家庭、问候等零起点课程（含 A1 视频素材）。",
-      icon: "i-ph-seedling",
+      icon: "i-ph-leaf",
       accent: ACCENTS.emerald,
       packs: buckets.foundation,
     },

@@ -64,6 +64,11 @@ async function onConfirm() {
         >
           {{ confirmText || "确认" }}
         </UButton>
+        <UButton
+          v-if="!showCancel && !showConfirm"
+          class="sr-only h-0 w-0 p-0"
+          tabindex="0"
+        />
       </div>
     </div>
   </UModal>

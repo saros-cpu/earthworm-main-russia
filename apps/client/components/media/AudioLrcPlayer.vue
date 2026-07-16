@@ -90,6 +90,7 @@ import { computed, ref, watch } from "vue";
 const props = defineProps<{
   src: string;
   title: string;
+  lrcLines?: { time: number; russian: string; translation: string }[];
 }>();
 
 const audioRef = ref<HTMLAudioElement | null>(null);
@@ -104,11 +105,13 @@ interface LrcLine {
 }
 
 const parsedLines = computed<LrcLine[]>(() => {
-  const mockLrc = generateMockLrc();
-  return mockLrc.map((line) => ({
-    ...line,
-    translation: line.translation || "",
-  }));
+  if (props.lrcLines?.length) {
+    return props.lrcLines.map((line) => ({
+      ...line,
+      translation: line.translation || "",
+    }));
+  }
+  return [];
 });
 
 const currentLrcIndex = computed(() => {
@@ -122,27 +125,6 @@ const currentLrcIndex = computed(() => {
   }
   return Math.max(0, idx);
 });
-
-function generateMockLrc(): LrcLine[] {
-  return [
-    { time: 0, russian: "Здравствуйте", translation: "您好" },
-    { time: 2, russian: "Как дела?", translation: "最近怎么样？" },
-    { time: 4, russian: "Хорошо, спасибо", translation: "很好，谢谢" },
-    { time: 6, russian: "Меня зовут Анна", translation: "我叫安娜" },
-    { time: 8, russian: "Очень приятно", translation: "很高兴认识你" },
-    { time: 10, russian: "Я изучаю русский язык", translation: "我在学习俄语" },
-    { time: 12, russian: "Это очень интересно", translation: "这很有趣" },
-    { time: 14, russian: "Где вы учитесь?", translation: "您在哪里学习？" },
-    { time: 16, russian: "Я учусь в университете", translation: "我在大学学习" },
-    { time: 18, russian: "До свидания!", translation: "再见！" },
-  ].concat(
-    ["20", "22", "24", "26", "28"].map((s, i) => ({
-      time: parseInt(s),
-      russian: `Фраза для практики номер ${i + 1}`,
-      translation: `练习短语 ${i + 1}`,
-    })),
-  );
-}
 
 function onError(e: Event) {
   const target = e.target as HTMLMediaElement;

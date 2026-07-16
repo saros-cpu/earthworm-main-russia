@@ -1,4 +1,12 @@
 @echo off
+REM Deprecated. Use .\prod-start.ps1.
 cd /d D:\earthworm-main
-:: Use the default secret from application.yml (34 chars = 272 bits, enough for HS256)
-start "BE" cmd /c "java -jar backend\target\backend-0.0.1-SNAPSHOT.jar --server.address=0.0.0.0 --jwt.secret=CHANGE_ME_TO_RANDOM_256_BIT_STRING_12345 > backend-prod.log 2>&1"
+if "%JWT_SECRET%"=="" (
+    echo [ERROR] JWT_SECRET must be set before startup. Use .\prod-start.ps1.
+    exit /b 1
+)
+if "%SPRING_DATASOURCE_PASSWORD%"=="" (
+    echo [ERROR] SPRING_DATASOURCE_PASSWORD must be set before startup. Use .\prod-start.ps1.
+    exit /b 1
+)
+start "BE" cmd /c "java -jar backend\target\backend-0.0.1-SNAPSHOT.jar --server.address=0.0.0.0 > backend-prod.log 2>&1"

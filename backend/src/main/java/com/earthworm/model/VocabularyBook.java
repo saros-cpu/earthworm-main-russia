@@ -10,6 +10,11 @@ public class VocabularyBook {
     @Column(name = "user_id", nullable = false, length = 128) private String userId;
     @Column(nullable = false) private String word;
     private String chinese;
+    @Column(name = "part_of_speech", length = 50) private String partOfSpeech;
+    @Column(length = 255) private String phonetic;
+    @Column(name = "example_sentence", columnDefinition = "TEXT") private String exampleSentence;
+    @Column(name = "example_translation", columnDefinition = "TEXT") private String exampleTranslation;
+    @Column(name = "study_level") private int studyLevel;
     @Column(name = "source_statement_id", length = 128) private String sourceStatementId;
     @Column(name = "source_course_pack_id", length = 128) private String sourceCoursePackId;
     @Column(columnDefinition = "TEXT") private String notes;
@@ -19,6 +24,11 @@ public class VocabularyBook {
     public String getUserId() { return userId; } public void setUserId(String userId) { this.userId = userId; }
     public String getWord() { return word; } public void setWord(String w) { this.word = w; }
     public String getChinese() { return chinese; } public void setChinese(String c) { this.chinese = c; }
+    public String getPartOfSpeech() { return partOfSpeech; } public void setPartOfSpeech(String p) { this.partOfSpeech = p; }
+    public String getPhonetic() { return phonetic; } public void setPhonetic(String p) { this.phonetic = p; }
+    public String getExampleSentence() { return exampleSentence; } public void setExampleSentence(String e) { this.exampleSentence = e; }
+    public String getExampleTranslation() { return exampleTranslation; } public void setExampleTranslation(String e) { this.exampleTranslation = e; }
+    public int getStudyLevel() { return studyLevel; } public void setStudyLevel(int s) { this.studyLevel = s; }
     public String getSourceStatementId() { return sourceStatementId; } public void setSourceStatementId(String s) { this.sourceStatementId = s; }
     public String getSourceCoursePackId() { return sourceCoursePackId; } public void setSourceCoursePackId(String s) { this.sourceCoursePackId = s; }
     public String getNotes() { return notes; } public void setNotes(String n) { this.notes = n; }

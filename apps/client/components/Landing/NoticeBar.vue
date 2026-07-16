@@ -22,7 +22,7 @@
 const props = defineProps({
   main_title: {
     type: String,
-    default: "中大俄语已经可以本地试用了",
+    default: "俄语学习平台已经可以本地试用了",
   },
   sub_title: {
     type: String,

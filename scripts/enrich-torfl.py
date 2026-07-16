@@ -14,7 +14,7 @@ enrich-torfl.py
     --dry-run          仅预览，不写入数据库
     --level LEVEL      只处理指定等级 (如 A1, B2)，不传则处理全部
     --force            重新生成已有注释的语句
-    --db-url URL       数据库 URL (默认: mysql+pymysql://reader:1EF390975CDCA838@localhost:3306/earthworm)
+    --db-url URL       数据库 URL (默认: mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@localhost:3306/earthworm)
 """
 
 import argparse
@@ -33,7 +33,9 @@ except ImportError as e:
     print("请安装: pip install pymysql openai")
     sys.exit(1)
 
-DB_URL = os.getenv("DB_URL", "mysql+pymysql://reader:1EF390975CDCA838@localhost:3306/earthworm")
+_DB_USER = os.getenv("DB_USERNAME", "reader")
+_DB_PASS = os.getenv("DB_PASSWORD", "")
+DB_URL = os.getenv("DB_URL", f"mysql+pymysql://{_DB_USER}:{_DB_PASS}@localhost:3306/earthworm")
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY") or os.getenv("OPENAI_API_KEY", "")
 OPENROUTER_MODEL = os.getenv("OPENROUTER_MODEL", "openai/gpt-4o-mini")
 OPENROUTER_BASE_URL = os.getenv("OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1")

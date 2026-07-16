@@ -89,6 +89,22 @@ describe("user defined shortcut key", () => {
       expect(shortcutKeyTip.value).toEqual("Ctrl+s");
     });
 
+    it("should normalize quote key when the dialog is open", () => {
+      const { shortcutKeyStr, shortcutKeyTip, handleEdit, handleKeydown } = useShortcutKeyMode();
+
+      handleEdit(SHORTCUT_KEY_TYPES.SOUND);
+
+      handleKeydown({
+        key: "Dead",
+        code: "Quote",
+        ctrlKey: true,
+        preventDefault: () => {},
+      } as KeyboardEvent);
+
+      expect(shortcutKeyStr.value).toEqual("Ctrl+'");
+      expect(shortcutKeyTip.value).toEqual("Ctrl+'");
+    });
+
     it("should be the shortcut key is set successfully when the dialog is open (single key)", () => {
       const { shortcutKeys, handleEdit, handleKeydown } = useShortcutKeyMode();
 

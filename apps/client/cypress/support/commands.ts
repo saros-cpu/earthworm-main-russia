@@ -11,46 +11,41 @@
 //
 //
 // -- This is a parent command --
-Cypress.Commands.add("login", function ({ phone, password }: { phone: string; password: string }) {
-  const user = {
-    phone: "13812345678",
-    userId: 1,
-    username: "acui",
-  };
+Cypress.Commands.add(
+  "login",
+  function ({ username, password }: { username: string; password: string }) {
+    const user = {
+      userId: "user-1",
+      username: "acui",
+      nickname: "acui",
+      role: "USER",
+    };
 
-  cy.intercept("POST", "/auth/login", (req) => {
-    // 断言请求体中包含特定的 phone 和 password
-    expect(req.body.phone).to.eq(phone);
-    expect(req.body.password).to.eq(password);
+    cy.intercept("POST", "**/auth/login", (req) => {
+      expect(req.body.username).to.eq(username);
+      expect(req.body.password).to.eq(password);
 
-    // 继续允许请求到达服务器或返回模拟的响应
-    req.reply({
-      statusCode: 200,
-      body: {
-        // 模拟的登录成功响应数据
-        token: "faketoken",
-        user,
-      },
-    });
-  }).as("login");
+      req.reply({
+        statusCode: 200,
+        headers: {
+          "set-cookie": "EW_SESSION=faketoken; Path=/; HttpOnly; SameSite=Strict",
+        },
+        body: user,
+      });
+    }).as("login");
 
-  cy.visit("/auth/login");
+    cy.visit("/login");
 
-  cy.get('input[type="tel"]').as("phoneInput").type("13812345678");
-  cy.get('input[type="password"]').as("passwordInput").type("yourPassword{enter}");
-  cy.wait("@login");
+    cy.get('input[type="text"]').first().type(username);
+    cy.get('input[type="password"]').type(`${password}{enter}`);
+    cy.wait("@login");
 
-  cy.window().then((win) => {
-    const tokenInStorage = win.localStorage.getItem("token");
-    expect(tokenInStorage).to.eq("faketoken");
-  });
+    cy.getCookie("EW_SESSION").should("have.property", "value", "faketoken");
 
-  // we should be redirected to /
-  cy.wait(1000); // 等待 1 秒，确保页面加载完成
-  cy.url().should("eq", Cypress.config("baseUrl"));
-
-  cy.contains(user.username).should("be.visible"); // 然后检查 "User Info" 是否可见
-});
+    // Login navigates back to the landing page after the session cookie is issued.
+    cy.url().should("eq", Cypress.config("baseUrl"));
+  },
+);
 //
 //
 // -- This is a child command --
@@ -67,7 +62,7 @@ Cypress.Commands.add("login", function ({ phone, password }: { phone: string; pa
 declare global {
   namespace Cypress {
     interface Chainable {
-      login(params: { phone: string; password: string }): Chainable<void>;
+      login(params: { username: string; password: string }): Chainable<void>;
       //       drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
       //       dismiss(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
       //       visit(originalFn: CommandOriginalFn, url: string, options: Partial<VisitOptions>): Chainable<Element>

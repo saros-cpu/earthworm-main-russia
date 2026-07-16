@@ -1,23 +1,31 @@
+# ⚠ 已废弃，请使用 .\prod-start.ps1（生产环境）或 .\start.bat（开发模式）
 # run-all.ps1 - 一键启动后端和前端，并检测健康状态
+$root = Split-Path -Parent $MyInvocation.MyCommand.Path
+. (Join-Path $root "scripts\prod-process-control.ps1")
 
 # -------------------------------------------------
 # 1️⃣ 环境变量（请自行替换 JWT secret 为随机 256-bit 字符串）
 # -------------------------------------------------
-$env:JWT_SECRET = "YOUR_RANDOM_256_BIT_STRING"
-$env:SPRING_DATASOURCE_URL = "jdbc:mysql://localhost:3306/earthworm?useSSL=false&serverTimezone=UTC"
-$env:SPRING_DATASOURCE_USERNAME = "root"
-$env:SPRING_DATASOURCE_PASSWORD = "***REDACTED***"
+if ([string]::IsNullOrWhiteSpace($env:JWT_SECRET)) {
+    throw "JWT_SECRET must be set before startup."
+}
+if ([string]::IsNullOrWhiteSpace($env:SPRING_DATASOURCE_URL)) {
+    $env:SPRING_DATASOURCE_URL = "jdbc:mysql://127.0.0.1:3306/earthworm?useSSL=false&serverTimezone=UTC"
+}
+if ([string]::IsNullOrWhiteSpace($env:SPRING_DATASOURCE_USERNAME)) {
+    $env:SPRING_DATASOURCE_USERNAME = "reader"
+}
+if ([string]::IsNullOrWhiteSpace($env:SPRING_DATASOURCE_PASSWORD)) {
+    throw "SPRING_DATASOURCE_PASSWORD must be set before startup."
+}
+# ⚠ 密码已从代码中移除。请在运行前设置环境变量 $env:SPRING_DATASOURCE_PASSWORD，或从 .env 文件加载。
+# $env:SPRING_DATASOURCE_PASSWORD = "你的密码"
 
 # -------------------------------------------------
-# 2️⃣ 结束占用 8080 的进程（如果有）
+# 2️⃣ 确认服务端口未被其他程序占用
 # -------------------------------------------------
-$pids = (netstat -ano | Select-String ':8080' | ForEach-Object { ($_ -split '\s+')[4] }) | Where-Object { $_ -match '^\d+$' } | Sort-Object -Unique
-foreach ($pid in $pids) {
-    try {
-        Write-Host "Ending process PID $pid that holds port 8080..."
-        taskkill /PID $pid /F > $null 2>&1
-    } catch {}
-}
+Assert-PortAvailable 8000 "Backend"
+Assert-PortAvailable 3001 "Frontend"
 
 # -------------------------------------------------
 # 3️⃣ 启动后端（Spring Boot） → backend.log
@@ -37,7 +45,7 @@ Set-Location "$PWD\..\.."
 $backendReady = $false
 for ($i=0; $i -lt 30; $i++) {
     try {
-        $resp = Invoke-WebRequest -Uri http://localhost:8080/actuator/health -UseBasicParsing -TimeoutSec 2
+        $resp = Invoke-WebRequest -Uri http://localhost:8000/actuator/health -UseBasicParsing -TimeoutSec 2
         if ($resp.StatusCode -eq 200) { $backendReady = $true; break }
     } catch {}
     Start-Sleep -Seconds 1
@@ -73,5 +81,5 @@ if (-not $frontendReady) {
 # 7️⃣ 成功提示
 # -------------------------------------------------
 Write-Host "\n🚀 项目已完整启动！"
-Write-Host "后端 API： http://localhost:8080/api"
+Write-Host "后端 API： http://localhost:8000/api"
 Write-Host "前端 UI： http://localhost:3001"

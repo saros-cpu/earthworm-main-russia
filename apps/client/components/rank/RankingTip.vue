@@ -26,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import { isAuthenticated } from "~/services/auth";
+import { isAuthenticated } from "~/api/auth";
 import { type RankingSelf } from "~/types";
 
 const { rankingSelf, isLoading } = defineProps<{

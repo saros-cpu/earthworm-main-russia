@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import javax.crypto.SecretKey;
 import java.nio.charset.StandardCharsets;
 import java.util.Date;
+import java.util.Locale;
 
 @Component
 public class JwtUtil {
@@ -16,18 +17,26 @@ public class JwtUtil {
     private final long expirationMs;
 
     public JwtUtil(
-            @Value("${jwt.secret:CHANGE_ME_TO_RANDOM_256_BIT_STRING}") String secret,
+            @Value("${jwt.secret}") String secret,
             @Value("${jwt.expirationMs:604800000}") long expirationMs
     ) {
+        String normalizedSecret = secret == null ? "" : secret.trim().toUpperCase(Locale.ROOT);
+        if (secret == null || secret.isBlank()
+                || normalizedSecret.startsWith("CHANGE_ME_")
+                || normalizedSecret.startsWith("YOUR_RANDOM_")
+                || normalizedSecret.startsWith("DEV-TEMP-")) {
+            throw new IllegalStateException("JWT_SECRET must be set to a securely generated value.");
+        }
         this.key = Keys.hmacShaKeyFor(secret.getBytes(StandardCharsets.UTF_8));
         this.expirationMs = expirationMs;
     }
 
-    public String generateToken(String userId, String username, String role) {
+    public String generateToken(String userId, String username, String role, int tokenVersion) {
         return Jwts.builder()
                 .subject(userId)
                 .claim("username", username)
                 .claim("role", role)
+                .claim("tokenVersion", tokenVersion)
                 .issuedAt(new Date())
                 .expiration(new Date(System.currentTimeMillis() + expirationMs))
                 .signWith(key)
@@ -48,5 +57,10 @@ public class JwtUtil {
 
     public String getRole(String token) {
         return parseToken(token).get("role", String.class);
+    }
+
+    public int getTokenVersion(String token) {
+        Integer value = parseToken(token).get("tokenVersion", Integer.class);
+        return value == null ? 0 : value;
     }
 }

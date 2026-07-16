@@ -16,32 +16,40 @@
                 height="48"
                 class="block w-auto"
                 src="/logo.png"
-                alt="中大俄语 logo"
+                alt="俄语学习平台图标"
               />
             </div>
           </NuxtLink>
 
-          <nav
-            v-if="route.path === '/' && !isAuthenticated()"
-            aria-label="Главное меню"
-            class="hidden md:block"
-          >
-            <ul class="flex items-center text-base">
-              <li
-                class="px-4"
-                v-for="(optItem, optIndex) in HEADER_OPTIONS"
-                :key="optIndex"
-              >
-                <a
-                  class="text-nowrap font-semibold text-slate-600 hover:text-emerald-700 dark:text-slate-200 dark:hover:text-emerald-300"
-                  :href="optItem.href"
-                  :target="optItem.target ?? '_self'"
+          <ClientOnly>
+            <nav
+              v-if="route.path === '/' && !isAuthenticated()"
+              aria-label="Главное меню"
+              class="hidden md:block"
+            >
+              <ul class="flex items-center text-base">
+                <li
+                  class="px-4"
+                  v-for="(optItem, optIndex) in HEADER_OPTIONS"
+                  :key="optIndex"
                 >
-                  {{ optItem.name }}
-                </a>
-              </li>
-            </ul>
-          </nav>
+                  <a
+                    class="text-nowrap font-semibold text-slate-600 hover:text-emerald-700 dark:text-slate-200 dark:hover:text-emerald-300"
+                    :href="optItem.href"
+                    :target="optItem.target ?? '_self'"
+                  >
+                    {{ optItem.name }}
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <template #fallback>
+              <div
+                class="hidden md:block"
+                aria-hidden="true"
+              ></div>
+            </template>
+          </ClientOnly>
         </div>
 
         <div class="flex items-center gap-1">
@@ -63,110 +71,172 @@
             />
           </button>
 
-          <template v-if="isAuthenticated() && !isAdminPage && route.path !== '/'">
-            <NuxtLink
-              to="/media-course"
-              class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-300 md:inline-block"
-            >
-              媒体课程
-            </NuxtLink>
-            <NuxtLink
-              to="/stats"
-              class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-300 md:inline-block"
-            >
-              统计
-            </NuxtLink>
-            <NuxtLink
-              to="/review"
-              class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-300 md:inline-block"
-            >
-              复习
-              <span
-                v-if="dueReviewCount > 0"
-                class="ml-1 rounded-full bg-red-500 px-1.5 py-0.5 text-[10px] font-bold text-white"
-                >{{ dueReviewCount }}</span
+          <ClientOnly>
+            <template v-if="isAuthenticated() && !isAdminPage && route.path !== '/'">
+              <NuxtLink
+                to="/media-course"
+                class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-300 md:inline-block"
               >
-            </NuxtLink>
-            <NuxtLink
-              to="/wrong-answers"
-              class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-red-600 dark:text-slate-400 dark:hover:text-red-300 md:inline-block"
-            >
-              错题本
-            </NuxtLink>
-            <NuxtLink
-              to="/vocabulary"
-              class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-300 md:inline-block"
-            >
-              生词本
-            </NuxtLink>
-            <NuxtLink
-              to="/mastered-elements"
-              class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-300 md:inline-block"
-            >
-              复习本
-            </NuxtLink>
-            <NuxtLink
-              to="/battle"
-              class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-orange-600 dark:text-slate-400 dark:hover:text-orange-300 md:inline-block"
-            >
-              PK
-            </NuxtLink>
-            <NuxtLink
-              to="/groups"
-              class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-300 md:inline-block"
-            >
-              小组
-            </NuxtLink>
-          </template>
-          <!-- 显示用户信息 -->
-          <div
-            v-if="isAuthenticated() && route.path !== '/'"
-            class="logged-in relative flex items-center"
-          >
-            <div
-              class="h-8 w-8 cursor-pointer overflow-hidden rounded-full bg-gray-300 transition-all hover:scale-125 hover:opacity-90 dark:bg-gray-700"
-              @click="isAdminPage ? (adminMenuOpen = !adminMenuOpen) : openUserMenu()"
-            >
-              <UAvatar
-                :src="userStore.user?.avatar"
-                alt="Аватар"
-              />
-            </div>
-            <!-- 后台管理页面的用户下拉菜单 -->
-            <Teleport to="body">
-              <div
-                v-if="isAdminPage && adminMenuOpen"
-                class="fixed right-4 top-14 z-50 w-48 rounded-md border bg-white py-1 shadow-lg dark:border-gray-700 dark:bg-slate-900"
-                @click.outside="adminMenuOpen = false"
+                媒体课程
+              </NuxtLink>
+              <button
+                @click="showAiDialogue = true"
+                class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-purple-600 dark:text-slate-400 dark:hover:text-purple-300 md:inline-block"
               >
-                <div class="border-b px-3 py-2 text-sm dark:border-gray-700">
-                  <div class="font-medium">
-                    {{ userStore.user?.nickname || userStore.user?.username || "用户" }}
-                  </div>
-                  <div class="text-xs text-gray-500">@{{ userStore.user?.username }}</div>
-                </div>
-                <button
-                  class="flex w-full items-center px-3 py-2 text-sm text-red-600 hover:bg-gray-50 dark:hover:bg-gray-800"
-                  @click="handleAdminLogout"
+                AI 对话
+              </button>
+              <NuxtLink
+                to="/stats"
+                class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-300 md:inline-block"
+              >
+                统计
+              </NuxtLink>
+              <button
+                @click="openRanking"
+                class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-amber-600 dark:text-slate-400 dark:hover:text-amber-300 md:inline-block"
+              >
+                排行
+              </button>
+              <NuxtLink
+                to="/review"
+                class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-300 md:inline-block"
+              >
+                复习
+                <span
+                  v-if="dueReviewCount > 0"
+                  class="ml-1 rounded-full bg-red-500 px-1.5 py-0.5 text-[10px] font-bold text-white"
+                  >{{ dueReviewCount }}</span
                 >
-                  <UIcon
-                    name="i-ph-sign-out"
-                    class="mr-2 h-4 w-4"
-                  />
-                  退出登录
-                </button>
+              </NuxtLink>
+              <NuxtLink
+                to="/wrong-answers"
+                class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-red-600 dark:text-slate-400 dark:hover:text-red-300 md:inline-block"
+              >
+                错题本
+              </NuxtLink>
+              <NuxtLink
+                to="/vocabulary"
+                class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-300 md:inline-block"
+              >
+                生词本
+              </NuxtLink>
+              <NuxtLink
+                to="/weakness"
+                class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-rose-600 dark:text-slate-400 dark:hover:text-rose-300 md:inline-block"
+              >
+                弱点分析
+              </NuxtLink>
+              <NuxtLink
+                to="/word-list"
+                class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-300 md:inline-block"
+              >
+                单词库
+              </NuxtLink>
+              <NuxtLink
+                to="/mastered-elements"
+                class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-300 md:inline-block"
+              >
+                复习本
+              </NuxtLink>
+              <NuxtLink
+                to="/achievements"
+                class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-amber-600 dark:text-slate-400 dark:hover:text-amber-300 md:inline-block"
+              >
+                成就
+              </NuxtLink>
+              <NuxtLink
+                to="/daily-challenge"
+                class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-orange-600 dark:text-slate-400 dark:hover:text-orange-300 md:inline-block"
+              >
+                每日挑战
+              </NuxtLink>
+              <NuxtLink
+                to="/course-market"
+                class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-purple-600 dark:text-slate-400 dark:hover:text-purple-300 md:inline-block"
+              >
+                课程市场
+              </NuxtLink>
+              <NuxtLink
+                to="/course-editor"
+                class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-purple-600 dark:text-slate-400 dark:hover:text-purple-300 md:inline-block"
+              >
+                课程编辑
+              </NuxtLink>
+              <NuxtLink
+                to="/groups"
+                class="hidden px-2 py-1 text-sm font-semibold text-slate-500 transition hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-300 md:inline-block"
+              >
+                小组
+              </NuxtLink>
+            </template>
+            <template #fallback>
+              <div class="hidden min-w-[120px] items-center gap-1 md:flex"></div>
+            </template>
+          </ClientOnly>
+          <!-- 显示用户信息 -->
+          <ClientOnly>
+            <div
+              v-if="isAuthenticated() && route.path !== '/'"
+              class="logged-in relative flex items-center"
+            >
+              <div
+                class="h-8 w-8 cursor-pointer overflow-hidden rounded-full bg-gray-300 transition-all hover:scale-125 hover:opacity-90 dark:bg-gray-700"
+                @click="isAdminPage ? (adminMenuOpen = !adminMenuOpen) : openUserMenu()"
+              >
+                <UAvatar
+                  :src="userStore.user?.avatar"
+                  alt="Аватар"
+                />
               </div>
-            </Teleport>
-          </div>
+              <!-- 后台管理页面的用户下拉菜单 -->
+              <Teleport to="body">
+                <div
+                  v-if="isAdminPage && adminMenuOpen"
+                  class="fixed right-4 top-14 z-50 w-48 rounded-md border bg-white py-1 shadow-lg dark:border-gray-700 dark:bg-slate-900"
+                  @click.outside="adminMenuOpen = false"
+                >
+                  <div class="border-b px-3 py-2 text-sm dark:border-gray-700">
+                    <div class="font-medium">
+                      {{ userStore.user?.nickname || userStore.user?.username || "用户" }}
+                    </div>
+                    <div class="text-xs text-gray-500">@{{ userStore.user?.username }}</div>
+                  </div>
+                  <button
+                    class="flex w-full items-center px-3 py-2 text-sm text-red-600 hover:bg-gray-50 dark:hover:bg-gray-800"
+                    @click="handleAdminLogout"
+                  >
+                    <UIcon
+                      name="i-ph-sign-out"
+                      class="mr-2 h-4 w-4"
+                    />
+                    退出登录
+                  </button>
+                </div>
+              </Teleport>
+            </div>
+            <template #fallback>
+              <div class="min-h-[32px] min-w-[32px]"></div>
+            </template>
+          </ClientOnly>
           <!-- 登录/注册 -->
-          <button
-            v-if="!isAuthenticated() && route.path !== '/login'"
-            aria-label="Войти"
-            class="btn btn-sm mr-1 border-none bg-slate-950 text-white shadow-md hover:bg-slate-800 focus:outline-none dark:bg-white dark:text-slate-950"
-            @click="signIn()"
-          >
-            登录
-          </button>
+          <ClientOnly>
+            <button
+              v-if="!isAuthenticated() && route.path !== '/login'"
+              aria-label="Войти"
+              class="btn btn-sm mr-1 border-none bg-slate-950 text-white shadow-md hover:bg-slate-800 focus:outline-none dark:bg-white dark:text-slate-950"
+              @click="signIn()"
+            >
+              {{ $t("nav.login") }}
+            </button>
+            <template #fallback>
+              <button
+                aria-label="Войти"
+                class="btn btn-sm invisible mr-1 border-none bg-slate-950 text-white shadow-md hover:bg-slate-800 focus:outline-none dark:bg-white dark:text-slate-950"
+              >
+                {{ $t("nav.login") }}
+              </button>
+            </template>
+          </ClientOnly>
         </div>
       </div>
     </div>
@@ -225,6 +295,19 @@
               />
               媒体课程
             </NuxtLink>
+            <button
+              @click="
+                showAiDialogue = true;
+                mobileMenuOpen = false;
+              "
+              class="flex w-full items-center rounded-lg px-3 py-3 text-left text-base font-semibold text-slate-700 transition hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800"
+            >
+              <UIcon
+                name="i-ph-chat-circle"
+                class="mr-3 h-5 w-5"
+              />
+              AI 对话
+            </button>
             <NuxtLink
               to="/stats"
               @click="mobileMenuOpen = false"
@@ -236,6 +319,19 @@
               />
               统计
             </NuxtLink>
+            <button
+              @click="
+                openRanking;
+                mobileMenuOpen = false;
+              "
+              class="flex w-full items-center rounded-lg px-3 py-3 text-left text-base font-semibold text-slate-700 transition hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800"
+            >
+              <UIcon
+                name="i-ph-trophy"
+                class="mr-3 h-5 w-5"
+              />
+              排行
+            </button>
             <NuxtLink
               to="/review"
               @click="mobileMenuOpen = false"
@@ -275,6 +371,28 @@
               生词本
             </NuxtLink>
             <NuxtLink
+              to="/weakness"
+              @click="mobileMenuOpen = false"
+              class="flex items-center rounded-lg px-3 py-3 text-base font-semibold text-slate-700 transition hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800"
+            >
+              <UIcon
+                name="i-ph-chart-bar"
+                class="mr-3 h-5 w-5"
+              />
+              弱点分析
+            </NuxtLink>
+            <NuxtLink
+              to="/word-list"
+              @click="mobileMenuOpen = false"
+              class="flex items-center rounded-lg px-3 py-3 text-base font-semibold text-slate-700 transition hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800"
+            >
+              <UIcon
+                name="i-ph-books"
+                class="mr-3 h-5 w-5"
+              />
+              单词库
+            </NuxtLink>
+            <NuxtLink
               to="/mastered-elements"
               @click="mobileMenuOpen = false"
               class="flex items-center rounded-lg px-3 py-3 text-base font-semibold text-slate-700 transition hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800"
@@ -286,7 +404,18 @@
               复习本
             </NuxtLink>
             <NuxtLink
-              to="/battle"
+              to="/achievements"
+              @click="mobileMenuOpen = false"
+              class="flex items-center rounded-lg px-3 py-3 text-base font-semibold text-slate-700 transition hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800"
+            >
+              <UIcon
+                name="i-ph-trophy"
+                class="mr-3 h-5 w-5"
+              />
+              成就
+            </NuxtLink>
+            <NuxtLink
+              to="/daily-challenge"
               @click="mobileMenuOpen = false"
               class="flex items-center rounded-lg px-3 py-3 text-base font-semibold text-slate-700 transition hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800"
             >
@@ -294,7 +423,29 @@
                 name="i-ph-sword"
                 class="mr-3 h-5 w-5"
               />
-              PK
+              每日挑战
+            </NuxtLink>
+            <NuxtLink
+              to="/course-market"
+              @click="mobileMenuOpen = false"
+              class="flex items-center rounded-lg px-3 py-3 text-base font-semibold text-slate-700 transition hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800"
+            >
+              <UIcon
+                name="i-ph-storefront"
+                class="mr-3 h-5 w-5"
+              />
+              课程市场
+            </NuxtLink>
+            <NuxtLink
+              to="/course-editor"
+              @click="mobileMenuOpen = false"
+              class="flex items-center rounded-lg px-3 py-3 text-base font-semibold text-slate-700 transition hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-800"
+            >
+              <UIcon
+                name="i-ph-pencil-line"
+                class="mr-3 h-5 w-5"
+              />
+              课程编辑
             </NuxtLink>
             <NuxtLink
               to="/groups"
@@ -311,6 +462,8 @@
         </div>
       </Transition>
     </Teleport>
+    <RankRankingBoard />
+    <MainAiDialogue v-model="showAiDialogue" />
   </header>
 </template>
 
@@ -320,13 +473,19 @@ import { useRuntimeConfig } from "nuxt/app";
 import { computed, onMounted, ref } from "vue";
 import { useRoute } from "vue-router";
 
+import { isAuthenticated, signIn, signOut } from "~/api/auth";
 import { fetchDueReviewCount } from "~/api/learning";
+import { useRanking } from "~/composables/rank/rankingList";
 import { useUserMenu } from "~/composables/user/useUserMenu";
-import { clearAuth, isAuthenticated, signIn } from "~/services/auth";
 import { useUserStore } from "~/store/user";
 
 const runtimeConfig = useRuntimeConfig();
 const { openUserMenu } = useUserMenu();
+const { showRankModal } = useRanking();
+
+function openRanking() {
+  showRankModal();
+}
 
 const route = useRoute();
 const userStore = useUserStore();
@@ -365,13 +524,13 @@ const isScrolled = computed(() => y.value >= SCROLL_THRESHOLD);
 
 const mobileMenuOpen = ref(false);
 const adminMenuOpen = ref(false);
+const showAiDialogue = ref(false);
 
 const isAdminPage = computed(() => route.path.startsWith("/admin"));
 
-function handleAdminLogout() {
+async function handleAdminLogout() {
   adminMenuOpen.value = false;
-  clearAuth();
-  window.location.href = "/login";
+  await signOut();
 }
 </script>
 

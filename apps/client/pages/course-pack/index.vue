@@ -4,17 +4,21 @@
       class="mb-6 flex flex-col gap-3 border-b border-slate-200 pb-5 dark:border-slate-800 md:flex-row md:items-end md:justify-between"
     >
       <div>
-        <p class="text-sm font-bold text-emerald-600 dark:text-emerald-300">Библиотека курсов</p>
-        <h2 class="mt-1 text-3xl font-black text-slate-950 dark:text-white">俄语课程包</h2>
+        <p class="text-sm font-bold text-emerald-600 dark:text-emerald-300">
+          {{ $t("pages.courseLibrary") }}
+        </p>
+        <h2 class="mt-1 text-3xl font-black text-slate-950 dark:text-white">
+          {{ $t("coursePack.title") }}
+        </h2>
         <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
-          从入门课程到教材 PDF 自动生成内容，按系列浏览，选择一套课程开始闯关。
+          {{ $t("coursePack.description") }}
         </p>
       </div>
       <NuxtLink
         to="/"
         class="inline-flex h-10 items-center rounded-md border border-slate-300 px-4 text-sm font-bold text-slate-700 transition hover:border-emerald-500 hover:text-emerald-700 dark:border-slate-700 dark:text-slate-200 dark:hover:border-emerald-400 dark:hover:text-emerald-300"
       >
-        返回首页
+        {{ $t("coursePack.backToHome") }}
       </NuxtLink>
     </div>
 
@@ -25,13 +29,13 @@
       <div
         class="rounded-md border border-rose-300 bg-rose-50 p-6 text-rose-700 dark:border-rose-900 dark:bg-rose-950/40 dark:text-rose-200"
       >
-        <div class="font-bold">课程包加载失败</div>
+        <div class="font-bold">{{ $t("common.loadError") }}</div>
         <div class="mt-2 text-sm">{{ errorMessage }}</div>
         <button
           class="btn btn-sm mt-3"
           @click="setup"
         >
-          重试
+          {{ $t("common.retry") }}
         </button>
       </div>
     </template>
@@ -39,7 +43,7 @@
       <div
         class="rounded-md border border-dashed border-slate-300 p-10 text-center text-sm text-slate-500 dark:border-slate-700"
       >
-        暂时没有课程包，去后台或通过 PDF 导入新增。
+        {{ $t("common.noPacksAtAll") }}
       </div>
     </template>
 
@@ -73,6 +77,22 @@
           </span>
         </button>
       </nav>
+
+      <!-- 搜索框 -->
+      <div class="mb-4">
+        <div class="relative">
+          <UIcon
+            name="i-ph-magnifying-glass"
+            class="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400"
+          />
+          <input
+            v-model="searchQuery"
+            type="text"
+            placeholder="搜索课程包名称..."
+            class="h-10 w-full rounded-md border border-slate-300 bg-white pl-9 pr-3 text-sm outline-none transition focus:border-emerald-400 dark:border-slate-700 dark:bg-slate-900"
+          />
+        </div>
+      </div>
 
       <section
         v-if="currentSeries"
@@ -125,7 +145,7 @@
             v-if="currentSeries.packs.length === 0"
             class="col-span-full rounded-md border border-dashed border-slate-300 p-10 text-center text-sm text-slate-500 dark:border-slate-700"
           >
-            这个系列下还没有课程包。
+            {{ $t("common.noPacks") }}
           </div>
         </div>
 
@@ -143,7 +163,9 @@
               <span :class="['rounded px-2 py-1 text-sm font-black', lvl.chip]">{{
                 lvl.code
               }}</span>
-              <span class="text-xs text-slate-400">目标词汇量 {{ lvl.target }}</span>
+              <span class="text-xs text-slate-400">{{
+                $t("coursePack.targetVocab", { target: lvl.target })
+              }}</span>
             </div>
             <div class="mt-3 text-lg font-black text-slate-950 dark:text-white">
               {{ lvl.label }}
@@ -160,7 +182,7 @@
                 name="i-ph-hourglass-medium"
                 class="h-4 w-4"
               />
-              即将上线
+              {{ $t("coursePack.comingSoon") }}
             </div>
           </article>
         </div>
@@ -171,17 +193,21 @@
 
 <script setup lang="ts">
 import { computed, ref, watch } from "vue";
+import { useI18n } from "vue-i18n";
 
 import type { CoursePack, CoursePacksItem } from "~/types";
+import { isAuthenticated } from "~/api/auth";
 import CoursePackCard from "~/components/courses/CoursePackCard.vue";
 import { useNavigation } from "~/composables/useNavigation";
-import { isAuthenticated } from "~/services/auth";
 import { useCoursePackStore } from "~/store/coursePack";
+
+const { t } = useI18n();
 
 const coursePackStore = useCoursePackStore();
 const { gotoCourseList } = useNavigation();
 const isLoading = ref(false);
 const errorMessage = ref("");
+const searchQuery = ref("");
 
 setup();
 
@@ -204,7 +230,6 @@ function handleGoToCoursePack(coursePack: CoursePack) {
   if (coursePack.isFree) {
     gotoCourseList(coursePack.id);
   } else {
-    console.log("需要是会员");
   }
 }
 
@@ -270,50 +295,24 @@ const ACCENTS: Record<string, SeriesAccent> = {
   },
 };
 
-const TORFL_LEVELS = [
-  {
-    code: "A1",
-    label: "入门级 (Элементарный)",
-    target: "~ 760 词",
-    desc: "最基本的问候、自我介绍、日常用语，能应付最简单的交际场景。",
-    chip: "bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-200",
-  },
-  {
-    code: "A2",
-    label: "基础级 (Базовый)",
-    target: "~ 1 300 词",
-    desc: "日常生活、家庭、学习、工作等场景的基础词汇与表达。",
-    chip: "bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-200",
-  },
-  {
-    code: "B1",
-    label: "一级 (ТРКИ-1)",
-    target: "~ 2 300 词",
-    desc: "能在常见社会场景流利使用俄语，达到留学预科水平。",
-    chip: "bg-sky-100 text-sky-700 dark:bg-sky-950 dark:text-sky-200",
-  },
-  {
-    code: "B2",
-    label: "二级 (ТРКИ-2)",
-    target: "~ 6 000 词",
-    desc: "工作、专业、媒体等较复杂场景，是本科教学常见门槛。",
-    chip: "bg-sky-100 text-sky-700 dark:bg-sky-950 dark:text-sky-200",
-  },
-  {
-    code: "C1",
-    label: "三级 (ТРКИ-3)",
-    target: "~ 11 000 词",
-    desc: "几乎所有领域的高级词汇和正式表达。",
-    chip: "bg-fuchsia-100 text-fuchsia-700 dark:bg-fuchsia-950 dark:text-fuchsia-200",
-  },
-  {
-    code: "C2",
-    label: "四级 (ТРКИ-4)",
-    target: "~ 12 000+ 词",
-    desc: "母语级精通，覆盖学术、文学、专业等所有领域。",
-    chip: "bg-fuchsia-100 text-fuchsia-700 dark:bg-fuchsia-950 dark:text-fuchsia-200",
-  },
-];
+const TORFL_LEVELS = computed(() => {
+  const codes = ["A1", "A2", "B1", "B2", "C1", "C2"];
+  const chips: Record<string, string> = {
+    A1: "bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-200",
+    A2: "bg-emerald-100 text-emerald-700 dark:bg-emerald-950 dark:text-emerald-200",
+    B1: "bg-sky-100 text-sky-700 dark:bg-sky-950 dark:text-sky-200",
+    B2: "bg-sky-100 text-sky-700 dark:bg-sky-950 dark:text-sky-200",
+    C1: "bg-fuchsia-100 text-fuchsia-700 dark:bg-fuchsia-950 dark:text-fuchsia-200",
+    C2: "bg-fuchsia-100 text-fuchsia-700 dark:bg-fuchsia-950 dark:text-fuchsia-200",
+  };
+  return codes.map((code) => ({
+    code,
+    chip: chips[code],
+    label: t(`coursePack.levels.${code}.label`),
+    target: t(`coursePack.levels.${code}.target`),
+    desc: t(`coursePack.levels.${code}.desc`),
+  }));
+});
 
 // ----- 智能分类（按难度从低到高）-----
 function classify(pack: CoursePacksItem): string {
@@ -359,7 +358,7 @@ function classify(pack: CoursePacksItem): string {
 
 // 从 torfl-X-... id 中解析等级，用于排序
 function torflLevelIndex(id: string): number {
-  const match = id.match(/^torfl-([a-c])([12])-/i);
+  const match = id.match(/^torfl-([a-c])([12])(?:-|$)/i);
   if (!match) return 999;
   const letter = match[1].toLowerCase();
   const num = parseInt(match[2], 10);
@@ -416,7 +415,7 @@ const groupedSeries = computed<Series[]>(() => {
       key: "basic",
       label: "零基础 · 入门",
       description: "从俄语字母到日常基础句型，零起点起步。",
-      icon: "i-ph-seedling",
+      icon: "i-ph-leaf",
       accent: ACCENTS.emerald,
       kind: "packs",
       packs: buckets.basic,
@@ -509,7 +508,16 @@ function selectSeries(key: string) {
   activeSeries.value = key;
 }
 
-const currentSeries = computed(() => groupedSeries.value.find((s) => s.key === activeSeries.value));
+const currentSeries = computed(() => {
+  const series = groupedSeries.value.find((s) => s.key === activeSeries.value);
+  if (!series) return undefined;
+  const q = searchQuery.value.trim().toLowerCase();
+  if (!q || series.kind !== "packs") return series;
+  return {
+    ...series,
+    packs: series.packs.filter((p) => p.title.toLowerCase().includes(q)),
+  };
+});
 </script>
 
 <style></style>
