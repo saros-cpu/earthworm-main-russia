@@ -84,11 +84,6 @@ async function clearBrowserSession() {
   }
 }
 
-export async function logout() {
-  await clearBrowserSession();
-  window.location.href = "/login";
-}
-
 export function safeSignInTarget(callback?: string): string {
   if (!callback || !callback.startsWith("/")) {
     return "/login";

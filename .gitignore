@@ -168,3 +168,14 @@ backend/target/
 # Python generated cache
 __pycache__/
 *.py[cod]
+# Added by code-review-graph
+.code-review-graph/
+
+# IDE / local tool configs (never commit)
+.claude/
+.codebuddy/
+.cursor/
+.gemini/
+.qoder/
+.mcp.json
+opencode.jsonc

@@ -66,16 +66,6 @@ function setNoticeDismissed(): void {
   const expirationTime = Date.now() + 48 * 60 * 60 * 1000; // 48小时后的时间戳
   localStorage.setItem("noticeDismissed", expirationTime.toString());
 }
-
-function shouldShowNotice(): boolean {
-  if (userStore.isFounderMembership()) return false;
-
-  const dismissedTime = localStorage.getItem("noticeDismissed");
-  if (!dismissedTime) return true;
-
-  const currentTime = Date.now();
-  return currentTime > parseInt(dismissedTime);
-}
 </script>
 
 <style scoped></style>

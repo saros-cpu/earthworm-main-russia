@@ -11,6 +11,7 @@ import java.security.NoSuchAlgorithmException;
 import java.time.Instant;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.NoSuchElementException;
 
 @Service
 public class AuthService {
@@ -33,26 +34,26 @@ public class AuthService {
     public Map<String, Object> register(String username, String password, String nickname) {
         String normalizedUsername = username == null ? "" : username.trim();
         if (normalizedUsername.length() < 2) {
-            return Map.of("error", "Username must be at least 2 characters");
+            throw new IllegalArgumentException("Username must be at least 2 characters");
         }
         if (normalizedUsername.length() > 64) {
-            return Map.of("error", "Username must be no more than 64 characters");
+            throw new IllegalArgumentException("Username must be no more than 64 characters");
         }
         if (password == null || password.length() < 6) {
-            return Map.of("error", "Password must be at least 6 characters");
+            throw new IllegalArgumentException("Password must be at least 6 characters");
         }
         if (password.length() > MAX_PASSWORD_LENGTH) {
-            return Map.of("error", "Password must be no more than 128 characters");
+            throw new IllegalArgumentException("Password must be no more than 128 characters");
         }
         if (!password.matches(".*[a-zA-Z].*") || !password.matches(".*\\d.*")) {
-            return Map.of("error", "Password must contain at least one letter and one digit");
+            throw new IllegalArgumentException("Password must contain at least one letter and one digit");
         }
         String normalizedNickname = nickname == null || nickname.isBlank() ? normalizedUsername : nickname.trim();
         if (normalizedNickname.length() > 64) {
-            return Map.of("error", "Nickname must be no more than 64 characters");
+            throw new IllegalArgumentException("Nickname must be no more than 64 characters");
         }
         if (userRepository.existsByUsername(normalizedUsername)) {
-            return Map.of("error", "Username already exists");
+            throw new IllegalArgumentException("Username already exists");
         }
 
         User user = new User();
@@ -70,7 +71,7 @@ public class AuthService {
         String loginUsername = username == null ? "" : username.trim();
         if (loginUsername.isBlank() || loginUsername.length() > 64
                 || password == null || password.length() > MAX_PASSWORD_LENGTH) {
-            return Map.of("error", "Invalid username or password");
+            throw new IllegalArgumentException("Invalid username or password");
         }
         String attemptKey = loginUsername.toLowerCase(Locale.ROOT);
         if (!checkRateLimit(attemptKey)) {
@@ -99,7 +100,7 @@ public class AuthService {
     }
 
     private Map<String, Object> invalidCredentials() {
-        return Map.of("error", "Invalid username or password");
+        throw new IllegalArgumentException("Invalid username or password");
     }
 
     public Map<String, Object> getCurrentUser(String userId) {
@@ -113,7 +114,7 @@ public class AuthService {
                     m.put("role", normalizedRole(u));
                     return m;
                 })
-                .orElse(Map.of("error", "not found"));
+                .orElseThrow(() -> new NoSuchElementException("User not found"));
     }
 
     private Map<String, Object> authResponse(User user, String token) {

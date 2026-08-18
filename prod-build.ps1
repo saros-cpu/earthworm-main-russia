@@ -28,7 +28,7 @@ try {
 }
 
 # ─── 前端构建（SSR 模式） ───
-Write-Host "=== Building frontend (SSR) ===" -ForegroundColor Cyan
+Write-Host "=== Building frontend ===" -ForegroundColor Cyan
 $feOk = $true
 try {
     pnpm --filter client build 2>&1 | Tee-Object -FilePath "$runtimeDir\frontend-build-$timestamp.log"

@@ -105,7 +105,7 @@ public class CourseService {
     public Map<String, Object> completeCourse(String coursePackId, String courseId) {
         String uid = UserContext.getUserIdOptional().orElse(null);
         if (uid == null) {
-            return Map.of("error", "Login required");
+            throw new IllegalArgumentException("Login required");
         }
         requireAccessiblePack(coursePackId);
         Course current = courseRepository.findByCoursePackIdAndIdAndArchivedFalse(coursePackId, courseId)

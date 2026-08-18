@@ -46,7 +46,7 @@ public class ReviewService {
     public Map<String, Object> recordReview(String userId, String statementId, int quality) {
         ReviewSchedule schedule = reviewRepository.findByUserIdAndStatementId(userId, statementId)
                 .orElse(null);
-        if (schedule == null) return Map.of("error", "not found");
+        if (schedule == null) throw new NoSuchElementException("Review schedule not found");
 
         quality = Math.max(0, Math.min(5, quality));
 

@@ -1,5 +1,5 @@
 $ErrorActionPreference = "Stop"
-$root = "D:\earthworm-main"
+$root = Split-Path -Parent $MyInvocation.MyCommand.Path
 $runtimeDir = if ($env:EARTHWORM_RUNTIME_DIR) { $env:EARTHWORM_RUNTIME_DIR } else { Join-Path $root "runtime" }
 Set-Location $root
 
