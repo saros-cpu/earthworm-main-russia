@@ -91,6 +91,7 @@ export function speakRussian(text: string | undefined, playOptions?: PlayOptions
   if (!text || typeof window === "undefined" || !("speechSynthesis" in window)) {
     return false;
   }
+  ensureAudioUnlock();
   // 确保语音列表已加载
   const voices = window.speechSynthesis.getVoices();
   if (!voices.length) {
@@ -131,11 +132,41 @@ export function speakRussian(text: string | undefined, playOptions?: PlayOptions
   };
 }
 
+// --- 自动播放策略解锁：浏览器要求首次用户手势后才能 play() ---
+// 首题在页面刚加载、尚无交互时被自动播放会触发 NotAllowedError。
+// 这里在被拦截时不报错，而是注册一次性手势监听，待用户首次交互后补播。
+let audioUnlocked = false;
+let pendingPlay: (() => void) | null = null;
+
+function flushPendingPlay() {
+  const pending = pendingPlay;
+  pendingPlay = null;
+  if (pending) pending();
+}
+
+function unlockAudioOnFirstGesture() {
+  audioUnlocked = true;
+  flushPendingPlay();
+}
+
+export function ensureAudioUnlock() {
+  if (typeof window === "undefined" || audioUnlocked) return;
+  const events = ["pointerdown", "keydown", "touchstart", "click"];
+  events.forEach((evt) =>
+    window.addEventListener(evt, unlockAudioOnFirstGesture, {
+      once: true,
+      capture: true,
+      passive: true,
+    }),
+  );
+}
+
 export function playSource(src: string, playOptions?: PlayOptions) {
   const { times, rate, interval } = Object.assign({}, DefaultPlayOptions, playOptions);
   let index = 0;
   let stopped = false;
 
+  ensureAudioUnlock();
   stopCurrentAudio();
 
   const playOnce = () => {
@@ -154,9 +185,17 @@ export function playSource(src: string, playOptions?: PlayOptions) {
       if (currentAudio !== player || stopped) return;
       console.warn("俄语发音音频加载失败", src);
     };
-    player.play().catch((error) => {
-      console.warn("俄语发音播放失败", error);
-    });
+    const playPromise = player.play();
+    if (playPromise && typeof playPromise.catch === "function") {
+      playPromise.catch((error) => {
+        // 自动播放被浏览器拦截（用户尚未与页面交互）：等首次交互后重试，不报错
+        if (!audioUnlocked && error && error.name === "NotAllowedError") {
+          pendingPlay = () => playSource(src, playOptions);
+          return;
+        }
+        console.warn("俄语发音播放失败", error);
+      });
+    }
   };
 
   playOnce();
@@ -183,6 +222,7 @@ function stopCurrentAudio() {
 export function play(playOptions?: PlayOptions) {
   const { times, rate, interval } = Object.assign({}, DefaultPlayOptions, playOptions);
 
+  ensureAudioUnlock();
   audio.playbackRate = rate;
   audio.play().catch((error) => {
     console.warn("俄语发音播放失败，请检查网络或浏览器自动播放权限", error);
