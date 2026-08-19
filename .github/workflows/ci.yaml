@@ -62,8 +62,9 @@ jobs:
         with:
           java-version: "21"
           distribution: "temurin"
+          cache: maven
       - name: Build backend
-        run: cd backend && mvn compile -q
+        run: cd backend && for i in 1 2 3; do mvn compile -q && break || sleep 15; done
 
   frontend-tests:
     runs-on: ubuntu-latest
@@ -102,8 +103,9 @@ jobs:
         with:
           java-version: "21"
           distribution: "temurin"
+          cache: maven
       - name: Run backend tests
-        run: cd backend && mvn test
+        run: cd backend && for i in 1 2 3; do mvn test && break || sleep 15; done
         env:
           SPRING_DATASOURCE_URL: jdbc:mysql://localhost:3306/earthworm_test?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
           SPRING_DATASOURCE_USERNAME: root
