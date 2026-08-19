@@ -1,4 +1,4 @@
-# 俄语学习平台 - 环境一键安装脚本
+﻿# 俄语学习平台 - 环境一键安装脚本
 # 使用 winget / choco 自动安装缺失的依赖
 
 $ErrorActionPreference = "Continue"
