@@ -1,5 +1,5 @@
 <template>
-  <div v-if="statementId">
+  <div v-if="statementId && isAuthenticated()">
     <button
       class="inline-flex h-8 items-center gap-1 rounded-md border border-slate-200 px-2.5 text-xs font-bold text-slate-500 transition hover:border-emerald-300 hover:text-emerald-700 dark:border-slate-700 dark:text-slate-400"
       @click="open = !open"
@@ -54,6 +54,7 @@
 import { onMounted, ref } from "vue";
 
 import { getHttp } from "~/api/http";
+import { isAuthenticated } from "~/api/auth";
 
 const props = defineProps<{ statementId?: string }>();
 const open = ref(false);
@@ -90,6 +91,7 @@ async function deleteNote() {
 
 async function loadNote() {
   if (!props.statementId) return;
+  if (!isAuthenticated()) return;
   try {
     const http = getHttp();
     const notes = await http<any[]>("/notes?statementId=" + props.statementId, { method: "get" });
